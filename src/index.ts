@@ -5,7 +5,7 @@ export * from './tool/cocktailBalancer';
 export * from './tool/partyKeg';
 
 export { alcoholCategory } from './category';
-export { default as alcoholCategorySEO } from './category/seo.astro';
+export { default as AlcoholCategorySEO } from './category/seo.astro';
 
 export type {
   KnownLocale,
