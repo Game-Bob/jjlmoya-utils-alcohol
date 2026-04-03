@@ -1,18 +1,17 @@
 import { describe, it, expect } from 'vitest';
-import * as DATA from '../data';
+import { ALL_TOOLS } from '../tools';
 
-const TOOLS: typeof DATA.templateCategory[] = [];
+const MIN_FAQS = 3;
 
-describe('FAQ Content Validation', () => {
-  TOOLS.forEach((entry) => {
-    describe(`Tool: ${entry.icon}`, () => {
-      it('placeholder', () => {
-        expect(true).toBe(true);
+describe('FAQ Count Validation', () => {
+  ALL_TOOLS.forEach((tool) => {
+    describe(`Tool: ${tool.entry.id}`, () => {
+      Object.entries(tool.entry.i18n).forEach(([locale, loader]) => {
+        it(`${locale}: should have at least ${MIN_FAQS} FAQs`, async () => {
+          const content = await loader();
+          expect(content.faq.length).toBeGreaterThanOrEqual(MIN_FAQS);
+        });
       });
     });
-  });
-
-  it('no tools registered yet', () => {
-    expect(TOOLS.length).toBe(0);
   });
 });

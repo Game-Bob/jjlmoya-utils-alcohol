@@ -1,6 +1,6 @@
-import type { TemplateCategoryEntry } from '../types';
+import type { AlcoholCategoryEntry } from '../types';
 
-export const templateCategory: TemplateCategoryEntry = {
+export const alcoholCategory: AlcoholCategoryEntry = {
   icon: 'mdi:shape',
   tools: [],
   i18n: {
@@ -9,3 +9,4 @@ export const templateCategory: TemplateCategoryEntry = {
     fr: () => import('./i18n/fr').then((m) => m.content),
   },
 };
+

@@ -29,17 +29,12 @@ export interface ToolLocaleContent<TUI extends Record<string, string> = Record<s
   description: string;
   ui: TUI;
   seo: SEOSection[];
+  faqTitle: string;
   faq: FAQItem[];
+  bibliographyTitle: string;
   bibliography: BibliographyEntry[];
   howTo: HowToStep[];
   schemas: WithContext<Thing>[];
-}
-
-export interface ToolDefinition {
-  entry: PetToolEntry;
-  Component: unknown;
-  SEOComponent?: unknown;
-  BibliographyComponent?: unknown;
 }
 
 export interface CategoryLocaleContent {
@@ -53,7 +48,7 @@ export type LocaleLoader<T> = () => Promise<T>;
 
 export type LocaleMap<T> = Partial<Record<KnownLocale, LocaleLoader<T>>>;
 
-export interface TemplateToolEntry<TUI extends Record<string, string> = Record<string, string>> {
+export interface AlcoholToolEntry<TUI extends Record<string, string> = Record<string, string>> {
   id: string;
   icons: {
     bg: string;
@@ -62,15 +57,16 @@ export interface TemplateToolEntry<TUI extends Record<string, string> = Record<s
   i18n: LocaleMap<ToolLocaleContent<TUI>>;
 }
 
-export interface TemplateCategoryEntry {
+export interface AlcoholCategoryEntry {
   icon: string;
-  tools: TemplateToolEntry[];
+  tools: AlcoholToolEntry[];
   i18n: LocaleMap<CategoryLocaleContent>;
 }
 
 export interface ToolDefinition {
-  entry: TemplateToolEntry;
+  entry: AlcoholToolEntry<Record<string, string>>;
   Component: unknown;
-  SEOComponent: unknown;
-  BibliographyComponent: unknown;
+  SEOComponent?: unknown;
+  BibliographyComponent?: unknown;
 }
+

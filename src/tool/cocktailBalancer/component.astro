@@ -1,0 +1,396 @@
+---
+import { getAllIngredients } from "./data/IngredientRepository";
+import { Icon } from "astro-icon/components";
+import { COCKTAIL_PRESETS } from "./data/Presets";
+import type { CocktailBalancerUI } from "./index";
+import './component.css';
+
+interface Props {
+  ui: CocktailBalancerUI;
+}
+
+const { ui } = Astro.props;
+const allIngredients = getAllIngredients();
+
+function getIngTypeClass(type: string): string {
+  if (type === "spirit") return "ing-icon-spirit";
+  if (type === "citrus") return "ing-icon-citrus";
+  if (type === "syrup") return "ing-icon-syrup";
+  return "ing-icon-other";
+}
+
+function getIngIconName(type: string): string {
+  if (type === "spirit") return "mdi:glass-cocktail";
+  if (type === "citrus") return "mdi:fruit-citrus";
+  return "mdi:bottle-tonic";
+}
+---
+
+<div class="balancer-app">
+    <div class="balancer-card">
+    <div class="balancer-header">
+        <h2 class="balancer-title">
+            <span class="balancer-title-icon"><Icon name="mdi:scale-balance" /></span>
+            {ui.title} <span class="balancer-version">v2.1</span>
+        </h2>
+
+        <div class="balancer-actions">
+            <button id="open-presets-btn" class="btn-secondary">
+                <Icon name="mdi:book-open-page-variant" /> {ui.presetsBtn}
+            </button>
+            <button id="save-recipe-btn" class="btn-primary">
+                <Icon name="mdi:content-save" /> {ui.saveBtn}
+            </button>
+            <button id="reset-btn" class="btn-danger">
+                <Icon name="mdi:trash-can-outline" />
+            </button>
+        </div>
+    </div>
+
+    <div class="balancer-grid">
+        <div class="recipe-column">
+            <div id="recipe-container" class="recipe-container">
+                <div id="empty-state" class="empty-state">
+                    <div class="empty-icon-wrap">
+                        <Icon name="mdi:flask-outline" class="empty-flask-icon" />
+                    </div>
+                    <h3 class="empty-title">{ui.emptyStateTitle}</h3>
+                    <p class="empty-desc">{ui.emptyStateDescription}</p>
+                    <button id="add-first-btn" class="btn-primary btn-add-first">
+                        <Icon name="mdi:plus-circle" /> {ui.addBtn}
+                    </button>
+                </div>
+            </div>
+
+            <button id="open-modal-btn" class="btn-add-more" style="display:none">
+                <Icon name="mdi:plus-circle-outline" class="add-more-icon" />
+                {ui.addMoreBtn}
+            </button>
+        </div>
+
+        <div class="dashboard-column">
+            <div class="flavor-card">
+                <div class="flavor-card-accent"></div>
+                <div class="flavor-card-header">
+                    <h3 class="flavor-card-title">{ui.flavorProfileTitle}</h3>
+                    <div class="abv-badge" id="stat-abv-badge">0.0% ABV</div>
+                </div>
+
+                <div class="radar-wrap">
+                    <svg viewBox="0 0 200 200" class="radar-svg">
+                        <polygon points="100,20 176,75 147,164 53,164 24,75" fill="none" class="radar-bg-poly" stroke-width="1"></polygon>
+                        <polygon id="radar-shape" points="100,100 100,100 100,100 100,100 100,100" class="radar-shape" stroke-width="2" stroke-linejoin="round"></polygon>
+                        <circle id="pt-sweet" cx="100" cy="100" r="3" class="radar-dot"></circle>
+                        <circle id="pt-bitter" cx="100" cy="100" r="3" class="radar-dot"></circle>
+                        <circle id="pt-complex" cx="100" cy="100" r="3" class="radar-dot"></circle>
+                        <circle id="pt-alc" cx="100" cy="100" r="3" class="radar-dot"></circle>
+                        <circle id="pt-acid" cx="100" cy="100" r="3" class="radar-dot"></circle>
+                    </svg>
+                    <span class="radar-label radar-top">Sweet</span>
+                    <span class="radar-label radar-right-top">Bitter</span>
+                    <span class="radar-label radar-right-bot">Complex</span>
+                    <span class="radar-label radar-left-bot">Alcohol</span>
+                    <span class="radar-label radar-left-top">Acid</span>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-card-label">{ui.volLabel}</div>
+                    <div class="stat-card-value"><span id="stat-vol">0</span><span class="stat-card-unit">ml</span></div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-label">{ui.sugarLabel}</div>
+                    <div class="stat-card-value stat-value-amber"><span id="stat-sugar">0</span><span class="stat-card-unit">g</span></div>
+                </div>
+                <div class="stat-card stat-card-color">
+                    <div class="stat-card-label">{ui.colorLabel}</div>
+                    <div class="color-swatch"><div id="sim-color-bg" class="color-swatch-inner"></div></div>
+                </div>
+            </div>
+
+            <div class="balance-card">
+                <div class="balance-card-header">
+                    <h3 class="balance-card-title">{ui.sourLawTitle}</h3>
+                    <div id="balance-verdict" class="balance-verdict">--</div>
+                </div>
+
+                <div class="balance-track">
+                    <div class="balance-zone balance-zone-left"></div>
+                    <div class="balance-zone balance-zone-right"></div>
+                    <div class="balance-center-line"></div>
+                    <div id="balance-needle" class="balance-needle" style="left:50%"></div>
+                </div>
+
+                <div class="balance-labels">
+                    <span class="balance-lbl-acid">{ui.acidDryLabel}</span>
+                    <span class="balance-lbl-mid">{ui.balanceLabel}</span>
+                    <span class="balance-lbl-sweet">{ui.sweetLabel}</span>
+                </div>
+            </div>
+
+            <div id="fix-box" class="fix-box" style="display:none">
+                <div class="fix-icon-wrap">
+                    <Icon name="mdi:lightbulb-on-outline" class="fix-icon" />
+                </div>
+                <div>
+                    <h4 class="fix-title">{ui.aiSuggestionTitle}</h4>
+                    <p id="fix-text" class="fix-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <dialog id="ingredient-modal" class="modal-dialog">
+        <div class="modal-body">
+            <div class="modal-header">
+                <div class="modal-header-row">
+                    <h3 class="modal-title">{ui.addIngredientTitle}</h3>
+                    <button id="close-modal-btn" class="modal-close-btn">
+                        <Icon name="mdi:close" />
+                    </button>
+                </div>
+                <div class="modal-search-wrap">
+                    <Icon name="mdi:magnify" class="modal-search-icon" />
+                    <input type="text" id="modal-search" placeholder={ui.searchPlaceholder} class="modal-search-input" />
+                </div>
+            </div>
+
+            <div class="modal-scroll">
+                <div class="ing-grid">
+                    {allIngredients.map((ing) => (
+                        <button class="ing-select-btn" data-id={ing.id}>
+                            <div class={`ing-icon-wrap ${getIngTypeClass(ing.type)}`}>
+                                <Icon name={getIngIconName(ing.type)} />
+                            </div>
+                            <div class="ing-info">
+                                <div class="ing-name">{ing.name}</div>
+                                <div class="ing-meta">{ing.type} • {ing.abv}%</div>
+                            </div>
+                        </button>
+                    ))}
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="presets-modal" class="modal-dialog modal-dialog-wide">
+        <div class="modal-body">
+            <div class="modal-header modal-header-simple">
+                <h3 class="modal-title modal-title-with-icon">
+                    <Icon name="mdi:book-open-variant" class="modal-title-icon" /> {ui.presetsTitle}
+                </h3>
+                <button id="close-presets-btn" class="modal-close-btn"><Icon name="mdi:close" /></button>
+            </div>
+            <div class="modal-scroll modal-scroll-bg">
+                <div id="saved-section" class="saved-section" style="display:none">
+                    <h4 class="section-heading">{ui.savedSectionTitle}</h4>
+                    <div id="saved-grid" class="presets-grid"></div>
+                </div>
+                <h4 class="section-heading">{ui.classicsSectionTitle}</h4>
+                <div class="presets-grid">
+                    {COCKTAIL_PRESETS.map((p) => (
+                        <button class="preset-load-btn" data-preset-id={p.id}>
+                            <div class="preset-icon-row">
+                                <Icon name={p.icon} class="preset-icon" /> <span class="preset-name">{p.name}</span>
+                            </div>
+                            <p class="preset-desc">{p.description}</p>
+                        </button>
+                    ))}
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="confirm-modal" class="modal-dialog modal-dialog-sm">
+        <div class="confirm-body">
+            <div class="confirm-icon-wrap">
+                <Icon name="mdi:alert-circle-outline" class="confirm-icon" />
+            </div>
+            <div>
+                <h3 class="confirm-title">{ui.confirmDeleteTitle}</h3>
+                <p class="confirm-text">{ui.confirmDeleteText}</p>
+            </div>
+            <div class="confirm-actions">
+                <button id="cancel-reset-btn" class="btn-secondary btn-confirm">{ui.cancelBtn}</button>
+                <button id="confirm-reset-btn" class="btn-danger-solid btn-confirm">{ui.deleteBtn}</button>
+            </div>
+        </div>
+    </dialog>
+
+    <div style="display:none">
+        <div id="tpl-icon-trash"><Icon name="mdi:trash-can-outline" /></div>
+        <div id="ui-labels" data-ui={JSON.stringify(ui)}></div>
+    </div>
+</div>
+
+<script>
+    import { getIngredientById } from "./data/IngredientRepository";
+    import { calculateCocktail, getBalanceVerdict, getFixSuggestion } from "./logic";
+    import { COCKTAIL_PRESETS } from "./data/Presets";
+    import type { CocktailBalancerUI } from "./index";
+    import type { CocktailComponent } from "./domain/Ingredient";
+
+    interface RecipeItem { uId: string; id: string; vol: number; }
+
+    class CocktailApp {
+        recipe: RecipeItem[] = [];
+        STORAGE_KEY = "cocktail_tool_current";
+        ui = {} as CocktailBalancerUI;
+
+        constructor() {
+            const uiEl = document.getElementById("ui-labels");
+            if (uiEl) this.ui = JSON.parse(uiEl.dataset.ui || "{}") as CocktailBalancerUI;
+            this.bindEvents();
+            this.loadState();
+        }
+
+        loadState() {
+            const saved = localStorage.getItem(this.STORAGE_KEY);
+            if (saved) { try { this.recipe = JSON.parse(saved) as RecipeItem[]; } catch { this.recipe = []; } }
+            this.refreshUI();
+        }
+
+        saveState() { localStorage.setItem(this.STORAGE_KEY, JSON.stringify(this.recipe)); }
+
+        addIngredient(id: string) {
+            const ing = getIngredientById(id);
+            if (!ing) return;
+            this.recipe.push({ uId: Math.random().toString(36).slice(2, 11), id, vol: ing.type === "spirit" ? 45 : 30 });
+            this.saveState(); this.refreshUI();
+        }
+
+        removeIngredient(uId: string) {
+            this.recipe = this.recipe.filter(item => item.uId !== uId);
+            this.saveState(); this.refreshUI();
+        }
+
+        updateVolume(uId: string, newVol: string) {
+            const item = this.recipe.find(i => i.uId === uId);
+            if (item) { item.vol = parseFloat(newVol); this.saveState(); this.updateDashboard(); }
+        }
+
+        refreshUI() {
+            this.renderList(); this.updateDashboard();
+            const addBtn = document.getElementById("open-modal-btn");
+            if (addBtn) addBtn.style.display = this.recipe.length > 0 ? "flex" : "none";
+        }
+
+        buildRecipeRow(item: RecipeItem): HTMLElement {
+            const ing = getIngredientById(item.id);
+            if (!ing) return document.createElement("div");
+            const trashIcon = document.getElementById("tpl-icon-trash")?.innerHTML ?? '';
+            const row = document.createElement("div");
+            row.className = "recipe-row";
+            row.innerHTML = `<div class="recipe-row-top"><div class="recipe-row-info"><div class="recipe-row-name">${ing.name}</div><span class="recipe-row-type">${ing.type}</span></div><button class="btn-danger recipe-row-del btn-remove" data-uid="${item.uId}">${trashIcon}</button></div><div class="recipe-row-controls"><input type="range" class="recipe-range input-range" min="0" max="150" step="0.5" value="${item.vol}" data-uid="${item.uId}"><div class="recipe-number-wrap"><input type="number" class="recipe-number input-number" value="${item.vol}" data-uid="${item.uId}"></div></div>`;
+            return row;
+        }
+
+        renderList() {
+            const container = document.getElementById("recipe-container");
+            const emptyState = document.getElementById("empty-state");
+            if (!container || !emptyState) return;
+            const empDisplay = this.recipe.length === 0 ? "flex" : "none";
+            emptyState.style.display = empDisplay;
+            Array.from(container.children).forEach(child => { if ((child as HTMLElement).id !== "empty-state") child.remove(); });
+            if (this.recipe.length === 0) return;
+            this.recipe.forEach(item => container.appendChild(this.buildRecipeRow(item)));
+            container.querySelectorAll<HTMLButtonElement>(".btn-remove").forEach(b => {
+                b.addEventListener("click", () => this.removeIngredient(b.dataset.uid ?? ''));
+            });
+            container.querySelectorAll<HTMLInputElement>(".input-range, .input-number").forEach(i => {
+                i.addEventListener("input", () => this.updateVolume(i.dataset.uid ?? '', i.value));
+            });
+        }
+
+        updateNeedle(stats: ReturnType<typeof calculateCocktail>) {
+            const verdict = getBalanceVerdict(stats);
+            const verdictEl = document.getElementById("balance-verdict");
+            const needleEl = document.getElementById("balance-needle");
+            if (!verdictEl || !needleEl) return;
+            if (this.recipe.length === 0) { verdictEl.innerText = "--"; verdictEl.className = "balance-verdict"; needleEl.style.left = "50%"; return; }
+            verdictEl.innerText = this.ui[verdict.labelKey] || verdict.labelKey;
+            verdictEl.className = "balance-verdict " + verdict.colorClass;
+            needleEl.style.left = `${Math.max(2, Math.min(98, (stats.balanceRatio / 15) * 100))}%`;
+        }
+
+        updateDashboard() {
+            const calcItems = this.recipe.map(r => ({ ingredient: getIngredientById(r.id), volumeMl: r.vol })).filter(c => !!c.ingredient) as CocktailComponent[];
+            const stats = calculateCocktail(calcItems);
+            const volEl = document.getElementById("stat-vol");
+            const abvEl = document.getElementById("stat-abv-badge");
+            const sugarEl = document.getElementById("stat-sugar");
+            const colorEl = document.getElementById("sim-color-bg");
+            if (volEl) volEl.innerText = String(Math.round(stats.totalVolumeMl));
+            if (abvEl) abvEl.innerText = stats.finalAbv.toFixed(1) + "% ABV";
+            if (sugarEl) sugarEl.innerText = String(Math.round(stats.totalSugarGrams));
+            if (colorEl) colorEl.style.backgroundColor = stats.finalColor;
+            this.renderRadar(stats);
+            this.updateNeedle(stats);
+            this.updateFix(stats);
+        }
+
+        updateFix(stats: ReturnType<typeof calculateCocktail>) {
+            const fixBox = document.getElementById("fix-box");
+            const fixText = document.getElementById("fix-text");
+            const fix = getFixSuggestion(stats);
+            if (!fixBox || !fixText) return;
+            if (fix) {
+                fixBox.style.display = "flex";
+                fixText.innerHTML = `<strong>${this.ui[fix.actionKey]}:</strong> ${fix.amountValue}`;
+            } else {
+                fixBox.style.display = "none";
+            }
+        }
+
+        renderRadar(stats: ReturnType<typeof calculateCocktail>) {
+            const R = 80, C = 100;
+            const rad = (deg: number) => (deg * Math.PI) / 180;
+            const vSweet = Math.min((stats.sugarConcentration / 18) * 100, 100);
+            const vBitter = Math.min((stats.bitternessIndex / 8) * 100, 100);
+            const vComplex = Math.min((stats.complexityIndex / 8) * 100, 100);
+            const vAlc = Math.min((stats.finalAbv / 40) * 100, 100);
+            const vAcid = Math.min((stats.acidConcentration / 1.5) * 100, 100);
+            const getPt = (val: number, deg: number) => ({ x: C + (val / 100) * R * Math.cos(rad(deg)), y: C + (val / 100) * R * Math.sin(rad(deg)) });
+            const pts = [getPt(vSweet, -90), getPt(vBitter, -18), getPt(vComplex, 54), getPt(vAlc, 126), getPt(vAcid, 198)];
+            document.getElementById("radar-shape")?.setAttribute("points", pts.map(p => `${p.x},${p.y}`).join(" "));
+            ["pt-sweet", "pt-bitter", "pt-complex", "pt-alc", "pt-acid"].forEach((id, i) => {
+                const pt = pts[i];
+                if (!pt) return;
+                document.getElementById(id)?.setAttribute("cx", String(pt.x));
+                document.getElementById(id)?.setAttribute("cy", String(pt.y));
+            });
+        }
+
+        getDialog(id: string): HTMLDialogElement | null {
+            return document.getElementById(id) as HTMLDialogElement | null;
+        }
+
+        bindModalEvents() {
+            document.getElementById("open-presets-btn")?.addEventListener("click", () => this.getDialog("presets-modal")?.showModal());
+            document.getElementById("close-presets-btn")?.addEventListener("click", () => this.getDialog("presets-modal")?.close());
+            document.getElementById("open-modal-btn")?.addEventListener("click", () => { this.getDialog("ingredient-modal")?.showModal(); (document.getElementById("modal-search") as HTMLInputElement | null)?.focus(); });
+            document.getElementById("add-first-btn")?.addEventListener("click", () => this.getDialog("ingredient-modal")?.showModal());
+            document.getElementById("close-modal-btn")?.addEventListener("click", () => this.getDialog("ingredient-modal")?.close());
+        }
+
+        bindEvents() {
+            this.bindModalEvents();
+            document.querySelectorAll<HTMLButtonElement>(".ing-select-btn").forEach(btn => btn.addEventListener("click", () => { this.addIngredient(btn.dataset.id ?? ''); this.getDialog("ingredient-modal")?.close(); }));
+            document.querySelectorAll<HTMLButtonElement>(".preset-load-btn").forEach(btn => btn.addEventListener("click", () => this.loadPreset(btn.dataset.presetId ?? '')));
+            document.getElementById("reset-btn")?.addEventListener("click", () => this.getDialog("confirm-modal")?.showModal());
+            document.getElementById("cancel-reset-btn")?.addEventListener("click", () => this.getDialog("confirm-modal")?.close());
+            document.getElementById("confirm-reset-btn")?.addEventListener("click", () => { this.recipe = []; this.saveState(); this.refreshUI(); this.getDialog("confirm-modal")?.close(); });
+        }
+
+        loadPreset(presetId: string) {
+            const p = COCKTAIL_PRESETS.find(x => x.id === presetId);
+            if (p) { this.recipe = p.ingredients.map(i => ({ uId: Math.random().toString(36).slice(2, 11), id: i.id, vol: i.vol })); this.saveState(); this.refreshUI(); }
+            (document.getElementById("presets-modal") as HTMLDialogElement)?.close();
+        }
+    }
+
+    new CocktailApp();
+</script>

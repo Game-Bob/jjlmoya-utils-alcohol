@@ -1,23 +1,28 @@
 import type { CategoryLocaleContent } from '../../types';
 
 export const content: CategoryLocaleContent = {
-  slug: 'categoria-template',
-  title: 'Categoría Template',
-  description: 'Descripción de la categoría.',
+  slug: 'alcohol-fiesta',
+  title: 'Utilidades de Alcohol y Fiesta',
+  description: 'Herramientas para calcular niveles de alcohol, enfriamiento de bebidas y organización de eventos.',
   seo: [
     {
       type: 'summary',
-      title: 'Resumen',
-      items: ['Punto 1', 'Punto 2', 'Punto 3'],
+      title: 'Ciencia y Celebración',
+      items: [
+        'Calcula el balance perfecto de tus cócteles',
+        'Enfría tus bebidas en tiempo récord con precisión física',
+        'Planifica el stock de barriles e hielo para tus eventos',
+        'Estima tu metabolismo y tiempo de recuperación'
+      ],
     },
     {
       type: 'title',
-      text: 'Título de sección',
+      text: 'Herramientas para el Entusiasta de la Bebida',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Contenido SEO de la categoría.',
+      html: 'En esta categoría encontrarás una colección de calculadoras diseñadas para mejorar tu experiencia con las bebidas alcohólicas, desde la homebrew (cerveza casera) hasta la coctelería profesional y la seguridad personal.',
     },
   ],
 };

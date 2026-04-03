@@ -1,10 +1,11 @@
-export { templateCategory } from './category';
+export { alcoholCategory } from './category';
 
 export type {
   KnownLocale,
   ToolLocaleContent,
   CategoryLocaleContent,
   LocaleMap,
-  TemplateToolEntry,
-  TemplateCategoryEntry,
+  AlcoholToolEntry,
+  AlcoholCategoryEntry,
 } from './types';
+

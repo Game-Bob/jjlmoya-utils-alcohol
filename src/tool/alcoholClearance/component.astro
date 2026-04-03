@@ -1,0 +1,219 @@
+---
+import { Icon } from "astro-icon/components";
+import type { AlcoholClearanceUI } from "./index";
+import './component.css';
+
+interface Props {
+  ui: AlcoholClearanceUI;
+}
+
+const { ui } = Astro.props;
+---
+
+<div class="alc-app" id="alcohol-app">
+    <div class="alc-card">
+        <div class="alc-grid">
+            <div class="alc-inputs-panel">
+                <div class="alc-sec">
+                    <div class="alc-sex-weight">
+                        <div class="alc-field">
+                            <label class="field-label">
+                                <Icon name="mdi:gender-male-female" class="field-label-icon" />
+                                {ui.biologicalSexLabel}
+                            </label>
+                            <div class="sex-toggle">
+                                <button class="sex-btn selected" data-r="0.68">
+                                    <Icon name="mdi:gender-male" class="sex-icon" />
+                                </button>
+                                <button class="sex-btn" data-r="0.55">
+                                    <Icon name="mdi:gender-female" class="sex-icon" />
+                                </button>
+                            </div>
+                        </div>
+                        <div class="alc-field">
+                            <label class="field-label">
+                                <Icon name="mdi:weight-kilogram" class="field-label-icon" />
+                                {ui.weightLabel}
+                            </label>
+                            <div class="weight-input-wrap">
+                                <input type="number" id="weight" value="75" class="weight-input" />
+                                <span class="weight-unit">{ui.kgUnit}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alc-sec">
+                    <label class="field-label">{ui.addDrinkLabel}</label>
+                    <div class="drink-btns">
+                        {[
+                            { type: 'beer', icon: 'mdi:beer' },
+                            { type: 'wine', icon: 'mdi:glass-wine' },
+                            { type: 'spirit', icon: 'mdi:glass-cocktail' },
+                            { type: 'shot', icon: 'mdi:glass-mug-variant' }
+                        ].map(d => (
+                            <button class="drink-add-btn" data-type={d.type}>
+                                <Icon name={d.icon} class="drink-icon" />
+                            </button>
+                        ))}
+                    </div>
+                </div>
+
+                <div class="alc-sec">
+                    <div class="list-header">
+                        <label class="field-label">{ui.accumulatedLabel}</label>
+                        <span id="items-count" class="items-count">0 {ui.drinksUnit}</span>
+                    </div>
+                    <div id="drinks-list" class="drinks-list custom-scroll">
+                        <div class="list-empty">
+                            <Icon name="mdi:glass-cocktail-off" class="list-empty-icon" />
+                            <p class="list-empty-text">{ui.emptyListLabel}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alc-results-panel">
+                <div class="bac-section">
+                    <div class="bac-bg-icon">
+                        <Icon name="mdi:account-alert" class="bac-bg-icon-svg" />
+                    </div>
+                    <div class="bac-content">
+                        <div class="bac-label">{ui.estimatedBacLabel}</div>
+                        <div class="bac-value-row">
+                            <span class="bac-number" id="res-bac">0.00</span>
+                            <span class="bac-unit">% {ui.bacUnit}</span>
+                        </div>
+                        <div id="time-box" class="time-box">
+                            <Icon name="mdi:clock-outline" class="time-icon" />
+                            <span id="res-time" class="time-text">--</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alc-sec alc-advice-sec">
+                    <div class="advice-row">
+                        <div class="advice-icon advice-icon-blue">
+                            <Icon name="mdi:water" class="advice-icon-svg" />
+                        </div>
+                        <div>
+                            <p class="advice-label">{ui.waterAdviceLabel}</p>
+                            <p class="advice-value" id="res-water">0 ml</p>
+                        </div>
+                    </div>
+                    <div class="advice-row">
+                        <div class="advice-icon advice-icon-amber">
+                            <Icon name="mdi:pill" class="advice-icon-svg" />
+                        </div>
+                        <div>
+                            <p class="advice-label">{ui.pillAdviceLabel}</p>
+                            <p class="advice-value advice-value-sm" id="res-pill">--</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alc-sec alc-disclaimer-sec">
+                    <div class="disclaimer">
+                        <Icon name="mdi:alert-circle" class="disclaimer-icon" />
+                        <p class="disclaimer-text">{ui.disclaimerText}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="display:none" id="ui-labels" data-ui={JSON.stringify(ui)}></div>
+</div>
+
+
+<script>
+    import { calculateAlcoholClearance, getAlcoholGrams, DRINK_TEMPLATES } from "./logic";
+    import type { AlcoholClearanceUI } from "./index";
+
+    interface DrinkEntry { id: string; name: string; size: number; abv: number; }
+
+    class AlcoholClearanceApp {
+        state = { weight: 75, r: 0.68, drinks: [] as DrinkEntry[] };
+        ui = {} as AlcoholClearanceUI;
+
+        constructor() {
+            const uiEl = document.getElementById("ui-labels");
+            if (uiEl) this.ui = JSON.parse(uiEl.dataset.ui || "{}") as AlcoholClearanceUI;
+            this.init();
+        }
+
+        init() {
+            document.querySelectorAll<HTMLButtonElement>(".sex-btn").forEach(btn => {
+                btn.onclick = () => this.onSexSelect(btn);
+            });
+            const weightEl = document.getElementById("weight") as HTMLInputElement | null;
+            if (weightEl) weightEl.oninput = () => { this.state.weight = parseFloat(weightEl.value) || 75; this.update(); };
+            document.querySelectorAll<HTMLButtonElement>(".drink-add-btn").forEach(btn => {
+                btn.onclick = () => this.addDrink(btn.dataset.type ?? '');
+            });
+            this.update();
+        }
+
+        onSexSelect(btn: HTMLButtonElement) {
+            document.querySelectorAll(".sex-btn").forEach(b => b.classList.remove("selected"));
+            btn.classList.add("selected");
+            this.state.r = parseFloat(btn.dataset.r ?? '0.68');
+            this.update();
+        }
+
+        addDrink(type: string) {
+            const tpl = DRINK_TEMPLATES[type as keyof typeof DRINK_TEMPLATES];
+            if (!tpl) return;
+            this.state.drinks.push({ id: Math.random().toString(36).substr(2, 9), ...tpl });
+            this.renderList();
+        }
+
+        buildDrinkRow(name: string, qty: number): HTMLElement {
+            const row = document.createElement("div");
+            row.className = "drink-list-row";
+            row.innerHTML = `<div class="drink-row-info"><span class="drink-row-name">${this.ui[name + 'Label']}</span><span class="drink-row-qty">x${qty}</span></div>`;
+            const del = document.createElement("button");
+            del.className = "drink-row-del";
+            del.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19V4M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"/></svg>';
+            del.onclick = () => {
+                const idx = this.state.drinks.findIndex(d => d.name === name);
+                this.state.drinks.splice(idx, 1);
+                this.renderList();
+            };
+            row.appendChild(del);
+            return row;
+        }
+
+        renderList() {
+            const container = document.getElementById("drinks-list");
+            const count = document.getElementById("items-count");
+            if (!container || !count) return;
+            if (this.state.drinks.length === 0) {
+                container.innerHTML = `<div class="list-empty"><p class="list-empty-text">${this.ui.emptyListLabel}</p></div>`;
+                count.innerText = `0 ${this.ui.drinksUnit}`;
+                this.update();
+                return;
+            }
+            container.innerHTML = "";
+            const grouped = this.state.drinks.reduce((acc: Record<string, number>, d) => { acc[d.name] = (acc[d.name] || 0) + 1; return acc; }, {});
+            Object.entries(grouped).forEach(([name, qty]) => container.appendChild(this.buildDrinkRow(name, qty)));
+            const len = this.state.drinks.length;
+            count.innerText = `${len} ${len > 1 ? this.ui.drinksUnit : this.ui.drinkUnit}`;
+            this.update();
+        }
+
+        update() {
+            const totalGrams = this.state.drinks.reduce((sum, d) => sum + getAlcoholGrams(d.size, d.abv), 0);
+            const res = calculateAlcoholClearance(totalGrams, this.state.weight, this.state.r, this.state.drinks.length);
+            const bacEl = document.getElementById("res-bac");
+            const timeEl = document.getElementById("res-time");
+            const waterEl = document.getElementById("res-water");
+            const pillEl = document.getElementById("res-pill");
+            if (bacEl) bacEl.innerText = res.bacPercent.toFixed(3);
+            if (timeEl) timeEl.innerText = res.bacPercent > 0 ? `${res.hoursToZero}h ${res.minutesToZero}m ${this.ui.timeToZeroLabel}` : "--";
+            if (waterEl) waterEl.innerText = res.waterMl + " ml";
+            if (pillEl) pillEl.innerText = this.ui[res.advice + 'Advice'] || "--";
+        }
+    }
+    new AlcoholClearanceApp();
+</script>

@@ -1,0 +1,269 @@
+---
+import { Icon } from "astro-icon/components";
+import type { PartyKegUI } from "./index";
+import './component.css';
+
+interface Props {
+  ui: PartyKegUI;
+}
+
+const { ui } = Astro.props;
+---
+
+<div class="party-app">
+    <div class="party-card">
+        <div class="party-deco party-deco-top"></div>
+        <div class="party-deco party-deco-bottom"></div>
+
+        <div class="party-grid">
+            <div class="party-inputs">
+                <div class="calc-header">
+                    <div class="calc-header-icon">
+                        <Icon name="mdi:calculator" class="calc-header-icon-svg" />
+                    </div>
+                    <div>
+                        <h3 class="calc-title">{ui.calcStockTitle}</h3>
+                        <p class="calc-subtitle">{ui.beerIceSub}</p>
+                    </div>
+                </div>
+
+                <div class="slider-section">
+                    <div class="slider-header">
+                        <label class="slider-lbl">{ui.guestsLabel}</label>
+                        <span class="slider-val" id="guest-count-display">50</span>
+                    </div>
+                    <div class="custom-slider-wrap">
+                        <input type="range" id="guest-slider" min="5" max="200" step="5" value="50" class="custom-range" />
+                        <div class="slider-track-fill slider-fill-amber" id="guest-fill" style="width:24%"></div>
+                        <div class="slider-thumb" id="guest-thumb" style="left:24%"></div>
+                    </div>
+                </div>
+
+                <div class="slider-section">
+                    <div class="slider-header">
+                        <label class="slider-lbl">{ui.durationLabel}</label>
+                        <div class="slider-val-unit">
+                            <span class="slider-val" id="duration-display">4</span>
+                            <span class="slider-unit">{ui.hoursUnit}</span>
+                        </div>
+                    </div>
+                    <div class="custom-slider-wrap">
+                        <input type="range" id="duration-slider" min="1" max="12" step="1" value="4" class="custom-range" />
+                        <div class="slider-track-fill slider-fill-blue" id="duration-fill" style="width:33%"></div>
+                        <div class="slider-thumb" id="duration-thumb" style="left:33%"></div>
+                    </div>
+                </div>
+
+                <div class="vibe-section">
+                    <label class="slider-lbl">{ui.intensityLabel}</label>
+                    <div class="vibe-buttons">
+                        <button class="vibe-btn active" data-mult="1">
+                            <div class="vibe-bg vibe-bg-green"></div>
+                            <div class="vibe-content">
+                                <Icon name="mdi:tea-outline" class="vibe-icon icon-col" />
+                                <span class="vibe-label text-col">{ui.chillLabel}</span>
+                            </div>
+                            <div class="vibe-bar vibe-bar-green active-bar"></div>
+                        </button>
+                        <button class="vibe-btn" data-mult="1.5">
+                            <div class="vibe-bg vibe-bg-amber"></div>
+                            <div class="vibe-content">
+                                <Icon name="mdi:glass-mug-variant" class="vibe-icon icon-col" />
+                                <span class="vibe-label text-col">{ui.standardLabel}</span>
+                            </div>
+                            <div class="vibe-bar vibe-bar-amber active-bar"></div>
+                        </button>
+                        <button class="vibe-btn" data-mult="2.5">
+                            <div class="vibe-bg vibe-bg-rose"></div>
+                            <div class="vibe-content">
+                                <Icon name="mdi:fire" class="vibe-icon icon-col" />
+                                <span class="vibe-label text-col">{ui.partyLabel}</span>
+                            </div>
+                            <div class="vibe-bar vibe-bar-rose active-bar"></div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="temp-section">
+                    <div class="slider-header">
+                        <label class="slider-lbl temp-lbl">
+                            <Icon name="mdi:sun-thermometer-outline" class="temp-icon" />
+                            {ui.tempLabel}
+                        </label>
+                        <div class="slider-val-unit">
+                            <span class="slider-val" id="temp-display">25</span>
+                            <span class="slider-unit">°C</span>
+                        </div>
+                    </div>
+                    <div class="custom-slider-wrap">
+                        <input type="range" id="temp-slider" min="15" max="40" step="1" value="25" class="custom-range" />
+                        <div class="slider-track-fill slider-fill-temp" id="temp-fill" style="width:40%"></div>
+                        <div class="slider-thumb" id="temp-thumb" style="left:40%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="party-results">
+                <div class="stats-header">
+                    <div class="stat-block stat-block-left">
+                        <div class="stat-deco-icon">
+                            <Icon name="mdi:beer" class="stat-deco-svg" />
+                        </div>
+                        <span class="stat-label">{ui.estimatedVolLabel}</span>
+                        <div class="stat-value-row">
+                            <span class="stat-number" id="total-liters">0</span>
+                            <span class="stat-unit">L</span>
+                        </div>
+                        <p class="stat-sub stat-sub-amber" id="keg-text">-- {ui.kegsLabel}</p>
+                    </div>
+
+                    <div class="stat-block stat-block-right">
+                        <div class="stat-deco-icon">
+                            <Icon name="mdi:snowflake" class="stat-deco-svg" />
+                        </div>
+                        <span class="stat-label">{ui.iceRequiredLabel}</span>
+                        <div class="stat-value-row">
+                            <span class="stat-number" id="total-ice">0</span>
+                            <span class="stat-unit">kg</span>
+                        </div>
+                        <p class="stat-sub stat-sub-cyan" id="bags-text">-- {ui.bagsLabel}</p>
+                    </div>
+                </div>
+
+                <div class="visual-stage-wrap">
+                    <div class="visual-stage-header">
+                        <span class="visual-title">{ui.visualizationTitle}</span>
+                        <span id="ice-hint" class="ice-hint">-</span>
+                    </div>
+                    <div class="visual-stage" id="visual-stage"></div>
+                    <div class="stage-baseline"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="display:none" id="ui-labels" data-ui={JSON.stringify(ui)}></div>
+</div>
+
+<script>
+    import { calculatePartyStock } from "./logic";
+    import type { PartyKegUI } from "./index";
+
+    class PartyApp {
+        state = { guests: 50, duration: 4, temp: 25, drinkRate: 1 };
+        ui = {} as PartyKegUI;
+
+        constructor() {
+            const uiEl = document.getElementById("ui-labels");
+            if (uiEl) this.ui = JSON.parse(uiEl.dataset.ui || "{}") as PartyKegUI;
+            this.init();
+        }
+
+        init() {
+            const sliders = [
+                { id: "guest-slider", fill: "guest-fill", thumb: "guest-thumb", disp: "guest-count-display", key: "guests" as const, min: 5, max: 200 },
+                { id: "duration-slider", fill: "duration-fill", thumb: "duration-thumb", disp: "duration-display", key: "duration" as const, min: 1, max: 12 },
+                { id: "temp-slider", fill: "temp-fill", thumb: "temp-thumb", disp: "temp-display", key: "temp" as const, min: 15, max: 40 }
+            ];
+            sliders.forEach(s => this.bindSlider(s));
+            document.querySelectorAll<HTMLButtonElement>(".vibe-btn").forEach(btn => {
+                btn.onclick = () => {
+                    document.querySelectorAll(".vibe-btn").forEach(b => b.classList.remove("active"));
+                    btn.classList.add("active");
+                    this.state.drinkRate = parseFloat(btn.dataset.mult ?? '1');
+                    this.update();
+                };
+            });
+            this.update();
+        }
+
+        bindSlider(s: { id: string; fill: string; thumb: string; disp: string; key: 'guests' | 'duration' | 'temp'; min: number; max: number }) {
+            const input = document.getElementById(s.id) as HTMLInputElement | null;
+            const fill = document.getElementById(s.fill);
+            const thumb = document.getElementById(s.thumb);
+            const disp = document.getElementById(s.disp);
+            if (!input) return;
+            input.oninput = () => {
+                const val = parseFloat(input.value);
+                const pct = ((val - s.min) / (s.max - s.min)) * 100;
+                if (fill) fill.style.width = pct + "%";
+                if (thumb) thumb.style.left = pct + "%";
+                if (disp) disp.innerText = String(val);
+                this.state[s.key] = val;
+                this.update();
+            };
+            input.dispatchEvent(new Event('input'));
+        }
+
+        update() {
+            const stats = calculatePartyStock(this.state.guests, this.state.duration, this.state.temp, this.state.drinkRate);
+            const litersEl = document.getElementById("total-liters");
+            const iceEl = document.getElementById("total-ice");
+            const kegEl = document.getElementById("keg-text");
+            const bagsEl = document.getElementById("bags-text");
+            const hintEl = document.getElementById("ice-hint");
+            if (litersEl) litersEl.innerText = String(stats.totalLiters);
+            if (iceEl) iceEl.innerText = String(stats.totalIce);
+            if (kegEl) kegEl.innerText = `${stats.kegs} ${this.ui.kegsLabel} (50L)`;
+            if (bagsEl) bagsEl.innerText = `${stats.bags} ${this.ui.bagsLabel} (2kg)`;
+            if (hintEl) hintEl.innerText = this.ui[stats.iceMsg + "Msg"] || stats.iceMsg;
+            this.renderVisuals(stats.kegs, stats.bags);
+        }
+
+        buildKegStack(kegs: number): HTMLElement {
+            const kegStack = document.createElement("div");
+            kegStack.className = "keg-stack";
+            const shownKegs = Math.min(kegs, 6);
+            for (let i = 0; i < shownKegs; i++) {
+                const k = document.createElement("div");
+                k.className = "animate-drop keg-item";
+                k.style.zIndex = String(i);
+                k.style.animationDelay = (i * 0.1) + "s";
+                k.innerHTML = '<svg width="70" height="88" viewBox="0 0 40 50" fill="none"><rect x="2" y="5" width="36" height="40" rx="2" fill="#B45309" stroke="#78350F" stroke-width="2"/><line x1="14" y1="5" x2="14" y2="45" stroke="#78350F" stroke-opacity="0.3" stroke-width="1"/><line x1="26" y1="5" x2="26" y2="45" stroke="#78350F" stroke-opacity="0.3" stroke-width="1"/><rect x="0" y="10" width="40" height="4" fill="#64748B" stroke="#334155"/><rect x="0" y="36" width="40" height="4" fill="#64748B" stroke="#334155"/><ellipse cx="20" cy="5" rx="18" ry="3" fill="#D97706" stroke="#78350F" stroke-width="2"/></svg>';
+                kegStack.appendChild(k);
+            }
+            if (kegs > 6) {
+                const plus = document.createElement("div");
+                plus.innerText = "+" + (kegs - 6);
+                plus.className = "keg-plus";
+                kegStack.appendChild(plus);
+            }
+            return kegStack;
+        }
+
+        buildIcePile(bags: number): HTMLElement {
+            const icePile = document.createElement("div");
+            icePile.className = "ice-pile";
+            const shownBags = Math.min(bags, 40);
+            for (let i = 0; i < shownBags; i++) {
+                const b = document.createElement("div");
+                b.className = "animate-drop ice-bag";
+                b.style.zIndex = String(Math.floor(i / 3));
+                b.style.marginBottom = "-18px";
+                b.style.transform = `rotate(${Math.random()*30-15}deg) translateX(${Math.random()*10-5}px)`;
+                b.style.animationDelay = (0.05 + Math.random()*0.3) + "s";
+                b.innerHTML = '<svg width="45" height="51" viewBox="0 0 30 34" fill="none"><path d="M5 8C5 6.89543 5.89543 6 7 6H23C24.1046 6 25 6.89543 25 8V28C25 30.2091 23.2091 32 21 32H9C6.79086 32 5 30.2091 5 28V8Z" fill="#CFFAFE" stroke="#06B6D4" stroke-width="1.5" stroke-opacity="0.5"/><path d="M10 6L8 2M20 6L22 2" stroke="#06B6D4" stroke-width="1.5" stroke-linecap="round"/><rect x="11" y="4" width="8" height="2" rx="1" fill="#0891B2"/><rect x="8" y="10" width="6" height="6" rx="1" fill="white" fill-opacity="0.6"/><rect x="16" y="14" width="6" height="6" rx="1" fill="white" fill-opacity="0.6"/><rect x="10" y="22" width="6" height="6" rx="1" fill="white" fill-opacity="0.6"/></svg>';
+                icePile.appendChild(b);
+            }
+            if (bags > 40) {
+                const plus = document.createElement("div");
+                plus.innerText = "+" + (bags - 40);
+                plus.className = "bags-plus";
+                icePile.appendChild(plus);
+            }
+            return icePile;
+        }
+
+        renderVisuals(kegs: number, bags: number) {
+            const stage = document.getElementById("visual-stage");
+            if (!stage) return;
+            stage.innerHTML = "";
+            const container = document.createElement("div");
+            container.className = "visual-container";
+            container.appendChild(this.buildKegStack(kegs));
+            container.appendChild(this.buildIcePile(bags));
+            stage.appendChild(container);
+        }
+    }
+    new PartyApp();
+</script>

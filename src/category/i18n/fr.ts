@@ -1,23 +1,19 @@
 import type { CategoryLocaleContent } from '../../types';
 
 export const content: CategoryLocaleContent = {
-  slug: 'categorie-template',
-  title: 'Catégorie Template',
-  description: 'Description de la catégorie.',
+  slug: 'alcool-fete',
+  title: 'Utilitaires d\'Alcool et de Fête',
+  description: 'Outils pour calculer les niveaux d\'alcool, le refroidissement des boissons et la planification d\'événements.',
   seo: [
     {
       type: 'summary',
-      title: 'Résumé',
-      items: ['Point 1', 'Point 2', 'Point 3'],
-    },
-    {
-      type: 'title',
-      text: 'Titre de section',
-      level: 2,
-    },
-    {
-      type: 'paragraph',
-      html: 'Contenu SEO de la catégorie.',
-    },
+      title: 'Science et Fête',
+      items: [
+        'Calculez l\'équilibre parfait de vos cocktails',
+        'Refroidissez vos boissons en un temps record avec précision physique',
+        'Planifiez le stock de fûts et de glace pour vos événements',
+        'Estimez votre métabolisme et votre temps de récupération'
+      ],
+    }
   ],
 };

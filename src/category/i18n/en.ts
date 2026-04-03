@@ -1,23 +1,19 @@
 import type { CategoryLocaleContent } from '../../types';
 
 export const content: CategoryLocaleContent = {
-  slug: 'template-category',
-  title: 'Template Category',
-  description: 'Category description.',
+  slug: 'alcohol-party',
+  title: 'Alcohol and Party Utilities',
+  description: 'Tools to calculate alcohol levels, beverage cooling and event planning.',
   seo: [
     {
       type: 'summary',
-      title: 'Summary',
-      items: ['Point 1', 'Point 2', 'Point 3'],
-    },
-    {
-      type: 'title',
-      text: 'Section title',
-      level: 2,
-    },
-    {
-      type: 'paragraph',
-      html: 'Category SEO content.',
-    },
+      title: 'Science and Party',
+      items: [
+        'Calculate the perfect balance for your cocktails',
+        'Cool your drinks in record time with physical precision',
+        'Plan keg and ice stock for your events',
+        'Estimate your metabolism and recovery time'
+      ],
+    }
   ],
 };

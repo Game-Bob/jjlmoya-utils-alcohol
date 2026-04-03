@@ -1,0 +1,236 @@
+---
+import { Icon } from "astro-icon/components";
+import type { BeerCoolerUI } from "./index";
+import './component.css';
+
+interface Props {
+  ui: BeerCoolerUI;
+}
+
+const { ui } = Astro.props;
+---
+
+<div class="beer-app" id="beer-calculator">
+    <div class="beer-card">
+        <div class="beer-grid">
+            <div class="beer-steps-panel">
+                <div class="beer-sec">
+                    <h3 class="step-header">
+                        <span class="step-number">1</span>
+                        {ui.step1Title}
+                    </h3>
+                    <div class="selector-grid">
+                        <button class="selector-card" data-group="container" data-value="can">
+                            <div class="selector-content">
+                                <Icon name="mdi:beer-outline" class="icon-el" />
+                                <div class="selector-label">{ui.canLabel}</div>
+                                <div class="selector-sub">{ui.aluminumLabel}</div>
+                            </div>
+                            <div class="bg-el"></div>
+                        </button>
+                        <button class="selector-card" data-group="container" data-value="bottle">
+                            <div class="selector-content">
+                                <Icon name="mdi:bottle-soda-classic-outline" class="icon-el" />
+                                <div class="selector-label">{ui.bottleLabel}</div>
+                                <div class="selector-sub">{ui.glassLabel}</div>
+                            </div>
+                            <div class="bg-el"></div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="beer-sec">
+                    <h3 class="step-header">
+                        <span class="step-number">2</span>
+                        {ui.step2Title}
+                    </h3>
+                    <div class="selector-grid">
+                        <button class="selector-card" data-group="location" data-value="fridge">
+                            <div class="selector-content">
+                                <Icon name="mdi:fridge-outline" class="icon-el" />
+                                <div class="selector-label">{ui.fridgeLabel}</div>
+                                <div class="selector-sub">4°C</div>
+                            </div>
+                            <div class="bg-el"></div>
+                        </button>
+                        <button class="selector-card" data-group="location" data-value="freezer">
+                            <div class="selector-content">
+                                <Icon name="mdi:snowflake" class="icon-el" />
+                                <div class="selector-label">{ui.freezerLabel}</div>
+                                <div class="selector-sub">-18°C</div>
+                            </div>
+                            <div class="bg-el"></div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="beer-sec">
+                    <h3 class="step-header">
+                        <span class="step-number">3</span>
+                        {ui.step3Title}
+                    </h3>
+                    <div class="slider-row">
+                        <div class="slider-label-row">
+                            <label class="slider-label">{ui.initialTempLabel}</label>
+                            <span id="display-temp-start" class="temp-display">20°C</span>
+                        </div>
+                        <input type="range" id="temp-start" min="15" max="35" value="20" class="slider-custom slider-dark" />
+                    </div>
+                    <div class="slider-row slider-row-last">
+                        <div class="slider-label-row">
+                            <label class="slider-label">{ui.targetTempLabel}</label>
+                            <span id="display-temp-target" class="temp-display">4°C</span>
+                        </div>
+                        <input type="range" id="temp-target" min="1" max="8" value="4" step="0.5" class="slider-custom slider-blue" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="beer-result-panel">
+                <div id="final-card" class="result-inner">
+                    <div id="empty-state-vis" class="empty-state">
+                        <div class="empty-icon">
+                            <Icon name="mdi:timer-sand" class="empty-icon-svg" />
+                        </div>
+                        <div class="empty-text">
+                            <h3 class="empty-title">{ui.readyTitle}</h3>
+                            <p class="empty-desc">{ui.readyDescription}</p>
+                        </div>
+                    </div>
+                    <div id="result-state" class="result-content" style="display:none">
+                        <div class="result-time-wrap">
+                            <div class="result-glow"></div>
+                            <span id="result-time" class="result-time-num">--</span>
+                            <span class="result-time-unit">min</span>
+                        </div>
+                        <div class="result-labels">
+                            <p class="result-est-label">{ui.estimatedTimeLabel}</p>
+                            <p id="finish-time" class="result-finish-time">--:--</p>
+                        </div>
+                        <div class="result-meta-grid">
+                            <div class="result-meta-item">
+                                <div class="result-meta-label">{ui.methodLabel}</div>
+                                <div class="result-meta-value" id="res-method">-</div>
+                            </div>
+                            <div class="result-meta-item">
+                                <div class="result-meta-label">{ui.containerLabel}</div>
+                                <div class="result-meta-value" id="res-container">-</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bubbles-layer">
+                        <div id="bubbles-container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="display:none" id="ui-labels" data-ui={JSON.stringify(ui)}></div>
+</div>
+
+
+<script>
+    import { calculateCoolingTime, getFinishTime } from "./logic";
+    import type { ContainerType } from "./logic";
+    import type { BeerCoolerUI } from "./index";
+
+    type LocationType = 'fridge' | 'freezer';
+
+    class BeerApp {
+        state = { container: null as ContainerType | null, location: null as LocationType | null, tempStart: 20, tempTarget: 4 };
+        ui = {} as BeerCoolerUI;
+
+        constructor() {
+            const uiEl = document.getElementById("ui-labels");
+            if (uiEl) this.ui = JSON.parse(uiEl.dataset.ui || "{}") as BeerCoolerUI;
+            this.init();
+        }
+
+        init() {
+            document.querySelectorAll<HTMLButtonElement>(".selector-card").forEach(btn => {
+                btn.onclick = () => this.onSelectCard(btn);
+            });
+            const startEl = document.getElementById("temp-start") as HTMLInputElement | null;
+            const targetEl = document.getElementById("temp-target") as HTMLInputElement | null;
+            if (startEl) startEl.oninput = () => this.onTempStart(startEl);
+            if (targetEl) targetEl.oninput = () => this.onTempTarget(targetEl);
+            this.createBubbles();
+        }
+
+        onSelectCard(btn: HTMLButtonElement) {
+            const group = btn.dataset.group ?? '';
+            const val = btn.dataset.value ?? null;
+            if (group === 'container') this.state.container = val as ContainerType | null;
+            if (group === 'location') this.state.location = val as LocationType | null;
+            document.querySelectorAll(`button[data-group="${group}"]`).forEach(b => b.classList.toggle("selected", b === btn));
+            this.update();
+        }
+
+        onTempStart(el: HTMLInputElement) {
+            this.state.tempStart = parseFloat(el.value);
+            const disp = document.getElementById("display-temp-start");
+            if (disp) disp.innerText = `${this.state.tempStart}°C`;
+            this.update();
+        }
+
+        onTempTarget(el: HTMLInputElement) {
+            this.state.tempTarget = parseFloat(el.value);
+            const disp = document.getElementById("display-temp-target");
+            if (disp) disp.innerText = `${this.state.tempTarget}°C`;
+            this.update();
+        }
+
+        update() {
+            const empty = document.getElementById("empty-state-vis");
+            const result = document.getElementById("result-state");
+            if (!empty || !result) return;
+            if (!this.state.container || !this.state.location) {
+                empty.style.display = "flex";
+                result.style.display = "none";
+                return;
+            }
+            this.showResult(empty, result);
+        }
+
+        showResult(empty: HTMLElement, result: HTMLElement) {
+            const mins = calculateCoolingTime(this.state);
+            empty.style.display = "none";
+            result.style.display = "flex";
+            const containerEl = document.getElementById("res-container");
+            const methodEl = document.getElementById("res-method");
+            if (containerEl) containerEl.innerText = this.ui[`${this.state.container}Label`] || (this.state.container ?? '');
+            if (methodEl) methodEl.innerText = this.ui[`${this.state.location}Label`] || (this.state.location ?? '');
+            this.setTimeDisplay(mins);
+        }
+
+        setTimeDisplay(mins: number) {
+            const timeEl = document.getElementById("result-time");
+            const finishEl = document.getElementById("finish-time");
+            if (!timeEl || !finishEl) return;
+            if (mins === 0) { timeEl.innerText = "0"; finishEl.innerText = this.ui.alreadyColdLabel; }
+            else if (mins > 400) { timeEl.innerText = "∞"; finishEl.innerText = this.ui.neverColdLabel; }
+            else { timeEl.innerText = String(mins); finishEl.innerText = getFinishTime(mins); }
+        }
+
+        createBubbles() {
+            const container = document.getElementById("bubbles-container");
+            if (!container) return;
+            for (let i = 0; i < 20; i++) {
+                const b = document.createElement("div");
+                b.style.cssText = `position:absolute;background:rgba(255,255,255,0.1);border-radius:50%;width:${Math.random()*6+2}px;height:${Math.random()*6+2}px;left:${Math.random()*100}%;animation:rise ${Math.random()*5+3}s infinite ease-in ${Math.random()*5}s`;
+                container.appendChild(b);
+            }
+            this.injectBubbleStyle();
+        }
+
+        injectBubbleStyle() {
+            if (document.getElementById("bubble-style")) return;
+            const s = document.createElement("style");
+            s.id = "bubble-style";
+            s.innerHTML = "@keyframes rise { 0% { transform: translateY(100vh) scale(0); opacity: 0; } 50% { opacity: 0.5; } 100% { transform: translateY(-100px) scale(1); opacity: 0; } }";
+            document.head.appendChild(s);
+        }
+    }
+    new BeerApp();
+</script>

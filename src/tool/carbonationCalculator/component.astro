@@ -1,0 +1,225 @@
+---
+import { Icon } from "astro-icon/components";
+import type { CarbonationUI } from "./index";
+import './component.css';
+
+interface Props {
+  ui: CarbonationUI;
+}
+
+const { ui } = Astro.props;
+---
+
+<carbonation-calculator class="carb-app" data-ui={JSON.stringify(ui)}>
+    <div class="carb-card">
+        <div class="carb-layout">
+            <div class="carb-left">
+                <div class="carb-sec">
+                    <div class="carb-params-deco">
+                        <Icon name="mdi:beer" class="carb-deco-icon" />
+                    </div>
+
+                    <h2 class="carb-params-title">
+                        <span class="carb-params-title-icon">
+                            <Icon name="mdi:calculator" class="carb-title-svg" />
+                        </span>
+                        {ui.parametersTitle}
+                    </h2>
+
+                    <div class="units-toggle">
+                        <button id="btnMetric" class="unit-btn unit-btn-active">{ui.metricBtn}</button>
+                        <button id="btnImperial" class="unit-btn">{ui.imperialBtn}</button>
+                    </div>
+
+                    <div class="carb-inputs">
+                        <div class="input-group">
+                            <label class="input-label">
+                                {ui.volumeLabel}
+                                <span id="volUnit" class="input-badge input-badge-amber">{ui.litersUnit}</span>
+                            </label>
+                            <input type="number" id="beerVolume" value="20" step="0.5" min="0" class="carb-input" />
+                        </div>
+
+                        <div class="input-group">
+                            <label class="input-label">
+                                {ui.maxTempLabel}
+                                <span id="tempUnit" class="input-badge input-badge-blue">{ui.celsiusUnit}</span>
+                            </label>
+                            <input type="number" id="beerTemp" value="20" step="1" class="carb-input" />
+                        </div>
+
+                        <div class="co2-section">
+                            <div class="co2-header">
+                                <label class="co2-label">{ui.desiredCo2Label}</label>
+                                <div class="co2-value-wrap">
+                                    <span id="co2ValDisplay" class="co2-value">2.4</span>
+                                    <span class="co2-unit">{ui.volUnit}</span>
+                                </div>
+                            </div>
+                            <input type="range" id="co2Slider" min="1.0" max="4.5" step="0.1" value="2.4" class="co2-slider" />
+                            <div class="preset-row">
+                                {['Stout', 'Ale', 'Lager', 'Wheat'].map((s, idx) => (
+                                    <button class="preset-btn" data-val={[1.8, 2.4, 2.6, 3.5][idx]}>
+                                        <div class="preset-tick"></div>
+                                        <span class="preset-label">{s}</span>
+                                    </button>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carb-sec">
+                    <h3 class="results-title">
+                        <Icon name="mdi:sack" class="results-title-icon" />
+                        {ui.resultsTitle}
+                    </h3>
+                    <div class="results-list">
+                        <div class="result-row result-row-primary">
+                            <span class="result-name">{ui.tableSugarLabel}</span>
+                            <span id="resTable" class="result-value result-value-primary">0 g</span>
+                        </div>
+                        <div class="result-row">
+                            <span class="result-name result-name-muted">{ui.cornSugarLabel}</span>
+                            <span id="resCorn" class="result-value">0 g</span>
+                        </div>
+                        <div class="result-row">
+                            <span class="result-name result-name-muted">{ui.dmeLabel}</span>
+                            <span id="resDME" class="result-value">0 g</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carb-right">
+                <div id="safetyBox" class="safety-box" style="display:none">
+                    <Icon name="mdi:alert-decagram" class="safety-icon" /> {ui.safetyTitle}
+                </div>
+
+                <div class="beer-visual-wrap">
+                    <div class="beer-glass">
+                        <div id="bubbles" class="glass-bubbles"></div>
+                        <div id="foam" class="glass-foam"></div>
+                    </div>
+                    <div class="glass-shine"></div>
+                </div>
+
+                <div class="foam-info">
+                    <p id="foamText" class="foam-text"></p>
+                    <p class="foam-hint">{ui.bubblingVisualizationLabel}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</carbonation-calculator>
+
+<script>
+    import { calculatePrimingSugar } from "./logic";
+    import type { CarbonationUI } from "./index";
+
+    class CarbonationCalculator extends HTMLElement {
+        state = { units: 'metric', co2: 2.4, vol: 20, temp: 20 };
+        ui = {} as CarbonationUI;
+
+        constructor() {
+            super();
+            this.ui = JSON.parse(this.dataset.ui || "{}") as CarbonationUI;
+        }
+
+        connectedCallback() { this.init(); }
+
+        getEls() {
+            const q = <T extends Element>(s: string) => this.querySelector<T>(s);
+            return {
+                vol: q<HTMLInputElement>("#beerVolume"), temp: q<HTMLInputElement>("#beerTemp"),
+                co2: q<HTMLInputElement>("#co2Slider"), mBtn: q<HTMLButtonElement>("#btnMetric"),
+                iBtn: q<HTMLButtonElement>("#btnImperial"), vUnit: q<HTMLElement>("#volUnit"),
+                tUnit: q<HTMLElement>("#tempUnit"), cDisp: q<HTMLElement>("#co2ValDisplay"),
+                rT: q<HTMLElement>("#resTable"), rC: q<HTMLElement>("#resCorn"),
+                rD: q<HTMLElement>("#resDME"), safe: q<HTMLElement>("#safetyBox"),
+                foam: q<HTMLElement>("#foam"), fText: q<HTMLElement>("#foamText"),
+                bubs: q<HTMLElement>("#bubbles"),
+            };
+        }
+
+        convertVolTemp(v: number, t: number): { v: number; t: number } {
+            if (this.state.units !== 'imperial') return { v, t };
+            return { v: v / 0.264172, t: (t - 32) * 5 / 9 };
+        }
+
+        applyResults(els: ReturnType<typeof this.getEls>) {
+            if (!els.vol || !els.temp || !els.co2) return;
+            const conv = this.convertVolTemp(parseFloat(els.vol.value), parseFloat(els.temp.value));
+            const res = calculatePrimingSugar(conv.v, parseFloat(els.co2.value), conv.t);
+            if (els.cDisp) els.cDisp.innerText = els.co2.value;
+            if (els.rT) els.rT.innerText = res.tableSugar + " g";
+            if (els.rC) els.rC.innerText = res.cornSugar + " g";
+            if (els.rD) els.rD.innerText = res.dme + " g";
+        }
+
+        getFoamState(co2: number): { text: string; cls: string } {
+            if (co2 > 3.5) return { text: this.ui.safetyTitle, cls: "foam-text foam-text-red" };
+            if (co2 < 1.8) return { text: this.ui.lowCarbonation, cls: "foam-text foam-text-muted" };
+            if (co2 < 2.8) return { text: this.ui.optimalCarbonation, cls: "foam-text foam-text-amber" };
+            return { text: this.ui.highEffervescence, cls: "foam-text foam-text-orange" };
+        }
+
+        applyFoam(els: ReturnType<typeof this.getEls>) {
+            if (!els.co2 || !els.foam || !els.fText || !els.safe) return;
+            const co2 = parseFloat(els.co2.value);
+            els.foam.style.height = (20 + (co2 - 1) / 3.5 * 100) + "px";
+            els.safe.style.display = co2 > 3.5 ? "flex" : "none";
+            const foam = this.getFoamState(co2);
+            els.fText.innerText = foam.text; els.fText.className = foam.cls;
+            if (els.bubs) this.setBubs(co2, els.bubs);
+        }
+
+        init() {
+            const els = this.getEls();
+            const update = () => { this.applyResults(els); this.applyFoam(els); };
+            if (els.vol) els.vol.oninput = update;
+            if (els.temp) els.temp.oninput = update;
+            if (els.co2) els.co2.oninput = update;
+            if (els.mBtn) els.mBtn.onclick = () => this.switchMetric(els);
+            if (els.iBtn) els.iBtn.onclick = () => this.switchImperial(els);
+            this.querySelectorAll<HTMLButtonElement>(".preset-btn").forEach(b => {
+                b.onclick = () => { if (els.co2) { els.co2.value = b.dataset.val ?? '2.4'; update(); } };
+            });
+            update();
+        }
+
+        switchMetric(els: ReturnType<typeof this.getEls>) {
+            if (this.state.units !== 'imperial' || !els.vol || !els.temp || !els.mBtn || !els.iBtn || !els.vUnit || !els.tUnit) return;
+            els.vol.value = (parseFloat(els.vol.value) / 0.264172).toFixed(1);
+            els.temp.value = String(Math.round((parseFloat(els.temp.value) - 32) * 5 / 9));
+            this.state.units = 'metric';
+            els.vUnit.innerText = this.ui.litersUnit; els.tUnit.innerText = this.ui.celsiusUnit;
+            els.mBtn.className = "unit-btn unit-btn-active"; els.iBtn.className = "unit-btn";
+            this.applyResults(els); this.applyFoam(els);
+        }
+
+        switchImperial(els: ReturnType<typeof this.getEls>) {
+            if (this.state.units !== 'metric' || !els.vol || !els.temp || !els.mBtn || !els.iBtn || !els.vUnit || !els.tUnit) return;
+            els.vol.value = (parseFloat(els.vol.value) * 0.264172).toFixed(1);
+            els.temp.value = String(Math.round(parseFloat(els.temp.value) * 9 / 5 + 32));
+            this.state.units = 'imperial';
+            els.vUnit.innerText = this.ui.gallonsUnit; els.tUnit.innerText = this.ui.fahrenheitUnit;
+            els.iBtn.className = "unit-btn unit-btn-active"; els.mBtn.className = "unit-btn";
+            this.applyResults(els); this.applyFoam(els);
+        }
+
+        setBubs(co2: number, container: HTMLElement) {
+            if (container.children.length === 0) {
+                for (let i = 0; i < 30; i++) {
+                    const b = document.createElement("div"); b.className = "calc-b";
+                    const s = 2 + Math.random() * 5; b.style.width = s + "px"; b.style.height = s + "px";
+                    b.style.left = Math.random() * 100 + "%"; b.style.animationDelay = Math.random() * 5 + "s";
+                    b.style.setProperty("--s", String(0.7 + Math.random())); container.appendChild(b);
+                }
+            }
+            const dur = 4 * (2 / Math.max(1, co2));
+            Array.from(container.children).forEach(b => (b as HTMLElement).style.animationDuration = (dur + Math.random()) + "s");
+        }
+    }
+    customElements.define("carbonation-calculator", CarbonationCalculator);
+</script>
