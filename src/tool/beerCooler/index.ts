@@ -1,5 +1,7 @@
 import type { AlcoholToolEntry, ToolLocaleContent, ToolDefinition } from '../../types';
 import BeerCoolerCalculator from './component.astro';
+import BeerCoolerSEO from './seo.astro';
+import BeerCoolerBibliography from './bibliography.astro';
 
 export interface BeerCoolerUI {
   [key: string]: string;
@@ -46,4 +48,6 @@ export { BeerCoolerCalculator };
 export const BEER_COOLER_TOOL: ToolDefinition = {
   entry: beerCooler as AlcoholToolEntry<Record<string, string>>,
   Component: BeerCoolerCalculator,
+  SEOComponent: BeerCoolerSEO,
+  BibliographyComponent: BeerCoolerBibliography,
 };

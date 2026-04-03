@@ -1,5 +1,7 @@
 import type { AlcoholToolEntry, ToolLocaleContent, ToolDefinition } from '../../types';
 import PartyKegCalculator from './component.astro';
+import PartyKegSEO from './seo.astro';
+import PartyKegBibliography from './bibliography.astro';
 
 export interface PartyKegUI {
   [key: string]: string;
@@ -43,4 +45,6 @@ export { PartyKegCalculator };
 export const PARTY_KEG_TOOL: ToolDefinition = {
   entry: partyKeg as AlcoholToolEntry<Record<string, string>>,
   Component: PartyKegCalculator,
+  SEOComponent: PartyKegSEO,
+  BibliographyComponent: PartyKegBibliography,
 };
