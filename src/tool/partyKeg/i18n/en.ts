@@ -2,8 +2,8 @@ import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PartyKegUI, PartyKegLocaleContent } from '../index';
 
 const slug = 'party-stock-calculator';
-const title = 'Party Beer & Ice Calculator';
-const description = 'Calculate how much alcohol and how many bags of ice you need for your party based on guests, duration and temperature.';
+const title = 'Party Beer Calculator: Amount Per Person for Weddings & Birthdays';
+const description = 'Free tool to calculate how much beer and ice you need based on guests, duration and temperature. Perfect for weddings, birthdays and outdoor events.';
 
 const ui: PartyKegUI = {
   calcStockTitle: 'Stock Calculator',
@@ -36,11 +36,15 @@ const faq: PartyKegLocaleContent['faq'] = [
   },
   {
     question: "How much ice do I need for 100 beers?",
-    answer: "You will need approximately 15-20 kilos of ice (7-10 bags). The general rule is 1kg of ice for every liter of drink if it's hot (>25°C).",
+    answer: "You will need approximately 15-20 kilos of ice (7-10 bags). The practical rule is 0.75kg of ice per liter of drink under normal conditions. In summer or outdoors above 25°C, raise that to 1kg per liter: ambient heat accelerates melting and you will run out much sooner than expected.",
   },
   {
     question: "What is the difference between a standard keg and a party keg?",
     answer: "A standard commercial keg holds 50 liters, which yields approximately 200 servings (250ml each). A party keg (mini-keg) typically holds 5 liters — about 20 servings. Knowing these sizes helps you translate the calculator's liter output into the number of containers to purchase.",
+  },
+  {
+    question: "Why do I need so much ice if the beers are already cold?",
+    answer: "Because cooling and maintaining are two separate processes. Bringing a can from 25°C to 4°C consumes the latent heat of fusion of the ice: around 334 kJ/kg. Once cold, ice keeps working to offset ambient heat. On a summer day at 35°C, heat transfer into the cooler can melt 1kg of ice per liter of drink every 2-3 hours. That is why pre-chilling your drinks before the party cuts your total ice consumption in half.",
   },
 ];
 
@@ -62,11 +66,11 @@ const howTo: PartyKegLocaleContent['howTo'] = [
 const bibliography: PartyKegLocaleContent['bibliography'] = [
   {
     name: "Event Planning: Alcohol & Bar Calculations - Spruce Eats",
-    url: "https://www.thespruceeats.com/how-much-alcohol-for-a-party-1191060",
+    url: "https://www.thespruceeats.com/stock-your-bar-for-a-party-760394",
   },
   {
     name: "Thermodynamics of Ice Melting - Engineering Toolbox",
-    url: "https://www.engineeringtoolbox.com/ice-thermal-properties-d_156.html",
+    url: "https://www.engineeringtoolbox.com/saturated-ice-steam-d_970.html",
   },
 ];
 

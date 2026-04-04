@@ -88,11 +88,11 @@ const howTo: CocktailBalancerLocaleContent['howTo'] = [
 const bibliography: CocktailBalancerLocaleContent['bibliography'] = [
   {
     name: "Liquid Intelligence: The Art and Science of the Perfect Cocktail",
-    url: "http://www.cookingissues.com/index.html%3Fp=4587.html",
+    url: "https://www.indigo.ca/en-ca/liquid-intelligence-the-art-and-science-of-the-perfect-cocktail/9780393089035.html",
   },
   {
-    name: "The Bar Book: Elements of Cocktail Technique - Jeffrey Morgenthaler",
-    url: "https://jeffreymorgenthaler.com/the-bar-book/",
+    name: "Cocktails: The Science of Shaking",
+    url: "https://cookingissues.com/2009/07/22/cocktails-the-science-of-shaking/",
   },
   {
     name: "Cocktail Balance - Difford's Guide",

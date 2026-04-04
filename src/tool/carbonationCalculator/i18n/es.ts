@@ -3,7 +3,7 @@ import type { CarbonationUI, CarbonationLocaleContent } from '../index';
 
 const slug = 'calculadora-carbonatacion';
 const title = 'Calculadora de Carbonatación y Priming';
-const description = 'Calcula la cantidad exacta de azúcar para embotellar tu cerveza casera según el volumen, la temperatura y el estilo.';
+const description = 'Calcula los gramos exactos de Dextrosa, Azúcar de Mesa o DME (Extracto de Malta Seco) para embotellar tu cerveza casera. Introduce el volumen, la temperatura de fermentación y el estilo para un priming perfecto.';
 
 const ui: CarbonationUI = {
   parametersTitle: 'Parámetros',
@@ -34,7 +34,7 @@ const bibliographyTitle = 'Bibliografía y Fuentes';
 const faq: CarbonationLocaleContent['faq'] = [
   {
     question: "¿Por qué influye la temperatura en el cálculo?",
-    answer: "El CO2 residual que ya tiene tu cerveza depende de la temperatura máxima alcanzada tras la fermentación. El líquido frío retiene más gas disuelto que el caliente.",
+    answer: "El CO2 residual que ya tiene tu cerveza depende de la temperatura máxima alcanzada tras la fermentación: el líquido frío retiene más gas disuelto que el caliente. Si introduces una temperatura más baja de la real, la calculadora asumirá más residual del que hay y te dará menos azúcar del necesario. Si la introduces más alta, ocurre lo contrario: añadirás más azúcar de la cuenta y entrarás en la zona de peligro de las bombas de botella — botellas que explotan por exceso de presión.",
   },
   {
     question: "¿Qué azúcar es mejor para el priming?",
@@ -43,6 +43,10 @@ const faq: CarbonationLocaleContent['faq'] = [
   {
     question: "¿Qué pasa si añado demasiado azúcar de priming?",
     answer: "Un exceso de azúcar genera una presión de CO2 excesiva dentro de la botella. Las botellas de vidrio estándar fallan a partir de 3.5-4.0 volúmenes de CO2. Por encima de este punto, la botella puede romperse violentamente o el tapón puede saltar disparado. Por eso la precisión es crítica — incluso 5 gramos extra por litro pueden llevar un lote a la zona de peligro.",
+  },
+  {
+    question: "¿Cuánto tiempo tarda la cerveza en carbonatarse tras el embotellado?",
+    answer: "Entre 2 y 3 semanas a temperatura ambiente (18-22°C) es el rango habitual para que la levadura fermente completamente el azúcar añadido y el CO2 se integre en el líquido. Abrir una botella antes de que el proceso termine da siempre una lectura engañosa: la cerveza parecerá poco carbonatada aunque el proceso siga en marcha. Con el DME el proceso puede ser ligeramente más lento por la complejidad de sus azúcares fermentables.",
   },
 ];
 
@@ -64,11 +68,11 @@ const howTo: CarbonationLocaleContent['howTo'] = [
 const bibliography: CarbonationLocaleContent['bibliography'] = [
   {
     name: "How to Brew: Carbonation Tables - John Palmer",
-    url: "http://howtobrew.com/book/section-1/priming-and-bottling/priming-solutions",
+    url: "https://howtobrew.com/section-1/chapter-11/",
   },
   {
     name: "BJCP Style Guidelines: Carbonation Levels",
-    url: "https://www.bjcp.org/stylecenter.php",
+    url: "https://www.bjcp.org/style/2021/beer/",
   },
 ];
 

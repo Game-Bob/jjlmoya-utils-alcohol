@@ -3,7 +3,7 @@ import type { CarbonationUI, CarbonationLocaleContent } from '../index';
 
 const slug = 'calculateur-carbonatation-biere';
 const title = 'Calculateur de Carbonatation et Priming';
-const description = 'Calculez la quantité exacte de sucre pour embouteiller votre bière artisanale selon le volume, la température et le style.';
+const description = 'Calculez les grammes exacts de Dextrose, Sucre de Table ou DME (Extrait de Malt Sec) pour embouteiller votre bière artisanale. Entrez le volume, la température de fermentation et le style pour un priming parfait.';
 
 const ui: CarbonationUI = {
   parametersTitle: 'Paramètres',
@@ -34,7 +34,7 @@ const bibliographyTitle = 'Bibliographie & Sources';
 const faq: CarbonationLocaleContent['faq'] = [
   {
     question: "Pourquoi la température influence-t-elle le calcul ?",
-    answer: "Le CO2 résiduel déjà présent dans votre bière dépend de la température maximale atteinte après la fermentation. Un liquide froid retient plus de gaz dissous qu'un liquide chaud.",
+    answer: "Le CO2 résiduel dans votre bière dépend de la température maximale atteinte après la fermentation : un liquide froid retient plus de gaz dissous qu'un liquide chaud. Si vous entrez une température inférieure à la réalité, le calculateur suppose plus de CO2 résiduel qu'il n'en existe et vous donne moins de sucre que nécessaire. À l'inverse, une température trop haute vous pousse à ajouter trop de sucre et fait basculer votre lot dans la zone de danger des bombes de bouteilles — des bouteilles qui explosent sous l'excès de pression.",
   },
   {
     question: "Quel sucre est le meilleur pour le priming ?",
@@ -43,6 +43,10 @@ const faq: CarbonationLocaleContent['faq'] = [
   {
     question: "Que se passe-t-il si j'ajoute trop de sucre de priming ?",
     answer: "Un excès de sucre génère une pression de CO2 excessive à l'intérieur de la bouteille. Les bouteilles en verre standard cèdent à environ 3,5-4,0 volumes de CO2. Au-delà, la bouteille peut se rompre violemment ou le bouchon peut sauter. C'est pourquoi la précision est essentielle — même 5 grammes de plus par litre peuvent faire basculer un lot dans la zone de danger.",
+  },
+  {
+    question: "Combien de temps faut-il pour que la bière se carbonate après la mise en bouteille ?",
+    answer: "Entre 2 et 3 semaines à température ambiante (18-22°C) est la plage habituelle pour que la levure fermente complètement le sucre ajouté et que le CO2 s'intègre au liquide. Ouvrir une bouteille avant la fin du processus donne toujours un résultat trompeur : la bière semblera peu carbonatée alors que la carbonatation est toujours en cours. Avec le DME, le processus peut être légèrement plus lent en raison de la complexité de ses sucres fermentescibles.",
   },
 ];
 
@@ -64,11 +68,11 @@ const howTo: CarbonationLocaleContent['howTo'] = [
 const bibliography: CarbonationLocaleContent['bibliography'] = [
   {
     name: "How to Brew: Carbonation Tables - John Palmer",
-    url: "http://howtobrew.com/book/section-1/priming-and-bottling/priming-solutions",
+    url: "https://howtobrew.com/section-1/chapter-11/",
   },
   {
     name: "BJCP Style Guidelines: Carbonation Levels",
-    url: "https://www.bjcp.org/stylecenter.php",
+    url: "https://www.bjcp.org/style/2021/beer/",
   },
 ];
 

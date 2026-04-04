@@ -2,8 +2,8 @@ import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { AlcoholClearanceUI, AlcoholClearanceLocaleContent } from '../index';
 
 const slug = 'calculateur-elimination-alcohol';
-const title = 'Calculateur d\'Alcooolémie et Métabolisme';
-const description = 'Estimez votre taux d\'alcoolémie (BAC) et le temps nécessaire à votre corps pour éliminer l\'alcool selon la formule de Widmark.';
+const title = 'Calculateur de Gueule de Bois et Alcoolémie : Prédicteur de Récupération';
+const description = 'Calculez votre alcoolémie (BAC) et le temps jusqu\'à 0,0 selon la formule de Widmark. Planifiez votre hydratation pré-sommeil et sachez quand vous serez complètement rétabli.';
 
 const ui: AlcoholClearanceUI = {
   biologicalSexLabel: 'Sexe Biologique',
@@ -35,23 +35,35 @@ const bibliographyTitle = 'Bibliographie & Sources';
 
 const faq: AlcoholClearanceLocaleContent['faq'] = [
   {
-    question: "Qu'est-ce que la formule de Widmark ?",
-    answer: "C'est le modèle standard de pharmacocinétique qui relie la quantité d'alcool ingérée au poids corporel et à un facteur de distribution selon le sexe biologique.",
-  },
-  {
-    question: "Le café peut-il accélérer l'élimination de l'alcool ?",
-    answer: "Non. Le foie élimine l'alcool à un taux constant (environ 0,15 g/L par heure). Le café peut vous réveiller, mais ne réduit pas le taux d'alcool dans le sang.",
+    question: "Qu'est-ce qu'une Unité Standard de Boisson et combien chaque verre en contient-il ?",
+    answer: "Une Unité Standard de Boisson contient environ 10 grammes d'alcool pur (définition européenne). Une bière ordinaire (330ml à 5%) représente ~1,3 unité, un verre de vin (150ml à 12%) ~1,4 unité et un shot (40ml à 40%) ~1,3 unité. Connaître les unités de ce que vous buvez est essentiel pour interpréter correctement les résultats du calculateur.",
   },
   {
     question: "Pourquoi le sexe biologique affecte-t-il le calcul de l'alcoolémie ?",
     answer: "Le sexe biologique influence le facteur de Widmark 'r', qui représente l'eau corporelle totale en fraction du poids. Les hommes ont en moyenne r=0,68 car ils ont proportionnellement plus d'eau corporelle. Les femmes ont en moyenne r=0,55 en raison d'un pourcentage plus élevé de graisses corporelles, qui retiennent moins l'alcool. Ainsi, à boissons et poids égaux, les femmes auront un BAC plus élevé.",
   },
+  {
+    question: "Le café, l'eau ou le sport peuvent-ils accélérer l'élimination de l'alcool ?",
+    answer: "Non. Le foie élimine l'alcool à un taux constant d'environ 0,15 g/L par heure (cinétique d'ordre zéro). Le café peut masquer la fatigue, l'eau aide contre la déshydratation et le sport améliore le bien-être général — mais aucun ne réduit votre alcoolémie réelle. Seul le temps élimine l'alcool du sang.",
+  },
+  {
+    question: "Manger après avoir bu aide-t-il à faire baisser l'alcoolémie ?",
+    answer: "Manger après avoir bu ne réduit pas l'alcool déjà présent dans le sang. Là où la nourriture fait une énorme différence, c'est avant ou pendant la consommation : les aliments dans l'estomac — notamment les protéines et les graisses — ralentissent l'absorption gastrique et peuvent réduire le BAC maximum atteint jusqu'à 50 %. Une fois l'alcool absorbé, seul le métabolisme hépatique peut l'éliminer.",
+  },
+  {
+    question: "Combien de temps faut-il pour atteindre 0,0 ?",
+    answer: "Cela dépend de votre BAC initial. Divisez votre alcoolémie estimée (en g/L) par 0,15 pour obtenir le nombre d'heures approximatif. Par exemple, un BAC de 1,5 g/L nécessite environ 10 heures. Le foie ne s'arrête jamais : il traite l'alcool même pendant le sommeil. Attention : il peut encore y avoir de l'alcool dans le sang même si vous vous sentez complètement rétabli.",
+  },
+  {
+    question: "Ce calculateur est-il fiable à 100 % pour décider si je peux conduire ?",
+    answer: "Non. Cet outil est une estimation théorique basée sur la formule de Widmark. Des facteurs comme l'alimentation, les médicaments, la fatigue, les variants génétiques de l'enzyme ADH et le stress peuvent faire dévier votre alcoolémie réelle de 20 à 30 % dans les deux sens. N'utilisez jamais ce calculateur pour décider de conduire. Si vous avez bu, ne conduisez pas — c'est la seule règle sans marge d'erreur.",
+  },
 ];
 
 const bibliography: AlcoholClearanceLocaleContent['bibliography'] = [
   {
-    name: "Widmark's Formula for BAC Calculation - Forensic Science Lab",
-    url: "https://www.forensic-science.com/widmark-formula",
+    name: "Alcohol calculations and their uncertainty - PMC",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4361698/",
   },
   {
     name: "Alcohol Metabolism: How the body processes alcohol - NIH",

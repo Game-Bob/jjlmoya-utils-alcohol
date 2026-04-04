@@ -3,7 +3,7 @@ import type { CarbonationUI, CarbonationLocaleContent } from '../index';
 
 const slug = 'beer-carbonation-calculator';
 const title = 'Beer Carbonation & Priming Calculator';
-const description = 'Calculate the exact amount of sugar for bottling your homebrew beer based on volume, temperature and style.';
+const description = 'Calculate the exact grams of Dextrose, Table Sugar or DME (Dry Malt Extract) for bottling your homebrew. Enter your volume, fermentation temperature and style for a perfect priming.';
 
 const ui: CarbonationUI = {
   parametersTitle: 'Parameters',
@@ -34,7 +34,7 @@ const bibliographyTitle = 'Bibliography & Sources';
 const faq: CarbonationLocaleContent['faq'] = [
   {
     question: "Why does temperature matter for carbonation?",
-    answer: "The residual CO2 in your beer depends on the highest temperature reached after fermentation. Cold liquid holds more dissolved gas than warm liquid.",
+    answer: "The residual CO2 in your beer depends on the highest temperature reached after fermentation: cold liquid holds more dissolved gas than warm liquid. If you enter a temperature lower than the actual one, the calculator assumes more residual CO2 than is really there and gives you less sugar than needed. Enter it too high and the opposite happens — you add more sugar than necessary and push your batch into bottle bomb territory, where excess pressure causes bottles to rupture or caps to blow off violently.",
   },
   {
     question: "What sugar is best for priming?",
@@ -43,6 +43,10 @@ const faq: CarbonationLocaleContent['faq'] = [
   {
     question: "What happens if I add too much priming sugar?",
     answer: "Over-priming generates excess CO2 pressure inside the bottle. Standard glass bottles fail at approximately 3.5-4.0 volumes of CO2. Beyond this point, the bottle can rupture or the cap can blow off violently. This is why precision matters — even 5 extra grams per liter can push a batch into the danger zone.",
+  },
+  {
+    question: "How long does beer take to carbonate after bottling?",
+    answer: "Between 2 and 3 weeks at room temperature (18-22°C) is the typical range for yeast to fully ferment the added sugar and for CO2 to integrate into the liquid. Opening a bottle before the process is complete always gives a misleading result: the beer will seem under-carbonated even though carbonation is still developing. With DME the process can be slightly slower due to the complexity of its fermentable sugars.",
   },
 ];
 
@@ -64,11 +68,11 @@ const howTo: CarbonationLocaleContent['howTo'] = [
 const bibliography: CarbonationLocaleContent['bibliography'] = [
   {
     name: "How to Brew: Carbonation Tables - John Palmer",
-    url: "http://howtobrew.com/book/section-1/priming-and-bottling/priming-solutions",
+    url: "https://howtobrew.com/section-1/chapter-11/",
   },
   {
     name: "BJCP Style Guidelines: Carbonation Levels",
-    url: "https://www.bjcp.org/stylecenter.php",
+    url: "https://www.bjcp.org/style/2021/beer/",
   },
 ];
 

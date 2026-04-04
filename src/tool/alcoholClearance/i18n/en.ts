@@ -2,8 +2,8 @@ import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { AlcoholClearanceUI, AlcoholClearanceLocaleContent } from '../index';
 
 const slug = 'alcohol-clearance-calculator';
-const title = 'BAC & Alcohol Metabolism Calculator';
-const description = 'Estimate your Blood Alcohol Content (BAC) and the time needed for your body to eliminate alcohol based on Widmark\'s formula.';
+const title = 'Hangover & BAC Calculator: Recovery Predictor';
+const description = 'Calculate your Blood Alcohol Content (BAC) and time to reach 0.0 using Widmark\'s formula. Plan your pre-sleep hydration and know when you\'ll be fully recovered.';
 
 const ui: AlcoholClearanceUI = {
   biologicalSexLabel: 'Biological Sex',
@@ -35,23 +35,35 @@ const bibliographyTitle = 'Bibliography & Sources';
 
 const faq: AlcoholClearanceLocaleContent['faq'] = [
   {
-    question: "What is Widmark's formula?",
-    answer: "It is the standard pharmacokinetics model that relates the amount of alcohol ingested with body weight and a distribution factor based on biological sex.",
-  },
-  {
-    question: "Can coffee speed up alcohol elimination?",
-    answer: "No. The liver eliminates alcohol at a constant rate (approx. 0.15 g/L per hour). Coffee may make you feel more alert, but it doesn't reduce blood alcohol levels.",
+    question: "What is a Standard Drink Unit and how much is in each drink?",
+    answer: "A Standard Drink Unit contains approximately 10 grams of pure alcohol (UK/EU definition; 14g in the US). A regular beer (330ml at 5%) contains ~1.3 units, a glass of wine (150ml at 12%) ~1.4 units, and a shot (40ml at 40%) ~1.3 units. Knowing the units in what you drink is essential for interpreting the calculator's results correctly.",
   },
   {
     question: "Why does biological sex affect BAC calculations?",
-    answer: "Biological sex influences the Widmark factor 'r', which represents total body water as a fraction of weight. Men average r=0.68 because they have proportionally more body water. Women average r=0.55 due to higher body fat percentages, which holds less alcohol. This means for the same drinks and weight, women will have a higher BAC.",
+    answer: "Biological sex influences the Widmark factor 'r', which represents total body water as a fraction of weight. Men average r=0.68 because they have proportionally more body water. Women average r=0.55 due to a higher percentage of body fat, which retains less alcohol. This means that for the same drinks and body weight, women will reach a higher BAC.",
+  },
+  {
+    question: "Can coffee, water or exercise speed up alcohol elimination?",
+    answer: "No. The liver eliminates alcohol at a constant rate of approximately 0.15 g/L per hour (zero-order kinetics). Coffee can mask tiredness, water helps with dehydration, and exercise improves general wellbeing — but none of them reduce your actual BAC. Only time eliminates alcohol from the blood.",
+  },
+  {
+    question: "Does eating after drinking help lower BAC?",
+    answer: "Eating after drinking does not reduce the alcohol already in your bloodstream. Where food makes a huge difference is before or during drinking: food in the stomach — especially proteins and fats — slows gastric absorption and can reduce your peak BAC by up to 50%. Once alcohol is absorbed, only hepatic metabolism can eliminate it.",
+  },
+  {
+    question: "How long does it take to reach 0.0 BAC?",
+    answer: "It depends on your starting BAC. Divide your estimated BAC (in g/L) by 0.15 to get the approximate hours. For example, a BAC of 1.5 g/L takes around 10 hours. The liver never stops: it processes alcohol even while you sleep. But be aware — alcohol can still be present in your blood even when you feel completely recovered.",
+  },
+  {
+    question: "Is this calculator 100% reliable for deciding whether to drive?",
+    answer: "No. This tool is a theoretical estimate based on Widmark's formula. Factors such as food intake, medications, fatigue, genetic ADH enzyme variants, and stress can shift your actual BAC by 20–30% in either direction. Never use this calculator to decide whether to drive. If you have been drinking, do not drive — that is the only rule with zero margin for error.",
   },
 ];
 
 const bibliography: AlcoholClearanceLocaleContent['bibliography'] = [
   {
-    name: "Widmark's Formula for BAC Calculation - Forensic Science Lab",
-    url: "https://www.forensic-science.com/widmark-formula",
+    name: "Alcohol calculations and their uncertainty - PMC",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4361698/",
   },
   {
     name: "Alcohol Metabolism: How the body processes alcohol - NIH",

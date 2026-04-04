@@ -2,8 +2,8 @@ import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PartyKegUI, PartyKegLocaleContent } from '../index';
 
 const slug = 'calculadora-barriles-fiesta';
-const title = 'Calculadora de Cerveza y Hielo para Eventos';
-const description = 'Calcula cuánto alcohol y cuántas bolsas de hielo necesitas para tu fiesta según los invitados, la duración y la temperatura.';
+const title = 'Calculadora de Cerveza para Fiestas: Cantidad por Persona, Boda o Cumpleaños';
+const description = 'Herramienta gratuita para calcular cuánta cerveza y hielo necesitas según los invitados, la duración y la temperatura. Perfecta para bodas, cumpleaños y eventos al aire libre.';
 
 const ui: PartyKegUI = {
   calcStockTitle: 'Calculadora de Stock',
@@ -36,11 +36,15 @@ const faq: PartyKegLocaleContent['faq'] = [
   },
   {
     question: "¿Cuánto hielo necesito para 100 cervezas?",
-    answer: "Necesitarás aproximadamente 15-20 kilos de hielo (7-10 bolsas). La regla general es 1kg de hielo por cada litro de bebida si hace calor (>25°C).",
+    answer: "Necesitarás aproximadamente 15-20 kilos de hielo (7-10 bolsas). La regla práctica es 0.75kg de hielo por cada litro de bebida en condiciones normales. En verano o en exteriores con más de 25°C, sube a 1kg por litro: el calor ambiental acelera la fusión y te quedas sin hielo mucho antes de lo esperado.",
   },
   {
     question: "¿Cuál es la diferencia entre un barril estándar y un barril de fiesta?",
     answer: "Un barril comercial estándar contiene 50 litros, lo que equivale a unas 200 raciones de 250ml. Un barril de fiesta (mini-barril) suele contener 5 litros — unas 20 raciones. Conocer estos volúmenes te ayuda a convertir la salida en litros de la calculadora al número de envases que debes comprar.",
+  },
+  {
+    question: "¿Por qué necesito tanto hielo si las cervezas ya están frías?",
+    answer: "Porque enfriar y mantener son dos procesos distintos. Llevar una lata de 25°C a 4°C consume el calor latente de fusión del hielo: unos 334 kJ/kg. Una vez fría, el hielo sigue trabajando para compensar el calor del ambiente. En un día de verano a 35°C, la transferencia de calor al recipiente puede fundir 1kg de hielo por litro de bebida cada 2-3 horas. Por eso pre-enfriar las bebidas antes de la fiesta reduce el consumo de hielo a la mitad.",
   },
 ];
 
@@ -62,11 +66,11 @@ const howTo: PartyKegLocaleContent['howTo'] = [
 const bibliography: PartyKegLocaleContent['bibliography'] = [
   {
     name: "Event Planning: Alcohol & Bar Calculations - Spruce Eats",
-    url: "https://www.thespruceeats.com/how-much-alcohol-for-a-party-1191060",
+    url: "https://www.thespruceeats.com/stock-your-bar-for-a-party-760394",
   },
   {
     name: "Thermodynamics of Ice Melting - Engineering Toolbox",
-    url: "https://www.engineeringtoolbox.com/ice-thermal-properties-d_156.html",
+    url: "https://www.engineeringtoolbox.com/saturated-ice-steam-d_970.html",
   },
 ];
 

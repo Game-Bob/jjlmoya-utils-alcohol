@@ -2,8 +2,8 @@ import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PartyKegUI, PartyKegLocaleContent } from '../index';
 
 const slug = 'calculateur-fete-fût';
-const title = 'Calculateur de Bière et Glace pour Événements';
-const description = 'Calculez la quantité d\'alcool et de sacs de glace dont vous avez besoin pour votre fête selon les invités, la durée et la température.';
+const title = 'Calculateur de Bière pour Fêtes : Quantité par Personne, Mariage ou Anniversaire';
+const description = 'Outil gratuit pour calculer la quantité de bière et de glace selon les invités, la durée et la température. Idéal pour les mariages, anniversaires et événements en plein air.';
 
 const ui: PartyKegUI = {
   calcStockTitle: 'Calculateur de Stock',
@@ -35,12 +35,16 @@ const faq: PartyKegLocaleContent['faq'] = [
     answer: "En moyenne, on compte 1 à 1,5 bière par heure par personne pour une fête standard. Pour un événement plus intense comme un Beer Pong, cela peut monter à 2 ou plus.",
   },
   {
-    question: "Pourquoi ai-je besoin de tant de glace ?",
-    answer: "La glace ne sert pas seulement à refroidir, mais à compenser la perte thermique. Dans un environnement chaud, jusqu'à 30% de la glace peut fondre avant même le début de l'événement.",
+    question: "Combien de glace faut-il pour 100 bières ?",
+    answer: "Il vous faudra environ 15 à 20 kilos de glace (7 à 10 sacs). La règle pratique est de 0,75 kg de glace par litre de boisson dans des conditions normales. En été ou en extérieur à plus de 25°C, montez à 1 kg par litre : la chaleur ambiante accélère la fonte et vous manquerez de glace bien plus tôt que prévu.",
   },
   {
     question: "Quelle est la différence entre un fût standard et un mini-fût ?",
     answer: "Un fût commercial standard contient 50 litres, soit environ 200 portions de 250ml. Un mini-fût de fête contient généralement 5 litres — environ 20 portions. Connaître ces volumes vous aide à convertir la sortie en litres du calculateur en nombre de contenants à acheter.",
+  },
+  {
+    question: "Pourquoi ai-je besoin d'autant de glace si les bières sont déjà froides ?",
+    answer: "Parce que refroidir et maintenir sont deux processus distincts. Amener une canette de 25°C à 4°C consomme la chaleur latente de fusion de la glace : environ 334 kJ/kg. Une fois froide, la glace continue de travailler pour compenser la chaleur ambiante. Par une journée d'été à 35°C, les transferts thermiques peuvent faire fondre 1 kg de glace par litre de boisson toutes les 2 à 3 heures. C'est pourquoi pré-refroidir les boissons avant la fête réduit la consommation de glace de moitié.",
   },
 ];
 
@@ -61,12 +65,12 @@ const howTo: PartyKegLocaleContent['howTo'] = [
 
 const bibliography: PartyKegLocaleContent['bibliography'] = [
   {
-    name: "Event Planning: Beverage Calculation Guide",
-    url: "https://www.thespruceeats.com/how-much-alcohol-for-a-party-4158434",
+    name: "Event Planning: Alcohol & Bar Calculations - Spruce Eats",
+    url: "https://www.thespruceeats.com/stock-your-bar-for-a-party-760394",
   },
   {
-    name: "Ice Melt Rates and Cooling Efficiency",
-    url: "https://www.engineeringtoolbox.com/ice-melting-water-d_1594.html",
+    name: "Thermodynamics of Ice Melting - Engineering Toolbox",
+    url: "https://www.engineeringtoolbox.com/saturated-ice-steam-d_970.html",
   },
 ];
 

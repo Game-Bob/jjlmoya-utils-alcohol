@@ -72,12 +72,12 @@ const howTo: BeerCoolerLocaleContent['howTo'] = [
 
 const bibliography: BeerCoolerLocaleContent['bibliography'] = [
   {
-    name: "Newton's Law of Cooling - Physics Hypertextbook",
-    url: "https://physics.info/newton-cooling/",
+    name: "Newton's Law of Cooling - Wikipedia",
+    url: "https://en.wikipedia.org/wiki/Newton%27s_law_of_cooling",
   },
   {
-    name: "The Science of Better Beer - American Chemical Society",
-    url: "https://www.acs.org/content/acs/en/pressroom/reactions/videos/2016/the-science-of-better-beer.html",
+    name: "Advanced Chemistry of Beer and Brewing - American Chemical Society",
+    url: "https://www.acs.org/acs-webinars/library/advanced-chemistry-of-beer-and-brewing.html",
   },
 ];
 
