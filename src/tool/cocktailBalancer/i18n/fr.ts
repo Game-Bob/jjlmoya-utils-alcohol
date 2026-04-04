@@ -60,6 +60,10 @@ const faq: CocktailBalancerLocaleContent['faq'] = [
     question: "Pourquoi mes cocktails maison n'ont-ils pas le même goût qu'au bar ?",
     answer: "C'est généralement dû au manque d'équilibre entre le sucre et le pH de l'agrume. Les citrons varient en acidité selon la saison. Notre calculateur vous aide à ajuster la quantité exacte de sirop en fonction du volume de jus utilisé.",
   },
+  {
+    question: "Qu'est-ce que les degrés Brix et pourquoi sont-ils importants en cocktail ?",
+    answer: "Le Brix est une échelle qui mesure la quantité de sucre dissous dans un liquide. Un sirop simple (1:1) tourne autour de 50 °Brix ; un Rich Syrup (2:1) dépasse les 66 °Brix. Plus le Brix est élevé, plus il apporte de corps et de douceur par unité de volume. Le connaître permet de substituer des sirops dans une recette sans rompre l'équilibre.",
+  },
 ];
 
 const howTo: CocktailBalancerLocaleContent['howTo'] = [
@@ -74,6 +78,10 @@ const howTo: CocktailBalancerLocaleContent['howTo'] = [
   {
     name: "Ajuster le composant sucré",
     text: "Entrez le type de sirop (simple, 2:1, agave) et observez l'indicateur d'équilibre bouger en temps réel.",
+  },
+  {
+    name: "Service parfait",
+    text: "Consultez le verdict final de l'outil : le ratio Sour, l'ABV estimé après dilution et les suggestions de correction. Servez avec de la glace fraîche et ajustez l'agrume ou le sirop selon votre goût.",
   },
 ];
 

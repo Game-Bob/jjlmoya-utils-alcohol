@@ -1,9 +1,9 @@
 import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { BeerCoolerUI, BeerCoolerLocaleContent } from '../index';
 
-const slug = 'enfriador-cerveza';
-const title = 'Calculadora de Enfriamiento de Cerveza';
-const description = 'Calcula cuánto tiempo tarda tu cerveza en enfriarse en la nevera o el congelador según el envase.';
+const slug = 'calculadora-enfriamiento-cerveza';
+const title = 'Calculadora de Enfriamiento de Cerveza con la Ley de Newton';
+const description = 'Calcula con termodinámica real —la Ley de Enfriamiento de Newton— cuánto tarda tu cerveza en alcanzar la temperatura perfecta en nevera o congelador.';
 
 const ui: BeerCoolerUI = {
   step1Title: '¿Qué vas a enfriar?',
@@ -34,16 +34,24 @@ const bibliographyTitle = 'Bibliografía y Fuentes';
 
 const faq: BeerCoolerLocaleContent['faq'] = [
   {
-    question: "¿La cerveza se 'quema' si se enfría muy rápido?",
-    answer: "No. El mito de 'quemar' la cerveza por choque térmico es falso. Lo que sí puede afectarla es congelarla y descongelarla repetidamente, lo que rompe las proteínas y enturbia el líquido, o dejarla al sol (UV).",
+    question: "¿Cómo calcula esta herramienta el tiempo de enfriamiento?",
+    answer: "Aplica la Ley de Enfriamiento de Newton: T(t) = T_env + (T₀ - T_env) × e^(-kt). La constante k varía según el material del envase y el medio de enfriado. Una lata de aluminio en nevera tiene un k muy diferente al de una botella de vidrio en congelador. Los valores que usamos están calibrados con experimentos reales para cada combinación.",
   },
   {
-    question: "¿Por qué la espuma sale disparada si está caliente?",
-    answer: "Ley de Henry. La solubilidad del CO2 disminuye al aumentar la temperatura. En una cerveza caliente, el gas está 'desesperado' por escapar. Al abrirla, la presión baja y el gas se expande violentamente.",
+    question: "¿Funciona el truco del papel húmedo con sal en el congelador?",
+    answer: "Sí, y de forma notable. Envolver el envase en papel mojado con sal acelera el enfriamiento por dos razones: la evaporación del agua extrae calor adicional (enfriamiento evaporativo) y la sal baja el punto de congelación del agua, manteniendo el contacto húmedo más tiempo. Puedes bajar entre 2°C y 4°C extra en los primeros minutos respecto a meter la lata seca.",
   },
   {
     question: "¿Cuál es la temperatura de servicio ideal según el estilo de cerveza?",
-    answer: "Depende del estilo. Las Lagers y Pilsners están mejor entre 3°C y 7°C. Las IPAs y Pale Ales brillan entre 7°C y 10°C. Las Stouts, Porters y ales complejas deben servirse más cálidas, entre 10°C y 13°C, para que sus compuestos aromáticos se abran completamente.",
+    answer: "Depende del estilo. Las Lagers y Pilsners están mejor entre 3°C y 7°C. Las IPAs y Pale Ales brillan entre 7°C y 10°C. Las Stouts, Porters y ales complejas deben servirse más cálidas, entre 12°C y 14°C, para que sus compuestos aromáticos —café, chocolate, frutos secos— se expresen con plenitud.",
+  },
+  {
+    question: "¿Puede explotar mi cerveza si la dejo en el congelador?",
+    answer: "Sí. El alcohol y los azúcares bajan el punto de congelación de la cerveza respecto al agua pura: una Lager al 5% se congela en torno a los -3°C. Al cristalizarse el agua, el volumen aumenta y el CO2 disuelto eleva la presión interna hasta que el envase cede. Más de 60 minutos en el congelador con envases de vidrio es zona de riesgo real. Usa esta calculadora para no pasarte.",
+  },
+  {
+    question: "¿La cerveza se 'quema' si se enfría muy rápido?",
+    answer: "No. El mito del 'choque térmico' que arruina la cerveza es falso. Lo que sí puede afectarla negativamente es congelarla y descongelarla repetidamente —rompe proteínas y enturbia el líquido— o exponerla a luz UV directa. Un enfriamiento rápido en congelador o agua con hielo no daña el sabor.",
   },
 ];
 
@@ -158,8 +166,8 @@ const schemas: BeerCoolerLocaleContent['schemas'] = [
   {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
-    name: title,
-    description: description,
+    name: 'Calculadora de Enfriamiento de Cerveza – Ley de Newton',
+    description: 'Herramienta de termodinámica aplicada que calcula con la Ley de Enfriamiento de Newton el tiempo exacto para que tu cerveza alcance la temperatura de servicio ideal en nevera o congelador.',
     applicationCategory: 'UtilityApplication',
     operatingSystem: 'Web',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },

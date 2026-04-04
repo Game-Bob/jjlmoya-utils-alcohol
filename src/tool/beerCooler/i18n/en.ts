@@ -2,8 +2,8 @@ import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { BeerCoolerUI, BeerCoolerLocaleContent } from '../index';
 
 const slug = 'beer-cooler';
-const title = 'Beer Cooling Calculator';
-const description = 'Calculate how long it takes for your beer to cool down in the fridge or freezer based on its container.';
+const title = "Beer Cooling Calculator with Newton's Law";
+const description = "Calculate with real thermodynamics — Newton's Law of Cooling — exactly how long your beer needs to reach the perfect serving temperature in the fridge or freezer.";
 
 const ui: BeerCoolerUI = {
   step1Title: 'What are you cooling?',
@@ -34,16 +34,24 @@ const bibliographyTitle = 'Bibliography & Sources';
 
 const faq: BeerCoolerLocaleContent['faq'] = [
   {
-    question: "Does beer 'burn' if cooled too fast?",
-    answer: "No. The myth of beer 'burning' from heat shock is false. What can affect it is repeated freezing and thawing, which breaks proteins and clouds the liquid, or leaving it in the sun (UV rays).",
+    question: "How does this tool calculate cooling time?",
+    answer: "It applies Newton's Law of Cooling: T(t) = T_env + (T₀ - T_env) × e^(-kt). The constant k varies by container material and cooling medium. An aluminum can in a fridge has a very different k than a glass bottle in a freezer. The values used here are calibrated against real-world experiments for each combination.",
   },
   {
-    question: "Why does foam spray out if the beer is warm?",
-    answer: "Henry's Law. The solubility of CO2 decreases as temperature increases. In a warm beer, the gas is 'desperate' to escape. When opened, the pressure drops and the gas expands violently.",
+    question: "Does the wet paper towel trick with salt actually work?",
+    answer: "Yes, and quite noticeably. Wrapping the container in a damp paper towel with salt speeds cooling for two reasons: water evaporation draws out additional heat (evaporative cooling), and salt lowers the water's freezing point, keeping the moist contact active longer. You can gain an extra 2–4°C drop in the first few minutes compared to placing a dry can in the freezer.",
   },
   {
     question: "What is the ideal serving temperature for different beer styles?",
-    answer: "It depends on the style. Lagers and Pilsners are best served between 3°C and 7°C. IPAs and Pale Ales shine at 7°C to 10°C. Stouts, Porters and complex ales should be served warmer, around 10°C to 13°C, so their aromatic compounds can fully open up.",
+    answer: "It depends on the style. Lagers and Pilsners are best served between 3°C and 7°C. IPAs and Pale Ales shine at 7°C to 10°C. Stouts, Porters and complex ales should be served warmer, between 12°C and 14°C, so their aromatic compounds — coffee, chocolate, nuts — can express themselves fully.",
+  },
+  {
+    question: "Can my beer explode if I leave it in the freezer?",
+    answer: "Yes. Alcohol and dissolved sugars lower beer's freezing point below that of pure water: a standard 5% lager freezes around -3°C. As the water crystallizes, the volume increases and dissolved CO2 raises internal pressure until the container gives way. More than 60 minutes in the freezer — especially glass bottles — is a real danger zone. Use this calculator to avoid it.",
+  },
+  {
+    question: "Does beer 'burn' if cooled too quickly?",
+    answer: "No. The 'heat shock' myth that ruins beer is false. What can genuinely affect it is repeated freezing and thawing — which breaks proteins and clouds the liquid — or direct UV light exposure. A quick chill in the freezer or ice water does not harm the flavour.",
   },
 ];
 
@@ -105,7 +113,7 @@ const seo: BeerCoolerLocaleContent['seo'] = [
     items: [
       { label: 'Pilsner & Lager', value: '3°C - 7°C', icon: 'mdi:snowflake' },
       { label: 'IPA & Pale Ale', value: '7°C - 10°C', icon: 'mdi:hops' },
-      { label: 'Stout & Porter', value: '10°C - 13°C', icon: 'mdi:beer' }
+      { label: 'Stout & Porter', value: '12°C - 14°C', icon: 'mdi:beer' }
     ],
     columns: 3
   },
@@ -145,8 +153,8 @@ const schemas: BeerCoolerLocaleContent['schemas'] = [
   {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
-    name: title,
-    description: description,
+    name: "Beer Cooling Calculator – Newton's Law of Cooling",
+    description: 'Applied thermodynamics tool that uses Newton\'s Law of Cooling to calculate the exact time for your beer to reach the ideal serving temperature in a fridge or freezer.',
     applicationCategory: 'UtilityApplication',
     operatingSystem: 'Web',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },

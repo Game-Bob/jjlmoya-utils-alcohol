@@ -60,6 +60,10 @@ const faq: CocktailBalancerLocaleContent['faq'] = [
     question: "Why don't my home cocktails taste like those in a bar?",
     answer: "It's usually due to the lack of balance between sugar and the pH of the citrus. Lemons vary in acidity by season. Our calculator helps you adjust the exact amount of syrup based on the volume of juice used.",
   },
+  {
+    question: "What are Brix degrees and why do they matter in cocktails?",
+    answer: "Brix is a scale that measures the amount of dissolved sugar in a liquid. A simple syrup (1:1) sits around 50 °Brix; a Rich Syrup (2:1) exceeds 66 °Brix. The higher the Brix, the more body and sweetness it contributes per unit of volume. Knowing this lets you swap syrups in a recipe without breaking the balance.",
+  },
 ];
 
 const howTo: CocktailBalancerLocaleContent['howTo'] = [
@@ -74,6 +78,10 @@ const howTo: CocktailBalancerLocaleContent['howTo'] = [
   {
     name: "Adjust the sweet component",
     text: "Enter the type of syrup (simple, 2:1, agave) and watch the balance indicator move in real-time.",
+  },
+  {
+    name: "Perfect serving",
+    text: "Review the tool's final verdict: the Sour ratio, the estimated post-dilution ABV, and the correction suggestions. Serve with fresh ice and fine-tune the citrus or syrup to taste.",
   },
 ];
 

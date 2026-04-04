@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { PartyKegUI, PartyKegLocaleContent } from '../index';
 
-const slug = 'calculadora-fiesta-barril';
+const slug = 'calculadora-barriles-fiesta';
 const title = 'Calculadora de Cerveza y Hielo para Eventos';
 const description = 'Calcula cuánto alcohol y cuántas bolsas de hielo necesitas para tu fiesta según los invitados, la duración y la temperatura.';
 

@@ -2,8 +2,8 @@ import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { BeerCoolerUI, BeerCoolerLocaleContent } from '../index';
 
 const slug = 'refroidisseur-biere';
-const title = 'Calculateur de Refroidissement de Bière';
-const description = 'Calculez combien de temps il faut pour que votre bière refroidisse dans le frigo ou le congélateur selon son contenant.';
+const title = 'Calculateur de Refroidissement de Bière avec la Loi de Newton';
+const description = 'Calculez avec la thermodynamique réelle — la Loi du Refroidissement de Newton — combien de temps votre bière met à atteindre la température de service idéale au frigo ou au congélateur.';
 
 const ui: BeerCoolerUI = {
   step1Title: 'Que voulez-vous refroidir ?',
@@ -34,16 +34,24 @@ const bibliographyTitle = 'Bibliographie & Sources';
 
 const faq: BeerCoolerLocaleContent['faq'] = [
   {
-    question: "La bière 'brûle'-t-elle si elle est refroidie trop vite ?",
-    answer: "Non. Le mythe de la bière 'brûlée' par choc thermique est faux. Ce qui peut l'affecter, c'est la congélation et la décongélation répétées, ce qui brise les protéines et trouble le liquide, ou l'exposition au soleil (UV).",
+    question: "Comment cet outil calcule-t-il le temps de refroidissement ?",
+    answer: "Il applique la Loi du Refroidissement de Newton : T(t) = T_env + (T₀ - T_env) × e^(-kt). La constante k varie selon le matériau du contenant et le milieu de refroidissement. Une canette en aluminium dans un frigo a un k très différent d'une bouteille en verre dans un congélateur. Les valeurs utilisées sont calibrées sur des expériences réelles pour chaque combinaison.",
   },
   {
-    question: "Pourquoi la mousse jaillit-elle si la bière est chaude ?",
-    answer: "Loi de Henry. La solubilité du CO2 diminue à mesure que la température augmente. Dans une bière chaude, le gaz est 'désespéré' de s'échapper. À l'ouverture, la pression chute et le gaz se dilate violemment.",
+    question: "L'astuce du papier mouillé avec du sel fonctionne-t-elle vraiment ?",
+    answer: "Oui, et de façon notable. Envelopper le contenant dans du papier humide avec du sel accélère le refroidissement pour deux raisons : l'évaporation de l'eau extrait de la chaleur supplémentaire (refroidissement par évaporation) et le sel abaisse le point de congélation de l'eau, prolongeant le contact humide. Vous pouvez gagner 2 à 4°C supplémentaires dans les premières minutes par rapport à une canette sèche au congélateur.",
   },
   {
     question: "Quelle est la température de service idéale selon le style de bière ?",
-    answer: "Cela dépend du style. Les Lagers et Pilsners sont meilleures entre 3°C et 7°C. Les IPAs et Pale Ales s'épanouissent entre 7°C et 10°C. Les Stouts, Porters et ales complexes doivent être servis plus chauds, autour de 10°C à 13°C, pour que leurs composés aromatiques s'ouvrent pleinement.",
+    answer: "Cela dépend du style. Les Lagers et Pilsners sont meilleures entre 3°C et 7°C. Les IPAs et Pale Ales s'épanouissent entre 7°C et 10°C. Les Stouts, Porters et ales complexes doivent être servis plus chauds, entre 12°C et 14°C, pour que leurs composés aromatiques — café, chocolat, fruits secs — s'expriment pleinement.",
+  },
+  {
+    question: "Ma bière peut-elle exploser si je la laisse au congélateur ?",
+    answer: "Oui. L'alcool et les sucres dissous abaissent le point de congélation de la bière : une lager standard à 5% gèle vers -3°C. Lorsque l'eau se cristallise, le volume augmente et la pression interne du CO2 monte jusqu'à ce que le contenant cède. Plus de 60 minutes au congélateur — surtout en bouteille en verre — est une zone de risque réel. Utilisez ce calculateur pour l'éviter.",
+  },
+  {
+    question: "La bière 'brûle'-t-elle si elle est refroidie trop vite ?",
+    answer: "Non. Le mythe du 'choc thermique' qui abîme la bière est faux. Ce qui peut réellement l'affecter, c'est la congélation et la décongélation répétées — cela brise les protéines et trouble le liquide — ou l'exposition directe aux UV. Un refroidissement rapide au congélateur ou dans de l'eau glacée n'altère pas le goût.",
   },
 ];
 
@@ -105,7 +113,7 @@ const seo: BeerCoolerLocaleContent['seo'] = [
     items: [
       { label: 'Pilsner & Lager', value: '3°C - 7°C', icon: 'mdi:snowflake' },
       { label: 'IPA & Pale Ale', value: '7°C - 10°C', icon: 'mdi:hops' },
-      { label: 'Stout & Porter', value: '10°C - 13°C', icon: 'mdi:beer' }
+      { label: 'Stout & Porter', value: '12°C - 14°C', icon: 'mdi:beer' }
     ],
     columns: 3
   },
@@ -145,8 +153,8 @@ const schemas: BeerCoolerLocaleContent['schemas'] = [
   {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
-    name: title,
-    description: description,
+    name: 'Calculateur de Refroidissement de Bière – Loi du Refroidissement de Newton',
+    description: 'Outil de thermodynamique appliquée qui utilise la Loi du Refroidissement de Newton pour calculer le temps exact nécessaire à votre bière pour atteindre la température de service idéale au frigo ou au congélateur.',
     applicationCategory: 'UtilityApplication',
     operatingSystem: 'Web',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },

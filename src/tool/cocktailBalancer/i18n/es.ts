@@ -60,6 +60,10 @@ const faq: CocktailBalancerLocaleContent['faq'] = [
     question: "¿Por qué mis cócteles caseros no saben igual que los de un bar?",
     answer: "Suele ser por la falta de equilibrio entre el azúcar y el pH del cítrico. Los limones varían en acidez según la temporada. Nuestra calculadora te ayuda a ajustar la cantidad de sirope exacta según el volumen de zumo usado.",
   },
+  {
+    question: "¿Qué son los grados Brix y por qué importan en coctelería?",
+    answer: "El Brix es una escala que mide la cantidad de azúcar disuelta en un líquido. Un sirope simple (1:1) ronda los 50 °Brix; un Rich Syrup (2:1) supera los 66 °Brix. Cuanto mayor el Brix, más cuerpo y dulzor aportará al cóctel con menos volumen. Conocerlo te permite sustituir siropes entre sí sin romper el equilibrio de la receta.",
+  },
 ];
 
 const howTo: CocktailBalancerLocaleContent['howTo'] = [
@@ -74,6 +78,10 @@ const howTo: CocktailBalancerLocaleContent['howTo'] = [
   {
     name: "Ajustar el componente dulce",
     text: "Introduce el tipo de sirope (simple, 2:1, agave) y observa cómo se desplaza el indicador de equilibrio en tiempo real.",
+  },
+  {
+    name: "Perfecto servicio",
+    text: "Revisa el veredicto final de la herramienta: el ratio Sour, el ABV estimado tras la dilución y las sugerencias de corrección. Sirve con hielo fresco y ajusta el cítrico o el sirope al gusto.",
   },
 ];
 

@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { AlcoholClearanceUI, AlcoholClearanceLocaleContent } from '../index';
 
-const slug = 'calculadora-eliminacion-alcohol';
+const slug = 'calculadora-alcohol-resaca';
 const title = 'Calculadora de Alcoholemia y Metabolismo';
 const description = 'Estima tu tasa de alcoholemia (BAC) y el tiempo necesario para eliminar el alcohol de tu organismo basándote en la fórmula de Widmark.';
 

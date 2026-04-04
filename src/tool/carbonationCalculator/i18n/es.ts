@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { CarbonationUI, CarbonationLocaleContent } from '../index';
 
-const slug = 'calculadora-carbonatacion-cerveza';
+const slug = 'calculadora-carbonatacion';
 const title = 'Calculadora de Carbonatación y Priming';
 const description = 'Calcula la cantidad exacta de azúcar para embotellar tu cerveza casera según el volumen, la temperatura y el estilo.';
 
