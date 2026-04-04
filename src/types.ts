@@ -66,7 +66,7 @@ export interface AlcoholCategoryEntry {
 export interface ToolDefinition {
   entry: AlcoholToolEntry<Record<string, string>>;
   Component: unknown;
-  SEOComponent?: unknown;
-  BibliographyComponent?: unknown;
+  SEOComponent: unknown;
+  BibliographyComponent: unknown;
 }
 
