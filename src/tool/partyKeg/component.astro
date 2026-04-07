@@ -825,7 +825,7 @@ const { ui } = Astro.props;
     animation: drop-in 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
 
-.visual-container {
+:global(.visual-container) {
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -835,12 +835,12 @@ const { ui } = Astro.props;
 }
 
 @media (min-width: 1024px) {
-    .visual-container {
+    :global(.visual-container) {
         gap: 4rem;
     }
 }
 
-.keg-stack {
+:global(.keg-stack) {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -850,18 +850,18 @@ const { ui } = Astro.props;
     min-width: 80px;
 }
 
-.keg-item {
+:global(.keg-item) {
     position: relative;
     transition: transform 0.3s;
     transform-origin: bottom;
     cursor: default;
 }
 
-.keg-item:hover {
+:global(.keg-item:hover) {
     transform: scale(1.05);
 }
 
-.keg-plus {
+:global(.keg-plus) {
     text-align: center;
     font-weight: 900;
     font-size: 1.25rem;
@@ -891,7 +891,7 @@ const { ui } = Astro.props;
     }
 }
 
-.ice-pile {
+:global(.ice-pile) {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-end;
@@ -902,17 +902,17 @@ const { ui } = Astro.props;
     position: relative;
 }
 
-.ice-bag {
+:global(.ice-bag) {
     transition: transform 0.3s;
     cursor: pointer;
 }
 
-.ice-bag:hover {
+:global(.ice-bag:hover) {
     transform: scale(1.1);
     z-index: 50;
 }
 
-.bags-plus {
+:global(.bags-plus) {
     position: absolute;
     top: -3rem;
     left: 50%;

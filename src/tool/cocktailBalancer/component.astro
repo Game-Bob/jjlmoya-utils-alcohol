@@ -1488,7 +1488,7 @@ function getIngIconName(type: string): string {
     padding: 0.75rem;
 }
 
-.recipe-row {
+:global(.recipe-row) {
     background: #fff;
     border-radius: 1rem;
     padding: 1rem;
@@ -1496,34 +1496,34 @@ function getIngIconName(type: string): string {
     border: 1px solid #f1f5f9;
 }
 
-:global(.theme-dark) .recipe-row {
+:global(.theme-dark .recipe-row) {
     background: #0f172a;
     border-color: #1e293b;
 }
 
-.recipe-row-top {
+:global(.recipe-row-top) {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 0.75rem;
 }
 
-.recipe-row-info {
+:global(.recipe-row-info) {
     display: flex;
     align-items: center;
     gap: 0.75rem;
 }
 
-.recipe-row-name {
+:global(.recipe-row-name) {
     font-weight: 700;
     color: #334155;
 }
 
-:global(.theme-dark) .recipe-row-name {
+:global(.theme-dark .recipe-row-name) {
     color: #e2e8f0;
 }
 
-.recipe-row-type {
+:global(.recipe-row-type) {
     font-size: 0.625rem;
     background: #f1f5f9;
     padding: 0.125rem 0.5rem;
@@ -1533,26 +1533,26 @@ function getIngIconName(type: string): string {
     text-transform: uppercase;
 }
 
-:global(.theme-dark) .recipe-row-type {
+:global(.theme-dark .recipe-row-type) {
     background: #1e293b;
 }
 
-.recipe-row-del {
+:global(.recipe-row-del) {
     opacity: 0;
     transition: opacity 0.2s;
 }
 
-.recipe-row:hover .recipe-row-del {
+:global(.recipe-row:hover .recipe-row-del) {
     opacity: 1;
 }
 
-.recipe-row-controls {
+:global(.recipe-row-controls) {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-.recipe-range {
+:global(.recipe-range) {
     flex: 1;
     height: 0.5rem;
     border-radius: 0.5rem;
@@ -1562,16 +1562,16 @@ function getIngIconName(type: string): string {
     background: #e2e8f0;
 }
 
-:global(.theme-dark) .recipe-range {
+:global(.theme-dark .recipe-range) {
     background: #334155;
 }
 
-.recipe-number-wrap {
+:global(.recipe-number-wrap) {
     position: relative;
     width: 5rem;
 }
 
-.recipe-number {
+:global(.recipe-number) {
     width: 100%;
     background: #f8fafc;
     border: 1px solid #e2e8f0;
@@ -1584,7 +1584,7 @@ function getIngIconName(type: string): string {
     box-sizing: border-box;
 }
 
-:global(.theme-dark) .recipe-number {
+:global(.theme-dark .recipe-number) {
     background: #1e293b;
     border-color: #334155;
     color: #e2e8f0;
