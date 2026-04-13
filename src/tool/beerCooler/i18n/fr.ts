@@ -1,4 +1,4 @@
-import type { WithContext, SoftwareApplication } from 'schema-dts';
+import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { BeerCoolerUI, BeerCoolerLocaleContent } from '../index';
 
 const slug = 'refroidisseur-biere';
@@ -135,7 +135,7 @@ const seo: BeerCoolerLocaleContent['seo'] = [
   },
   {
     type: 'tip',
-    title: 'Conseil Pro : Pré-refroidir le Verre',
+    title: 'Conseil Pro : Prérefroidir le Verre',
     html: 'Le verre dans lequel vous servez la bière possède une masse thermique significative. Un verre chaud peut augmenter la température d\'une bière parfaitement froide de 2 à 3°C instantanément au contact. Placez votre verre de service au congélateur 5 minutes avant de verser, ou rincez-le à l\'eau froide. Cette simple étape prolonge la fenêtre où votre bière a exactement le goût voulu.'
   },
   {
@@ -152,9 +152,30 @@ const seo: BeerCoolerLocaleContent['seo'] = [
 const schemas: BeerCoolerLocaleContent['schemas'] = [
   {
     '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: { '@type': 'Answer', text: item.answer },
+    })),
+  } as WithContext<FAQPage>,
+  {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: title,
+    description: description,
+    step: howTo.map((step, i) => ({
+      '@type': 'HowToStep',
+      position: i + 1,
+      name: step.name,
+      text: step.text,
+    })),
+  } as WithContext<HowTo>,
+  {
+    '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
-    name: 'Calculateur de Refroidissement de Bière – Loi du Refroidissement de Newton',
-    description: 'Outil de thermodynamique appliquée qui utilise la Loi du Refroidissement de Newton pour calculer le temps exact nécessaire à votre bière pour atteindre la température de service idéale au frigo ou au congélateur.',
+    name: title,
+    description: description,
     applicationCategory: 'UtilityApplication',
     operatingSystem: 'Web',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },

@@ -1,4 +1,4 @@
-import type { WithContext, SoftwareApplication } from 'schema-dts';
+import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { BeerCoolerUI, BeerCoolerLocaleContent } from '../index';
 
 const slug = 'beer-cooler';
@@ -135,7 +135,7 @@ const seo: BeerCoolerLocaleContent['seo'] = [
   },
   {
     type: 'tip',
-    title: 'Pro Tip: Pre-chill the Glass',
+    title: 'Pro Tip: Prechill the Glass',
     html: 'The glass you serve beer into has a significant thermal mass. A warm glass can raise the temperature of a perfectly cold beer by 2-3°C instantly on contact. Place your serving glass in the freezer for 5 minutes before pouring, or rinse it with cold water. This simple step extends the window where your beer tastes exactly as intended.'
   },
   {
@@ -152,9 +152,30 @@ const seo: BeerCoolerLocaleContent['seo'] = [
 const schemas: BeerCoolerLocaleContent['schemas'] = [
   {
     '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: { '@type': 'Answer', text: item.answer },
+    })),
+  } as WithContext<FAQPage>,
+  {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: title,
+    description: description,
+    step: howTo.map((step, i) => ({
+      '@type': 'HowToStep',
+      position: i + 1,
+      name: step.name,
+      text: step.text,
+    })),
+  } as WithContext<HowTo>,
+  {
+    '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
-    name: "Beer Cooling Calculator – Newton's Law of Cooling",
-    description: 'Applied thermodynamics tool that uses Newton\'s Law of Cooling to calculate the exact time for your beer to reach the ideal serving temperature in a fridge or freezer.',
+    name: title,
+    description: description,
     applicationCategory: 'UtilityApplication',
     operatingSystem: 'Web',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },

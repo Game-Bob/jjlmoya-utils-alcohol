@@ -1,8 +1,8 @@
-import type { WithContext, SoftwareApplication } from 'schema-dts';
+import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { CocktailBalancerUI, CocktailBalancerLocaleContent } from '../index';
 
 const slug = 'cocktail-balancer';
-const title = 'Cocktail Balancer - The Sour Law';
+const title = 'Cocktail Balancer: The Sour Law';
 const description = 'Calculate the perfect balance between sweet and sour for your cocktails. Master the golden ratio of mixology.';
 
 const ui: CocktailBalancerUI = {
@@ -175,6 +175,27 @@ const seo: CocktailBalancerLocaleContent['seo'] = [
 ];
 
 const schemas: CocktailBalancerLocaleContent['schemas'] = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: { '@type': 'Answer', text: item.answer },
+    })),
+  } as WithContext<FAQPage>,
+  {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: title,
+    description: description,
+    step: howTo.map((step, i) => ({
+      '@type': 'HowToStep',
+      position: i + 1,
+      name: step.name,
+      text: step.text,
+    })),
+  } as WithContext<HowTo>,
   {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',

@@ -1,7 +1,7 @@
-import type { WithContext, SoftwareApplication } from 'schema-dts';
+import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { PartyKegUI, PartyKegLocaleContent } from '../index';
 
-const slug = 'calculateur-fete-fût';
+const slug = 'calculateur-fete-fut';
 const title = 'Calculateur de Bière pour Fêtes : Quantité par Personne, Mariage ou Anniversaire';
 const description = 'Outil gratuit pour calculer la quantité de bière et de glace selon les invités, la durée et la température. Idéal pour les mariages, anniversaires et événements en plein air.';
 
@@ -140,6 +140,27 @@ const seo: PartyKegLocaleContent['seo'] = [
 ];
 
 const schemas: PartyKegLocaleContent['schemas'] = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: { '@type': 'Answer', text: item.answer },
+    })),
+  } as WithContext<FAQPage>,
+  {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: title,
+    description: description,
+    step: howTo.map((step, i) => ({
+      '@type': 'HowToStep',
+      position: i + 1,
+      name: step.name,
+      text: step.text,
+    })),
+  } as WithContext<HowTo>,
   {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',

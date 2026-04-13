@@ -1,4 +1,4 @@
-import type { WithContext, SoftwareApplication } from 'schema-dts';
+import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { BeerCoolerUI, BeerCoolerLocaleContent } from '../index';
 
 const slug = 'calculadora-enfriamiento-cerveza';
@@ -135,7 +135,7 @@ const seo: BeerCoolerLocaleContent['seo'] = [
   },
   {
     type: 'tip',
-    title: 'Consejo Pro: Pre-enfría el Vaso',
+    title: 'Consejo Pro: Preenfría el Vaso',
     html: 'El vaso en el que sirves la cerveza tiene una masa térmica significativa. Un vaso caliente puede subir la temperatura de una cerveza perfectamente fría en 2-3°C al instante. Mete el vaso de servicio en el congelador 5 minutos antes de servir, o enjuágalo con agua fría. Este simple paso prolonga la ventana en que tu cerveza sabe exactamente como debe.'
   },
   {
@@ -165,9 +165,30 @@ const seo: BeerCoolerLocaleContent['seo'] = [
 const schemas: BeerCoolerLocaleContent['schemas'] = [
   {
     '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: { '@type': 'Answer', text: item.answer },
+    })),
+  } as WithContext<FAQPage>,
+  {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: title,
+    description: description,
+    step: howTo.map((step, i) => ({
+      '@type': 'HowToStep',
+      position: i + 1,
+      name: step.name,
+      text: step.text,
+    })),
+  } as WithContext<HowTo>,
+  {
+    '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
-    name: 'Calculadora de Enfriamiento de Cerveza – Ley de Newton',
-    description: 'Herramienta de termodinámica aplicada que calcula con la Ley de Enfriamiento de Newton el tiempo exacto para que tu cerveza alcance la temperatura de servicio ideal en nevera o congelador.',
+    name: title,
+    description: description,
     applicationCategory: 'UtilityApplication',
     operatingSystem: 'Web',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },

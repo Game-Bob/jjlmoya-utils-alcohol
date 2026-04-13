@@ -1,4 +1,4 @@
-import type { WithContext, SoftwareApplication } from 'schema-dts';
+import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { CarbonationUI, CarbonationLocaleContent } from '../index';
 
 const slug = 'calculadora-carbonatacion';
@@ -157,6 +157,27 @@ const seo: CarbonationLocaleContent['seo'] = [
 ];
 
 const schemas: CarbonationLocaleContent['schemas'] = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: { '@type': 'Answer', text: item.answer },
+    })),
+  } as WithContext<FAQPage>,
+  {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: title,
+    description: description,
+    step: howTo.map((step, i) => ({
+      '@type': 'HowToStep',
+      position: i + 1,
+      name: step.name,
+      text: step.text,
+    })),
+  } as WithContext<HowTo>,
   {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
