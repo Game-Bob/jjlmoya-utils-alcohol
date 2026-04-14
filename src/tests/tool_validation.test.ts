@@ -1,6 +1,5 @@
 import { describe, it, expect } from 'vitest';
 import { ALL_TOOLS } from '../tools';
-import { alcoholCategory } from '../data';
 
 describe('Tool Validation Suite', () => {
   describe('Library Registration', () => {
@@ -8,9 +7,10 @@ describe('Tool Validation Suite', () => {
       expect(ALL_TOOLS.length).toBe(5);
     });
 
-    it('alcoholCategory should be defined', () => {
-      expect(alcoholCategory).toBeDefined();
-      expect(alcoholCategory.i18n).toBeDefined();
+    it('all tools should have defined i18n', () => {
+      ALL_TOOLS.forEach((tool) => {
+        expect(tool.entry.i18n).toBeDefined();
+      });
     });
   });
 });
