@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { PartyKegUI, PartyKegLocaleContent } from '../index';
 
-const slug = 'dangshin-ui-pati-maekju-gyesan-gi';
+const slug = 'party-stock-calculator';
 const title = '파티 맥주 계산기: 결혼식 및 생일을위한 1인당 수량';
 const description = '손님, 기간 및 온도에 따라 필요한 맥주와 얼음의 양을 계산하는 무료 도구입니다. 결혼식, 생일 및 야외 행사에 완벽합니다.';
 

@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { BeerCoolerUI, BeerCoolerLocaleContent } from '../index';
 
-const slug = 'beer-cooler';
+const slug = 'raffreddatore-birra';
 const title = 'Calcolatore di Raffreddamento della Birra con la Legge di Newton';
 const description = 'Calcola con vera termodinamica — Legge di Raffreddamento di Newton — esattamente quanto tempo hai bisogno affinché la tua birra raggiunga la temperatura di servizio perfetta in frigorifero o congelatore.';
 

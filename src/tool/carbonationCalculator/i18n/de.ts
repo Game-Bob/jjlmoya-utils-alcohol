@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { CarbonationUI, CarbonationLocaleContent } from '../index';
 
-const slug = 'beer-carbonation-calculator';
+const slug = 'bier-karbonatisierungs-rechner';
 const title = 'Bier Karbonisierungs und Primersüße Rechner';
 const description = 'Berechne die exakte Grammmenge von Dextrose, Haushaltszucker oder Malzextrakt (DME) zum Abfüllen deines Haushaltbieres. Gib dein Volumen, Gärungstemperatur und Stil ein und perfektioniere deine Grundierung.';
 

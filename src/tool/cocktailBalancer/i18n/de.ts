@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { CocktailBalancerUI, CocktailBalancerLocaleContent } from '../index';
 
-const slug = 'cocktail-balancer';
+const slug = 'cocktail-ausgleicher';
 const title = 'Cocktail Balancer: Das Sauer Gesetz';
 const description = 'Berechnen Sie die perfekte Balance zwischen süß und sauer für Ihre Cocktails. Meistern Sie das goldene Verhältnis der Mixologie.';
 

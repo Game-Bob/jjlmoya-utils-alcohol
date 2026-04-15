@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { PartyKegUI, PartyKegLocaleContent } from '../index';
 
-const slug = 'paidui-pijiu-bing-jisuanqi';
+const slug = 'party-stock-calculator';
 const title = '派对啤酒计算器：婚礼和生日派对的人均用量';
 const description = '根据嘉宾数量、活动时长和温度计算所需啤酒和冰块数量的免费工具。非常适合婚礼、生日派对和户外活动。';
 

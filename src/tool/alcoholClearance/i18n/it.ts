@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { AlcoholClearanceUI, AlcoholClearanceLocaleContent } from '../index';
 
-const slug = 'alcohol-clearance-calculator';
+const slug = 'calcolatore-smaltimento-alcol';
 const title = 'Calcolatore Sbornia e BAC: Predittore di Recupero';
 const description = 'Calcola il tuo contenuto di alcol nel sangue (BAC) e il tempo per raggiungere 0.0 utilizzando la formula di Widmark. Pianifica la tua idratazione pre-sonno e saprai quando sarai completamente recuperato.';
 

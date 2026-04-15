@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { CocktailBalancerUI, CocktailBalancerLocaleContent } from '../index';
 
-const slug = 'cocktail-balancer';
+const slug = 'cocktail-balanserare';
 const title = 'Cocktail Balancer: Surlagenen';
 const description = 'Beräkna den perfekta balansen mellan sött och surt för dina cocktails. Bemästra det gyllene snittet inom mixologi.';
 

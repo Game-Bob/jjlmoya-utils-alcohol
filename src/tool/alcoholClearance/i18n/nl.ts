@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { AlcoholClearanceUI, AlcoholClearanceLocaleContent } from '../index';
 
-const slug = 'alcohol-clearance-calculator';
+const slug = 'rekenmachine-alcoholafbraak';
 const title = 'Kater en BVO calculator: Herstelindicator';
 const description = 'Bereken uw Bloed Voorzuringsoort (BVO) en de tijd om 0,0 te bereiken met behulp van de formule van Widmark. Plan uw hydratatie vóór het slapen en weet wanneer u volledig hersteld bent.';
 

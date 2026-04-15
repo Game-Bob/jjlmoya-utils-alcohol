@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { CocktailBalancerUI, CocktailBalancerLocaleContent } from '../index';
 
-const slug = 'cocktail-balancer';
+const slug = 'koktail-seimbang';
 const title = 'Cocktail Balancer: Hukum Asam';
 const description = 'Hitung keseimbangan sempurna antara manis dan asam untuk koktail Anda. Kuasai rasio emas mixologi.';
 

@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { BeerCoolerUI, BeerCoolerLocaleContent } from '../index';
 
-const slug = 'beer-cooler';
+const slug = 'chlodnica-piwa';
 const title = 'Kalkulator Chłodzenia Piwa z Prawem Chłodzenia Newtona';
 const description = 'Oblicz z prawdziwą termodynamiką — Prawo Chłodzenia Newtona — dokładnie, ile czasu twoje piwo potrzebuje, aby osiągnąć doskonałą temperaturę podawania w lodówce lub zamrażalniku.';
 

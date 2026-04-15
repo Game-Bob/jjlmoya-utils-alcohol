@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { BeerCoolerUI, BeerCoolerLocaleContent } from '../index';
 
-const slug = 'beer-cooler';
+const slug = 'resfriador-cerveja';
 const title = 'Calculadora de Resfriamento de Cerveja com a Lei de Newton';
 const description = 'Calcule com termodinâmica real — Lei do Resfriamento de Newton — exatamente quanto tempo sua cerveja leva para atingir a temperatura de serviço perfeita na geladeira ou freezer.';
 

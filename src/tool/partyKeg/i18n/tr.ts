@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { PartyKegUI, PartyKegLocaleContent } from '../index';
 
-const slug = 'party-stock-calculator';
+const slug = 'parti-birrasi-hesaplayicisi';
 const title = 'Parti Bira Hesaplayıcısı: Düğünler ve Doğum Günleri için Kişi Başına Miktar';
 const description = 'Konuk sayısı, süre ve sıcaklığa dayalı olarak ne kadar bira ve buz gerektiğini hesaplamak için ücretsiz araç. Düğünler, doğum günleri ve açık hava etkinlikleri için mükemmel.';
 

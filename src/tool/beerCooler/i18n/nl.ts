@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { BeerCoolerUI, BeerCoolerLocaleContent } from '../index';
 
-const slug = 'beer-cooler';
+const slug = 'bier-koeler';
 const title = 'Bierkoelingscalculator met de Wet van Newton';
 const description = 'Bereken met echte thermodynamica — Wet van Newton voor afkoeling — precies hoe lang je bier nodig heeft om de perfecte serveertemperatuur in de koelkast of vriezer te bereiken.';
 

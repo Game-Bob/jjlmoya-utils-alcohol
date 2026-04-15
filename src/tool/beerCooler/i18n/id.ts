@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { BeerCoolerUI, BeerCoolerLocaleContent } from '../index';
 
-const slug = 'beer-cooler';
+const slug = 'pendingin-bir';
 const title = 'Kalkulator Pendingin Bir dengan Hukum Newton';
 const description = 'Hitung dengan termodinamika nyata — Hukum Pendinginan Newton — berapa lama tepat bir Anda memerlukan untuk mencapai suhu penyajian yang sempurna di lemari es atau freezer.';
 

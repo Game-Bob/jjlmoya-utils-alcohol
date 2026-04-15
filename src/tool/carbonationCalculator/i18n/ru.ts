@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { CarbonationUI, CarbonationLocaleContent } from '../index';
 
-const slug = 'beer-carbonation-calculator';
+const slug = 'kalkulyator-karbonizacii-piva';
 const title = 'Калькулятор Карбонизации и Праймирования Пива';
 const description = 'Рассчитайте точное количество граммов Декстрозы, Сахара или ССВ (Сухого Солодового Экстракта) для разлива домашнего пива. Введите объём, температуру брожения и стиль для идеального праймирования.';
 

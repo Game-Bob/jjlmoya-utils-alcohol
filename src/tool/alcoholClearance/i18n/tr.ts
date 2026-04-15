@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { AlcoholClearanceUI, AlcoholClearanceLocaleContent } from '../index';
 
-const slug = 'alcohol-clearance-calculator';
+const slug = 'alkol-temizleme-hesaplayicisi';
 const title = 'Baş Dönmesi ve BAC Hesaplayıcısı: İyileşme Tahmincisi';
 const description = 'Widmark formülünü kullanarak Kan Alkol İçeriğini (BAC) hesapla ve 0.0 a ulaşmak için gereken zamanı öğren. Uyku öncesi rehidrasyon planla ve tam iyileşmenin ne zaman olacağını bil.';
 

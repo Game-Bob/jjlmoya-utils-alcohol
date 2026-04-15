@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { CocktailBalancerUI, CocktailBalancerLocaleContent } from '../index';
 
-const slug = 'cocktail-balancer';
+const slug = 'coquetel-equilibrado';
 const title = 'Cocktail Balancer: A Lei do Ácido';
 const description = 'Calcule o equilíbrio perfeito entre doce e ácido para seus coquetéis. Domine a proporção áurea da mixologia.';
 

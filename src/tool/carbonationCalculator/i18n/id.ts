@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { CarbonationUI, CarbonationLocaleContent } from '../index';
 
-const slug = 'beer-carbonation-calculator';
+const slug = 'kalkulator-karbonak-bir';
 const title = 'Kalkulator Karbonasi & Primer Bir';
 const description = 'Hitung gram pasti Dextrose, Gula Meja atau DME (Ekstrak Malt Kering) untuk membotolkan homebrew Anda. Masukkan volume, suhu fermentasi, dan gaya untuk primer sempurna.';
 

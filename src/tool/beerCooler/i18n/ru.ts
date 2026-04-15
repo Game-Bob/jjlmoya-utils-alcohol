@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { BeerCoolerUI, BeerCoolerLocaleContent } from '../index';
 
-const slug = 'beer-cooler';
+const slug = 'ohlazhdenie-piva';
 const title = 'Калькулятор охлаждения пива с законом Ньютона';
 const description = 'Считайте с настоящей термодинамикой — Закон охлаждения Ньютона — ровно столько, сколько времени вашему пиву потребуется, чтобы достичь идеальной температуры подачи в холодильнике или морозилке.';
 

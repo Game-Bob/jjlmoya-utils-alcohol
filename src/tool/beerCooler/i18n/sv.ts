@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { BeerCoolerUI, BeerCoolerLocaleContent } from '../index';
 
-const slug = 'beer-cooler';
+const slug = 'ol-kylare';
 const title = 'Ölkylningsräknare med Newtons kylningslag';
 const description = 'Beräkna med verklig termodynamik — Newtons kylningslag — exakt hur lång tid din öl behöver för att nå den perfekta serveringstemperaturen i kylskåp eller frys.';
 

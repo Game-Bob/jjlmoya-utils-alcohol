@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { PartyKegUI, PartyKegLocaleContent } from '../index';
 
-const slug = 'kalkulyator-piva-льда-vecherinki';
+const slug = 'kalkulyator-zapasa-pivy';
 const title = 'Калькулятор Пива для Вечеринки: Количество На Человека для Свадеб и Дней Рождения';
 const description = 'Бесплатный инструмент для расчёта количества пива и льда в зависимости от числа гостей, продолжительности и температуры. Идеален для свадеб, дней рождения и уличных мероприятий.';
 

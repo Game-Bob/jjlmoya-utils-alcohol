@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { PartyKegUI, PartyKegLocaleContent } from '../index';
 
-const slug = 'pati-biru-hyouka-keisanki';
+const slug = 'party-stock-calculator';
 const title = 'パーティービール計算機：結婚式と誕生日のための1人あたりの量';
 const description = 'ゲスト数、期間、気温に基づいて必要なビールと氷の量を計算する無料ツール。結婚式、誕生日、屋外イベントに最適です。';
 

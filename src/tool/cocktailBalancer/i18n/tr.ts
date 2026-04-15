@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { CocktailBalancerUI, CocktailBalancerLocaleContent } from '../index';
 
-const slug = 'cocktail-balancer';
+const slug = 'kokteyl-dengeleyici';
 const title = 'Cocktail Balancer: Asitlik Kanunu';
 const description = 'Koktailleriniz için tatlı ve asit arasındaki mükemmel dengeyi hesaplayın. Miksoloji\'nin altın oranını keşfedin.';
 

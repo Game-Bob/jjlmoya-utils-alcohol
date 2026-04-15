@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { BeerCoolerUI, BeerCoolerLocaleContent } from '../index';
 
-const slug = 'beer-cooler';
+const slug = 'bier-kuhler';
 const title = 'Bierkühler mit Newtonsches Abkühlungsgesetz';
 const description = 'Berechne mit echter Thermodynamik — Newtonsches Abkühlungsgesetz — genau wie lange dein Bier braucht, um die perfekte Serviertemperatur im Kühlschrank oder Gefrierschrank zu erreichen.';
 

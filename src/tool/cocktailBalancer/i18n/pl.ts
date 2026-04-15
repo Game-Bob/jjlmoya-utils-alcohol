@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { CocktailBalancerUI, CocktailBalancerLocaleContent } from '../index';
 
-const slug = 'cocktail-balancer';
+const slug = 'koktajl-zbilansowany';
 const title = 'Cocktail Balancer: Prawo Kwaśności';
 const description = 'Oblicz doskonałą równowagę między słodkością a kwaśnością dla swoich koktajli. Opanuj złoty stosunek miksologii.';
 

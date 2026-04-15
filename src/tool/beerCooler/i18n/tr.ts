@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { BeerCoolerUI, BeerCoolerLocaleContent } from '../index';
 
-const slug = 'beer-cooler';
+const slug = 'bira-sogutucusu';
 const title = 'Newton\'un Soğuma Yasası ile Bira Soğutma Hesaplayıcısı';
 const description = 'Gerçek termodinamik ile hesaplayın — Newton\'un Soğuma Yasası — bira\'nızın buzdolabında veya dondurucuda mükemmel servis sıcaklığına ulaşması için gereken zamanı tam olarak bilin.';
 

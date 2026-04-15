@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { CocktailBalancerUI, CocktailBalancerLocaleContent } from '../index';
 
-const slug = 'cocktail-balancer';
+const slug = 'koktejl-balansirovka';
 const title = 'Балансир Коктейлей: Закон Кислоты';
 const description = 'Вычислите идеальный баланс между сладким и кислым для ваших коктейлей. Овладейте золотым сечением миксологии.';
 
