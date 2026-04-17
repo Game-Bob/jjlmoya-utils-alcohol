@@ -1,7 +1,7 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { CocktailBalancerUI, CocktailBalancerLocaleContent } from '../index';
 
-const slug = 'cocktail-balancer-nl';
+const slug = 'cocktail-evenwicht';
 const title = 'Cocktail Balancer: De Zuurwet';
 const description = 'Bereken het perfecte evenwicht tussen zoet en zuur voor je cocktails. Beheers de gulden snede van mixologie.';
 
