@@ -5,7 +5,7 @@ export * from './tool/cocktailBalancer';
 export * from './tool/partyKeg';
 
 export { alcoholCategory } from './category';
-export { default as AlcoholCategorySEO } from './category/seo.astro';
+export const AlcoholCategorySEO = () => import('./category/seo.astro').then((m) => m.default);
 
 export type {
   KnownLocale,

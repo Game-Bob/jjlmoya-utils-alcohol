@@ -1,7 +1,4 @@
 import type { AlcoholToolEntry, ToolLocaleContent, ToolDefinition } from '../../types';
-import AlcoholClearanceCalculator from './component.astro';
-import AlcoholClearanceSEO from './seo.astro';
-import AlcoholClearanceBibliography from './bibliography.astro';
 
 export interface AlcoholClearanceUI {
   [key: string]: string;
@@ -56,11 +53,10 @@ export const alcoholClearance: AlcoholToolEntry<AlcoholClearanceUI> = {
   },
 };
 
-export { AlcoholClearanceCalculator };
 
 export const ALCOHOL_CLEARANCE_TOOL: ToolDefinition = {
   entry: alcoholClearance as AlcoholToolEntry<Record<string, string>>,
-  Component: AlcoholClearanceCalculator,
-  SEOComponent: AlcoholClearanceSEO,
-  BibliographyComponent: AlcoholClearanceBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

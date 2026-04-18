@@ -1,7 +1,4 @@
 import type { AlcoholToolEntry, ToolLocaleContent, ToolDefinition } from '../../types';
-import CarbonationCalculator from './component.astro';
-import CarbonationSEO from './seo.astro';
-import CarbonationBibliography from './bibliography.astro';
 
 export interface CarbonationUI {
   [key: string]: string;
@@ -54,11 +51,10 @@ export const carbonationCalculator: AlcoholToolEntry<CarbonationUI> = {
   },
 };
 
-export { CarbonationCalculator };
 
 export const CARBONATION_TOOL: ToolDefinition = {
   entry: carbonationCalculator as AlcoholToolEntry<Record<string, string>>,
-  Component: CarbonationCalculator,
-  SEOComponent: CarbonationSEO,
-  BibliographyComponent: CarbonationBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

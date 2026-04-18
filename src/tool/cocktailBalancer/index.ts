@@ -1,7 +1,4 @@
 import type { AlcoholToolEntry, ToolLocaleContent, ToolDefinition } from '../../types';
-import CocktailBalancerCalculator from './component.astro';
-import CocktailBalancerSEO from './seo.astro';
-import CocktailBalancerBibliography from './bibliography.astro';
 
 export interface CocktailBalancerUI {
   [key: string]: string;
@@ -70,11 +67,10 @@ export const cocktailBalancer: AlcoholToolEntry<CocktailBalancerUI> = {
   },
 };
 
-export { CocktailBalancerCalculator, CocktailBalancerSEO, CocktailBalancerBibliography };
 
 export const COCKTAIL_BALANCER_TOOL: ToolDefinition = {
   entry: cocktailBalancer as AlcoholToolEntry<Record<string, string>>,
-  Component: CocktailBalancerCalculator,
-  SEOComponent: CocktailBalancerSEO,
-  BibliographyComponent: CocktailBalancerBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };
