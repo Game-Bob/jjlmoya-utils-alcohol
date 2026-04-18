@@ -1,6 +1,6 @@
 import type { AlcoholCategoryEntry } from '../types';
 
-export const toolsCategory: AlcoholCategoryEntry = {
+export const alcoholCategory: AlcoholCategoryEntry = {
   icon: 'mdi:shape',
   tools: [],
   i18n: {
@@ -21,3 +21,5 @@ export const toolsCategory: AlcoholCategoryEntry = {
     zh: () => import('./i18n/zh').then((m) => m.content),
   },
 };
+
+export const toolsCategory = alcoholCategory;
