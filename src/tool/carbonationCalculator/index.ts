@@ -1,3 +1,4 @@
+import { carbonationCalculator } from './entry';
 export * from './entry';
 export const CARBONATION_TOOL: ToolDefinition = {
   entry: carbonationCalculator as AlcoholToolEntry<Record<string, string>>,

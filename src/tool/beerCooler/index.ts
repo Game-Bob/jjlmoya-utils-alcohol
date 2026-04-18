@@ -1,3 +1,4 @@
+import { beerCooler } from './entry';
 export * from './entry';
 export const BEER_COOLER_TOOL: ToolDefinition = {
   entry: beerCooler as AlcoholToolEntry<Record<string, string>>,

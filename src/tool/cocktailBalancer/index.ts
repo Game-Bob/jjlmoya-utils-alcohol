@@ -1,3 +1,4 @@
+import { cocktailBalancer } from './entry';
 export * from './entry';
 export const COCKTAIL_BALANCER_TOOL: ToolDefinition = {
   entry: cocktailBalancer as AlcoholToolEntry<Record<string, string>>,
