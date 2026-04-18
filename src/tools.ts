@@ -1,3 +1,4 @@
+export { ALL_ENTRIES } from './entries';
 import type { ToolDefinition } from './types';
 import { COCKTAIL_BALANCER_TOOL } from './tool/cocktailBalancer';
 import { BEER_COOLER_TOOL } from './tool/beerCooler';
@@ -13,4 +14,3 @@ export const ALL_TOOLS: ToolDefinition[] = [
   ALCOHOL_CLEARANCE_TOOL,
 ];
 
-export const ALL_ENTRIES = ALL_TOOLS.map(t => t.entry);
