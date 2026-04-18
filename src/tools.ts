@@ -12,3 +12,5 @@ export const ALL_TOOLS: ToolDefinition[] = [
   CARBONATION_TOOL,
   ALCOHOL_CLEARANCE_TOOL,
 ];
+
+export const ALL_ENTRIES = ALL_TOOLS.map(t => t.entry);
