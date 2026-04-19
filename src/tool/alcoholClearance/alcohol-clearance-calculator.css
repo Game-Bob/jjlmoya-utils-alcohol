@@ -13,7 +13,7 @@
         box-shadow: 0 4px 20px rgba(0,0,0,0.06);
         color: #1e293b;
     }
-    :global(.theme-dark) .alc-card {
+    .theme-dark .alc-card {
         background: #0f172a;
         border-color: #1e293b;
         color: #f1f5f9;
@@ -34,13 +34,13 @@
     }
 
     @media (min-width: 768px) { .alc-inputs-panel { border-right: 1px solid #e2e8f0; } }
-    :global(.theme-dark) .alc-inputs-panel { border-color: #1e293b; }
+    .theme-dark .alc-inputs-panel { border-color: #1e293b; }
 
     .alc-sec {
         padding: 1.25rem 1.5rem;
         border-bottom: 1px solid #e2e8f0;
     }
-    :global(.theme-dark) .alc-sec { border-color: #1e293b; }
+    .theme-dark .alc-sec { border-color: #1e293b; }
     .alc-sec:last-child { border-bottom: none; }
 
     .alc-sex-weight {
@@ -76,7 +76,7 @@
         background: #f1f5f9;
         border-radius: 0.75rem;
     }
-    :global(.theme-dark) .sex-toggle { background: #1e293b; }
+    .theme-dark .sex-toggle { background: #1e293b; }
 
     .sex-btn {
         flex: 1;
@@ -97,7 +97,7 @@
         color: #4f46e5;
         box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
-    :global(.theme-dark) .sex-btn.selected {
+    .theme-dark .sex-btn.selected {
         background: #334155;
         color: #818cf8;
     }
@@ -119,7 +119,7 @@
         transition: border-color 0.2s;
         box-sizing: border-box;
     }
-    :global(.theme-dark) .weight-input {
+    .theme-dark .weight-input {
         background: rgba(0,0,0,0.2);
         border-color: #334155;
         color: #f1f5f9;
@@ -155,7 +155,7 @@
         color: #475569;
         transition: all 0.15s;
     }
-    :global(.theme-dark) .drink-add-btn {
+    .theme-dark .drink-add-btn {
         background: #1e293b;
         color: #94a3b8;
     }
@@ -200,7 +200,7 @@
         align-items: center;
         gap: 0.75rem;
     }
-    :global(.theme-dark) .list-empty { color: #334155; }
+    .theme-dark .list-empty { color: #334155; }
     .list-empty-icon {
         width: 2.5rem;
         height: 2.5rem;
@@ -218,7 +218,7 @@
         border-radius: 10px;
     }
 
-    :global(.drink-list-row) {
+    .drink-list-row {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -227,26 +227,26 @@
         border-radius: 0.75rem;
         border: 1px solid #e2e8f0;
     }
-    :global(.theme-dark) :global(.drink-list-row) {
+    .theme-dark .drink-list-row {
         background: #1e293b;
         border-color: #334155;
     }
 
-    :global(.drink-row-info) {
+    .drink-row-info {
         display: flex;
         align-items: center;
         gap: 0.75rem;
     }
 
-    :global(.drink-row-name) {
+    .drink-row-name {
         font-weight: 700;
         color: #334155;
     }
-    :global(.theme-dark) :global(.drink-row-name) {
+    .theme-dark .drink-row-name {
         color: #e2e8f0;
     }
 
-    :global(.drink-row-qty) {
+    .drink-row-qty {
         font-size: 0.75rem;
         background: #e0e7ff;
         color: #4f46e5;
@@ -254,12 +254,12 @@
         border-radius: 0.25rem;
         font-weight: 700;
     }
-    :global(.theme-dark) :global(.drink-row-qty) {
+    .theme-dark .drink-row-qty {
         background: #312e81;
         color: #a5b4fc;
     }
 
-    :global(.drink-row-del) {
+    .drink-row-del {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -272,11 +272,11 @@
         cursor: pointer;
         transition: background 0.2s;
     }
-    :global(.drink-row-del:hover) {
+    .drink-row-del:hover {
         background: #fef2f2;
         border-radius: 0.5rem;
     }
-    :global(.theme-dark) :global(.drink-row-del:hover) {
+    .theme-dark .drink-row-del:hover {
         background: rgba(239,68,68,0.1);
     }
 
@@ -285,7 +285,7 @@
         flex-direction: column;
         background: #f8fafc;
     }
-    :global(.theme-dark) .alc-results-panel { background: rgba(0,0,0,0.2); }
+    .theme-dark .alc-results-panel { background: rgba(0,0,0,0.2); }
 
     .bac-section {
         background: #4f46e5;
@@ -295,7 +295,7 @@
         overflow: hidden;
         flex-shrink: 0;
     }
-    :global(.theme-dark) .bac-section { background: #4338ca; }
+    .theme-dark .bac-section { background: #4338ca; }
     .bac-bg-icon {
         position: absolute;
         top: 0;
@@ -382,12 +382,12 @@
         background: #dbeafe;
         color: #3b82f6;
     }
-    :global(.theme-dark) .advice-icon-blue { background: rgba(59,130,246,0.2); }
+    .theme-dark .advice-icon-blue { background: rgba(59,130,246,0.2); }
     .advice-icon-amber {
         background: #fef3c7;
         color: #f59e0b;
     }
-    :global(.theme-dark) .advice-icon-amber { background: rgba(245,158,11,0.2); }
+    .theme-dark .advice-icon-amber { background: rgba(245,158,11,0.2); }
     .advice-icon-svg {
         width: 1.25rem;
         height: 1.25rem;
@@ -418,7 +418,7 @@
         line-height: 1.6;
         border: 1px solid #fde68a;
     }
-    :global(.theme-dark) .disclaimer {
+    .theme-dark .disclaimer {
         background: rgba(120,53,15,0.2);
         border-color: rgba(120,53,15,0.5);
         color: #f59e0b;
