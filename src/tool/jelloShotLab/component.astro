@@ -1,0 +1,183 @@
+---
+import { Icon } from 'astro-icon/components';
+import { jelloShotLab } from './entry';
+import './jello-shot-lab.css';
+import type { JelloShotLabUI } from './entry';
+import type { KnownLocale } from '../../types';
+
+interface Props {
+  ui?: JelloShotLabUI;
+  locale?: KnownLocale;
+}
+
+let { ui, locale } = Astro.props;
+
+if (!locale) {
+  const url = Astro.url.pathname;
+  const parts = url.split('/').filter(Boolean);
+  const possibleLang = parts[0] as KnownLocale;
+  const supportedLangs: KnownLocale[] = [
+    'ar', 'da', 'de', 'en', 'es', 'fi', 'fr', 'id', 'it', 'ja', 'ko', 'nb', 'nl', 'pl', 'pt', 'ru', 'sv', 'tr', 'zh'
+  ];
+  locale = supportedLangs.includes(possibleLang) ? possibleLang : 'en';
+}
+
+if (!ui) {
+  const contentLoader = jelloShotLab.i18n[locale as KnownLocale];
+  if (contentLoader) {
+    const content = await contentLoader();
+    ui = content?.ui;
+  }
+}
+
+if (!ui) {
+  const fallbackLoader = jelloShotLab.i18n['en'];
+  if (fallbackLoader) {
+    const fallbackContent = await fallbackLoader();
+    ui = fallbackContent?.ui;
+  }
+}
+---
+
+{ui ? (
+<div id="jsl-app" class="jsl-container theme-dark">
+  <div class="jsl-card">
+    <div class="jsl-card-header">
+      <div class="jsl-mini-toggle">
+        <button class="jsl-mini-btn active" data-mode="dark" id="toggle-party">
+          <Icon name="mdi:party-popper" /> {ui.modeParty}
+        </button>
+        <button class="jsl-mini-btn" data-mode="light" id="toggle-recipe">
+          <Icon name="mdi:silverware-fork-knife" /> {ui.modeRecipe}
+        </button>
+      </div>
+    </div>
+
+    <div class="jsl-content-panel">
+      <div class="jsl-grid-inputs">
+        <div class="jsl-field">
+          <label class="jsl-label">{ui.liquorAbvLabel}</label>
+          <input type="number" id="jsl-abv" class="jsl-input" value="40" min="0" max="100" step="0.5" />
+        </div>
+
+        <div class="jsl-field">
+          <label class="jsl-label">{ui.totalVolumeLabel} ({ui.unitMm})</label>
+          <input type="number" id="jsl-volume" class="jsl-input" value="500" min="50" max="5000" step="50" />
+        </div>
+
+        <div class="jsl-field">
+          <label class="jsl-label">{ui.modeIntensity}</label>
+          <select id="jsl-intensity" class="jsl-select">
+            <option value="light">{ui.modeIntensityLight}</option>
+            <option value="balanced" selected>{ui.modeIntensityBalanced}</option>
+            <option value="limit">{ui.modeIntensityLimit}</option>
+          </select>
+        </div>
+
+        <div class="jsl-field">
+          <label class="jsl-label">{ui.partyPlannerGuestLabel}</label>
+          <input type="number" id="jsl-guests" class="jsl-input" value="10" min="1" max="200" />
+        </div>
+      </div>
+
+      <p class="jsl-subtitle" style="font-size: 0.85rem; color: var(--jsl-text-muted); line-height: 1.5;">
+        {ui.description}
+      </p>
+    </div>
+
+    <div class="jsl-visual-panel">
+      <div class="jsl-tank">
+        <div id="liquid-water" class="jsl-liquid jsl-liquid-water"></div>
+        <div id="liquid-alcohol" class="jsl-liquid jsl-liquid-alcohol"></div>
+      </div>
+
+      <div class="jsl-stats-compact">
+        <div class="jsl-stat-row">
+          <span class="jsl-stat-l">{ui.boilingWaterLabel}</span>
+          <span id="res-water" class="jsl-stat-v">250ml</span>
+        </div>
+        <div class="jsl-stat-row">
+          <span class="jsl-stat-l">{ui.alcoholVolumeLabel}</span>
+          <span id="res-alcohol" class="jsl-stat-v">250ml</span>
+        </div>
+        <div class="jsl-stat-row">
+          <span class="jsl-stat-l">{ui.packetsNeededLabel}</span>
+          <span id="res-packets" class="jsl-stat-v">2</span>
+        </div>
+        <div class="jsl-stat-row">
+          <span class="jsl-stat-l">{ui.chillingTimeLabel}</span>
+          <span id="res-time" class="jsl-stat-v">4h</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+) : (
+  <div class="jsl-container theme-dark">
+    <div class="jsl-card" style="padding: 3rem; text-align: center;">
+      <Icon name="mdi:alert-circle" style="font-size: 3rem; color: var(--jsl-accent); margin-bottom: 1rem;" />
+      <p>Error: UI Not Found</p>
+    </div>
+  </div>
+)}
+
+<script>
+  import { calculateJelloShot } from './logic';
+
+  const abvInput = document.getElementById('jsl-abv') as HTMLInputElement;
+  const volInput = document.getElementById('jsl-volume') as HTMLInputElement;
+  const intensityInput = document.getElementById('jsl-intensity') as HTMLSelectElement;
+  const guestsInput = document.getElementById('jsl-guests') as HTMLInputElement;
+
+  const resWater = document.getElementById('res-water');
+  const resAlcohol = document.getElementById('res-alcohol');
+  const resPackets = document.getElementById('res-packets');
+  const resTime = document.getElementById('res-time');
+  const liquidWater = document.getElementById('liquid-water');
+  const liquidAlcohol = document.getElementById('liquid-alcohol');
+  const container = document.getElementById('jsl-app');
+  const btnParty = document.getElementById('toggle-party');
+  const btnRecipe = document.getElementById('toggle-recipe');
+
+  function updateStats(results: ReturnType<typeof calculateJelloShot>, volume: number) {
+    if (resWater) resWater.innerText = `${Math.round(results.boilingWaterVolume)}ml`;
+    if (resAlcohol) resAlcohol.innerText = `${Math.round(results.alcoholVolume)}ml`;
+    if (resPackets) resPackets.innerText = `${results.packetsNeeded.toFixed(1)}`;
+    if (resTime) resTime.innerText = `${results.chillingTimeHours}h`;
+    const waterPct = (results.boilingWaterVolume / volume) * 90;
+    const alcoholPct = (results.alcoholVolume / volume) * 90;
+    if (liquidWater) liquidWater.style.height = `${waterPct}%`;
+    if (liquidAlcohol) {
+      liquidAlcohol.style.height = `${alcoholPct}%`;
+      liquidAlcohol.style.bottom = `${waterPct}%`;
+    }
+  }
+
+  function update() {
+    if (!abvInput || !volInput || !intensityInput) return;
+    const abv = parseFloat(abvInput.value);
+    const volume = parseFloat(volInput.value);
+    const intensity = intensityInput.value as 'light' | 'balanced' | 'limit';
+    updateStats(calculateJelloShot({ abv, totalVolume: volume, intensity }), volume);
+  }
+
+  btnParty?.addEventListener('click', () => {
+    container?.classList.add('theme-dark');
+    container?.classList.remove('theme-light');
+    btnParty.classList.add('active');
+    btnRecipe?.classList.remove('active');
+  });
+
+  btnRecipe?.addEventListener('click', () => {
+    container?.classList.add('theme-light');
+    container?.classList.remove('theme-dark');
+    btnRecipe.classList.add('active');
+    btnParty?.classList.remove('active');
+  });
+
+  [abvInput, volInput, intensityInput, guestsInput].forEach(el => {
+    el?.addEventListener('input', update);
+  });
+
+  update();
+</script>

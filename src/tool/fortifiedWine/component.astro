@@ -1,0 +1,331 @@
+---
+import { Icon } from "astro-icon/components";
+import type { FortifiedWineBuilderUI } from "./index";
+
+interface Props {
+  ui: FortifiedWineBuilderUI;
+}
+const { ui } = Astro.props;
+---
+
+<div class="fw-app" id="fw-calculator">
+  <div class="fw-card">
+
+    <div class="fw-intention">
+      <div class="fw-section-label">{ui.intentionTitle}</div>
+      <div class="fw-intention-btns">
+        <button class="fw-intention-btn active" data-intention="vermouth" data-target="16">{ui.intentionVermouth}</button>
+        <button class="fw-intention-btn" data-intention="port" data-target="19">{ui.intentionPort}</button>
+        <button class="fw-intention-btn" data-intention="sherry" data-target="16">{ui.intentionSherry}</button>
+        <button class="fw-intention-btn" data-intention="custom" data-target="">{ui.intentionCustom}</button>
+      </div>
+    </div>
+
+    <div class="fw-mode">
+      <button class="fw-mode-btn active" data-mode="a">{ui.modeALabel}</button>
+      <button class="fw-mode-btn" data-mode="b">{ui.modeBLabel}</button>
+    </div>
+
+    <div class="fw-grid">
+
+      <div class="fw-left">
+
+        <div class="fw-sec">
+          <div class="fw-sec-title">{ui.wineSection}</div>
+          <div class="fw-input-row">
+            <div class="fw-field">
+              <label class="fw-label" for="fw-wine-vol">{ui.wineVolumeLabel}</label>
+              <div class="fw-slider-row">
+                <input type="range" class="fw-slider" id="fw-wine-vol-slider" min="0.1" max="100" step="0.1" value="5" />
+                <input type="number" class="fw-num-input" id="fw-wine-vol" min="0.1" max="9999" step="0.1" value="5" />
+              </div>
+            </div>
+            <div class="fw-field">
+              <label class="fw-label" for="fw-wine-abv">{ui.wineAbvLabel}</label>
+              <div class="fw-slider-row">
+                <input type="range" class="fw-slider" id="fw-wine-abv-slider" min="0" max="25" step="0.5" value="12" />
+                <input type="number" class="fw-num-input" id="fw-wine-abv" min="0" max="25" step="0.1" value="12" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fw-sec">
+          <div class="fw-sec-title">{ui.spiritSection}</div>
+          <div class="fw-presets">
+            <button class="fw-preset-btn" data-abv="38">{ui.brandyPreset}</button>
+            <button class="fw-preset-btn" data-abv="96">{ui.neutralPreset}</button>
+            <button class="fw-preset-btn" data-abv="42">{ui.aguardientePreset}</button>
+          </div>
+          <div class="fw-field">
+            <label class="fw-label" for="fw-spirit-abv">{ui.spiritAbvLabel}</label>
+            <div class="fw-slider-row">
+              <input type="range" class="fw-slider" id="fw-spirit-abv-slider" min="15" max="96" step="1" value="38" />
+              <input type="number" class="fw-num-input" id="fw-spirit-abv" min="15" max="96" step="0.1" value="38" />
+            </div>
+          </div>
+        </div>
+
+        <div class="fw-sec">
+          <div class="fw-field">
+            <label class="fw-label" for="fw-target-abv">{ui.targetAbvLabel}</label>
+            <div class="fw-slider-row">
+              <input type="range" class="fw-slider" id="fw-target-abv-slider" min="1" max="40" step="0.5" value="16" />
+              <input type="number" class="fw-num-input" id="fw-target-abv" min="1" max="40" step="0.1" value="16" />
+            </div>
+          </div>
+          <div class="fw-field" id="fw-target-vol-field" style="display:none; margin-top:0.75rem;">
+            <label class="fw-label" for="fw-target-vol">{ui.targetVolumeLabel}</label>
+            <div class="fw-slider-row">
+              <input type="range" class="fw-slider" id="fw-target-vol-slider" min="0.1" max="100" step="0.1" value="6" />
+              <input type="number" class="fw-num-input" id="fw-target-vol" min="0.1" max="9999" step="0.1" value="6" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="fw-right">
+
+        <div class="fw-pearson-wrap">
+          <div class="fw-pearson-title">{ui.pearsonTitle}</div>
+          <div id="fw-pearson-empty" class="fw-empty-state">{ui.emptyState}</div>
+          <svg id="fw-pearson-svg" class="fw-pearson-svg" viewBox="0 0 340 220" style="display:none" aria-hidden="true">
+            <rect x="60" y="30" width="180" height="160" fill="none" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.2" rx="4" />
+            <line id="fw-diag1" x1="60" y1="30" x2="240" y2="190" stroke="#7f1d1d" stroke-width="1.5" stroke-dasharray="4 3" />
+            <line id="fw-diag2" x1="60" y1="190" x2="240" y2="30" stroke="#b45309" stroke-width="1.5" stroke-dasharray="4 3" />
+            <circle cx="150" cy="110" r="5" fill="#1e293b" id="fw-center-dot" />
+            <text id="fw-lbl-wine-abv" x="58" y="26" text-anchor="end" font-size="12" font-weight="700" fill="#7f1d1d">12%</text>
+            <text x="58" y="40" text-anchor="end" font-size="10" fill="currentColor" opacity="0.5" id="fw-lbl-wine-name">{ui.wineCornerLabel}</text>
+            <text id="fw-lbl-spirit-abv" x="58" y="186" text-anchor="end" font-size="12" font-weight="700" fill="#b45309">38%</text>
+            <text x="58" y="200" text-anchor="end" font-size="10" fill="currentColor" opacity="0.5" id="fw-lbl-spirit-name">{ui.spiritCornerLabel}</text>
+            <text id="fw-lbl-target" x="150" y="104" text-anchor="middle" font-size="13" font-weight="800" fill="currentColor">16%</text>
+            <text id="fw-lbl-parts-wine" x="244" y="26" font-size="11" font-weight="700" fill="#7f1d1d">22 parts</text>
+            <text id="fw-lbl-parts-spirit" x="244" y="186" font-size="11" font-weight="700" fill="#b45309">4 parts</text>
+          </svg>
+          <div id="fw-prop-wrap" style="display:none">
+            <div class="fw-prop-bar">
+              <div class="fw-prop-wine" id="fw-prop-wine-bar" style="width:85%"></div>
+              <div class="fw-prop-spirit" id="fw-prop-spirit-bar" style="width:15%"></div>
+            </div>
+            <div class="fw-prop-labels">
+              <span class="fw-prop-wine-pct" id="fw-prop-wine-pct">85% wine</span>
+              <span class="fw-prop-spirit-pct" id="fw-prop-spirit-pct">15% spirit</span>
+            </div>
+          </div>
+          <div id="fw-error" class="fw-error" style="display:none">{ui.errorAbv}</div>
+        </div>
+
+        <div class="fw-results" id="fw-results" style="display:none">
+          <div class="fw-results-title">{ui.resultsTitle}</div>
+          <div class="fw-result-grid">
+            <div class="fw-result-card accent">
+              <div class="fw-result-label">{ui.addLabel}</div>
+              <div class="fw-result-value"><span id="fw-res-spirit">—</span><span class="fw-result-unit">L</span></div>
+            </div>
+            <div class="fw-result-card">
+              <div class="fw-result-label">{ui.finalVolumeLabel}</div>
+              <div class="fw-result-value"><span id="fw-res-total">—</span><span class="fw-result-unit">L</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fw-bottles" id="fw-bottles" style="display:none">
+          <span class="fw-bottles-label">{ui.bottlesSection}</span>
+          <span class="fw-bottle-badge">
+            <Icon name="mdi:bottle-wine-outline" class="fw-bottle-icon" />
+            <span id="fw-bottles-75">—</span> × 75cl
+          </span>
+          <span class="fw-bottle-badge">
+            <Icon name="mdi:bottle-wine-outline" class="fw-bottle-icon" />
+            <span id="fw-bottles-50">—</span> × 50cl
+          </span>
+        </div>
+
+        <div class="fw-copy-wrap" id="fw-copy-wrap" style="display:none">
+          <button class="fw-copy-btn" id="fw-copy-btn" data-copied-text={ui.copiedBtn}>
+            <Icon name="mdi:content-copy" />
+            <span id="fw-copy-label">{ui.copyBtn}</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  type Mode = 'a' | 'b';
+  let currentMode: Mode = 'a';
+
+  function getVal(id: string) { return parseFloat((document.getElementById(id) as HTMLInputElement).value); }
+  function setVal(id: string, v: number) { (document.getElementById(id) as HTMLInputElement).value = String(v); }
+  function el(id: string) { return document.getElementById(id)!; }
+
+  function setSliderPct(sliderId: string, v: number, min: number, max: number) {
+    const pct = ((v - min) / (max - min)) * 100;
+    (document.getElementById(sliderId) as HTMLInputElement).style.setProperty('--val', `${pct}%`);
+  }
+
+  function syncSlider(sliderId: string, inputId: string, min: number, max: number) {
+    const slider = document.getElementById(sliderId) as HTMLInputElement;
+    const input = document.getElementById(inputId) as HTMLInputElement;
+    setSliderPct(sliderId, Number(slider.value), min, max);
+    input.value = slider.value;
+    calculate();
+  }
+
+  function syncInput(sliderId: string, inputId: string, min: number, max: number) {
+    const input = document.getElementById(inputId) as HTMLInputElement;
+    let v = parseFloat(input.value);
+    if (isNaN(v)) return;
+    v = Math.min(max, Math.max(min, v));
+    (document.getElementById(sliderId) as HTMLInputElement).value = String(v);
+    setSliderPct(sliderId, v, min, max);
+    calculate();
+  }
+
+  function initSlider(sliderId: string, inputId: string, min: number, max: number) {
+    const slider = document.getElementById(sliderId) as HTMLInputElement;
+    const input = document.getElementById(inputId) as HTMLInputElement;
+    slider.addEventListener('input', () => syncSlider(sliderId, inputId, min, max));
+    input.addEventListener('input', () => syncInput(sliderId, inputId, min, max));
+    setSliderPct(sliderId, parseFloat(slider.value), min, max);
+  }
+
+  function showError() {
+    el('fw-error').style.display = '';
+    el('fw-pearson-svg').style.display = 'none';
+    el('fw-pearson-empty').style.display = '';
+    el('fw-prop-wrap').style.display = 'none';
+    el('fw-results').style.display = 'none';
+    el('fw-bottles').style.display = 'none';
+    el('fw-copy-wrap').style.display = 'none';
+  }
+
+  function updatePearson(abvs: { wine: number; spirit: number; target: number }, parts: { wine: number; spirit: number }) {
+    el('fw-lbl-wine-abv').textContent = `${abvs.wine}%`;
+    el('fw-lbl-spirit-abv').textContent = `${abvs.spirit}%`;
+    el('fw-lbl-target').textContent = `${abvs.target}%`;
+    el('fw-lbl-parts-wine').textContent = `${parts.wine.toFixed(1)} parts`;
+    el('fw-lbl-parts-spirit').textContent = `${parts.spirit.toFixed(1)} parts`;
+    el('fw-pearson-svg').style.display = '';
+    el('fw-pearson-empty').style.display = 'none';
+    el('fw-error').style.display = 'none';
+  }
+
+  function updatePropBar(partsWine: number, totalParts: number) {
+    const winePct = Math.round((partsWine / totalParts) * 100);
+    const spiritPct = 100 - winePct;
+    el('fw-prop-wine-bar').style.width = `${winePct}%`;
+    el('fw-prop-spirit-bar').style.width = `${spiritPct}%`;
+    el('fw-prop-wine-pct').textContent = `${winePct}% wine`;
+    el('fw-prop-spirit-pct').textContent = `${spiritPct}% spirit`;
+    el('fw-prop-wrap').style.display = '';
+  }
+
+  function updateResults(vols: { wine: number; spirit: number; total: number }, abvs: { wine: number; spirit: number; target: number }) {
+    el('fw-res-spirit').textContent = vols.spirit.toFixed(2);
+    el('fw-res-total').textContent = vols.total.toFixed(2);
+    el('fw-bottles-75').textContent = String(Math.ceil(vols.total / 0.75));
+    el('fw-bottles-50').textContent = String(Math.ceil(vols.total / 0.5));
+    el('fw-results').style.display = '';
+    el('fw-bottles').style.display = '';
+    el('fw-copy-wrap').style.display = '';
+    const btn = el('fw-copy-btn') as HTMLElement;
+    Object.assign(btn.dataset, { wine: vols.wine.toFixed(2), spirit: vols.spirit.toFixed(2), total: vols.total.toFixed(2), wineAbv: String(abvs.wine), spiritAbv: String(abvs.spirit), targetAbv: String(abvs.target) });
+  }
+
+  function calculate() {
+    const wineAbv = getVal('fw-wine-abv');
+    const spiritAbv = getVal('fw-spirit-abv');
+    const targetAbv = getVal('fw-target-abv');
+
+    el('fw-lbl-wine-abv').textContent = `${wineAbv}%`;
+    el('fw-lbl-spirit-abv').textContent = `${spiritAbv}%`;
+    el('fw-lbl-target').textContent = `${targetAbv}%`;
+
+    if (spiritAbv <= targetAbv || targetAbv <= wineAbv) { showError(); return; }
+
+    const partsWine = spiritAbv - targetAbv;
+    const partsSpirit = targetAbv - wineAbv;
+    const totalParts = partsWine + partsSpirit;
+
+    updatePearson({ wine: wineAbv, spirit: spiritAbv, target: targetAbv }, { wine: partsWine, spirit: partsSpirit });
+    updatePropBar(partsWine, totalParts);
+
+    let volWine = 0, volSpirit = 0, volTotal = 0;
+    if (currentMode === 'a') {
+      const wineVol = getVal('fw-wine-vol');
+      if (isNaN(wineVol) || wineVol <= 0) { el('fw-results').style.display = 'none'; el('fw-bottles').style.display = 'none'; el('fw-copy-wrap').style.display = 'none'; return; }
+      volWine = wineVol;
+      volSpirit = wineVol * (partsSpirit / partsWine);
+      volTotal = volWine + volSpirit;
+    } else {
+      const targetVol = getVal('fw-target-vol');
+      if (isNaN(targetVol) || targetVol <= 0) { el('fw-results').style.display = 'none'; el('fw-bottles').style.display = 'none'; el('fw-copy-wrap').style.display = 'none'; return; }
+      volWine = targetVol * (partsWine / totalParts);
+      volSpirit = targetVol * (partsSpirit / totalParts);
+      volTotal = targetVol;
+    }
+    updateResults({ wine: volWine, spirit: volSpirit, total: volTotal }, { wine: wineAbv, spirit: spiritAbv, target: targetAbv });
+  }
+
+  initSlider('fw-wine-vol-slider', 'fw-wine-vol', 0.1, 100);
+  initSlider('fw-wine-abv-slider', 'fw-wine-abv', 0, 25);
+  initSlider('fw-spirit-abv-slider', 'fw-spirit-abv', 15, 96);
+  initSlider('fw-target-abv-slider', 'fw-target-abv', 1, 40);
+  initSlider('fw-target-vol-slider', 'fw-target-vol', 0.1, 100);
+
+  document.querySelectorAll<HTMLButtonElement>('.fw-intention-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.fw-intention-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const target = btn.dataset.target;
+      if (target) {
+        setVal('fw-target-abv', Number(target));
+        setVal('fw-target-abv-slider', Number(target));
+        setSliderPct('fw-target-abv-slider', Number(target), 1, 40);
+      }
+      calculate();
+    });
+  });
+
+  document.querySelectorAll<HTMLButtonElement>('.fw-mode-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.fw-mode-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentMode = btn.dataset.mode as Mode;
+      const wineVolField = (document.getElementById('fw-wine-vol') as HTMLElement)?.closest('.fw-field') as HTMLElement;
+      const targetVolField = el('fw-target-vol-field');
+      if (currentMode === 'b') { if (wineVolField) wineVolField.style.display = 'none'; targetVolField.style.display = ''; }
+      else { if (wineVolField) wineVolField.style.display = ''; targetVolField.style.display = 'none'; }
+      calculate();
+    });
+  });
+
+  document.querySelectorAll<HTMLButtonElement>('.fw-preset-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const abv = Number(btn.dataset.abv);
+      setVal('fw-spirit-abv', abv);
+      setVal('fw-spirit-abv-slider', abv);
+      setSliderPct('fw-spirit-abv-slider', abv, 15, 96);
+      calculate();
+    });
+  });
+
+  el('fw-copy-btn').addEventListener('click', function () {
+    const btn = this as HTMLElement;
+    const label = el('fw-copy-label');
+    const copiedText = btn.dataset.copiedText || 'Copied!';
+    const copyText = label.textContent || 'Copy Recipe';
+    const text = `Recipe: ${btn.dataset.wine}L wine ${btn.dataset.wineAbv}% + ${btn.dataset.spirit}L spirit ${btn.dataset.spiritAbv}% = ${btn.dataset.total}L @ ${btn.dataset.targetAbv}%`;
+    navigator.clipboard.writeText(text).then(() => {
+      btn.classList.add('copied');
+      label.textContent = copiedText;
+      setTimeout(() => { btn.classList.remove('copied'); label.textContent = copyText; }, 2000);
+    });
+  });
+
+  calculate();
+</script>

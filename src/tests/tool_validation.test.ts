@@ -3,8 +3,8 @@ import { ALL_TOOLS } from '../tools';
 
 describe('Tool Validation Suite', () => {
   describe('Library Registration', () => {
-    it('should have 5 tools in ALL_TOOLS', () => {
-      expect(ALL_TOOLS.length).toBe(5);
+    it('should have 7 tools in ALL_TOOLS', () => {
+      expect(ALL_TOOLS.length).toBe(7);
     });
 
     it('all tools should have defined i18n', () => {

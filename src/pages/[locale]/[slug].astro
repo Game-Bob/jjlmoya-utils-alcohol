@@ -45,7 +45,7 @@ export async function getStaticPaths() {
       );
       paths.push({
         params: { locale, slug: content.slug },
-        props: { Component, locale, content, localeUrls, allToolsNav },
+        props: { Component, locale, content, localeUrls, allToolsNav, toolId: entry.id },
       });
     }
   }
@@ -66,9 +66,14 @@ interface Props {
   content: ToolLocaleContent;
   localeUrls: Partial<Record<KnownLocale, string>>;
   allToolsNav: NavItem[];
+  toolId: string;
 }
 
-const { Component, locale, content, localeUrls, allToolsNav } = Astro.props;
+const { Component, locale, content, localeUrls, allToolsNav, toolId } = Astro.props;
+
+const toolCssModules = import.meta.glob('../../tool/*/*.css');
+const cssKey = Object.keys(toolCssModules).find(k => k.endsWith(`/${toolId}.css`));
+if (cssKey) await toolCssModules[cssKey]();
 
 const seoContent: UtilitySEOContent = { locale, sections: content.seo };
 
