@@ -4,6 +4,7 @@ export * from './tool/carbonationCalculator';
 export * from './tool/cocktailBalancer';
 export * from './tool/partyKeg';
 export * from './tool/fortifiedWine';
+export * from './tool/jelloShotLab';
 
 export { alcoholCategory } from './category';
 export const AlcoholCategorySEO = () => import('./category/seo.astro').then((m) => m.default);
