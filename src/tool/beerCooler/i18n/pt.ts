@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { BeerCoolerUI, BeerCoolerLocaleContent } from '../index';
 
@@ -30,7 +31,6 @@ const ui: BeerCoolerUI = {
 };
 
 const faqTitle = 'Perguntas Frequentes';
-const bibliographyTitle = 'Referências & Fontes';
 
 const faq: BeerCoolerLocaleContent['faq'] = [
   {
@@ -70,16 +70,6 @@ const howTo: BeerCoolerLocaleContent['howTo'] = [
   },
 ];
 
-const bibliography: BeerCoolerLocaleContent['bibliography'] = [
-  {
-    name: 'Lei de Resfriamento de Newton - Wikipedia',
-    url: 'https://en.wikipedia.org/wiki/Newton%27s_law_of_cooling',
-  },
-  {
-    name: 'Química Avançada de Cerveja e Cervejaria - American Chemical Society',
-    url: 'https://www.acs.org/acs-webinars/library/advanced-chemistry-of-beer-and-brewing.html',
-  },
-];
 
 const seo: BeerCoolerLocaleContent['seo'] = [
   {
@@ -190,7 +180,6 @@ export const content: BeerCoolerLocaleContent = {
   seo,
   faqTitle,
   faq,
-  bibliographyTitle,
   bibliography,
   howTo,
   schemas,

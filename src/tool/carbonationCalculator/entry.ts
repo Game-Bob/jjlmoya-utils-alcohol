@@ -1,4 +1,5 @@
 import type { AlcoholToolEntry, ToolLocaleContent } from '../../types';
+export { bibliography } from './bibliography';
 
 export interface CarbonationUI {
   [key: string]: string;

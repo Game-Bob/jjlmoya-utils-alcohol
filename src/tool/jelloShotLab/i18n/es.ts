@@ -1,4 +1,5 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
+import { bibliography } from '../bibliography';
 import type { JelloShotLabUI, JelloShotLabLocaleContent } from '../entry';
 
 const slug = 'laboratorio-de-jello-shots';
@@ -39,7 +40,6 @@ const ui: JelloShotLabUI = {
 };
 
 const faqTitle = 'Preguntas Frecuentes';
-const bibliographyTitle = 'Fuentes y Referencias';
 
 const faq: JelloShotLabLocaleContent['faq'] = [
   {
@@ -75,12 +75,6 @@ const howTo: JelloShotLabLocaleContent['howTo'] = [
   { name: 'Vierte y refrigera', text: 'Vierte en vasitos de plástico, moldes de silicona o chupiteros pequeños. Refrigera un mínimo de 4 horas — una noche entera es ideal. No congeles.' },
 ];
 
-const bibliography: JelloShotLabLocaleContent['bibliography'] = [
-  { name: 'Gelatina — Wikipedia', url: 'https://es.wikipedia.org/wiki/Gelatina' },
-  { name: 'Gelatin — Wikipedia (EN)', url: 'https://en.wikipedia.org/wiki/Gelatin' },
-  { name: 'McGee, H. — La Cocina y los Alimentos (Editorial Debate, 2007)', url: 'https://www.penguinlibros.com/es/gastronomia/148-la-cocina-y-los-alimentos-9788483067628.html' },
-  { name: 'López-Alt, J.K. — The Food Lab: Mejor Cocina en Casa a través de la Ciencia', url: 'https://www.seriouseats.com/the-food-lab-better-home-cooking-through-science' },
-];
 
 const seo: JelloShotLabLocaleContent['seo'] = [
   { type: 'title', text: 'La Química Detrás de un Jello Shot Perfecto', level: 2 },
@@ -159,4 +153,4 @@ const schemas: JelloShotLabLocaleContent['schemas'] = [
   } as WithContext<SoftwareApplication>,
 ];
 
-export const content: JelloShotLabLocaleContent = { slug, title, description, ui, seo, faqTitle, faq, bibliographyTitle, bibliography, howTo, schemas };
+export const content: JelloShotLabLocaleContent = { slug, title, description, ui, seo, faqTitle, faq, bibliography, howTo, schemas };

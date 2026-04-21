@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { CarbonationUI, CarbonationLocaleContent } from '../index';
 
@@ -29,7 +30,6 @@ const ui: CarbonationUI = {
 };
 
 const faqTitle = 'Häufig gestellte Fragen';
-const bibliographyTitle = 'Bibliografie & Quellen';
 
 const faq: CarbonationLocaleContent['faq'] = [
   {
@@ -65,16 +65,6 @@ const howTo: CarbonationLocaleContent['howTo'] = [
   },
 ];
 
-const bibliography: CarbonationLocaleContent['bibliography'] = [
-  {
-    name: 'How to Brew: Karbonisierungstabellen - John Palmer',
-    url: 'https://howtobrew.com/section-1/chapter-11/',
-  },
-  {
-    name: 'BJCP Stilrichtlinien: Karbonisierungsniveaus',
-    url: 'https://www.bjcp.org/style/2021/beer/',
-  },
-];
 
 const seo: CarbonationLocaleContent['seo'] = [
   {
@@ -193,7 +183,6 @@ export const content: CarbonationLocaleContent = {
   seo,
   faqTitle,
   faq,
-  bibliographyTitle,
   bibliography,
   howTo,
   schemas,

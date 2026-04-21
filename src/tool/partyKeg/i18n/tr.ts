@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { PartyKegUI, PartyKegLocaleContent } from '../index';
 
@@ -27,7 +28,6 @@ const ui: PartyKegUI = {
 };
 
 const faqTitle = 'Sıkça Sorulan Sorular';
-const bibliographyTitle = 'Bibliyografi ve Kaynaklar';
 
 const faq: PartyKegLocaleContent['faq'] = [
   {
@@ -63,16 +63,6 @@ const howTo: PartyKegLocaleContent['howTo'] = [
   },
 ];
 
-const bibliography: PartyKegLocaleContent['bibliography'] = [
-  {
-    name: 'Etkinlik Planlama: Alkol ve Bar Hesaplamaları - Spruce Eats',
-    url: 'https://www.thespruceeats.com/stock-your-bar-for-a-party-760394',
-  },
-  {
-    name: 'Buz Eritme Termodinamiği - Mühendislik Araç Kutusu',
-    url: 'https://www.engineeringtoolbox.com/saturated-ice-steam-d_970.html',
-  },
-];
 
 const seo: PartyKegLocaleContent['seo'] = [
   {
@@ -180,7 +170,6 @@ export const content: PartyKegLocaleContent = {
   seo,
   faqTitle,
   faq,
-  bibliographyTitle,
   bibliography,
   howTo,
   schemas,

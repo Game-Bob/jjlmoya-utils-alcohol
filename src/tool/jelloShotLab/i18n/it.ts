@@ -1,4 +1,5 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
+import { bibliography } from '../bibliography';
 import type { JelloShotLabUI, JelloShotLabLocaleContent } from '../entry';
 
 const slug = 'laboratorio-jello-shot';
@@ -39,7 +40,6 @@ const ui: JelloShotLabUI = {
 };
 
 const faqTitle = 'Domande frequenti';
-const bibliographyTitle = 'Fonti e riferimenti';
 
 const faq: JelloShotLabLocaleContent['faq'] = [
   {
@@ -75,12 +75,6 @@ const howTo: JelloShotLabLocaleContent['howTo'] = [
   { name: 'Versa e refrigera', text: 'Versa in bicchieri di plastica, stampi in silicone o piccoli bicchierini da shot. Refrigera per almeno 4 ore — una notte intera è l\'ideale. Non congelare.' },
 ];
 
-const bibliography: JelloShotLabLocaleContent['bibliography'] = [
-  { name: 'Gelatina — Wikipedia', url: 'https://en.wikipedia.org/wiki/Gelatin' },
-  { name: 'Jello Shot — Wikipedia', url: 'https://en.wikipedia.org/wiki/Jello_shot' },
-  { name: 'McGee, H. — On Food and Cooking: The Science and Lore of the Kitchen (Scribner, 2004)', url: 'https://www.simonandschuster.com/books/On-Food-and-Cooking/Harold-McGee/9780684800011' },
-  { name: 'The Food Lab: Better Home Cooking Through Science — J. Kenji López-Alt (Norton, 2015)', url: 'https://www.seriouseats.com/the-food-lab-better-home-cooking-through-science' },
-];
 
 const seo: JelloShotLabLocaleContent['seo'] = [
   { type: 'title', text: 'La chimica dietro un jello shot perfetto', level: 2 },
@@ -159,4 +153,4 @@ const schemas: JelloShotLabLocaleContent['schemas'] = [
   } as WithContext<SoftwareApplication>,
 ];
 
-export const content: JelloShotLabLocaleContent = { slug, title, description, ui, seo, faqTitle, faq, bibliographyTitle, bibliography, howTo, schemas };
+export const content: JelloShotLabLocaleContent = { slug, title, description, ui, seo, faqTitle, faq, bibliography, howTo, schemas };

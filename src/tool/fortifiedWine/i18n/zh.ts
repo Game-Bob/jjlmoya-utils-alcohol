@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { FortifiedWineBuilderUI, FortifiedWineBuilderLocaleContent } from '../index';
 
@@ -38,7 +39,6 @@ const ui: FortifiedWineBuilderUI = {
 };
 
 const faqTitle = '常见问题';
-const bibliographyTitle = '参考文献';
 
 const faq: FortifiedWineBuilderLocaleContent['faq'] = [
   {
@@ -70,11 +70,6 @@ const howTo: FortifiedWineBuilderLocaleContent['howTo'] = [
   { name: '查看配方', text: '计算器精确显示需要添加的烈酒毫升数和最终容量。' },
 ];
 
-const bibliography: FortifiedWineBuilderLocaleContent['bibliography'] = [
-  { name: 'Jackisch, P. — 现代酿酒学（康奈尔大学出版社）', url: 'https://www.cornellpress.cornell.edu/book/9780801493355/modern-winemaking/' },
-  { name: 'Goode, J. — 葡萄酒科学（加州大学出版社）', url: 'https://www.ucpress.edu/book/9780520276895/the-science-of-wine' },
-  { name: '皮尔逊方法 — University of California ANR', url: 'https://ucanr.edu/sites/wineserver/files/24612.pdf' },
-];
 
 const seo: FortifiedWineBuilderLocaleContent['seo'] = [
   { type: 'title', text: '皮尔逊方法：古老的数学，完美的葡萄酒', level: 2 },
@@ -93,4 +88,4 @@ const schemas: FortifiedWineBuilderLocaleContent['schemas'] = [
   { '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: title, description, applicationCategory: 'UtilityApplication', operatingSystem: 'Web', offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' } } as WithContext<SoftwareApplication>,
 ];
 
-export const content: FortifiedWineBuilderLocaleContent = { slug, title, description, ui, seo, faqTitle, faq, bibliographyTitle, bibliography, howTo, schemas };
+export const content: FortifiedWineBuilderLocaleContent = { slug, title, description, ui, seo, faqTitle, faq, bibliography, howTo, schemas };

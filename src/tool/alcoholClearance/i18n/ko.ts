@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { AlcoholClearanceUI, AlcoholClearanceLocaleContent } from '../index';
 
@@ -31,7 +32,6 @@ const ui: AlcoholClearanceUI = {
 };
 
 const faqTitle = '자주 묻는 질문';
-const bibliographyTitle = '참고 자료 및 출처';
 
 const faq: AlcoholClearanceLocaleContent['faq'] = [
   {
@@ -60,16 +60,6 @@ const faq: AlcoholClearanceLocaleContent['faq'] = [
   },
 ];
 
-const bibliography: AlcoholClearanceLocaleContent['bibliography'] = [
-  {
-    name: "알콜 계산 및 불확실성 - PMC",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4361698/",
-  },
-  {
-    name: "알콜 신진대사: 신체가 알콜을 처리하는 방식 - NIH",
-    url: "https://www.niaaa.nih.gov/publications/alcohol-metabolism",
-  },
-];
 
 const howTo: AlcoholClearanceLocaleContent['howTo'] = [
   {
@@ -198,7 +188,6 @@ export const content: AlcoholClearanceLocaleContent = {
   seo,
   faqTitle,
   faq,
-  bibliographyTitle,
   bibliography,
   howTo,
   schemas,

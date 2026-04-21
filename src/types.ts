@@ -31,7 +31,7 @@ export interface ToolLocaleContent<TUI extends Record<string, string> = Record<s
   seo: SEOSection[];
   faqTitle: string;
   faq: FAQItem[];
-  bibliographyTitle: string;
+  bibliographyTitle?: string;
   bibliography: BibliographyEntry[];
   howTo: HowToStep[];
   schemas: WithContext<Thing>[];

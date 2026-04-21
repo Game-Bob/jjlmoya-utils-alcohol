@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { CocktailBalancerUI, CocktailBalancerLocaleContent } from '../index';
 
@@ -45,7 +46,6 @@ const ui: CocktailBalancerUI = {
 };
 
 const faqTitle = '자주 묻는 질문';
-const bibliographyTitle = '참고문헌 & 출처';
 
 const faq: CocktailBalancerLocaleContent['faq'] = [
   {
@@ -85,20 +85,6 @@ const howTo: CocktailBalancerLocaleContent['howTo'] = [
   },
 ];
 
-const bibliography: CocktailBalancerLocaleContent['bibliography'] = [
-  {
-    name: "Liquid Intelligence: The Art and Science of the Perfect Cocktail",
-    url: "https://www.indigo.ca/en-ca/liquid-intelligence-the-art-and-science-of-the-perfect-cocktail/9780393089035.html",
-  },
-  {
-    name: "Cocktails: The Science of Shaking",
-    url: "https://cookingissues.com/2009/07/22/cocktails-the-science-of-shaking/",
-  },
-  {
-    name: "Cocktail Balance - Difford's Guide",
-    url: "https://www.diffordsguide.com/encyclopedia/1066/cocktails/cocktail-balance",
-  },
-];
 
 const seo: CocktailBalancerLocaleContent['seo'] = [
   {
@@ -215,7 +201,6 @@ export const content: CocktailBalancerLocaleContent = {
   seo,
   faqTitle,
   faq,
-  bibliographyTitle,
   bibliography,
   howTo,
   schemas,

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { FortifiedWineBuilderUI, FortifiedWineBuilderLocaleContent } from '../index';
 
@@ -38,7 +39,6 @@ const ui: FortifiedWineBuilderUI = {
 };
 
 const faqTitle = 'Pertanyaan yang Sering Diajukan';
-const bibliographyTitle = 'Bibliografi & Sumber';
 
 const faq: FortifiedWineBuilderLocaleContent['faq'] = [
   {
@@ -70,11 +70,6 @@ const howTo: FortifiedWineBuilderLocaleContent['howTo'] = [
   { name: 'Baca resep Anda', text: 'Kalkulator menampilkan tepat berapa mililiter spirit yang harus ditambahkan dan volume akhirnya.' },
 ];
 
-const bibliography: FortifiedWineBuilderLocaleContent['bibliography'] = [
-  { name: 'Jackisch, P. — Pembuatan Wine Modern (Cornell University Press)', url: 'https://www.cornellpress.cornell.edu/book/9780801493355/modern-winemaking/' },
-  { name: 'Goode, J. — Ilmu Wine (University of California Press)', url: 'https://www.ucpress.edu/book/9780520276895/the-science-of-wine' },
-  { name: 'Pearson Square — University of California ANR', url: 'https://ucanr.edu/sites/wineserver/files/24612.pdf' },
-];
 
 const seo: FortifiedWineBuilderLocaleContent['seo'] = [
   { type: 'title', text: 'Pearson Square: Matematika Kuno, Wine Sempurna', level: 2 },
@@ -93,4 +88,4 @@ const schemas: FortifiedWineBuilderLocaleContent['schemas'] = [
   { '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: title, description, applicationCategory: 'UtilityApplication', operatingSystem: 'Web', offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' } } as WithContext<SoftwareApplication>,
 ];
 
-export const content: FortifiedWineBuilderLocaleContent = { slug, title, description, ui, seo, faqTitle, faq, bibliographyTitle, bibliography, howTo, schemas };
+export const content: FortifiedWineBuilderLocaleContent = { slug, title, description, ui, seo, faqTitle, faq, bibliography, howTo, schemas };

@@ -1,4 +1,5 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
+import { bibliography } from '../bibliography';
 import type { JelloShotLabUI, JelloShotLabLocaleContent } from '../entry';
 
 const slug = 'jello-shot-hesaplayici';
@@ -39,7 +40,6 @@ const ui: JelloShotLabUI = {
 };
 
 const faqTitle = 'Sıkça Sorulan Sorular';
-const bibliographyTitle = 'Kaynaklar ve Referanslar';
 
 const faq: JelloShotLabLocaleContent['faq'] = [
   {
@@ -75,12 +75,6 @@ const howTo: JelloShotLabLocaleContent['howTo'] = [
   { name: 'Dökün ve soğutun', text: 'Plastik bardaklara, silikon kalıplara veya küçük shot bardaklarına dökün. En az 4 saat buzdolabında bekletin — bir gece ideal. Dondurmayın.' },
 ];
 
-const bibliography: JelloShotLabLocaleContent['bibliography'] = [
-  { name: 'Jelatin — Vikipedi', url: 'https://en.wikipedia.org/wiki/Gelatin' },
-  { name: 'Jello Shot — Vikipedi', url: 'https://en.wikipedia.org/wiki/Jello_shot' },
-  { name: 'McGee, H. — On Food and Cooking: The Science and Lore of the Kitchen (Scribner, 2004)', url: 'https://www.simonandschuster.com/books/On-Food-and-Cooking/Harold-McGee/9780684800011' },
-  { name: 'The Food Lab: Better Home Cooking Through Science — J. Kenji López-Alt (Norton, 2015)', url: 'https://www.seriouseats.com/the-food-lab-better-home-cooking-through-science' },
-];
 
 const seo: JelloShotLabLocaleContent['seo'] = [
   { type: 'title', text: 'Mükemmel Bir Jello Shotun Arkasındaki Kimya', level: 2 },
@@ -159,4 +153,4 @@ const schemas: JelloShotLabLocaleContent['schemas'] = [
   } as WithContext<SoftwareApplication>,
 ];
 
-export const content: JelloShotLabLocaleContent = { slug, title, description, ui, seo, faqTitle, faq, bibliographyTitle, bibliography, howTo, schemas };
+export const content: JelloShotLabLocaleContent = { slug, title, description, ui, seo, faqTitle, faq, bibliography, howTo, schemas };

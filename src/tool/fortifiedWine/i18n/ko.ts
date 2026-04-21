@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { FortifiedWineBuilderUI, FortifiedWineBuilderLocaleContent } from '../index';
 
@@ -38,7 +39,6 @@ const ui: FortifiedWineBuilderUI = {
 };
 
 const faqTitle = '자주 묻는 질문';
-const bibliographyTitle = '참고문헌 및 출처';
 
 const faq: FortifiedWineBuilderLocaleContent['faq'] = [
   {
@@ -70,11 +70,6 @@ const howTo: FortifiedWineBuilderLocaleContent['howTo'] = [
   { name: '레시피 확인', text: '계산기는 추가할 증류주의 정확한 밀리리터 수와 최종 용량을 표시합니다.' },
 ];
 
-const bibliography: FortifiedWineBuilderLocaleContent['bibliography'] = [
-  { name: 'Jackisch, P. — 현대 와인 양조 (코넬 대학교 출판사)', url: 'https://www.cornellpress.cornell.edu/book/9780801493355/modern-winemaking/' },
-  { name: 'Goode, J. — 와인의 과학 (캘리포니아 대학교 출판사)', url: 'https://www.ucpress.edu/book/9780520276895/the-science-of-wine' },
-  { name: '피어슨 스퀘어 — University of California ANR', url: 'https://ucanr.edu/sites/wineserver/files/24612.pdf' },
-];
 
 const seo: FortifiedWineBuilderLocaleContent['seo'] = [
   { type: 'title', text: '피어슨 스퀘어: 고대의 수학, 완벽한 와인', level: 2 },
@@ -93,4 +88,4 @@ const schemas: FortifiedWineBuilderLocaleContent['schemas'] = [
   { '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: title, description, applicationCategory: 'UtilityApplication', operatingSystem: 'Web', offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' } } as WithContext<SoftwareApplication>,
 ];
 
-export const content: FortifiedWineBuilderLocaleContent = { slug, title, description, ui, seo, faqTitle, faq, bibliographyTitle, bibliography, howTo, schemas };
+export const content: FortifiedWineBuilderLocaleContent = { slug, title, description, ui, seo, faqTitle, faq, bibliography, howTo, schemas };

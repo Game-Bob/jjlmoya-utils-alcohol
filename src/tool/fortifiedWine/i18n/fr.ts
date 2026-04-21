@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { FortifiedWineBuilderUI, FortifiedWineBuilderLocaleContent } from '../index';
 
@@ -38,7 +39,6 @@ const ui: FortifiedWineBuilderUI = {
 };
 
 const faqTitle = 'Foire Aux Questions';
-const bibliographyTitle = 'Bibliographie & Sources';
 
 const faq: FortifiedWineBuilderLocaleContent['faq'] = [
   {
@@ -70,11 +70,6 @@ const howTo: FortifiedWineBuilderLocaleContent['howTo'] = [
   { name: 'Lire votre recette', text: 'Le calculateur indique exactement combien de millilitres d\'alcool ajouter et le volume final.' },
 ];
 
-const bibliography: FortifiedWineBuilderLocaleContent['bibliography'] = [
-  { name: 'Jackisch, P. — La vinification moderne (Cornell University Press)', url: 'https://www.cornellpress.cornell.edu/book/9780801493355/modern-winemaking/' },
-  { name: 'Goode, J. — La science du vin (University of California Press)', url: 'https://www.ucpress.edu/book/9780520276895/the-science-of-wine' },
-  { name: 'Carré de Pearson — University of California ANR', url: 'https://ucanr.edu/sites/wineserver/files/24612.pdf' },
-];
 
 const seo: FortifiedWineBuilderLocaleContent['seo'] = [
   { type: 'title', text: 'Le Carré de Pearson : Mathématiques ancestrales, vin parfait', level: 2 },
@@ -93,4 +88,4 @@ const schemas: FortifiedWineBuilderLocaleContent['schemas'] = [
   { '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: title, description, applicationCategory: 'UtilityApplication', operatingSystem: 'Web', offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' } } as WithContext<SoftwareApplication>,
 ];
 
-export const content: FortifiedWineBuilderLocaleContent = { slug, title, description, ui, seo, faqTitle, faq, bibliographyTitle, bibliography, howTo, schemas };
+export const content: FortifiedWineBuilderLocaleContent = { slug, title, description, ui, seo, faqTitle, faq, bibliography, howTo, schemas };

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { BeerCoolerUI, BeerCoolerLocaleContent } from '../index';
 
@@ -30,7 +31,6 @@ const ui: BeerCoolerUI = {
 };
 
 const faqTitle = '자주 묻는 질문';
-const bibliographyTitle = '참고문헌 & 출처';
 
 const faq: BeerCoolerLocaleContent['faq'] = [
   {
@@ -70,16 +70,6 @@ const howTo: BeerCoolerLocaleContent['howTo'] = [
   },
 ];
 
-const bibliography: BeerCoolerLocaleContent['bibliography'] = [
-  {
-    name: '뉴턴의 냉각 법칙 - Wikipedia',
-    url: 'https://en.wikipedia.org/wiki/Newton%27s_law_of_cooling',
-  },
-  {
-    name: '맥주 및 양조의 고급 화학 - American Chemical Society',
-    url: 'https://www.acs.org/acs-webinars/library/advanced-chemistry-of-beer-and-brewing.html',
-  },
-];
 
 const seo: BeerCoolerLocaleContent['seo'] = [
   {
@@ -190,7 +180,6 @@ export const content: BeerCoolerLocaleContent = {
   seo,
   faqTitle,
   faq,
-  bibliographyTitle,
   bibliography,
   howTo,
   schemas,

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
 import type { AlcoholClearanceUI, AlcoholClearanceLocaleContent } from '../index';
 
@@ -31,7 +32,6 @@ const ui: AlcoholClearanceUI = {
 };
 
 const faqTitle = 'Frequently Asked Questions';
-const bibliographyTitle = 'Bibliography & Sources';
 
 const faq: AlcoholClearanceLocaleContent['faq'] = [
   {
@@ -60,16 +60,6 @@ const faq: AlcoholClearanceLocaleContent['faq'] = [
   },
 ];
 
-const bibliography: AlcoholClearanceLocaleContent['bibliography'] = [
-  {
-    name: "Alcohol calculations and their uncertainty - PMC",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4361698/",
-  },
-  {
-    name: "Alcohol Metabolism: How the body processes alcohol - NIH",
-    url: "https://www.niaaa.nih.gov/publications/alcohol-metabolism",
-  },
-];
 
 const howTo: AlcoholClearanceLocaleContent['howTo'] = [
   {
@@ -198,7 +188,6 @@ export const content: AlcoholClearanceLocaleContent = {
   seo,
   faqTitle,
   faq,
-  bibliographyTitle,
   bibliography,
   howTo,
   schemas,

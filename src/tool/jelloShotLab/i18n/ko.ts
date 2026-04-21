@@ -1,4 +1,5 @@
 import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dts';
+import { bibliography } from '../bibliography';
 import type { JelloShotLabUI, JelloShotLabLocaleContent } from '../entry';
 
 const slug = 'jello-shot-lab';
@@ -39,7 +40,6 @@ const ui: JelloShotLabUI = {
 };
 
 const faqTitle = '자주 묻는 질문';
-const bibliographyTitle = '출처 및 참고문헌';
 
 const faq: JelloShotLabLocaleContent['faq'] = [
   {
@@ -75,12 +75,6 @@ const howTo: JelloShotLabLocaleContent['howTo'] = [
   { name: '붓고 냉장하기', text: '플라스틱 컵, 실리콘 몰드 또는 작은 샷 글라스에 붓습니다. 최소 4시간 냉장하세요. 하룻밤이 이상적입니다. 냉동하지 마세요.' },
 ];
 
-const bibliography: JelloShotLabLocaleContent['bibliography'] = [
-  { name: '젤라틴 — 위키피디아', url: 'https://en.wikipedia.org/wiki/Gelatin' },
-  { name: 'Jello Shot — 위키피디아', url: 'https://en.wikipedia.org/wiki/Jello_shot' },
-  { name: 'McGee, H. — On Food and Cooking: The Science and Lore of the Kitchen (Scribner, 2004)', url: 'https://www.simonandschuster.com/books/On-Food-and-Cooking/Harold-McGee/9780684800011' },
-  { name: 'The Food Lab: Better Home Cooking Through Science — J. Kenji López-Alt (Norton, 2015)', url: 'https://www.seriouseats.com/the-food-lab-better-home-cooking-through-science' },
-];
 
 const seo: JelloShotLabLocaleContent['seo'] = [
   { type: 'title', text: '완벽한 젤로 샷 뒤에 숨겨진 화학', level: 2 },
@@ -159,4 +153,4 @@ const schemas: JelloShotLabLocaleContent['schemas'] = [
   } as WithContext<SoftwareApplication>,
 ];
 
-export const content: JelloShotLabLocaleContent = { slug, title, description, ui, seo, faqTitle, faq, bibliographyTitle, bibliography, howTo, schemas };
+export const content: JelloShotLabLocaleContent = { slug, title, description, ui, seo, faqTitle, faq, bibliography, howTo, schemas };
