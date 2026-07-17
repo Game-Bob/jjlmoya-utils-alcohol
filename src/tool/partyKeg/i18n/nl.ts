@@ -36,15 +36,15 @@ const faq: PartyKegLocaleContent['faq'] = [
   },
   {
     question: "Hoeveel ijs heb ik nodig voor 100 bieren?",
-    answer: "Je hebt ongeveer 15–20 kilogram ijs nodig (7–10 zakken). De praktische regel is 0,75 kg ijs per liter drank onder normale omstandigheden. In de zomer of buiten boven 25°C moet je tot 1 kg per liter gaan: omgevingswarmte versnelt de smelt en je loopt ijs veel sneller uit dan verwacht.",
+    answer: "Je hebt ongeveer 15-20 kilogram ijs nodig (7-10 zakken). De praktische regel is 0,75 kg ijs per liter drank onder normale omstandigheden. In de zomer of buiten boven 25°C moet je tot 1 kg per liter gaan: omgevingswarmte versnelt de smelt en je loopt ijs veel sneller uit dan verwacht.",
   },
   {
     question: "Wat is het verschil tussen een standaardvat en een festvat?",
-    answer: "Een standaard handelsvat bevat 50 liter, wat ongeveer 200 porties (250 ml elk) oplevert. Een festvat (minivat) bevat meestal 5 liter — ongeveer 20 porties. Deze maten kennen helpt je om de liter-uitkomst van de calculator om te zetten naar het aantal containers dat je moet kopen.",
+    answer: "Een standaard handelsvat bevat 50 liter, wat ongeveer 200 porties (250 ml elk) oplevert. Een festvat (minivat) bevat meestal 5 liter - ongeveer 20 porties. Deze maten kennen helpt je om de liter-uitkomst van de calculator om te zetten naar het aantal containers dat je moet kopen.",
   },
   {
     question: "Waarom heb ik zoveel ijs nodig als het bier al koud is?",
-    answer: "Omdat afkoelen en onderhouden twee aparte processen zijn. Een blikje van 25°C naar 4°C brengen verbruikt de latente smeltingswarmte van ijs: ongeveer 334 kJ/kg. Eenmaal koud, blijft ijs werken om omgevingswarmte tegen te gaan. Op een zomerdag van 35°C kunnen warmteoverdrachten naar de koelbox ongeveer 1 kg ijs per liter drank elke 2–3 uur smelten. Daarom halveert je drank voorkelen voor het feest je totale ijsverbruik.",
+    answer: "Omdat afkoelen en onderhouden twee aparte processen zijn. Een blikje van 25°C naar 4°C brengen verbruikt de latente smeltingswarmte van ijs: ongeveer 334 kJ/kg. Eenmaal koud, blijft ijs werken om omgevingswarmte tegen te gaan. Op een zomerdag van 35°C kunnen warmteoverdrachten naar de koelbox ongeveer 1 kg ijs per liter drank elke 2-3 uur smelten. Daarom halveert je drank voorkelen voor het feest je totale ijsverbruik.",
   },
 ];
 
@@ -72,7 +72,7 @@ const seo: PartyKegLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'De miljoenenvraag bij het organiseren van een evenement: <strong>Hoeveel liter bier moet ik kopen?</strong> Te weinig is een ramp, maar overkopen is onnodige uitgave. Deze tool helpt je de exacte hoeveelheid alcohol te berekenen en, het allerbelangrijkste, <strong>hoeveel ijszakken</strong> je nodig hebt om alles koud te houden. Professionele cateraars en evenementenplanners gebruiken statistische verbruiksmodellen — en nu kun je dat ook, gratis.'
+    html: 'De miljoenenvraag bij het organiseren van een evenement: <strong>Hoeveel liter bier moet ik kopen?</strong> Te weinig is een ramp, maar overkopen is onnodige uitgave. Deze tool helpt je de exacte hoeveelheid alcohol te berekenen en, het allerbelangrijkste, <strong>hoeveel ijszakken</strong> je nodig hebt om alles koud te houden. Professionele cateraars en evenementenplanners gebruiken statistische verbruiksmodellen - en nu kun je dat ook, gratis.'
   },
   {
     type: 'title',
@@ -112,7 +112,7 @@ const seo: PartyKegLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Een standaard 50L-vat levert ongeveer 200 porties op. Een typische ijszak weegt 2 kg. Met deze getallen kun je het vervoer en de opslag voor je evenement plannen zonder laatste moment verrassingen. Houdt rekening met ijssmelt tijdens transport — een 30-minutenrit in de zomer kan je een hele zak kosten voordat het feest begint.'
+    html: 'Een standaard 50L-vat levert ongeveer 200 porties op. Een typische ijszak weegt 2 kg. Met deze getallen kun je het vervoer en de opslag voor je evenement plannen zonder laatste moment verrassingen. Houdt rekening met ijssmelt tijdens transport - een 30-minutenrit in de zomer kan je een hele zak kosten voordat het feest begint.'
   },
   {
     type: 'summary',
@@ -125,7 +125,7 @@ const seo: PartyKegLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Een vaak over het hoofd gezien variabele is <strong>gastenuitvalpercentage</strong>. Bij de meeste feesten vertrekken 10–15% van de gasten eerder en 10% drinkt misschien helemaal niet. De calculator past een voorzichtig buffer toe, zodat je nooit tekortschiet, maar ook niet met enorme overschotten zit. Begrijpen van deze aanpassingen helpt je de schatting voor je specifieke groep en context bij te stellen. Rond altijd naar boven af bij aankoop, omdat geopende vaten normaal niet kunnen worden geretourneerd. Een klein overschot is altijd beter dan halverwege het feest zonder drank zitten.'
+    html: 'Een vaak over het hoofd gezien variabele is <strong>gastenuitvalpercentage</strong>. Bij de meeste feesten vertrekken 10-15% van de gasten eerder en 10% drinkt misschien helemaal niet. De calculator past een voorzichtig buffer toe, zodat je nooit tekortschiet, maar ook niet met enorme overschotten zit. Begrijpen van deze aanpassingen helpt je de schatting voor je specifieke groep en context bij te stellen. Rond altijd naar boven af bij aankoop, omdat geopende vaten normaal niet kunnen worden geretourneerd. Een klein overschot is altijd beter dan halverwege het feest zonder drank zitten.'
   }
 ];
 

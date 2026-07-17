@@ -4,7 +4,7 @@ import type { BeerCoolerUI, BeerCoolerLocaleContent } from '../index';
 
 const slug = 'chlodnica-piwa';
 const title = 'Kalkulator Chłodzenia Piwa z Prawem Chłodzenia Newtona';
-const description = 'Oblicz z prawdziwą termodynamiką — Prawo Chłodzenia Newtona — dokładnie, ile czasu twoje piwo potrzebuje, aby osiągnąć doskonałą temperaturę podawania w lodówce lub zamrażalniku.';
+const description = 'Oblicz z prawdziwą termodynamiką - Prawo Chłodzenia Newtona - dokładnie, ile czasu twoje piwo potrzebuje, aby osiągnąć doskonałą temperaturę podawania w lodówce lub zamrażalniku.';
 
 const ui: BeerCoolerUI = {
   step1Title: 'Co chłodzisz?',
@@ -39,19 +39,19 @@ const faq: BeerCoolerLocaleContent['faq'] = [
   },
   {
     question: 'Czy sztuczka z mokrym papierem toaletowym i solą rzeczywiście działa?',
-    answer: 'Tak, i bardzo zauważalnie. Zawinięcie pojemnika w wilgotny papier toaletowy solą przyspiesza chłodzenie z dwóch powodów: parowanie wody usuwa dodatkowe ciepło (chłodzenie parowania), a sól obniża temperaturę zamarzania wody, utrzymując wilgotny kontakt bardziej aktywnym. Możesz uzyskać dodatkowy spadek o 2–4°C w pierwszych minutach w porównaniu z umieszczeniem suchej puszki w zamrażalniku.',
+    answer: 'Tak, i bardzo zauważalnie. Zawinięcie pojemnika w wilgotny papier toaletowy solą przyspiesza chłodzenie z dwóch powodów: parowanie wody usuwa dodatkowe ciepło (chłodzenie parowania), a sól obniża temperaturę zamarzania wody, utrzymując wilgotny kontakt bardziej aktywnym. Możesz uzyskać dodatkowy spadek o 2-4°C w pierwszych minutach w porównaniu z umieszczeniem suchej puszki w zamrażalniku.',
   },
   {
     question: 'Jaka jest idealna temperatura podawania różnych stylów piwa?',
-    answer: 'To zależy od stylu. Lagery i Pilzeny najlepiej podaje się między 3°C a 7°C. IPA i Pale Ale błyszczą w temperaturze 7°C do 10°C. Stouty, Portery i złożone ale powinny być podawane cieplejsze, między 12°C a 14°C, aby ich związki aromatyczne — kawa, czekolada, orzechy — mogły się w pełni wyrażać.',
+    answer: 'To zależy od stylu. Lagery i Pilzeny najlepiej podaje się między 3°C a 7°C. IPA i Pale Ale błyszczą w temperaturze 7°C do 10°C. Stouty, Portery i złożone ale powinny być podawane cieplejsze, między 12°C a 14°C, aby ich związki aromatyczne - kawa, czekolada, orzechy - mogły się w pełni wyrażać.',
   },
   {
     question: 'Czy moje piwo może eksplodować, jeśli zostawię je w zamrażalniku?',
-    answer: 'Tak. Alkohol i rozpuszczony cukier obniżają temperaturę zamarzania piwa poniżej czystej wody: standardowe piwo niskośódów na 5% zamraża się około -3°C. Gdy woda krystalizuje, objętość rośnie, a rozpuszczone CO2 podnosi ciśnienie wewnętrzne, aż pojemnik ulega awarii. Ponad 60 minut w zamrażalniku — szczególnie butelki szklane — jest prawdziwą strefą zagrożenia. Użyj tego kalkulatora, aby tego uniknąć.',
+    answer: 'Tak. Alkohol i rozpuszczony cukier obniżają temperaturę zamarzania piwa poniżej czystej wody: standardowe piwo niskośódów na 5% zamraża się około -3°C. Gdy woda krystalizuje, objętość rośnie, a rozpuszczone CO2 podnosi ciśnienie wewnętrzne, aż pojemnik ulega awarii. Ponad 60 minut w zamrażalniku - szczególnie butelki szklane - jest prawdziwą strefą zagrożenia. Użyj tego kalkulatora, aby tego uniknąć.',
   },
   {
     question: 'Czy piwo "piecze się", jeśli ochładza się zbyt szybko?',
-    answer: 'Nie. Mit "szoku termicznego", który niszczy piwo, jest fałszywy. To, co naprawdę może na niego wpłynąć, to powtarzające się zamrażanie i rozmrażanie — które rozbija białka i mętni ciecz — lub bezpośrednia ekspozycja na światło UV. Szybkie chłodzenie w zamrażalniku lub lodowatej wodzie nie szkodzi smakowi.',
+    answer: 'Nie. Mit "szoku termicznego", który niszczy piwo, jest fałszywy. To, co naprawdę może na niego wpłynąć, to powtarzające się zamrażanie i rozmrażanie - które rozbija białka i mętni ciecz - lub bezpośrednia ekspozycja na światło UV. Szybkie chłodzenie w zamrażalniku lub lodowatej wodzie nie szkodzi smakowi.',
   },
 ];
 
@@ -111,16 +111,16 @@ const seo: BeerCoolerLocaleContent['seo'] = [
     type: 'card',
     title: 'Strefa Zagrożenia Zamrażalniku',
     icon: 'mdi:snowflake-alert',
-    html: 'Ze względu na alkohol i rozpuszczony cukier, piwo zamraża się poniżej 0°C — standardowe piwo na 5% zamraża się około -3°C. Gdy woda krystalizuje, objętość rośnie, a ciśnienie CO2 jednocześnie wzrasta. Rezultatem jest pojemnik, który może eksplodować gwałtownie. Nigdy nie zostawiaj piwa w zamrażalniku na dłużej niż 45 minut bez ustawienia timera.'
+    html: 'Ze względu na alkohol i rozpuszczony cukier, piwo zamraża się poniżej 0°C - standardowe piwo na 5% zamraża się około -3°C. Gdy woda krystalizuje, objętość rośnie, a ciśnienie CO2 jednocześnie wzrasta. Rezultatem jest pojemnik, który może eksplodować gwałtownie. Nigdy nie zostawiaj piwa w zamrażalniku na dłużej niż 45 minut bez ustawienia timera.'
   },
   {
     type: 'proscons',
     title: 'Sztuczki Chłodzenia Ratunkowego',
     items: [
-      { pro: 'Sztuczka Mokrego Papieru: Zawiń puszkę w mokry papier toaletowy, potem zamroź — parowanie przyspiesza chłodzenie.', con: '' },
+      { pro: 'Sztuczka Mokrego Papieru: Zawiń puszkę w mokry papier toaletowy, potem zamroź - parowanie przyspiesza chłodzenie.', con: '' },
       { pro: 'Arktyczna Słonawy: Napełnij wiadro wodą, lodem i 2 łyżkami soli, aby osiągnąć solankę -5°C.', con: '' },
       { pro: 'Metoda Rotacji: Obracaj butelkę w lodowatej wodzie, aby wymusić konwekcję i skrócić czas chłodzenia.', con: '' },
-      { pro: '', con: 'Nie umieszczaj puszki bezpośrednio na półce zamrażalnika bez timera — pęknięte puszki są bałaganem i niebezpieczne.' }
+      { pro: '', con: 'Nie umieszczaj puszki bezpośrednio na półce zamrażalnika bez timera - pęknięte puszki są bałaganem i niebezpieczne.' }
     ]
   },
   {
@@ -135,7 +135,7 @@ const seo: BeerCoolerLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Stała chłodzenia k w równaniu Newtona nie jest stałą uniwersalną wartością — to empiryczna właściwość każdego konkretnego pojemnika i medium. Cienka puszka aluminiowa w lodowatej wodzie ma dramatycznie różne k od grubej butelki szklenia w spokojnym powietrzu lodówki. Nasz kalkulator używa zmierzonych wartości skalibrowanych do rzeczywistych eksperymentów dla każdego typu pojemnika, co daje ci przewidywania dokładne w ciągu kilku minut dla typowych domowych scenariuszy chłodzenia.'
+    html: 'Stała chłodzenia k w równaniu Newtona nie jest stałą uniwersalną wartością - to empiryczna właściwość każdego konkretnego pojemnika i medium. Cienka puszka aluminiowa w lodowatej wodzie ma dramatycznie różne k od grubej butelki szklenia w spokojnym powietrzu lodówki. Nasz kalkulator używa zmierzonych wartości skalibrowanych do rzeczywistych eksperymentów dla każdego typu pojemnika, co daje ci przewidywania dokładne w ciągu kilku minut dla typowych domowych scenariuszy chłodzenia.'
   }
 ];
 

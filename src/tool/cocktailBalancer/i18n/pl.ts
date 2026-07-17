@@ -151,7 +151,7 @@ const seo: CocktailBalancerLocaleContent['seo'] = [
     icon: 'mdi:star',
     variant: 'success',
     badge: 'Cel',
-    html: 'To jest ostateczny cel: kontrolowane pH, w którym cukier neutralizuje agresję kwasu bez maskowania olejków eterycznych i związków aromatycznych spirytusu bazowego. Ta precyzyjna równowaga to miejsce, gdzie żyją nieśmiertelne klasyki — Daiquiri, Margarita, Sidecar — napoje, które przetrwały dziesięciolecia, ponieważ podporządkowują się podstawowym prawom chemii smaku.'
+    html: 'To jest ostateczny cel: kontrolowane pH, w którym cukier neutralizuje agresję kwasu bez maskowania olejków eterycznych i związków aromatycznych spirytusu bazowego. Ta precyzyjna równowaga to miejsce, gdzie żyją nieśmiertelne klasyki - Daiquiri, Margarita, Sidecar - napoje, które przetrwały dziesięciolecia, ponieważ podporządkowują się podstawowym prawom chemii smaku.'
   },
   {
     type: 'tip',

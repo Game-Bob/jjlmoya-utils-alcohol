@@ -34,7 +34,7 @@ const faqTitle = 'Veelgestelde Vragen';
 const faq: CarbonationLocaleContent['faq'] = [
   {
     question: "Waarom is temperatuur belangrijk voor carbonatatie?",
-    answer: "Het resterende CO2 in je bier hangt af van de hoogste temperatuur bereikt na gisting: koude vloeistof houdt meer opgelost gas vast dan warme vloeistof. Als je een temperatuur lager dan het actueel invoert, gaat de calculator uit van meer restend CO2 dan werkelijk aanwezig en geeft je minder suiker dan nodig. Als je het te hoog invoert gebeurt het tegenovergestelde — je voegt meer suiker toe dan nodig en duurt je partij de explosiegevaarzone in, waar overdruk flessen doet barsten of dopsels gewelddadig afblazen.",
+    answer: "Het resterende CO2 in je bier hangt af van de hoogste temperatuur bereikt na gisting: koude vloeistof houdt meer opgelost gas vast dan warme vloeistof. Als je een temperatuur lager dan het actueel invoert, gaat de calculator uit van meer restend CO2 dan werkelijk aanwezig en geeft je minder suiker dan nodig. Als je het te hoog invoert gebeurt het tegenovergestelde - je voegt meer suiker toe dan nodig en duurt je partij de explosiegevaarzone in, waar overdruk flessen doet barsten of dopsels gewelddadig afblazen.",
   },
   {
     question: "Welke suiker is het beste voor priming?",
@@ -42,7 +42,7 @@ const faq: CarbonationLocaleContent['faq'] = [
   },
   {
     question: "Wat gebeurt er als ik te veel primingsuiker toevoeg?",
-    answer: "Over-priming genereert excessieve CO2-druk in de fles. Standaard glasflessen bezwijken bij ongeveer 3,5-4,0 volumes CO2. Voorbij dit punt kan de fles barsten of de dop gewelddadig afblazen. Dit is waarom precisie van belang is — zelfs 5 extra gram per liter kan een partij in de gevarenuone duwen.",
+    answer: "Over-priming genereert excessieve CO2-druk in de fles. Standaard glasflessen bezwijken bij ongeveer 3,5-4,0 volumes CO2. Voorbij dit punt kan de fles barsten of de dop gewelddadig afblazen. Dit is waarom precisie van belang is - zelfs 5 extra gram per liter kan een partij in de gevarenuone duwen.",
   },
   {
     question: "Hoe lang duurt het voor bier koolzuurhoudend wordt na het bottelen?",
@@ -74,7 +74,7 @@ const seo: CarbonationLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Beheers de kunst van priming en transformeer je zelfgebrouwen bier van een plat experiment naar een professionele bruisende ervaring. Priming houdt in dat je een nauwkeurige hoeveelheid suiker toevoegt zodat de achtergebleven gist in de fles natuurlijke CO2 produceert tijdens een secundaire gisting. Te weinig suiker geeft plat bier; te veel creëert gevaarlijke druk die flessen breekt. Het verschil tussen de twee is enkele grammen — daarom bestaat deze calculator.'
+    html: 'Beheers de kunst van priming en transformeer je zelfgebrouwen bier van een plat experiment naar een professionele bruisende ervaring. Priming houdt in dat je een nauwkeurige hoeveelheid suiker toevoegt zodat de achtergebleven gist in de fles natuurlijke CO2 produceert tijdens een secundaire gisting. Te weinig suiker geeft plat bier; te veel creëert gevaarlijke druk die flessen breekt. Het verschil tussen de twee is enkele grammen - daarom bestaat deze calculator.'
   },
   {
     type: 'proscons',
@@ -103,7 +103,7 @@ const seo: CarbonationLocaleContent['seo'] = [
     type: 'card',
     title: 'Welke Suiker Zou Je Moeten Kiezen?',
     icon: 'mdi:corn',
-    html: '<strong>Dextrose</strong> is neutraal en professioneel — de industriestandaard. <strong>Tafelsuiker</strong> is economisch en effectief (gebruik 10% minder gewicht dan dextrose). <strong>DME (Droge Moutkextract)</strong> is de keuze van de puristen maar moeilijker nauwkeurig in te schatten omdat de gisbaarheid per merk en maltsamenstelling varieert.'
+    html: '<strong>Dextrose</strong> is neutraal en professioneel - de industriestandaard. <strong>Tafelsuiker</strong> is economisch en effectief (gebruik 10% minder gewicht dan dextrose). <strong>DME (Droge Moutkextract)</strong> is de keuze van de puristen maar moeilijker nauwkeurig in te schatten omdat de gisbaarheid per merk en maltsamenstelling varieert.'
   },
   {
     type: 'diagnostic',
@@ -134,11 +134,11 @@ const seo: CarbonationLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Op zijn kern wordt carbonatatie beheerst door <strong>Henry\'s Wet</strong>: de hoeveelheid gas opgelost in een vloeistof is evenredig aan de partiële druk van dat gas boven de vloeistof. Wanneer je een fles primer en verzegelt, verbruikt gist de suiker en produceert CO2 in een verzegelde omgeving. Naarmate de druk stijgt, wordt het gas terug in oplossing gedwongen. De temperatuur waarop dit evenwicht optreedt, bepaalt het uiteindelijke carbonatatieniveau — daarom is gistingstemperatuur de meest kritieke variabele in deze calculator.'
+    html: 'Op zijn kern wordt carbonatatie beheerst door <strong>Henry\'s Wet</strong>: de hoeveelheid gas opgelost in een vloeistof is evenredig aan de partiële druk van dat gas boven de vloeistof. Wanneer je een fles primer en verzegelt, verbruikt gist de suiker en produceert CO2 in een verzegelde omgeving. Naarmate de druk stijgt, wordt het gas terug in oplossing gedwongen. De temperatuur waarop dit evenwicht optreedt, bepaalt het uiteindelijke carbonatatieniveau - daarom is gistingstemperatuur de meest kritieke variabele in deze calculator.'
   },
   {
     type: 'paragraph',
-    html: 'Het restende CO2 in je bier voor priming is niet nul. Elk bier bevat opgelost CO2 van het gistingsproces, en de hoeveelheid die behouden blijft hangt af van de hoogste temperatuur die het bier bereikt. Een bier gegist op 22°C bevat aanzienlijk minder restend CO2 dan één gegist op 16°C, hoewel beide nu afgekoeld zijn. Het niet in rekening brengen van dit residu leidt tot systematische over-carbonatatie — een van de meest voorkomende fouten onder beginnende zelfbrouwers.'
+    html: 'Het restende CO2 in je bier voor priming is niet nul. Elk bier bevat opgelost CO2 van het gistingsproces, en de hoeveelheid die behouden blijft hangt af van de hoogste temperatuur die het bier bereikt. Een bier gegist op 22°C bevat aanzienlijk minder restend CO2 dan één gegist op 16°C, hoewel beide nu afgekoeld zijn. Het niet in rekening brengen van dit residu leidt tot systematische over-carbonatatie - een van de meest voorkomende fouten onder beginnende zelfbrouwers.'
   }
 ];
 

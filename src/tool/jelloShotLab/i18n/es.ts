@@ -48,15 +48,15 @@ const faq: JelloShotLabLocaleContent['faq'] = [
   },
   {
     question: '¿Cuál es la proporción máxima de alcohol antes de que los jello shots no cuajen?',
-    answer: 'El límite seguro es aproximadamente un 30–35% del volumen total siendo licor de 40% de alcohol. Con un alcohol neutro al 96%, ese límite baja a un 15–18% del volumen total. Nuestra calculadora tiene en cuenta la graduación del licor para que nunca superes el umbral de cuaje.',
+    answer: 'El límite seguro es aproximadamente un 30-35% del volumen total siendo licor de 40% de alcohol. Con un alcohol neutro al 96%, ese límite baja a un 15-18% del volumen total. Nuestra calculadora tiene en cuenta la graduación del licor para que nunca superes el umbral de cuaje.',
   },
   {
-    question: '¿Importa qué licor uso — vodka, ron o tequila?',
+    question: '¿Importa qué licor uso - vodka, ron o tequila?',
     answer: 'Lo que importa es la graduación, no el tipo de licor. Un vodka al 40% y un ron al 40% se comportan de forma idéntica en la matriz de gelatina. Sin embargo, los licores con mayor contenido en azúcar (como algunos rones o licores) pueden mejorar ligeramente la textura, ya que el azúcar compite con el etanol por los enlaces de hidrógeno.',
   },
   {
     question: '¿Cuánto tiempo duran los jello shots en la nevera?',
-    answer: 'Los jello shots bien preparados duran 3–5 días en la nevera cubiertos con film transparente. El alto contenido en alcohol actúa como conservante natural. Evita dejarlos a temperatura ambiente más de 2 horas, ya que la gelatina se ablanda y las bacterias pueden multiplicarse.',
+    answer: 'Los jello shots bien preparados duran 3-5 días en la nevera cubiertos con film transparente. El alto contenido en alcohol actúa como conservante natural. Evita dejarlos a temperatura ambiente más de 2 horas, ya que la gelatina se ablanda y las bacterias pueden multiplicarse.',
   },
   {
     question: '¿Puedo hacer mis jello shots más firmes o más blandos?',
@@ -71,8 +71,8 @@ const faq: JelloShotLabLocaleContent['faq'] = [
 const howTo: JelloShotLabLocaleContent['howTo'] = [
   { name: 'Elige tu licor', text: 'Introduce la graduación de tu licor y elige la fuerza del shot que quieres. La calculadora te mostrará el volumen máximo de alcohol que tu gelatina puede absorber.' },
   { name: 'Disuelve la gelatina', text: 'Vierte el agua hirviendo calculada en un bol. Añade el polvo de gelatina y remueve con energía durante 2 minutos hasta que se disuelva completamente. No añadas alcohol todavía.' },
-  { name: 'Añade el licor', text: 'Deja enfriar la mezcla de gelatina 5–10 minutos hasta que esté caliente pero no quemante (por debajo de 50°C). Añade el licor y remueve suavemente para evitar burbujas.' },
-  { name: 'Vierte y refrigera', text: 'Vierte en vasitos de plástico, moldes de silicona o chupiteros pequeños. Refrigera un mínimo de 4 horas — una noche entera es ideal. No congeles.' },
+  { name: 'Añade el licor', text: 'Deja enfriar la mezcla de gelatina 5-10 minutos hasta que esté caliente pero no quemante (por debajo de 50°C). Añade el licor y remueve suavemente para evitar burbujas.' },
+  { name: 'Vierte y refrigera', text: 'Vierte en vasitos de plástico, moldes de silicona o chupiteros pequeños. Refrigera un mínimo de 4 horas - una noche entera es ideal. No congeles.' },
 ];
 
 
@@ -95,7 +95,7 @@ const seo: JelloShotLabLocaleContent['seo'] = [
     type: 'card',
     title: '¿Qué es la fuerza Bloom?',
     icon: 'mdi:molecule',
-    html: 'Bloom es la medida de la capacidad gelificante de la gelatina, normalmente entre 50 y 300 Bloom. La gelatina de supermercado suele estar entre 150–200 Bloom. A mayor Bloom, gel más firme con la misma cantidad de polvo, lo que significa que aguanta algo más de alcohol antes de no cuajar. Un sobre estándar de 7g está calibrado para unos 240ml de líquido.',
+    html: 'Bloom es la medida de la capacidad gelificante de la gelatina, normalmente entre 50 y 300 Bloom. La gelatina de supermercado suele estar entre 150-200 Bloom. A mayor Bloom, gel más firme con la misma cantidad de polvo, lo que significa que aguanta algo más de alcohol antes de no cuajar. Un sobre estándar de 7g está calibrado para unos 240ml de líquido.',
   },
   {
     type: 'card',

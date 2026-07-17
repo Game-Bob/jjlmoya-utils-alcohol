@@ -4,7 +4,7 @@ import type { BeerCoolerUI, BeerCoolerLocaleContent } from '../index';
 
 const slug = 'resfriador-cerveja';
 const title = 'Calculadora de Resfriamento de Cerveja com a Lei de Newton';
-const description = 'Calcule com termodinâmica real — Lei do Resfriamento de Newton — exatamente quanto tempo sua cerveja leva para atingir a temperatura de serviço perfeita na geladeira ou freezer.';
+const description = 'Calcule com termodinâmica real - Lei do Resfriamento de Newton - exatamente quanto tempo sua cerveja leva para atingir a temperatura de serviço perfeita na geladeira ou freezer.';
 
 const ui: BeerCoolerUI = {
   step1Title: 'O que você está resfriando?',
@@ -39,19 +39,19 @@ const faq: BeerCoolerLocaleContent['faq'] = [
   },
   {
     question: 'O truque da toalha de papel molhada com sal realmente funciona?',
-    answer: 'Sim, e notavelmente. Envolver o recipiente em uma toalha de papel molhada com sal acelera o resfriamento por duas razões: a evaporação da água remove calor adicional (resfriamento evaporativo), e o sal reduz o ponto de congelamento da água, mantendo o contato úmido ativo por mais tempo. Você pode ganhar uma queda adicional de 2–4°C nos primeiros minutos em comparação com colocar uma lata seca no freezer.',
+    answer: 'Sim, e notavelmente. Envolver o recipiente em uma toalha de papel molhada com sal acelera o resfriamento por duas razões: a evaporação da água remove calor adicional (resfriamento evaporativo), e o sal reduz o ponto de congelamento da água, mantendo o contato úmido ativo por mais tempo. Você pode ganhar uma queda adicional de 2-4°C nos primeiros minutos em comparação com colocar uma lata seca no freezer.',
   },
   {
     question: 'Qual é a temperatura de serviço ideal para diferentes estilos de cerveja?',
-    answer: 'Depende do estilo. Lagers e Pilsners são melhor servidas entre 3°C e 7°C. IPAs e Pale Ales brilham entre 7°C e 10°C. Stouts, Porters e ales complexas devem ser servidas mais quentes, entre 12°C e 14°C, para que seus compostos aromáticos — café, chocolate, nozes — possam se expressar completamente.',
+    answer: 'Depende do estilo. Lagers e Pilsners são melhor servidas entre 3°C e 7°C. IPAs e Pale Ales brilham entre 7°C e 10°C. Stouts, Porters e ales complexas devem ser servidas mais quentes, entre 12°C e 14°C, para que seus compostos aromáticos - café, chocolate, nozes - possam se expressar completamente.',
   },
   {
     question: 'Minha cerveja pode explodir se deixá-la no freezer?',
-    answer: 'Sim. O álcool e os açúcares dissolvidos reduzem o ponto de congelamento da cerveja abaixo da água pura: uma lager padrão de 5% congela em torno de -3°C. Quando a água cristaliza, o volume aumenta e o CO2 dissolvido aumenta a pressão interna até o recipiente ceder. Mais de 60 minutos no freezer — especialmente garrafas de vidro — é realmente uma zona de perigo. Use esta calculadora para evitar isso.',
+    answer: 'Sim. O álcool e os açúcares dissolvidos reduzem o ponto de congelamento da cerveja abaixo da água pura: uma lager padrão de 5% congela em torno de -3°C. Quando a água cristaliza, o volume aumenta e o CO2 dissolvido aumenta a pressão interna até o recipiente ceder. Mais de 60 minutos no freezer - especialmente garrafas de vidro - é realmente uma zona de perigo. Use esta calculadora para evitar isso.',
   },
   {
     question: 'A cerveja "queima" se esfriada muito rapidamente?',
-    answer: 'Não. O mito do "choque térmico" que estraga a cerveja é falso. O que pode genuinamente afetá-la é o congelamento e descongelamento repetidos — que quebram proteínas e turnam o líquido — ou exposição direta à luz UV. Um resfriamento rápido no freezer ou em água com gelo não prejudica o sabor.',
+    answer: 'Não. O mito do "choque térmico" que estraga a cerveja é falso. O que pode genuinamente afetá-la é o congelamento e descongelamento repetidos - que quebram proteínas e turnam o líquido - ou exposição direta à luz UV. Um resfriamento rápido no freezer ou em água com gelo não prejudica o sabor.',
   },
 ];
 
@@ -111,16 +111,16 @@ const seo: BeerCoolerLocaleContent['seo'] = [
     type: 'card',
     title: 'A Zona de Perigo do Freezer',
     icon: 'mdi:snowflake-alert',
-    html: 'Devido ao álcool e açúcares dissolvidos, a cerveja congela abaixo de 0°C — uma lager padrão de 5% congela em torno de -3°C. Conforme a água cristaliza, o volume aumenta, enquanto a pressão de CO2 sobe simultaneamente. O resultado é um recipiente que pode romper violentamente. Nunca deixe cerveja no freezer por mais de 45 minutos sem definir um temporizador.'
+    html: 'Devido ao álcool e açúcares dissolvidos, a cerveja congela abaixo de 0°C - uma lager padrão de 5% congela em torno de -3°C. Conforme a água cristaliza, o volume aumenta, enquanto a pressão de CO2 sobe simultaneamente. O resultado é um recipiente que pode romper violentamente. Nunca deixe cerveja no freezer por mais de 45 minutos sem definir um temporizador.'
   },
   {
     type: 'proscons',
     title: 'Truques de Resfriamento de Emergência',
     items: [
-      { pro: 'Truque da Toalha Molhada: Envolva a lata em toalha de papel molhada, depois congele — a evaporação acelera o resfriamento.', con: '' },
+      { pro: 'Truque da Toalha Molhada: Envolva a lata em toalha de papel molhada, depois congele - a evaporação acelera o resfriamento.', con: '' },
       { pro: 'Salmoura Ártica: Encha um balde com água, gelo e 2 colheres de sopa de sal para atingir salmoura de -5°C.', con: '' },
       { pro: 'Método de Rotação: Gire a garrafa em água com gelo para forçar convecção e encurtar o tempo de resfriamento.', con: '' },
-      { pro: '', con: 'Não coloque uma lata diretamente na prateleira do freezer sem um temporizador — latas explodidas são bagunçadas e perigosas.' }
+      { pro: '', con: 'Não coloque uma lata diretamente na prateleira do freezer sem um temporizador - latas explodidas são bagunçadas e perigosas.' }
     ]
   },
   {
@@ -135,7 +135,7 @@ const seo: BeerCoolerLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'A constante de resfriamento k na equação de Newton não é um valor universal fixo — é uma propriedade empírica de cada recipiente e meio específico. Uma lata de alumínio fina em água com gelo tem um k dramaticamente diferente de uma garrafa de vidro espessa em ar parado de geladeira. Nossa calculadora usa valores medidos calibrados contra experimentos do mundo real para cada tipo de recipiente, fornecendo previsões precisas dentro de alguns minutos para cenários típicos de resfriamento doméstico.'
+    html: 'A constante de resfriamento k na equação de Newton não é um valor universal fixo - é uma propriedade empírica de cada recipiente e meio específico. Uma lata de alumínio fina em água com gelo tem um k dramaticamente diferente de uma garrafa de vidro espessa em ar parado de geladeira. Nossa calculadora usa valores medidos calibrados contra experimentos do mundo real para cada tipo de recipiente, fornecendo previsões precisas dentro de alguns minutos para cenários típicos de resfriamento doméstico.'
   }
 ];
 

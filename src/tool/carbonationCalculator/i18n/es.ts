@@ -34,7 +34,7 @@ const faqTitle = 'Preguntas Frecuentes';
 const faq: CarbonationLocaleContent['faq'] = [
   {
     question: "¿Por qué influye la temperatura en el cálculo?",
-    answer: "El CO2 residual que ya tiene tu cerveza depende de la temperatura máxima alcanzada tras la fermentación: el líquido frío retiene más gas disuelto que el caliente. Si introduces una temperatura más baja de la real, la calculadora asumirá más residual del que hay y te dará menos azúcar del necesario. Si la introduces más alta, ocurre lo contrario: añadirás más azúcar de la cuenta y entrarás en la zona de peligro de las bombas de botella — botellas que explotan por exceso de presión.",
+    answer: "El CO2 residual que ya tiene tu cerveza depende de la temperatura máxima alcanzada tras la fermentación: el líquido frío retiene más gas disuelto que el caliente. Si introduces una temperatura más baja de la real, la calculadora asumirá más residual del que hay y te dará menos azúcar del necesario. Si la introduces más alta, ocurre lo contrario: añadirás más azúcar de la cuenta y entrarás en la zona de peligro de las bombas de botella - botellas que explotan por exceso de presión.",
   },
   {
     question: "¿Qué azúcar es mejor para el priming?",
@@ -42,7 +42,7 @@ const faq: CarbonationLocaleContent['faq'] = [
   },
   {
     question: "¿Qué pasa si añado demasiado azúcar de priming?",
-    answer: "Un exceso de azúcar genera una presión de CO2 excesiva dentro de la botella. Las botellas de vidrio estándar fallan a partir de 3.5-4.0 volúmenes de CO2. Por encima de este punto, la botella puede romperse violentamente o el tapón puede saltar disparado. Por eso la precisión es crítica — incluso 5 gramos extra por litro pueden llevar un lote a la zona de peligro.",
+    answer: "Un exceso de azúcar genera una presión de CO2 excesiva dentro de la botella. Las botellas de vidrio estándar fallan a partir de 3.5-4.0 volúmenes de CO2. Por encima de este punto, la botella puede romperse violentamente o el tapón puede saltar disparado. Por eso la precisión es crítica - incluso 5 gramos extra por litro pueden llevar un lote a la zona de peligro.",
   },
   {
     question: "¿Cuánto tiempo tarda la cerveza en carbonatarse tras el embotellado?",
@@ -134,15 +134,15 @@ const seo: CarbonationLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'En su esencia, la carbonatación está gobernada por la <strong>Ley de Henry</strong>: la cantidad de gas disuelto en un líquido es proporcional a la presión parcial de ese gas sobre el líquido. Cuando primeas una botella y la sellas, la levadura consume el azúcar y produce CO2 en un entorno cerrado. La presión aumenta y el gas es forzado a disolverse de nuevo en el líquido. La temperatura a la que se produce este equilibrio determina el nivel de carbonatación final — por eso la temperatura de fermentación es la variable más crítica en esta calculadora.'
+    html: 'En su esencia, la carbonatación está gobernada por la <strong>Ley de Henry</strong>: la cantidad de gas disuelto en un líquido es proporcional a la presión parcial de ese gas sobre el líquido. Cuando primeas una botella y la sellas, la levadura consume el azúcar y produce CO2 en un entorno cerrado. La presión aumenta y el gas es forzado a disolverse de nuevo en el líquido. La temperatura a la que se produce este equilibrio determina el nivel de carbonatación final - por eso la temperatura de fermentación es la variable más crítica en esta calculadora.'
   },
   {
     type: 'paragraph',
-    html: 'El CO2 residual en tu cerveza antes del priming no es cero. Cada cerveza retiene CO2 disuelto del proceso de fermentación, y la cantidad retenida depende de la temperatura más alta que alcanzó la cerveza. Una cerveza fermentada a 22°C retiene significativamente menos CO2 residual que una fermentada a 16°C, aunque ambas estén ahora frías. No tener en cuenta este residual lleva a una sobre-carbonatación sistemática — uno de los errores más comunes entre los cerveceros principiantes.'
+    html: 'El CO2 residual en tu cerveza antes del priming no es cero. Cada cerveza retiene CO2 disuelto del proceso de fermentación, y la cantidad retenida depende de la temperatura más alta que alcanzó la cerveza. Una cerveza fermentada a 22°C retiene significativamente menos CO2 residual que una fermentada a 16°C, aunque ambas estén ahora frías. No tener en cuenta este residual lleva a una sobre-carbonatación sistemática - uno de los errores más comunes entre los cerveceros principiantes.'
   },
   {
     type: 'paragraph',
-    html: 'El tiempo de condicionamiento también importa. Tras el embotellado con azúcar de priming, la cerveza necesita entre 2 y 3 semanas a temperatura ambiente (18-22°C) para que la levadura fermente completamente el azúcar añadido y el CO2 se integre en el líquido. Una carbonatación prematura — probar la cerveza antes de que el proceso termine — siempre dará una falsa lectura de subida de carbonatación.'
+    html: 'El tiempo de condicionamiento también importa. Tras el embotellado con azúcar de priming, la cerveza necesita entre 2 y 3 semanas a temperatura ambiente (18-22°C) para que la levadura fermente completamente el azúcar añadido y el CO2 se integre en el líquido. Una carbonatación prematura - probar la cerveza antes de que el proceso termine - siempre dará una falsa lectura de subida de carbonatación.'
   }
 ];
 

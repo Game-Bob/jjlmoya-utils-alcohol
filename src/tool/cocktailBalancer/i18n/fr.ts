@@ -50,7 +50,7 @@ const faqTitle = 'Foire Aux Questions';
 const faq: CocktailBalancerLocaleContent['faq'] = [
   {
     question: "Qu'est-ce que la 'Loi du Sour' ?",
-    answer: "C'est le nombre d'or de la mixologie qui équilibre trois éléments : la base forte (spiritueux), l'acide (agrumes) et le sucré (sirops). Une recette classique suit généralement le ratio 2:1:1 (Fort:Acide:Sucré), bien que cela varie selon la force et la densité.",
+    answer: "C'est le nombre d'or de la mixologie qui équilibre trois éléments: la base forte (spiritueux), l'acide (agrumes) et le sucré (sirops). Une recette classique suit généralement le ratio 2:1:1 (Fort:Acide:Sucré), bien que cela varie selon la force et la densité.",
   },
   {
     question: "Comment la dilution affecte-t-elle l'équilibre du cocktail ?",
@@ -81,7 +81,7 @@ const howTo: CocktailBalancerLocaleContent['howTo'] = [
   },
   {
     name: "Service parfait",
-    text: "Consultez le verdict final de l'outil : le ratio Sour, l'ABV estimé après dilution et les suggestions de correction. Servez avec de la glace fraîche et ajustez l'agrume ou le sirop selon votre goût.",
+    text: "Consultez le verdict final de l'outil: le ratio Sour, l'ABV estimé après dilution et les suggestions de correction. Servez avec de la glace fraîche et ajustez l'agrume ou le sirop selon votre goût.",
   },
 ];
 
@@ -140,9 +140,9 @@ const seo: CocktailBalancerLocaleContent['seo'] = [
     type: 'summary',
     title: 'À qui s\'adresse cet outil ?',
     items: [
-      'Bartenders Professionnels : Standardisez les recettes et créez des menus signature avec une cohérence reproductible.',
-      'Amateurs à la Maison : Arrêtez de deviner et comprenez pourquoi vos cocktails réussissent ou échouent.',
-      'Développeurs de Boissons : Prototypez rapidement de nouveaux concepts de saveurs avant les productions coûteuses.'
+      'Bartenders Professionnels: Standardisez les recettes et créez des menus signature avec une cohérence reproductible.',
+      'Amateurs à la Maison: Arrêtez de deviner et comprenez pourquoi vos cocktails réussissent ou échouent.',
+      'Développeurs de Boissons: Prototypez rapidement de nouveaux concepts de saveurs avant les productions coûteuses.'
     ]
   },
   {
@@ -151,11 +151,11 @@ const seo: CocktailBalancerLocaleContent['seo'] = [
     icon: 'mdi:star',
     variant: 'success',
     badge: 'Objectif',
-    html: 'C\'est l\'objectif ultime : un pH contrôlé où le sucre neutralise l\'agression de l\'acide sans masquer les huiles essentielles et les composés aromatiques du spiritueux de base. C\'est là que vivent les classiques immortels — le Daiquiri, la Margarita, le Sidecar — des boissons qui ont survécu des décennies parce qu\'elles obéissent aux lois fondamentales de la chimie des saveurs.'
+    html: 'C\'est l\'objectif ultime: un pH contrôlé où le sucre neutralise l\'agression de l\'acide sans masquer les huiles essentielles et les composés aromatiques du spiritueux de base. C\'est là que vivent les classiques immortels - le Daiquiri, la Margarita, le Sidecar - des boissons qui ont survécu des décennies parce qu\'elles obéissent aux lois fondamentales de la chimie des saveurs.'
   },
   {
     type: 'tip',
-    title: 'Conseil Expert : Toujours Utiliser des Agrumes Frais',
+    title: 'Conseil Expert: Toujours Utiliser des Agrumes Frais',
     html: 'Pressez toujours les agrumes au dernier moment. Le jus de citron et de citron vert s\'oxyde rapidement, perdant son acidité vive en 20 à 30 minutes après l\'extraction. Un cocktail réalisé avec un jus vraiment frais aura toujours une brillance et une vivacité en bouche qu\'aucun produit en bouteille ne peut reproduire.'
   }
 ];

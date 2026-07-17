@@ -44,19 +44,19 @@ const faq: AlcoholClearanceLocaleContent['faq'] = [
   },
   {
     question: "Czy kawa, woda lub ćwiczenia mogą przyspieszyć eliminację alkoholu?",
-    answer: "Nie. Wątroba eliminuje alkohol ze stałą szybkością około 0,15 g/L na godzinę (kinetyka zerowego rzędu). Kawa może maskować zmęczenie, woda pomaga w odwodnieniu, a ćwiczenia poprawiają ogólne samopoczucie — ale nic z tego nie zmniejsza twojego rzeczywistego BAC. Tylko czas eliminuje alkohol z krwi.",
+    answer: "Nie. Wątroba eliminuje alkohol ze stałą szybkością około 0,15 g/L na godzinę (kinetyka zerowego rzędu). Kawa może maskować zmęczenie, woda pomaga w odwodnieniu, a ćwiczenia poprawiają ogólne samopoczucie - ale nic z tego nie zmniejsza twojego rzeczywistego BAC. Tylko czas eliminuje alkohol z krwi.",
   },
   {
     question: "Czy jedzenie po piciu pomaga obniżyć BAC?",
-    answer: "Jedzenie po piciu nie zmniejsza alkoholu już będącego we krwi. Gdzie jedzenie ma ogromne znaczenie, to przed lub podczas picia: jedzenie w żołądku — zwłaszcza białka i tłuszcze — spowalnia wchłanianie z żołądka i może zmniejszyć szczytowy BAC nawet o 50%. Gdy alkohol zostanie wchłonięty, tylko metabolizm wątroby może go wyeliminować.",
+    answer: "Jedzenie po piciu nie zmniejsza alkoholu już będącego we krwi. Gdzie jedzenie ma ogromne znaczenie, to przed lub podczas picia: jedzenie w żołądku - zwłaszcza białka i tłuszcze - spowalnia wchłanianie z żołądka i może zmniejszyć szczytowy BAC nawet o 50%. Gdy alkohol zostanie wchłonięty, tylko metabolizm wątroby może go wyeliminować.",
   },
   {
     question: "Jak długo trwa osiągnięcie BAC 0,0?",
-    answer: "To zależy od twojego początkowego BAC. Podziel swój szacunkowy BAC (w g/L) przez 0,15, aby uzyskać przybliżoną liczbę godzin. Na przykład BAC 1,5 g/L wymaga około 10 godzin. Wątroba nigdy się nie zatrzymuje: przetwarza alkohol nawet podczas snu. Ale bądź świadomy — alkohol może być obecny we krwi nawet wtedy, gdy czujesz się całkowicie wyzdrowiony.",
+    answer: "To zależy od twojego początkowego BAC. Podziel swój szacunkowy BAC (w g/L) przez 0,15, aby uzyskać przybliżoną liczbę godzin. Na przykład BAC 1,5 g/L wymaga około 10 godzin. Wątroba nigdy się nie zatrzymuje: przetwarza alkohol nawet podczas snu. Ale bądź świadomy - alkohol może być obecny we krwi nawet wtedy, gdy czujesz się całkowicie wyzdrowiony.",
   },
   {
     question: "Czy ten kalkulator jest 100% niezawodny do podejmowania decyzji o prowadzeniu pojazdu?",
-    answer: "Nie. To narzędzie jest oszacowaniem teoretycznym opartym na formule Widmarka. Czynniki takie jak spożycie pokarmu, leki, zmęczenie, warianty genetyczne enzymu ADH i stres mogą zmienić twój rzeczywisty BAC o 20–30% w obydwie strony. Nigdy nie używaj tego kalkulatora do podejmowania decyzji o prowadzeniu. Jeśli piłeś, nie prowadź pojazdu — to jedyna reguła bez marginesu błędu.",
+    answer: "Nie. To narzędzie jest oszacowaniem teoretycznym opartym na formule Widmarka. Czynniki takie jak spożycie pokarmu, leki, zmęczenie, warianty genetyczne enzymu ADH i stres mogą zmienić twój rzeczywisty BAC o 20-30% w obydwie strony. Nigdy nie używaj tego kalkulatora do podejmowania decyzji o prowadzeniu. Jeśli piłeś, nie prowadź pojazdu - to jedyna reguła bez marginesu błędu.",
   },
 ];
 
@@ -84,7 +84,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Zrozumienie, jak nasze ciało przetwarza etanol, jest niezbędne dla bezpieczeństwa i łagodzenia kaca. Nasz <strong>kalkulator eliminacji alkoholu</strong> wykorzystuje uznaną <strong>formułę Widmarka</strong>, aby dać ci jasną mapę twojego stanu metabolicznego. Alkohol nie jest eliminowany przez pocenie się, picie wody ani ćwiczenia — tylko czas i metabolizm wątroby mogą zmniejszyć stężenie alkoholu we krwi.'
+    html: 'Zrozumienie, jak nasze ciało przetwarza etanol, jest niezbędne dla bezpieczeństwa i łagodzenia kaca. Nasz <strong>kalkulator eliminacji alkoholu</strong> wykorzystuje uznaną <strong>formułę Widmarka</strong>, aby dać ci jasną mapę twojego stanu metabolicznego. Alkohol nie jest eliminowany przez pocenie się, picie wody ani ćwiczenia - tylko czas i metabolizm wątroby mogą zmniejszyć stężenie alkoholu we krwi.'
   },
   {
     type: 'diagnostic',
@@ -101,7 +101,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Wątroba rozkłada 95% alkoholu za pośrednictwem dehydrogenazy alkoholowej (ADH). Proces ten przebiega ze stałą szybkością (kinetyka zerowego rzędu), co oznacza, że nie można go przyspieszyć ćwiczeniami ani kawą. Pozostałe 5% jest eliminowane przez oddech, mocz i pot — co jest podstawą testowania alkotestem w egzekwowaniu przepisów drogowych.'
+    html: 'Wątroba rozkłada 95% alkoholu za pośrednictwem dehydrogenazy alkoholowej (ADH). Proces ten przebiega ze stałą szybkością (kinetyka zerowego rzędu), co oznacza, że nie można go przyspieszyć ćwiczeniami ani kawą. Pozostałe 5% jest eliminowane przez oddech, mocz i pot - co jest podstawą testowania alkotestem w egzekwowaniu przepisów drogowych.'
   },
   {
     type: 'stats',
@@ -130,7 +130,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Bezpieczeństwo na pierwszym miejscu: Poznaj swoją granicę',
-    html: 'BAC 0,05% mierzywie pogarsza osąd, śledzenie i czas reakcji. Większość krajów ustala limit prawny prowadzenia pojazdu między 0,05% a 0,08%. Jednak indywidualna wrażliwość różni się znacznie — wiek, leki, zmęczenie i warianty genetyczne enzymu ADH wszystkie wpływają na to, jak alkohol cię osobiście wpływa. W razie wątpliwości, nie prowadź pojazdu.'
+    html: 'BAC 0,05% mierzywie pogarsza osąd, śledzenie i czas reakcji. Większość krajów ustala limit prawny prowadzenia pojazdu między 0,05% a 0,08%. Jednak indywidualna wrażliwość różni się znacznie - wiek, leki, zmęczenie i warianty genetyczne enzymu ADH wszystkie wpływają na to, jak alkohol cię osobiście wpływa. W razie wątpliwości, nie prowadź pojazdu.'
   },
   {
     type: 'title',
@@ -139,7 +139,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Jedzenie przed lub podczas picia dramatycznie zmienia kinetykę wchłaniania alkoholu. Pożywienie w żołądku — zwłaszcza białka i tłuszcze — spowalniają opróżnianie żołądka, zmniejszając szybkość, z jaką etanol dostaje się do krwioobiegu. Osoba pijąca na pusty żołądek może osiągnąć szczytowy BAC o 50% wyższy niż ta sama osoba, która jadła pełny posiłek przed piciem tej samej ilości. Jest to jedna z najpotężniejszych zmiennych, którą formula Widmarka nie może w pełni uchwycić, dlatego nasz kalkulator zawiera zastrzeżenie dotyczące szacowania teoretycznego.'
+    html: 'Jedzenie przed lub podczas picia dramatycznie zmienia kinetykę wchłaniania alkoholu. Pożywienie w żołądku - zwłaszcza białka i tłuszcze - spowalniają opróżnianie żołądka, zmniejszając szybkość, z jaką etanol dostaje się do krwioobiegu. Osoba pijąca na pusty żołądek może osiągnąć szczytowy BAC o 50% wyższy niż ta sama osoba, która jadła pełny posiłek przed piciem tej samej ilości. Jest to jedna z najpotężniejszych zmiennych, którą formula Widmarka nie może w pełni uchwycić, dlatego nasz kalkulator zawiera zastrzeżenie dotyczące szacowania teoretycznego.'
   },
   {
     type: 'paragraph',

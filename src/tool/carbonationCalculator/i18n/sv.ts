@@ -34,7 +34,7 @@ const faqTitle = 'Vanliga Frågor';
 const faq: CarbonationLocaleContent['faq'] = [
   {
     question: "Varför är temperatur viktig för karbonisering?",
-    answer: "Det kvarvarande CO2 i ditt öl beror på den högsta temperaturen som uppnåtts efter jäsning: kall vätska behåller mer löst gas än varm vätska. Om du anger en temperatur lägre än den faktiska utgår kalkylatorn från mer kvarvarande CO2 än vad som verkligen finns och föreslår mindre socker än vad som behövs. Om du anger det för högt sker det motsatta — du lägger till mer socker än nödvändigt och skjuter din sats in i explosionsfaran, där övertryck orsakar flaskor att sprängas eller kronor att sprutas av våldsamt.",
+    answer: "Det kvarvarande CO2 i ditt öl beror på den högsta temperaturen som uppnåtts efter jäsning: kall vätska behåller mer löst gas än varm vätska. Om du anger en temperatur lägre än den faktiska utgår kalkylatorn från mer kvarvarande CO2 än vad som verkligen finns och föreslår mindre socker än vad som behövs. Om du anger det för högt sker det motsatta - du lägger till mer socker än nödvändigt och skjuter din sats in i explosionsfaran, där övertryck orsakar flaskor att sprängas eller kronor att sprutas av våldsamt.",
   },
   {
     question: "Vilken sockor är bäst för pryning?",
@@ -42,7 +42,7 @@ const faq: CarbonationLocaleContent['faq'] = [
   },
   {
     question: "Vad händer om jag tillsätter för mycket pryningssocker?",
-    answer: "Över-pryning genererar överskridande CO2-tryck inuti flaskan. Standardglasflaskor misslyckas vid cirka 3,5-4,0 volymer CO2. Bortom denna punkt kan flaskan sprängas eller kronen kan sprutas av våldsamt. Detta är varför precision är viktigt — även 5 extra gram per liter kan skjuta en sats in i farozonen.",
+    answer: "Över-pryning genererar överskridande CO2-tryck inuti flaskan. Standardglasflaskor misslyckas vid cirka 3,5-4,0 volymer CO2. Bortom denna punkt kan flaskan sprängas eller kronen kan sprutas av våldsamt. Detta är varför precision är viktigt - även 5 extra gram per liter kan skjuta en sats in i farozonen.",
   },
   {
     question: "Hur lång tid tar det för öl att karboniseras efter flaskfyllning?",
@@ -74,7 +74,7 @@ const seo: CarbonationLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Bemästra konsten att pryning och omvandla ditt hembryggt öl från ett platt experiment till en professionell mousserande upplevelse. Pryning innebär att tillsätta en exakt mängd socker så att den kvarvarande jästen i flaskan genererar naturlig CO2 under en sekundär jäsning. För lite socker ger platt öl; för mycket skapar farlig tryckning som kan spränga flaskor. Skillnaden mellan de två är några få gram — därför existerar denna kalkylator.'
+    html: 'Bemästra konsten att pryning och omvandla ditt hembryggt öl från ett platt experiment till en professionell mousserande upplevelse. Pryning innebär att tillsätta en exakt mängd socker så att den kvarvarande jästen i flaskan genererar naturlig CO2 under en sekundär jäsning. För lite socker ger platt öl; för mycket skapar farlig tryckning som kan spränga flaskor. Skillnaden mellan de två är några få gram - därför existerar denna kalkylator.'
   },
   {
     type: 'proscons',
@@ -103,7 +103,7 @@ const seo: CarbonationLocaleContent['seo'] = [
     type: 'card',
     title: 'Vilken Sockor Bör Du Välja?',
     icon: 'mdi:corn',
-    html: '<strong>Dextros</strong> är neutral och professionell — branschstandarden. <strong>Vassockor</strong> är ekonomisk och effektiv (använd 10% mindre vikt än dextros). <strong>DME (Torkat Mjölkextrakt)</strong> är puristens val men svårare att förutsäga exakt eftersom dess gärningsbarhet varierar beroende på märke och mjölksammansättning.'
+    html: '<strong>Dextros</strong> är neutral och professionell - branschstandarden. <strong>Vassockor</strong> är ekonomisk och effektiv (använd 10% mindre vikt än dextros). <strong>DME (Torkat Mjölkextrakt)</strong> är puristens val men svårare att förutsäga exakt eftersom dess gärningsbarhet varierar beroende på märke och mjölksammansättning.'
   },
   {
     type: 'diagnostic',
@@ -134,11 +134,11 @@ const seo: CarbonationLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'I sin kärna styrs karbonisering av <strong>Henrys Lag</strong>: mängden gas löst i en vätska är proportionell mot deltrycket för den gasen över vätskan. När du pryner en flaska och förseglar den förbrukar jästen sockret och producerar CO2 i en förseglab miljö. När trycket ökar tvingas gasen tillbaka in i lösningen. Temperaturen vid vilken denna jämvikt uppnås bestämmer den slutliga karboniseringsnivån — det är därför jäsningstemperatur är den mest kritiska variabeln i denna kalkylator.'
+    html: 'I sin kärna styrs karbonisering av <strong>Henrys Lag</strong>: mängden gas löst i en vätska är proportionell mot deltrycket för den gasen över vätskan. När du pryner en flaska och förseglar den förbrukar jästen sockret och producerar CO2 i en förseglab miljö. När trycket ökar tvingas gasen tillbaka in i lösningen. Temperaturen vid vilken denna jämvikt uppnås bestämmer den slutliga karboniseringsnivån - det är därför jäsningstemperatur är den mest kritiska variabeln i denna kalkylator.'
   },
   {
     type: 'paragraph',
-    html: 'Det kvarvarande CO2 i ditt öl före pryning är inte noll. Varje öl innehåller löst CO2 från jäsningsprocessen, och mängden som behålls beror på den högsta temperatur som ölet nådde. Öl jäst vid 22°C innehåller betydligt mindre kvarvarande CO2 än öl jäst vid 16°C, även om båda nu är kylda. Att inte ta hänsyn till detta restband leder till systematisk överkarbonisering — ett av de vanligaste misstagen bland nybörjar hembryggarare.'
+    html: 'Det kvarvarande CO2 i ditt öl före pryning är inte noll. Varje öl innehåller löst CO2 från jäsningsprocessen, och mängden som behålls beror på den högsta temperatur som ölet nådde. Öl jäst vid 22°C innehåller betydligt mindre kvarvarande CO2 än öl jäst vid 16°C, även om båda nu är kylda. Att inte ta hänsyn till detta restband leder till systematisk överkarbonisering - ett av de vanligaste misstagen bland nybörjar hembryggarare.'
   }
 ];
 

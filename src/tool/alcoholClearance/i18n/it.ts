@@ -44,19 +44,19 @@ const faq: AlcoholClearanceLocaleContent['faq'] = [
   },
   {
     question: 'Possono il caffè, l\'acqua o l\'esercizio accelerare l\'eliminazione dell\'alcol?',
-    answer: 'No. Il fegato elimina l\'alcol a un tasso costante di circa 0,15 g/L all\'ora (cinetica di ordine zero). Il caffè può mascherare la stanchezza, l\'acqua aiuta con la disidratazione, e l\'esercizio migliora il benessere generale — ma nessuno di questi riduce il tuo BAC effettivo. Solo il tempo elimina l\'alcol dal sangue.',
+    answer: 'No. Il fegato elimina l\'alcol a un tasso costante di circa 0,15 g/L all\'ora (cinetica di ordine zero). Il caffè può mascherare la stanchezza, l\'acqua aiuta con la disidratazione, e l\'esercizio migliora il benessere generale - ma nessuno di questi riduce il tuo BAC effettivo. Solo il tempo elimina l\'alcol dal sangue.',
   },
   {
     question: 'Mangiare dopo aver bevuto aiuta ad abbassare il BAC?',
-    answer: 'Mangiare dopo aver bevuto non riduce l\'alcol già nel tuo flusso sanguigno. Dove il cibo fa una grande differenza è prima o durante il bere: il cibo nello stomaco — specialmente proteine e grassi — rallenta l\'assorbimento gastrico e può ridurre il tuo BAC massimo fino al 50%. Una volta che l\'alcol è assorbito, solo il metabolismo epatico può eliminarlo.',
+    answer: 'Mangiare dopo aver bevuto non riduce l\'alcol già nel tuo flusso sanguigno. Dove il cibo fa una grande differenza è prima o durante il bere: il cibo nello stomaco - specialmente proteine e grassi - rallenta l\'assorbimento gastrico e può ridurre il tuo BAC massimo fino al 50%. Una volta che l\'alcol è assorbito, solo il metabolismo epatico può eliminarlo.',
   },
   {
     question: 'Quanto tempo ci vuole per raggiungere 0,0 BAC?',
-    answer: 'Dipende dal tuo BAC iniziale. Dividi il tuo BAC stimato (in g/L) per 0,15 per ottenere le ore approssimative. Ad esempio, un BAC di 1,5 g/L richiede circa 10 ore. Il fegato non smette mai: elabora l\'alcol anche mentre dormi. Ma fai attenzione — l\'alcol può ancora essere presente nel tuo sangue anche quando ti senti completamente recuperato.',
+    answer: 'Dipende dal tuo BAC iniziale. Dividi il tuo BAC stimato (in g/L) per 0,15 per ottenere le ore approssimative. Ad esempio, un BAC di 1,5 g/L richiede circa 10 ore. Il fegato non smette mai: elabora l\'alcol anche mentre dormi. Ma fai attenzione - l\'alcol può ancora essere presente nel tuo sangue anche quando ti senti completamente recuperato.',
   },
   {
     question: 'Questo calcolatore è affidabile al 100% per decidere se guidare?',
-    answer: 'No. Questo strumento è una stima teorica basata sulla formula di Widmark. Fattori come l\'assunzione di cibo, i farmaci, la fatica, le varianti genetiche dell\'enzima ADH e lo stress possono spostare il tuo BAC effettivo del 20-30% in entrambe le direzioni. Non utilizzare mai questo calcolatore per decidere se guidare. Se hai bevuto, non guidare — quella è l\'unica regola con zero margine di errore.',
+    answer: 'No. Questo strumento è una stima teorica basata sulla formula di Widmark. Fattori come l\'assunzione di cibo, i farmaci, la fatica, le varianti genetiche dell\'enzima ADH e lo stress possono spostare il tuo BAC effettivo del 20-30% in entrambe le direzioni. Non utilizzare mai questo calcolatore per decidere se guidare. Se hai bevuto, non guidare - quella è l\'unica regola con zero margine di errore.',
   },
 ];
 
@@ -84,7 +84,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Il tuo corpo metabolizza l\'alcol a una velocità fissa: circa 0,15 grammi per litro all\'ora. Questo processo è chiamato cinetica di ordine zero — non importa quanta esperienza hai, quanti integratori prendi, o quanto caffè bevi. Solo il tempo e il fegato eliminano l\'alcol dal tuo sangue. Questo calcolatore utilizza la formula di Widmark, il gold standard nei laboratori forense e tossicologia.'
+    html: 'Il tuo corpo metabolizza l\'alcol a una velocità fissa: circa 0,15 grammi per litro all\'ora. Questo processo è chiamato cinetica di ordine zero - non importa quanta esperienza hai, quanti integratori prendi, o quanto caffè bevi. Solo il tempo e il fegato eliminano l\'alcol dal tuo sangue. Questo calcolatore utilizza la formula di Widmark, il gold standard nei laboratori forense e tossicologia.'
   },
   {
     type: 'title',

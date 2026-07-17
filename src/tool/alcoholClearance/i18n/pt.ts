@@ -44,19 +44,19 @@ const faq: AlcoholClearanceLocaleContent['faq'] = [
   },
   {
     question: "Café, água ou exercício conseguem acelerar a eliminação do álcool?",
-    answer: "Não. O fígado elimina o álcool a uma taxa constante de aproximadamente 0.15 g/L por hora (cinética de ordem zero). Café pode disfarçar o cansaço, água ajuda com a desidratação, e exercício melhora o bem-estar geral — mas nenhum deles reduz seu BAC real. Apenas o tempo elimina o álcool do sangue.",
+    answer: "Não. O fígado elimina o álcool a uma taxa constante de aproximadamente 0.15 g/L por hora (cinética de ordem zero). Café pode disfarçar o cansaço, água ajuda com a desidratação, e exercício melhora o bem-estar geral - mas nenhum deles reduz seu BAC real. Apenas o tempo elimina o álcool do sangue.",
   },
   {
     question: "Comer após beber ajuda a diminuir o BAC?",
-    answer: "Comer após beber não reduz o álcool já na corrente sanguínea. Onde a alimentação faz uma grande diferença é antes ou durante o consumo: comida no estômago — especialmente proteínas e gorduras — desacelera a absorção gástrica e pode reduzir seu BAC máximo em até 50%. Uma vez que o álcool é absorvido, apenas o metabolismo hepático pode eliminá-lo.",
+    answer: "Comer após beber não reduz o álcool já na corrente sanguínea. Onde a alimentação faz uma grande diferença é antes ou durante o consumo: comida no estômago - especialmente proteínas e gorduras - desacelera a absorção gástrica e pode reduzir seu BAC máximo em até 50%. Uma vez que o álcool é absorvido, apenas o metabolismo hepático pode eliminá-lo.",
   },
   {
     question: "Quanto tempo leva para chegar a um BAC de 0.0?",
-    answer: "Depende do seu BAC inicial. Divida sua alcoolemia estimada (em g/L) por 0.15 para obter as horas aproximadas. Por exemplo, um BAC de 1.5 g/L leva cerca de 10 horas. O fígado nunca para: processa álcool mesmo enquanto você dorme. Mas tenha cuidado — álcool ainda pode estar presente no seu sangue mesmo quando você se sente completamente recuperado.",
+    answer: "Depende do seu BAC inicial. Divida sua alcoolemia estimada (em g/L) por 0.15 para obter as horas aproximadas. Por exemplo, um BAC de 1.5 g/L leva cerca de 10 horas. O fígado nunca para: processa álcool mesmo enquanto você dorme. Mas tenha cuidado - álcool ainda pode estar presente no seu sangue mesmo quando você se sente completamente recuperado.",
   },
   {
     question: "Esta calculadora é 100% confiável para decidir se devo dirigir?",
-    answer: "Não. Esta ferramenta é uma estimativa teórica baseada na fórmula de Widmark. Fatores como ingestão de alimentos, medicamentos, fadiga, variantes genéticas da enzima ADH e estresse podem deslocar sua alcoolemia real em 20–30% em qualquer direção. Nunca use esta calculadora para decidir se deve dirigir. Se você bebeu, não dirija — essa é a única regra sem margem de erro.",
+    answer: "Não. Esta ferramenta é uma estimativa teórica baseada na fórmula de Widmark. Fatores como ingestão de alimentos, medicamentos, fadiga, variantes genéticas da enzima ADH e estresse podem deslocar sua alcoolemia real em 20-30% em qualquer direção. Nunca use esta calculadora para decidir se deve dirigir. Se você bebeu, não dirija - essa é a única regra sem margem de erro.",
   },
 ];
 
@@ -84,7 +84,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Entender como nosso corpo processa etanol é essencial para a segurança e para mitigar ressacas. Nossa <strong>calculadora de eliminação alcoólica</strong> utiliza a reconhecida <strong>Fórmula de Widmark</strong> para oferecer um mapa claro do seu estado metabólico. O álcool não é eliminado por suor, água ou exercício — apenas o tempo e o metabolismo hepático reduzem sua concentração de álcool no sangue.'
+    html: 'Entender como nosso corpo processa etanol é essencial para a segurança e para mitigar ressacas. Nossa <strong>calculadora de eliminação alcoólica</strong> utiliza a reconhecida <strong>Fórmula de Widmark</strong> para oferecer um mapa claro do seu estado metabólico. O álcool não é eliminado por suor, água ou exercício - apenas o tempo e o metabolismo hepático reduzem sua concentração de álcool no sangue.'
   },
   {
     type: 'diagnostic',
@@ -101,7 +101,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'O fígado degrada 95% do álcool através da Desidrogenase de Álcool (ADH). Este processo ocorre a uma taxa constante (cinética de ordem zero), o que significa que não pode ser acelerado por exercício ou café. Os restantes 5% são eliminados pela respiração, urina e suor — que é a base para os testes de bafômetro na fiscalização de trânsito.'
+    html: 'O fígado degrada 95% do álcool através da Desidrogenase de Álcool (ADH). Este processo ocorre a uma taxa constante (cinética de ordem zero), o que significa que não pode ser acelerado por exercício ou café. Os restantes 5% são eliminados pela respiração, urina e suor - que é a base para os testes de bafômetro na fiscalização de trânsito.'
   },
   {
     type: 'stats',
@@ -130,7 +130,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Segurança em Primeiro: Conheça Seu Limite',
-    html: 'Um BAC de 0.05% prejudica mensuravelmente o julgamento, rastreamento e tempo de reação. A maioria dos países define o limite legal de dirigir entre 0.05% e 0.08%. No entanto, a sensibilidade individual varia significativamente — idade, medicamentos, fadiga e variantes genéticas da enzima ADH alteram como o álcool o afeta pessoalmente. Em caso de dúvida, não dirija.'
+    html: 'Um BAC de 0.05% prejudica mensuravelmente o julgamento, rastreamento e tempo de reação. A maioria dos países define o limite legal de dirigir entre 0.05% e 0.08%. No entanto, a sensibilidade individual varia significativamente - idade, medicamentos, fadiga e variantes genéticas da enzima ADH alteram como o álcool o afeta pessoalmente. Em caso de dúvida, não dirija.'
   },
   {
     type: 'title',
@@ -139,7 +139,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Comer antes ou durante o consumo muda drasticamente a cinética de absorção do álcool. Alimento no estômago — especialmente proteínas e gorduras — desacelera o esvaziamento gástrico, reduzindo a taxa máxima na qual o etanol entra na corrente sanguínea. Uma pessoa que bebe com o estômago vazio pode atingir um BAC máximo 50% maior do que a mesma pessoa que comeu uma refeição completa antes de consumir a mesma quantidade. Esta é uma das variáveis mais poderosas que a fórmula de Widmark não consegue capturar completamente, razão pela qual nossa calculadora inclui um aviso sobre estimativa teórica.'
+    html: 'Comer antes ou durante o consumo muda drasticamente a cinética de absorção do álcool. Alimento no estômago - especialmente proteínas e gorduras - desacelera o esvaziamento gástrico, reduzindo a taxa máxima na qual o etanol entra na corrente sanguínea. Uma pessoa que bebe com o estômago vazio pode atingir um BAC máximo 50% maior do que a mesma pessoa que comeu uma refeição completa antes de consumir a mesma quantidade. Esta é uma das variáveis mais poderosas que a fórmula de Widmark não consegue capturar completamente, razão pela qual nossa calculadora inclui um aviso sobre estimativa teórica.'
   },
   {
     type: 'paragraph',

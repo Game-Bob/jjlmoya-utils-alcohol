@@ -34,7 +34,7 @@ const faqTitle = 'Pertanyaan yang Sering Diajukan';
 const faq: CarbonationLocaleContent['faq'] = [
   {
     question: 'Mengapa suhu penting untuk karbonasi?',
-    answer: 'CO2 sisa di bir Anda tergantung pada suhu tertinggi yang dicapai setelah fermentasi: cairan dingin memegang lebih banyak gas terlarut daripada cairan hangat. Jika Anda memasukkan suhu lebih rendah dari yang sebenarnya, kalkulator menganggap lebih banyak CO2 sisa daripada yang sebenarnya ada dan memberikan Anda kurang gula daripada yang diperlukan. Masukkan terlalu tinggi dan sebaliknya terjadi — Anda menambahkan lebih banyak gula daripada yang diperlukan dan mendorong batch Anda ke wilayah bom botol, di mana tekanan berlebih menyebabkan botol pecah atau tutup terlepas dengan keras.',
+    answer: 'CO2 sisa di bir Anda tergantung pada suhu tertinggi yang dicapai setelah fermentasi: cairan dingin memegang lebih banyak gas terlarut daripada cairan hangat. Jika Anda memasukkan suhu lebih rendah dari yang sebenarnya, kalkulator menganggap lebih banyak CO2 sisa daripada yang sebenarnya ada dan memberikan Anda kurang gula daripada yang diperlukan. Masukkan terlalu tinggi dan sebaliknya terjadi - Anda menambahkan lebih banyak gula daripada yang diperlukan dan mendorong batch Anda ke wilayah bom botol, di mana tekanan berlebih menyebabkan botol pecah atau tutup terlepas dengan keras.',
   },
   {
     question: 'Gula mana yang terbaik untuk primer?',
@@ -42,7 +42,7 @@ const faq: CarbonationLocaleContent['faq'] = [
   },
   {
     question: 'Apa yang terjadi jika saya menambahkan terlalu banyak gula primer?',
-    answer: 'Over-priming menghasilkan tekanan CO2 berlebih di dalam botol. Botol gelas standar gagal pada sekitar 3,5-4,0 volume CO2. Melampaui titik ini, botol dapat pecah atau tutup dapat terlepas dengan keras. Itulah mengapa presisi penting — bahkan 5 gram ekstra per liter dapat mendorong batch ke zona bahaya.',
+    answer: 'Over-priming menghasilkan tekanan CO2 berlebih di dalam botol. Botol gelas standar gagal pada sekitar 3,5-4,0 volume CO2. Melampaui titik ini, botol dapat pecah atau tutup dapat terlepas dengan keras. Itulah mengapa presisi penting - bahkan 5 gram ekstra per liter dapat mendorong batch ke zona bahaya.',
   },
   {
     question: 'Berapa lama bir membutuhkan waktu untuk karbonasi setelah pembotolan?',
@@ -74,7 +74,7 @@ const seo: CarbonationLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Kuasai seni primer dan ubah homebrewmu dari eksperimen datar menjadi pengalaman minuman efervesen profesional. Primer melibatkan penambahan jumlah gula yang tepat sehingga ragi sisa di botol menghasilkan CO2 alami selama fermentasi sekunder. Terlalu sedikit gula menghasilkan bir datar; terlalu banyak menciptakan tekanan berbahaya yang dapat memecahkan botol. Perbedaan antara keduanya adalah beberapa gram — itulah mengapa kalkulator ini ada.'
+    html: 'Kuasai seni primer dan ubah homebrewmu dari eksperimen datar menjadi pengalaman minuman efervesen profesional. Primer melibatkan penambahan jumlah gula yang tepat sehingga ragi sisa di botol menghasilkan CO2 alami selama fermentasi sekunder. Terlalu sedikit gula menghasilkan bir datar; terlalu banyak menciptakan tekanan berbahaya yang dapat memecahkan botol. Perbedaan antara keduanya adalah beberapa gram - itulah mengapa kalkulator ini ada.'
   },
   {
     type: 'proscons',
@@ -103,7 +103,7 @@ const seo: CarbonationLocaleContent['seo'] = [
     type: 'card',
     title: 'Gula Mana Sebaiknya Anda Pilih?',
     icon: 'mdi:corn',
-    html: '<strong>Dextrose</strong> netral dan profesional — standar industri. <strong>Gula Meja</strong> ekonomis dan efektif (gunakan 10% lebih sedikit berat daripada dextrose). <strong>DME (Ekstrak Malt Kering)</strong> adalah pilihan puritan tetapi lebih sulit diprediksi dengan akurat karena fermentabilitas bervariasi menurut merek dan komposisi malt.'
+    html: '<strong>Dextrose</strong> netral dan profesional - standar industri. <strong>Gula Meja</strong> ekonomis dan efektif (gunakan 10% lebih sedikit berat daripada dextrose). <strong>DME (Ekstrak Malt Kering)</strong> adalah pilihan puritan tetapi lebih sulit diprediksi dengan akurat karena fermentabilitas bervariasi menurut merek dan komposisi malt.'
   },
   {
     type: 'diagnostic',
@@ -134,11 +134,11 @@ const seo: CarbonationLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Pada intinya, karbonasi diatur oleh <strong>Hukum Henry</strong>: jumlah gas yang terlarut dalam cairan sebanding dengan tekanan parsial gas itu di atas cairan. Ketika Anda primer botol dan menyegelnya, ragi mengkonsumsi gula dan menghasilkan CO2 di lingkungan yang disegel. Seiring tekanan meningkat, gas dipaksa kembali ke dalam larutan. Suhu di mana keseimbangan ini terjadi menentukan tingkat karbonasi akhir — itulah mengapa suhu fermentasi adalah variabel paling kritis dalam kalkulator ini.'
+    html: 'Pada intinya, karbonasi diatur oleh <strong>Hukum Henry</strong>: jumlah gas yang terlarut dalam cairan sebanding dengan tekanan parsial gas itu di atas cairan. Ketika Anda primer botol dan menyegelnya, ragi mengkonsumsi gula dan menghasilkan CO2 di lingkungan yang disegel. Seiring tekanan meningkat, gas dipaksa kembali ke dalam larutan. Suhu di mana keseimbangan ini terjadi menentukan tingkat karbonasi akhir - itulah mengapa suhu fermentasi adalah variabel paling kritis dalam kalkulator ini.'
   },
   {
     type: 'paragraph',
-    html: 'CO2 sisa di bir Anda sebelum primer bukan nol. Setiap bir memegang CO2 terlarut dari proses fermentasi, dan jumlah yang dipertahankan tergantung pada suhu tertinggi yang dicapai bir. Bir yang difermentasi pada 22°C memegang jauh lebih sedikit CO2 sisa daripada yang difermentasi pada 16°C, bahkan jika keduanya sekarang didinginkan. Gagal untuk memperhitungkan CO2 sisa ini mengarah ke over-karbonasi sistematis — salah satu kesalahan paling umum di antara pemula pembuatan bir rumah.'
+    html: 'CO2 sisa di bir Anda sebelum primer bukan nol. Setiap bir memegang CO2 terlarut dari proses fermentasi, dan jumlah yang dipertahankan tergantung pada suhu tertinggi yang dicapai bir. Bir yang difermentasi pada 22°C memegang jauh lebih sedikit CO2 sisa daripada yang difermentasi pada 16°C, bahkan jika keduanya sekarang didinginkan. Gagal untuk memperhitungkan CO2 sisa ini mengarah ke over-karbonasi sistematis - salah satu kesalahan paling umum di antara pemula pembuatan bir rumah.'
   }
 ];
 

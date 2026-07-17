@@ -36,15 +36,15 @@ const faq: PartyKegLocaleContent['faq'] = [
   },
   {
     question: "Hur mycket is behöver jag för 100 öl?",
-    answer: "Du behöver ungefär 15–20 kilogram is (7–10 påsar). Praktiska regeln är 0,75 kg is per liter dryck under normala förhållanden. På sommaren eller utomhus över 25°C, öka till 1 kg per liter: omgivningsvärmen påskyndar smältningen och du kommer att få slut på is mycket snabbare än förväntat.",
+    answer: "Du behöver ungefär 15-20 kilogram is (7-10 påsar). Praktiska regeln är 0,75 kg is per liter dryck under normala förhållanden. På sommaren eller utomhus över 25°C, öka till 1 kg per liter: omgivningsvärmen påskyndar smältningen och du kommer att få slut på is mycket snabbare än förväntat.",
   },
   {
     question: "Vad är skillnaden mellan ett standardfat och ett festfat?",
-    answer: "Ett standard-handelsfat innehåller 50 liter, vilket ger cirka 200 portioner (250 ml var). Ett festfat (mini-fat) innehåller vanligtvis 5 liter — cirka 20 portioner. Att känna till dessa storlekar hjälper dig att omvandla kalkylatorns liter-resultat till antalet behållare du behöver köpa.",
+    answer: "Ett standard-handelsfat innehåller 50 liter, vilket ger cirka 200 portioner (250 ml var). Ett festfat (mini-fat) innehåller vanligtvis 5 liter - cirka 20 portioner. Att känna till dessa storlekar hjälper dig att omvandla kalkylatorns liter-resultat till antalet behållare du behöver köpa.",
   },
   {
     question: "Varför behöver jag så mycket is om ölen redan är kall?",
-    answer: "För att kyling och underhåll är två separata processer. Att föra en burk från 25°C till 4°C förbrukar isens latenta smältvärme: cirka 334 kJ/kg. En gång kall fortsätter isen att arbeta för att kompensera för omgivningsvärmen. En sommardag på 35°C kan värmeavgiven till kylfällan smälta 1 kg is per liter dryck var 2–3:e timme. Det är därför förkyling av dryckerna innan festen halverar din totala isförbrukning.",
+    answer: "För att kyling och underhåll är två separata processer. Att föra en burk från 25°C till 4°C förbrukar isens latenta smältvärme: cirka 334 kJ/kg. En gång kall fortsätter isen att arbeta för att kompensera för omgivningsvärmen. En sommardag på 35°C kan värmeavgiven till kylfällan smälta 1 kg is per liter dryck var 2-3:e timme. Det är därför förkyling av dryckerna innan festen halverar din totala isförbrukning.",
   },
 ];
 
@@ -72,7 +72,7 @@ const seo: PartyKegLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Miljonfrågan när du organiserar något event: <strong>Hur många liter öl ska jag köpa?</strong> För lite är en katastrof, men för mycket är onödiga utgifter. Det här verktyget hjälper dig att beräkna exakt mängd alkohol och, viktigast av allt, <strong>hur många ispåsar</strong> du behöver för att hålla det kallt. Professionella caterare och eventplanerare använder statistiska konsumtionsmodeller — och nu kan du också, helt gratis.'
+    html: 'Miljonfrågan när du organiserar något event: <strong>Hur många liter öl ska jag köpa?</strong> För lite är en katastrof, men för mycket är onödiga utgifter. Det här verktyget hjälper dig att beräkna exakt mängd alkohol och, viktigast av allt, <strong>hur många ispåsar</strong> du behöver för att hålla det kallt. Professionella caterare och eventplanerare använder statistiska konsumtionsmodeller - och nu kan du också, helt gratis.'
   },
   {
     type: 'title',
@@ -112,7 +112,7 @@ const seo: PartyKegLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Ett standard 50L-fat ger cirka 200 portioner. En typisk ispåse väger 2 kg. Med dessa siffror kan du planera den transport och lagring som krävs för ditt event utan sista-minuten-överraskningar. Räkna med issmältning under transport — en 30-minuterstur sommartid kan kosta dig en hel påse innan festen börjar.'
+    html: 'Ett standard 50L-fat ger cirka 200 portioner. En typisk ispåse väger 2 kg. Med dessa siffror kan du planera den transport och lagring som krävs för ditt event utan sista-minuten-överraskningar. Räkna med issmältning under transport - en 30-minuterstur sommartid kan kosta dig en hel påse innan festen börjar.'
   },
   {
     type: 'summary',
@@ -125,7 +125,7 @@ const seo: PartyKegLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'En ofta förbisedd variabel är <strong>gästernas bortfallstal</strong>. På de flesta fester går 10–15% av gästerna tidigt och 10% kanske inte dricker alls. Kalkylatorn använder ett försiktigt buffert så att du aldrig blir utan, men också inte sittar med ett enormt överskud. Att förstå dessa justeringar hjälper dig att finjustera uppskattningen för din specifika grupp och kontext. Avrunda alltid uppåt vid köp, eftersom öppnade fat normalt inte kan returneras. Ett litet överskud är alltid bättre än att vara utan dryck mitt i festen.'
+    html: 'En ofta förbisedd variabel är <strong>gästernas bortfallstal</strong>. På de flesta fester går 10-15% av gästerna tidigt och 10% kanske inte dricker alls. Kalkylatorn använder ett försiktigt buffert så att du aldrig blir utan, men också inte sittar med ett enormt överskud. Att förstå dessa justeringar hjälper dig att finjustera uppskattningen för din specifika grupp och kontext. Avrunda alltid uppåt vid köp, eftersom öppnade fat normalt inte kan returneras. Ett litet överskud är alltid bättre än att vara utan dryck mitt i festen.'
   }
 ];
 

@@ -34,7 +34,7 @@ const faqTitle = 'Sıkça Sorulan Sorular';
 const faq: CarbonationLocaleContent['faq'] = [
   {
     question: "Karbonasyon için sıcaklık neden önemlidir?",
-    answer: "Biranızdaki kalan CO2, fermantasyondan sonra ulaşılan en yüksek sıcaklığa bağlıdır: soğuk sıvı, sıcak sıvıdan daha fazla çözünmüş gaz tutar. Gerçekten daha düşük bir sıcaklık girerseniz, hesaplayıcı gerçekte var olandan daha fazla kalan CO2 olduğunu varsayar ve gerekli olandan daha az şeker önerir. Çok yüksek girerseniz ters olur — ihtiyacından daha fazla şeker ekler ve şişe patlaması tehlike bölgesine girer, burada aşırı basınç şişelerin kırılmasına veya kapakların şiddetli bir şekilde uçmasına neden olur.",
+    answer: "Biranızdaki kalan CO2, fermantasyondan sonra ulaşılan en yüksek sıcaklığa bağlıdır: soğuk sıvı, sıcak sıvıdan daha fazla çözünmüş gaz tutar. Gerçekten daha düşük bir sıcaklık girerseniz, hesaplayıcı gerçekte var olandan daha fazla kalan CO2 olduğunu varsayar ve gerekli olandan daha az şeker önerir. Çok yüksek girerseniz ters olur - ihtiyacından daha fazla şeker ekler ve şişe patlaması tehlike bölgesine girer, burada aşırı basınç şişelerin kırılmasına veya kapakların şiddetli bir şekilde uçmasına neden olur.",
   },
   {
     question: "Aşılama için en iyi şeker nedir?",
@@ -42,7 +42,7 @@ const faq: CarbonationLocaleContent['faq'] = [
   },
   {
     question: "Çok fazla aşılama şekeri eklersem ne olur?",
-    answer: "Aşırı aşılama, şişe içinde aşırı CO2 basıncı oluşturur. Standart cam şişeler yaklaşık 3,5-4,0 CO2 hacminde başarısız olur. Bu noktanın ötesinde şişe patlamış olabilir veya kapak şiddetli bir şekilde uçabilir. Bu nedenle kesinlik önemlidir — hatta litre başına 5 gram fazla bile bir partiyiyı tehlike bölgesine itebilir.",
+    answer: "Aşırı aşılama, şişe içinde aşırı CO2 basıncı oluşturur. Standart cam şişeler yaklaşık 3,5-4,0 CO2 hacminde başarısız olur. Bu noktanın ötesinde şişe patlamış olabilir veya kapak şiddetli bir şekilde uçabilir. Bu nedenle kesinlik önemlidir - hatta litre başına 5 gram fazla bile bir partiyiyı tehlike bölgesine itebilir.",
   },
   {
     question: "Şişelendikten sonra bira ne kadar sürede karbonas oluyor?",
@@ -74,7 +74,7 @@ const seo: CarbonationLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Aşılama sanatında ustalaşın ve ev yapımı biranızı düz bir deney dari profesyonel bir köpüklü deneyime dönüştürün. Aşılama, şişedeki kalan mayaların ikincil fermantasyon sırasında doğal CO2 üretmesini sağlamak için kesin bir şeker miktarı eklemeyi içerir. Çok az şeker düz bira verir; çok fazla şişeleri kırabilen tehlikeli basınç oluşturur. İkisinin arasındaki fark sadece birkaç gramdır — bu nedenle bu hesaplayıcı vardır.'
+    html: 'Aşılama sanatında ustalaşın ve ev yapımı biranızı düz bir deney dari profesyonel bir köpüklü deneyime dönüştürün. Aşılama, şişedeki kalan mayaların ikincil fermantasyon sırasında doğal CO2 üretmesini sağlamak için kesin bir şeker miktarı eklemeyi içerir. Çok az şeker düz bira verir; çok fazla şişeleri kırabilen tehlikeli basınç oluşturur. İkisinin arasındaki fark sadece birkaç gramdır - bu nedenle bu hesaplayıcı vardır.'
   },
   {
     type: 'proscons',
@@ -103,7 +103,7 @@ const seo: CarbonationLocaleContent['seo'] = [
     type: 'card',
     title: 'Hangi Şekeri Seçmelisiniz?',
     icon: 'mdi:corn',
-    html: '<strong>Dekstroz</strong> nötr ve profesyonel — endüstri standardı. <strong>Beyaz Şeker</strong> ekonomik ve etkilidir (dekstrozdan %10 daha az ağırlık kullanın). <strong>DME (Kurutulmuş Malt Özütü)</strong> saflık seçeceğidir, ancak marka ve malt bileşimine göre fermente edilebilirliği değiştiği için doğru bir şekilde tahmin etmek daha zordur.'
+    html: '<strong>Dekstroz</strong> nötr ve profesyonel - endüstri standardı. <strong>Beyaz Şeker</strong> ekonomik ve etkilidir (dekstrozdan %10 daha az ağırlık kullanın). <strong>DME (Kurutulmuş Malt Özütü)</strong> saflık seçeceğidir, ancak marka ve malt bileşimine göre fermente edilebilirliği değiştiği için doğru bir şekilde tahmin etmek daha zordur.'
   },
   {
     type: 'diagnostic',
@@ -134,11 +134,11 @@ const seo: CarbonationLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Özünde, karbonasyon <strong>Henry\'s Yasası</strong> tarafından yönetilir: bir sıvıda çözünmüş gaz miktarı, o gazın sıvının üzerindeki kısmi basıncıyla orantılıdır. Bir şişeyi aşılayıp mühürlerseniz, maya şekeri tüketir ve kapalı bir ortamda CO2 üretir. Basınç arttıkça gaz tekrar çözeltiye zorlanır. Bu dengenin ulaşıldığı sıcaklık, son karbonasyon seviyesini belirler — bu nedenle fermantasyon sıcaklığı bu hesaplayıcıda en kritik değişkendir.'
+    html: 'Özünde, karbonasyon <strong>Henry\'s Yasası</strong> tarafından yönetilir: bir sıvıda çözünmüş gaz miktarı, o gazın sıvının üzerindeki kısmi basıncıyla orantılıdır. Bir şişeyi aşılayıp mühürlerseniz, maya şekeri tüketir ve kapalı bir ortamda CO2 üretir. Basınç arttıkça gaz tekrar çözeltiye zorlanır. Bu dengenin ulaşıldığı sıcaklık, son karbonasyon seviyesini belirler - bu nedenle fermantasyon sıcaklığı bu hesaplayıcıda en kritik değişkendir.'
   },
   {
     type: 'paragraph',
-    html: 'Aşılamadan önceki biranızdaki kalan CO2 sıfır değildir. Her bira fermantasyon sürecinden çözünmüş CO2 içerir ve tutulan miktar biranın ulaştığı en yüksek sıcaklığa bağlıdır. 22°C\'de fermente edilen bira, 16°C\'de fermente edilen biradan önemli ölçüde daha az kalan CO2 içerir, ancak her ikisi de şu anda soğutulmuştur. Bu kalıntıyı hesaba katmamak sistematik aşırı aşılamaya yol açar — başlangıç ev yapımı bira üreticileri arasında en yaygın hatalardan biridir.'
+    html: 'Aşılamadan önceki biranızdaki kalan CO2 sıfır değildir. Her bira fermantasyon sürecinden çözünmüş CO2 içerir ve tutulan miktar biranın ulaştığı en yüksek sıcaklığa bağlıdır. 22°C\'de fermente edilen bira, 16°C\'de fermente edilen biradan önemli ölçüde daha az kalan CO2 içerir, ancak her ikisi de şu anda soğutulmuştur. Bu kalıntıyı hesaba katmamak sistematik aşırı aşılamaya yol açar - başlangıç ev yapımı bira üreticileri arasında en yaygın hatalardan biridir.'
   }
 ];
 

@@ -44,19 +44,19 @@ const faq: AlcoholClearanceLocaleContent['faq'] = [
   },
   {
     question: "Kan kaffe, vatten eller träning påskynda alkoholabbryningen?",
-    answer: "Nej. Levern bryter ner alkohol i en konstant takt på cirka 0,15 g/L per timme (nollte ordningens kinetik). Kaffe kan dölja tröttheten, vatten hjälper till med uttorkning, och träning förbättrar det allmänna välbefinnantet – men inget av det minskar din faktiska BAC. Bara tiden bryter ner alkoholen från blodet.",
+    answer: "Nej. Levern bryter ner alkohol i en konstant takt på cirka 0,15 g/L per timme (nollte ordningens kinetik). Kaffe kan dölja tröttheten, vatten hjälper till med uttorkning, och träning förbättrar det allmänna välbefinnantet - men inget av det minskar din faktiska BAC. Bara tiden bryter ner alkoholen från blodet.",
   },
   {
     question: "Hjälper det att äta efter att ha druckit alkohol?",
-    answer: "Att äta efter att ha druckit minskar inte alkoholen som redan finns i blodet. Mat gör största skillnaden före eller under drickandet: mat i magen – särskilt proteiner och fetter – saktar ner absorptionen och kan minska din högsta BAC med upp till 50%. När alkoholen väl är absorberad kan bara leverns ämnesomsättning bryta ner den.",
+    answer: "Att äta efter att ha druckit minskar inte alkoholen som redan finns i blodet. Mat gör största skillnaden före eller under drickandet: mat i magen - särskilt proteiner och fetter - saktar ner absorptionen och kan minska din högsta BAC med upp till 50%. När alkoholen väl är absorberad kan bara leverns ämnesomsättning bryta ner den.",
   },
   {
     question: "Hur lång tid tar det att nå 0,0 BAC?",
-    answer: "Det beror på din utgångs-BAC. Dela din beräknade BAC (i g/L) med 0,15 för att få de ungefärliga timmarna. Till exempel tar en BAC på 1,5 g/L omkring 10 timmar. Levern slutar aldrig: den bryter ner alkohol även när du sover. Men var medveten – alkohol kan fortfarande finnas i blodet även när du känner dig helt återhämtad.",
+    answer: "Det beror på din utgångs-BAC. Dela din beräknade BAC (i g/L) med 0,15 för att få de ungefärliga timmarna. Till exempel tar en BAC på 1,5 g/L omkring 10 timmar. Levern slutar aldrig: den bryter ner alkohol även när du sover. Men var medveten - alkohol kan fortfarande finnas i blodet även när du känner dig helt återhämtad.",
   },
   {
     question: "Är denna kalkylator 100% tillförlitlig för att avgöra om du kan köra?",
-    answer: "Nej. Det här verktyget är en teoretisk uppskattning baserad på Widmarks formel. Faktorer som matintag, läkemedel, trötthet, genetiska varianter av ADH-enzymer och stress kan skifta din faktiska BAC med 20–30% åt båda hållen. Använd aldrig denna kalkylator för att avgöra om du kan köra. Om du har druckit alkohol – kör inte. Det är den enda regeln utan marginal för fel.",
+    answer: "Nej. Det här verktyget är en teoretisk uppskattning baserad på Widmarks formel. Faktorer som matintag, läkemedel, trötthet, genetiska varianter av ADH-enzymer och stress kan skifta din faktiska BAC med 20-30% åt båda hållen. Använd aldrig denna kalkylator för att avgöra om du kan köra. Om du har druckit alkohol - kör inte. Det är den enda regeln utan marginal för fel.",
   },
 ];
 
@@ -84,7 +84,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Att förstå hur kroppen bryter ner etanol är avgörande för säkerhet och för att minska bakfylla. Vår <strong>alkoholabbrytniskalkylator</strong> använder den välkända <strong>Widmarks formel</strong> för att ge dig en tydlig karta över ditt metaboliska tillstånd. Alkohol bryts inte ner genom svettning, vattenintag eller träning – bara tid och leverns ämnesomsättning kan minska din blodalkoholkoncentration.'
+    html: 'Att förstå hur kroppen bryter ner etanol är avgörande för säkerhet och för att minska bakfylla. Vår <strong>alkoholabbrytniskalkylator</strong> använder den välkända <strong>Widmarks formel</strong> för att ge dig en tydlig karta över ditt metaboliska tillstånd. Alkohol bryts inte ner genom svettning, vattenintag eller träning - bara tid och leverns ämnesomsättning kan minska din blodalkoholkoncentration.'
   },
   {
     type: 'diagnostic',
@@ -101,7 +101,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Levern bryter ner 95% av alkoholen genom enzymet alkoholdehydrogenas (ADH). Denna process sker i konstant takt (nollte ordningens kinetik), vilket betyder att den inte kan påskyndas av träning eller kaffe. De återstående 5% bryts ner genom andedräkt, urin och svett – vilket är grunden för andedräktstester inom trafikbevakningenin.'
+    html: 'Levern bryter ner 95% av alkoholen genom enzymet alkoholdehydrogenas (ADH). Denna process sker i konstant takt (nollte ordningens kinetik), vilket betyder att den inte kan påskyndas av träning eller kaffe. De återstående 5% bryts ner genom andedräkt, urin och svett - vilket är grunden för andedräktstester inom trafikbevakningenin.'
   },
   {
     type: 'stats',
@@ -130,7 +130,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Säkerhet först: Känn din gräns',
-    html: 'En BAC på 0,05% försämrar mätbart bedömningsförmåga, uppmärksamhet och reaktionstid. De flesta länder sätter gränsen för körning mellan 0,05% och 0,08%. Men individuell känslighet varierar betydligt – ålder, läkemedel, trötthet och genetiska varianter av ADH-enzymer påverkar hur alkohol påverkar dig personligen. I tveksamma fall – kör inte.'
+    html: 'En BAC på 0,05% försämrar mätbart bedömningsförmåga, uppmärksamhet och reaktionstid. De flesta länder sätter gränsen för körning mellan 0,05% och 0,08%. Men individuell känslighet varierar betydligt - ålder, läkemedel, trötthet och genetiska varianter av ADH-enzymer påverkar hur alkohol påverkar dig personligen. I tveksamma fall - kör inte.'
   },
   {
     type: 'title',
@@ -139,7 +139,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Att äta före eller under drickandet förändrar dramatiskt alkoholens absorptionskinetik. Mat i magen – särskilt proteiner och fetter – saktar ner magtömningen, vilket minskar den hastighet med vilken etanol kommer in i blodet. En person som dricker på tom mage kan få en högsta BAC som är 50% högre än samma person som åt ordentlig mat innan samma mängd alkohol konsumerades. Detta är en av de viktigaste variablerna som Widmarks formel inte helt kan fånga, varför vår kalkylator inkluderar en ansvarsfriskrivning om teoretisk uppskattning.'
+    html: 'Att äta före eller under drickandet förändrar dramatiskt alkoholens absorptionskinetik. Mat i magen - särskilt proteiner och fetter - saktar ner magtömningen, vilket minskar den hastighet med vilken etanol kommer in i blodet. En person som dricker på tom mage kan få en högsta BAC som är 50% högre än samma person som åt ordentlig mat innan samma mängd alkohol konsumerades. Detta är en av de viktigaste variablerna som Widmarks formel inte helt kan fånga, varför vår kalkylator inkluderar en ansvarsfriskrivning om teoretisk uppskattning.'
   },
   {
     type: 'paragraph',

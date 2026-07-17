@@ -34,7 +34,7 @@ const faqTitle = 'Domande Frequenti';
 const faq: CarbonationLocaleContent['faq'] = [
   {
     question: "Perché la temperatura è importante per la carbonatazione?",
-    answer: "La CO2 residua nella tua birra dipende dalla temperatura più alta raggiunta dopo la fermentazione: i liquidi freddi trattengono più gas disciolto rispetto ai liquidi caldi. Se inserisci una temperatura inferiore a quella reale, la calcolatrice presume una CO2 residua maggiore di quella presente e ti suggerisce meno zucchero del necessario. Se la inserisci troppo alta accade il contrario — aggiungi più zucchero del dovuto e rischi l'esplosione della bottiglia, dove la pressione eccessiva causa la rottura del vetro o l'espulsione violenta del tappo.",
+    answer: "La CO2 residua nella tua birra dipende dalla temperatura più alta raggiunta dopo la fermentazione: i liquidi freddi trattengono più gas disciolto rispetto ai liquidi caldi. Se inserisci una temperatura inferiore a quella reale, la calcolatrice presume una CO2 residua maggiore di quella presente e ti suggerisce meno zucchero del necessario. Se la inserisci troppo alta accade il contrario - aggiungi più zucchero del dovuto e rischi l'esplosione della bottiglia, dove la pressione eccessiva causa la rottura del vetro o l'espulsione violenta del tappo.",
   },
   {
     question: "Quale zucchero è migliore per il primer?",
@@ -42,7 +42,7 @@ const faq: CarbonationLocaleContent['faq'] = [
   },
   {
     question: "Che cosa succede se aggiungo troppo zucchero di primer?",
-    answer: "Un eccesso di zucchero genera una pressione eccessiva di CO2 all'interno della bottiglia. Le bottiglie di vetro standard si rompono a circa 3,5-4,0 volumi di CO2. Oltre questo punto, la bottiglia può esplodere o il tappo può saltare violentemente. Ecco perché la precisione è fondamentale — anche 5 grammi extra per litro possono spingere un lotto nella zona di pericolo.",
+    answer: "Un eccesso di zucchero genera una pressione eccessiva di CO2 all'interno della bottiglia. Le bottiglie di vetro standard si rompono a circa 3,5-4,0 volumi di CO2. Oltre questo punto, la bottiglia può esplodere o il tappo può saltare violentemente. Ecco perché la precisione è fondamentale - anche 5 grammi extra per litro possono spingere un lotto nella zona di pericolo.",
   },
   {
     question: "Quanto tempo impiega la birra a carbonatarsi dopo l'imbottigliamento?",
@@ -74,7 +74,7 @@ const seo: CarbonationLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Padroneggia l\'arte del primer e trasforma la tua birra artigianale da un esperimento piatto a un\'esperienza effervescente professionale. Il primer consiste nell\'aggiungere una quantità precisa di zucchero affinché il lievito residuo nella bottiglia generi CO2 naturale durante una fermentazione secondaria. Troppo poco zucchero produce birra piatta; troppo crea una pressione pericolosa che può rompere le bottiglie. La differenza tra i due è di pochi grammi — ecco perché esiste questo calcolatore.'
+    html: 'Padroneggia l\'arte del primer e trasforma la tua birra artigianale da un esperimento piatto a un\'esperienza effervescente professionale. Il primer consiste nell\'aggiungere una quantità precisa di zucchero affinché il lievito residuo nella bottiglia generi CO2 naturale durante una fermentazione secondaria. Troppo poco zucchero produce birra piatta; troppo crea una pressione pericolosa che può rompere le bottiglie. La differenza tra i due è di pochi grammi - ecco perché esiste questo calcolatore.'
   },
   {
     type: 'proscons',
@@ -103,7 +103,7 @@ const seo: CarbonationLocaleContent['seo'] = [
     type: 'card',
     title: 'Quale Zucchero Dovresti Scegliere?',
     icon: 'mdi:corn',
-    html: '<strong>Destrosio</strong> è neutro e professionale — lo standard del settore. <strong>Zucchero da Tavola</strong> è economico ed efficace (usa il 10% in meno rispetto al destrosio). <strong>DME (Estratto di Malto Secco)</strong> è la scelta del purista ma più difficile da prevedere con precisione poiché la sua fermentabilità varia in base al marchio e alla composizione del malto.'
+    html: '<strong>Destrosio</strong> è neutro e professionale - lo standard del settore. <strong>Zucchero da Tavola</strong> è economico ed efficace (usa il 10% in meno rispetto al destrosio). <strong>DME (Estratto di Malto Secco)</strong> è la scelta del purista ma più difficile da prevedere con precisione poiché la sua fermentabilità varia in base al marchio e alla composizione del malto.'
   },
   {
     type: 'diagnostic',
@@ -134,11 +134,11 @@ const seo: CarbonationLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Nel suo nucleo, la carbonatazione è governata dalla <strong>Legge di Henry</strong>: la quantità di gas disciolto in un liquido è proporzionale alla pressione parziale di quel gas sopra il liquido. Quando primer una bottiglia e la sigilli, il lievito consuma lo zucchero e produce CO2 in un ambiente sigillato. Man mano che la pressione aumenta, il gas viene forzato di nuovo in soluzione. La temperatura a cui si raggiunge questo equilibrio determina il livello di carbonatazione finale — ecco perché la temperatura di fermentazione è la variabile più critica in questo calcolatore.'
+    html: 'Nel suo nucleo, la carbonatazione è governata dalla <strong>Legge di Henry</strong>: la quantità di gas disciolto in un liquido è proporzionale alla pressione parziale di quel gas sopra il liquido. Quando primer una bottiglia e la sigilli, il lievito consuma lo zucchero e produce CO2 in un ambiente sigillato. Man mano che la pressione aumenta, il gas viene forzato di nuovo in soluzione. La temperatura a cui si raggiunge questo equilibrio determina il livello di carbonatazione finale - ecco perché la temperatura di fermentazione è la variabile più critica in questo calcolatore.'
   },
   {
     type: 'paragraph',
-    html: 'La CO2 residua nella tua birra prima del primer non è zero. Ogni birra contiene CO2 disciolta dal processo di fermentazione, e la quantità trattenuta dipende dalla temperatura più alta raggiunta. Una birra fermentata a 22°C contiene significativamente meno CO2 residua rispetto a una fermentata a 16°C, anche se ora entrambe sono raffreddate. Non considerare questo residuo porta a una over-carbonatazione sistematica — uno degli errori più comuni tra i birrai alle prime armi.'
+    html: 'La CO2 residua nella tua birra prima del primer non è zero. Ogni birra contiene CO2 disciolta dal processo di fermentazione, e la quantità trattenuta dipende dalla temperatura più alta raggiunta. Una birra fermentata a 22°C contiene significativamente meno CO2 residua rispetto a una fermentata a 16°C, anche se ora entrambe sono raffreddate. Non considerare questo residuo porta a una over-carbonatazione sistematica - uno degli errori più comuni tra i birrai alle prime armi.'
   }
 ];
 

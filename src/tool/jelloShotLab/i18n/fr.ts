@@ -3,7 +3,7 @@ import { bibliography } from '../bibliography';
 import type { JelloShotLabUI, JelloShotLabLocaleContent } from '../entry';
 
 const slug = 'laboratoire-jello-shots';
-const title = 'Laboratoire Jello Shots : Le calculateur parfait du ratio alcool et gélatine';
+const title = 'Laboratoire Jello Shots: Le calculateur parfait du ratio alcool et gélatine';
 const description = 'Calculez exactement la quantité d\'alcool et de gélatine nécessaire pour des jello shots qui prennent vraiment. Évitez les ratés liquides ou caoutchouteux grâce à des ratios scientifiques pour toute teneur en alcool.';
 
 const ui: JelloShotLabUI = {
@@ -51,7 +51,7 @@ const faq: JelloShotLabLocaleContent['faq'] = [
     answer: 'La limite supérieure sûre est d\'environ 30 à 35 % du volume total de liquide en spiritueux pur (à 40 % d\'alcool). Avec un alcool neutre à 96 %, cette limite descend à environ 15 à 18 % du volume total. Notre calculateur tient compte du degré d\'alcool du spiritueux pour que vous ne dépassiez jamais le seuil de prise.',
   },
   {
-    question: 'Le type de spiritueux utilisé — vodka, rhum ou tequila — a-t-il de l\'importance ?',
+    question: 'Le type de spiritueux utilisé - vodka, rhum ou tequila - a-t-il de l\'importance ?',
     answer: 'Ce qui compte, c\'est le degré d\'alcool, pas le type de spiritueux. La vodka à 40 % et le rhum à 40 % se comportent de manière identique dans la matrice de gélatine. Cependant, les spiritueux à teneur en sucre plus élevée (comme certains rhums ou liqueurs) peuvent légèrement améliorer la texture, car le sucre entre en compétition avec l\'éthanol pour les liaisons hydrogène du réseau de gélatine.',
   },
   {
@@ -60,11 +60,11 @@ const faq: JelloShotLabLocaleContent['faq'] = [
   },
   {
     question: 'Puis-je rendre mes jello shots plus fermes ou plus mous ?',
-    answer: 'Oui. Utilisez plus de gélatine (ou un demi-sachet supplémentaire) pour des shots plus fermes qui sortent proprement des verres. Utilisez-en légèrement moins pour une texture plus molle et tremblotante. Ne substituez jamais la gélatine par de l\'agar-agar si vous souhaitez une texture fondante en bouche — l\'agar prend plus fermement et fond à une température plus élevée.',
+    answer: 'Oui. Utilisez plus de gélatine (ou un demi-sachet supplémentaire) pour des shots plus fermes qui sortent proprement des verres. Utilisez-en légèrement moins pour une texture plus molle et tremblotante. Ne substituez jamais la gélatine par de l\'agar-agar si vous souhaitez une texture fondante en bouche - l\'agar prend plus fermement et fond à une température plus élevée.',
   },
   {
     question: 'Puis-je congeler les jello shots pour accélérer le refroidissement ?',
-    answer: 'Non. La congélation brise le réseau de gélatine, ce qui donne une texture aqueuse et granuleuse après décongélation. Réfrigérez toujours pendant au moins 4 heures. Pour les fêtes, préparez-les la veille — 8 heures ou plus donnent la meilleure texture.',
+    answer: 'Non. La congélation brise le réseau de gélatine, ce qui donne une texture aqueuse et granuleuse après décongélation. Réfrigérez toujours pendant au moins 4 heures. Pour les fêtes, préparez-les la veille - 8 heures ou plus donnent la meilleure texture.',
   },
 ];
 
@@ -72,7 +72,7 @@ const howTo: JelloShotLabLocaleContent['howTo'] = [
   { name: 'Choisissez votre spiritueux', text: 'Entrez le degré d\'alcool de votre spiritueux et choisissez la force de shot souhaitée. Le calculateur vous indiquera la quantité maximale de spiritueux que votre gélatine peut absorber.' },
   { name: 'Préparez la gélatine', text: 'Versez la quantité calculée d\'eau bouillante dans un bol. Ajoutez la poudre de gélatine et remuez vigoureusement pendant 2 minutes jusqu\'à dissolution complète. N\'ajoutez pas encore d\'alcool.' },
   { name: 'Ajoutez le spiritueux', text: 'Laissez le mélange de gélatine refroidir pendant 5 à 10 minutes jusqu\'à ce qu\'il soit chaud mais pas brûlant (en dessous de 50 °C). Ajoutez votre spiritueux et remuez doucement pour éviter de créer des bulles.' },
-  { name: 'Versez et réfrigérez', text: 'Versez dans des verres en plastique, des moules en silicone ou de petits verres à shot. Réfrigérez pendant au moins 4 heures — une nuit entière est idéale. Ne congelez pas.' },
+  { name: 'Versez et réfrigérez', text: 'Versez dans des verres en plastique, des moules en silicone ou de petits verres à shot. Réfrigérez pendant au moins 4 heures - une nuit entière est idéale. Ne congelez pas.' },
 ];
 
 
@@ -80,7 +80,7 @@ const seo: JelloShotLabLocaleContent['seo'] = [
   { type: 'title', text: 'La chimie derrière un jello shot parfait', level: 2 },
   {
     type: 'paragraph',
-    html: 'Un jello shot n\'est pas simplement de la gélatine aromatisée avec de l\'alcool ajouté — c\'est une <strong>suspension colloïdale délicate</strong> où des polymères protéiques, de l\'eau et de l\'éthanol se disputent les liaisons hydrogène. Mauvais ratio et vous obtenez une flaque de liquide sucré ou un disque caoutchouteux qui rebondit sur la table. Bon ratio et vous avez un shot parfaitement tremblotant qui glisse hors du verre en un seul mouvement net.',
+    html: 'Un jello shot n\'est pas simplement de la gélatine aromatisée avec de l\'alcool ajouté - c\'est une <strong>suspension colloïdale délicate</strong> où des polymères protéiques, de l\'eau et de l\'éthanol se disputent les liaisons hydrogène. Mauvais ratio et vous obtenez une flaque de liquide sucré ou un disque caoutchouteux qui rebondit sur la table. Bon ratio et vous avez un shot parfaitement tremblotant qui glisse hors du verre en un seul mouvement net.',
   },
   {
     type: 'stats',
@@ -101,7 +101,7 @@ const seo: JelloShotLabLocaleContent['seo'] = [
     type: 'card',
     title: 'La limite de l\'éthanol',
     icon: 'mdi:alert-circle-outline',
-    html: 'L\'éthanol entre en compétition avec l\'eau pour les sites de liaisons hydrogène sur les chaînes d\'acides aminés du collagène. Lorsque l\'éthanol occupe trop de ces sites, la protéine ne peut plus former la triple hélice stable qui donne à la gélatine sa structure. La limite pratique est d\'environ <strong>1 part de spiritueux à 40 % pour 1 part d\'eau</strong> — au-delà, votre shot ne prendra pas, peu importe le temps d\'attente.',
+    html: 'L\'éthanol entre en compétition avec l\'eau pour les sites de liaisons hydrogène sur les chaînes d\'acides aminés du collagène. Lorsque l\'éthanol occupe trop de ces sites, la protéine ne peut plus former la triple hélice stable qui donne à la gélatine sa structure. La limite pratique est d\'environ <strong>1 part de spiritueux à 40 % pour 1 part d\'eau</strong> - au-delà, votre shot ne prendra pas, peu importe le temps d\'attente.',
   },
   {
     type: 'tip',
@@ -122,9 +122,9 @@ const seo: JelloShotLabLocaleContent['seo'] = [
     type: 'summary',
     title: 'À qui s\'adresse cet outil ?',
     items: [
-      'Organisateurs de fêtes : Calculez exactement le nombre de sachets et la quantité de spiritueux avant d\'acheter.',
-      'Barmen : Passez à la production en grande quantité avec des résultats constants à chaque fois.',
-      'Cuisiniers amateurs : Évitez les erreurs les plus courantes — shots liquides, texture caoutchouteuse ou zéro saveur d\'alcool.',
+      'Organisateurs de fêtes: Calculez exactement le nombre de sachets et la quantité de spiritueux avant d\'acheter.',
+      'Barmen: Passez à la production en grande quantité avec des résultats constants à chaque fois.',
+      'Cuisiniers amateurs: Évitez les erreurs les plus courantes - shots liquides, texture caoutchouteuse ou zéro saveur d\'alcool.',
     ],
   },
 ];

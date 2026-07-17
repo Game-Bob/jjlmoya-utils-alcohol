@@ -51,7 +51,7 @@ const faq: FortifiedWineBuilderLocaleContent['faq'] = [
   },
   {
     question: 'What base wine should I use for vermouth?',
-    answer: 'A neutral, dry white wine between 10-12% ABV works best. The wine provides the backbone; since it will be aromatized with botanicals, you do not need an expensive wine — a clean, acidic base is ideal.',
+    answer: 'A neutral, dry white wine between 10-12% ABV works best. The wine provides the backbone; since it will be aromatized with botanicals, you do not need an expensive wine - a clean, acidic base is ideal.',
   },
   {
     question: 'Can I use neutral alcohol instead of brandy?',
@@ -59,7 +59,7 @@ const faq: FortifiedWineBuilderLocaleContent['faq'] = [
   },
   {
     question: 'How does fortification preserve wine?',
-    answer: 'When wine ABV exceeds roughly 15-16%, yeast fermentation becomes inhibited. This is why fortified wines have much longer shelf lives — the alcohol acts as a natural preservative against both yeast and bacterial spoilage.',
+    answer: 'When wine ABV exceeds roughly 15-16%, yeast fermentation becomes inhibited. This is why fortified wines have much longer shelf lives - the alcohol acts as a natural preservative against both yeast and bacterial spoilage.',
   },
 ];
 
@@ -75,14 +75,14 @@ const seo: FortifiedWineBuilderLocaleContent['seo'] = [
   { type: 'title', text: 'The Pearson Square: Ancient Math, Perfect Wine', level: 2 },
   {
     type: 'paragraph',
-    html: 'The <strong>Pearson Square</strong> is one of the oldest and most elegant tools in winemaking mathematics. Developed in the 19th century, it allows any winemaker — professional or amateur — to calculate blending ratios with nothing more than subtraction. Our tool digitises this visual method and adds real-time feedback, so you spend less time calculating and more time crafting.',
+    html: 'The <strong>Pearson Square</strong> is one of the oldest and most elegant tools in winemaking mathematics. Developed in the 19th century, it allows any winemaker - professional or amateur - to calculate blending ratios with nothing more than subtraction. Our tool digitises this visual method and adds real-time feedback, so you spend less time calculating and more time crafting.',
   },
   {
     type: 'stats',
     items: [
-      { label: 'Vermouth', value: '15–18% ABV', icon: 'mdi:glass-cocktail' },
-      { label: 'Port', value: '18–20% ABV', icon: 'mdi:bottle-wine' },
-      { label: 'Sherry', value: '15–17% ABV', icon: 'mdi:cup-water' },
+      { label: 'Vermouth', value: '15-18% ABV', icon: 'mdi:glass-cocktail' },
+      { label: 'Port', value: '18-20% ABV', icon: 'mdi:bottle-wine' },
+      { label: 'Sherry', value: '15-17% ABV', icon: 'mdi:cup-water' },
     ],
     columns: 3,
   },
@@ -90,7 +90,7 @@ const seo: FortifiedWineBuilderLocaleContent['seo'] = [
     type: 'card',
     title: 'Why fortify at 18%?',
     icon: 'mdi:shield-check',
-    html: 'Above roughly 15% ABV, <em>Saccharomyces cerevisiae</em> — the primary wine yeast — becomes inhibited. By 18%, fermentation is completely arrested. This is why Port retains residual sweetness: spirits are added mid-fermentation, killing the yeast before all sugar is consumed.',
+    html: 'Above roughly 15% ABV, <em>Saccharomyces cerevisiae</em> - the primary wine yeast - becomes inhibited. By 18%, fermentation is completely arrested. This is why Port retains residual sweetness: spirits are added mid-fermentation, killing the yeast before all sugar is consumed.',
   },
   {
     type: 'tip',

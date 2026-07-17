@@ -48,31 +48,31 @@ const faq: JelloShotLabLocaleContent['faq'] = [
   },
   {
     question: 'Qual è il rapporto massimo di alcol prima che i jello shot smettano di solidificarsi?',
-    answer: 'Il limite superiore sicuro è di circa il 30–35% del volume totale di liquido come liquore puro (a 40% vol). Con un alcol neutro al 96%, quel limite scende a circa il 15–18% del volume totale. Il nostro calcolatore tiene conto della gradazione alcolica del liquore in modo che non si superi mai la soglia di solidificazione.',
+    answer: 'Il limite superiore sicuro è di circa il 30-35% del volume totale di liquido come liquore puro (a 40% vol). Con un alcol neutro al 96%, quel limite scende a circa il 15-18% del volume totale. Il nostro calcolatore tiene conto della gradazione alcolica del liquore in modo che non si superi mai la soglia di solidificazione.',
   },
   {
-    question: 'Il tipo di liquore utilizzato — vodka, rum o tequila — fa differenza?',
+    question: 'Il tipo di liquore utilizzato - vodka, rum o tequila - fa differenza?',
     answer: 'Ciò che conta è la gradazione alcolica, non il tipo di liquore. Vodka al 40% e rum al 40% si comportano in modo identico nella matrice di gelatina. Tuttavia, i liquori con un contenuto di zucchero più elevato (come alcuni rum o liquori) possono migliorare leggermente la consistenza perché lo zucchero compete con l\'etanolo per i legami idrogeno nella rete di gelatina.',
   },
   {
     question: 'Quanto durano i jello shot in frigorifero?',
-    answer: 'I jello shot preparati correttamente durano 3–5 giorni in frigorifero coperti con pellicola trasparente. L\'alto contenuto alcolico funge da conservante naturale. Evitare di lasciarli a temperatura ambiente per più di 2 ore poiché la gelatina si ammorbidisce e i batteri possono moltiplicarsi.',
+    answer: 'I jello shot preparati correttamente durano 3-5 giorni in frigorifero coperti con pellicola trasparente. L\'alto contenuto alcolico funge da conservante naturale. Evitare di lasciarli a temperatura ambiente per più di 2 ore poiché la gelatina si ammorbidisce e i batteri possono moltiplicarsi.',
   },
   {
     question: 'Posso rendere i miei jello shot più sodi o più morbidi?',
-    answer: 'Sì. Usa più gelatina (o mezza bustina in più) per shot più sodi che escono pulitamente dai bicchieri. Usa leggermente meno per una consistenza più morbida e tremolante. Non sostituire mai la gelatina con agar-agar se vuoi una consistenza che si scioglie in bocca — l\'agar si solidifica più duramente e si scioglie a una temperatura più elevata.',
+    answer: 'Sì. Usa più gelatina (o mezza bustina in più) per shot più sodi che escono pulitamente dai bicchieri. Usa leggermente meno per una consistenza più morbida e tremolante. Non sostituire mai la gelatina con agar-agar se vuoi una consistenza che si scioglie in bocca - l\'agar si solidifica più duramente e si scioglie a una temperatura più elevata.',
   },
   {
     question: 'Posso congelare i jello shot per accelerare il raffreddamento?',
-    answer: 'No. Il congelamento rompe la rete di gelatina, risultando in una consistenza acquosa e granulosa quando scongelata. Conservare sempre in frigorifero per un minimo di 4 ore. Per le feste, prepararli la sera prima — 8 ore o più garantiscono la migliore consistenza.',
+    answer: 'No. Il congelamento rompe la rete di gelatina, risultando in una consistenza acquosa e granulosa quando scongelata. Conservare sempre in frigorifero per un minimo di 4 ore. Per le feste, prepararli la sera prima - 8 ore o più garantiscono la migliore consistenza.',
   },
 ];
 
 const howTo: JelloShotLabLocaleContent['howTo'] = [
   { name: 'Scegli il tuo liquore', text: 'Inserisci la gradazione alcolica del tuo liquore e scegli l\'intensità del shot desiderata. Il calcolatore ti mostrerà la quantità massima di liquore che la tua gelatina può contenere.' },
   { name: 'Prepara la gelatina', text: 'Versa la quantità calcolata di acqua bollente in una ciotola. Aggiungi la gelatina in polvere e mescola vigorosamente per 2 minuti fino a completo scioglimento. Non aggiungere ancora alcol.' },
-  { name: 'Aggiungi il liquore', text: 'Lascia raffreddare il composto di gelatina per 5–10 minuti fino a quando è caldo ma non bollente (sotto i 50 °C). Aggiungi il tuo liquore e mescola delicatamente per evitare bolle.' },
-  { name: 'Versa e refrigera', text: 'Versa in bicchieri di plastica, stampi in silicone o piccoli bicchierini da shot. Refrigera per almeno 4 ore — una notte intera è l\'ideale. Non congelare.' },
+  { name: 'Aggiungi il liquore', text: 'Lascia raffreddare il composto di gelatina per 5-10 minuti fino a quando è caldo ma non bollente (sotto i 50 °C). Aggiungi il tuo liquore e mescola delicatamente per evitare bolle.' },
+  { name: 'Versa e refrigera', text: 'Versa in bicchieri di plastica, stampi in silicone o piccoli bicchierini da shot. Refrigera per almeno 4 ore - una notte intera è l\'ideale. Non congelare.' },
 ];
 
 
@@ -80,7 +80,7 @@ const seo: JelloShotLabLocaleContent['seo'] = [
   { type: 'title', text: 'La chimica dietro un jello shot perfetto', level: 2 },
   {
     type: 'paragraph',
-    html: 'Un jello shot non è solo gelatina aromatizzata con alcol aggiunto — è una <strong>delicata sospensione colloidale</strong> in cui polimeri proteici, acqua ed etanolo competono per i legami idrogeno. Sbagliare il rapporto significa ritrovarsi con una pozza di liquido dolce o un disco gommoso che rimbalza sul tavolo. Azzeccarlo significa ottenere un shot perfettamente tremolante che scivola fuori dal bicchiere in un unico movimento pulito.',
+    html: 'Un jello shot non è solo gelatina aromatizzata con alcol aggiunto - è una <strong>delicata sospensione colloidale</strong> in cui polimeri proteici, acqua ed etanolo competono per i legami idrogeno. Sbagliare il rapporto significa ritrovarsi con una pozza di liquido dolce o un disco gommoso che rimbalza sul tavolo. Azzeccarlo significa ottenere un shot perfettamente tremolante che scivola fuori dal bicchiere in un unico movimento pulito.',
   },
   {
     type: 'stats',
@@ -95,13 +95,13 @@ const seo: JelloShotLabLocaleContent['seo'] = [
     type: 'card',
     title: 'Cos\'è la forza Bloom?',
     icon: 'mdi:molecule',
-    html: 'Il Bloom misura la forza gelificante di una gelatina, tipicamente tra 50 e 300 Bloom. La gelatina in fogli del supermercato è solitamente 150–200 Bloom. Un Bloom più alto significa un gel più sodo con la stessa quantità di polvere, il che significa che può tollerare leggermente più alcol prima di non solidificarsi. Le bustine standard di gelatina in polvere (7 g) sono calibrate per circa 240 ml di liquido.',
+    html: 'Il Bloom misura la forza gelificante di una gelatina, tipicamente tra 50 e 300 Bloom. La gelatina in fogli del supermercato è solitamente 150-200 Bloom. Un Bloom più alto significa un gel più sodo con la stessa quantità di polvere, il che significa che può tollerare leggermente più alcol prima di non solidificarsi. Le bustine standard di gelatina in polvere (7 g) sono calibrate per circa 240 ml di liquido.',
   },
   {
     type: 'card',
     title: 'Il limite dell\'etanolo',
     icon: 'mdi:alert-circle-outline',
-    html: 'L\'etanolo compete con l\'acqua per i siti di legame idrogeno sulle catene di amminoacidi del collagene. Quando l\'etanolo occupa troppi di quei siti, la proteina non riesce a ripiegarsi nella stabile tripla elica che dà struttura alla gelatina. Il limite pratico è di circa <strong>1 parte di liquore al 40% per 1 parte di acqua</strong> — oltre questo, il tuo shot non si solidificherà, indipendentemente dal tempo di attesa.',
+    html: 'L\'etanolo compete con l\'acqua per i siti di legame idrogeno sulle catene di amminoacidi del collagene. Quando l\'etanolo occupa troppi di quei siti, la proteina non riesce a ripiegarsi nella stabile tripla elica che dà struttura alla gelatina. Il limite pratico è di circa <strong>1 parte di liquore al 40% per 1 parte di acqua</strong> - oltre questo, il tuo shot non si solidificherà, indipendentemente dal tempo di attesa.',
   },
   {
     type: 'tip',
@@ -124,7 +124,7 @@ const seo: JelloShotLabLocaleContent['seo'] = [
     items: [
       'Organizzatori di feste: Calcola esattamente quante bustine e quanto liquore ti servono prima di acquistare.',
       'Barman: Scala a produzioni di grandi quantità con risultati costanti ogni volta.',
-      'Cuochi casalinghi: Evita i fallimenti più comuni — shot liquidi, consistenza gommosa o zero sapore di alcol.',
+      'Cuochi casalinghi: Evita i fallimenti più comuni - shot liquidi, consistenza gommosa o zero sapore di alcol.',
     ],
   },
 ];

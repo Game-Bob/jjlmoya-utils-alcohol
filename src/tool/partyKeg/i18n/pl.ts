@@ -36,15 +36,15 @@ const faq: PartyKegLocaleContent['faq'] = [
   },
   {
     question: "Ile lodu potrzebuję na 100 piw?",
-    answer: "Będziesz potrzebować około 15–20 kilogramów lodu (7–10 opakowań). Praktyczną regułą jest 0,75 kg lodu na litr napoju w normalnych warunkach. Latem lub na świeżym powietrzu powyżej 25°C podniesź do 1 kg na litr: ciepło otoczenia przyspiesza topienie i skończy ci się lód znacznie szybciej niż oczekiwano.",
+    answer: "Będziesz potrzebować około 15-20 kilogramów lodu (7-10 opakowań). Praktyczną regułą jest 0,75 kg lodu na litr napoju w normalnych warunkach. Latem lub na świeżym powietrzu powyżej 25°C podniesź do 1 kg na litr: ciepło otoczenia przyspiesza topienie i skończy ci się lód znacznie szybciej niż oczekiwano.",
   },
   {
     question: "Jaka jest różnica między zwykłą beczką a beczką imprezową?",
-    answer: "Standardowa beczka handlowa zawiera 50 litrów, co daje około 200 porcji (po 250 ml każda). Beczka imprezowa (mini-beczka) zwykle zawiera 5 litrów — około 20 porcji. Znając te rozmiary, możesz przeliczyć wyjście w litrach kalkulatora na liczbę pojemników do zakupienia.",
+    answer: "Standardowa beczka handlowa zawiera 50 litrów, co daje około 200 porcji (po 250 ml każda). Beczka imprezowa (mini-beczka) zwykle zawiera 5 litrów - około 20 porcji. Znając te rozmiary, możesz przeliczyć wyjście w litrach kalkulatora na liczbę pojemników do zakupienia.",
   },
   {
     question: "Dlaczego potrzebuję tyle lodu, jeśli piwo jest już zimne?",
-    answer: "Ponieważ chłodzenie i utrzymanie to dwa oddzielne procesy. Przeniesienie puszki z 25°C do 4°C zużywa utajone ciepło topnienia lodu: około 334 kJ/kg. Gdy już jest zimne, lód nadal pracuje, aby zniweczyć ciepło otoczenia. W letni dzień o temperaturze 35°C przepływ ciepła do chłodziarki może roztopić 1 kg lodu na litr napoju co 2–3 godziny. Dlatego wychłodzenie napojów przed imprezą zmniejsza o połowę całkowite zużycie lodu.",
+    answer: "Ponieważ chłodzenie i utrzymanie to dwa oddzielne procesy. Przeniesienie puszki z 25°C do 4°C zużywa utajone ciepło topnienia lodu: około 334 kJ/kg. Gdy już jest zimne, lód nadal pracuje, aby zniweczyć ciepło otoczenia. W letni dzień o temperaturze 35°C przepływ ciepła do chłodziarki może roztopić 1 kg lodu na litr napoju co 2-3 godziny. Dlatego wychłodzenie napojów przed imprezą zmniejsza o połowę całkowite zużycie lodu.",
   },
 ];
 
@@ -72,7 +72,7 @@ const seo: PartyKegLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Pytanie o milion dolarów przy organizowaniu dowolnej imprezy: <strong>Ile litrów piwa powinienem kupić?</strong> Brak to katastrofa, ale zakupienie za dużo to niepotrzebny wydatek. To narzędzie pomaga obliczyć dokładną ilość alkoholu i, co najważniejsze, <strong>ile opakowań lodu</strong> potrzebujesz, aby wszystko było zimne. Profesjonalni caterzy i organizatorzy imprez korzystają z modeli konsumpcji statystycznej — a teraz ty też możesz, za darmo.'
+    html: 'Pytanie o milion dolarów przy organizowaniu dowolnej imprezy: <strong>Ile litrów piwa powinienem kupić?</strong> Brak to katastrofa, ale zakupienie za dużo to niepotrzebny wydatek. To narzędzie pomaga obliczyć dokładną ilość alkoholu i, co najważniejsze, <strong>ile opakowań lodu</strong> potrzebujesz, aby wszystko było zimne. Profesjonalni caterzy i organizatorzy imprez korzystają z modeli konsumpcji statystycznej - a teraz ty też możesz, za darmo.'
   },
   {
     type: 'title',
@@ -112,7 +112,7 @@ const seo: PartyKegLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Standardowa beczka 50L daje około 200 porcji. Typowe opakowanie lodu waży 2 kg. Znając te liczby, możesz zaplanować transport i przechowywanie potrzebne dla twojej imprezy bez ostatecznych niespodzianek. Weź pod uwagę topnienie lodu podczas transportu — 30-minutowa jazda latem może cię kosztować całe opakowanie przed rozpoczęciem imprezy.'
+    html: 'Standardowa beczka 50L daje około 200 porcji. Typowe opakowanie lodu waży 2 kg. Znając te liczby, możesz zaplanować transport i przechowywanie potrzebne dla twojej imprezy bez ostatecznych niespodzianek. Weź pod uwagę topnienie lodu podczas transportu - 30-minutowa jazda latem może cię kosztować całe opakowanie przed rozpoczęciem imprezy.'
   },
   {
     type: 'summary',
@@ -125,7 +125,7 @@ const seo: PartyKegLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Często pomijaną zmienną jest <strong>wskaźnik rezygnacji gości</strong>. Na większości imprez 10–15% gości wychodzi wcześnie, a 10% może w ogóle nic nie pić. Kalkulator stosuje konserwatywny bufor, abyś nigdy nie był w stanie niedostatecznym, ale też nie miał ogromnej nadwyżki. Zrozumienie tych dostosowań pomoże ci uszczegółowić oszacowanie dla twojej konkretnej grupy i kontekstu. Zawsze zaokrąglaj w górę podczas zakupu, ponieważ zwrot otwartych beczek zwykle nie jest możliwy. Mała nadwyżka jest zawsze lepsza niż zabrakło piwa w środku imprezy.'
+    html: 'Często pomijaną zmienną jest <strong>wskaźnik rezygnacji gości</strong>. Na większości imprez 10-15% gości wychodzi wcześnie, a 10% może w ogóle nic nie pić. Kalkulator stosuje konserwatywny bufor, abyś nigdy nie był w stanie niedostatecznym, ale też nie miał ogromnej nadwyżki. Zrozumienie tych dostosowań pomoże ci uszczegółowić oszacowanie dla twojej konkretnej grupy i kontekstu. Zawsze zaokrąglaj w górę podczas zakupu, ponieważ zwrot otwartych beczek zwykle nie jest możliwy. Mała nadwyżka jest zawsze lepsza niż zabrakło piwa w środku imprezy.'
   }
 ];
 

@@ -40,7 +40,7 @@ const faq: PartyKegLocaleContent['faq'] = [
   },
   {
     question: "What is the difference between a standard keg and a party keg?",
-    answer: "A standard commercial keg holds 50 liters, which yields approximately 200 servings (250ml each). A party keg (mini-keg) typically holds 5 liters — about 20 servings. Knowing these sizes helps you translate the calculator's liter output into the number of containers to purchase.",
+    answer: "A standard commercial keg holds 50 liters, which yields approximately 200 servings (250ml each). A party keg (mini-keg) typically holds 5 liters - about 20 servings. Knowing these sizes helps you translate the calculator's liter output into the number of containers to purchase.",
   },
   {
     question: "Why do I need so much ice if the beers are already cold?",
@@ -72,7 +72,7 @@ const seo: PartyKegLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'The million-dollar question when organizing any event: <strong>How many liters of beer should I buy?</strong> Running short is a disaster, but overbuying is an unnecessary expense. This tool helps you calculate the exact amount of alcohol and, most importantly, <strong>how many bags of ice</strong> you need to keep it cold. Professional caterers and event planners use statistical consumption models — and now you can too, for free.'
+    html: 'The million-dollar question when organizing any event: <strong>How many liters of beer should I buy?</strong> Running short is a disaster, but overbuying is an unnecessary expense. This tool helps you calculate the exact amount of alcohol and, most importantly, <strong>how many bags of ice</strong> you need to keep it cold. Professional caterers and event planners use statistical consumption models - and now you can too, for free.'
   },
   {
     type: 'title',
@@ -112,7 +112,7 @@ const seo: PartyKegLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'A standard 50L keg yields around 200 servings. A typical bag of ice weighs 2kg. Knowing these figures, you can plan the transport and storage needed for your event without last-minute surprises. Account for ice melt during transport — a 30-minute drive in summer can cost you one full bag before the party even starts.'
+    html: 'A standard 50L keg yields around 200 servings. A typical bag of ice weighs 2kg. Knowing these figures, you can plan the transport and storage needed for your event without last-minute surprises. Account for ice melt during transport - a 30-minute drive in summer can cost you one full bag before the party even starts.'
   },
   {
     type: 'summary',

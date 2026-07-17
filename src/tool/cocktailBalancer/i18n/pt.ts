@@ -151,7 +151,7 @@ const seo: CocktailBalancerLocaleContent['seo'] = [
     icon: 'mdi:star',
     variant: 'success',
     badge: 'Objetivo',
-    html: 'Este é o objetivo final: um pH controlado onde o açúcar neutraliza a agressão do ácido sem mascarar os óleos essenciais e compostos aromáticos do destilado base. Este equilíbrio preciso é onde vivem os clássicos imortais — a Daiquiri, a Margarita, o Sidecar — bebidas que sobreviveram a décadas porque obedecem às leis fundamentais da química do sabor.'
+    html: 'Este é o objetivo final: um pH controlado onde o açúcar neutraliza a agressão do ácido sem mascarar os óleos essenciais e compostos aromáticos do destilado base. Este equilíbrio preciso é onde vivem os clássicos imortais - a Daiquiri, a Margarita, o Sidecar - bebidas que sobreviveram a décadas porque obedecem às leis fundamentais da química do sabor.'
   },
   {
     type: 'tip',

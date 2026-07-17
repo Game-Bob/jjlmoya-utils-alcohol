@@ -4,7 +4,7 @@ import type { BeerCoolerUI, BeerCoolerLocaleContent } from '../index';
 
 const slug = 'pendingin-bir';
 const title = 'Kalkulator Pendingin Bir dengan Hukum Newton';
-const description = 'Hitung dengan termodinamika nyata — Hukum Pendinginan Newton — berapa lama tepat bir Anda memerlukan untuk mencapai suhu penyajian yang sempurna di lemari es atau freezer.';
+const description = 'Hitung dengan termodinamika nyata - Hukum Pendinginan Newton - berapa lama tepat bir Anda memerlukan untuk mencapai suhu penyajian yang sempurna di lemari es atau freezer.';
 
 const ui: BeerCoolerUI = {
   step1Title: 'Apa yang Anda dinginkan?',
@@ -39,19 +39,19 @@ const faq: BeerCoolerLocaleContent['faq'] = [
   },
   {
     question: 'Apakah trik handuk kertas basah dengan garam benar-benar berhasil?',
-    answer: 'Ya, dan cukup terlihat. Membungkus wadah dengan handuk kertas lembab berisi garam mempercepat pendinginan karena dua alasan: penguapan air mengeluarkan panas tambahan (pendinginan evaporatif), dan garam menurunkan titik beku air, menjaga kontak lembab tetap aktif lebih lama. Anda bisa mendapatkan penurunan 2–4°C ekstra dalam beberapa menit pertama dibandingkan dengan menempatkan kaleng kering di freezer.',
+    answer: 'Ya, dan cukup terlihat. Membungkus wadah dengan handuk kertas lembab berisi garam mempercepat pendinginan karena dua alasan: penguapan air mengeluarkan panas tambahan (pendinginan evaporatif), dan garam menurunkan titik beku air, menjaga kontak lembab tetap aktif lebih lama. Anda bisa mendapatkan penurunan 2-4°C ekstra dalam beberapa menit pertama dibandingkan dengan menempatkan kaleng kering di freezer.',
   },
   {
     question: 'Berapa suhu penyajian ideal untuk gaya bir yang berbeda?',
-    answer: 'Itu tergantung pada gayanya. Lager dan Pilsner disajikan terbaik antara 3°C dan 7°C. IPA dan Pale Ale bersinar pada 7°C hingga 10°C. Stout, Porter, dan ale kompleks harus disajikan lebih hangat, antara 12°C dan 14°C, sehingga senyawa aromatik mereka — kopi, cokelat, kacang — dapat mengekspresikan diri sepenuhnya.',
+    answer: 'Itu tergantung pada gayanya. Lager dan Pilsner disajikan terbaik antara 3°C dan 7°C. IPA dan Pale Ale bersinar pada 7°C hingga 10°C. Stout, Porter, dan ale kompleks harus disajikan lebih hangat, antara 12°C dan 14°C, sehingga senyawa aromatik mereka - kopi, cokelat, kacang - dapat mengekspresikan diri sepenuhnya.',
   },
   {
     question: 'Dapatkah bir saya meledak jika saya meninggalkannya di freezer?',
-    answer: 'Ya. Alkohol dan gula terlarut menurunkan titik beku bir di bawah air murni: lager standar 5% membeku sekitar -3°C. Saat air mengkristal, volume meningkat dan CO2 terlarut meningkatkan tekanan internal hingga wadah terberi. Lebih dari 60 menit di freezer — terutama botol gelas — adalah zona bahaya nyata. Gunakan kalkulator ini untuk menghindarinya.',
+    answer: 'Ya. Alkohol dan gula terlarut menurunkan titik beku bir di bawah air murni: lager standar 5% membeku sekitar -3°C. Saat air mengkristal, volume meningkat dan CO2 terlarut meningkatkan tekanan internal hingga wadah terberi. Lebih dari 60 menit di freezer - terutama botol gelas - adalah zona bahaya nyata. Gunakan kalkulator ini untuk menghindarinya.',
   },
   {
     question: 'Apakah bir "terbakar" jika didinginkan terlalu cepat?',
-    answer: 'Tidak. Mitos "heat shock" yang merusak bir adalah salah. Apa yang benar-benar dapat mempengaruhinya adalah pembekuan dan pencairan berulang — yang memecah protein dan mengkeruhkan cairan — atau paparan cahaya UV langsung. Pendinginan cepat di freezer atau air es tidak merusak rasa.',
+    answer: 'Tidak. Mitos "heat shock" yang merusak bir adalah salah. Apa yang benar-benar dapat mempengaruhinya adalah pembekuan dan pencairan berulang - yang memecah protein dan mengkeruhkan cairan - atau paparan cahaya UV langsung. Pendinginan cepat di freezer atau air es tidak merusak rasa.',
   },
 ];
 
@@ -111,16 +111,16 @@ const seo: BeerCoolerLocaleContent['seo'] = [
     type: 'card',
     title: 'Zona Bahaya Freezer',
     icon: 'mdi:snowflake-alert',
-    html: 'Karena alkohol dan gula terlarut, bir membeku di bawah 0°C — lager standar 5% membeku sekitar -3°C. Saat air mengkristal, volume meningkat, sementara tekanan CO2 meningkat secara bersamaan. Hasilnya adalah wadah yang dapat pecah dengan keras. Jangan pernah biarkan bir di freezer lebih dari 45 menit tanpa menetapkan timer.'
+    html: 'Karena alkohol dan gula terlarut, bir membeku di bawah 0°C - lager standar 5% membeku sekitar -3°C. Saat air mengkristal, volume meningkat, sementara tekanan CO2 meningkat secara bersamaan. Hasilnya adalah wadah yang dapat pecah dengan keras. Jangan pernah biarkan bir di freezer lebih dari 45 menit tanpa menetapkan timer.'
   },
   {
     type: 'proscons',
     title: 'Trik Pendinginan Darurat',
     items: [
-      { pro: 'Trik Handuk Basah: Bungkus kaleng dengan handuk kertas basah, lalu bekukan — penguapan mempercepat pendinginan.', con: '' },
+      { pro: 'Trik Handuk Basah: Bungkus kaleng dengan handuk kertas basah, lalu bekukan - penguapan mempercepat pendinginan.', con: '' },
       { pro: 'Garam Arktik: Isi ember dengan air, es, dan 2 sendok makan garam untuk mencapai garam -5°C.', con: '' },
       { pro: 'Metode Putar: Putar botol dalam air es untuk memaksa konveksi dan memperpendek waktu pendinginan.', con: '' },
-      { pro: '', con: 'Jangan letakkan kaleng langsung di rak freezer tanpa timer — kaleng yang pecah berbahaya dan berbahaya.' }
+      { pro: '', con: 'Jangan letakkan kaleng langsung di rak freezer tanpa timer - kaleng yang pecah berbahaya dan berbahaya.' }
     ]
   },
   {
@@ -135,7 +135,7 @@ const seo: BeerCoolerLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Konstanta pendinginan k dalam persamaan Newton bukan nilai universal yang tetap — ini adalah properti empiris dari setiap wadah spesifik dan medium. Kaleng aluminium tipis dalam air es memiliki k yang sangat berbeda dari botol gelas tebal dalam udara lemari es yang diam. Kalkulator kami menggunakan nilai terukur yang dikalibrasi terhadap eksperimen dunia nyata untuk setiap jenis wadah, memberi Anda prediksi akurat dalam beberapa menit untuk skenario pendinginan rumah tangga yang khas.'
+    html: 'Konstanta pendinginan k dalam persamaan Newton bukan nilai universal yang tetap - ini adalah properti empiris dari setiap wadah spesifik dan medium. Kaleng aluminium tipis dalam air es memiliki k yang sangat berbeda dari botol gelas tebal dalam udara lemari es yang diam. Kalkulator kami menggunakan nilai terukur yang dikalibrasi terhadap eksperimen dunia nyata untuk setiap jenis wadah, memberi Anda prediksi akurat dalam beberapa menit untuk skenario pendinginan rumah tangga yang khas.'
   }
 ];
 

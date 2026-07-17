@@ -51,7 +51,7 @@ const faq: FortifiedWineBuilderLocaleContent['faq'] = [
   },
   {
     question: '¿Qué vino base debo usar para el vermut?',
-    answer: 'Lo ideal es un vino blanco seco y neutro de entre el 10-12% de alcohol. El vino da la estructura base; como será aromatizado con hierbas y botánicos, no necesitas uno caro — una base limpia y ácida es perfecta.',
+    answer: 'Lo ideal es un vino blanco seco y neutro de entre el 10-12% de alcohol. El vino da la estructura base; como será aromatizado con hierbas y botánicos, no necesitas uno caro - una base limpia y ácida es perfecta.',
   },
   {
     question: '¿Puedo usar alcohol neutro en vez de brandy?',
@@ -75,14 +75,14 @@ const seo: FortifiedWineBuilderLocaleContent['seo'] = [
   { type: 'title', text: 'El Cuadrado de Pearson: Matemática Antigua, Vino Perfecto', level: 2 },
   {
     type: 'paragraph',
-    html: 'El <strong>Cuadrado de Pearson</strong> es una de las herramientas más antiguas y elegantes de la matemática enológica. Desarrollado en el siglo XIX, permite a cualquier elaborador —profesional o aficionado— calcular proporciones de mezcla con solo sumas y restas. Nuestra herramienta digitaliza este método visual y añade retroalimentación en tiempo real.',
+    html: 'El <strong>Cuadrado de Pearson</strong> es una de las herramientas más antiguas y elegantes de la matemática enológica. Desarrollado en el siglo XIX, permite a cualquier elaborador -profesional o aficionado- calcular proporciones de mezcla con solo sumas y restas. Nuestra herramienta digitaliza este método visual y añade retroalimentación en tiempo real.',
   },
   {
     type: 'stats',
     items: [
-      { label: 'Vermut', value: '15–18% Vol.', icon: 'mdi:glass-cocktail' },
-      { label: 'Oporto', value: '18–20% Vol.', icon: 'mdi:bottle-wine' },
-      { label: 'Jerez', value: '15–17% Vol.', icon: 'mdi:cup-water' },
+      { label: 'Vermut', value: '15-18% Vol.', icon: 'mdi:glass-cocktail' },
+      { label: 'Oporto', value: '18-20% Vol.', icon: 'mdi:bottle-wine' },
+      { label: 'Jerez', value: '15-17% Vol.', icon: 'mdi:cup-water' },
     ],
     columns: 3,
   },
@@ -90,7 +90,7 @@ const seo: FortifiedWineBuilderLocaleContent['seo'] = [
     type: 'card',
     title: '¿Por qué fortify al 18%?',
     icon: 'mdi:shield-check',
-    html: 'A partir de aproximadamente el 15% de alcohol, el <em>Saccharomyces cerevisiae</em> —la levadura principal del vino— queda inhibida. Al llegar al 18%, la fermentación se detiene completamente. Por eso el oporto conserva azúcar residual: el aguardiente se añade a mitad de la fermentación, matando la levadura antes de que consuma todo el azúcar.',
+    html: 'A partir de aproximadamente el 15% de alcohol, el <em>Saccharomyces cerevisiae</em> -la levadura principal del vino- queda inhibida. Al llegar al 18%, la fermentación se detiene completamente. Por eso el oporto conserva azúcar residual: el aguardiente se añade a mitad de la fermentación, matando la levadura antes de que consuma todo el azúcar.',
   },
   {
     type: 'tip',

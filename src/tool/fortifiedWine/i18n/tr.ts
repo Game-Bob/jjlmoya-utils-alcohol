@@ -47,11 +47,11 @@ const faq: FortifiedWineBuilderLocaleContent['faq'] = [
   },
   {
     question: 'Vermutun tipik alkol oranı nedir?',
-    answer: 'Geleneksel vermutun alkol oranı %15 ile %18 arasındadır. Kuru (Fransız tarzı) vermut genellikle alt aralıkta (%15–16) yer alırken, tatlı (İtalyan tarzı) vermut çoğunlukla %16–18 civarındadır. Rosé vermut ise ikisi arasında yer alır.',
+    answer: 'Geleneksel vermutun alkol oranı %15 ile %18 arasındadır. Kuru (Fransız tarzı) vermut genellikle alt aralıkta (%15-16) yer alırken, tatlı (İtalyan tarzı) vermut çoğunlukla %16-18 civarındadır. Rosé vermut ise ikisi arasında yer alır.',
   },
   {
     question: 'Vermut için hangi baz şarabı kullanmalıyım?',
-    answer: 'Geleneksel olarak %10–12 alkollü nötr, kuru bir beyaz şarap en iyi sonucu verir. Şarap temel yapıyı oluşturur, ancak bitkisel malzemeler ve otlarla aromalandırılacağından pahalı bir şaraba gerek yoktur — temiz ve asitli bir baz idealdir.',
+    answer: 'Geleneksel olarak %10-12 alkollü nötr, kuru bir beyaz şarap en iyi sonucu verir. Şarap temel yapıyı oluşturur, ancak bitkisel malzemeler ve otlarla aromalandırılacağından pahalı bir şaraba gerek yoktur - temiz ve asitli bir baz idealdir.',
   },
   {
     question: 'Brendi yerine nötr alkol kullanabilir miyim?',
@@ -59,7 +59,7 @@ const faq: FortifiedWineBuilderLocaleContent['faq'] = [
   },
   {
     question: 'Fortifikasyon şarabı nasıl korur?',
-    answer: 'Şarabın alkol oranı yaklaşık %15–16\'yı geçtiğinde maya fermantasyonu engellenir — mayalar yüksek alkollü ortamlarda yaşayamaz. Bu nedenle fortifiye şarapların normal şaraplara kıyasla çok daha uzun raf ömrü vardır. Alkol hem maya hem de bakteri bozulmasına karşı doğal bir koruyucu olarak işlev görür.',
+    answer: 'Şarabın alkol oranı yaklaşık %15-16\'yı geçtiğinde maya fermantasyonu engellenir - mayalar yüksek alkollü ortamlarda yaşayamaz. Bu nedenle fortifiye şarapların normal şaraplara kıyasla çok daha uzun raf ömrü vardır. Alkol hem maya hem de bakteri bozulmasına karşı doğal bir koruyucu olarak işlev görür.',
   },
 ];
 
@@ -74,8 +74,8 @@ const howTo: FortifiedWineBuilderLocaleContent['howTo'] = [
 const seo: FortifiedWineBuilderLocaleContent['seo'] = [
   { type: 'title', text: 'Pearson Karesi: Kadim Matematik, Mükemmel Şarap', level: 2 },
   { type: 'paragraph', html: '<strong>Pearson Karesi</strong>, şarap matematiğinin en eski ve en zarif araçlarından biridir. 19. yüzyılda geliştirilen bu yöntem, profesyonel ya da amatör her şarap üreticisinin yalnızca çıkarma işlemiyle harmanlama oranlarını hesaplamasını sağlar. Aracımız bu görsel yöntemi dijitalleştirerek gerçek zamanlı geri bildirim ekler; böylece hesaplama için daha az, üretim için daha fazla zaman harcarsınız.' },
-  { type: 'stats', items: [{ label: 'Vermut', value: '%15–18', icon: 'mdi:glass-cocktail' }, { label: 'Porto', value: '%18–20', icon: 'mdi:bottle-wine' }, { label: 'Sherry', value: '%15–17', icon: 'mdi:cup-water' }], columns: 3 },
-  { type: 'card', title: 'Neden %18\'de fortifiye edilir?', icon: 'mdi:shield-check', html: 'Yaklaşık %15\'in üzerinde, <em>Saccharomyces cerevisiae</em> — birincil şarap mayası — inhibe olmaya başlar. %18\'e ulaşıldığında fermantasyon tamamen durur. Porto\'nun artık şeker içermesinin nedeni budur: ispirto fermantasyonun ortasında eklenerek tüm şeker tüketilmeden maya öldürülür.' },
+  { type: 'stats', items: [{ label: 'Vermut', value: '%15-18', icon: 'mdi:glass-cocktail' }, { label: 'Porto', value: '%18-20', icon: 'mdi:bottle-wine' }, { label: 'Sherry', value: '%15-17', icon: 'mdi:cup-water' }], columns: 3 },
+  { type: 'card', title: 'Neden %18\'de fortifiye edilir?', icon: 'mdi:shield-check', html: 'Yaklaşık %15\'in üzerinde, <em>Saccharomyces cerevisiae</em> - birincil şarap mayası - inhibe olmaya başlar. %18\'e ulaşıldığında fermantasyon tamamen durur. Porto\'nun artık şeker içermesinin nedeni budur: ispirto fermantasyonun ortasında eklenerek tüm şeker tüketilmeden maya öldürülür.' },
   { type: 'tip', title: 'Pro İpucu: 20 °C\'de Ölçün', html: 'Alkolün yoğunluğu sıcaklıkla değişir. Resmi alkol ölçümleri 20 °C\'de kalibre edilmiştir. İspiritiniz veya şarabınız önemli ölçüde daha sıcak veya daha soğuksa bir düzeltme faktörü uygulayın: 20 °C\'nin altında her derece için yaklaşık +0,04 % ve üzerinde her derece için −0,04 %.' },
   { type: 'title', text: 'Zanaatkâr Vermut Rönesansı', level: 2 },
   { type: 'paragraph', html: 'Güney Avrupa bir zanaatkâr vermut rönesansı yaşıyor. Barselona, Valensiya ve San Sebastián, <em>la hora del vermut\'u</em> kültürel bir kurum olarak yeniden benimsedi; İspanya, İtalya ve Fransa\'daki küçük üreticiler olağanüstü ifadeler şişeliyor. Bu durum, hırslarına uygun teknik araçlar isteyen yeni nesil ev üreticilerini ortaya çıkardı.' },

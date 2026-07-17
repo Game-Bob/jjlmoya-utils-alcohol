@@ -151,7 +151,7 @@ const seo: CocktailBalancerLocaleContent['seo'] = [
     icon: 'mdi:star',
     variant: 'success',
     badge: 'Tujuan',
-    html: 'Ini adalah tujuan akhir: pH yang terkontrol di mana gula menetralkan agresi asam tanpa menutupi minyak esensial dan senyawa aromatik dari alkohol dasar. Keseimbangan yang tepat ini adalah tempat di mana klasik abadi tinggal — Daiquiri, Margarita, Sidecar — minuman yang telah bertahan beberapa dekade karena mematuhi hukum fundamental kimia rasa.'
+    html: 'Ini adalah tujuan akhir: pH yang terkontrol di mana gula menetralkan agresi asam tanpa menutupi minyak esensial dan senyawa aromatik dari alkohol dasar. Keseimbangan yang tepat ini adalah tempat di mana klasik abadi tinggal - Daiquiri, Margarita, Sidecar - minuman yang telah bertahan beberapa dekade karena mematuhi hukum fundamental kimia rasa.'
   },
   {
     type: 'tip',

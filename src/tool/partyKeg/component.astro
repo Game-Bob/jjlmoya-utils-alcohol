@@ -28,7 +28,7 @@ const { ui } = Astro.props;
 
                 <div class="slider-section">
                     <div class="slider-header">
-                        <label class="slider-lbl">{ui.guestsLabel}</label>
+                        <label class="slider-lbl" for="guest-slider">{ui.guestsLabel}</label>
                         <span class="slider-val" id="guest-count-display">50</span>
                     </div>
                     <div class="custom-slider-wrap">
@@ -40,7 +40,7 @@ const { ui } = Astro.props;
 
                 <div class="slider-section">
                     <div class="slider-header">
-                        <label class="slider-lbl">{ui.durationLabel}</label>
+                        <label class="slider-lbl" for="duration-slider">{ui.durationLabel}</label>
                         <div class="slider-val-unit">
                             <span class="slider-val" id="duration-display">4</span>
                             <span class="slider-unit">{ui.hoursUnit}</span>
@@ -85,7 +85,7 @@ const { ui } = Astro.props;
 
                 <div class="temp-section">
                     <div class="slider-header">
-                        <label class="slider-lbl temp-lbl">
+                        <label class="slider-lbl temp-lbl" for="temp-slider">
                             <Icon name="mdi:sun-thermometer-outline" class="temp-icon" />
                             {ui.tempLabel}
                         </label>

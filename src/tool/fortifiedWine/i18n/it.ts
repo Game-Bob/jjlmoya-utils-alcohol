@@ -47,11 +47,11 @@ const faq: FortifiedWineBuilderLocaleContent['faq'] = [
   },
   {
     question: 'Qual è la gradazione tipica del vermouth?',
-    answer: 'Il vermouth tradizionale ha una gradazione compresa tra il 15 % e il 18 %. Il vermouth secco (stile francese) si trova generalmente nella fascia bassa (15–16 %), mentre il vermouth dolce (stile italiano) raggiunge spesso il 16–18 %. Il vermouth rosato si colloca nel mezzo.',
+    answer: 'Il vermouth tradizionale ha una gradazione compresa tra il 15 % e il 18 %. Il vermouth secco (stile francese) si trova generalmente nella fascia bassa (15-16 %), mentre il vermouth dolce (stile italiano) raggiunge spesso il 16-18 %. Il vermouth rosato si colloca nel mezzo.',
   },
   {
     question: 'Quale vino base devo usare per il vermouth?',
-    answer: 'Tradizionalmente funziona meglio un vino bianco secco e neutro tra il 10 e il 12 % di gradazione alcolica. Il vino fornisce la struttura di base, ma poiché verrà aromatizzato con erbe e botaniche, non è necessario un vino costoso — una base pulita e acida è l\'ideale.',
+    answer: 'Tradizionalmente funziona meglio un vino bianco secco e neutro tra il 10 e il 12 % di gradazione alcolica. Il vino fornisce la struttura di base, ma poiché verrà aromatizzato con erbe e botaniche, non è necessario un vino costoso - una base pulita e acida è l\'ideale.',
   },
   {
     question: 'Posso usare alcol neutro invece del brandy?',
@@ -59,7 +59,7 @@ const faq: FortifiedWineBuilderLocaleContent['faq'] = [
   },
   {
     question: 'Come fa la fortificazione a conservare il vino?',
-    answer: 'Quando la gradazione alcolica del vino supera circa il 15–16 %, la fermentazione da parte dei lieviti viene inibita — i lieviti non sopravvivono in ambienti ad alto contenuto alcolico. Per questo motivo i vini fortificati hanno una conservabilità molto più lunga rispetto ai vini normali. L\'alcol agisce come conservante naturale contro il deterioramento da lieviti e batteri.',
+    answer: 'Quando la gradazione alcolica del vino supera circa il 15-16 %, la fermentazione da parte dei lieviti viene inibita - i lieviti non sopravvivono in ambienti ad alto contenuto alcolico. Per questo motivo i vini fortificati hanno una conservabilità molto più lunga rispetto ai vini normali. L\'alcol agisce come conservante naturale contro il deterioramento da lieviti e batteri.',
   },
 ];
 
@@ -73,9 +73,9 @@ const howTo: FortifiedWineBuilderLocaleContent['howTo'] = [
 
 const seo: FortifiedWineBuilderLocaleContent['seo'] = [
   { type: 'title', text: 'Il Quadrato di Pearson: Matematica antica, vino perfetto', level: 2 },
-  { type: 'paragraph', html: 'Il <strong>Quadrato di Pearson</strong> è uno degli strumenti più antichi ed eleganti della matematica enologica. Sviluppato nel XIX secolo, permette a qualsiasi produttore di vino — professionista o amatore — di calcolare i rapporti di miscelazione con nient\'altro che sottrazioni. Il nostro strumento digitalizza questo metodo visivo e aggiunge un feedback in tempo reale, così passi meno tempo a calcolare e più tempo a creare.' },
-  { type: 'stats', items: [{ label: 'Vermouth', value: '15–18 % vol.', icon: 'mdi:glass-cocktail' }, { label: 'Porto', value: '18–20 % vol.', icon: 'mdi:bottle-wine' }, { label: 'Sherry', value: '15–17 % vol.', icon: 'mdi:cup-water' }], columns: 3 },
-  { type: 'card', title: 'Perché fortificare al 18 %?', icon: 'mdi:shield-check', html: 'Oltre circa il 15 % vol., <em>Saccharomyces cerevisiae</em> — il principale lievito del vino — viene inibito. Raggiunto il 18 %, la fermentazione è completamente arrestata. Ecco perché il vino porto conserva lo zucchero residuo: il distillato viene aggiunto a metà fermentazione, uccidendo il lievito prima che tutto lo zucchero venga consumato.' },
+  { type: 'paragraph', html: 'Il <strong>Quadrato di Pearson</strong> è uno degli strumenti più antichi ed eleganti della matematica enologica. Sviluppato nel XIX secolo, permette a qualsiasi produttore di vino - professionista o amatore - di calcolare i rapporti di miscelazione con nient\'altro che sottrazioni. Il nostro strumento digitalizza questo metodo visivo e aggiunge un feedback in tempo reale, così passi meno tempo a calcolare e più tempo a creare.' },
+  { type: 'stats', items: [{ label: 'Vermouth', value: '15-18 % vol.', icon: 'mdi:glass-cocktail' }, { label: 'Porto', value: '18-20 % vol.', icon: 'mdi:bottle-wine' }, { label: 'Sherry', value: '15-17 % vol.', icon: 'mdi:cup-water' }], columns: 3 },
+  { type: 'card', title: 'Perché fortificare al 18 %?', icon: 'mdi:shield-check', html: 'Oltre circa il 15 % vol., <em>Saccharomyces cerevisiae</em> - il principale lievito del vino - viene inibito. Raggiunto il 18 %, la fermentazione è completamente arrestata. Ecco perché il vino porto conserva lo zucchero residuo: il distillato viene aggiunto a metà fermentazione, uccidendo il lievito prima che tutto lo zucchero venga consumato.' },
   { type: 'tip', title: 'Consiglio Pro: Misurare a 20 °C', html: 'La densità dell\'alcol cambia con la temperatura. Le misurazioni ufficiali della gradazione alcolica sono calibrate a 20 °C. Se il tuo distillato o vino è significativamente più caldo o più freddo, applica un fattore di correzione: circa +0,04 % vol. per °C al di sotto dei 20 °C e −0,04 % per °C al di sopra.' },
   { type: 'title', text: 'La Rinascita del Vermouth Artigianale', level: 2 },
   { type: 'paragraph', html: 'L\'Europa meridionale sta vivendo una rinascita del vermouth artigianale. Barcellona, Valencia e San Sebastián hanno recuperato <em>la hora del vermut</em> come istituzione culturale, e piccoli produttori in Spagna, Italia e Francia stanno imbottigliando espressioni straordinarie. Ciò ha creato una nuova generazione di produttori casalinghi che desiderano strumenti tecnici all\'altezza delle loro ambizioni.' },

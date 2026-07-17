@@ -151,7 +151,7 @@ const seo: CocktailBalancerLocaleContent['seo'] = [
     icon: 'mdi:star',
     variant: 'success',
     badge: 'Mål',
-    html: 'Detta är det ultimata målet: en kontrollerad pH där socker neutraliserar surhets aggression utan att maskera bassprits väsentliga oljor och aromatiska föreningar. Denna exakta balans är där odödliga klassiker bor — Daiquiri, Margarita, Sidecar — drycker som överlevde decennier eftersom de följer smakkemins grundläggande lagar.'
+    html: 'Detta är det ultimata målet: en kontrollerad pH där socker neutraliserar surhets aggression utan att maskera bassprits väsentliga oljor och aromatiska föreningar. Denna exakta balans är där odödliga klassiker bor - Daiquiri, Margarita, Sidecar - drycker som överlevde decennier eftersom de följer smakkemins grundläggande lagar.'
   },
   {
     type: 'tip',

@@ -48,31 +48,31 @@ const faq: JelloShotLabLocaleContent['faq'] = [
   },
   {
     question: 'Jaki jest maksymalny stosunek alkoholu, zanim jello shoty przestają tężeć?',
-    answer: 'Bezpieczna górna granica to ok. 30–35% całkowitej objętości płynu jako czysty spirytus (przy 40% ABV). Przy 96% alkoholu neutralnym limit spada do ok. 15–18% całkowitej objętości. Nasz kalkulator uwzględnia ABV alkoholu, dzięki czemu nigdy nie przekroczysz progu tężenia.',
+    answer: 'Bezpieczna górna granica to ok. 30-35% całkowitej objętości płynu jako czysty spirytus (przy 40% ABV). Przy 96% alkoholu neutralnym limit spada do ok. 15-18% całkowitej objętości. Nasz kalkulator uwzględnia ABV alkoholu, dzięki czemu nigdy nie przekroczysz progu tężenia.',
   },
   {
-    question: 'Czy ma znaczenie, jaki alkohol użyję — wódkę, rum czy tequilę?',
+    question: 'Czy ma znaczenie, jaki alkohol użyję - wódkę, rum czy tequilę?',
     answer: 'Liczy się ABV, a nie rodzaj alkoholu. Wódka 40% i rum 40% zachowują się identycznie w matrycy żelatyny. Alkohole z wyższą zawartością cukru (jak niektóre rumy czy likiery) mogą nieznacznie poprawić teksturę, gdyż cukier konkuruje z etanolem o wiązania wodorowe w sieci żelatyny.',
   },
   {
     question: 'Jak długo jello shoty są trwałe w lodówce?',
-    answer: 'Prawidłowo przygotowane jello shoty wytrzymują 3–5 dni w lodówce przykryte folią spożywczą. Wysoka zawartość alkoholu działa jako naturalny konserwant. Nie zostawiaj ich w temperaturze pokojowej dłużej niż 2 godziny, gdyż żelatyna mięknie i mogą namnażać się bakterie.',
+    answer: 'Prawidłowo przygotowane jello shoty wytrzymują 3-5 dni w lodówce przykryte folią spożywczą. Wysoka zawartość alkoholu działa jako naturalny konserwant. Nie zostawiaj ich w temperaturze pokojowej dłużej niż 2 godziny, gdyż żelatyna mięknie i mogą namnażać się bakterie.',
   },
   {
     question: 'Czy mogę sprawić, by moje jello shoty były twardsze lub miększe?',
-    answer: 'Tak. Użyj więcej żelatyny (lub pół saszetki więcej) dla twardszych shotów, które czysto wyślizgują się z kubków. Użyj nieco mniej dla miękkiej, trzęsącej się tekstury. Nigdy nie zastępuj żelatyny agar-agarem, jeśli chcesz tekstury rozpuszczającej się w ustach — agar twardnieje bardziej i topi się w wyższej temperaturze.',
+    answer: 'Tak. Użyj więcej żelatyny (lub pół saszetki więcej) dla twardszych shotów, które czysto wyślizgują się z kubków. Użyj nieco mniej dla miękkiej, trzęsącej się tekstury. Nigdy nie zastępuj żelatyny agar-agarem, jeśli chcesz tekstury rozpuszczającej się w ustach - agar twardnieje bardziej i topi się w wyższej temperaturze.',
   },
   {
     question: 'Czy mogę zamrozić jello shoty, aby przyspieszyć chłodzenie?',
-    answer: 'Nie. Zamrożenie niszczy sieć żelatyny, powodując wodnistą, ziarnistą teksturę po rozmrożeniu. Zawsze chłodź co najmniej 4 godziny. Na imprezy przygotuj je poprzedniego wieczoru — 8+ godzin daje najlepszą teksturę.',
+    answer: 'Nie. Zamrożenie niszczy sieć żelatyny, powodując wodnistą, ziarnistą teksturę po rozmrożeniu. Zawsze chłodź co najmniej 4 godziny. Na imprezy przygotuj je poprzedniego wieczoru - 8+ godzin daje najlepszą teksturę.',
   },
 ];
 
 const howTo: JelloShotLabLocaleContent['howTo'] = [
   { name: 'Wybierz swój alkohol', text: 'Wpisz ABV swojego alkoholu i wybierz pożądaną moc shota. Kalkulator pokaże Ci maksymalną ilość alkoholu, którą Twoja żelatyna może pomieścić.' },
   { name: 'Przygotuj żelatynę', text: 'Wlej obliczoną ilość wrzącej wody do miski. Dodaj proszek żelatynowy i mieszaj energicznie przez 2 minuty do całkowitego rozpuszczenia. Jeszcze nie dodawaj alkoholu.' },
-  { name: 'Dodaj alkohol', text: 'Pozostaw mieszaninę żelatynową do ostygnięcia przez 5–10 minut, aż będzie ciepła, ale nie gorąca (poniżej 50 °C). Dodaj swój alkohol i mieszaj delikatnie, aby uniknąć pęcherzyków.' },
-  { name: 'Wlej i schłodź', text: 'Wlej do plastikowych kubeczków, foremek silikonowych lub małych kieliszków do shotów. Chłodź co najmniej 4 godziny — przez noc jest idealne. Nie zamrażaj.' },
+  { name: 'Dodaj alkohol', text: 'Pozostaw mieszaninę żelatynową do ostygnięcia przez 5-10 minut, aż będzie ciepła, ale nie gorąca (poniżej 50 °C). Dodaj swój alkohol i mieszaj delikatnie, aby uniknąć pęcherzyków.' },
+  { name: 'Wlej i schłodź', text: 'Wlej do plastikowych kubeczków, foremek silikonowych lub małych kieliszków do shotów. Chłodź co najmniej 4 godziny - przez noc jest idealne. Nie zamrażaj.' },
 ];
 
 
@@ -80,7 +80,7 @@ const seo: JelloShotLabLocaleContent['seo'] = [
   { type: 'title', text: 'Chemia stojąca za doskonałym jello shotem', level: 2 },
   {
     type: 'paragraph',
-    html: 'Jello shot to nie tylko aromatyzowana żelatyna z alkoholem — to <strong>delikatna zawiesina koloidalna</strong>, w której polimery białkowe, woda i etanol konkurują o wiązania wodorowe. Zły stosunek i masz kałużę słodkiej cieczy lub gumowy krążek, który odbija się od stołu. Właściwy stosunek daje idealnie trzęsący się shot, który wyślizguje się z kubka jednym czystym ruchem.',
+    html: 'Jello shot to nie tylko aromatyzowana żelatyna z alkoholem - to <strong>delikatna zawiesina koloidalna</strong>, w której polimery białkowe, woda i etanol konkurują o wiązania wodorowe. Zły stosunek i masz kałużę słodkiej cieczy lub gumowy krążek, który odbija się od stołu. Właściwy stosunek daje idealnie trzęsący się shot, który wyślizguje się z kubka jednym czystym ruchem.',
   },
   {
     type: 'stats',
@@ -95,13 +95,13 @@ const seo: JelloShotLabLocaleContent['seo'] = [
     type: 'card',
     title: 'Czym jest siła Bloom?',
     icon: 'mdi:molecule',
-    html: 'Bloom mierzy siłę żelowania żelatyny, zazwyczaj od 50 do 300 Bloom. Żelatyna listewkowa z supermarketu to zwykle 150–200 Bloom. Wyższy Bloom oznacza twardszy żel przy tej samej ilości proszku, co oznacza, że wytrzymuje nieco więcej alkoholu przed utratą zdolności tężenia. Standardowe saszetki żelatyny w proszku (7 g) są skalibrowane na ok. 240 ml płynu.',
+    html: 'Bloom mierzy siłę żelowania żelatyny, zazwyczaj od 50 do 300 Bloom. Żelatyna listewkowa z supermarketu to zwykle 150-200 Bloom. Wyższy Bloom oznacza twardszy żel przy tej samej ilości proszku, co oznacza, że wytrzymuje nieco więcej alkoholu przed utratą zdolności tężenia. Standardowe saszetki żelatyny w proszku (7 g) są skalibrowane na ok. 240 ml płynu.',
   },
   {
     type: 'card',
     title: 'Limit etanolu',
     icon: 'mdi:alert-circle-outline',
-    html: 'Etanol konkuruje z wodą o miejsca wiązań wodorowych na łańcuchach aminokwasowych kolagenu. Gdy etanol zajmie zbyt wiele tych miejsc, białko nie może złożyć się w stabilną potrójną helisę dającą żelatynie strukturę. Praktyczny limit to mniej więcej <strong>1 część 40% alkoholu na 1 część wody</strong> — powyżej tego Twój shot nie stężeje bez względu na czas oczekiwania.',
+    html: 'Etanol konkuruje z wodą o miejsca wiązań wodorowych na łańcuchach aminokwasowych kolagenu. Gdy etanol zajmie zbyt wiele tych miejsc, białko nie może złożyć się w stabilną potrójną helisę dającą żelatynie strukturę. Praktyczny limit to mniej więcej <strong>1 część 40% alkoholu na 1 część wody</strong> - powyżej tego Twój shot nie stężeje bez względu na czas oczekiwania.',
   },
   {
     type: 'tip',
@@ -124,7 +124,7 @@ const seo: JelloShotLabLocaleContent['seo'] = [
     items: [
       'Organizatorzy imprez: Oblicz dokładnie, ile saszetek i ile alkoholu potrzebujesz przed zakupem.',
       'Barmani: Skaluj do dużej produkcji z konsekwentnymi wynikami za każdym razem.',
-      'Domowi kucharze: Unikaj najczęstszych błędów — ciekłych shotów, gumowatej tekstury lub zerowego smaku alkoholu.',
+      'Domowi kucharze: Unikaj najczęstszych błędów - ciekłych shotów, gumowatej tekstury lub zerowego smaku alkoholu.',
     ],
   },
 ];

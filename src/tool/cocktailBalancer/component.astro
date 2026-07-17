@@ -153,7 +153,7 @@ function getIngIconName(type: string): string {
                 </div>
                 <div class="modal-search-wrap">
                     <Icon name="mdi:magnify" class="modal-search-icon" />
-                    <input type="text" id="modal-search" placeholder={ui.searchPlaceholder} class="modal-search-input" />
+                    <input type="text" id="modal-search" placeholder={ui.searchPlaceholder} class="modal-search-input" aria-label={ui.searchPlaceholder} />
                 </div>
             </div>
 
@@ -283,7 +283,7 @@ function getIngIconName(type: string): string {
             const trashIcon = document.getElementById("tpl-icon-trash")?.innerHTML ?? '';
             const row = document.createElement("div");
             row.className = "recipe-row";
-            row.innerHTML = `<div class="recipe-row-top"><div class="recipe-row-info"><div class="recipe-row-name">${ing.name}</div><span class="recipe-row-type">${ing.type}</span></div><button class="btn-danger recipe-row-del btn-remove" data-uid="${item.uId}">${trashIcon}</button></div><div class="recipe-row-controls"><input type="range" class="recipe-range input-range" min="0" max="150" step="0.5" value="${item.vol}" data-uid="${item.uId}"><div class="recipe-number-wrap"><input type="number" class="recipe-number input-number" value="${item.vol}" data-uid="${item.uId}"></div></div>`;
+            row.innerHTML = `<div class="recipe-row-top"><div class="recipe-row-info"><div class="recipe-row-name">${ing.name}</div><span class="recipe-row-type">${ing.type}</span></div><button class="btn-danger recipe-row-del btn-remove" data-uid="${item.uId}">${trashIcon}</button></div><div class="recipe-row-controls"><input type="range" class="recipe-range input-range" min="0" max="150" step="0.5" value="${item.vol}" data-uid="${item.uId}" aria-label="${ing.name} range"><div class="recipe-number-wrap"><input type="number" class="recipe-number input-number" value="${item.vol}" data-uid="${item.uId}" aria-label="${ing.name} volume"></div></div>`;
             return row;
         }
 

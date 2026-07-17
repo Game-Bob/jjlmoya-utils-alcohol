@@ -51,7 +51,7 @@ const faq: FortifiedWineBuilderLocaleContent['faq'] = [
   },
   {
     question: '制作苦艾酒应使用哪种基础葡萄酒？',
-    answer: '传统上，酒精度在10-12%之间的中性干白葡萄酒效果最佳。葡萄酒提供骨架，但由于将用草药和植物原料调香，不需要昂贵的葡萄酒——干净、酸度适中的基底最为理想。',
+    answer: '传统上，酒精度在10-12%之间的中性干白葡萄酒效果最佳。葡萄酒提供骨架，但由于将用草药和植物原料调香，不需要昂贵的葡萄酒-干净、酸度适中的基底最为理想。',
   },
   {
     question: '可以用中性酒精代替白兰地吗？',
@@ -59,7 +59,7 @@ const faq: FortifiedWineBuilderLocaleContent['faq'] = [
   },
   {
     question: '加强过程如何保存葡萄酒？',
-    answer: '当葡萄酒的酒精度超过约15-16%时，酵母发酵受到抑制——酵母无法在高酒精环境中存活。这就是加强葡萄酒比普通葡萄酒保质期更长的原因。酒精既能防止酵母又能防止细菌腐败，起到天然防腐剂的作用。',
+    answer: '当葡萄酒的酒精度超过约15-16%时，酵母发酵受到抑制-酵母无法在高酒精环境中存活。这就是加强葡萄酒比普通葡萄酒保质期更长的原因。酒精既能防止酵母又能防止细菌腐败，起到天然防腐剂的作用。',
   },
 ];
 
@@ -73,8 +73,8 @@ const howTo: FortifiedWineBuilderLocaleContent['howTo'] = [
 
 const seo: FortifiedWineBuilderLocaleContent['seo'] = [
   { type: 'title', text: '皮尔逊方法：古老的数学，完美的葡萄酒', level: 2 },
-  { type: 'paragraph', html: '<strong>皮尔逊方法</strong>是酿酒数学中最古老、最优雅的工具之一。它诞生于19世纪，使任何酿酒师——无论专业人士还是爱好者——都能仅凭减法计算调配比例。我们的工具将这种可视化方法数字化，并添加实时反馈，让您花更少的时间计算，花更多的时间酿造。' },
-  { type: 'stats', items: [{ label: '苦艾酒', value: '15–18% vol.', icon: 'mdi:glass-cocktail' }, { label: '波特酒', value: '18–20% vol.', icon: 'mdi:bottle-wine' }, { label: '雪利酒', value: '15–17% vol.', icon: 'mdi:cup-water' }], columns: 3 },
+  { type: 'paragraph', html: '<strong>皮尔逊方法</strong>是酿酒数学中最古老、最优雅的工具之一。它诞生于19世纪，使任何酿酒师-无论专业人士还是爱好者-都能仅凭减法计算调配比例。我们的工具将这种可视化方法数字化，并添加实时反馈，让您花更少的时间计算，花更多的时间酿造。' },
+  { type: 'stats', items: [{ label: '苦艾酒', value: '15-18% vol.', icon: 'mdi:glass-cocktail' }, { label: '波特酒', value: '18-20% vol.', icon: 'mdi:bottle-wine' }, { label: '雪利酒', value: '15-17% vol.', icon: 'mdi:cup-water' }], columns: 3 },
   { type: 'card', title: '为什么在18%时加强？', icon: 'mdi:shield-check', html: '当酒精度超过约15%时，<em>Saccharomyces cerevisiae</em>（主要葡萄酒酵母）受到抑制。达到18%时，发酵完全停止。这就是为什么波特酒保留残余糖分：烈酒在发酵中途加入，在所有糖分被消耗之前杀死酵母。' },
   { type: 'tip', title: '专业提示：在20°C时测量', html: '酒精密度随温度变化。官方酒精度测量值以20°C为标准校准。如果您的烈酒或葡萄酒温度明显偏高或偏低，请应用修正系数：低于20°C每降1°C约+0.04%，高于20°C每升1°C约−0.04%。' },
   { type: 'title', text: '精酿苦艾酒的复兴', level: 2 },

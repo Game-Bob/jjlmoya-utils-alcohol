@@ -51,7 +51,7 @@ const faq: JelloShotLabLocaleContent['faq'] = [
     answer: 'O limite superior seguro é de cerca de 30 a 35% do volume total de líquido sendo bebida pura (a 40% vol). Com um álcool neutro a 96%, esse limite desce para cerca de 15 a 18% do volume total. A nossa calculadora tem em conta o teor alcoólico da bebida para que nunca ultrapasse o limite de solidificação.',
   },
   {
-    question: 'Importa o tipo de bebida utilizada — vodka, rum ou tequila?',
+    question: 'Importa o tipo de bebida utilizada - vodka, rum ou tequila?',
     answer: 'O que importa é o teor alcoólico, não o tipo de bebida. Vodka a 40% e rum a 40% comportam-se de forma idêntica na matriz de gelatina. No entanto, bebidas com maior teor de açúcar (como alguns rons ou licores) podem melhorar ligeiramente a textura, pois o açúcar compete com o etanol pelas ligações de hidrogénio na rede de gelatina.',
   },
   {
@@ -60,11 +60,11 @@ const faq: JelloShotLabLocaleContent['faq'] = [
   },
   {
     question: 'Posso tornar os meus jello shots mais firmes ou mais macios?',
-    answer: 'Sim. Use mais gelatina (ou meia saqueta extra) para shots mais firmes que saem facilmente dos copos. Use ligeiramente menos para uma textura mais mole e trêmula. Nunca substitua a gelatina por ágar-ágar se quiser uma textura que se derrete na boca — o ágar solidifica mais e derrete a uma temperatura mais elevada.',
+    answer: 'Sim. Use mais gelatina (ou meia saqueta extra) para shots mais firmes que saem facilmente dos copos. Use ligeiramente menos para uma textura mais mole e trêmula. Nunca substitua a gelatina por ágar-ágar se quiser uma textura que se derrete na boca - o ágar solidifica mais e derrete a uma temperatura mais elevada.',
   },
   {
     question: 'Posso congelar os jello shots para acelerar o arrefecimento?',
-    answer: 'Não. O congelamento quebra a rede de gelatina, resultando numa textura aquosa e granulada após descongelar. Refrigere sempre durante um mínimo de 4 horas. Para festas, prepare-os na noite anterior — 8 horas ou mais dão a melhor textura.',
+    answer: 'Não. O congelamento quebra a rede de gelatina, resultando numa textura aquosa e granulada após descongelar. Refrigere sempre durante um mínimo de 4 horas. Para festas, prepare-os na noite anterior - 8 horas ou mais dão a melhor textura.',
   },
 ];
 
@@ -72,7 +72,7 @@ const howTo: JelloShotLabLocaleContent['howTo'] = [
   { name: 'Escolha a sua bebida', text: 'Introduza o teor alcoólico da sua bebida e escolha a força do shot desejada. A calculadora mostrará a quantidade máxima de bebida que a sua gelatina consegue suportar.' },
   { name: 'Prepare a gelatina', text: 'Deite a quantidade calculada de água a ferver numa tigela. Adicione o pó de gelatina e mexa vigorosamente durante 2 minutos até dissolver completamente. Não adicione álcool ainda.' },
   { name: 'Adicione a bebida', text: 'Deixe a mistura de gelatina arrefecer durante 5 a 10 minutos até estar morna mas não quente (abaixo de 50 °C). Adicione a sua bebida e mexa suavemente para evitar criar bolhas.' },
-  { name: 'Deite e refrigere', text: 'Deite em copos de plástico, moldes de silicone ou pequenos copos de shot. Refrigere durante pelo menos 4 horas — uma noite inteira é ideal. Não congele.' },
+  { name: 'Deite e refrigere', text: 'Deite em copos de plástico, moldes de silicone ou pequenos copos de shot. Refrigere durante pelo menos 4 horas - uma noite inteira é ideal. Não congele.' },
 ];
 
 
@@ -80,7 +80,7 @@ const seo: JelloShotLabLocaleContent['seo'] = [
   { type: 'title', text: 'A química por trás de um jello shot perfeito', level: 2 },
   {
     type: 'paragraph',
-    html: 'Um jello shot não é apenas gelatina aromatizada com álcool — é uma <strong>suspensão coloidal delicada</strong> onde polímeros proteicos, água e etanol competem por ligações de hidrogénio. Errar a proporção resulta numa poça de líquido doce ou num disco borrachudo que ressalta na mesa. Acertar significa ter um shot perfeitamente trémulo que desliza para fora do copo num único movimento limpo.',
+    html: 'Um jello shot não é apenas gelatina aromatizada com álcool - é uma <strong>suspensão coloidal delicada</strong> onde polímeros proteicos, água e etanol competem por ligações de hidrogénio. Errar a proporção resulta numa poça de líquido doce ou num disco borrachudo que ressalta na mesa. Acertar significa ter um shot perfeitamente trémulo que desliza para fora do copo num único movimento limpo.',
   },
   {
     type: 'stats',
@@ -95,13 +95,13 @@ const seo: JelloShotLabLocaleContent['seo'] = [
     type: 'card',
     title: 'O que é a força Bloom?',
     icon: 'mdi:molecule',
-    html: 'O Bloom mede a força de gelificação de uma gelatina, tipicamente entre 50 e 300 Bloom. A gelatina em folhas do supermercado é normalmente 150–200 Bloom. Um Bloom mais alto significa um gel mais firme com a mesma quantidade de pó, o que significa que pode tolerar ligeiramente mais álcool antes de não solidificar. As saquetas padrão de gelatina em pó (7 g) estão calibradas para cerca de 240 ml de líquido.',
+    html: 'O Bloom mede a força de gelificação de uma gelatina, tipicamente entre 50 e 300 Bloom. A gelatina em folhas do supermercado é normalmente 150-200 Bloom. Um Bloom mais alto significa um gel mais firme com a mesma quantidade de pó, o que significa que pode tolerar ligeiramente mais álcool antes de não solidificar. As saquetas padrão de gelatina em pó (7 g) estão calibradas para cerca de 240 ml de líquido.',
   },
   {
     type: 'card',
     title: 'O limite do etanol',
     icon: 'mdi:alert-circle-outline',
-    html: 'O etanol compete com a água pelos locais de ligação de hidrogénio nas cadeias de aminoácidos do colagénio. Quando o etanol ocupa demasiados desses locais, a proteína não consegue dobrar-se na tripla hélice estável que dá estrutura à gelatina. O limite prático é de aproximadamente <strong>1 parte de bebida a 40% para 1 parte de água</strong> — além disso, o seu shot não solidificará independentemente do tempo de espera.',
+    html: 'O etanol compete com a água pelos locais de ligação de hidrogénio nas cadeias de aminoácidos do colagénio. Quando o etanol ocupa demasiados desses locais, a proteína não consegue dobrar-se na tripla hélice estável que dá estrutura à gelatina. O limite prático é de aproximadamente <strong>1 parte de bebida a 40% para 1 parte de água</strong> - além disso, o seu shot não solidificará independentemente do tempo de espera.',
   },
   {
     type: 'tip',
@@ -124,7 +124,7 @@ const seo: JelloShotLabLocaleContent['seo'] = [
     items: [
       'Anfitriões de festas: Calcule exatamente quantas saquetas e quanta bebida precisa antes de comprar.',
       'Bartenders: Escale para produção em grande quantidade com resultados consistentes sempre.',
-      'Cozinheiros caseiros: Evite os erros mais comuns — shots líquidos, textura borrachuda ou zero sabor a álcool.',
+      'Cozinheiros caseiros: Evite os erros mais comuns - shots líquidos, textura borrachuda ou zero sabor a álcool.',
     ],
   },
 ];

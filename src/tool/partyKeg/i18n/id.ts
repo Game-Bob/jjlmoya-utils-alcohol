@@ -36,15 +36,15 @@ const faq: PartyKegLocaleContent['faq'] = [
   },
   {
     question: "Berapa banyak es yang saya butuhkan untuk 100 bir?",
-    answer: "Anda memerlukan sekitar 15–20 kilogram es (7–10 kantong). Aturan praktis adalah 0,75 kg es per liter minuman dalam kondisi normal. Di musim panas atau di luar ruangan di atas 25°C, naikkan menjadi 1 kg per liter: panas lingkungan mempercepat pencairan dan Anda akan kehabisan es jauh lebih cepat dari yang diharapkan.",
+    answer: "Anda memerlukan sekitar 15-20 kilogram es (7-10 kantong). Aturan praktis adalah 0,75 kg es per liter minuman dalam kondisi normal. Di musim panas atau di luar ruangan di atas 25°C, naikkan menjadi 1 kg per liter: panas lingkungan mempercepat pencairan dan Anda akan kehabisan es jauh lebih cepat dari yang diharapkan.",
   },
   {
     question: "Apa perbedaan antara tong standar dan tong pesta?",
-    answer: "Tong komersial standar menampung 50 liter, yang menghasilkan sekitar 200 porsi (250 ml masing-masing). Tong pesta (mini-tong) biasanya menampung 5 liter — sekitar 20 porsi. Mengetahui ukuran ini membantu Anda menerjemahkan output liter kalkulator ke dalam jumlah wadah yang harus dibeli.",
+    answer: "Tong komersial standar menampung 50 liter, yang menghasilkan sekitar 200 porsi (250 ml masing-masing). Tong pesta (mini-tong) biasanya menampung 5 liter - sekitar 20 porsi. Mengetahui ukuran ini membantu Anda menerjemahkan output liter kalkulator ke dalam jumlah wadah yang harus dibeli.",
   },
   {
     question: "Mengapa saya membutuhkan begitu banyak es jika birnya sudah dingin?",
-    answer: "Karena mendinginkan dan mempertahankan adalah dua proses yang terpisah. Membawa kaleng dari 25°C ke 4°C mengkonsumsi panas laten es: sekitar 334 kJ/kg. Setelah dingin, es terus bekerja untuk mengimbangi panas lingkungan. Di hari musim panas pada 35°C, transfer panas ke dalam pendingin dapat mencairkan 1 kg es per liter minuman setiap 2–3 jam. Itulah mengapa mendinginkan minuman Anda sebelum pesta mengurangi konsumsi es total hingga setengahnya.",
+    answer: "Karena mendinginkan dan mempertahankan adalah dua proses yang terpisah. Membawa kaleng dari 25°C ke 4°C mengkonsumsi panas laten es: sekitar 334 kJ/kg. Setelah dingin, es terus bekerja untuk mengimbangi panas lingkungan. Di hari musim panas pada 35°C, transfer panas ke dalam pendingin dapat mencairkan 1 kg es per liter minuman setiap 2-3 jam. Itulah mengapa mendinginkan minuman Anda sebelum pesta mengurangi konsumsi es total hingga setengahnya.",
   },
 ];
 
@@ -72,7 +72,7 @@ const seo: PartyKegLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Pertanyaan sejuta dolar saat mengorganisir acara apa pun: <strong>Berapa liter bir yang harus saya beli?</strong> Kekurangan adalah bencana, tetapi membeli berlebihan adalah pengeluaran yang tidak perlu. Alat ini membantu Anda menghitung jumlah alkohol yang tepat dan, yang paling penting, <strong>berapa banyak kantong es</strong> yang Anda butuhkan untuk menjaganya tetap dingin. Para katering profesional dan perencana acara menggunakan model konsumsi statistik — dan sekarang Anda juga bisa, gratis.'
+    html: 'Pertanyaan sejuta dolar saat mengorganisir acara apa pun: <strong>Berapa liter bir yang harus saya beli?</strong> Kekurangan adalah bencana, tetapi membeli berlebihan adalah pengeluaran yang tidak perlu. Alat ini membantu Anda menghitung jumlah alkohol yang tepat dan, yang paling penting, <strong>berapa banyak kantong es</strong> yang Anda butuhkan untuk menjaganya tetap dingin. Para katering profesional dan perencana acara menggunakan model konsumsi statistik - dan sekarang Anda juga bisa, gratis.'
   },
   {
     type: 'title',
@@ -112,7 +112,7 @@ const seo: PartyKegLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Tong 50L standar menghasilkan sekitar 200 porsi. Kantong es yang khas beratnya 2 kg. Mengetahui angka-angka ini, Anda dapat merencanakan transportasi dan penyimpanan yang diperlukan untuk acara Anda tanpa kejutan menit terakhir. Pertimbangkan pencairan es selama transportasi — perjalanan 30 menit di musim panas dapat menghabiskan satu kantong penuh sebelum pesta dimulai.'
+    html: 'Tong 50L standar menghasilkan sekitar 200 porsi. Kantong es yang khas beratnya 2 kg. Mengetahui angka-angka ini, Anda dapat merencanakan transportasi dan penyimpanan yang diperlukan untuk acara Anda tanpa kejutan menit terakhir. Pertimbangkan pencairan es selama transportasi - perjalanan 30 menit di musim panas dapat menghabiskan satu kantong penuh sebelum pesta dimulai.'
   },
   {
     type: 'summary',
@@ -125,7 +125,7 @@ const seo: PartyKegLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Satu variabel yang sering diabaikan adalah <strong>tingkat dropout tamu</strong>. Di sebagian besar pesta, 10–15% tamu pergi lebih awal dan 10% mungkin tidak minum sama sekali. Kalkulator menerapkan penyangga konservatif sehingga Anda tidak pernah kekurangan, tetapi juga tidak dibiarkan dengan surplus yang sangat besar. Memahami penyesuaian ini membantu Anda menyempurnakan perkiraan untuk kerumunan dan konteks spesifik Anda. Selalu bulatkan saat membeli, karena mengembalikan tong yang sudah dibuka umumnya tidak memungkinkan. Surplus kecil selalu lebih baik daripada kehabisan minuman di tengah-tengah pesta.'
+    html: 'Satu variabel yang sering diabaikan adalah <strong>tingkat dropout tamu</strong>. Di sebagian besar pesta, 10-15% tamu pergi lebih awal dan 10% mungkin tidak minum sama sekali. Kalkulator menerapkan penyangga konservatif sehingga Anda tidak pernah kekurangan, tetapi juga tidak dibiarkan dengan surplus yang sangat besar. Memahami penyesuaian ini membantu Anda menyempurnakan perkiraan untuk kerumunan dan konteks spesifik Anda. Selalu bulatkan saat membeli, karena mengembalikan tong yang sudah dibuka umumnya tidak memungkinkan. Surplus kecil selalu lebih baik daripada kehabisan minuman di tengah-tengah pesta.'
   }
 ];
 

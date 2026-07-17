@@ -44,19 +44,19 @@ const faq: AlcoholClearanceLocaleContent['faq'] = [
   },
   {
     question: "Können Kaffee, Wasser oder Sport den Alkoholabbau beschleunigen?",
-    answer: "Nein. Die Leber baut Alkohol mit einer konstanten Rate von etwa 0,15 g/L pro Stunde ab (Kinetik nullter Ordnung). Kaffee kann Müdigkeit maskieren, Wasser hilft gegen Dehydration, und Sport verbessert das allgemeine Wohlbefinden – aber nichts davon reduziert deinen tatsächlichen BAK. Nur Zeit baut Alkohol aus dem Blut ab.",
+    answer: "Nein. Die Leber baut Alkohol mit einer konstanten Rate von etwa 0,15 g/L pro Stunde ab (Kinetik nullter Ordnung). Kaffee kann Müdigkeit maskieren, Wasser hilft gegen Dehydration, und Sport verbessert das allgemeine Wohlbefinden - aber nichts davon reduziert deinen tatsächlichen BAK. Nur Zeit baut Alkohol aus dem Blut ab.",
   },
   {
     question: "Hilft das Essen nach dem Trinken, den BAK zu senken?",
-    answer: "Das Essen nach dem Trinken reduziert nicht den Alkohol, der bereits in deinem Blutkreislauf ist. Wo Nahrung einen großen Unterschied macht, ist vor oder während des Trinkens: Nahrung im Magen – besonders Proteine und Fette – verlangsamt die gastrale Aufnahme und kann deinen Spitzen-BAK um bis zu 50 % senken. Sobald Alkohol aufgenommen wurde, kann nur der hepatische Stoffwechsel ihn abbauen.",
+    answer: "Das Essen nach dem Trinken reduziert nicht den Alkohol, der bereits in deinem Blutkreislauf ist. Wo Nahrung einen großen Unterschied macht, ist vor oder während des Trinkens: Nahrung im Magen - besonders Proteine und Fette - verlangsamt die gastrale Aufnahme und kann deinen Spitzen-BAK um bis zu 50 % senken. Sobald Alkohol aufgenommen wurde, kann nur der hepatische Stoffwechsel ihn abbauen.",
   },
   {
     question: "Wie lange dauert es, bis man 0,0 BAK erreicht?",
-    answer: "Das hängt von deinem Ausgangs-BAK ab. Teile deinen geschätzten BAK (in g/L) durch 0,15, um die ungefähre Dauer in Stunden zu erhalten. Ein BAK von 1,5 g/L dauert etwa 10 Stunden. Die Leber stoppt nie: Sie baut Alkohol sogar ab, während du schläfst. Aber beachte – Alkohol kann noch in deinem Blut vorhanden sein, auch wenn du dich vollständig erholt fühlst.",
+    answer: "Das hängt von deinem Ausgangs-BAK ab. Teile deinen geschätzten BAK (in g/L) durch 0,15, um die ungefähre Dauer in Stunden zu erhalten. Ein BAK von 1,5 g/L dauert etwa 10 Stunden. Die Leber stoppt nie: Sie baut Alkohol sogar ab, während du schläfst. Aber beachte - Alkohol kann noch in deinem Blut vorhanden sein, auch wenn du dich vollständig erholt fühlst.",
   },
   {
     question: "Ist dieser Rechner 100 % zuverlässig für die Entscheidung, Auto zu fahren?",
-    answer: "Nein. Dieses Tool ist eine theoretische Schätzung basierend auf der Widmark-Formel. Faktoren wie Nahrungsaufnahme, Medikamente, Müdigkeit, genetische ADH-Enzym-Varianten und Stress können deinen tatsächlichen BAK um 20–30 % in beide Richtungen verschieben. Nutze diesen Rechner niemals, um zu entscheiden, ob du fahren darfst. Wenn du getrunken hast, fahre nicht – das ist die einzige Regel, bei der es keine Ausnahmen gibt.",
+    answer: "Nein. Dieses Tool ist eine theoretische Schätzung basierend auf der Widmark-Formel. Faktoren wie Nahrungsaufnahme, Medikamente, Müdigkeit, genetische ADH-Enzym-Varianten und Stress können deinen tatsächlichen BAK um 20-30 % in beide Richtungen verschieben. Nutze diesen Rechner niemals, um zu entscheiden, ob du fahren darfst. Wenn du getrunken hast, fahre nicht - das ist die einzige Regel, bei der es keine Ausnahmen gibt.",
   },
 ];
 
@@ -84,7 +84,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Das Verständnis dafür, wie unser Körper Ethanol verarbeitet, ist für die Sicherheit und zur Linderung von Kater wesentlich. Unser <strong>Alkoholabbau-Rechner</strong> nutzt die anerkannte <strong>Widmark-Formel</strong>, um dir einen klaren Überblick über deinen Stoffwechselzustand zu geben. Alkohol wird nicht durch Schwitzen, Trinken von Wasser oder Sport abgebaut – nur Zeit und der hepatische Stoffwechsel können deinen Blutalkoholspiegel senken.'
+    html: 'Das Verständnis dafür, wie unser Körper Ethanol verarbeitet, ist für die Sicherheit und zur Linderung von Kater wesentlich. Unser <strong>Alkoholabbau-Rechner</strong> nutzt die anerkannte <strong>Widmark-Formel</strong>, um dir einen klaren Überblick über deinen Stoffwechselzustand zu geben. Alkohol wird nicht durch Schwitzen, Trinken von Wasser oder Sport abgebaut - nur Zeit und der hepatische Stoffwechsel können deinen Blutalkoholspiegel senken.'
   },
   {
     type: 'diagnostic',
@@ -101,7 +101,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Die Leber baut 95 % des Alkohols durch Alkoholdehydrogenase (ADH) ab. Dieser Prozess findet mit einer konstanten Rate statt (Kinetik nullter Ordnung), was bedeutet, dass er nicht durch Sport oder Kaffee beschleunigt werden kann. Die restlichen 5 % werden über Atem, Urin und Schweiß ausgeschieden – die Grundlage für Atemalkoholtests im Straßenverkehr.'
+    html: 'Die Leber baut 95 % des Alkohols durch Alkoholdehydrogenase (ADH) ab. Dieser Prozess findet mit einer konstanten Rate statt (Kinetik nullter Ordnung), was bedeutet, dass er nicht durch Sport oder Kaffee beschleunigt werden kann. Die restlichen 5 % werden über Atem, Urin und Schweiß ausgeschieden - die Grundlage für Atemalkoholtests im Straßenverkehr.'
   },
   {
     type: 'stats',
@@ -130,7 +130,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Sicherheit geht vor: Kenne dein Limit',
-    html: 'Ein BAK von 0,05 % beeinträchtigt nachweislich das Urteilsvermögen, die Nachverfolgung und die Reaktionszeit. Die meisten Länder setzen die Grenzwerte für das Fahren zwischen 0,05 % und 0,08 %. Allerdings unterscheidet sich die individuelle Empfindlichkeit erheblich – Alter, Medikamente, Müdigkeit und genetische ADH-Enzym-Varianten beeinflussen alle, wie Alkohol dich persönlich beeinflusst. Im Zweifelsfall fahre nicht.'
+    html: 'Ein BAK von 0,05 % beeinträchtigt nachweislich das Urteilsvermögen, die Nachverfolgung und die Reaktionszeit. Die meisten Länder setzen die Grenzwerte für das Fahren zwischen 0,05 % und 0,08 %. Allerdings unterscheidet sich die individuelle Empfindlichkeit erheblich - Alter, Medikamente, Müdigkeit und genetische ADH-Enzym-Varianten beeinflussen alle, wie Alkohol dich persönlich beeinflusst. Im Zweifelsfall fahre nicht.'
   },
   {
     type: 'title',
@@ -139,11 +139,11 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Das Essen vor oder während des Trinkens ändert die Alkoholaufnahme-Kinetik dramatisch. Nahrung im Magen – besonders Proteine und Fette – verlangsamt die Magenentleerung und reduziert die Spitzengeschwindigkeit, mit der Ethanol in den Blutkreislauf gelangt. Eine Person, die auf leeren Magen trinkt, kann einen Spitzen-BAK erreichen, der 50 % höher ist als die gleiche Person, die vor dem Konsum der gleichen Menge eine vollständige Mahlzeit zu sich genommen hat. Dies ist eine der stärksten Variablen, die die Widmark-Formel nicht vollständig erfasst, weshalb unser Rechner einen Disclaimer über theoretische Schätzung enthält.'
+    html: 'Das Essen vor oder während des Trinkens ändert die Alkoholaufnahme-Kinetik dramatisch. Nahrung im Magen - besonders Proteine und Fette - verlangsamt die Magenentleerung und reduziert die Spitzengeschwindigkeit, mit der Ethanol in den Blutkreislauf gelangt. Eine Person, die auf leeren Magen trinkt, kann einen Spitzen-BAK erreichen, der 50 % höher ist als die gleiche Person, die vor dem Konsum der gleichen Menge eine vollständige Mahlzeit zu sich genommen hat. Dies ist eine der stärksten Variablen, die die Widmark-Formel nicht vollständig erfasst, weshalb unser Rechner einen Disclaimer über theoretische Schätzung enthält.'
   },
   {
     type: 'paragraph',
-    html: 'Die Art des alkoholischen Getränks spielt auch eine Rolle, die über nur ABV und Volumen hinausgeht. Kohlensäurehaltige Mixer (Tonic Water, Schaumwein) beschleunigen die Magenentleerung und drücken Alkohol schneller in den Blutkreislauf. Getränke mit sehr hohem ABV (>25 %) können vorübergehend die Magenmotilität hemmen und die Aufnahme verlangsamen. Süße Getränke können die wahrgenommene Alkoholwirkung maskieren, was dazu führt, dass Menschen schneller trinken, als sie es merken. Diese Nuancen sind der Grund, warum der tatsächliche BAK von Modellvorhersagen um 20–30 % in beide Richtungen abweichen kann.'
+    html: 'Die Art des alkoholischen Getränks spielt auch eine Rolle, die über nur ABV und Volumen hinausgeht. Kohlensäurehaltige Mixer (Tonic Water, Schaumwein) beschleunigen die Magenentleerung und drücken Alkohol schneller in den Blutkreislauf. Getränke mit sehr hohem ABV (>25 %) können vorübergehend die Magenmotilität hemmen und die Aufnahme verlangsamen. Süße Getränke können die wahrgenommene Alkoholwirkung maskieren, was dazu führt, dass Menschen schneller trinken, als sie es merken. Diese Nuancen sind der Grund, warum der tatsächliche BAK von Modellvorhersagen um 20-30 % in beide Richtungen abweichen kann.'
   }
 ];
 

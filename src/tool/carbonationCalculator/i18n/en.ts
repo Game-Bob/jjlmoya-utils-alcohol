@@ -34,7 +34,7 @@ const faqTitle = 'Frequently Asked Questions';
 const faq: CarbonationLocaleContent['faq'] = [
   {
     question: "Why does temperature matter for carbonation?",
-    answer: "The residual CO2 in your beer depends on the highest temperature reached after fermentation: cold liquid holds more dissolved gas than warm liquid. If you enter a temperature lower than the actual one, the calculator assumes more residual CO2 than is really there and gives you less sugar than needed. Enter it too high and the opposite happens — you add more sugar than necessary and push your batch into bottle bomb territory, where excess pressure causes bottles to rupture or caps to blow off violently.",
+    answer: "The residual CO2 in your beer depends on the highest temperature reached after fermentation: cold liquid holds more dissolved gas than warm liquid. If you enter a temperature lower than the actual one, the calculator assumes more residual CO2 than is really there and gives you less sugar than needed. Enter it too high and the opposite happens - you add more sugar than necessary and push your batch into bottle bomb territory, where excess pressure causes bottles to rupture or caps to blow off violently.",
   },
   {
     question: "What sugar is best for priming?",
@@ -42,7 +42,7 @@ const faq: CarbonationLocaleContent['faq'] = [
   },
   {
     question: "What happens if I add too much priming sugar?",
-    answer: "Over-priming generates excess CO2 pressure inside the bottle. Standard glass bottles fail at approximately 3.5-4.0 volumes of CO2. Beyond this point, the bottle can rupture or the cap can blow off violently. This is why precision matters — even 5 extra grams per liter can push a batch into the danger zone.",
+    answer: "Over-priming generates excess CO2 pressure inside the bottle. Standard glass bottles fail at approximately 3.5-4.0 volumes of CO2. Beyond this point, the bottle can rupture or the cap can blow off violently. This is why precision matters - even 5 extra grams per liter can push a batch into the danger zone.",
   },
   {
     question: "How long does beer take to carbonate after bottling?",
@@ -74,7 +74,7 @@ const seo: CarbonationLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Master the art of priming and transform your homebrew from a flat experiment into a professional effervescent experience. Priming involves adding a precise amount of sugar so residual yeast in the bottle generates natural CO2 during a secondary fermentation. Too little sugar yields flat beer; too much creates dangerous pressure that can shatter bottles. The difference between the two is a few grams — which is why this calculator exists.'
+    html: 'Master the art of priming and transform your homebrew from a flat experiment into a professional effervescent experience. Priming involves adding a precise amount of sugar so residual yeast in the bottle generates natural CO2 during a secondary fermentation. Too little sugar yields flat beer; too much creates dangerous pressure that can shatter bottles. The difference between the two is a few grams - which is why this calculator exists.'
   },
   {
     type: 'proscons',
@@ -103,7 +103,7 @@ const seo: CarbonationLocaleContent['seo'] = [
     type: 'card',
     title: 'Which Sugar Should You Choose?',
     icon: 'mdi:corn',
-    html: '<strong>Dextrose</strong> is neutral and professional — the industry standard. <strong>Table Sugar</strong> is economical and effective (use 10% less by weight than dextrose). <strong>DME (Dry Malt Extract)</strong> is the purist\'s choice but harder to predict accurately because its fermentability varies by brand and malt composition.'
+    html: '<strong>Dextrose</strong> is neutral and professional - the industry standard. <strong>Table Sugar</strong> is economical and effective (use 10% less by weight than dextrose). <strong>DME (Dry Malt Extract)</strong> is the purist\'s choice but harder to predict accurately because its fermentability varies by brand and malt composition.'
   },
   {
     type: 'diagnostic',
@@ -134,11 +134,11 @@ const seo: CarbonationLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'At its core, carbonation is governed by <strong>Henry\'s Law</strong>: the amount of gas dissolved in a liquid is proportional to the partial pressure of that gas above the liquid. When you prime a bottle and seal it, the yeast consumes the sugar and produces CO2 in a sealed environment. As pressure builds, the gas is forced back into solution. The temperature at which this equilibrium occurs determines the final carbonation level — which is why the fermentation temperature is the most critical variable in this calculator.'
+    html: 'At its core, carbonation is governed by <strong>Henry\'s Law</strong>: the amount of gas dissolved in a liquid is proportional to the partial pressure of that gas above the liquid. When you prime a bottle and seal it, the yeast consumes the sugar and produces CO2 in a sealed environment. As pressure builds, the gas is forced back into solution. The temperature at which this equilibrium occurs determines the final carbonation level - which is why the fermentation temperature is the most critical variable in this calculator.'
   },
   {
     type: 'paragraph',
-    html: 'The residual CO2 in your beer before priming is not zero. Every beer holds dissolved CO2 from the fermentation process, and the amount retained depends on the highest temperature the beer reached. A beer fermented at 22°C holds significantly less residual CO2 than one that fermented at 16°C, even if both are now chilled. Failing to account for this residual leads to systematic over-carbonation — one of the most common mistakes among beginning homebrewers.'
+    html: 'The residual CO2 in your beer before priming is not zero. Every beer holds dissolved CO2 from the fermentation process, and the amount retained depends on the highest temperature the beer reached. A beer fermented at 22°C holds significantly less residual CO2 than one that fermented at 16°C, even if both are now chilled. Failing to account for this residual leads to systematic over-carbonation - one of the most common mistakes among beginning homebrewers.'
   }
 ];
 

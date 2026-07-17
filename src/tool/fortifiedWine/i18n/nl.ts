@@ -47,11 +47,11 @@ const faq: FortifiedWineBuilderLocaleContent['faq'] = [
   },
   {
     question: 'Wat is het typische alcoholpercentage van vermout?',
-    answer: 'Traditionele vermout heeft een alcoholpercentage van 15 % tot 18 %. Droge (Franse stijl) vermout zit doorgaans aan de lagere kant (15–16 %), terwijl zoete (Italiaanse stijl) vermout vaak 16–18 % bereikt. Rosé vermout zit er tussenin.',
+    answer: 'Traditionele vermout heeft een alcoholpercentage van 15 % tot 18 %. Droge (Franse stijl) vermout zit doorgaans aan de lagere kant (15-16 %), terwijl zoete (Italiaanse stijl) vermout vaak 16-18 % bereikt. Rosé vermout zit er tussenin.',
   },
   {
     question: 'Welke basiswijn moet ik gebruiken voor vermout?',
-    answer: 'Traditioneel werkt een neutrale, droge witte wijn van 10–12 % alcohol het beste. De wijn biedt de basis, maar omdat hij gearomatiseerd wordt met kruiden en botanicals, heb je geen dure wijn nodig — een schone, zure basis is ideaal.',
+    answer: 'Traditioneel werkt een neutrale, droge witte wijn van 10-12 % alcohol het beste. De wijn biedt de basis, maar omdat hij gearomatiseerd wordt met kruiden en botanicals, heb je geen dure wijn nodig - een schone, zure basis is ideaal.',
   },
   {
     question: 'Kan ik neutrale alcohol gebruiken in plaats van brandy?',
@@ -59,7 +59,7 @@ const faq: FortifiedWineBuilderLocaleContent['faq'] = [
   },
   {
     question: 'Hoe conserveert versterking de wijn?',
-    answer: 'Wanneer het alcoholgehalte van wijn de circa 15–16 % overschrijdt, wordt fermentatie door gist geremd — gist kan niet overleven in omgevingen met een hoog alcoholgehalte. Daarom hebben versterkte wijnen een veel langere houdbaarheid dan gewone wijn. De alcohol werkt als natuurlijk conserveermiddel tegen bederf door gist en bacteriën.',
+    answer: 'Wanneer het alcoholgehalte van wijn de circa 15-16 % overschrijdt, wordt fermentatie door gist geremd - gist kan niet overleven in omgevingen met een hoog alcoholgehalte. Daarom hebben versterkte wijnen een veel langere houdbaarheid dan gewone wijn. De alcohol werkt als natuurlijk conserveermiddel tegen bederf door gist en bacteriën.',
   },
 ];
 
@@ -73,9 +73,9 @@ const howTo: FortifiedWineBuilderLocaleContent['howTo'] = [
 
 const seo: FortifiedWineBuilderLocaleContent['seo'] = [
   { type: 'title', text: 'Het Pearson Vierkant: Eeuwenoude wiskunde, perfecte wijn', level: 2 },
-  { type: 'paragraph', html: 'Het <strong>Pearson Vierkant</strong> is een van de oudste en meest elegante hulpmiddelen in de wijnwiskunde. Ontwikkeld in de 19e eeuw stelt het elke wijnmaker — professioneel of amateur — in staat mengverhoudingen te berekenen met niets meer dan aftrekken. Ons hulpmiddel digitaliseert deze visuele methode en voegt realtime feedback toe, zodat je minder tijd besteedt aan berekenen en meer aan het maken.' },
-  { type: 'stats', items: [{ label: 'Vermout', value: '15–18 % vol.', icon: 'mdi:glass-cocktail' }, { label: 'Port', value: '18–20 % vol.', icon: 'mdi:bottle-wine' }, { label: 'Sherry', value: '15–17 % vol.', icon: 'mdi:cup-water' }], columns: 3 },
-  { type: 'card', title: 'Waarom versterken op 18 %?', icon: 'mdi:shield-check', html: 'Boven circa 15 % vol. wordt <em>Saccharomyces cerevisiae</em> — de primaire wijngist — geremd. Tegen de tijd dat je 18 % bereikt, is de fermentatie volledig gestopt. Daarom behoudt Port restsuiker: gedestilleerd wordt halverwege de fermentatie toegevoegd, waardoor de gist wordt gedood voordat alle suiker is omgezet.' },
+  { type: 'paragraph', html: 'Het <strong>Pearson Vierkant</strong> is een van de oudste en meest elegante hulpmiddelen in de wijnwiskunde. Ontwikkeld in de 19e eeuw stelt het elke wijnmaker - professioneel of amateur - in staat mengverhoudingen te berekenen met niets meer dan aftrekken. Ons hulpmiddel digitaliseert deze visuele methode en voegt realtime feedback toe, zodat je minder tijd besteedt aan berekenen en meer aan het maken.' },
+  { type: 'stats', items: [{ label: 'Vermout', value: '15-18 % vol.', icon: 'mdi:glass-cocktail' }, { label: 'Port', value: '18-20 % vol.', icon: 'mdi:bottle-wine' }, { label: 'Sherry', value: '15-17 % vol.', icon: 'mdi:cup-water' }], columns: 3 },
+  { type: 'card', title: 'Waarom versterken op 18 %?', icon: 'mdi:shield-check', html: 'Boven circa 15 % vol. wordt <em>Saccharomyces cerevisiae</em> - de primaire wijngist - geremd. Tegen de tijd dat je 18 % bereikt, is de fermentatie volledig gestopt. Daarom behoudt Port restsuiker: gedestilleerd wordt halverwege de fermentatie toegevoegd, waardoor de gist wordt gedood voordat alle suiker is omgezet.' },
   { type: 'tip', title: 'Pro Tip: Meten bij 20 °C', html: 'Alcoholdichtheid verandert met temperatuur. Officiële alcoholmetingen zijn gekalibreerd op 20 °C. Als je gedestilleerde of wijn aanzienlijk warmer of kouder is, pas dan een correctiefactor toe: ongeveer +0,04 % vol. per °C onder 20 °C en −0,04 % per °C erboven.' },
   { type: 'title', text: 'De Ambachtelijke Vermout Renaissance', level: 2 },
   { type: 'paragraph', html: 'Zuid-Europa beleeft een ambachtelijke vermout renaissance. Barcelona, Valencia en San Sebastián hebben <em>la hora del vermut</em> heroverd als culturele instelling, en kleine producenten in Spanje, Italië en Frankrijk bottelen opmerkelijke expressies. Dit heeft een nieuwe generatie thuisproducenten gecreëerd die technische hulpmiddelen willen die passen bij hun ambities.' },

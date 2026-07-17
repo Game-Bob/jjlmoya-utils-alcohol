@@ -44,19 +44,19 @@ const faq: AlcoholClearanceLocaleContent['faq'] = [
   },
   {
     question: "Bisakah kopi, air, atau olahraga mempercepat eliminasi alkohol?",
-    answer: "Tidak. Hati mengeliminasi alkohol dengan laju konstan sekitar 0,15 g/L per jam (kinetika orde nol). Kopi dapat menutupi kelelahan, air membantu dehidrasi, dan olahraga meningkatkan kesejahteraan umum — tetapi tidak satupun dari mereka mengurangi BAC aktual Anda. Hanya waktu yang mengeliminasi alkohol dari darah.",
+    answer: "Tidak. Hati mengeliminasi alkohol dengan laju konstan sekitar 0,15 g/L per jam (kinetika orde nol). Kopi dapat menutupi kelelahan, air membantu dehidrasi, dan olahraga meningkatkan kesejahteraan umum - tetapi tidak satupun dari mereka mengurangi BAC aktual Anda. Hanya waktu yang mengeliminasi alkohol dari darah.",
   },
   {
     question: "Apakah makan setelah minum membantu menurunkan BAC?",
-    answer: "Makan setelah minum tidak mengurangi alkohol yang sudah ada di aliran darah Anda. Tempat makanan membuat perbedaan besar adalah sebelum atau selama minum: makanan di perut — terutama protein dan lemak — memperlambat penyerapan gastrik dan dapat mengurangi BAC puncak Anda hingga 50%. Setelah alkohol diserap, hanya metabolisme hepatik yang dapat mengeliminasinya.",
+    answer: "Makan setelah minum tidak mengurangi alkohol yang sudah ada di aliran darah Anda. Tempat makanan membuat perbedaan besar adalah sebelum atau selama minum: makanan di perut - terutama protein dan lemak - memperlambat penyerapan gastrik dan dapat mengurangi BAC puncak Anda hingga 50%. Setelah alkohol diserap, hanya metabolisme hepatik yang dapat mengeliminasinya.",
   },
   {
     question: "Berapa lama waktu untuk mencapai BAC 0,0?",
-    answer: "Tergantung pada BAC awal Anda. Bagi BAC estimasi Anda (dalam g/L) dengan 0,15 untuk mendapatkan jam perkiraan. Misalnya, BAC 1,5 g/L membutuhkan sekitar 10 jam. Hati tidak pernah berhenti: ia memproses alkohol bahkan saat Anda tidur. Tetapi perhatikan — alkohol masih bisa ada dalam darah Anda bahkan ketika Anda merasa sepenuhnya pulih.",
+    answer: "Tergantung pada BAC awal Anda. Bagi BAC estimasi Anda (dalam g/L) dengan 0,15 untuk mendapatkan jam perkiraan. Misalnya, BAC 1,5 g/L membutuhkan sekitar 10 jam. Hati tidak pernah berhenti: ia memproses alkohol bahkan saat Anda tidur. Tetapi perhatikan - alkohol masih bisa ada dalam darah Anda bahkan ketika Anda merasa sepenuhnya pulih.",
   },
   {
     question: "Apakah kalkulator ini 100% andal untuk menentukan apakah harus berkendara?",
-    answer: "Tidak. Alat ini adalah estimasi teoritis berdasarkan rumus Widmark. Faktor-faktor seperti asupan makanan, obat-obatan, kelelahan, varian enzim ADH genetik, dan stres dapat menggeser BAC aktual Anda sebesar 20–30% di kedua arah. Jangan pernah gunakan kalkulator ini untuk menentukan apakah harus berkendara. Jika Anda telah minum, jangan berkendara — itulah satu-satunya aturan tanpa toleransi kesalahan.",
+    answer: "Tidak. Alat ini adalah estimasi teoritis berdasarkan rumus Widmark. Faktor-faktor seperti asupan makanan, obat-obatan, kelelahan, varian enzim ADH genetik, dan stres dapat menggeser BAC aktual Anda sebesar 20-30% di kedua arah. Jangan pernah gunakan kalkulator ini untuk menentukan apakah harus berkendara. Jika Anda telah minum, jangan berkendara - itulah satu-satunya aturan tanpa toleransi kesalahan.",
   },
 ];
 
@@ -84,7 +84,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Memahami bagaimana tubuh kita memproses etanol sangat penting untuk keselamatan dan untuk mengurangi mabuk. <strong>Kalkulator eliminasi alkohol</strong> kami menggunakan <strong>Rumus Widmark</strong> yang diakui untuk memberikan Anda peta jelas tentang keadaan metabolik Anda. Alkohol tidak dieliminasi dengan berkeringat, minum air, atau berolahraga — hanya waktu dan metabolisme hepatik yang dapat mengurangi konsentrasi alkohol dalam darah Anda.'
+    html: 'Memahami bagaimana tubuh kita memproses etanol sangat penting untuk keselamatan dan untuk mengurangi mabuk. <strong>Kalkulator eliminasi alkohol</strong> kami menggunakan <strong>Rumus Widmark</strong> yang diakui untuk memberikan Anda peta jelas tentang keadaan metabolik Anda. Alkohol tidak dieliminasi dengan berkeringat, minum air, atau berolahraga - hanya waktu dan metabolisme hepatik yang dapat mengurangi konsentrasi alkohol dalam darah Anda.'
   },
   {
     type: 'diagnostic',
@@ -101,7 +101,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Hati menguraikan 95% alkohol melalui Alkohol Dehidrogenase (ADH). Proses ini terjadi dengan laju konstan (kinetika orde nol), yang berarti tidak dapat dipercepat dengan olahraga atau kopi. 5% sisanya dieliminasi melalui napas, urin, dan keringat — yang merupakan dasar untuk pengujian napas dalam penegakan lalu lintas.'
+    html: 'Hati menguraikan 95% alkohol melalui Alkohol Dehidrogenase (ADH). Proses ini terjadi dengan laju konstan (kinetika orde nol), yang berarti tidak dapat dipercepat dengan olahraga atau kopi. 5% sisanya dieliminasi melalui napas, urin, dan keringat - yang merupakan dasar untuk pengujian napas dalam penegakan lalu lintas.'
   },
   {
     type: 'stats',
@@ -130,7 +130,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Keselamatan Pertama: Ketahui Batas Anda',
-    html: 'BAC 0,05% secara terukur mengganggu penilaian, pelacakan, dan waktu reaksi. Kebanyakan negara menetapkan batas berkendara hukum antara 0,05% dan 0,08%. Namun, sensitivitas individu bervariasi secara signifikan — usia, obat-obatan, kelelahan, dan varian enzim ADH genetik semuanya mengubah bagaimana alkohol mempengaruhi Anda secara pribadi. Jika ragu, jangan berkendara.'
+    html: 'BAC 0,05% secara terukur mengganggu penilaian, pelacakan, dan waktu reaksi. Kebanyakan negara menetapkan batas berkendara hukum antara 0,05% dan 0,08%. Namun, sensitivitas individu bervariasi secara signifikan - usia, obat-obatan, kelelahan, dan varian enzim ADH genetik semuanya mengubah bagaimana alkohol mempengaruhi Anda secara pribadi. Jika ragu, jangan berkendara.'
   },
   {
     type: 'title',
@@ -139,7 +139,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Makan sebelum atau selama minum secara dramatis mengubah kinetika penyerapan alkohol. Makanan di perut — terutama protein dan lemak — memperlambat pengosongan gastrik, mengurangi laju puncak di mana etanol memasuki aliran darah. Seseorang yang minum dengan perut kosong dapat mencapai BAC puncak 50% lebih tinggi daripada orang yang sama yang makan makanan lengkap sebelum minum jumlah yang sama. Ini adalah salah satu variabel paling kuat yang tidak dapat sepenuhnya ditangkap oleh rumus Widmark, itulah sebabnya kalkulator kami menyertakan penafian tentang estimasi teoritis.'
+    html: 'Makan sebelum atau selama minum secara dramatis mengubah kinetika penyerapan alkohol. Makanan di perut - terutama protein dan lemak - memperlambat pengosongan gastrik, mengurangi laju puncak di mana etanol memasuki aliran darah. Seseorang yang minum dengan perut kosong dapat mencapai BAC puncak 50% lebih tinggi daripada orang yang sama yang makan makanan lengkap sebelum minum jumlah yang sama. Ini adalah salah satu variabel paling kuat yang tidak dapat sepenuhnya ditangkap oleh rumus Widmark, itulah sebabnya kalkulator kami menyertakan penafian tentang estimasi teoritis.'
   },
   {
     type: 'paragraph',

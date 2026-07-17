@@ -4,7 +4,7 @@ import type { BeerCoolerUI, BeerCoolerLocaleContent } from '../index';
 
 const slug = 'calculadora-enfriamiento-cerveza';
 const title = 'Calculadora de Enfriamiento de Cerveza con la Ley de Newton';
-const description = 'Calcula con termodinámica real —la Ley de Enfriamiento de Newton— cuánto tarda tu cerveza en alcanzar la temperatura perfecta en nevera o congelador.';
+const description = 'Calcula con termodinámica real -la Ley de Enfriamiento de Newton- cuánto tarda tu cerveza en alcanzar la temperatura perfecta en nevera o congelador.';
 
 const ui: BeerCoolerUI = {
   step1Title: '¿Qué vas a enfriar?',
@@ -43,7 +43,7 @@ const faq: BeerCoolerLocaleContent['faq'] = [
   },
   {
     question: "¿Cuál es la temperatura de servicio ideal según el estilo de cerveza?",
-    answer: "Depende del estilo. Las Lagers y Pilsners están mejor entre 3°C y 7°C. Las IPAs y Pale Ales brillan entre 7°C y 10°C. Las Stouts, Porters y ales complejas deben servirse más cálidas, entre 12°C y 14°C, para que sus compuestos aromáticos —café, chocolate, frutos secos— se expresen con plenitud.",
+    answer: "Depende del estilo. Las Lagers y Pilsners están mejor entre 3°C y 7°C. Las IPAs y Pale Ales brillan entre 7°C y 10°C. Las Stouts, Porters y ales complejas deben servirse más cálidas, entre 12°C y 14°C, para que sus compuestos aromáticos -café, chocolate, frutos secos- se expresen con plenitud.",
   },
   {
     question: "¿Puede explotar mi cerveza si la dejo en el congelador?",
@@ -51,7 +51,7 @@ const faq: BeerCoolerLocaleContent['faq'] = [
   },
   {
     question: "¿La cerveza se 'quema' si se enfría muy rápido?",
-    answer: "No. El mito del 'choque térmico' que arruina la cerveza es falso. Lo que sí puede afectarla negativamente es congelarla y descongelarla repetidamente —rompe proteínas y enturbia el líquido— o exponerla a luz UV directa. Un enfriamiento rápido en congelador o agua con hielo no daña el sabor.",
+    answer: "No. El mito del 'choque térmico' que arruina la cerveza es falso. Lo que sí puede afectarla negativamente es congelarla y descongelarla repetidamente -rompe proteínas y enturbia el líquido- o exponerla a luz UV directa. Un enfriamiento rápido en congelador o agua con hielo no daña el sabor.",
   },
 ];
 
@@ -144,7 +144,7 @@ const seo: BeerCoolerLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'La constante de enfriamiento k en la ecuación de Newton no es un valor universal fijo — es una propiedad empírica de cada envase y medio específico. Una delgada lata de aluminio en agua con hielo tiene un k radicalmente diferente al de una gruesa botella de vidrio en el aire quieto de un frigorífico. Nuestra calculadora utiliza valores medidos y calibrados con experimentos reales para cada tipo de envase, dándote predicciones precisas al minuto en escenarios domésticos típicos.'
+    html: 'La constante de enfriamiento k en la ecuación de Newton no es un valor universal fijo - es una propiedad empírica de cada envase y medio específico. Una delgada lata de aluminio en agua con hielo tiene un k radicalmente diferente al de una gruesa botella de vidrio en el aire quieto de un frigorífico. Nuestra calculadora utiliza valores medidos y calibrados con experimentos reales para cada tipo de envase, dándote predicciones precisas al minuto en escenarios domésticos típicos.'
   },
   {
     type: 'paragraph',

@@ -3,7 +3,7 @@ import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dt
 import type { AlcoholClearanceUI, AlcoholClearanceLocaleContent } from '../index';
 
 const slug = 'calculateur-elimination-alcohol';
-const title = 'Calculateur de Gueule de Bois et Alcoolémie : Prédicteur de Récupération';
+const title = 'Calculateur de Gueule de Bois et Alcoolémie: Prédicteur de Récupération';
 const description = 'Calculez votre alcoolémie (BAC) et le temps jusqu\'à 0,0 selon la formule de Widmark. Planifiez votre hydratation pré-sommeil et sachez quand vous serez complètement rétabli.';
 
 const ui: AlcoholClearanceUI = {
@@ -44,19 +44,19 @@ const faq: AlcoholClearanceLocaleContent['faq'] = [
   },
   {
     question: "Le café, l'eau ou le sport peuvent-ils accélérer l'élimination de l'alcool ?",
-    answer: "Non. Le foie élimine l'alcool à un taux constant d'environ 0,15 g/L par heure (cinétique d'ordre zéro). Le café peut masquer la fatigue, l'eau aide contre la déshydratation et le sport améliore le bien-être général — mais aucun ne réduit votre alcoolémie réelle. Seul le temps élimine l'alcool du sang.",
+    answer: "Non. Le foie élimine l'alcool à un taux constant d'environ 0,15 g/L par heure (cinétique d'ordre zéro). Le café peut masquer la fatigue, l'eau aide contre la déshydratation et le sport améliore le bien-être général - mais aucun ne réduit votre alcoolémie réelle. Seul le temps élimine l'alcool du sang.",
   },
   {
     question: "Manger après avoir bu aide-t-il à faire baisser l'alcoolémie ?",
-    answer: "Manger après avoir bu ne réduit pas l'alcool déjà présent dans le sang. Là où la nourriture fait une énorme différence, c'est avant ou pendant la consommation : les aliments dans l'estomac — notamment les protéines et les graisses — ralentissent l'absorption gastrique et peuvent réduire le BAC maximum atteint jusqu'à 50 %. Une fois l'alcool absorbé, seul le métabolisme hépatique peut l'éliminer.",
+    answer: "Manger après avoir bu ne réduit pas l'alcool déjà présent dans le sang. Là où la nourriture fait une énorme différence, c'est avant ou pendant la consommation: les aliments dans l'estomac - notamment les protéines et les graisses - ralentissent l'absorption gastrique et peuvent réduire le BAC maximum atteint jusqu'à 50 %. Une fois l'alcool absorbé, seul le métabolisme hépatique peut l'éliminer.",
   },
   {
     question: "Combien de temps faut-il pour atteindre 0,0 ?",
-    answer: "Cela dépend de votre BAC initial. Divisez votre alcoolémie estimée (en g/L) par 0,15 pour obtenir le nombre d'heures approximatif. Par exemple, un BAC de 1,5 g/L nécessite environ 10 heures. Le foie ne s'arrête jamais : il traite l'alcool même pendant le sommeil. Attention : il peut encore y avoir de l'alcool dans le sang même si vous vous sentez complètement rétabli.",
+    answer: "Cela dépend de votre BAC initial. Divisez votre alcoolémie estimée (en g/L) par 0,15 pour obtenir le nombre d'heures approximatif. Par exemple, un BAC de 1,5 g/L nécessite environ 10 heures. Le foie ne s'arrête jamais: il traite l'alcool même pendant le sommeil. Attention: il peut encore y avoir de l'alcool dans le sang même si vous vous sentez complètement rétabli.",
   },
   {
     question: "Ce calculateur est-il fiable à 100 % pour décider si je peux conduire ?",
-    answer: "Non. Cet outil est une estimation théorique basée sur la formule de Widmark. Des facteurs comme l'alimentation, les médicaments, la fatigue, les variants génétiques de l'enzyme ADH et le stress peuvent faire dévier votre alcoolémie réelle de 20 à 30 % dans les deux sens. N'utilisez jamais ce calculateur pour décider de conduire. Si vous avez bu, ne conduisez pas — c'est la seule règle sans marge d'erreur.",
+    answer: "Non. Cet outil est une estimation théorique basée sur la formule de Widmark. Des facteurs comme l'alimentation, les médicaments, la fatigue, les variants génétiques de l'enzyme ADH et le stress peuvent faire dévier votre alcoolémie réelle de 20 à 30 % dans les deux sens. N'utilisez jamais ce calculateur pour décider de conduire. Si vous avez bu, ne conduisez pas - c'est la seule règle sans marge d'erreur.",
   },
 ];
 
@@ -79,12 +79,12 @@ const howTo: AlcoholClearanceLocaleContent['howTo'] = [
 const seo: AlcoholClearanceLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Métabolisme de l\'Alcool : Science et Élimination',
+    text: 'Métabolisme de l\'Alcool: Science et Élimination',
     level: 2
   },
   {
     type: 'paragraph',
-    html: 'Comprendre comment notre corps traite l\'éthanol est essentiel pour la sécurité et pour atténuer les gueules de bois. Notre <strong>calculateur d\'élimination d\'alcool</strong> utilise la célèbre <strong>Formule de Widmark</strong> pour vous offrir une carte claire de votre état métabolique. L\'alcool ne s\'élimine pas en transpirant, en buvant de l\'eau ou en faisant de l\'exercice — seuls le temps et le métabolisme hépatique peuvent réduire votre alcoolémie.'
+    html: 'Comprendre comment notre corps traite l\'éthanol est essentiel pour la sécurité et pour atténuer les gueules de bois. Notre <strong>calculateur d\'élimination d\'alcool</strong> utilise la célèbre <strong>Formule de Widmark</strong> pour vous offrir une carte claire de votre état métabolique. L\'alcool ne s\'élimine pas en transpirant, en buvant de l\'eau ou en faisant de l\'exercice - seuls le temps et le métabolisme hépatique peuvent réduire votre alcoolémie.'
   },
   {
     type: 'diagnostic',
@@ -101,7 +101,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Le foie dégrade 95 % de l\'alcool via l\'Alcool Déshydrogénase (ADH). Ce processus se déroule à une vitesse constante (cinétique d\'ordre zéro), ce qui signifie qu\'il ne peut pas être accéléré par l\'exercice ou le café. Les 5 % restants sont éliminés par la respiration, l\'urine et la transpiration — c\'est la base des éthylotests utilisés dans le contrôle routier.'
+    html: 'Le foie dégrade 95 % de l\'alcool via l\'Alcool Déshydrogénase (ADH). Ce processus se déroule à une vitesse constante (cinétique d\'ordre zéro), ce qui signifie qu\'il ne peut pas être accéléré par l\'exercice ou le café. Les 5 % restants sont éliminés par la respiration, l\'urine et la transpiration - c\'est la base des éthylotests utilisés dans le contrôle routier.'
   },
   {
     type: 'stats',
@@ -117,8 +117,8 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
     title: 'Mythes vs Réalité',
     items: [
       { pro: 'L\'eau et les électrolytes avant de dormir réduisent la sévérité de la gueule de bois.', con: '' },
-      { pro: '', con: 'Douches froides : Elles n\'affectent pas du tout le taux d\'alcoolémie.' },
-      { pro: '', con: 'Café : Masque la somnolence mais ne restaure pas les réflexes ni les fonctions cognitives.' }
+      { pro: '', con: 'Douches froides: Elles n\'affectent pas du tout le taux d\'alcoolémie.' },
+      { pro: '', con: 'Café: Masque la somnolence mais ne restaure pas les réflexes ni les fonctions cognitives.' }
     ]
   },
   {
@@ -129,12 +129,12 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   },
   {
     type: 'tip',
-    title: 'Sécurité Avant Tout : Connaissez Votre Limite',
-    html: 'Un BAC de 0,05 % altère mesuralement le jugement, la coordination et le temps de réaction. La plupart des pays fixent la limite légale de conduite entre 0,05 % et 0,08 %. Cependant, la sensibilité individuelle varie considérablement — l\'âge, les médicaments, la fatigue et les variants génétiques de l\'enzyme ADH influencent tous la façon dont l\'alcool vous affecte personnellement. En cas de doute, ne conduisez pas.'
+    title: 'Sécurité Avant Tout: Connaissez Votre Limite',
+    html: 'Un BAC de 0,05 % altère mesuralement le jugement, la coordination et le temps de réaction. La plupart des pays fixent la limite légale de conduite entre 0,05 % et 0,08 %. Cependant, la sensibilité individuelle varie considérablement - l\'âge, les médicaments, la fatigue et les variants génétiques de l\'enzyme ADH influencent tous la façon dont l\'alcool vous affecte personnellement. En cas de doute, ne conduisez pas.'
   },
   {
     type: 'paragraph',
-    html: 'Manger avant ou pendant la consommation d\'alcool modifie considérablement la cinétique d\'absorption. La nourriture dans l\'estomac — notamment les protéines et les graisses — ralentit la vidange gastrique, réduisant le taux de pic auquel l\'éthanol entre dans le sang. Une personne qui boit à jeun peut atteindre un BAC maximal 50 % plus élevé que la même personne ayant mangé un repas complet avant de boire la même quantité. C\'est l\'une des variables les plus puissantes que la formule de Widmark ne peut pas pleinement capturer, raison pour laquelle notre calculateur inclut une clause de non-responsabilité sur l\'estimation théorique.'
+    html: 'Manger avant ou pendant la consommation d\'alcool modifie considérablement la cinétique d\'absorption. La nourriture dans l\'estomac - notamment les protéines et les graisses - ralentit la vidange gastrique, réduisant le taux de pic auquel l\'éthanol entre dans le sang. Une personne qui boit à jeun peut atteindre un BAC maximal 50 % plus élevé que la même personne ayant mangé un repas complet avant de boire la même quantité. C\'est l\'une des variables les plus puissantes que la formule de Widmark ne peut pas pleinement capturer, raison pour laquelle notre calculateur inclut une clause de non-responsabilité sur l\'estimation théorique.'
   }
 ];
 

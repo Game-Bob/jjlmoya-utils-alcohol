@@ -36,15 +36,15 @@ const faq: PartyKegLocaleContent['faq'] = [
   },
   {
     question: "Quanto gelo preciso para 100 cervejas?",
-    answer: "Você precisará de aproximadamente 15–20 quilogramas de gelo (7–10 sacos). A regra prática é 0,75 kg de gelo por litro de bebida em condições normais. No verão ou ao ar livre acima de 25°C, aumente para 1 kg por litro: o calor ambiente acelera o derretimento e você ficará sem gelo muito mais rápido do que o esperado.",
+    answer: "Você precisará de aproximadamente 15-20 quilogramas de gelo (7-10 sacos). A regra prática é 0,75 kg de gelo por litro de bebida em condições normais. No verão ou ao ar livre acima de 25°C, aumente para 1 kg por litro: o calor ambiente acelera o derretimento e você ficará sem gelo muito mais rápido do que o esperado.",
   },
   {
     question: "Qual é a diferença entre um barril padrão e um barril de festa?",
-    answer: "Um barril comercial padrão contém 50 litros, o que rende aproximadamente 200 porções (250 ml cada). Um barril de festa (mini-barril) geralmente contém 5 litros — cerca de 20 porções. Conhecer esses tamanhos ajuda você a traduzir a saída em litros da calculadora no número de recipientes para comprar.",
+    answer: "Um barril comercial padrão contém 50 litros, o que rende aproximadamente 200 porções (250 ml cada). Um barril de festa (mini-barril) geralmente contém 5 litros - cerca de 20 porções. Conhecer esses tamanhos ajuda você a traduzir a saída em litros da calculadora no número de recipientes para comprar.",
   },
   {
     question: "Por que preciso de tanto gelo se as cervejas já estão frias?",
-    answer: "Porque resfriar e manter são dois processos separados. Levar uma lata de 25°C para 4°C consome o calor latente de fusão do gelo: cerca de 334 kJ/kg. Depois de frio, o gelo continua trabalhando para neutralizar o calor ambiente. Em um dia de verão a 35°C, a transferência de calor para o refrigerador pode derreter 1 kg de gelo por litro de bebida a cada 2–3 horas. É por isso que o pré-resfriamento das bebidas antes da festa reduz o consumo total de gelo pela metade.",
+    answer: "Porque resfriar e manter são dois processos separados. Levar uma lata de 25°C para 4°C consome o calor latente de fusão do gelo: cerca de 334 kJ/kg. Depois de frio, o gelo continua trabalhando para neutralizar o calor ambiente. Em um dia de verão a 35°C, a transferência de calor para o refrigerador pode derreter 1 kg de gelo por litro de bebida a cada 2-3 horas. É por isso que o pré-resfriamento das bebidas antes da festa reduz o consumo total de gelo pela metade.",
   },
 ];
 
@@ -72,7 +72,7 @@ const seo: PartyKegLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'A pergunta de um milhão quando organizando qualquer evento: <strong>Quantos litros de cerveja devo comprar?</strong> Ficar sem é um desastre, mas comprar em excesso é uma despesa desnecessária. Esta ferramenta ajuda você a calcular a quantidade exata de álcool e, o mais importante, <strong>quantos sacos de gelo</strong> você precisa para mantê-lo gelado. Catedores profissionais e planejadores de eventos usam modelos estatísticos de consumo — e agora você também pode, gratuitamente.'
+    html: 'A pergunta de um milhão quando organizando qualquer evento: <strong>Quantos litros de cerveja devo comprar?</strong> Ficar sem é um desastre, mas comprar em excesso é uma despesa desnecessária. Esta ferramenta ajuda você a calcular a quantidade exata de álcool e, o mais importante, <strong>quantos sacos de gelo</strong> você precisa para mantê-lo gelado. Catedores profissionais e planejadores de eventos usam modelos estatísticos de consumo - e agora você também pode, gratuitamente.'
   },
   {
     type: 'title',
@@ -112,7 +112,7 @@ const seo: PartyKegLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Um barril padrão de 50L produz cerca de 200 porções. Um saco de gelo típico pesa 2 kg. Conhecendo esses números, você pode planejar o transporte e armazenamento necessários para seu evento sem surpresas de último minuto. Considere o derretimento do gelo durante o transporte — uma viagem de 30 minutos no verão pode custar um saco inteiro antes de a festa começar.'
+    html: 'Um barril padrão de 50L produz cerca de 200 porções. Um saco de gelo típico pesa 2 kg. Conhecendo esses números, você pode planejar o transporte e armazenamento necessários para seu evento sem surpresas de último minuto. Considere o derretimento do gelo durante o transporte - uma viagem de 30 minutos no verão pode custar um saco inteiro antes de a festa começar.'
   },
   {
     type: 'summary',
@@ -125,7 +125,7 @@ const seo: PartyKegLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Uma variável frequentemente negligenciada é a <strong>taxa de desistência de convidados</strong>. Na maioria das festas, 10–15% dos convidados saem mais cedo e 10% podem não beber nada. A calculadora aplica um buffer conservador para que você nunca fique sem, mas também não fica com um excedente enorme. Entender esses ajustes ajuda você a refinar a estimativa para seu grupo e contexto específico. Sempre arredonde para cima na compra, pois barris abertos geralmente não podem ser devolvidos. Um pequeno excesso é sempre preferível a ficar sem bebida no meio da festa.'
+    html: 'Uma variável frequentemente negligenciada é a <strong>taxa de desistência de convidados</strong>. Na maioria das festas, 10-15% dos convidados saem mais cedo e 10% podem não beber nada. A calculadora aplica um buffer conservador para que você nunca fique sem, mas também não fica com um excedente enorme. Entender esses ajustes ajuda você a refinar a estimativa para seu grupo e contexto específico. Sempre arredonde para cima na compra, pois barris abertos geralmente não podem ser devolvidos. Um pequeno excesso é sempre preferível a ficar sem bebida no meio da festa.'
   }
 ];
 

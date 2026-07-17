@@ -48,31 +48,31 @@ const faq: JelloShotLabLocaleContent['faq'] = [
   },
   {
     question: 'Jello shotların donmayı bırakmasından önce maksimum alkol oranı nedir?',
-    answer: 'Güvenli üst sınır, toplam sıvı hacminin yaklaşık %30–35\'inin saf içki (40% ABV\'de) olmasıdır. 96\'lık nötr alkolle bu limit toplam hacmin yaklaşık %15–18\'ine düşer. Hesaplayıcımız içkinin ABV\'sini hesaba katarak donma eşiğini asla aşmamanızı sağlar.',
+    answer: 'Güvenli üst sınır, toplam sıvı hacminin yaklaşık %30-35\'inin saf içki (40% ABV\'de) olmasıdır. 96\'lık nötr alkolle bu limit toplam hacmin yaklaşık %15-18\'ine düşer. Hesaplayıcımız içkinin ABV\'sini hesaba katarak donma eşiğini asla aşmamanızı sağlar.',
   },
   {
-    question: 'Hangi içkiyi kullandığım önemli mi — votka, rom veya tekila?',
+    question: 'Hangi içkiyi kullandığım önemli mi - votka, rom veya tekila?',
     answer: 'Önemli olan ABV\'dir, içki türü değil. 40\'lık votka ve 40\'lık rom jelatin matrisinde özdeş davranır. Ancak daha yüksek şeker içerikli içkiler (bazı romlar veya likörler gibi) jelatin ağındaki hidrojen bağları için etanolle rekabet eden şeker sayesinde dokuyu hafifçe iyileştirebilir.',
   },
   {
     question: 'Jello shotlar buzdolabında ne kadar dayanır?',
-    answer: 'Düzgün yapılmış jello shotlar, plastik streç filmle örtülü şekilde buzdolabında 3–5 gün dayanır. Yüksek alkol içeriği doğal bir koruyucu olarak işlev görür. Jelatin yumuşayacağı ve bakteriler çoğalabileceği için oda sıcaklığında 2 saatten fazla bırakmaktan kaçının.',
+    answer: 'Düzgün yapılmış jello shotlar, plastik streç filmle örtülü şekilde buzdolabında 3-5 gün dayanır. Yüksek alkol içeriği doğal bir koruyucu olarak işlev görür. Jelatin yumuşayacağı ve bakteriler çoğalabileceği için oda sıcaklığında 2 saatten fazla bırakmaktan kaçının.',
   },
   {
     question: 'Jello shotlarımı daha sert veya daha yumuşak yapabilir miyim?',
-    answer: 'Evet. Bardaklardan temizce çıkan daha sert shotlar için daha fazla jelatin (veya yarım paket fazladan) kullanın. Daha yumuşak, titrek bir doku için biraz daha az kullanın. Ağızda eriyen bir doku istiyorsanız jelatini asla agar-agar ile değiştirmeyin — agar daha sert donar ve daha yüksek sıcaklıkta erir.',
+    answer: 'Evet. Bardaklardan temizce çıkan daha sert shotlar için daha fazla jelatin (veya yarım paket fazladan) kullanın. Daha yumuşak, titrek bir doku için biraz daha az kullanın. Ağızda eriyen bir doku istiyorsanız jelatini asla agar-agar ile değiştirmeyin - agar daha sert donar ve daha yüksek sıcaklıkta erir.',
   },
   {
     question: 'Soğutmayı hızlandırmak için jello shotları dondurabilir miyim?',
-    answer: 'Hayır. Dondurma jelatin ağını bozarak çözüldüğünde sulu, granüllü bir dokuya yol açar. Her zaman en az 4 saat buzdolabında bekletin. Partiler için önceki akşam yapın — 8 saat ve üzeri en iyi dokuyu verir.',
+    answer: 'Hayır. Dondurma jelatin ağını bozarak çözüldüğünde sulu, granüllü bir dokuya yol açar. Her zaman en az 4 saat buzdolabında bekletin. Partiler için önceki akşam yapın - 8 saat ve üzeri en iyi dokuyu verir.',
   },
 ];
 
 const howTo: JelloShotLabLocaleContent['howTo'] = [
   { name: 'İçkinizi seçin', text: 'İçkinizin ABV\'sini girin ve istediğiniz shot gücünü seçin. Hesaplayıcı, jelatininizin tutabileceği maksimum içki miktarını gösterecektir.' },
   { name: 'Jelatini karıştırın', text: 'Hesaplanan miktarda kaynar suyu bir kaba dökün. Jelatin tozunu ekleyin ve tamamen erinceye kadar 2 dakika boyunca kuvvetlice karıştırın. Henüz alkol eklemeyin.' },
-  { name: 'İçkiyi ekleyin', text: 'Jelatin karışımının 5–10 dakika ılınmasını bekleyin; sıcak ama yanmaz olmalı (50 °C\'nin altında). İçkinizi ekleyin ve hava kabarcığı oluşturmamak için nazikçe karıştırın.' },
-  { name: 'Dökün ve soğutun', text: 'Plastik bardaklara, silikon kalıplara veya küçük shot bardaklarına dökün. En az 4 saat buzdolabında bekletin — bir gece ideal. Dondurmayın.' },
+  { name: 'İçkiyi ekleyin', text: 'Jelatin karışımının 5-10 dakika ılınmasını bekleyin; sıcak ama yanmaz olmalı (50 °C\'nin altında). İçkinizi ekleyin ve hava kabarcığı oluşturmamak için nazikçe karıştırın.' },
+  { name: 'Dökün ve soğutun', text: 'Plastik bardaklara, silikon kalıplara veya küçük shot bardaklarına dökün. En az 4 saat buzdolabında bekletin - bir gece ideal. Dondurmayın.' },
 ];
 
 
@@ -80,7 +80,7 @@ const seo: JelloShotLabLocaleContent['seo'] = [
   { type: 'title', text: 'Mükemmel Bir Jello Shotun Arkasındaki Kimya', level: 2 },
   {
     type: 'paragraph',
-    html: 'Jello shot, sadece içine alkol dökülen aromalı jelatin değildir — protein polimerleri, su ve etanolün hidrojen bağları için rekabet ettiği <strong>narin bir kolloidal süspansiyondur</strong>. Oranı yanlış yaparsanız tatlı sıvı birikintisi veya masadan zıplayan lastik bir disk elde edersiniz. Doğru yaparsanız, bardaktan tek temiz bir hareketle çıkan mükemmel titreyici bir shot elde edersiniz.',
+    html: 'Jello shot, sadece içine alkol dökülen aromalı jelatin değildir - protein polimerleri, su ve etanolün hidrojen bağları için rekabet ettiği <strong>narin bir kolloidal süspansiyondur</strong>. Oranı yanlış yaparsanız tatlı sıvı birikintisi veya masadan zıplayan lastik bir disk elde edersiniz. Doğru yaparsanız, bardaktan tek temiz bir hareketle çıkan mükemmel titreyici bir shot elde edersiniz.',
   },
   {
     type: 'stats',
@@ -95,13 +95,13 @@ const seo: JelloShotLabLocaleContent['seo'] = [
     type: 'card',
     title: 'Bloom Gücü Nedir?',
     icon: 'mdi:molecule',
-    html: 'Bloom, jelatinin jelleşme gücünü ölçer ve genellikle 50 ila 300 Bloom arasında değişir. Marketteki yaprak jelatin genellikle 150–200 Bloom\'dur. Daha yüksek Bloom, aynı miktarda toz ile daha sert bir jel anlamına gelir; bu da donmadan önce biraz daha fazla alkol tolere edebileceği anlamına gelir. Standart jelatin tozu paketleri (7 g), yaklaşık 240 ml sıvı için kalibre edilmiştir.',
+    html: 'Bloom, jelatinin jelleşme gücünü ölçer ve genellikle 50 ila 300 Bloom arasında değişir. Marketteki yaprak jelatin genellikle 150-200 Bloom\'dur. Daha yüksek Bloom, aynı miktarda toz ile daha sert bir jel anlamına gelir; bu da donmadan önce biraz daha fazla alkol tolere edebileceği anlamına gelir. Standart jelatin tozu paketleri (7 g), yaklaşık 240 ml sıvı için kalibre edilmiştir.',
   },
   {
     type: 'card',
     title: 'Etanol Sınırı',
     icon: 'mdi:alert-circle-outline',
-    html: 'Etanol, kolajenin amino asit zincirlerindeki hidrojen bağlanma siteleri için su ile rekabet eder. Etanol çok fazla site kapladığında protein, jelatine yapısını veren kararlı üçlü sarmala katlanamaz. Pratik sınır yaklaşık olarak <strong>1 kısım 40\'lık içki ile 1 kısım su</strong>dur — bunun ötesinde ne kadar beklerseniz bekleyin shotunuz donmaz.',
+    html: 'Etanol, kolajenin amino asit zincirlerindeki hidrojen bağlanma siteleri için su ile rekabet eder. Etanol çok fazla site kapladığında protein, jelatine yapısını veren kararlı üçlü sarmala katlanamaz. Pratik sınır yaklaşık olarak <strong>1 kısım 40\'lık içki ile 1 kısım su</strong>dur - bunun ötesinde ne kadar beklerseniz bekleyin shotunuz donmaz.',
   },
   {
     type: 'tip',
@@ -124,7 +124,7 @@ const seo: JelloShotLabLocaleContent['seo'] = [
     items: [
       'Parti organizatörleri: Satın almadan önce kaç paket ve ne kadar içkiye ihtiyacınız olduğunu tam olarak hesaplayın.',
       'Barmenler: Her seferinde tutarlı sonuçlarla büyük parti üretimine ölçeklendirin.',
-      'Ev aşçıları: En yaygın hatalardan kaçının — sıvı shotlar, lastik doku veya sıfır alkol tadı.',
+      'Ev aşçıları: En yaygın hatalardan kaçının - sıvı shotlar, lastik doku veya sıfır alkol tadı.',
     ],
   },
 ];

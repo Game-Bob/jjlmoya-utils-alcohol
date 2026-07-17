@@ -47,11 +47,11 @@ const faq: FortifiedWineBuilderLocaleContent['faq'] = [
   },
   {
     question: 'Jaka jest typowa zawartość alkoholu w wermucie?',
-    answer: 'Tradycyjny wermut ma zawartość alkoholu od 15 % do 18 %. Wytrawny wermut (styl francuski) zazwyczaj mieści się w dolnym zakresie (15–16 %), natomiast słodki wermut (styl włoski) często osiąga 16–18 %. Wermut różowy plasuje się pomiędzy nimi.',
+    answer: 'Tradycyjny wermut ma zawartość alkoholu od 15 % do 18 %. Wytrawny wermut (styl francuski) zazwyczaj mieści się w dolnym zakresie (15-16 %), natomiast słodki wermut (styl włoski) często osiąga 16-18 %. Wermut różowy plasuje się pomiędzy nimi.',
   },
   {
     question: 'Jakiego wina bazowego powinienem użyć do wermutu?',
-    answer: 'Tradycyjnie najlepiej sprawdza się neutralne, wytrawne białe wino o zawartości alkoholu 10–12 %. Wino stanowi podstawę, ale ponieważ zostanie zaramatyzowane ziołami i botanicals, nie potrzebujesz drogiego wina — idealna jest czysta, kwaśna baza.',
+    answer: 'Tradycyjnie najlepiej sprawdza się neutralne, wytrawne białe wino o zawartości alkoholu 10-12 %. Wino stanowi podstawę, ale ponieważ zostanie zaramatyzowane ziołami i botanicals, nie potrzebujesz drogiego wina - idealna jest czysta, kwaśna baza.',
   },
   {
     question: 'Czy mogę użyć neutralnego alkoholu zamiast brandy?',
@@ -59,7 +59,7 @@ const faq: FortifiedWineBuilderLocaleContent['faq'] = [
   },
   {
     question: 'Jak fortyfikacja konserwuje wino?',
-    answer: 'Gdy zawartość alkoholu w winie przekracza około 15–16 %, fermentacja przez drożdże zostaje zahamowana — drożdże nie przeżywają w środowiskach o wysokiej zawartości alkoholu. Dlatego wina fortyfikowane mają znacznie dłuższy okres przydatności do spożycia niż zwykłe wino. Alkohol działa jako naturalny środek konserwujący zarówno przeciwko drożdżom, jak i bakteriom.',
+    answer: 'Gdy zawartość alkoholu w winie przekracza około 15-16 %, fermentacja przez drożdże zostaje zahamowana - drożdże nie przeżywają w środowiskach o wysokiej zawartości alkoholu. Dlatego wina fortyfikowane mają znacznie dłuższy okres przydatności do spożycia niż zwykłe wino. Alkohol działa jako naturalny środek konserwujący zarówno przeciwko drożdżom, jak i bakteriom.',
   },
 ];
 
@@ -73,9 +73,9 @@ const howTo: FortifiedWineBuilderLocaleContent['howTo'] = [
 
 const seo: FortifiedWineBuilderLocaleContent['seo'] = [
   { type: 'title', text: 'Kwadrat Pearsona: Starożytna matematyka, doskonałe wino', level: 2 },
-  { type: 'paragraph', html: '<strong>Kwadrat Pearsona</strong> to jedno z najstarszych i najbardziej eleganckich narzędzi matematyki winiarskiej. Opracowany w XIX wieku, pozwala każdemu winiarowi — profesjonalnemu lub amatorowi — obliczać proporcje mieszania za pomocą samego odejmowania. Nasze narzędzie digitalizuje tę wizualną metodę i dodaje informacje zwrotne w czasie rzeczywistym, dzięki czemu spędzasz mniej czasu na obliczeniach, a więcej na tworzeniu.' },
-  { type: 'stats', items: [{ label: 'Wermut', value: '15–18 % obj.', icon: 'mdi:glass-cocktail' }, { label: 'Porto', value: '18–20 % obj.', icon: 'mdi:bottle-wine' }, { label: 'Sherry', value: '15–17 % obj.', icon: 'mdi:cup-water' }], columns: 3 },
-  { type: 'card', title: 'Dlaczego fortyfikować do 18 %?', icon: 'mdi:shield-check', html: 'Powyżej około 15 % obj. <em>Saccharomyces cerevisiae</em> — główne drożdże winne — zostaje zahamowane. Przy 18 % fermentacja jest całkowicie zatrzymana. Dlatego porto zachowuje cukier resztkowy: alkohol jest dodawany w trakcie fermentacji, zabijając drożdże zanim cały cukier zostanie zużyty.' },
+  { type: 'paragraph', html: '<strong>Kwadrat Pearsona</strong> to jedno z najstarszych i najbardziej eleganckich narzędzi matematyki winiarskiej. Opracowany w XIX wieku, pozwala każdemu winiarowi - profesjonalnemu lub amatorowi - obliczać proporcje mieszania za pomocą samego odejmowania. Nasze narzędzie digitalizuje tę wizualną metodę i dodaje informacje zwrotne w czasie rzeczywistym, dzięki czemu spędzasz mniej czasu na obliczeniach, a więcej na tworzeniu.' },
+  { type: 'stats', items: [{ label: 'Wermut', value: '15-18 % obj.', icon: 'mdi:glass-cocktail' }, { label: 'Porto', value: '18-20 % obj.', icon: 'mdi:bottle-wine' }, { label: 'Sherry', value: '15-17 % obj.', icon: 'mdi:cup-water' }], columns: 3 },
+  { type: 'card', title: 'Dlaczego fortyfikować do 18 %?', icon: 'mdi:shield-check', html: 'Powyżej około 15 % obj. <em>Saccharomyces cerevisiae</em> - główne drożdże winne - zostaje zahamowane. Przy 18 % fermentacja jest całkowicie zatrzymana. Dlatego porto zachowuje cukier resztkowy: alkohol jest dodawany w trakcie fermentacji, zabijając drożdże zanim cały cukier zostanie zużyty.' },
   { type: 'tip', title: 'Wskazówka Pro: Mierz przy 20 °C', html: 'Gęstość alkoholu zmienia się z temperaturą. Oficjalne pomiary zawartości alkoholu są skalibrowane przy 20 °C. Jeśli Twoja destylata lub wino jest znacznie cieplejsze lub chłodniejsze, zastosuj współczynnik korekcyjny: około +0,04 % obj. na °C poniżej 20 °C i −0,04 % na °C powyżej.' },
   { type: 'title', text: 'Renesans Rzemieślniczego Wermutu', level: 2 },
   { type: 'paragraph', html: 'Południowa Europa przeżywa renesans rzemieślniczego wermutu. Barcelona, Walencja i San Sebastián odzyskały <em>la hora del vermut</em> jako instytucję kulturalną, a małe wytwórnie w Hiszpanii, Włoszech i Francji butelkują niezwykłe wyroby. Stworzyło to nowe pokolenie domowych producentów, którzy chcą narzędzi technicznych odpowiadających ich ambicjom.' },

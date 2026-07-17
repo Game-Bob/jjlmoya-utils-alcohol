@@ -34,7 +34,7 @@ const faqTitle = 'Najczęściej Zadawane Pytania';
 const faq: CarbonationLocaleContent['faq'] = [
   {
     question: "Dlaczego temperatura jest ważna dla karbonatacji?",
-    answer: "Pozostały CO2 w twoim piwie zależy od najwyższej temperatury osiągniętej po fermentacji: zimna ciecz retencjonuje więcej rozpuszczonego gazu niż ciepła ciecz. Jeśli wpiszesz temperaturę niższą niż rzeczywista, kalkulator założy więcej resztkowego CO2 niż tam jest naprawdę i da ci mniej cukru niż potrzeba. Jeśli wpiszesz zbyt wysoko, dzieje się odwrotnie — dodajesz więcej cukru niż trzeba i wpychasz swoją partię w strefę niebezpieczną dla wybuchu butelek, gdzie nadmierne ciśnienie powoduje pęknięcie butelek lub gwałtowne rozszchnięcie się czapek.",
+    answer: "Pozostały CO2 w twoim piwie zależy od najwyższej temperatury osiągniętej po fermentacji: zimna ciecz retencjonuje więcej rozpuszczonego gazu niż ciepła ciecz. Jeśli wpiszesz temperaturę niższą niż rzeczywista, kalkulator założy więcej resztkowego CO2 niż tam jest naprawdę i da ci mniej cukru niż potrzeba. Jeśli wpiszesz zbyt wysoko, dzieje się odwrotnie - dodajesz więcej cukru niż trzeba i wpychasz swoją partię w strefę niebezpieczną dla wybuchu butelek, gdzie nadmierne ciśnienie powoduje pęknięcie butelek lub gwałtowne rozszchnięcie się czapek.",
   },
   {
     question: "Jaki cukier jest najlepszy do prymowania?",
@@ -42,7 +42,7 @@ const faq: CarbonationLocaleContent['faq'] = [
   },
   {
     question: "Co się stanie, jeśli dodam zbyt dużo cukru prymacyjnego?",
-    answer: "Przeprymowanie generuje nadmierny CO2 w butelce. Standardowe butelki szklane zawodzą przy około 3,5-4,0 objętościach CO2. Poza tym punktem butelka może pęknąć lub czapka może gwałtownie odleć. Dlatego dokładność ma znaczenie — nawet 5 dodatkowych gramów na litr może popchnąć partię w strefę niebezpieczną.",
+    answer: "Przeprymowanie generuje nadmierny CO2 w butelce. Standardowe butelki szklane zawodzą przy około 3,5-4,0 objętościach CO2. Poza tym punktem butelka może pęknąć lub czapka może gwałtownie odleć. Dlatego dokładność ma znaczenie - nawet 5 dodatkowych gramów na litr może popchnąć partię w strefę niebezpieczną.",
   },
   {
     question: "Jak długo trwa karbonatacja piwa po butelkowaniu?",
@@ -74,7 +74,7 @@ const seo: CarbonationLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Opanuj sztukę prymowania i zmień domowe piwo z płaskiego eksperymentu na profesjonalne, musujące doświadczenie. Prymowanie polega na dodaniu dokładnej ilości cukru, aby pozostały drożdż w butelce wytwarzał naturalny CO2 podczas drugorzędnej fermentacji. Zbyt mało cukru daje płaskie piwo; zbyt dużo powoduje niebezpieczne ciśnienie, które może zniszczyć butelki. Różnica między nimi to zaledwie kilka gramów — dlatego istnieje ten kalkulator.'
+    html: 'Opanuj sztukę prymowania i zmień domowe piwo z płaskiego eksperymentu na profesjonalne, musujące doświadczenie. Prymowanie polega na dodaniu dokładnej ilości cukru, aby pozostały drożdż w butelce wytwarzał naturalny CO2 podczas drugorzędnej fermentacji. Zbyt mało cukru daje płaskie piwo; zbyt dużo powoduje niebezpieczne ciśnienie, które może zniszczyć butelki. Różnica między nimi to zaledwie kilka gramów - dlatego istnieje ten kalkulator.'
   },
   {
     type: 'proscons',
@@ -103,7 +103,7 @@ const seo: CarbonationLocaleContent['seo'] = [
     type: 'card',
     title: 'Jaki Cukier Powinieneś Wybrać?',
     icon: 'mdi:corn',
-    html: '<strong>Dekstroza</strong> jest neutralna i profesjonalna — standard branżowy. <strong>Cukier Stołowy</strong> jest ekonomiczny i efektywny (użyj 10% mniej wagi niż dekstroza). <strong>DME (Suchy Ekstrakt Słodowy)</strong> to wybór purystów, ale trudniej dokładnie przewidzieć, ponieważ jego fermentiwalność różni się w zależności od marki i składu słodu.'
+    html: '<strong>Dekstroza</strong> jest neutralna i profesjonalna - standard branżowy. <strong>Cukier Stołowy</strong> jest ekonomiczny i efektywny (użyj 10% mniej wagi niż dekstroza). <strong>DME (Suchy Ekstrakt Słodowy)</strong> to wybór purystów, ale trudniej dokładnie przewidzieć, ponieważ jego fermentiwalność różni się w zależności od marki i składu słodu.'
   },
   {
     type: 'diagnostic',
@@ -134,11 +134,11 @@ const seo: CarbonationLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'W istocie karbonatacja jest rządzona przez <strong>Prawo Henry\'ego</strong>: ilość gazu rozpuszczonego w cieczy jest proporcjonalna do ciśnienia cząstkowego tego gazu nad cieczą. Gdy prymiesz butelkę i zamknieszją, drożdże zużywają cukier i wytwarzają CO2 w uszczelnonym środowisku. Gdy ciśnienie rośnie, gaz jest zmuszany z powrotem do roztworu. Temperatura, w której osiągnięte jest to równowagi, określa ostateczny poziom karbonatacji — dlatego temperatura fermentacji jest najważniejszą zmienną w tym kalkulatorze.'
+    html: 'W istocie karbonatacja jest rządzona przez <strong>Prawo Henry\'ego</strong>: ilość gazu rozpuszczonego w cieczy jest proporcjonalna do ciśnienia cząstkowego tego gazu nad cieczą. Gdy prymiesz butelkę i zamknieszją, drożdże zużywają cukier i wytwarzają CO2 w uszczelnonym środowisku. Gdy ciśnienie rośnie, gaz jest zmuszany z powrotem do roztworu. Temperatura, w której osiągnięte jest to równowagi, określa ostateczny poziom karbonatacji - dlatego temperatura fermentacji jest najważniejszą zmienną w tym kalkulatorze.'
   },
   {
     type: 'paragraph',
-    html: 'Pozostały CO2 w twoim piwie przed prymowaniem nie jest równy zeru. Każde piwo zawiera rozpuszczony CO2 z procesu fermentacji, a ilość zatrzymana zależy od najwyższej temperatury osiągniętej przez piwo. Piwo fermentujące się w 22°C zawiera znacznie mniej resztkowego CO2 niż to fermentujące się w 16°C, chociaż oba są teraz schłodzone. Niezapewnienie tego resztkowego prowadzi do systematycznego przeprymowania — jeden z najczęstszych błędów wśród początkujących domowych browarów.'
+    html: 'Pozostały CO2 w twoim piwie przed prymowaniem nie jest równy zeru. Każde piwo zawiera rozpuszczony CO2 z procesu fermentacji, a ilość zatrzymana zależy od najwyższej temperatury osiągniętej przez piwo. Piwo fermentujące się w 22°C zawiera znacznie mniej resztkowego CO2 niż to fermentujące się w 16°C, chociaż oba są teraz schłodzone. Niezapewnienie tego resztkowego prowadzi do systematycznego przeprymowania - jeden z najczęstszych błędów wśród początkujących domowych browarów.'
   }
 ];
 

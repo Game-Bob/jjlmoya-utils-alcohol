@@ -47,11 +47,11 @@ const faq: FortifiedWineBuilderLocaleContent['faq'] = [
   },
   {
     question: 'Qual é o teor alcoólico típico do vermute?',
-    answer: 'O vermute tradicional tem um teor alcoólico entre 15 % e 18 %. O vermute seco (estilo francês) situa-se geralmente na faixa inferior (15–16 %), enquanto o vermute doce (estilo italiano) atinge frequentemente 16–18 %. O vermute rosé encontra-se entre os dois.',
+    answer: 'O vermute tradicional tem um teor alcoólico entre 15 % e 18 %. O vermute seco (estilo francês) situa-se geralmente na faixa inferior (15-16 %), enquanto o vermute doce (estilo italiano) atinge frequentemente 16-18 %. O vermute rosé encontra-se entre os dois.',
   },
   {
     question: 'Que vinho base devo usar para o vermute?',
-    answer: 'Tradicionalmente, um vinho branco seco e neutro entre 10–12 % de teor alcoólico funciona melhor. O vinho fornece a estrutura base, mas como será aromatizado com ervas e botânicos, não é necessário um vinho caro — uma base limpa e ácida é o ideal.',
+    answer: 'Tradicionalmente, um vinho branco seco e neutro entre 10-12 % de teor alcoólico funciona melhor. O vinho fornece a estrutura base, mas como será aromatizado com ervas e botânicos, não é necessário um vinho caro - uma base limpa e ácida é o ideal.',
   },
   {
     question: 'Posso usar álcool neutro em vez de brandy?',
@@ -59,7 +59,7 @@ const faq: FortifiedWineBuilderLocaleContent['faq'] = [
   },
   {
     question: 'Como é que a fortificação conserva o vinho?',
-    answer: 'Quando o teor alcoólico do vinho ultrapassa aproximadamente 15–16 %, a fermentação pelas leveduras é inibida — as leveduras não conseguem sobreviver em ambientes com alto teor alcoólico. É por isso que os vinhos fortificados têm uma vida útil muito mais longa do que o vinho comum. O álcool atua como conservante natural contra a deterioração por leveduras e bactérias.',
+    answer: 'Quando o teor alcoólico do vinho ultrapassa aproximadamente 15-16 %, a fermentação pelas leveduras é inibida - as leveduras não conseguem sobreviver em ambientes com alto teor alcoólico. É por isso que os vinhos fortificados têm uma vida útil muito mais longa do que o vinho comum. O álcool atua como conservante natural contra a deterioração por leveduras e bactérias.',
   },
 ];
 
@@ -73,9 +73,9 @@ const howTo: FortifiedWineBuilderLocaleContent['howTo'] = [
 
 const seo: FortifiedWineBuilderLocaleContent['seo'] = [
   { type: 'title', text: 'O Quadrado de Pearson: Matemática ancestral, vinho perfeito', level: 2 },
-  { type: 'paragraph', html: 'O <strong>Quadrado de Pearson</strong> é uma das ferramentas mais antigas e elegantes da matemática vitivinícola. Desenvolvido no século XIX, permite a qualquer produtor de vinho — profissional ou amador — calcular rácios de mistura com nada mais do que subtrações. A nossa ferramenta digitaliza este método visual e adiciona feedback em tempo real, para que passe menos tempo a calcular e mais tempo a criar.' },
-  { type: 'stats', items: [{ label: 'Vermute', value: '15–18 % vol.', icon: 'mdi:glass-cocktail' }, { label: 'Porto', value: '18–20 % vol.', icon: 'mdi:bottle-wine' }, { label: 'Xerez', value: '15–17 % vol.', icon: 'mdi:cup-water' }], columns: 3 },
-  { type: 'card', title: 'Por que fortificar a 18 %?', icon: 'mdi:shield-check', html: 'Acima de cerca de 15 % vol., a <em>Saccharomyces cerevisiae</em> — a principal levedura do vinho — é inibida. Quando se atinge os 18 %, a fermentação é completamente interrompida. É por isso que o vinho do Porto retém açúcar residual: os destilados são adicionados a meio da fermentação, matando a levedura antes que todo o açúcar seja consumido.' },
+  { type: 'paragraph', html: 'O <strong>Quadrado de Pearson</strong> é uma das ferramentas mais antigas e elegantes da matemática vitivinícola. Desenvolvido no século XIX, permite a qualquer produtor de vinho - profissional ou amador - calcular rácios de mistura com nada mais do que subtrações. A nossa ferramenta digitaliza este método visual e adiciona feedback em tempo real, para que passe menos tempo a calcular e mais tempo a criar.' },
+  { type: 'stats', items: [{ label: 'Vermute', value: '15-18 % vol.', icon: 'mdi:glass-cocktail' }, { label: 'Porto', value: '18-20 % vol.', icon: 'mdi:bottle-wine' }, { label: 'Xerez', value: '15-17 % vol.', icon: 'mdi:cup-water' }], columns: 3 },
+  { type: 'card', title: 'Por que fortificar a 18 %?', icon: 'mdi:shield-check', html: 'Acima de cerca de 15 % vol., a <em>Saccharomyces cerevisiae</em> - a principal levedura do vinho - é inibida. Quando se atinge os 18 %, a fermentação é completamente interrompida. É por isso que o vinho do Porto retém açúcar residual: os destilados são adicionados a meio da fermentação, matando a levedura antes que todo o açúcar seja consumido.' },
   { type: 'tip', title: 'Dica Profissional: Medir a 20 °C', html: 'A densidade do álcool muda com a temperatura. As medições oficiais de teor alcoólico são calibradas a 20 °C. Se o seu destilado ou vinho estiver significativamente mais quente ou mais frio, aplique um fator de correção: aproximadamente +0,04 % vol. por °C abaixo de 20 °C e −0,04 % por °C acima.' },
   { type: 'title', text: 'O Renascimento do Vermute Artesanal', level: 2 },
   { type: 'paragraph', html: 'O sul da Europa está a viver um renascimento do vermute artesanal. Barcelona, Valência e San Sebastián recuperaram <em>la hora del vermut</em> como instituição cultural, e pequenos produtores em Espanha, Itália e França estão a engarrafar expressões notáveis. Isso criou uma nova geração de produtores caseiros que querem ferramentas técnicas à altura das suas ambições.' },

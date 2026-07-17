@@ -56,7 +56,7 @@ const faq: AlcoholClearanceLocaleContent['faq'] = [
   },
   {
     question: "¿Es esta calculadora 100% fiable para decidir si puedo conducir?",
-    answer: "No. Esta herramienta es una estimación teórica basada en la fórmula de Widmark. Factores como la comida, medicamentos, fatiga, genética de la enzima ADH o el estrés pueden desviarte un 20-30% del valor calculado. Nunca uses esta calculadora para decidir si conduces. Si has bebido, no conduzcas — es la única regla sin margen de error.",
+    answer: "No. Esta herramienta es una estimación teórica basada en la fórmula de Widmark. Factores como la comida, medicamentos, fatiga, genética de la enzima ADH o el estrés pueden desviarte un 20-30% del valor calculado. Nunca uses esta calculadora para decidir si conduces. Si has bebido, no conduzcas - es la única regla sin margen de error.",
   },
 ];
 
@@ -130,7 +130,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Seguridad Primero: Conoce tu Límite',
-    html: 'Una alcoholemia de 0.05% altera mediblemente el juicio, el seguimiento visual y el tiempo de reacción. La mayoría de países fijan el límite legal de conducción entre 0.05% y 0.08%. Sin embargo, la sensibilidad individual varía significativamente — la edad, los medicamentos, la fatiga y las variantes genéticas de la enzima ADH influyen en cómo el alcohol te afecta personalmente. Ante la duda, no conduzcas.'
+    html: 'Una alcoholemia de 0.05% altera mediblemente el juicio, el seguimiento visual y el tiempo de reacción. La mayoría de países fijan el límite legal de conducción entre 0.05% y 0.08%. Sin embargo, la sensibilidad individual varía significativamente - la edad, los medicamentos, la fatiga y las variantes genéticas de la enzima ADH influyen en cómo el alcohol te afecta personalmente. Ante la duda, no conduzcas.'
   },
   {
     type: 'summary',
@@ -148,7 +148,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Comer antes o durante el consumo de alcohol cambia drásticamente la cinética de absorción. La comida en el estómago — especialmente proteínas y grasas — ralentiza el vaciado gástrico, reduciendo la tasa máxima a la que el etanol entra en el torrente sanguíneo. Una persona que bebe con el estómago vacío puede alcanzar un BAC máximo un 50% más alto que la misma persona que comió antes de beber la misma cantidad. Esta es una de las variables más poderosas que la fórmula de Widmark no puede capturar completamente, razón por la que nuestra calculadora incluye un aviso sobre la estimación teórica.'
+    html: 'Comer antes o durante el consumo de alcohol cambia drásticamente la cinética de absorción. La comida en el estómago - especialmente proteínas y grasas - ralentiza el vaciado gástrico, reduciendo la tasa máxima a la que el etanol entra en el torrente sanguíneo. Una persona que bebe con el estómago vacío puede alcanzar un BAC máximo un 50% más alto que la misma persona que comió antes de beber la misma cantidad. Esta es una de las variables más poderosas que la fórmula de Widmark no puede capturar completamente, razón por la que nuestra calculadora incluye un aviso sobre la estimación teórica.'
   },
   {
     type: 'paragraph',

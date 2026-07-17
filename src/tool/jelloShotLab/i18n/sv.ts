@@ -48,31 +48,31 @@ const faq: JelloShotLabLocaleContent['faq'] = [
   },
   {
     question: 'Vad är det maximala alkoholförhållandet innan jello shots slutar stelna?',
-    answer: 'Den säkra övre gränsen är ungefär 30–35% av den totala vätskovolymen som ren sprit (vid 40% ABV). Med en neutral sprit på 96% sjunker den gränsen till ungefär 15–18% av den totala volymen. Vår kalkylator tar hänsyn till spritens ABV så att du aldrig överskrider stelningsgränsen.',
+    answer: 'Den säkra övre gränsen är ungefär 30-35% av den totala vätskovolymen som ren sprit (vid 40% ABV). Med en neutral sprit på 96% sjunker den gränsen till ungefär 15-18% av den totala volymen. Vår kalkylator tar hänsyn till spritens ABV så att du aldrig överskrider stelningsgränsen.',
   },
   {
-    question: 'Spelar det någon roll vilken sprit man använder — vodka, rom eller tequila?',
+    question: 'Spelar det någon roll vilken sprit man använder - vodka, rom eller tequila?',
     answer: 'Det som spelar roll är ABV, inte sprittypen. Vodka med 40% och rom med 40% beter sig identiskt i gelatinmatrisen. Spritsorter med högre sockerhalt (som vissa romsörter eller likörer) kan förbättra texturen något eftersom sockret konkurrerar med etanolen om vätebindningarna i gelatinnätverket.',
   },
   {
     question: 'Hur länge håller jello shots i kylskåpet?',
-    answer: 'Rätt tillverkade jello shots håller 3–5 dagar i kylskåpet täckta med plastfolie. Den höga alkoholhalten fungerar som ett naturligt konserveringsmedel. Undvik att lämna dem i rumstemperatur mer än 2 timmar eftersom gelatinet mjuknar och bakterier kan föröka sig.',
+    answer: 'Rätt tillverkade jello shots håller 3-5 dagar i kylskåpet täckta med plastfolie. Den höga alkoholhalten fungerar som ett naturligt konserveringsmedel. Undvik att lämna dem i rumstemperatur mer än 2 timmar eftersom gelatinet mjuknar och bakterier kan föröka sig.',
   },
   {
     question: 'Kan jag göra mina jello shots fastare eller mjukare?',
-    answer: 'Ja. Använd mer gelatin (eller ett halvt extra paket) för fastare shots som glider rent ur muggarna. Använd lite mindre för en mjukare, dallrande konsistens. Ersätt aldrig gelatin med agar-agar om du vill ha en smälter-i-munnen-konsistens — agar stelnar hårdare och smälter vid en högre temperatur.',
+    answer: 'Ja. Använd mer gelatin (eller ett halvt extra paket) för fastare shots som glider rent ur muggarna. Använd lite mindre för en mjukare, dallrande konsistens. Ersätt aldrig gelatin med agar-agar om du vill ha en smälter-i-munnen-konsistens - agar stelnar hårdare och smälter vid en högre temperatur.',
   },
   {
     question: 'Kan jag frysa jello shots för att snabba upp kylningen?',
-    answer: 'Nej. Frysning bryter ner gelatinnätverket och ger en vattnig, grynig konsistens när de tinar. Kyl alltid i minst 4 timmar. Gör dem kvällen innan för fester — 8+ timmar ger bäst konsistens.',
+    answer: 'Nej. Frysning bryter ner gelatinnätverket och ger en vattnig, grynig konsistens när de tinar. Kyl alltid i minst 4 timmar. Gör dem kvällen innan för fester - 8+ timmar ger bäst konsistens.',
   },
 ];
 
 const howTo: JelloShotLabLocaleContent['howTo'] = [
   { name: 'Välj din sprit', text: 'Ange ABV för din sprit och välj den önskade shot-styrkan. Kalkylatorn visar dig den maximala mängd sprit ditt gelatin kan hålla.' },
   { name: 'Blanda gelatinet', text: 'Häll den beräknade mängden kokande vatten i en skål. Tillsätt gelatinpulvret och rör energiskt i 2 minuter tills det är helt upplöst. Tillsätt inte alkohol ännu.' },
-  { name: 'Tillsätt spriten', text: 'Låt gelatinblandningen svalna i 5–10 minuter tills den är varm men inte het (under 50 °C). Tillsätt din sprit och rör försiktigt för att undvika bubblor.' },
-  { name: 'Häll upp och kyl', text: 'Häll i plastmuggar, silikonformar eller små shotglas. Kyl i minst 4 timmar — en hel natt är idealiskt. Frys inte.' },
+  { name: 'Tillsätt spriten', text: 'Låt gelatinblandningen svalna i 5-10 minuter tills den är varm men inte het (under 50 °C). Tillsätt din sprit och rör försiktigt för att undvika bubblor.' },
+  { name: 'Häll upp och kyl', text: 'Häll i plastmuggar, silikonformar eller små shotglas. Kyl i minst 4 timmar - en hel natt är idealiskt. Frys inte.' },
 ];
 
 
@@ -80,7 +80,7 @@ const seo: JelloShotLabLocaleContent['seo'] = [
   { type: 'title', text: 'Kemin bakom en perfekt jello shot', level: 2 },
   {
     type: 'paragraph',
-    html: 'En jello shot är inte bara smaksatt gelatin med alkohol ihällt — det är en <strong>känslig kolloidal suspension</strong> där proteinpolymerer, vatten och etanol konkurrerar om vätebindningar. Fel förhållande och du slutar med en pöl söt vätska eller en gummiliknande skiva som studsar av bordet. Rätt förhållande och du har en perfekt darrande shot som glider ut ur muggen i en enda ren rörelse.',
+    html: 'En jello shot är inte bara smaksatt gelatin med alkohol ihällt - det är en <strong>känslig kolloidal suspension</strong> där proteinpolymerer, vatten och etanol konkurrerar om vätebindningar. Fel förhållande och du slutar med en pöl söt vätska eller en gummiliknande skiva som studsar av bordet. Rätt förhållande och du har en perfekt darrande shot som glider ut ur muggen i en enda ren rörelse.',
   },
   {
     type: 'stats',
@@ -95,13 +95,13 @@ const seo: JelloShotLabLocaleContent['seo'] = [
     type: 'card',
     title: 'Vad är Bloom styrka?',
     icon: 'mdi:molecule',
-    html: 'Bloom mäter gelatinets gelningsstyrka, vanligtvis från 50 till 300 Bloom. Bladgelatin från snabbköpet är normalt 150–200 Bloom. Högre Bloom innebär ett fastare gel med samma mängd pulver, vilket betyder att det kan tolerera lite mer alkohol innan det misslyckas att stelna. Standardpåsar med gelatinpulver (7 g) är kalibrerade för ca 240 ml vätska.',
+    html: 'Bloom mäter gelatinets gelningsstyrka, vanligtvis från 50 till 300 Bloom. Bladgelatin från snabbköpet är normalt 150-200 Bloom. Högre Bloom innebär ett fastare gel med samma mängd pulver, vilket betyder att det kan tolerera lite mer alkohol innan det misslyckas att stelna. Standardpåsar med gelatinpulver (7 g) är kalibrerade för ca 240 ml vätska.',
   },
   {
     type: 'card',
     title: 'Etanolgränsen',
     icon: 'mdi:alert-circle-outline',
-    html: 'Etanol konkurrerar med vatten om vätebindningsplatserna på kollagenets aminosyrakedior. När etanol upptar för många av dessa platser kan proteinet inte vika sig till den stabila trippelhelix som ger gelatin dess struktur. Den praktiska gränsen är ungefär <strong>1 del 40%-ig sprit till 1 del vatten</strong> — bortom det stelnar din shot inte oavsett hur länge du väntar.',
+    html: 'Etanol konkurrerar med vatten om vätebindningsplatserna på kollagenets aminosyrakedior. När etanol upptar för många av dessa platser kan proteinet inte vika sig till den stabila trippelhelix som ger gelatin dess struktur. Den praktiska gränsen är ungefär <strong>1 del 40%-ig sprit till 1 del vatten</strong> - bortom det stelnar din shot inte oavsett hur länge du väntar.',
   },
   {
     type: 'tip',
@@ -124,7 +124,7 @@ const seo: JelloShotLabLocaleContent['seo'] = [
     items: [
       'Festarrangörer: Beräkna exakt hur många påsar och hur mycket sprit du behöver innan du handlar.',
       'Bartenders: Skala upp till storskalig produktion med konsekventa resultat varje gång.',
-      'Hemmakockar: Undvik de vanligaste misslyckandena — rinniga shots, gummiliknande konsistens eller noll alkoholsmak.',
+      'Hemmakockar: Undvik de vanligaste misslyckandena - rinniga shots, gummiliknande konsistens eller noll alkoholsmak.',
     ],
   },
 ];

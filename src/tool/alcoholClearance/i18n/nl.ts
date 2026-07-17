@@ -44,19 +44,19 @@ const faq: AlcoholClearanceLocaleContent['faq'] = [
   },
   {
     question: "Kunnen koffie, water of oefening de alcoholafbraak versnellen?",
-    answer: "Nee. De lever breekt alcohol af met een constant tempo van ongeveer 0,15 g/L per uur (nulde-orde kinetiek). Koffie kan vermoeidheid maskeren, water helpt bij uitdroging en oefening verbetert het welzijn in het algemeen — maar geen van deze zaken verlaagt uw werkelijke BVO. Alleen tijd breekt alcohol uit het bloed af.",
+    answer: "Nee. De lever breekt alcohol af met een constant tempo van ongeveer 0,15 g/L per uur (nulde-orde kinetiek). Koffie kan vermoeidheid maskeren, water helpt bij uitdroging en oefening verbetert het welzijn in het algemeen - maar geen van deze zaken verlaagt uw werkelijke BVO. Alleen tijd breekt alcohol uit het bloed af.",
   },
   {
     question: "Helpt eten na het drinken de BVO te verlagen?",
-    answer: "Eten na het drinken verlaagt de alcohol die al in uw bloedbaan aanwezig is niet. Voedsel maakt het meeste verschil voor of tijdens het drinken: voedsel in de maag — vooral proteïnen en vetten — vertraagt de gastric absorption en kan uw piekwaarde van BVO met tot 50% verlagen. Zodra alcohol is opgenomen, kan alleen hepatische stofwisseling deze afbreken.",
+    answer: "Eten na het drinken verlaagt de alcohol die al in uw bloedbaan aanwezig is niet. Voedsel maakt het meeste verschil voor of tijdens het drinken: voedsel in de maag - vooral proteïnen en vetten - vertraagt de gastric absorption en kan uw piekwaarde van BVO met tot 50% verlagen. Zodra alcohol is opgenomen, kan alleen hepatische stofwisseling deze afbreken.",
   },
   {
     question: "Hoe lang duurt het om 0,0 BVO te bereiken?",
-    answer: "Dit hangt af van uw uitgangspunt voor BVO. Deel uw geschatte BVO (in g/L) door 0,15 om de geschatte uren te krijgen. Bijvoorbeeld, een BVO van 1,5 g/L duurt ongeveer 10 uur. De lever stopt nooit: deze breekt alcohol af, zelfs terwijl u slaapt. Maar wees voorzichtig — alcohol kan nog steeds in uw bloed aanwezig zijn, zelfs wanneer u zich volledig hersteld voelt.",
+    answer: "Dit hangt af van uw uitgangspunt voor BVO. Deel uw geschatte BVO (in g/L) door 0,15 om de geschatte uren te krijgen. Bijvoorbeeld, een BVO van 1,5 g/L duurt ongeveer 10 uur. De lever stopt nooit: deze breekt alcohol af, zelfs terwijl u slaapt. Maar wees voorzichtig - alcohol kan nog steeds in uw bloed aanwezig zijn, zelfs wanneer u zich volledig hersteld voelt.",
   },
   {
     question: "Is deze calculator 100% betrouwbaar voor het bepalen of u mag rijden?",
-    answer: "Nee. Dit hulpmiddel is een theoretische inschatting gebaseerd op de formule van Widmark. Factoren zoals voedselopname, medicijnen, vermoeidheid, genetische ADH-enzymvarianten en stress kunnen uw werkelijke BVO met 20–30% in beide richtingen verschuiven. Gebruik deze calculator nooit om te bepalen of u mag rijden. Als u drinkt, moet u niet rijden — dat is de enige regel zonder uitzonderingsruimte.",
+    answer: "Nee. Dit hulpmiddel is een theoretische inschatting gebaseerd op de formule van Widmark. Factoren zoals voedselopname, medicijnen, vermoeidheid, genetische ADH-enzymvarianten en stress kunnen uw werkelijke BVO met 20-30% in beide richtingen verschuiven. Gebruik deze calculator nooit om te bepalen of u mag rijden. Als u drinkt, moet u niet rijden - dat is de enige regel zonder uitzonderingsruimte.",
   },
 ];
 
@@ -84,7 +84,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Begrijpen hoe ons lichaam ethanol verwerkt is essentieel voor veiligheid en voor het beperken van katersymptomen. Onze <strong>alcoholafbreek-calculator</strong> gebruikt de erkende <strong>Widmark-formule</strong> om u een helder beeld van uw metabole toestand te geven. Alcohol wordt niet afgebroken door zweten, water drinken of sporten — alleen tijd en hepatische stofwisseling kunnen uw bloedalcoholconcentratie verlagen.'
+    html: 'Begrijpen hoe ons lichaam ethanol verwerkt is essentieel voor veiligheid en voor het beperken van katersymptomen. Onze <strong>alcoholafbreek-calculator</strong> gebruikt de erkende <strong>Widmark-formule</strong> om u een helder beeld van uw metabole toestand te geven. Alcohol wordt niet afgebroken door zweten, water drinken of sporten - alleen tijd en hepatische stofwisseling kunnen uw bloedalcoholconcentratie verlagen.'
   },
   {
     type: 'diagnostic',
@@ -101,7 +101,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'De lever breekt 95% van alcohol af via Alcoholdehydrogenase (ADH). Dit proces verloopt met een constant tempo (nulde-orde kinetiek), wat betekent dat het niet kan worden versneld door sporten of koffie. De resterende 5% wordt uitgescheiden via adem, urine en zweet — wat de basis vormt voor alcoholtestapparatuur bij verkeershandhaving.'
+    html: 'De lever breekt 95% van alcohol af via Alcoholdehydrogenase (ADH). Dit proces verloopt met een constant tempo (nulde-orde kinetiek), wat betekent dat het niet kan worden versneld door sporten of koffie. De resterende 5% wordt uitgescheiden via adem, urine en zweet - wat de basis vormt voor alcoholtestapparatuur bij verkeershandhaving.'
   },
   {
     type: 'stats',
@@ -130,7 +130,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Veiligheid eerst: ken uw limiet',
-    html: 'Een BVO van 0,05% beperkt duidelijk het oordeel, tracering en reactietijd. De meeste landen stellen de wettelijke grens voor rijden op tussen 0,05% en 0,08%. Echter, individuele gevoeligheid varieert aanzienlijk — leeftijd, medicijnen, vermoeidheid en genetische ADH-enzymvarianten bepalen allemaal hoe alcohol u persoonlijk beïnvloedt. In geval van twijfel rijdt u niet.'
+    html: 'Een BVO van 0,05% beperkt duidelijk het oordeel, tracering en reactietijd. De meeste landen stellen de wettelijke grens voor rijden op tussen 0,05% en 0,08%. Echter, individuele gevoeligheid varieert aanzienlijk - leeftijd, medicijnen, vermoeidheid en genetische ADH-enzymvarianten bepalen allemaal hoe alcohol u persoonlijk beïnvloedt. In geval van twijfel rijdt u niet.'
   },
   {
     type: 'title',
@@ -139,7 +139,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Eten vóór of tijdens het drinken verandert de alcoholabsorptiekinetiek dramatisch. Voedsel in de maag — vooral proteïnen en vetten — vertraagt de gastric emptying, waardoor de maximale snelheid waarop ethanol in de bloedbaan komt is verkleind. Een persoon die op een lege maag drinkt, kan een piekwaarde van BVO bereiken die 50% hoger is dan dezelfde persoon die voor dezelfde hoeveelheid een volle maaltijd eet. Dit is een van de meest krachtige variabelen die de Widmark-formule niet volledig kan vastleggen. Dit is waarom onze calculator een disclaimer over theoretische inschatting bevat.'
+    html: 'Eten vóór of tijdens het drinken verandert de alcoholabsorptiekinetiek dramatisch. Voedsel in de maag - vooral proteïnen en vetten - vertraagt de gastric emptying, waardoor de maximale snelheid waarop ethanol in de bloedbaan komt is verkleind. Een persoon die op een lege maag drinkt, kan een piekwaarde van BVO bereiken die 50% hoger is dan dezelfde persoon die voor dezelfde hoeveelheid een volle maaltijd eet. Dit is een van de meest krachtige variabelen die de Widmark-formule niet volledig kan vastleggen. Dit is waarom onze calculator een disclaimer over theoretische inschatting bevat.'
   },
   {
     type: 'paragraph',

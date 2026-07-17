@@ -3,7 +3,7 @@ import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dt
 import type { FortifiedWineBuilderUI, FortifiedWineBuilderLocaleContent } from '../index';
 
 const slug = 'constructeur-vin-fortifie';
-const title = 'Constructeur de Vin Fortifié & Vermouth : Calculateur Carré de Pearson';
+const title = 'Constructeur de Vin Fortifié & Vermouth: Calculateur Carré de Pearson';
 const description = 'Calculez exactement quelle quantité d\'alcool ajouter à votre vin pour atteindre le degré alcoolique cible. Élaborez le vermouth, le porto et le xérès parfaits grâce à la méthode du carré de Pearson.';
 
 const ui: FortifiedWineBuilderUI = {
@@ -47,11 +47,11 @@ const faq: FortifiedWineBuilderLocaleContent['faq'] = [
   },
   {
     question: 'Quel est le TAV typique du vermouth ?',
-    answer: 'Le vermouth traditionnel a un TAV compris entre 15 % et 18 %. Le vermouth sec (style français) se situe généralement dans la partie basse (15–16 %), tandis que le vermouth doux (style italien) atteint souvent 16–18 %. Le vermouth rosé se trouve entre les deux.',
+    answer: 'Le vermouth traditionnel a un TAV compris entre 15 % et 18 %. Le vermouth sec (style français) se situe généralement dans la partie basse (15-16 %), tandis que le vermouth doux (style italien) atteint souvent 16-18 %. Le vermouth rosé se trouve entre les deux.',
   },
   {
     question: 'Quel vin de base utiliser pour le vermouth ?',
-    answer: 'Traditionnellement, un vin blanc sec et neutre entre 10 et 12 % TAV convient le mieux. Le vin constitue la base, mais comme il sera aromatisé avec des herbes et des botaniques, il n\'est pas nécessaire d\'utiliser un vin coûteux — une base propre et acide est idéale.',
+    answer: 'Traditionnellement, un vin blanc sec et neutre entre 10 et 12 % TAV convient le mieux. Le vin constitue la base, mais comme il sera aromatisé avec des herbes et des botaniques, il n\'est pas nécessaire d\'utiliser un vin coûteux - une base propre et acide est idéale.',
   },
   {
     question: 'Puis-je utiliser de l\'alcool neutre à la place du brandy ?',
@@ -59,7 +59,7 @@ const faq: FortifiedWineBuilderLocaleContent['faq'] = [
   },
   {
     question: 'Comment la fortification conserve-t-elle le vin ?',
-    answer: 'Lorsque le TAV du vin dépasse environ 15–16 %, la fermentation par les levures est inhibée — les levures ne peuvent pas survivre dans des environnements à haute teneur en alcool. C\'est pourquoi les vins fortifiés ont une durée de conservation bien plus longue que les vins ordinaires. L\'alcool agit comme conservateur naturel contre la détérioration par les levures et les bactéries.',
+    answer: 'Lorsque le TAV du vin dépasse environ 15-16 %, la fermentation par les levures est inhibée - les levures ne peuvent pas survivre dans des environnements à haute teneur en alcool. C\'est pourquoi les vins fortifiés ont une durée de conservation bien plus longue que les vins ordinaires. L\'alcool agit comme conservateur naturel contre la détérioration par les levures et les bactéries.',
   },
 ];
 
@@ -72,14 +72,14 @@ const howTo: FortifiedWineBuilderLocaleContent['howTo'] = [
 
 
 const seo: FortifiedWineBuilderLocaleContent['seo'] = [
-  { type: 'title', text: 'Le Carré de Pearson : Mathématiques ancestrales, vin parfait', level: 2 },
-  { type: 'paragraph', html: 'Le <strong>carré de Pearson</strong> est l\'un des outils les plus anciens et les plus élégants des mathématiques vinicoles. Développé au XIXe siècle, il permet à tout vigneron — professionnel ou amateur — de calculer des ratios de mélange avec rien de plus que des soustractions. Notre outil numérise cette méthode visuelle et ajoute un retour en temps réel, pour que vous passiez moins de temps à calculer et plus de temps à élaborer.' },
-  { type: 'stats', items: [{ label: 'Vermouth', value: '15–18 % vol.', icon: 'mdi:glass-cocktail' }, { label: 'Porto', value: '18–20 % vol.', icon: 'mdi:bottle-wine' }, { label: 'Xérès', value: '15–17 % vol.', icon: 'mdi:cup-water' }], columns: 3 },
-  { type: 'card', title: 'Pourquoi fortifier à 18 % ?', icon: 'mdi:shield-check', html: 'Au-delà d\'environ 15 % vol., <em>Saccharomyces cerevisiae</em> — la principale levure du vin — est inhibée. À 18 %, la fermentation est complètement arrêtée. C\'est pourquoi le porto conserve son sucre résiduel : l\'alcool est ajouté en cours de fermentation, tuant la levure avant que tout le sucre soit consommé.' },
-  { type: 'tip', title: 'Conseil de pro : Mesurer à 20 °C', html: 'La densité de l\'alcool varie avec la température. Les mesures officielles de TAV sont calibrées à 20 °C. Si votre alcool ou votre vin est significativement plus chaud ou plus froid, appliquez un facteur de correction : environ +0,04 % vol. par °C en dessous de 20 °C et −0,04 % par °C au-dessus.' },
+  { type: 'title', text: 'Le Carré de Pearson: Mathématiques ancestrales, vin parfait', level: 2 },
+  { type: 'paragraph', html: 'Le <strong>carré de Pearson</strong> est l\'un des outils les plus anciens et les plus élégants des mathématiques vinicoles. Développé au XIXe siècle, il permet à tout vigneron - professionnel ou amateur - de calculer des ratios de mélange avec rien de plus que des soustractions. Notre outil numérise cette méthode visuelle et ajoute un retour en temps réel, pour que vous passiez moins de temps à calculer et plus de temps à élaborer.' },
+  { type: 'stats', items: [{ label: 'Vermouth', value: '15-18 % vol.', icon: 'mdi:glass-cocktail' }, { label: 'Porto', value: '18-20 % vol.', icon: 'mdi:bottle-wine' }, { label: 'Xérès', value: '15-17 % vol.', icon: 'mdi:cup-water' }], columns: 3 },
+  { type: 'card', title: 'Pourquoi fortifier à 18 % ?', icon: 'mdi:shield-check', html: 'Au-delà d\'environ 15 % vol., <em>Saccharomyces cerevisiae</em> - la principale levure du vin - est inhibée. À 18 %, la fermentation est complètement arrêtée. C\'est pourquoi le porto conserve son sucre résiduel: l\'alcool est ajouté en cours de fermentation, tuant la levure avant que tout le sucre soit consommé.' },
+  { type: 'tip', title: 'Conseil de pro: Mesurer à 20 °C', html: 'La densité de l\'alcool varie avec la température. Les mesures officielles de TAV sont calibrées à 20 °C. Si votre alcool ou votre vin est significativement plus chaud ou plus froid, appliquez un facteur de correction: environ +0,04 % vol. par °C en dessous de 20 °C et −0,04 % par °C au-dessus.' },
   { type: 'title', text: 'La Renaissance du Vermouth Artisanal', level: 2 },
   { type: 'paragraph', html: 'L\'Europe du Sud connaît une renaissance du vermouth artisanal. Barcelone, Valence et Saint-Sébastien ont reconquis <em>la hora del vermut</em> comme institution culturelle, et de petits producteurs en Espagne, en Italie et en France mettent en bouteille des expressions remarquables. Cela a créé une nouvelle génération de producteurs maison qui souhaitent des outils techniques à la hauteur de leurs ambitions.' },
-  { type: 'summary', title: 'À qui s\'adresse cet outil ?', items: ['Vignerons amateurs : Fortifiez votre récolte avec précision plutôt qu\'au hasard.', 'Producteurs de vermouth artisanal : Prototypez de nouveaux TAV cibles avant de passer à de grandes quantités.', 'Éducateurs en spiritueux : Démontrez visuellement la méthode du carré de Pearson en atelier.'] },
+  { type: 'summary', title: 'À qui s\'adresse cet outil ?', items: ['Vignerons amateurs: Fortifiez votre récolte avec précision plutôt qu\'au hasard.', 'Producteurs de vermouth artisanal: Prototypez de nouveaux TAV cibles avant de passer à de grandes quantités.', 'Éducateurs en spiritueux: Démontrez visuellement la méthode du carré de Pearson en atelier.'] },
 ];
 
 const schemas: FortifiedWineBuilderLocaleContent['schemas'] = [

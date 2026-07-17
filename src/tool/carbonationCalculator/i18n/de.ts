@@ -34,7 +34,7 @@ const faqTitle = 'Häufig gestellte Fragen';
 const faq: CarbonationLocaleContent['faq'] = [
   {
     question: 'Warum ist Temperatur für Karbonisierung wichtig?',
-    answer: 'Das Restgas CO2 in deinem Bier hängt von der höchsten Temperatur ab, die nach der Gärung erreicht wurde: Kalte Flüssigkeit hält mehr gelöstes Gas als warme Flüssigkeit. Wenn du eine niedrigere Temperatur eingibst als die tatsächliche, geht der Rechner von mehr Restgas aus, als wirklich vorhanden ist, und gibt dir weniger Zucker als nötig. Gib es zu hoch ein und das Gegenteil passiert — du fügst mehr Zucker hinzu als notwendig und drückst deinen Charge in Flaschenboben-Gebiet, wo Überdruck zu Flaschen-Ruptur oder Kappenflucht führt.',
+    answer: 'Das Restgas CO2 in deinem Bier hängt von der höchsten Temperatur ab, die nach der Gärung erreicht wurde: Kalte Flüssigkeit hält mehr gelöstes Gas als warme Flüssigkeit. Wenn du eine niedrigere Temperatur eingibst als die tatsächliche, geht der Rechner von mehr Restgas aus, als wirklich vorhanden ist, und gibt dir weniger Zucker als nötig. Gib es zu hoch ein und das Gegenteil passiert - du fügst mehr Zucker hinzu als notwendig und drückst deinen Charge in Flaschenboben-Gebiet, wo Überdruck zu Flaschen-Ruptur oder Kappenflucht führt.',
   },
   {
     question: 'Welcher Zucker ist am besten zum Ansäen?',
@@ -42,7 +42,7 @@ const faq: CarbonationLocaleContent['faq'] = [
   },
   {
     question: 'Was passiert, wenn ich zu viel Primerungszucker hinzufüge?',
-    answer: 'Überprimerier erzeugt übermäßigen CO2-Druck in der Flasche. Standardglasflaschen versagen bei ungefähr 3,5-4,0 CO2-Volumen. Darüber hinaus kann die Flasche platzen oder die Kappe heftig abblasen. Deshalb ist Präzision wichtig — selbst 5 Extra-Gramm pro Liter können eine Charge in die Gefahrenzone drücken.',
+    answer: 'Überprimerier erzeugt übermäßigen CO2-Druck in der Flasche. Standardglasflaschen versagen bei ungefähr 3,5-4,0 CO2-Volumen. Darüber hinaus kann die Flasche platzen oder die Kappe heftig abblasen. Deshalb ist Präzision wichtig - selbst 5 Extra-Gramm pro Liter können eine Charge in die Gefahrenzone drücken.',
   },
   {
     question: 'Wie lange dauert es, bis Bier nach dem Abfüllen karbonisiert?',
@@ -74,7 +74,7 @@ const seo: CarbonationLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Meistere die Kunst der Primerung und verwandle dein Haushaltsbier aus einem flachen Experiment in eine professionelle sprudelnde Erfahrung. Primerung beinhaltet das Hinzufügen einer genauen Zuckermenge, damit die Resthefen in der Flasche während einer sekundären Gärung natürliches CO2 erzeugen. Zu wenig Zucker ergibt flaches Bier; zu viel erzeugt einen gefährlichen Druck, der Flaschen zerbrechen kann. Der Unterschied zwischen den beiden beträgt ein paar Gramm — deshalb existiert dieser Rechner.'
+    html: 'Meistere die Kunst der Primerung und verwandle dein Haushaltsbier aus einem flachen Experiment in eine professionelle sprudelnde Erfahrung. Primerung beinhaltet das Hinzufügen einer genauen Zuckermenge, damit die Resthefen in der Flasche während einer sekundären Gärung natürliches CO2 erzeugen. Zu wenig Zucker ergibt flaches Bier; zu viel erzeugt einen gefährlichen Druck, der Flaschen zerbrechen kann. Der Unterschied zwischen den beiden beträgt ein paar Gramm - deshalb existiert dieser Rechner.'
   },
   {
     type: 'proscons',
@@ -103,7 +103,7 @@ const seo: CarbonationLocaleContent['seo'] = [
     type: 'card',
     title: 'Welchen Zucker solltest du wählen?',
     icon: 'mdi:corn',
-    html: '<strong>Dextrose</strong> ist neutral und professionell — der Industriestandard. <strong>Haushaltszucker</strong> ist wirtschaftlich und effektiv (verwende 10% weniger Gewicht als Dextrose). <strong>DME (Trockenes Malzextrakt)</strong> ist die Wahl des Puristen, aber schwieriger genau zu prognostizieren, weil seine Gärbarkeit je nach Marke und Malzzusammensetzung variiert.'
+    html: '<strong>Dextrose</strong> ist neutral und professionell - der Industriestandard. <strong>Haushaltszucker</strong> ist wirtschaftlich und effektiv (verwende 10% weniger Gewicht als Dextrose). <strong>DME (Trockenes Malzextrakt)</strong> ist die Wahl des Puristen, aber schwieriger genau zu prognostizieren, weil seine Gärbarkeit je nach Marke und Malzzusammensetzung variiert.'
   },
   {
     type: 'diagnostic',
@@ -134,11 +134,11 @@ const seo: CarbonationLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Im Kern wird Karbonisierung durch <strong>Henrys Gesetz</strong> gesteuert: Die Menge des in einer Flüssigkeit gelösten Gases ist proportional zum Partialdruck dieses Gases über der Flüssigkeit. Wenn du eine Flasche grundierst und versiegelst, verbraucht die Hefe den Zucker und erzeugt CO2 in einer versiegelten Umgebung. Wenn der Druck ansteigt, wird das Gas zurück in Lösung gezwungen. Die Temperatur, bei der dieses Gleichgewicht erreicht wird, bestimmt das endgültige Karbonisierungsniveau — deshalb ist die Gärungstemperatur die kritischste Variable in diesem Rechner.'
+    html: 'Im Kern wird Karbonisierung durch <strong>Henrys Gesetz</strong> gesteuert: Die Menge des in einer Flüssigkeit gelösten Gases ist proportional zum Partialdruck dieses Gases über der Flüssigkeit. Wenn du eine Flasche grundierst und versiegelst, verbraucht die Hefe den Zucker und erzeugt CO2 in einer versiegelten Umgebung. Wenn der Druck ansteigt, wird das Gas zurück in Lösung gezwungen. Die Temperatur, bei der dieses Gleichgewicht erreicht wird, bestimmt das endgültige Karbonisierungsniveau - deshalb ist die Gärungstemperatur die kritischste Variable in diesem Rechner.'
   },
   {
     type: 'paragraph',
-    html: 'Das Restgas CO2 in deinem Bier vor Primerung ist nicht null. Jedes Bier enthält gelöstes CO2 aus dem Gärungsprozess, und die Menge, die beibehalten wird, hängt von der höchsten Temperatur ab, die das Bier erreichte. Ein Bier, das bei 22°C gär, enthält deutlich weniger Restgas CO2 als eines, das bei 16°C gärte, obwohl beide jetzt gekühlt sind. Die Nichtberücksichtigung dieser Restwerte führt zu systematischer Übergärung — einem der häufigsten Fehler unter anfänglichen Hausbauern.'
+    html: 'Das Restgas CO2 in deinem Bier vor Primerung ist nicht null. Jedes Bier enthält gelöstes CO2 aus dem Gärungsprozess, und die Menge, die beibehalten wird, hängt von der höchsten Temperatur ab, die das Bier erreichte. Ein Bier, das bei 22°C gär, enthält deutlich weniger Restgas CO2 als eines, das bei 16°C gärte, obwohl beide jetzt gekühlt sind. Die Nichtberücksichtigung dieser Restwerte führt zu systematischer Übergärung - einem der häufigsten Fehler unter anfänglichen Hausbauern.'
   }
 ];
 

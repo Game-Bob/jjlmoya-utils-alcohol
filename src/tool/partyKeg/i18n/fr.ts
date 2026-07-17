@@ -3,7 +3,7 @@ import type { WithContext, SoftwareApplication, FAQPage, HowTo } from 'schema-dt
 import type { PartyKegUI, PartyKegLocaleContent } from '../index';
 
 const slug = 'calculateur-fete-fut';
-const title = 'Calculateur de Bière pour Fêtes : Quantité par Personne, Mariage ou Anniversaire';
+const title = 'Calculateur de Bière pour Fêtes: Quantité par Personne, Mariage ou Anniversaire';
 const description = 'Outil gratuit pour calculer la quantité de bière et de glace selon les invités, la durée et la température. Idéal pour les mariages, anniversaires et événements en plein air.';
 
 const ui: PartyKegUI = {
@@ -36,15 +36,15 @@ const faq: PartyKegLocaleContent['faq'] = [
   },
   {
     question: "Combien de glace faut-il pour 100 bières ?",
-    answer: "Il vous faudra environ 15 à 20 kilos de glace (7 à 10 sacs). La règle pratique est de 0,75 kg de glace par litre de boisson dans des conditions normales. En été ou en extérieur à plus de 25°C, montez à 1 kg par litre : la chaleur ambiante accélère la fonte et vous manquerez de glace bien plus tôt que prévu.",
+    answer: "Il vous faudra environ 15 à 20 kilos de glace (7 à 10 sacs). La règle pratique est de 0,75 kg de glace par litre de boisson dans des conditions normales. En été ou en extérieur à plus de 25°C, montez à 1 kg par litre: la chaleur ambiante accélère la fonte et vous manquerez de glace bien plus tôt que prévu.",
   },
   {
     question: "Quelle est la différence entre un fût standard et un mini-fût ?",
-    answer: "Un fût commercial standard contient 50 litres, soit environ 200 portions de 250ml. Un mini-fût de fête contient généralement 5 litres — environ 20 portions. Connaître ces volumes vous aide à convertir la sortie en litres du calculateur en nombre de contenants à acheter.",
+    answer: "Un fût commercial standard contient 50 litres, soit environ 200 portions de 250ml. Un mini-fût de fête contient généralement 5 litres - environ 20 portions. Connaître ces volumes vous aide à convertir la sortie en litres du calculateur en nombre de contenants à acheter.",
   },
   {
     question: "Pourquoi ai-je besoin d'autant de glace si les bières sont déjà froides ?",
-    answer: "Parce que refroidir et maintenir sont deux processus distincts. Amener une canette de 25°C à 4°C consomme la chaleur latente de fusion de la glace : environ 334 kJ/kg. Une fois froide, la glace continue de travailler pour compenser la chaleur ambiante. Par une journée d'été à 35°C, les transferts thermiques peuvent faire fondre 1 kg de glace par litre de boisson toutes les 2 à 3 heures. C'est pourquoi pré-refroidir les boissons avant la fête réduit la consommation de glace de moitié.",
+    answer: "Parce que refroidir et maintenir sont deux processus distincts. Amener une canette de 25°C à 4°C consomme la chaleur latente de fusion de la glace: environ 334 kJ/kg. Une fois froide, la glace continue de travailler pour compenser la chaleur ambiante. Par une journée d'été à 35°C, les transferts thermiques peuvent faire fondre 1 kg de glace par litre de boisson toutes les 2 à 3 heures. C'est pourquoi pré-refroidir les boissons avant la fête réduit la consommation de glace de moitié.",
   },
 ];
 
@@ -98,7 +98,7 @@ const seo: PartyKegLocaleContent['seo'] = [
     icon: 'mdi:snowflake-thermometer',
     variant: 'warning',
     badge: 'Thermodynamique',
-    html: 'Calculer la glace est l\'erreur la plus courante des organisateurs de fêtes. La glace remplit deux fonctions : Refroidir (amener la bière de 25°C à 4°C) et Maintenir (lutter contre la chaleur ambiante). À des températures supérieures à 30°C, la vitesse de fonte double. Un sac de glace complet en plein soleil peut disparaître en moins de 20 minutes.'
+    html: 'Calculer la glace est l\'erreur la plus courante des organisateurs de fêtes. La glace remplit deux fonctions: Refroidir (amener la bière de 25°C à 4°C) et Maintenir (lutter contre la chaleur ambiante). À des températures supérieures à 30°C, la vitesse de fonte double. Un sac de glace complet en plein soleil peut disparaître en moins de 20 minutes.'
   },
   {
     type: 'tip',
@@ -112,15 +112,15 @@ const seo: PartyKegLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Un fût standard de 50L donne environ 200 portions. Un sac de glace typique pèse 2kg. En connaissant ces chiffres, vous pouvez planifier le transport et le stockage nécessaires à votre événement sans mauvaises surprises de dernière minute. Comptez également la fonte pendant le transport — un trajet de 30 minutes en été peut vous coûter un sac entier avant même le début de la fête.'
+    html: 'Un fût standard de 50L donne environ 200 portions. Un sac de glace typique pèse 2kg. En connaissant ces chiffres, vous pouvez planifier le transport et le stockage nécessaires à votre événement sans mauvaises surprises de dernière minute. Comptez également la fonte pendant le transport - un trajet de 30 minutes en été peut vous coûter un sac entier avant même le début de la fête.'
   },
   {
     type: 'summary',
     title: 'À qui s\'adresse cet outil ?',
     items: [
-      'Hôtes de fêtes privées : Achetez exactement ce dont vous avez besoin pour votre prochaine célébration.',
-      'Organisateurs d\'événements : Utilisez des modèles de consommation précis pour planifier la logistique du bar.',
-      'Gérants de lieux : Standardisez les calculs de stock pour des événements récurrents avec des nombres d\'invités variables.'
+      'Hôtes de fêtes privées: Achetez exactement ce dont vous avez besoin pour votre prochaine célébration.',
+      'Organisateurs d\'événements: Utilisez des modèles de consommation précis pour planifier la logistique du bar.',
+      'Gérants de lieux: Standardisez les calculs de stock pour des événements récurrents avec des nombres d\'invités variables.'
     ]
   },
   {

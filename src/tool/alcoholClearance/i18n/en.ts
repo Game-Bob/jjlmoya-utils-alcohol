@@ -44,19 +44,19 @@ const faq: AlcoholClearanceLocaleContent['faq'] = [
   },
   {
     question: "Can coffee, water or exercise speed up alcohol elimination?",
-    answer: "No. The liver eliminates alcohol at a constant rate of approximately 0.15 g/L per hour (zero-order kinetics). Coffee can mask tiredness, water helps with dehydration, and exercise improves general wellbeing — but none of them reduce your actual BAC. Only time eliminates alcohol from the blood.",
+    answer: "No. The liver eliminates alcohol at a constant rate of approximately 0.15 g/L per hour (zero-order kinetics). Coffee can mask tiredness, water helps with dehydration, and exercise improves general wellbeing - but none of them reduce your actual BAC. Only time eliminates alcohol from the blood.",
   },
   {
     question: "Does eating after drinking help lower BAC?",
-    answer: "Eating after drinking does not reduce the alcohol already in your bloodstream. Where food makes a huge difference is before or during drinking: food in the stomach — especially proteins and fats — slows gastric absorption and can reduce your peak BAC by up to 50%. Once alcohol is absorbed, only hepatic metabolism can eliminate it.",
+    answer: "Eating after drinking does not reduce the alcohol already in your bloodstream. Where food makes a huge difference is before or during drinking: food in the stomach - especially proteins and fats - slows gastric absorption and can reduce your peak BAC by up to 50%. Once alcohol is absorbed, only hepatic metabolism can eliminate it.",
   },
   {
     question: "How long does it take to reach 0.0 BAC?",
-    answer: "It depends on your starting BAC. Divide your estimated BAC (in g/L) by 0.15 to get the approximate hours. For example, a BAC of 1.5 g/L takes around 10 hours. The liver never stops: it processes alcohol even while you sleep. But be aware — alcohol can still be present in your blood even when you feel completely recovered.",
+    answer: "It depends on your starting BAC. Divide your estimated BAC (in g/L) by 0.15 to get the approximate hours. For example, a BAC of 1.5 g/L takes around 10 hours. The liver never stops: it processes alcohol even while you sleep. But be aware - alcohol can still be present in your blood even when you feel completely recovered.",
   },
   {
     question: "Is this calculator 100% reliable for deciding whether to drive?",
-    answer: "No. This tool is a theoretical estimate based on Widmark's formula. Factors such as food intake, medications, fatigue, genetic ADH enzyme variants, and stress can shift your actual BAC by 20–30% in either direction. Never use this calculator to decide whether to drive. If you have been drinking, do not drive — that is the only rule with zero margin for error.",
+    answer: "No. This tool is a theoretical estimate based on Widmark's formula. Factors such as food intake, medications, fatigue, genetic ADH enzyme variants, and stress can shift your actual BAC by 20-30% in either direction. Never use this calculator to decide whether to drive. If you have been drinking, do not drive - that is the only rule with zero margin for error.",
   },
 ];
 
@@ -84,7 +84,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Understanding how our body processes ethanol is essential for safety and for mitigating hangovers. Our <strong>alcohol elimination calculator</strong> uses the recognized <strong>Widmark Formula</strong> to offer you a clear map of your metabolic state. Alcohol is not eliminated by sweating, drinking water, or exercising — only time and hepatic metabolism can reduce your blood alcohol concentration.'
+    html: 'Understanding how our body processes ethanol is essential for safety and for mitigating hangovers. Our <strong>alcohol elimination calculator</strong> uses the recognized <strong>Widmark Formula</strong> to offer you a clear map of your metabolic state. Alcohol is not eliminated by sweating, drinking water, or exercising - only time and hepatic metabolism can reduce your blood alcohol concentration.'
   },
   {
     type: 'diagnostic',
@@ -101,7 +101,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'The liver degrades 95% of alcohol through Alcohol Dehydrogenase (ADH). This process occurs at a constant rate (zero-order kinetics), which means it cannot be accelerated by exercise or coffee. The remaining 5% is eliminated through breath, urine, and sweat — which is the basis for breathalyzer testing in traffic enforcement.'
+    html: 'The liver degrades 95% of alcohol through Alcohol Dehydrogenase (ADH). This process occurs at a constant rate (zero-order kinetics), which means it cannot be accelerated by exercise or coffee. The remaining 5% is eliminated through breath, urine, and sweat - which is the basis for breathalyzer testing in traffic enforcement.'
   },
   {
     type: 'stats',
@@ -130,7 +130,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Safety First: Know Your Limit',
-    html: 'A BAC of 0.05% measurably impairs judgment, tracking, and reaction time. Most countries set the legal driving limit between 0.05% and 0.08%. However, individual sensitivity varies significantly — age, medications, fatigue, and genetic ADH enzyme variants all shift how alcohol affects you personally. When in doubt, do not drive.'
+    html: 'A BAC of 0.05% measurably impairs judgment, tracking, and reaction time. Most countries set the legal driving limit between 0.05% and 0.08%. However, individual sensitivity varies significantly - age, medications, fatigue, and genetic ADH enzyme variants all shift how alcohol affects you personally. When in doubt, do not drive.'
   },
   {
     type: 'title',
@@ -139,7 +139,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Eating before or during drinking dramatically changes alcohol absorption kinetics. Food in the stomach — especially proteins and fats — slows gastric emptying, reducing the peak rate at which ethanol enters the bloodstream. A person who drinks on an empty stomach can reach a peak BAC 50% higher than the same person who ate a full meal before drinking the same amount. This is one of the most powerful variables that the Widmark formula cannot fully capture, which is why our calculator includes a disclaimer about theoretical estimation.'
+    html: 'Eating before or during drinking dramatically changes alcohol absorption kinetics. Food in the stomach - especially proteins and fats - slows gastric emptying, reducing the peak rate at which ethanol enters the bloodstream. A person who drinks on an empty stomach can reach a peak BAC 50% higher than the same person who ate a full meal before drinking the same amount. This is one of the most powerful variables that the Widmark formula cannot fully capture, which is why our calculator includes a disclaimer about theoretical estimation.'
   },
   {
     type: 'paragraph',

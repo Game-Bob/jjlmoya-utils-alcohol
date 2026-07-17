@@ -47,11 +47,11 @@ const faq: FortifiedWineBuilderLocaleContent['faq'] = [
   },
   {
     question: 'Vilken är den typiska alkoholhalten för vermouth?',
-    answer: 'Traditionell vermouth har en alkoholhalt på 15 % till 18 %. Torr vermouth (franskstil) ligger vanligtvis i den lägre änden (15–16 %), medan söt vermouth (italienskstil) ofta är 16–18 %. Rosé-vermouth befinner sig däremellan.',
+    answer: 'Traditionell vermouth har en alkoholhalt på 15 % till 18 %. Torr vermouth (franskstil) ligger vanligtvis i den lägre änden (15-16 %), medan söt vermouth (italienskstil) ofta är 16-18 %. Rosé-vermouth befinner sig däremellan.',
   },
   {
     question: 'Vilket basvin bör jag använda till vermouth?',
-    answer: 'Traditionellt fungerar ett neutralt, torrt vitt vin med 10–12 % alkohol bäst. Vinet ger ryggraden, men eftersom det kommer att aromatiseras med örter och botanicals behöver du inget dyrt vin — en ren, syrarik bas är idealisk.',
+    answer: 'Traditionellt fungerar ett neutralt, torrt vitt vin med 10-12 % alkohol bäst. Vinet ger ryggraden, men eftersom det kommer att aromatiseras med örter och botanicals behöver du inget dyrt vin - en ren, syrarik bas är idealisk.',
   },
   {
     question: 'Kan jag använda neutral alkohol istället för brandy?',
@@ -59,7 +59,7 @@ const faq: FortifiedWineBuilderLocaleContent['faq'] = [
   },
   {
     question: 'Hur bevarar berikningsprocessen vinet?',
-    answer: 'När vinets alkoholhalt överstiger ungefär 15–16 % hämmas jästens fermentering — jästen kan inte överleva i miljöer med hög alkoholhalt. Det är därför berikade viner har mycket längre hållbarhet än vanligt vin. Alkoholen fungerar som ett naturligt konserveringsmedel mot både jäst- och bakterieförstöring.',
+    answer: 'När vinets alkoholhalt överstiger ungefär 15-16 % hämmas jästens fermentering - jästen kan inte överleva i miljöer med hög alkoholhalt. Det är därför berikade viner har mycket längre hållbarhet än vanligt vin. Alkoholen fungerar som ett naturligt konserveringsmedel mot både jäst- och bakterieförstöring.',
   },
 ];
 
@@ -73,9 +73,9 @@ const howTo: FortifiedWineBuilderLocaleContent['howTo'] = [
 
 const seo: FortifiedWineBuilderLocaleContent['seo'] = [
   { type: 'title', text: 'Pearson Kvadraten: Antik matematik, perfekt vin', level: 2 },
-  { type: 'paragraph', html: '<strong>Pearson Kvadraten</strong> är ett av de äldsta och mest eleganta verktygen inom vinmakarens matematik. Utvecklad på 1800-talet låter den vilken vinmakare som helst — professionell eller amatör — beräkna blandningsförhållanden med ingenting mer än subtraktion. Vårt verktyg digitaliserar denna visuella metod och lägger till realtidsfeedback, så att du spenderar mindre tid på beräkningar och mer tid på att skapa.' },
-  { type: 'stats', items: [{ label: 'Vermouth', value: '15–18 % vol.', icon: 'mdi:glass-cocktail' }, { label: 'Portvin', value: '18–20 % vol.', icon: 'mdi:bottle-wine' }, { label: 'Sherry', value: '15–17 % vol.', icon: 'mdi:cup-water' }], columns: 3 },
-  { type: 'card', title: 'Varför berika till 18 %?', icon: 'mdi:shield-check', html: 'Ovanför ungefär 15 % vol. hämmas <em>Saccharomyces cerevisiae</em> — den primära vinjästen. Vid 18 % är jäsningen fullständigt stoppad. Det är därför portvin behåller restsöta: spriten tillsätts mitt under jäsningen och dödar jästen innan allt socker har förbrukats.' },
+  { type: 'paragraph', html: '<strong>Pearson Kvadraten</strong> är ett av de äldsta och mest eleganta verktygen inom vinmakarens matematik. Utvecklad på 1800-talet låter den vilken vinmakare som helst - professionell eller amatör - beräkna blandningsförhållanden med ingenting mer än subtraktion. Vårt verktyg digitaliserar denna visuella metod och lägger till realtidsfeedback, så att du spenderar mindre tid på beräkningar och mer tid på att skapa.' },
+  { type: 'stats', items: [{ label: 'Vermouth', value: '15-18 % vol.', icon: 'mdi:glass-cocktail' }, { label: 'Portvin', value: '18-20 % vol.', icon: 'mdi:bottle-wine' }, { label: 'Sherry', value: '15-17 % vol.', icon: 'mdi:cup-water' }], columns: 3 },
+  { type: 'card', title: 'Varför berika till 18 %?', icon: 'mdi:shield-check', html: 'Ovanför ungefär 15 % vol. hämmas <em>Saccharomyces cerevisiae</em> - den primära vinjästen. Vid 18 % är jäsningen fullständigt stoppad. Det är därför portvin behåller restsöta: spriten tillsätts mitt under jäsningen och dödar jästen innan allt socker har förbrukats.' },
   { type: 'tip', title: 'Proffstips: Mät vid 20 °C', html: 'Alkoholens densitet förändras med temperaturen. Officiella alkoholmätningar är kalibrerade vid 20 °C. Om din sprit eller vin är avsevärt varmare eller kallare, tillämpa en korrektionsfaktor: ungefär +0,04 % vol. per °C under 20 °C och −0,04 % per °C över.' },
   { type: 'title', text: 'Hantverksvermouth-renässansen', level: 2 },
   { type: 'paragraph', html: 'Södra Europa upplever en hantverksvermouth-renässans. Barcelona, Valencia och San Sebastián har återtagit <em>la hora del vermut</em> som en kulturell institution, och små producenter i Spanien, Italien och Frankrike buteljerar remarkabla uttryck. Detta har skapat en ny generation hemmaproducenter som vill ha tekniska verktyg som matchar deras ambitioner.' },

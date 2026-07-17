@@ -4,7 +4,7 @@ import type { BeerCoolerUI, BeerCoolerLocaleContent } from '../index';
 
 const slug = 'ol-kylare';
 const title = 'Ölkylningsräknare med Newtons kylningslag';
-const description = 'Beräkna med verklig termodynamik — Newtons kylningslag — exakt hur lång tid din öl behöver för att nå den perfekta serveringstemperaturen i kylskåp eller frys.';
+const description = 'Beräkna med verklig termodynamik - Newtons kylningslag - exakt hur lång tid din öl behöver för att nå den perfekta serveringstemperaturen i kylskåp eller frys.';
 
 const ui: BeerCoolerUI = {
   step1Title: 'Vad kyler du?',
@@ -39,19 +39,19 @@ const faq: BeerCoolerLocaleContent['faq'] = [
   },
   {
     question: 'Fungerar knepet med våt pappershandduk och salt verkligen?',
-    answer: 'Ja, och ganska märkbart. Att lindra behållaren i en fuktig pappershandduk med salt snabbar på kylningen av två skäl: vattnets förångning bortför ytterligare värme (förångningskylning), och salt sänker vattnets smältpunkt, vilket håller den fuktiga kontakten aktiv längre. Du kan få en extra nedgång på 2–4°C under de första minuterna jämfört med att placera en torr burk i frysen.',
+    answer: 'Ja, och ganska märkbart. Att lindra behållaren i en fuktig pappershandduk med salt snabbar på kylningen av två skäl: vattnets förångning bortför ytterligare värme (förångningskylning), och salt sänker vattnets smältpunkt, vilket håller den fuktiga kontakten aktiv längre. Du kan få en extra nedgång på 2-4°C under de första minuterna jämfört med att placera en torr burk i frysen.',
   },
   {
     question: 'Vilken är den ideala serveringstemperaturen för olika ölstilar?',
-    answer: 'Det beror på stilen. Lager och Pilsner serveras bäst mellan 3°C och 7°C. IPA och Pale Ale glänser vid 7°C till 10°C. Stout, Porter och komplexa aler bör serveras varmare, mellan 12°C och 14°C, så att deras aromatiska föreningar — kaffe, choklad, nötter — kan uttrycka sig fullt ut.',
+    answer: 'Det beror på stilen. Lager och Pilsner serveras bäst mellan 3°C och 7°C. IPA och Pale Ale glänser vid 7°C till 10°C. Stout, Porter och komplexa aler bör serveras varmare, mellan 12°C och 14°C, så att deras aromatiska föreningar - kaffe, choklad, nötter - kan uttrycka sig fullt ut.',
   },
   {
     question: 'Kan min öl explodera om jag lämnar den i frysen?',
-    answer: 'Ja. Alkohol och lösta socker sänkerölens smältpunkt under rent vatten: en standard 5% lager fryser omkring -3°C. När vattnet kristalliserar ökar volymen och löst CO2 höjer det inre trycket tills behållaren ger vika. Mer än 60 minuter i frysen — särskilt glaskflaskor — är en verklig fara. Använd denna räknare för att undvika det.',
+    answer: 'Ja. Alkohol och lösta socker sänkerölens smältpunkt under rent vatten: en standard 5% lager fryser omkring -3°C. När vattnet kristalliserar ökar volymen och löst CO2 höjer det inre trycket tills behållaren ger vika. Mer än 60 minuter i frysen - särskilt glaskflaskor - är en verklig fara. Använd denna räknare för att undvika det.',
   },
   {
     question: 'Bränner öl om den kyls för snabbt?',
-    answer: 'Nej. Myten om "värmechock" som förstör öl är falsk. Det som verkligen kan påverka den är upprepad frysning och eltöning — vilket bryter proteiner och grumlar vätskan — eller direkt UV-ljusexponering. Snabb kylning i frys eller isvatten skadar inte smaken.',
+    answer: 'Nej. Myten om "värmechock" som förstör öl är falsk. Det som verkligen kan påverka den är upprepad frysning och eltöning - vilket bryter proteiner och grumlar vätskan - eller direkt UV-ljusexponering. Snabb kylning i frys eller isvatten skadar inte smaken.',
   },
 ];
 
@@ -111,22 +111,22 @@ const seo: BeerCoolerLocaleContent['seo'] = [
     type: 'card',
     title: 'Fryszonens farozon',
     icon: 'mdi:snowflake-alert',
-    html: 'På grund av alkohol och lösta socker fryser öl under 0°C — en standard 5% lager fryser omkring -3°C. När vattnet kristalliserar ökar volymen, och CO2-trycket stiger samtidigt. Resultatet är en behållare som kan sprängas med våld. Lämna aldrig öl i frysen i mer än 45 minuter utan att ställa in en timer.'
+    html: 'På grund av alkohol och lösta socker fryser öl under 0°C - en standard 5% lager fryser omkring -3°C. När vattnet kristalliserar ökar volymen, och CO2-trycket stiger samtidigt. Resultatet är en behållare som kan sprängas med våld. Lämna aldrig öl i frysen i mer än 45 minuter utan att ställa in en timer.'
   },
   {
     type: 'proscons',
     title: 'Nödkylningsknep',
     items: [
-      { pro: 'Knep med våt handduk: Slå in burken i våt pappershandduk, frys sedan in — förångning snabbar på kylningen.', con: '' },
+      { pro: 'Knep med våt handduk: Slå in burken i våt pappershandduk, frys sedan in - förångning snabbar på kylningen.', con: '' },
       { pro: 'Arktisk saltlake: Fyll en hink med vatten, is och 2 matskedar salt för att nå -5°C saltlake.', con: '' },
       { pro: 'Rotationsmetod: Snurra flaskan i isvatten för att tvinga fram konvektion och förkorta kylningstiden.', con: '' },
-      { pro: '', con: 'Placera inte en burk direkt på frysbordet utan timer — sprucken burkar är röriga och farliga.' }
+      { pro: '', con: 'Placera inte en burk direkt på frysbordet utan timer - sprucken burkar är röriga och farliga.' }
     ]
   },
   {
     type: 'tip',
     title: 'Pro tips: Förkyla glaset',
-    html: 'Glaset som du häller öl i har betydande värmemassa. Ett varmt glas kan höja temperaturen på en perfekt kall öl med 2–3°C omedelbar vid kontakt. Sätt serveringsglaset i frysen i 5 minuter innan du häller, eller skölj med kallt vatten. Det här enkla steget förlänger fönstret när din öl smaksätter exakt som avsett.'
+    html: 'Glaset som du häller öl i har betydande värmemassa. Ett varmt glas kan höja temperaturen på en perfekt kall öl med 2-3°C omedelbar vid kontakt. Sätt serveringsglaset i frysen i 5 minuter innan du häller, eller skölj med kallt vatten. Det här enkla steget förlänger fönstret när din öl smaksätter exakt som avsett.'
   },
   {
     type: 'title',
@@ -135,7 +135,7 @@ const seo: BeerCoolerLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Kylningskonstanten k i Newtons ekvation är inte ett fast universellt värde — det är en empirisk egenskap hos varje specifik behållare och medium. En tunn aluminiumburk i isvatten har ett dramatiskt annat k än en tjock glasflaska i stilla kylskåpsluft. Vår miniräknare använder uppmätta värden kalibrerade mot verkliga experiment för varje behållartyp, vilket ger dig förutsägelser exakta inom några minuter för typiska hemkylningsscenarioer.'
+    html: 'Kylningskonstanten k i Newtons ekvation är inte ett fast universellt värde - det är en empirisk egenskap hos varje specifik behållare och medium. En tunn aluminiumburk i isvatten har ett dramatiskt annat k än en tjock glasflaska i stilla kylskåpsluft. Vår miniräknare använder uppmätta värden kalibrerade mot verkliga experiment för varje behållartyp, vilket ger dig förutsägelser exakta inom några minuter för typiska hemkylningsscenarioer.'
   }
 ];
 

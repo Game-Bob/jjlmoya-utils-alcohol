@@ -48,31 +48,31 @@ const faq: JelloShotLabLocaleContent['faq'] = [
   },
   {
     question: 'Was ist das maximale Alkoholverhältnis, bevor Jello Shots nicht mehr fest werden?',
-    answer: 'Die sichere Obergrenze liegt bei etwa 30–35 % des gesamten Flüssigkeitsvolumens als pure Spirituose (bei 40 % ABV). Bei einem 96 %igen Neutralalkohol sinkt diese Grenze auf etwa 15–18 % des Gesamtvolumens. Unser Rechner berücksichtigt den ABV der Spirituose, sodass du die Gelierschwelle nie überschreitest.',
+    answer: 'Die sichere Obergrenze liegt bei etwa 30-35 % des gesamten Flüssigkeitsvolumens als pure Spirituose (bei 40 % ABV). Bei einem 96 %igen Neutralalkohol sinkt diese Grenze auf etwa 15-18 % des Gesamtvolumens. Unser Rechner berücksichtigt den ABV der Spirituose, sodass du die Gelierschwelle nie überschreitest.',
   },
   {
-    question: 'Spielt es eine Rolle, welche Spirituose ich verwende – Wodka, Rum oder Tequila?',
+    question: 'Spielt es eine Rolle, welche Spirituose ich verwende - Wodka, Rum oder Tequila?',
     answer: 'Entscheidend ist der ABV, nicht die Art der Spirituose. Wodka mit 40 % und Rum mit 40 % verhalten sich im Gelatinegitter identisch. Spirituosen mit höherem Zuckergehalt (wie manche Rums oder Liköre) können die Textur leicht verbessern, da Zucker mit Ethanol um die Wasserstoffbrückenbindungen im Gelatinegitter konkurriert.',
   },
   {
     question: 'Wie lange sind Jello Shots im Kühlschrank haltbar?',
-    answer: 'Richtig hergestellte Jello Shots halten sich 3–5 Tage im Kühlschrank, abgedeckt mit Frischhaltefolie. Der hohe Alkoholgehalt wirkt als natürliches Konservierungsmittel. Lass sie nicht länger als 2 Stunden bei Zimmertemperatur stehen, da die Gelatine weich wird und sich Bakterien vermehren können.',
+    answer: 'Richtig hergestellte Jello Shots halten sich 3-5 Tage im Kühlschrank, abgedeckt mit Frischhaltefolie. Der hohe Alkoholgehalt wirkt als natürliches Konservierungsmittel. Lass sie nicht länger als 2 Stunden bei Zimmertemperatur stehen, da die Gelatine weich wird und sich Bakterien vermehren können.',
   },
   {
     question: 'Kann ich meine Jello Shots fester oder weicher machen?',
-    answer: 'Ja. Verwende mehr Gelatine (oder ein halbes Päckchen extra) für festere Shots, die sauber aus den Bechern gleiten. Verwende etwas weniger für eine weichere, wackelige Textur. Ersetze Gelatine niemals durch Agar-Agar, wenn du eine glatte, auf der Zunge zerschmelzende Textur möchtest – Agar wird fester und schmilzt bei höherer Temperatur.',
+    answer: 'Ja. Verwende mehr Gelatine (oder ein halbes Päckchen extra) für festere Shots, die sauber aus den Bechern gleiten. Verwende etwas weniger für eine weichere, wackelige Textur. Ersetze Gelatine niemals durch Agar-Agar, wenn du eine glatte, auf der Zunge zerschmelzende Textur möchtest - Agar wird fester und schmilzt bei höherer Temperatur.',
   },
   {
     question: 'Kann ich Jello Shots einfrieren, um das Kühlen zu beschleunigen?',
-    answer: 'Nein. Durch das Einfrieren bricht das Gelatinegitter, was beim Auftauen zu einer wässrigen, körnigen Textur führt. Immer mindestens 4 Stunden im Kühlschrank lagern. Für Partys bereite sie am Vorabend zu – 8+ Stunden ergibt die beste Textur.',
+    answer: 'Nein. Durch das Einfrieren bricht das Gelatinegitter, was beim Auftauen zu einer wässrigen, körnigen Textur führt. Immer mindestens 4 Stunden im Kühlschrank lagern. Für Partys bereite sie am Vorabend zu - 8+ Stunden ergibt die beste Textur.',
   },
 ];
 
 const howTo: JelloShotLabLocaleContent['howTo'] = [
   { name: 'Wähle deine Spirituose', text: 'Gib den ABV deiner Spirituose ein und wähle die gewünschte Shot-Stärke. Der Rechner zeigt dir die maximale Menge an Spirituose, die deine Gelatine aufnehmen kann.' },
   { name: 'Gelatine anrühren', text: 'Gieß die berechnete Menge kochendes Wasser in eine Schüssel. Füge das Gelatinepulver hinzu und rühre 2 Minuten lang kräftig, bis es vollständig aufgelöst ist. Noch keinen Alkohol hinzufügen.' },
-  { name: 'Spirituose hinzufügen', text: 'Lass die Gelatinmischung 5–10 Minuten abkühlen, bis sie warm, aber nicht heiß ist (unter 50 °C). Füge deine Spirituose hinzu und rühre vorsichtig, um Blasen zu vermeiden.' },
-  { name: 'Eingießen und kühlen', text: 'In Plastikbecher, Silikonformen oder kleine Schnapsgläser füllen. Mindestens 4 Stunden kühlen – über Nacht ist ideal. Nicht einfrieren.' },
+  { name: 'Spirituose hinzufügen', text: 'Lass die Gelatinmischung 5-10 Minuten abkühlen, bis sie warm, aber nicht heiß ist (unter 50 °C). Füge deine Spirituose hinzu und rühre vorsichtig, um Blasen zu vermeiden.' },
+  { name: 'Eingießen und kühlen', text: 'In Plastikbecher, Silikonformen oder kleine Schnapsgläser füllen. Mindestens 4 Stunden kühlen - über Nacht ist ideal. Nicht einfrieren.' },
 ];
 
 
@@ -80,7 +80,7 @@ const seo: JelloShotLabLocaleContent['seo'] = [
   { type: 'title', text: 'Die Chemie hinter einem perfekten Jello Shot', level: 2 },
   {
     type: 'paragraph',
-    html: 'Ein Jello Shot ist nicht nur aromatisierte Gelatine mit Alkohol – er ist eine <strong>empfindliche kolloidale Suspension</strong>, bei der Proteinpolymere, Wasser und Ethanol um Wasserstoffbrückenbindungen konkurrieren. Stimmt das Verhältnis nicht, erhält man eine Pfütze süßer Flüssigkeit oder eine gummiartige Scheibe, die vom Tisch springt. Stimmt es, hat man einen perfekt wackeligen Shot, der in einer sauberen Bewegung aus dem Becher gleitet.',
+    html: 'Ein Jello Shot ist nicht nur aromatisierte Gelatine mit Alkohol - er ist eine <strong>empfindliche kolloidale Suspension</strong>, bei der Proteinpolymere, Wasser und Ethanol um Wasserstoffbrückenbindungen konkurrieren. Stimmt das Verhältnis nicht, erhält man eine Pfütze süßer Flüssigkeit oder eine gummiartige Scheibe, die vom Tisch springt. Stimmt es, hat man einen perfekt wackeligen Shot, der in einer sauberen Bewegung aus dem Becher gleitet.',
   },
   {
     type: 'stats',
@@ -95,13 +95,13 @@ const seo: JelloShotLabLocaleContent['seo'] = [
     type: 'card',
     title: 'Was ist Bloom Festigkeit?',
     icon: 'mdi:molecule',
-    html: 'Bloom ist das Maß für die Gelierkraft einer Gelatine und reicht typischerweise von 50 bis 300 Bloom. Supermarkt-Blattgelatine hat üblicherweise 150–200 Bloom. Eine höhere Bloom-Zahl bedeutet ein festeres Gel bei gleicher Pulvermenge, was bedeutet, dass es etwas mehr Alkohol verträgt, bevor es nicht mehr geliert. Standard-Gelatinepäckchen (7 g) sind für etwa 240 ml Flüssigkeit kalibriert.',
+    html: 'Bloom ist das Maß für die Gelierkraft einer Gelatine und reicht typischerweise von 50 bis 300 Bloom. Supermarkt-Blattgelatine hat üblicherweise 150-200 Bloom. Eine höhere Bloom-Zahl bedeutet ein festeres Gel bei gleicher Pulvermenge, was bedeutet, dass es etwas mehr Alkohol verträgt, bevor es nicht mehr geliert. Standard-Gelatinepäckchen (7 g) sind für etwa 240 ml Flüssigkeit kalibriert.',
   },
   {
     type: 'card',
     title: 'Die Ethanol Grenze',
     icon: 'mdi:alert-circle-outline',
-    html: 'Ethanol konkurriert mit Wasser um die Wasserstoffbrückenbindungsstellen an den Aminosäureketten des Kollagens. Wenn Ethanol zu viele dieser Stellen besetzt, kann das Protein nicht mehr die stabile Dreifachhelix bilden, die der Gelatine ihre Struktur gibt. Die praktische Grenze liegt bei etwa <strong>1 Teil 40%iger Spirituose auf 1 Teil Wasser</strong> – danach wird dein Shot nicht mehr fest, egal wie lange du wartest.',
+    html: 'Ethanol konkurriert mit Wasser um die Wasserstoffbrückenbindungsstellen an den Aminosäureketten des Kollagens. Wenn Ethanol zu viele dieser Stellen besetzt, kann das Protein nicht mehr die stabile Dreifachhelix bilden, die der Gelatine ihre Struktur gibt. Die praktische Grenze liegt bei etwa <strong>1 Teil 40%iger Spirituose auf 1 Teil Wasser</strong> - danach wird dein Shot nicht mehr fest, egal wie lange du wartest.',
   },
   {
     type: 'tip',
@@ -124,7 +124,7 @@ const seo: JelloShotLabLocaleContent['seo'] = [
     items: [
       'Party-Gastgeber: Berechne genau, wie viele Päckchen und wie viel Spirituose du vor dem Kauf brauchst.',
       'Barkeeper: Hochskalieren auf Großproduktion mit konsistenten Ergebnissen jedes Mal.',
-      'Hobbyköche: Vermeide die häufigsten Fehler – flüssige Shots, gummiartige Textur oder null Alkoholgeschmack.',
+      'Hobbyköche: Vermeide die häufigsten Fehler - flüssige Shots, gummiartige Textur oder null Alkoholgeschmack.',
     ],
   },
 ];

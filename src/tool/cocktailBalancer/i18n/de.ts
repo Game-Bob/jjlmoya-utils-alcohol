@@ -151,7 +151,7 @@ const seo: CocktailBalancerLocaleContent['seo'] = [
     icon: 'mdi:star',
     variant: 'success',
     badge: 'Ziel',
-    html: 'Dies ist das ultimative Ziel: ein kontrollierter pH-Wert, bei dem Zucker die Aggression der Säure neutralisiert, ohne die ätherischen Öle und aromatischen Verbindungen der Basisspirituose zu maskieren. Diese präzise Balance ist der Ort, wo unsterbliche Klassiker leben — der Daiquiri, die Margarita, der Sidecar — Drinks, die Jahrzehnte überdauert haben, weil sie den grundlegenden Gesetzen der Geschmackschemie gehorchen.'
+    html: 'Dies ist das ultimative Ziel: ein kontrollierter pH-Wert, bei dem Zucker die Aggression der Säure neutralisiert, ohne die ätherischen Öle und aromatischen Verbindungen der Basisspirituose zu maskieren. Diese präzise Balance ist der Ort, wo unsterbliche Klassiker leben - der Daiquiri, die Margarita, der Sidecar - Drinks, die Jahrzehnte überdauert haben, weil sie den grundlegenden Gesetzen der Geschmackschemie gehorchen.'
   },
   {
     type: 'tip',

@@ -4,7 +4,7 @@ import type { BeerCoolerUI, BeerCoolerLocaleContent } from '../index';
 
 const slug = 'raffreddatore-birra';
 const title = 'Calcolatore di Raffreddamento della Birra con la Legge di Newton';
-const description = 'Calcola con vera termodinamica — Legge di Raffreddamento di Newton — esattamente quanto tempo hai bisogno affinché la tua birra raggiunga la temperatura di servizio perfetta in frigorifero o congelatore.';
+const description = 'Calcola con vera termodinamica - Legge di Raffreddamento di Newton - esattamente quanto tempo hai bisogno affinché la tua birra raggiunga la temperatura di servizio perfetta in frigorifero o congelatore.';
 
 const ui: BeerCoolerUI = {
   step1Title: 'Cosa stai raffreddando?',
@@ -39,19 +39,19 @@ const faq: BeerCoolerLocaleContent['faq'] = [
   },
   {
     question: 'Il trucco del tovagliolo bagnato con sale funziona davvero?',
-    answer: 'Sì, molto notevolmente. Avvolgere il contenitore in un tovagliolo di carta umido con sale accelera il raffreddamento per due motivi: l\'evaporazione dell\'acqua estrae calore aggiuntivo (raffreddamento evaporativo), e il sale abbassa il punto di congelamento dell\'acqua, mantenendo il contatto umido più attivo. Puoi guadagnare un ulteriore calo di 2–4°C nei primi minuti rispetto a una lattina asciutta nel congelatore.',
+    answer: 'Sì, molto notevolmente. Avvolgere il contenitore in un tovagliolo di carta umido con sale accelera il raffreddamento per due motivi: l\'evaporazione dell\'acqua estrae calore aggiuntivo (raffreddamento evaporativo), e il sale abbassa il punto di congelamento dell\'acqua, mantenendo il contatto umido più attivo. Puoi guadagnare un ulteriore calo di 2-4°C nei primi minuti rispetto a una lattina asciutta nel congelatore.',
   },
   {
     question: 'Qual è la temperatura di servizio ideale per diversi stili di birra?',
-    answer: 'Dipende dallo stile. Le Lager e le Pilsner si servono meglio tra 3°C e 7°C. Le IPA e le Pale Ale brillano a 7°C-10°C. Gli Stout, Porter e ale complesse dovrebbero essere serviti più caldi, tra 12°C e 14°C, così i loro composti aromatici — caffè, cioccolato, noci — possono esprimersi pienamente.',
+    answer: 'Dipende dallo stile. Le Lager e le Pilsner si servono meglio tra 3°C e 7°C. Le IPA e le Pale Ale brillano a 7°C-10°C. Gli Stout, Porter e ale complesse dovrebbero essere serviti più caldi, tra 12°C e 14°C, così i loro composti aromatici - caffè, cioccolato, noci - possono esprimersi pienamente.',
   },
   {
     question: 'La mia birra può esplodere se la lascio nel congelatore?',
-    answer: 'Sì. L\'alcol e gli zuccheri disciolti abbassano il punto di congelamento della birra sotto quello dell\'acqua pura: una lager standard al 5% congela intorno a -3°C. Mentre l\'acqua cristallizza, il volume aumenta e l\'anidride carbonica disciolta aumenta la pressione interna finché il contenitore cede. Più di 60 minuti nel congelatore — soprattutto bottiglie di vetro — è davvero pericoloso. Usa questo calcolatore per evitarlo.',
+    answer: 'Sì. L\'alcol e gli zuccheri disciolti abbassano il punto di congelamento della birra sotto quello dell\'acqua pura: una lager standard al 5% congela intorno a -3°C. Mentre l\'acqua cristallizza, il volume aumenta e l\'anidride carbonica disciolta aumenta la pressione interna finché il contenitore cede. Più di 60 minuti nel congelatore - soprattutto bottiglie di vetro - è davvero pericoloso. Usa questo calcolatore per evitarlo.',
   },
   {
     question: 'La birra "brucia" se raffreddata troppo velocemente?',
-    answer: 'No. Il mito dello "shock termico" che rovina la birra è falso. Quello che può genuinamente danneggiarla è il ripetuto congelamento e scongelamento — che rompe le proteine e intorbida il liquido — o l\'esposizione diretta alla luce UV. Un raffreddamento veloce nel congelatore o in acqua ghiacciata non danneggia il sapore.',
+    answer: 'No. Il mito dello "shock termico" che rovina la birra è falso. Quello che può genuinamente danneggiarla è il ripetuto congelamento e scongelamento - che rompe le proteine e intorbida il liquido - o l\'esposizione diretta alla luce UV. Un raffreddamento veloce nel congelatore o in acqua ghiacciata non danneggia il sapore.',
   },
 ];
 
@@ -111,16 +111,16 @@ const seo: BeerCoolerLocaleContent['seo'] = [
     type: 'card',
     title: 'La Zona Pericolo Congelatore',
     icon: 'mdi:snowflake-alert',
-    html: 'A causa dell\'alcol e degli zuccheri disciolti, la birra congela sotto 0°C — una lager standard al 5% congela intorno a -3°C. Quando l\'acqua cristallizza si espande, mentre la pressione di CO2 aumenta simultaneamente. Il risultato è un contenitore che può rompersi violentemente. Non lasciare mai una birra nel congelatore per più di 45 minuti senza impostare un timer.'
+    html: 'A causa dell\'alcol e degli zuccheri disciolti, la birra congela sotto 0°C - una lager standard al 5% congela intorno a -3°C. Quando l\'acqua cristallizza si espande, mentre la pressione di CO2 aumenta simultaneamente. Il risultato è un contenitore che può rompersi violentemente. Non lasciare mai una birra nel congelatore per più di 45 minuti senza impostare un timer.'
   },
   {
     type: 'proscons',
     title: 'Trucchi di Raffreddamento d\'Emergenza',
     items: [
-      { pro: 'Trucco del Tovagliolo: Avvolgi la lattina in tovagliolo di carta bagnato, poi congela — l\'evaporazione accelera il raffreddamento.', con: '' },
+      { pro: 'Trucco del Tovagliolo: Avvolgi la lattina in tovagliolo di carta bagnato, poi congela - l\'evaporazione accelera il raffreddamento.', con: '' },
       { pro: 'Salamoia Artica: Riempi un secchio con acqua, ghiaccio e 2 cucchiai di sale per raggiungere salamoia a -5°C.', con: '' },
       { pro: 'Metodo di Rotazione: Ruota la bottiglia in acqua ghiacciata per forzare convezione e accorciare il tempo di raffreddamento.', con: '' },
-      { pro: '', con: 'Non mettere una lattina direttamente su uno scaffale del congelatore senza un timer — le lattine rotte sono disastrose e pericolose.' }
+      { pro: '', con: 'Non mettere una lattina direttamente su uno scaffale del congelatore senza un timer - le lattine rotte sono disastrose e pericolose.' }
     ]
   },
   {
@@ -135,7 +135,7 @@ const seo: BeerCoolerLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'La costante di raffreddamento k nell\'equazione di Newton non è un valore universale fisso — è una proprietà empirica di ogni contenitore specifico e mezzo. Una lattina di alluminio sottile in acqua ghiacciata ha un k drasticamente diverso da una bottiglia di vetro spessa in aria del frigorifero ferma. Il nostro calcolatore utilizza valori misurati calibrati contro esperimenti reali per ogni tipo di contenitore, dandoti previsioni accurate entro pochi minuti per tipici scenari di raffreddamento domestico.'
+    html: 'La costante di raffreddamento k nell\'equazione di Newton non è un valore universale fisso - è una proprietà empirica di ogni contenitore specifico e mezzo. Una lattina di alluminio sottile in acqua ghiacciata ha un k drasticamente diverso da una bottiglia di vetro spessa in aria del frigorifero ferma. Il nostro calcolatore utilizza valori misurati calibrati contro esperimenti reali per ogni tipo di contenitore, dandoti previsioni accurate entro pochi minuti per tipici scenari di raffreddamento domestico.'
   }
 ];
 

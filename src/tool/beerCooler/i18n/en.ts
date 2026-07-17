@@ -4,7 +4,7 @@ import type { BeerCoolerUI, BeerCoolerLocaleContent } from '../index';
 
 const slug = 'beer-cooler';
 const title = "Beer Cooling Calculator with Newton's Law";
-const description = "Calculate with real thermodynamics — Newton's Law of Cooling — exactly how long your beer needs to reach the perfect serving temperature in the fridge or freezer.";
+const description = "Calculate with real thermodynamics - Newton's Law of Cooling - exactly how long your beer needs to reach the perfect serving temperature in the fridge or freezer.";
 
 const ui: BeerCoolerUI = {
   step1Title: 'What are you cooling?',
@@ -39,19 +39,19 @@ const faq: BeerCoolerLocaleContent['faq'] = [
   },
   {
     question: "Does the wet paper towel trick with salt actually work?",
-    answer: "Yes, and quite noticeably. Wrapping the container in a damp paper towel with salt speeds cooling for two reasons: water evaporation draws out additional heat (evaporative cooling), and salt lowers the water's freezing point, keeping the moist contact active longer. You can gain an extra 2–4°C drop in the first few minutes compared to placing a dry can in the freezer.",
+    answer: "Yes, and quite noticeably. Wrapping the container in a damp paper towel with salt speeds cooling for two reasons: water evaporation draws out additional heat (evaporative cooling), and salt lowers the water's freezing point, keeping the moist contact active longer. You can gain an extra 2-4°C drop in the first few minutes compared to placing a dry can in the freezer.",
   },
   {
     question: "What is the ideal serving temperature for different beer styles?",
-    answer: "It depends on the style. Lagers and Pilsners are best served between 3°C and 7°C. IPAs and Pale Ales shine at 7°C to 10°C. Stouts, Porters and complex ales should be served warmer, between 12°C and 14°C, so their aromatic compounds — coffee, chocolate, nuts — can express themselves fully.",
+    answer: "It depends on the style. Lagers and Pilsners are best served between 3°C and 7°C. IPAs and Pale Ales shine at 7°C to 10°C. Stouts, Porters and complex ales should be served warmer, between 12°C and 14°C, so their aromatic compounds - coffee, chocolate, nuts - can express themselves fully.",
   },
   {
     question: "Can my beer explode if I leave it in the freezer?",
-    answer: "Yes. Alcohol and dissolved sugars lower beer's freezing point below that of pure water: a standard 5% lager freezes around -3°C. As the water crystallizes, the volume increases and dissolved CO2 raises internal pressure until the container gives way. More than 60 minutes in the freezer — especially glass bottles — is a real danger zone. Use this calculator to avoid it.",
+    answer: "Yes. Alcohol and dissolved sugars lower beer's freezing point below that of pure water: a standard 5% lager freezes around -3°C. As the water crystallizes, the volume increases and dissolved CO2 raises internal pressure until the container gives way. More than 60 minutes in the freezer - especially glass bottles - is a real danger zone. Use this calculator to avoid it.",
   },
   {
     question: "Does beer 'burn' if cooled too quickly?",
-    answer: "No. The 'heat shock' myth that ruins beer is false. What can genuinely affect it is repeated freezing and thawing — which breaks proteins and clouds the liquid — or direct UV light exposure. A quick chill in the freezer or ice water does not harm the flavour.",
+    answer: "No. The 'heat shock' myth that ruins beer is false. What can genuinely affect it is repeated freezing and thawing - which breaks proteins and clouds the liquid - or direct UV light exposure. A quick chill in the freezer or ice water does not harm the flavour.",
   },
 ];
 
@@ -111,16 +111,16 @@ const seo: BeerCoolerLocaleContent['seo'] = [
     type: 'card',
     title: 'The Freezer Danger Zone',
     icon: 'mdi:snowflake-alert',
-    html: 'Due to alcohol and dissolved sugars, beer freezes below 0°C — a standard 5% lager freezes around -3°C. As water crystallizes it expands, while CO2 pressure rises simultaneously. The result is a container that can rupture violently. Never leave a beer in the freezer for more than 45 minutes without setting a timer.'
+    html: 'Due to alcohol and dissolved sugars, beer freezes below 0°C - a standard 5% lager freezes around -3°C. As water crystallizes it expands, while CO2 pressure rises simultaneously. The result is a container that can rupture violently. Never leave a beer in the freezer for more than 45 minutes without setting a timer.'
   },
   {
     type: 'proscons',
     title: 'Emergency Chilling Hacks',
     items: [
-      { pro: 'Wet Paper Trick: Wrap the can in wet paper towel, then freeze — evaporation accelerates cooling.', con: '' },
+      { pro: 'Wet Paper Trick: Wrap the can in wet paper towel, then freeze - evaporation accelerates cooling.', con: '' },
       { pro: 'Arctic Brine: Fill a bucket with water, ice and 2 tablespoons of salt to reach -5°C brine.', con: '' },
       { pro: 'Spinning Method: Rotate the bottle in iced water to force convection and shorten cooling time.', con: '' },
-      { pro: '', con: 'Do not place a can directly on a freezer shelf without a timer — ruptured cans are messy and dangerous.' }
+      { pro: '', con: 'Do not place a can directly on a freezer shelf without a timer - ruptured cans are messy and dangerous.' }
     ]
   },
   {
@@ -135,7 +135,7 @@ const seo: BeerCoolerLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'The cooling constant k in Newton\'s equation is not a fixed universal value — it is an empirical property of each specific container and medium. A thin aluminum can in ice water has a dramatically different k than a thick glass bottle in still refrigerator air. Our calculator uses measured values calibrated against real-world experiments for each container type, giving you predictions accurate to within a few minutes for typical household cooling scenarios.'
+    html: 'The cooling constant k in Newton\'s equation is not a fixed universal value - it is an empirical property of each specific container and medium. A thin aluminum can in ice water has a dramatically different k than a thick glass bottle in still refrigerator air. Our calculator uses measured values calibrated against real-world experiments for each container type, giving you predictions accurate to within a few minutes for typical household cooling scenarios.'
   }
 ];
 

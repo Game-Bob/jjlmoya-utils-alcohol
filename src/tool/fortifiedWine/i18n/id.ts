@@ -51,7 +51,7 @@ const faq: FortifiedWineBuilderLocaleContent['faq'] = [
   },
   {
     question: 'Wine dasar apa yang harus saya gunakan untuk vermouth?',
-    answer: 'Secara tradisional, wine putih kering dan netral dengan kadar alkohol 10-12% paling cocok digunakan. Wine memberikan tulang punggung, tetapi karena akan diberi aroma dengan rempah dan bahan botanikal, Anda tidak perlu wine mahal — dasar yang bersih dan asam adalah yang ideal.',
+    answer: 'Secara tradisional, wine putih kering dan netral dengan kadar alkohol 10-12% paling cocok digunakan. Wine memberikan tulang punggung, tetapi karena akan diberi aroma dengan rempah dan bahan botanikal, Anda tidak perlu wine mahal - dasar yang bersih dan asam adalah yang ideal.',
   },
   {
     question: 'Bisakah saya menggunakan alkohol netral sebagai pengganti brandy?',
@@ -59,7 +59,7 @@ const faq: FortifiedWineBuilderLocaleContent['faq'] = [
   },
   {
     question: 'Bagaimana fortifikasi mengawetkan wine?',
-    answer: 'Ketika kadar alkohol wine melebihi sekitar 15-16%, fermentasi oleh ragi terhambat — ragi tidak dapat bertahan di lingkungan beralkohol tinggi. Inilah mengapa wine fortifikasi memiliki umur simpan yang jauh lebih panjang daripada wine biasa. Alkohol bertindak sebagai pengawet alami terhadap pembusukan oleh ragi maupun bakteri.',
+    answer: 'Ketika kadar alkohol wine melebihi sekitar 15-16%, fermentasi oleh ragi terhambat - ragi tidak dapat bertahan di lingkungan beralkohol tinggi. Inilah mengapa wine fortifikasi memiliki umur simpan yang jauh lebih panjang daripada wine biasa. Alkohol bertindak sebagai pengawet alami terhadap pembusukan oleh ragi maupun bakteri.',
   },
 ];
 
@@ -73,9 +73,9 @@ const howTo: FortifiedWineBuilderLocaleContent['howTo'] = [
 
 const seo: FortifiedWineBuilderLocaleContent['seo'] = [
   { type: 'title', text: 'Pearson Square: Matematika Kuno, Wine Sempurna', level: 2 },
-  { type: 'paragraph', html: '<strong>Pearson Square</strong> adalah salah satu alat paling tua dan elegan dalam matematika pembuatan wine. Dikembangkan pada abad ke-19, alat ini memungkinkan siapa pun — profesional atau amatir — untuk menghitung rasio pencampuran hanya dengan pengurangan. Alat kami mendigitalkan metode visual ini dan menambahkan umpan balik real-time, sehingga Anda menghabiskan lebih sedikit waktu untuk menghitung dan lebih banyak waktu untuk berkreasi.' },
-  { type: 'stats', items: [{ label: 'Vermouth', value: '15–18% vol.', icon: 'mdi:glass-cocktail' }, { label: 'Port', value: '18–20% vol.', icon: 'mdi:bottle-wine' }, { label: 'Sherry', value: '15–17% vol.', icon: 'mdi:cup-water' }], columns: 3 },
-  { type: 'card', title: 'Mengapa fortifikasi pada 18%?', icon: 'mdi:shield-check', html: 'Di atas sekitar 15% vol., <em>Saccharomyces cerevisiae</em> — ragi wine utama — mulai terhambat. Saat mencapai 18%, fermentasi sepenuhnya terhenti. Inilah mengapa wine Port mempertahankan gula sisa: spirit ditambahkan di tengah fermentasi, membunuh ragi sebelum semua gula dikonsumsi.' },
+  { type: 'paragraph', html: '<strong>Pearson Square</strong> adalah salah satu alat paling tua dan elegan dalam matematika pembuatan wine. Dikembangkan pada abad ke-19, alat ini memungkinkan siapa pun - profesional atau amatir - untuk menghitung rasio pencampuran hanya dengan pengurangan. Alat kami mendigitalkan metode visual ini dan menambahkan umpan balik real-time, sehingga Anda menghabiskan lebih sedikit waktu untuk menghitung dan lebih banyak waktu untuk berkreasi.' },
+  { type: 'stats', items: [{ label: 'Vermouth', value: '15-18% vol.', icon: 'mdi:glass-cocktail' }, { label: 'Port', value: '18-20% vol.', icon: 'mdi:bottle-wine' }, { label: 'Sherry', value: '15-17% vol.', icon: 'mdi:cup-water' }], columns: 3 },
+  { type: 'card', title: 'Mengapa fortifikasi pada 18%?', icon: 'mdi:shield-check', html: 'Di atas sekitar 15% vol., <em>Saccharomyces cerevisiae</em> - ragi wine utama - mulai terhambat. Saat mencapai 18%, fermentasi sepenuhnya terhenti. Inilah mengapa wine Port mempertahankan gula sisa: spirit ditambahkan di tengah fermentasi, membunuh ragi sebelum semua gula dikonsumsi.' },
   { type: 'tip', title: 'Tips Pro: Ukur pada 20°C', html: 'Kerapatan alkohol berubah seiring suhu. Pengukuran kadar alkohol resmi dikalibrasi pada 20°C. Jika spirit atau wine Anda jauh lebih hangat atau dingin, terapkan faktor koreksi: sekitar +0,04% vol. per °C di bawah 20°C, dan −0,04% per °C di atasnya.' },
   { type: 'title', text: 'Renaisans Vermouth Artisanal', level: 2 },
   { type: 'paragraph', html: 'Eropa selatan sedang mengalami renaisans vermouth artisanal. Barcelona, Valencia, dan San Sebastián telah merebut kembali <em>la hora del vermut</em> sebagai institusi budaya, dan produsen kecil di Spanyol, Italia, dan Prancis membotolkan ekspresi yang luar biasa. Hal ini menciptakan generasi baru produsen rumahan yang menginginkan alat teknis sesuai dengan ambisi mereka.' },

@@ -36,15 +36,15 @@ const faq: PartyKegLocaleContent['faq'] = [
   },
   {
     question: "Wie viel Eis brauche ich für 100 Biere?",
-    answer: "Du benötigst ungefähr 15–20 Kilogramm Eis (7–10 Beutel). Die praktische Regel lautet: 0,75 kg Eis pro Liter Getränk unter Normalbedingungen. Im Sommer oder im Freien über 25 °C solltest du mit 1 kg pro Liter rechnen: Die Umgebungswärme beschleunigt das Schmelzen erheblich, und dein Eis schmilzt viel schneller als erwartet.",
+    answer: "Du benötigst ungefähr 15-20 Kilogramm Eis (7-10 Beutel). Die praktische Regel lautet: 0,75 kg Eis pro Liter Getränk unter Normalbedingungen. Im Sommer oder im Freien über 25 °C solltest du mit 1 kg pro Liter rechnen: Die Umgebungswärme beschleunigt das Schmelzen erheblich, und dein Eis schmilzt viel schneller als erwartet.",
   },
   {
     question: "Was ist der Unterschied zwischen einem Standard- und einem Party-Fass?",
-    answer: "Ein Standard-Fassfass fasst 50 Liter, was ungefähr 200 Portionen à 250 ml ergibt. Ein Party-Fass (Mini-Fass) fasst typischerweise 5 Liter — etwa 20 Portionen. Diese Größen zu kennen hilft dir, die Literangabe des Rechners in die Anzahl der zu kaufenden Behälter umzurechnen.",
+    answer: "Ein Standard-Fassfass fasst 50 Liter, was ungefähr 200 Portionen à 250 ml ergibt. Ein Party-Fass (Mini-Fass) fasst typischerweise 5 Liter - etwa 20 Portionen. Diese Größen zu kennen hilft dir, die Literangabe des Rechners in die Anzahl der zu kaufenden Behälter umzurechnen.",
   },
   {
     question: "Warum brauche ich so viel Eis, wenn die Biere bereits kalt sind?",
-    answer: "Weil Abkühlung und Aufrechterhaltung zwei unterschiedliche Prozesse sind. Um eine Dose von 25 °C auf 4 °C abzukühlen, wird die Schmelzwärmemenge des Eises benötigt: etwa 334 kJ/kg. Einmal kalt, arbeitet das Eis weiterhin, um die Umgebungswärme auszugleichen. An einem Sommertag mit 35 °C kann Wärmeleitung in die Kühlbox etwa 1 kg Eis pro Liter Getränk alle 2–3 Stunden schmelzen. Deshalb reduziert Vorkühlen deiner Getränke vor der Party deinen Gesamteisverbrauch um die Hälfte.",
+    answer: "Weil Abkühlung und Aufrechterhaltung zwei unterschiedliche Prozesse sind. Um eine Dose von 25 °C auf 4 °C abzukühlen, wird die Schmelzwärmemenge des Eises benötigt: etwa 334 kJ/kg. Einmal kalt, arbeitet das Eis weiterhin, um die Umgebungswärme auszugleichen. An einem Sommertag mit 35 °C kann Wärmeleitung in die Kühlbox etwa 1 kg Eis pro Liter Getränk alle 2-3 Stunden schmelzen. Deshalb reduziert Vorkühlen deiner Getränke vor der Party deinen Gesamteisverbrauch um die Hälfte.",
   },
 ];
 
@@ -72,7 +72,7 @@ const seo: PartyKegLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Die Millionen-Dollar-Frage bei jeder Veranstaltung: <strong>Wie viele Liter Bier sollte ich kaufen?</strong> Zu wenig ist ein Desaster, aber zu viel ist unnötige Ausgabe. Dieses Tool hilft dir, die genaue Menge Alkohol und noch wichtiger <strong>wie viele Eisbeutel</strong> du kaufen musst, um alles kalt zu halten. Professionelle Caterer und Eventmanager nutzen statistische Verbrauchsmodelle — jetzt kannst du das auch kostenlos.'
+    html: 'Die Millionen-Dollar-Frage bei jeder Veranstaltung: <strong>Wie viele Liter Bier sollte ich kaufen?</strong> Zu wenig ist ein Desaster, aber zu viel ist unnötige Ausgabe. Dieses Tool hilft dir, die genaue Menge Alkohol und noch wichtiger <strong>wie viele Eisbeutel</strong> du kaufen musst, um alles kalt zu halten. Professionelle Caterer und Eventmanager nutzen statistische Verbrauchsmodelle - jetzt kannst du das auch kostenlos.'
   },
   {
     type: 'title',
@@ -112,7 +112,7 @@ const seo: PartyKegLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Ein Standard-50-Liter-Fass ergibt etwa 200 Portionen. Ein typischer Eisbeutel wiegt 2 kg. Mit diesen Zahlen kannst du Transport und Lagerung für dein Event ohne letzte Minute Überraschungen planen. Rechne mit Eisschmelz während des Transports — eine 30-minütige Fahrt im Sommer kann dir einen ganzen Beutel kosten, bevor die Party überhaupt anfängt.'
+    html: 'Ein Standard-50-Liter-Fass ergibt etwa 200 Portionen. Ein typischer Eisbeutel wiegt 2 kg. Mit diesen Zahlen kannst du Transport und Lagerung für dein Event ohne letzte Minute Überraschungen planen. Rechne mit Eisschmelz während des Transports - eine 30-minütige Fahrt im Sommer kann dir einen ganzen Beutel kosten, bevor die Party überhaupt anfängt.'
   },
   {
     type: 'summary',
@@ -125,7 +125,7 @@ const seo: PartyKegLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Eine oft übersehene Variable ist die <strong>Ausfallquote der Gäste</strong>. Bei den meisten Partys verlassen 10–15 % der Gäste früh und 10 % trinken vielleicht gar nicht. Der Rechner wendet einen konservativen Puffer an, damit du nie zu kurz kommst, aber auch nicht mit enormem Überschuss sitzt. Diese Anpassungen zu verstehen hilft dir, die Schätzung für deine spezifische Gruppe zu verfeinern. Runde beim Kaufen immer auf, da zurückgegebene offene Fässer normalerweise nicht möglich sind. Ein kleiner Überschuss ist immer besser als am Höhepunkt der Party trocken zu laufen.'
+    html: 'Eine oft übersehene Variable ist die <strong>Ausfallquote der Gäste</strong>. Bei den meisten Partys verlassen 10-15 % der Gäste früh und 10 % trinken vielleicht gar nicht. Der Rechner wendet einen konservativen Puffer an, damit du nie zu kurz kommst, aber auch nicht mit enormem Überschuss sitzt. Diese Anpassungen zu verstehen hilft dir, die Schätzung für deine spezifische Gruppe zu verfeinern. Runde beim Kaufen immer auf, da zurückgegebene offene Fässer normalerweise nicht möglich sind. Ein kleiner Überschuss ist immer besser als am Höhepunkt der Party trocken zu laufen.'
   }
 ];
 

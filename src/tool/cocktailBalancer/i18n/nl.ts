@@ -151,7 +151,7 @@ const seo: CocktailBalancerLocaleContent['seo'] = [
     icon: 'mdi:star',
     variant: 'success',
     badge: 'Doel',
-    html: 'Dit is het ultieme doel: een gecontroleerde pH waarbij suiker de agressie van zuur neutraliseert zonder de essentiële oliën en aromatische stoffen van de basissterkedrank te maskeren. Dit precieze evenwicht is waar onsterfelijke klassiekers leven — de Daiquiri, de Margarita, de Sidecar — dranken die decennia hebben overleefd omdat ze de fundamentele wetten van smaakchemie gehoorzamen.'
+    html: 'Dit is het ultieme doel: een gecontroleerde pH waarbij suiker de agressie van zuur neutraliseert zonder de essentiële oliën en aromatische stoffen van de basissterkedrank te maskeren. Dit precieze evenwicht is waar onsterfelijke klassiekers leven - de Daiquiri, de Margarita, de Sidecar - dranken die decennia hebben overleefd omdat ze de fundamentele wetten van smaakchemie gehoorzamen.'
   },
   {
     type: 'tip',

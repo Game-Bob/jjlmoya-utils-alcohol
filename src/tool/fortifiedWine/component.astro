@@ -36,14 +36,14 @@ const { ui } = Astro.props;
             <div class="fw-field">
               <label class="fw-label" for="fw-wine-vol">{ui.wineVolumeLabel}</label>
               <div class="fw-slider-row">
-                <input type="range" class="fw-slider" id="fw-wine-vol-slider" min="0.1" max="100" step="0.1" value="5" />
+                <input type="range" class="fw-slider" id="fw-wine-vol-slider" min="0.1" max="100" step="0.1" value="5" aria-label={ui.wineVolumeLabel} />
                 <input type="number" class="fw-num-input" id="fw-wine-vol" min="0.1" max="9999" step="0.1" value="5" />
               </div>
             </div>
             <div class="fw-field">
               <label class="fw-label" for="fw-wine-abv">{ui.wineAbvLabel}</label>
               <div class="fw-slider-row">
-                <input type="range" class="fw-slider" id="fw-wine-abv-slider" min="0" max="25" step="0.5" value="12" />
+                <input type="range" class="fw-slider" id="fw-wine-abv-slider" min="0" max="25" step="0.5" value="12" aria-label={ui.wineAbvLabel} />
                 <input type="number" class="fw-num-input" id="fw-wine-abv" min="0" max="25" step="0.1" value="12" />
               </div>
             </div>
@@ -60,7 +60,7 @@ const { ui } = Astro.props;
           <div class="fw-field">
             <label class="fw-label" for="fw-spirit-abv">{ui.spiritAbvLabel}</label>
             <div class="fw-slider-row">
-              <input type="range" class="fw-slider" id="fw-spirit-abv-slider" min="15" max="96" step="1" value="38" />
+              <input type="range" class="fw-slider" id="fw-spirit-abv-slider" min="15" max="96" step="1" value="38" aria-label={ui.spiritAbvLabel} />
               <input type="number" class="fw-num-input" id="fw-spirit-abv" min="15" max="96" step="0.1" value="38" />
             </div>
           </div>
@@ -70,14 +70,14 @@ const { ui } = Astro.props;
           <div class="fw-field">
             <label class="fw-label" for="fw-target-abv">{ui.targetAbvLabel}</label>
             <div class="fw-slider-row">
-              <input type="range" class="fw-slider" id="fw-target-abv-slider" min="1" max="40" step="0.5" value="16" />
+              <input type="range" class="fw-slider" id="fw-target-abv-slider" min="1" max="40" step="0.5" value="16" aria-label={ui.targetAbvLabel} />
               <input type="number" class="fw-num-input" id="fw-target-abv" min="1" max="40" step="0.1" value="16" />
             </div>
           </div>
           <div class="fw-field" id="fw-target-vol-field" style="display:none; margin-top:0.75rem;">
             <label class="fw-label" for="fw-target-vol">{ui.targetVolumeLabel}</label>
             <div class="fw-slider-row">
-              <input type="range" class="fw-slider" id="fw-target-vol-slider" min="0.1" max="100" step="0.1" value="6" />
+              <input type="range" class="fw-slider" id="fw-target-vol-slider" min="0.1" max="100" step="0.1" value="6" aria-label={ui.targetVolumeLabel} />
               <input type="number" class="fw-num-input" id="fw-target-vol" min="0.1" max="9999" step="0.1" value="6" />
             </div>
           </div>

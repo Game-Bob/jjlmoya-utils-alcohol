@@ -28,12 +28,12 @@ function translatableStrings(content: Record<string, unknown>): string[] {
 
 function sentenceStart(text: string, endIndex: number): string {
   const beforeMark = text.slice(0, endIndex).trimEnd();
-  const boundary = Math.max(
-    beforeMark.lastIndexOf('.'),
-    beforeMark.lastIndexOf(':'),
-    beforeMark.lastIndexOf(';'),
-    beforeMark.lastIndexOf('\n'),
-  );
+  const regex = /(?:\n|:|;|\.(?!\d)|(?<!\d)\.)/g;
+  let match;
+  let boundary = -1;
+  while ((match = regex.exec(beforeMark)) !== null) {
+    boundary = match.index;
+  }
 
   return beforeMark.slice(boundary + 1).trimStart();
 }

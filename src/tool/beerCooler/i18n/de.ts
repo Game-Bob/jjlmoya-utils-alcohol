@@ -4,7 +4,7 @@ import type { BeerCoolerUI, BeerCoolerLocaleContent } from '../index';
 
 const slug = 'bier-kuhler';
 const title = 'Bierkühler mit Newtonsches Abkühlungsgesetz';
-const description = 'Berechne mit echter Thermodynamik — Newtonsches Abkühlungsgesetz — genau wie lange dein Bier braucht, um die perfekte Serviertemperatur im Kühlschrank oder Gefrierschrank zu erreichen.';
+const description = 'Berechne mit echter Thermodynamik - Newtonsches Abkühlungsgesetz - genau wie lange dein Bier braucht, um die perfekte Serviertemperatur im Kühlschrank oder Gefrierschrank zu erreichen.';
 
 const ui: BeerCoolerUI = {
   step1Title: 'Was kühlst du ab?',
@@ -39,19 +39,19 @@ const faq: BeerCoolerLocaleContent['faq'] = [
   },
   {
     question: 'Funktioniert der Trick mit dem nassen Papiertuch und Salz wirklich?',
-    answer: 'Ja, und sehr deutlich. Das Wickeln des Behälters in ein feuchtes Papiertuch mit Salz beschleunigt das Abkühlen aus zwei Gründen: Wasserverdunstung entzieht zusätzliche Wärme (Verdunstungskühlung), und Salz senkt den Gefrierpunkt des Wassers, wodurch der feuchte Kontakt länger aktiv bleibt. Du kannst in den ersten Minuten einen zusätzlichen Temperaturabfall von 2–4°C erreichen, verglichen mit einer trockenen Dose im Gefrierschrank.',
+    answer: 'Ja, und sehr deutlich. Das Wickeln des Behälters in ein feuchtes Papiertuch mit Salz beschleunigt das Abkühlen aus zwei Gründen: Wasserverdunstung entzieht zusätzliche Wärme (Verdunstungskühlung), und Salz senkt den Gefrierpunkt des Wassers, wodurch der feuchte Kontakt länger aktiv bleibt. Du kannst in den ersten Minuten einen zusätzlichen Temperaturabfall von 2-4°C erreichen, verglichen mit einer trockenen Dose im Gefrierschrank.',
   },
   {
     question: 'Welche ist die ideale Serviertemperatur für verschiedene Biersorten?',
-    answer: 'Das hängt von der Sorte ab. Lagerbiere und Pilsener werden am besten zwischen 3°C und 7°C serviert. IPAs und Pale Ales kommen bei 7°C bis 10°C zur Geltung. Stouts, Porter und komplexere Ales sollten wärmer serviert werden, zwischen 12°C und 14°C, damit ihre Aromastoffe — Kaffee, Schokolade, Nüsse — sich vollständig entfalten können.',
+    answer: 'Das hängt von der Sorte ab. Lagerbiere und Pilsener werden am besten zwischen 3°C und 7°C serviert. IPAs und Pale Ales kommen bei 7°C bis 10°C zur Geltung. Stouts, Porter und komplexere Ales sollten wärmer serviert werden, zwischen 12°C und 14°C, damit ihre Aromastoffe - Kaffee, Schokolade, Nüsse - sich vollständig entfalten können.',
   },
   {
     question: 'Kann mein Bier explodieren, wenn ich es zu lange im Gefrierschrank lasse?',
-    answer: 'Ja. Alkohol und gelöste Zucker senken den Gefrierpunkt des Bieres unter den von reinem Wasser: Ein standardmäßiges Lagerbier mit 5% Alkohol gefriert um -3°C. Wenn Wasser kristallisiert, nimmt das Volumen zu, und gelöstes CO2 erhöht den Innendruck, bis der Behälter nachgibt. Mehr als 60 Minuten im Gefrierschrank — besonders bei Glasflaschen — ist wirklich gefährlich. Nutze diesen Rechner, um das zu vermeiden.',
+    answer: 'Ja. Alkohol und gelöste Zucker senken den Gefrierpunkt des Bieres unter den von reinem Wasser: Ein standardmäßiges Lagerbier mit 5% Alkohol gefriert um -3°C. Wenn Wasser kristallisiert, nimmt das Volumen zu, und gelöstes CO2 erhöht den Innendruck, bis der Behälter nachgibt. Mehr als 60 Minuten im Gefrierschrank - besonders bei Glasflaschen - ist wirklich gefährlich. Nutze diesen Rechner, um das zu vermeiden.',
   },
   {
     question: 'Wird Bier "geschockt", wenn es zu schnell gekühlt wird?',
-    answer: 'Nein. Der Mythos vom "Wärmeschock", der Bier ruiniert, ist falsch. Was es wirklich beeinträchtigen kann, ist wiederholtes Einfrieren und Auftauen — das zerstört Proteine und trübt die Flüssigkeit — oder direkte UV-Lichteinstrahlung. Ein schnelles Abkühlen im Gefrierschrank oder Eiswasser schadet dem Geschmack nicht.',
+    answer: 'Nein. Der Mythos vom "Wärmeschock", der Bier ruiniert, ist falsch. Was es wirklich beeinträchtigen kann, ist wiederholtes Einfrieren und Auftauen - das zerstört Proteine und trübt die Flüssigkeit - oder direkte UV-Lichteinstrahlung. Ein schnelles Abkühlen im Gefrierschrank oder Eiswasser schadet dem Geschmack nicht.',
   },
 ];
 
@@ -111,16 +111,16 @@ const seo: BeerCoolerLocaleContent['seo'] = [
     type: 'card',
     title: 'Die Gefrierzone',
     icon: 'mdi:snowflake-alert',
-    html: 'Wegen Alkohol und gelöster Zucker gefriert Bier unter 0°C — ein standardmäßiges 5%-Lagerbier gefriert um -3°C. Während Wasser kristallisiert, dehnt es sich aus, während der CO2-Druck gleichzeitig ansteigt. Das Ergebnis ist ein Behälter, der heftig platzen kann. Lass Bier niemals länger als 45 Minuten im Gefrierschrank, ohne einen Timer zu stellen.'
+    html: 'Wegen Alkohol und gelöster Zucker gefriert Bier unter 0°C - ein standardmäßiges 5%-Lagerbier gefriert um -3°C. Während Wasser kristallisiert, dehnt es sich aus, während der CO2-Druck gleichzeitig ansteigt. Das Ergebnis ist ein Behälter, der heftig platzen kann. Lass Bier niemals länger als 45 Minuten im Gefrierschrank, ohne einen Timer zu stellen.'
   },
   {
     type: 'proscons',
     title: 'Notfall Kühl Tricks',
     items: [
-      { pro: 'Nasses Papiertuch-Trick: Wickle die Dose in ein nasses Papiertuch und friere ein — Verdunstung beschleunigt das Abkühlen.', con: '' },
+      { pro: 'Nasses Papiertuch-Trick: Wickle die Dose in ein nasses Papiertuch und friere ein - Verdunstung beschleunigt das Abkühlen.', con: '' },
       { pro: 'Arktische Sole: Fülle einen Eimer mit Wasser, Eis und 2 Esslöffeln Salz, um -5°C Salzwasser zu erreichen.', con: '' },
       { pro: 'Drehende Methode: Drehe die Flasche im Eiswasser, um Konvektion zu erzwingen und die Abkühlungszeit zu verkürzen.', con: '' },
-      { pro: '', con: 'Stelle eine Dose nicht ohne Timer direkt auf ein Gefrierschrankregal — platzte Dosen sind chaotisch und gefährlich.' }
+      { pro: '', con: 'Stelle eine Dose nicht ohne Timer direkt auf ein Gefrierschrankregal - platzte Dosen sind chaotisch und gefährlich.' }
     ]
   },
   {
@@ -135,7 +135,7 @@ const seo: BeerCoolerLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Die Abkühlungskonstante k in Newtons Gleichung ist keine feste universelle Größe — sie ist eine empirische Eigenschaft jedes spezifischen Behälters und Mediums. Eine dünne Aluminiumdose in Eiswasser hat ein dramatisch anderes k als eine dicke Glasflasche in still stehender Kühlschrankluft. Unser Rechner verwendet gemessene Werte, die durch reale Experimente für jeden Behältertyp kalibriert sind, und gibt dir Vorhersagen, die für typische häusliche Kühlszenarien auf wenige Minuten genau sind.'
+    html: 'Die Abkühlungskonstante k in Newtons Gleichung ist keine feste universelle Größe - sie ist eine empirische Eigenschaft jedes spezifischen Behälters und Mediums. Eine dünne Aluminiumdose in Eiswasser hat ein dramatisch anderes k als eine dicke Glasflasche in still stehender Kühlschrankluft. Unser Rechner verwendet gemessene Werte, die durch reale Experimente für jeden Behältertyp kalibriert sind, und gibt dir Vorhersagen, die für typische häusliche Kühlszenarien auf wenige Minuten genau sind.'
   }
 ];
 

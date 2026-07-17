@@ -48,31 +48,31 @@ const faq: JelloShotLabLocaleContent['faq'] = [
   },
   {
     question: 'Wat is de maximale alcoholverhouding voordat jello shots niet meer stollen?',
-    answer: 'De veilige bovengrens is ongeveer 30–35% van het totale vloeistofvolume als pure sterkedrank (bij 40% vol). Met een neutrale alcohol van 96% daalt die grens naar ongeveer 15–18% van het totale volume. Onze calculator houdt rekening met het alcoholgehalte van de drank zodat je de stoldrempel nooit overschrijdt.',
+    answer: 'De veilige bovengrens is ongeveer 30-35% van het totale vloeistofvolume als pure sterkedrank (bij 40% vol). Met een neutrale alcohol van 96% daalt die grens naar ongeveer 15-18% van het totale volume. Onze calculator houdt rekening met het alcoholgehalte van de drank zodat je de stoldrempel nooit overschrijdt.',
   },
   {
-    question: 'Maakt het uit welke sterkedrank je gebruikt — wodka, rum of tequila?',
+    question: 'Maakt het uit welke sterkedrank je gebruikt - wodka, rum of tequila?',
     answer: 'Wat telt is het alcoholgehalte, niet het type drank. Wodka van 40% en rum van 40% gedragen zich identiek in de gelatinematrix. Dranken met een hoger suikergehalte (zoals sommige rums of likeuren) kunnen de textuur licht verbeteren omdat suiker concurreert met ethanol om de waterstofbindingen in het gelatinenetwerk.',
   },
   {
     question: 'Hoe lang blijven jello shots goed in de koelkast?',
-    answer: 'Goed gemaakte jello shots zijn 3–5 dagen houdbaar in de koelkast, afgedekt met plasticfolie. Het hoge alcoholgehalte werkt als natuurlijk conserveermiddel. Laat ze niet langer dan 2 uur op kamertemperatuur staan, want de gelatine wordt zacht en bacteriën kunnen zich vermenigvuldigen.',
+    answer: 'Goed gemaakte jello shots zijn 3-5 dagen houdbaar in de koelkast, afgedekt met plasticfolie. Het hoge alcoholgehalte werkt als natuurlijk conserveermiddel. Laat ze niet langer dan 2 uur op kamertemperatuur staan, want de gelatine wordt zacht en bacteriën kunnen zich vermenigvuldigen.',
   },
   {
     question: 'Kan ik mijn jello shots steviger of zachter maken?',
-    answer: 'Ja. Gebruik meer gelatine (of een half zakje extra) voor stevigere shots die netjes uit de bekers glijden. Gebruik iets minder voor een zachtere, waggelende textuur. Vervang gelatine nooit door agar-agar als je een smelt-in-de-mond textuur wilt — agar stolt harder en smelt bij een hogere temperatuur.',
+    answer: 'Ja. Gebruik meer gelatine (of een half zakje extra) voor stevigere shots die netjes uit de bekers glijden. Gebruik iets minder voor een zachtere, waggelende textuur. Vervang gelatine nooit door agar-agar als je een smelt-in-de-mond textuur wilt - agar stolt harder en smelt bij een hogere temperatuur.',
   },
   {
     question: 'Kan ik jello shots invriezen om het koelen te versnellen?',
-    answer: 'Nee. Invriezen breekt het gelatinenetwerk, wat resulteert in een waterige, korrelige textuur na het ontdooien. Altijd minimaal 4 uur in de koelkast bewaren. Maak ze voor feestjes de avond van tevoren — 8+ uur geeft de beste textuur.',
+    answer: 'Nee. Invriezen breekt het gelatinenetwerk, wat resulteert in een waterige, korrelige textuur na het ontdooien. Altijd minimaal 4 uur in de koelkast bewaren. Maak ze voor feestjes de avond van tevoren - 8+ uur geeft de beste textuur.',
   },
 ];
 
 const howTo: JelloShotLabLocaleContent['howTo'] = [
   { name: 'Kies je sterkedrank', text: 'Voer het alcoholgehalte van je drank in en kies de gewenste shot sterkte. De calculator toont je de maximale hoeveelheid drank die je gelatine kan bevatten.' },
   { name: 'Meng de gelatine', text: 'Giet de berekende hoeveelheid kokend water in een kom. Voeg het gelatinepoeder toe en roer 2 minuten krachtig tot het volledig is opgelost. Voeg nog geen alcohol toe.' },
-  { name: 'Voeg de sterkedrank toe', text: 'Laat het gelatinemengsel 5–10 minuten afkoelen totdat het warm maar niet heet is (onder 50 °C). Voeg je sterkedrank toe en roer voorzichtig om bubbels te vermijden.' },
-  { name: 'Giet en koel', text: 'Giet in plastic bekers, siliconen vormpjes of kleine shotglaasjes. Zet minimaal 4 uur in de koelkast — een nacht is ideaal. Niet invriezen.' },
+  { name: 'Voeg de sterkedrank toe', text: 'Laat het gelatinemengsel 5-10 minuten afkoelen totdat het warm maar niet heet is (onder 50 °C). Voeg je sterkedrank toe en roer voorzichtig om bubbels te vermijden.' },
+  { name: 'Giet en koel', text: 'Giet in plastic bekers, siliconen vormpjes of kleine shotglaasjes. Zet minimaal 4 uur in de koelkast - een nacht is ideaal. Niet invriezen.' },
 ];
 
 
@@ -80,7 +80,7 @@ const seo: JelloShotLabLocaleContent['seo'] = [
   { type: 'title', text: 'De chemie achter een perfecte jello shot', level: 2 },
   {
     type: 'paragraph',
-    html: 'Een jello shot is niet zomaar gearomatiseerde gelatine met alcohol erin — het is een <strong>delicate colloïdale suspensie</strong> waarbij eiwitpolymeren, water en ethanol strijden om waterstofbruggen. De verhouding fout en je eindigt met een plas zoete vloeistof of een rubberachtige schijf die van de tafel ketst. De verhouding goed en je hebt een perfect waggelende shot die in één vloeiende beweging uit het bekertje glijdt.',
+    html: 'Een jello shot is niet zomaar gearomatiseerde gelatine met alcohol erin - het is een <strong>delicate colloïdale suspensie</strong> waarbij eiwitpolymeren, water en ethanol strijden om waterstofbruggen. De verhouding fout en je eindigt met een plas zoete vloeistof of een rubberachtige schijf die van de tafel ketst. De verhouding goed en je hebt een perfect waggelende shot die in één vloeiende beweging uit het bekertje glijdt.',
   },
   {
     type: 'stats',
@@ -95,13 +95,13 @@ const seo: JelloShotLabLocaleContent['seo'] = [
     type: 'card',
     title: 'Wat is Bloom sterkte?',
     icon: 'mdi:molecule',
-    html: 'Bloom meet de gelersterkte van een gelatine, typisch variërend van 50 tot 300 Bloom. Supermarktbladgelatine is gewoonlijk 150–200 Bloom. Een hogere Bloom betekent een stevigere gel met dezelfde hoeveelheid poeder, wat inhoudt dat het iets meer alcohol kan verdragen voordat het niet meer stolt. Standaard gelatinezakjes (7 g) zijn gekalibreerd voor circa 240 ml vloeistof.',
+    html: 'Bloom meet de gelersterkte van een gelatine, typisch variërend van 50 tot 300 Bloom. Supermarktbladgelatine is gewoonlijk 150-200 Bloom. Een hogere Bloom betekent een stevigere gel met dezelfde hoeveelheid poeder, wat inhoudt dat het iets meer alcohol kan verdragen voordat het niet meer stolt. Standaard gelatinezakjes (7 g) zijn gekalibreerd voor circa 240 ml vloeistof.',
   },
   {
     type: 'card',
     title: 'De ethanollimiet',
     icon: 'mdi:alert-circle-outline',
-    html: 'Ethanol concurreert met water om de waterstofbindingsplaatsen op de aminozuurketens van collageen. Wanneer ethanol te veel van die plaatsen bezet, kan het eiwit niet meer de stabiele drievoudige helix vormen die gelatine zijn structuur geeft. De praktische limiet is ongeveer <strong>1 deel 40% sterkedrank op 1 deel water</strong> — daarboven stolt je shot niet, hoelang je ook wacht.',
+    html: 'Ethanol concurreert met water om de waterstofbindingsplaatsen op de aminozuurketens van collageen. Wanneer ethanol te veel van die plaatsen bezet, kan het eiwit niet meer de stabiele drievoudige helix vormen die gelatine zijn structuur geeft. De praktische limiet is ongeveer <strong>1 deel 40% sterkedrank op 1 deel water</strong> - daarboven stolt je shot niet, hoelang je ook wacht.',
   },
   {
     type: 'tip',
@@ -124,7 +124,7 @@ const seo: JelloShotLabLocaleContent['seo'] = [
     items: [
       'Feestorganisatoren: Bereken precies hoeveel zakjes en hoeveel sterkedrank je nodig hebt voordat je gaat winkelen.',
       'Bartenders: Opschalen naar grootschalige productie met consistente resultaten elke keer.',
-      'Thuiskoks: Vermijd de meest voorkomende fouten — vloeibare shots, rubberachtige textuur of nul alcoholsmaak.',
+      'Thuiskoks: Vermijd de meest voorkomende fouten - vloeibare shots, rubberachtige textuur of nul alcoholsmaak.',
     ],
   },
 ];

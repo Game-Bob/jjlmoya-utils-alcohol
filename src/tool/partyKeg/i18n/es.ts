@@ -40,7 +40,7 @@ const faq: PartyKegLocaleContent['faq'] = [
   },
   {
     question: "¿Cuál es la diferencia entre un barril estándar y un barril de fiesta?",
-    answer: "Un barril comercial estándar contiene 50 litros, lo que equivale a unas 200 raciones de 250ml. Un barril de fiesta (mini-barril) suele contener 5 litros — unas 20 raciones. Conocer estos volúmenes te ayuda a convertir la salida en litros de la calculadora al número de envases que debes comprar.",
+    answer: "Un barril comercial estándar contiene 50 litros, lo que equivale a unas 200 raciones de 250ml. Un barril de fiesta (mini-barril) suele contener 5 litros - unas 20 raciones. Conocer estos volúmenes te ayuda a convertir la salida en litros de la calculadora al número de envases que debes comprar.",
   },
   {
     question: "¿Por qué necesito tanto hielo si las cervezas ya están frías?",
@@ -129,7 +129,7 @@ const seo: PartyKegLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Redondea siempre al alza cuando compres, ya que devolver barriles abiertos generalmente no es posible. Un pequeño exceso es siempre preferible a quedarse sin bebida a mitad de fiesta — es mejor que sobren unas cañas a que la velada termine prematuramente por falta de stock.'
+    html: 'Redondea siempre al alza cuando compres, ya que devolver barriles abiertos generalmente no es posible. Un pequeño exceso es siempre preferible a quedarse sin bebida a mitad de fiesta - es mejor que sobren unas cañas a que la velada termine prematuramente por falta de stock.'
   }
 ];
 

@@ -151,7 +151,7 @@ const seo: CocktailBalancerLocaleContent['seo'] = [
     icon: 'mdi:star',
     variant: 'success',
     badge: 'Goal',
-    html: 'This is the ultimate objective: a controlled pH where sugar neutralizes the aggression of acid without masking the essential oils and aromatic compounds of the base spirit. This precise balance is where immortal classics live — the Daiquiri, the Margarita, the Sidecar — drinks that have survived decades because they obey the fundamental laws of flavour chemistry.'
+    html: 'This is the ultimate objective: a controlled pH where sugar neutralizes the aggression of acid without masking the essential oils and aromatic compounds of the base spirit. This precise balance is where immortal classics live - the Daiquiri, the Margarita, the Sidecar - drinks that have survived decades because they obey the fundamental laws of flavour chemistry.'
   },
   {
     type: 'tip',
