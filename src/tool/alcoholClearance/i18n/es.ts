@@ -133,15 +133,6 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
     html: 'Una alcoholemia de 0.05% altera mediblemente el juicio, el seguimiento visual y el tiempo de reacción. La mayoría de países fijan el límite legal de conducción entre 0.05% y 0.08%. Sin embargo, la sensibilidad individual varía significativamente - la edad, los medicamentos, la fatiga y las variantes genéticas de la enzima ADH influyen en cómo el alcohol te afecta personalmente. Ante la duda, no conduzcas.'
   },
   {
-    type: 'summary',
-    title: '¿Para quién es esta herramienta?',
-    items: [
-      'Conductores designados: Calcula si un amigo ha eliminado suficiente alcohol antes de conducir.',
-      'Personas responsables: Comprende cuánto tiempo necesita tu cuerpo para procesar diferentes cantidades.',
-      'Profesionales de la salud: Utiliza la fórmula de Widmark como referencia educativa para pacientes.'
-    ]
-  },
-  {
     type: 'title',
     text: 'El Papel de la Comida y la Tasa de Absorción',
     level: 2

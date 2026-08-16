@@ -79,46 +79,71 @@ const howTo: AlcoholClearanceLocaleContent['howTo'] = [
 const seo: AlcoholClearanceLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'La scienza dietro il BAC e l\'eliminazione dell\'alcol',
+    text: 'Metabolismo dell Alcol: Scienza ed Eliminazione',
     level: 2
   },
   {
     type: 'paragraph',
-    html: 'Il tuo corpo metabolizza l\'alcol a una velocità fissa: circa 0,15 grammi per litro all\'ora. Questo processo è chiamato cinetica di ordine zero - non importa quanta esperienza hai, quanti integratori prendi, o quanto caffè bevi. Solo il tempo e il fegato eliminano l\'alcol dal tuo sangue. Questo calcolatore utilizza la formula di Widmark, il gold standard nei laboratori forense e tossicologia.'
+    html: 'Comprendere come il nostro corpo elabora l etanolo è essenziale per la sicurezza e per mitigare i postumi della sbornia. Il nostro <strong>calcolatore di eliminazione dell alcol</strong> utilizza la rinomata <strong>Formula di Widmark</strong> per offrirti una mappa chiara del tuo stato metabolico.'
+  },
+  {
+    type: 'diagnostic',
+    title: 'La Farmacocinetica del BAC',
+    icon: 'mdi:gender-male-female',
+    variant: 'info',
+    badge: 'Biochimica',
+    html: 'L alcol si distribuisce nell acqua corporea. Fattori come il peso e il coefficiente r (0,68 negli uomini / 0,55 nelle donne) determinano la diluizione iniziale dell etanolo nel sangue.'
   },
   {
     type: 'title',
-    text: 'Il sesso biologico conta nel metabolismo dell\'alcol',
+    text: 'Ossidazione Epatica ed Enzimi',
     level: 2
   },
   {
     type: 'paragraph',
-    html: 'La differenza tra uomini e donne nel BAC non è un mito: è biologia. Le donne hanno una percentuale più alta di grasso corporeo e una più bassa percentuale di acqua corporea, il che significa che l\'alcol si distribuisce in un volume più piccolo e raggiunge concentrazioni più elevate. Inoltre, le donne spesso hanno un\'attività inferiore dell\'enzima alcol deidrogenasi nello stomaco, portando a un assorbimento più rapido.'
-  },
-  {
-    type: 'title',
-    text: 'Unità di bevanda standard in tutto il mondo',
-    level: 2
+    html: 'Il fegato degrada il 95% dell alcol tramite l Alcol Deidrogenasi (ADH). Questo processo avviene a una velocità costante (cinetica di ordine zero), il che significa che non può essere accelerato dall esercizio o dal caffè.'
   },
   {
     type: 'stats',
     items: [
-      { label: 'Birra (5%)', value: '1,3 unità', icon: 'mdi:beer' },
-      { label: 'Vino (12%)', value: '1,4 unità', icon: 'mdi:glass-cocktail' },
-      { label: 'Liquore (40%)', value: '1,3 unità', icon: 'mdi:bottle-wine' }
+      { label: 'Tasso di Eliminazione', value: '0,15 g/L·h', icon: 'mdi:clock-fast' },
+      { label: 'Assorbimento Gastrico', value: '20% Etanolo', icon: 'mdi:stomach' },
+      { label: 'Idratazione Suggerita', value: '1:1 Acqua/Drink', icon: 'mdi:water' }
     ],
     columns: 3
   },
   {
+    type: 'proscons',
+    title: 'Miti vs Realtà',
+    items: [
+      { pro: 'L acqua e gli elettroliti prima di dormire riducono la gravità dei postumi.', con: '' },
+      { pro: '', con: 'Docce fredde: Non influenzano la concentrazione di alcol nel sangue.' },
+      { pro: '', con: 'Caffè: Maschera la sonnolenza ma non ripristina i riflessi persi.' }
+    ]
+  },
+  {
     type: 'card',
-    title: 'Cosa NON riduce il BAC',
-    icon: 'mdi:close-circle',
-    html: '<strong>Il caffè</strong> maschera la stanchezza ma non riduce il BAC. <strong>L\'esercizio</strong> migliora il tuo benessere ma non accelera l\'eliminazione. <strong>L\'acqua</strong> aiuta con la disidratazione post-alcol, ma l\'alcol nel tuo sangue rimane fino al metabolismo epatico. <strong>Il cibo assunto dopo il bere</strong> non aiuta l\'alcol già assorbito. L\'unica cosa che funziona è <strong>il tempo</strong>.'
+    title: 'Cosa Causa i Postumi della Sbornia?',
+    icon: 'mdi:alert-decagram',
+    html: 'Nota scientificamente come veisalgia, la sbornia è causata da disidratazione sistemica, accumulo di acetaldeide e una risposta infiammatoria immunitaria a citochine.'
   },
   {
     type: 'tip',
-    title: 'Suggerimento: il cibo PRIMA di bere è importante',
-    html: 'A differenza del cibo dopo il bere, mangiare prima o durante il bere riduce effettivamente il tuo BAC di picco fino al 50%. La chiave è la cibo nello stomaco rallenta l\'assorbimento dell\'alcol nell\'intestino tenue. I cibi ricchi di grassi e proteine sono i più efficaci. Quindi sì, mangia prima di bere, ma non contare sulla cena dopo per salvare il tuo BAC.'
+    title: 'Sicurezza Prima di Tutto: Conosci il Tuo Limite',
+    html: 'Un BAC dello 0,05% compromette misurabilmente il giudizio, il tracciamento visivo e i tempi di reazione. In caso di dubbio, non guidare.'
+  },
+  {
+    type: 'title',
+    text: 'Il Ruolo del Cibo e il Tasso di Assorbimento',
+    level: 2
+  },
+  {
+    type: 'paragraph',
+    html: 'Mangiare prima o durante l assunzione di alcol modifica radicalmente la cinetica di assorbimento. Il cibo nello stomaco rallenta lo svuotamento gastrico, riducendo il picco di etanolo nel sangue.'
+  },
+  {
+    type: 'paragraph',
+    html: 'Anche il tipo di bevanda alcolica influisce oltre al semplice gradiente alcolico e al volume. I drink gassati accelerano lo svuotamento gastrico e spingono l alcol nel sangue più velocemente.'
   }
 ];
 

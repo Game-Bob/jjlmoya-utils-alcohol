@@ -115,10 +115,6 @@ const seo: PartyKegLocaleContent['seo'] = [
     html: 'Un barril estándar de 50L rinde unas 200 cañas. Una bolsa de hielo típica pesa 2kg. Conociendo estos datos, puedes planificar el transporte y el almacenamiento necesario para tu evento sin sorpresas de última hora. Ten también en cuenta el deshielo durante el transporte: un trayecto de 30 minutos en verano puede costarte una bolsa entera antes de que empiece la fiesta.'
   },
   {
-    type: 'paragraph',
-    html: 'Una variable que a menudo se pasa por alto es la <strong>tasa de abandono de invitados</strong>. En la mayoría de fiestas, el 10-15% de los invitados se van antes y el 10% puede que no beban en absoluto. La calculadora aplica un margen de seguridad conservador para que nunca te quedes corto, sin que tampoco te sobre demasiado. Entender estos ajustes te ayuda a afinar la estimación para tu grupo y contexto específicos.'
-  },
-  {
     type: 'summary',
     title: '¿Para quién es esta herramienta?',
     items: [

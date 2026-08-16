@@ -139,10 +139,6 @@ const seo: CarbonationLocaleContent['seo'] = [
   {
     type: 'paragraph',
     html: 'El CO2 residual en tu cerveza antes del priming no es cero. Cada cerveza retiene CO2 disuelto del proceso de fermentación, y la cantidad retenida depende de la temperatura más alta que alcanzó la cerveza. Una cerveza fermentada a 22°C retiene significativamente menos CO2 residual que una fermentada a 16°C, aunque ambas estén ahora frías. No tener en cuenta este residual lleva a una sobre-carbonatación sistemática - uno de los errores más comunes entre los cerveceros principiantes.'
-  },
-  {
-    type: 'paragraph',
-    html: 'El tiempo de condicionamiento también importa. Tras el embotellado con azúcar de priming, la cerveza necesita entre 2 y 3 semanas a temperatura ambiente (18-22°C) para que la levadura fermente completamente el azúcar añadido y el CO2 se integre en el líquido. Una carbonatación prematura - probar la cerveza antes de que el proceso termine - siempre dará una falsa lectura de subida de carbonatación.'
   }
 ];
 

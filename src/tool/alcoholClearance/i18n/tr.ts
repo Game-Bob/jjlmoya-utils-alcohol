@@ -79,46 +79,71 @@ const howTo: AlcoholClearanceLocaleContent['howTo'] = [
 const seo: AlcoholClearanceLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'BAC ve Alkol Eliminasyonunun Ardında Bilim',
+    text: 'Alkol Metabolizması: Bilim ve Eliminasyon',
     level: 2
   },
   {
     type: 'paragraph',
-    html: 'Vücut alkolu sabit bir hızda metabolize eder: saatte yaklaşık 0.15 gram litre başına. Bu işleme sıfır dereceli kinetik denir, deneyiminiz ne kadar fazla olursa olsun, ne kadar supplement alsanız da, ne kadar kahve içseniz de önemli değil. Sadece zaman ve karaciğer alkolu kandan elimine eder. Bu hesaplayıcı Widmark formülünü kullanır, bu adli laboratuar ve toksikolojinin altın standardıdır.'
+    html: 'Vücudumuzun etanolü nasıl işlediğini anlamak güvenlik ve akşamdan kalmalığı hafifletmek için esastır. <strong>Alkol eliminasyon hesaplayıcımız</strong> metabolik durumunuzun net bir haritasını sunmak için tanınmış <strong>Widmark Formülünü</strong> kullanır.'
+  },
+  {
+    type: 'diagnostic',
+    title: 'BAC nın Farmakokinetiği',
+    icon: 'mdi:gender-male-female',
+    variant: 'info',
+    badge: 'Biyokimya',
+    html: 'Alkol vücut suyuna dağılır. Ağırlık ve r katsayısı (erkeklerde 0.68 / kadınlarda 0.55) etanolün kandaki ilk seyreltmesini belirler.'
   },
   {
     type: 'title',
-    text: 'Biyolojik Cinsiyet Alkol Metabolizmasında Sayılır',
+    text: 'Karaciğer Oksidasyonu ve Enzimler',
     level: 2
   },
   {
     type: 'paragraph',
-    html: 'Erkekler ve kadınlar arasındaki BAC farkı bir mitos değildir: bu biyolojidir. Kadınlar daha yüksek bir vücut yağı yüzdesine ve daha düşük bir vücut su yüzdesine sahiptir, bu da alkol daha küçük bir hacme dağıldığı ve daha yüksek konsantrasyonlara ulaştığı anlamına gelir. Ek olarak, kadınlar genellikle midemde daha düşük alkol dehidrogenaz enzim aktivitesine sahiptirler, bu da daha hızlı emilime yol açar.'
-  },
-  {
-    type: 'title',
-    text: 'Dünya Çapında Standart İçecek Birimleri',
-    level: 2
+    html: 'Karaciğer alkolün %95 ini Alkol Dehidrogenaz (ADH) aracılığıyla yıkar. Bu süreç sabit bir hızda gerçekleşir (sıfırıncı derece kinetik).'
   },
   {
     type: 'stats',
     items: [
-      { label: 'Bira (5%)', value: '1,3 birim', icon: 'mdi:beer' },
-      { label: 'Şarap (12%)', value: '1,4 birim', icon: 'mdi:glass-cocktail' },
-      { label: 'Likör (40%)', value: '1,3 birim', icon: 'mdi:bottle-wine' }
+      { label: 'Eliminasyon Hızı', value: '0.15 g/L·h', icon: 'mdi:clock-fast' },
+      { label: 'Mide Emilimi', value: '20% Etanol', icon: 'mdi:stomach' },
+      { label: 'Önerilen Hidrasyon', value: '1:1 Su/İçecek', icon: 'mdi:water' }
     ],
     columns: 3
   },
   {
+    type: 'proscons',
+    title: 'Efsaneler ve Gerçekler',
+    items: [
+      { pro: 'Uykudan önce su ve elektrolitler akşamdan kalma şiddetini azaltır.', con: '' },
+      { pro: '', con: 'Soğuk duşlar: Kandaki alkol konsantrasyonunu hiç etkilemez.' },
+      { pro: '', con: 'Kahve: Uykusuzluğu maskeler ancak kaybolan refleksleri geri kazandırmaz.' }
+    ]
+  },
+  {
     type: 'card',
-    title: 'BAC i Azaltmayan Nedir',
-    icon: 'mdi:close-circle',
-    html: "Kahve yorgunluğu maskeleyebilir ancak BAC\'ı azaltmaz. Egzersiz iyilik hissini artırır ancak eliminasyonu hızlandırmaz. Su içtikten sonra dehidrasyona yardımcı olur ancak kandaki alkol metabolik işlemleme kadar kalır. Yemek alkol emildikten sonra yardımcı değildir. İşe yarayan tek şey zamandır."
+    title: 'Akşamdan Kalmaya Ne Sebep Olur?',
+    icon: 'mdi:alert-decagram',
+    html: 'Bilimsel olarak veisalgia olarak bilinen akşamdan kalmalık, sistemik dehidrasyon, asetaldehit birikimi ve sitokin bağışıklık yanıtından kaynaklanır.'
   },
   {
     type: 'tip',
-    title: 'İpucu: içmeden ÖNCE yemek önemlidir',
-    html: 'İçtikten sonra yemeğin aksine, içmeden önce veya sırasında yemek aslında zirve BAC \'nizi yüzde 50 e kadar azaltır. Anahtar midenin içindeki yiyecektir, gastrik emilimi yavaşlatır. Yağ ve proteine zengin yiyecekler en etkilidir. Yani evet, içmeden önce yiyin, ancak akşam yemeğine yapılan BAC\'ı yükseltilmek için güvenmeyin.'
+    title: 'Önce Güvenlik: Sınırınızı Bilin',
+    html: '%0.05 lik bir BAC, muhakeme yeteneğini ve tepki süresini ölçülebilir şekilde bozar. Şüphe duyduğunuzda araba kullanmayın.'
+  },
+  {
+    type: 'title',
+    text: 'Yiyeceğin Rolü ve Emilim Hızı',
+    level: 2
+  },
+  {
+    type: 'paragraph',
+    html: 'İçmeden önce veya sırasında yemek yemek emilim kinetiğini önemli ölçüde değiştirir. Midedeki yiyecek mide boşalmasını yavaşlatır.'
+  },
+  {
+    type: 'paragraph',
+    html: 'Alkolün türü de sadece ABV ve hacmin ötesinde önem taşır. Gazlı içecekler mide boşalmasını hızlandırır.'
   }
 ];
 

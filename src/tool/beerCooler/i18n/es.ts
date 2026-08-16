@@ -129,15 +129,6 @@ const seo: BeerCoolerLocaleContent['seo'] = [
     html: 'El vaso en el que sirves la cerveza tiene una masa térmica significativa. Un vaso caliente puede subir la temperatura de una cerveza perfectamente fría en 2-3°C al instante. Mete el vaso de servicio en el congelador 5 minutos antes de servir, o enjuágalo con agua fría. Este simple paso prolonga la ventana en que tu cerveza sabe exactamente como debe.'
   },
   {
-    type: 'summary',
-    title: '¿Para quién es esta herramienta?',
-    items: [
-      'Cerveceros caseros: Para saber exactamente cuándo su lote estará listo para el consumo.',
-      'Anfitriones de eventos: Para planificar el tiempo de enfriado antes de que lleguen los invitados.',
-      'Curiosos de la ciencia: Para entender la física detrás de algo tan cotidiano como enfriar una cerveza.'
-    ]
-  },
-  {
     type: 'title',
     text: 'Entendiendo la Constante de Enfriamiento',
     level: 2
@@ -145,10 +136,6 @@ const seo: BeerCoolerLocaleContent['seo'] = [
   {
     type: 'paragraph',
     html: 'La constante de enfriamiento k en la ecuación de Newton no es un valor universal fijo - es una propiedad empírica de cada envase y medio específico. Una delgada lata de aluminio en agua con hielo tiene un k radicalmente diferente al de una gruesa botella de vidrio en el aire quieto de un frigorífico. Nuestra calculadora utiliza valores medidos y calibrados con experimentos reales para cada tipo de envase, dándote predicciones precisas al minuto en escenarios domésticos típicos.'
-  },
-  {
-    type: 'paragraph',
-    html: 'El movimiento del fluido también juega un papel crucial. En un frigorífico convencional, el aire casi estático ralentiza la transferencia de calor. En cambio, cuando introduces una lata en agua con hielo, la convección forzada actúa como un amplificador térmico que puede multiplicar la velocidad de enfriamiento por un factor de 10 o más. Por eso el truco de girar la botella en agua fría es tan efectivo: cada rotación renueva la capa límite de agua caliente que se forma alrededor del envase.'
   }
 ];
 

@@ -135,6 +135,15 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   {
     type: 'paragraph',
     html: 'Manger avant ou pendant la consommation d\'alcool modifie considérablement la cinétique d\'absorption. La nourriture dans l\'estomac - notamment les protéines et les graisses - ralentit la vidange gastrique, réduisant le taux de pic auquel l\'éthanol entre dans le sang. Une personne qui boit à jeun peut atteindre un BAC maximal 50 % plus élevé que la même personne ayant mangé un repas complet avant de boire la même quantité. C\'est l\'une des variables les plus puissantes que la formule de Widmark ne peut pas pleinement capturer, raison pour laquelle notre calculateur inclut une clause de non-responsabilité sur l\'estimation théorique.'
+  },
+  {
+    type: 'title',
+    text: 'Le Rôle de la Nourriture et du Taux d\'Absorption',
+    level: 2
+  },
+  {
+    type: 'paragraph',
+    html: 'Le type de boisson alcoolisée importe également au-delà du simple ABV et du volume. Les mélanges gazeux (eau tonique, vin pétillant) accélèrent la vidange gastrique et poussent l\'alcool plus rapidement dans le sang. Les boissons à très fort ABV (>25%) peuvent inhiber temporairement la motilité de l\'estomac. Ces nuances expliquent pourquoi le BAC réel peut dévier de 20 à 30 % par rapport aux prédictions.'
   }
 ];
 
