@@ -48,7 +48,7 @@ const faq: AlcoholClearanceLocaleContent['faq'] = [
   },
   {
     question: "Helpt eten na het drinken de BVO te verlagen?",
-    answer: "Eten na het drinken verlaagt de alcohol die al in uw bloedbaan aanwezig is niet. Voedsel maakt het meeste verschil voor of tijdens het drinken: voedsel in de maag - vooral proteïnen en vetten - vertraagt de gastric absorption en kan uw piekwaarde van BVO met tot 50% verlagen. Zodra alcohol is opgenomen, kan alleen hepatische stofwisseling deze afbreken.",
+    answer: "Eten na het drinken verlaagt de alcohol die al in uw bloedbaan aanwezig is niet. Voedsel maakt het meeste verschil voor of tijdens het drinken: voedsel in de maag - vooral proteïnen en vetten - vertraagt de opname in de maag en kan uw piekwaarde van BVO met tot 50% verlagen. Zodra alcohol is opgenomen, kan alleen hepatische stofwisseling deze afbreken.",
   },
   {
     question: "Hoe lang duurt het om 0,0 BVO te bereiken?",

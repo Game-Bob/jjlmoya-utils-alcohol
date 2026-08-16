@@ -27,7 +27,7 @@ const ui: PartyKegUI = {
   highEfficiencyMsg: 'Zimno / Wysoka Efektywność'
 };
 
-const faqTitle = 'Часто Задаваемые Вопросы';
+const faqTitle = 'Najczęściej zadawane pytania';
 
 const faq: PartyKegLocaleContent['faq'] = [
   {
