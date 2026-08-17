@@ -64,34 +64,31 @@ function normalize(value: string): string {
     .toLocaleLowerCase('es');
 }
 
+function isTechnicalInvariant(text: string): boolean {
+  return [
+    'data:image/svg+xml;base64',
+    'background-image: url',
+    '.layout-playground {',
+    'const samplerate =',
+  ].some((pattern) => text.includes(pattern)) || (text.includes('presets') && text.includes('hz'));
+}
+
+function collectString(value: string, output: string[]): void {
+  const text = normalize(value);
+  if (!isTechnicalInvariant(text) && text.length >= 20) output.push(text);
+}
+
+function collectObject(value: UnknownRecord, output: string[]): void {
+  Object.entries(value).forEach(([childKey, childValue]) => {
+    collectText(childValue, output, childKey);
+  });
+}
+
 function collectText(value: unknown, output: string[], key?: string): void {
   if (key && STRUCTURAL_KEYS.has(key)) return;
-
-  if (typeof value === 'string') {
-    const text = normalize(value);
-    if (
-      text.includes('data:image/svg+xml;base64') ||
-      text.includes('background-image: url') ||
-      text.includes('.layout-playground {') ||
-      text.includes('const samplerate =') ||
-      (text.includes('presets') && text.includes('hz'))
-    ) {
-      return;
-    }
-    if (text.length >= 20) output.push(text);
-    return;
-  }
-
-  if (Array.isArray(value)) {
-    value.forEach((item) => collectText(item, output));
-    return;
-  }
-
-  if (value && typeof value === 'object') {
-    Object.entries(value as UnknownRecord).forEach(([childKey, childValue]) => {
-      collectText(childValue, output, childKey);
-    });
-  }
+  if (typeof value === 'string') return collectString(value, output);
+  if (Array.isArray(value)) return value.forEach((item) => collectText(item, output));
+  if (value && typeof value === 'object') collectObject(value as UnknownRecord, output);
 }
 
 async function loadText(loader: unknown): Promise<string[]> {
