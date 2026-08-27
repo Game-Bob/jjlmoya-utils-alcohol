@@ -1,0 +1,40 @@
+import type { FAQPage, HowTo, SoftwareApplication, WithContext } from 'schema-dts';
+import type { ToolLocaleContent } from '../../../types';
+import { bibliography } from '../bibliography';
+import type { AbvDilutionCalculatorUI } from '../ui';
+
+const slug = 'calculadora-dilucion-alcohol-y-graduacion';
+const title = 'Calculadora de dilución de alcohol y graduación';
+const description = 'Calcula cuánta agua añadir para bajar la graduación de un destilado. La calculadora muestra el volumen final, el alcohol puro y la proporción de dilución.';
+const ui: AbvDilutionCalculatorUI = {
+  unitLabel: 'Unidades de volumen', metricUnit: 'Métrico ml', imperialUnit: 'Imperial fl oz', strengthLabel: 'Unidades de graduación', abvUnit: 'Porcentaje de alcohol', proofUnit: 'Proof estadounidense', presetLabel: 'Escenarios rápidos', spiritPresetLabel: 'Destilado de 750 ml', liqueurPresetLabel: 'Licor de 700 ml', cocktailPresetLabel: 'Lote de 500 ml', startingStrengthLabel: 'Graduación inicial', startingVolumeLabel: 'Volumen inicial', targetStrengthLabel: 'Graduación objetivo', waterToAddLabel: 'Agua que añadir', finalVolumeLabel: 'Volumen final', pureAlcoholLabel: 'Alcohol puro', ratioLabel: 'Proporción de agua', startingProofLabel: 'Proof inicial', targetProofLabel: 'Proof objetivo', readyMessage: 'El objetivo es menor. Mide el agua y mézclala poco a poco.', invalidMessage: 'El objetivo debe ser menor que la graduación inicial para diluir.', largeAdditionMessage: 'Este lote necesita al menos tanta agua como destilado. Mezcla por etapas y vuelve a comprobar.', bottleLabel: 'Botella graduada con el volumen final calculado', waterLayerLabel: 'Capa de agua en la mezcla final', estimateNotice: 'Solo es una estimación de planificación. El alcohol y el agua pueden contraerse al mezclarse; comprueba la graduación final con un método adecuado.', sourceLabel: 'Fuentes de la fórmula', calculateAction: 'Valores de dilución', resetAction: 'Restablecer valores', volumeHint: 'Elige el volumen que tienes antes de añadir agua.', strengthHint: 'El proof se muestra como proof estadounidense: 80 proof equivalen a 40 por ciento de alcohol.',
+};
+const faq = [
+  { question: '¿Cómo calculo el agua necesaria para diluir alcohol?', answer: 'Multiplica el volumen inicial por la graduación inicial para obtener el volumen de alcohol puro. Divide ese volumen entre la graduación objetivo expresada como decimal para obtener el volumen final teórico. Resta el volumen inicial y obtendrás el agua que añadir.' },
+  { question: '¿Cuál es la diferencia entre graduación y proof?', answer: 'La graduación indica el porcentaje de alcohol puro por volumen. En el sistema estadounidense, el proof es el doble de la graduación, así que 80 proof equivalen a 40 por ciento. El selector solo cambia la forma de mostrar el dato.' },
+  { question: '¿La calculadora tiene en cuenta la contracción del alcohol y el agua?', answer: 'No. El resultado conserva matemáticamente el volumen de alcohol puro. El etanol y el agua pueden ocupar algo menos de volumen al mezclarse y la temperatura también cambia la medición. Usa el resultado como plan de mezcla y verifica con un alcoholímetro u otro método apropiado.' },
+  { question: '¿Puedo usarla para fabricar un producto alcohólico legal?', answer: 'La herramienta solo hace cálculos y no revisa recetas, etiquetado, impuestos especiales, licencias ni normativa local. Cumple las obligaciones del lugar donde elaboras o vendes la bebida y utiliza equipos limpios y mediciones seguras.' },
+];
+const howTo = [
+  { name: 'Elige las unidades de volumen', text: 'Selecciona mililitros métricos u onzas líquidas imperiales. El volumen físico no cambia al cambiar de unidad.' },
+  { name: 'Introduce el lote inicial', text: 'Indica la graduación inicial y el volumen de destilado que tienes antes de diluir.' },
+  { name: 'Define la graduación objetivo', text: 'Escribe una graduación menor para la mezcla final. La calculadora marca los objetivos que no representan una dilución.' },
+  { name: 'Añade agua por etapas', text: 'Consulta el agua y el volumen final, mezcla gradualmente y verifica la graduación cuando el lote esté listo.' },
+];
+const faqSchema: WithContext<FAQPage> = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((item) => ({ '@type': 'Question', name: item.question, acceptedAnswer: { '@type': 'Answer', text: item.answer } })) };
+const howToSchema: WithContext<HowTo> = { '@context': 'https://schema.org', '@type': 'HowTo', name: title, description, step: howTo.map((step, index) => ({ '@type': 'HowToStep', position: index + 1, name: step.name, text: step.text })) };
+const appSchema: WithContext<SoftwareApplication> = { '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: title, description, applicationCategory: 'UtilitiesApplication', operatingSystem: 'All', offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, inLanguage: 'es' };
+export const content: ToolLocaleContent<AbvDilutionCalculatorUI> = { slug, title, description, ui, faqTitle: 'Preguntas sobre la dilución', bibliographyTitle: 'Fuentes de la fórmula', faq, howTo, schemas: [faqSchema, howToSchema, appSchema], bibliography, seo: [
+  { type: 'title', text: 'Cómo funciona la dilución de alcohol', level: 2 },
+  { type: 'paragraph', html: 'Diluir significa añadir agua para reducir la concentración de alcohol mientras se conserva aproximadamente la cantidad de alcohol puro. Esta <strong>calculadora de dilución de alcohol</strong> convierte una graduación y un volumen iniciales en una cantidad práctica de agua y un volumen final teórico. Funciona en el navegador y no sube datos del lote.' },
+  { type: 'table', headers: ['Valor', 'Fórmula', 'Significado'], rows: [['Alcohol puro', 'volumen inicial x graduación inicial', 'Alcohol que pasa a la mezcla'], ['Volumen final', 'alcohol puro / graduación objetivo', 'Total teórico después de diluir'], ['Agua que añadir', 'volumen final menos volumen inicial', 'Cantidad de agua para planificar']] },
+  { type: 'title', text: 'Conversión entre graduación y proof', level: 2 },
+  { type: 'paragraph', html: 'El alcohol por volumen expresa qué porcentaje del líquido es alcohol puro. En el sistema estadounidense, el proof es el doble de la graduación: 40 por ciento equivalen a 80 proof. Usa el selector cuando la etiqueta emplee proof, pero recuerda que puede haber sistemas distintos según el país y la época.' },
+  { type: 'stats', columns: 3, items: [{ value: '80 proof', label: '40 por ciento de alcohol' }, { value: '1:1', label: 'Proporción de agua del escenario inicial' }, { value: '100% local', label: 'Sin datos del lote enviados' }] },
+  { type: 'title', text: 'Por qué el resultado es una estimación', level: 2 },
+  { type: 'paragraph', html: 'La aritmética conserva el volumen de alcohol puro, pero las mezclas reales no son perfectamente aditivas. El alcohol y el agua se contraen al combinarse, y la temperatura cambia la densidad y el volumen medido. Añade agua poco a poco, espera a la temperatura de medición y verifica la graduación con un equipo adecuado.' },
+  { type: 'tip', title: 'Mezcla poco a poco y comprueba', html: 'Usa agua limpia y medida, y un recipiente con capacidad suficiente para el volumen final teórico. La calculadora no conoce la temperatura, el azúcar, los aromatizantes ni las normas locales. Trata su resultado como un plan de partida, no como un certificado de graduación.' },
+  { type: 'title', text: 'Un proceso de dilución repetible', level: 2 },
+  { type: 'list', items: ['Anota la graduación indicada y el volumen real del lote.', 'Elige una graduación objetivo inferior a la inicial.', 'Calcula el alcohol puro, el volumen final y el agua.', 'Añade la mayor parte del agua, mezcla y completa el resto en pasos pequeños.', 'Verifica la mezcla cuando alcance la temperatura de medición.'] },
+  { type: 'diagnostic', variant: 'warning', title: 'El cálculo no autoriza la producción', html: 'Esta página no valida ingredientes, higiene, etiquetado, impuestos, licencias ni venta legal. No uses el resultado para saltarte las reglas aplicables a tu bebida o a tu ubicación.' },
+] };

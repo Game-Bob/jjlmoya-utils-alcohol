@@ -1,7 +1,7 @@
 import type { AlcoholToolEntry, ToolLocaleContent } from '../../types';
 export { bibliography } from './bibliography';
 
-export interface JelloShotLabUI {
+export interface JelloShotLabUI extends Record<string, string> {
   title: string;
   description: string;
   liquorBaseLabel: string;

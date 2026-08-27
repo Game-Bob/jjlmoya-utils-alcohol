@@ -1,8 +1,9 @@
 import type { AlcoholCategoryEntry } from '../types';
+import { abvDilutionCalculator } from '../tool/abvDilutionCalculator/entry';
 
 export const alcoholCategory: AlcoholCategoryEntry = {
   icon: 'mdi:shape',
-  tools: [],
+  tools: [abvDilutionCalculator],
   i18n: {
     de: () => import('./i18n/de').then((m) => m.content),
     en: () => import('./i18n/en').then((m) => m.content),

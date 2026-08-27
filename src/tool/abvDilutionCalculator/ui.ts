@@ -1,0 +1,32 @@
+export interface AbvDilutionCalculatorUI extends Record<string, string> {
+  unitLabel: string;
+  metricUnit: string;
+  imperialUnit: string;
+  strengthLabel: string;
+  abvUnit: string;
+  proofUnit: string;
+  presetLabel: string;
+  spiritPresetLabel: string;
+  liqueurPresetLabel: string;
+  cocktailPresetLabel: string;
+  startingStrengthLabel: string;
+  startingVolumeLabel: string;
+  targetStrengthLabel: string;
+  waterToAddLabel: string;
+  finalVolumeLabel: string;
+  pureAlcoholLabel: string;
+  ratioLabel: string;
+  startingProofLabel: string;
+  targetProofLabel: string;
+  readyMessage: string;
+  invalidMessage: string;
+  largeAdditionMessage: string;
+  bottleLabel: string;
+  waterLayerLabel: string;
+  estimateNotice: string;
+  sourceLabel: string;
+  calculateAction: string;
+  resetAction: string;
+  volumeHint: string;
+  strengthHint: string;
+}

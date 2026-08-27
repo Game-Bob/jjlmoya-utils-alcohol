@@ -15,7 +15,7 @@ export async function getStaticPaths() {
   const paths = [];
 
   for (const { entry, Component: lazyComp } of ALL_TOOLS) {
-    const { default: Component } = await lazyComp();
+    const { default: Component } = await (lazyComp as () => Promise<{ default: (props: Record<string, unknown>) => unknown }>)();
     const localeEntries = Object.entries(entry.i18n) as [
       KnownLocale,
       () => Promise<ToolLocaleContent>,
@@ -36,12 +36,16 @@ export async function getStaticPaths() {
 
     for (const { locale, content } of localeContents) {
       const allToolsNav = await Promise.all(
-        ALL_TOOLS.map(async ({ entry: navEntry }) => ({
-          id: navEntry.id,
-          title: (await navEntry.i18n[locale]!()).title,
-          href: `/${locale}/${(await navEntry.i18n[locale]!()).slug}`,
-          isActive: navEntry.id === entry.id,
-        })),
+        ALL_TOOLS.map(async ({ entry: navEntry }) => {
+          const navLoader = navEntry.i18n[locale] ?? navEntry.i18n.en;
+          const navContent = await navLoader!();
+          return {
+            id: navEntry.id,
+            title: navContent.title,
+            href: `/${locale}/${navContent.slug}`,
+            isActive: navEntry.id === entry.id,
+          };
+        }),
       );
       paths.push({
         params: { locale, slug: content.slug },
@@ -61,7 +65,7 @@ interface NavItem {
 }
 
 interface Props {
-  Component: unknown;
+  Component: (props: Record<string, unknown>) => unknown;
   locale: KnownLocale;
   content: ToolLocaleContent;
   localeUrls: Partial<Record<KnownLocale, string>>;
@@ -73,7 +77,8 @@ const { Component, locale, content, localeUrls, allToolsNav, toolId } = Astro.pr
 
 const toolCssModules = import.meta.glob('../../tool/*/*.css');
 const cssKey = Object.keys(toolCssModules).find(k => k.endsWith(`/${toolId}.css`));
-if (cssKey) await toolCssModules[cssKey]();
+const cssLoader = cssKey ? toolCssModules[cssKey] : undefined;
+if (cssLoader) await cssLoader();
 
 const seoContent: UtilitySEOContent = { locale, sections: content.seo };
 
@@ -121,11 +126,7 @@ const titleBase = words.slice(1).join(" ") || "";
     </section>
 
     <section class="section-faq">
-      <FAQSection
-        title={content.faqTitle}
-        items={content.faq}
-        inLanguage={locale}
-      />
+      <FAQSection items={content.faq} />
     </section>
 
     <section class="section-bibliography">

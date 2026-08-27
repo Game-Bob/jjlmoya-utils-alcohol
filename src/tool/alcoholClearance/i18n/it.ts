@@ -143,7 +143,7 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Anche il tipo di bevanda alcolica influisce oltre al semplice gradiente alcolico e al volume. I drink gassati accelerano lo svuotamento gastrico e spingono l alcol nel sangue più velocemente.'
+    html: 'Anche il tipo di bevanda alcolica influisce oltre al semplice gradiente alcolico e al volume. I drink gassati accelerano lo svuotamento gastrico e spingono l alcol nel sangue più velocemente. Il risultato del calcolatore resta orientativo e non è una misurazione clinica o legale: il metabolismo varia tra le persone e il modello non conosce con precisione il momento di assorbimento, il contenuto dello stomaco, i farmaci o le condizioni di salute. Usa queste informazioni per comprendere i limiti del modello e non per decidere se guidare. Se hai bevuto, organizza un rientro alternativo e lascia passare tempo sufficiente. Caffè, docce fredde, esercizio e sonno non eliminano rapidamente l alcol dal sangue. In caso di dubbio, non guidare e chiedi assistenza.'
   }
 ];
 

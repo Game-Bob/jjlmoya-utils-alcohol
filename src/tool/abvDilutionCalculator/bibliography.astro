@@ -1,0 +1,14 @@
+---
+import { bibliography } from './bibliography';
+import type { KnownLocale } from '../../types';
+
+interface Props {
+  locale?: KnownLocale;
+}
+
+const { locale = 'en' } = Astro.props;
+---
+
+<div data-bibliography-locale={locale}>
+  {bibliography.map((item) => <a href={item.url} rel="noreferrer">{item.name}</a>)}
+</div>

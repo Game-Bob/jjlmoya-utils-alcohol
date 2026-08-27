@@ -139,11 +139,11 @@ const seo: AlcoholClearanceLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'İçmeden önce veya sırasında yemek yemek emilim kinetiğini önemli ölçüde değiştirir. Midedeki yiyecek mide boşalmasını yavaşlatır.'
+    html: 'İçmeden önce veya sırasında yemek yemek emilim kinetiğini önemli ölçüde değiştirir. Midedeki yiyecek mide boşalmasını yavaşlatır, etanolün kana geçiş hızını ve zirve değerini etkiler. Bu nedenle aynı miktar farklı zamanlarda ve farklı kişilerde aynı sonucu vermez. Hesaplamayı güvenli bir kararın tek temeli olarak kullanmayın. Su içmek kendinizi daha iyi hissettirebilir, ancak alkolün kandan yok olmasını hızlandırmaz. Vücudun alkolü parçalaması için esas olarak zaman gerekir.'
   },
   {
     type: 'paragraph',
-    html: 'Alkolün türü de sadece ABV ve hacmin ötesinde önem taşır. Gazlı içecekler mide boşalmasını hızlandırır.'
+    html: 'Alkolün türü de sadece ABV ve hacmin ötesinde önem taşır. Gazlı içecekler mide boşalmasını hızlandırır. Vücut ağırlığı, biyolojik farklılıklar, ilaçlar, uyku ve sağlık durumu da sonucu değiştirebilir. Bu sayfadaki değerler eğitim ve farkındalık içindir; güvenli seçenek içtiyseniz araç kullanmamak, alternatif ulaşım ayarlamak ve gerektiğinde destek istemektir. Yasal sınırlar ve ölçüm koşulları bölgeye göre değişebilir. Şüphe varsa araç kullanmayın ve güvenilir bir ulaşım seçeneği bulun. Ölçüm cihazları da doğru kullanılmalı ve üretici talimatlarına göre saklanmalıdır.'
   }
 ];
 

@@ -1,4 +1,5 @@
 import { partyKeg } from './entry';
+import type { ToolDefinition, AlcoholToolEntry } from '../../types';
 export * from './entry';
 export const PARTY_KEG_TOOL: ToolDefinition = {
   entry: partyKeg as AlcoholToolEntry<Record<string, string>>,

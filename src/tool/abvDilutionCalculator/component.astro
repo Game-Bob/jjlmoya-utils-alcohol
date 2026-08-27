@@ -1,0 +1,116 @@
+---
+import './abv-dilution-calculator.css';
+import type { AbvDilutionCalculatorUI } from './ui';
+
+interface Props {
+  ui: AbvDilutionCalculatorUI;
+}
+
+const { ui } = Astro.props;
+---
+
+<div class="abd-shell" data-abv-dilution-calculator data-status="ready" data-volume-unit="metric" data-strength-unit="abv">
+  <div class="abd-workbench">
+    <section class="abd-rail" aria-label={ui.presetLabel}>
+      <div class="abd-choice abd-units" role="group" aria-label={ui.unitLabel}>
+        <span>{ui.unitLabel}</span>
+        <button type="button" data-volume-unit data-value="metric" aria-pressed="true">{ui.metricUnit}</button>
+        <button type="button" data-volume-unit data-value="imperial" aria-pressed="false">{ui.imperialUnit}</button>
+      </div>
+      <div class="abd-choice abd-strength" role="group" aria-label={ui.strengthLabel}>
+        <span>{ui.strengthLabel}</span>
+        <button type="button" data-strength-unit data-value="abv" aria-pressed="true">{ui.abvUnit}</button>
+        <button type="button" data-strength-unit data-value="proof" aria-pressed="false">{ui.proofUnit}</button>
+      </div>
+      <div class="abd-choice abd-presets" role="group" aria-label={ui.presetLabel}>
+        <span>{ui.presetLabel}</span>
+        <button type="button" data-preset="spirit">{ui.spiritPresetLabel}</button>
+        <button type="button" data-preset="liqueur">{ui.liqueurPresetLabel}</button>
+        <button type="button" data-preset="cocktail">{ui.cocktailPresetLabel}</button>
+      </div>
+    </section>
+
+    <div class="abd-body">
+      <section class="abd-controls" aria-label={ui.calculateAction}>
+        <div class="abd-fieldset">
+          <label class="abd-field" for="abd-start-strength">
+            <span>{ui.startingStrengthLabel}</span>
+            <strong><output data-output="abd-start-strength">40.0% ABV</output></strong>
+            <input id="abd-start-strength-range" data-sync-input="abd-start-strength" type="range" min="0.5" max="96" step="0.5" value="40" aria-label={ui.startingStrengthLabel} />
+            <input id="abd-start-strength" data-sync-target="abd-start-strength-range" type="number" min="0.5" max="96" step="0.5" value="40" inputmode="decimal" aria-label={ui.startingStrengthLabel} />
+          </label>
+          <p class="abd-hint">{ui.strengthHint}</p>
+        </div>
+
+        <div class="abd-fieldset">
+          <label class="abd-field" for="abd-start-volume">
+            <span>{ui.startingVolumeLabel}</span>
+            <strong><output data-output="abd-start-volume">750</output> <span data-volume-label>mL</span></strong>
+            <input id="abd-start-volume-range" data-sync-input="abd-start-volume" type="range" min="50" max="5000" step="10" value="750" aria-label={ui.startingVolumeLabel} />
+            <input id="abd-start-volume" data-sync-target="abd-start-volume-range" type="number" min="50" max="5000" step="10" value="750" inputmode="decimal" aria-label={ui.startingVolumeLabel} />
+          </label>
+          <p class="abd-hint">{ui.volumeHint}</p>
+        </div>
+
+        <div class="abd-fieldset">
+          <label class="abd-field" for="abd-target-strength">
+            <span>{ui.targetStrengthLabel}</span>
+            <strong><output data-output="abd-target-strength">20.0% ABV</output></strong>
+            <input id="abd-target-strength-range" data-sync-input="abd-target-strength" type="range" min="0.5" max="96" step="0.5" value="20" aria-label={ui.targetStrengthLabel} />
+            <input id="abd-target-strength" data-sync-target="abd-target-strength-range" type="number" min="0.5" max="96" step="0.5" value="20" inputmode="decimal" aria-label={ui.targetStrengthLabel} />
+          </label>
+        </div>
+      </section>
+
+      <section class="abd-stage" aria-live="polite">
+        <div class="abd-status"><i></i><p data-abd-status>{ui.readyMessage}</p></div>
+        <div class="abd-illustration">
+          <svg class="abd-bottle" viewBox="0 0 320 360" role="img" aria-label={ui.bottleLabel}>
+            <defs>
+              <clipPath id="abd-bottle-clip">
+                <path d="M126 34h68v49c0 14 36 25 45 53 8 24 9 96 9 139 0 38-22 53-88 53s-88-15-88-53c0-43 1-115 9-139 9-28 45-39 45-53z" />
+              </clipPath>
+            </defs>
+            <path class="abd-bottle-outline" d="M126 34h68v49c0 14 36 25 45 53 8 24 9 96 9 139 0 38-22 53-88 53s-88-15-88-53c0-43 1-115 9-139 9-28 45-39 45-53z" />
+            <path class="abd-bottle-neck" d="M126 34h68v34h-68z" />
+            <g clip-path="url(#abd-bottle-clip)">
+              <rect class="abd-liquid" data-abd-liquid x="73" y="170" width="174" height="130" rx="22" />
+              <path class="abd-waterline" data-abd-waterline d="M73 171c29-12 58 12 87 0s58 12 87 0" />
+            </g>
+            <path class="abd-mark" d="M88 122h30M88 155h22M88 188h30M88 221h22M88 254h30" />
+            <text class="abd-mark-label" x="126" y="126">100%</text>
+            <text class="abd-mark-label" x="126" y="192">50%</text>
+            <text class="abd-bottle-label" x="160" y="286" text-anchor="middle">H₂O</text>
+          </svg>
+          <p class="abd-water-caption">{ui.waterLayerLabel}</p>
+        </div>
+
+        <div class="abd-result-card">
+          <div class="abd-result-main">
+            <span>{ui.waterToAddLabel}</span>
+            <strong data-abd-water>750 mL</strong>
+          </div>
+          <div class="abd-result-grid">
+            <div><span>{ui.finalVolumeLabel}</span><strong data-abd-final>1,500 mL</strong></div>
+            <div><span>{ui.pureAlcoholLabel}</span><strong data-abd-alcohol>300 mL</strong></div>
+            <div><span>{ui.ratioLabel}</span><strong data-abd-ratio>1.00x</strong></div>
+          </div>
+          <div class="abd-proof-row">
+            <span>{ui.startingProofLabel} <strong data-abd-start-proof>80.0 proof</strong></span>
+            <span>{ui.targetProofLabel} <strong data-abd-target-proof>40.0 proof</strong></span>
+          </div>
+        </div>
+
+        <p class="abd-notice">{ui.estimateNotice}</p>
+      </section>
+    </div>
+  </div>
+</div>
+
+<script is:inline id="abd-copy" type="application/json" set:html={JSON.stringify(ui)}></script>
+<script>
+  import { initAbvDilutionCalculator } from './controller';
+
+  const copy = document.querySelector<HTMLScriptElement>('#abd-copy');
+  if (copy?.textContent) initAbvDilutionCalculator(JSON.parse(copy.textContent));
+</script>

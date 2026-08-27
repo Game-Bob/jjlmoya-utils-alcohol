@@ -8,6 +8,7 @@ import { ALCOHOL_CLEARANCE_TOOL } from './tool/alcoholClearance';
 
 import { JELLO_SHOT_LAB_TOOL } from './tool/jelloShotLab';
 import { FORTIFIED_WINE_TOOL } from './tool/fortifiedWine';
+import { ABV_DILUTION_CALCULATOR_TOOL } from './tool/abvDilutionCalculator';
 
 export const ALL_TOOLS: ToolDefinition[] = [
   COCKTAIL_BALANCER_TOOL,
@@ -17,5 +18,5 @@ export const ALL_TOOLS: ToolDefinition[] = [
   ALCOHOL_CLEARANCE_TOOL,
   JELLO_SHOT_LAB_TOOL,
   FORTIFIED_WINE_TOOL,
+  ABV_DILUTION_CALCULATOR_TOOL,
 ];
-
