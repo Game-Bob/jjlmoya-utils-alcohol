@@ -3,7 +3,7 @@ import type { ToolLocaleContent } from '../../../types';
 import { bibliography } from '../bibliography';
 import type { BeerMashEfficiencyCalculatorUI } from '../ui';
 
-const slug = 'beer-mash-efficiency-calculator';
+const slug = 'maischausbeute-rechner-bier';
 const title = 'Maischausbeute Rechner für Bier';
 const description = 'Berechne die Maischausbeute in Prozent, die Zuckerextraktion und die erwartete Stammwürze für Heimbrauer und Handwerksbrauereien.';
 
@@ -16,7 +16,7 @@ const ui: BeerMashEfficiencyCalculatorUI = {
     grainWeight: 'Gesamtes Malzgewicht',
     grainType: 'Malzausbeute-Preset',
     customPotential: 'Eigener Ausbeutewert (SG)',
-    wortVolume: 'Pfannevollvolumen / Zielvolumen',
+    wortVolume: 'Pfannevollvolumen',
     measuredSg: 'Gemessene Stammwürze (SG)',
     unitSystem: 'Einheitensystem',
     sampleTemp: 'Probentemperatur',
@@ -36,15 +36,15 @@ const ui: BeerMashEfficiencyCalculatorUI = {
     tempF: '°F',
   },
   grainPresets: {
-    pilsner: 'Pilsner Malt (1.037 / 37 PPG)',
-    pale_ale: 'Pale Ale Malt (1.038 / 38 PPG)',
-    vienna: 'Vienna Malt (1.036 / 36 PPG)',
-    munich: 'Munich Malt (1.035 / 35 PPG)',
-    wheat: 'Wheat Malt (1.038 / 38 PPG)',
-    caramel_30: 'Caramel 30L (1.034 / 34 PPG)',
-    caramel_60: 'Caramel 60L (1.034 / 34 PPG)',
-    chocolate: 'Chocolate Malt (1.034 / 34 PPG)',
-    custom: 'Custom Potential...',
+    pilsner: 'Pilsner Malz (1.037 / 37 PPG)',
+    pale_ale: 'Pale Ale Malz (1.038 / 38 PPG)',
+    vienna: 'Wiener Malz (1.036 / 36 PPG)',
+    munich: 'Münchner Malz (1.035 / 35 PPG)',
+    wheat: 'Weizenmalz (1.038 / 38 PPG)',
+    caramel_30: 'Karamellmalz 30L (1.034 / 34 PPG)',
+    caramel_60: 'Karamellmalz 60L (1.034 / 34 PPG)',
+    chocolate: 'Schokoladenmalz (1.034 / 34 PPG)',
+    custom: 'Eigenes Potenzial...',
   },
   results: {
     efficiencyTitle: 'Maischausbeute',
@@ -65,60 +65,60 @@ const ui: BeerMashEfficiencyCalculatorUI = {
     poor: 'Niedrige Extraktion (< 65%)',
   },
   kettleVisual: {
-    mashTunTitle: 'Mash Kettle Extraction',
-    wortLevel: 'Wort Level',
-    sugarExtraction: 'Sugar Extraction',
+    mashTunTitle: 'Extraktion im Maischebehälter',
+    wortLevel: 'Würzepegel',
+    sugarExtraction: 'Zuckerextraktion',
   },
 };
 
 const faq = [
   {
-    question: 'What is mash efficiency in brewing?',
-    answer: 'Mash efficiency is the percentage of potential sugars extracted from malted grains into the pre-boil wort during the mashing and sparging process.',
+    question: 'Was ist die Maischausbeute beim Bierbrauen?',
+    answer: 'Die Maischausbeute gibt den prozentualen Anteil der aus dem Malz gelösten Ausbeutestoffe im Vergleich zum theoretischen Maximum an.',
   },
   {
-    question: 'What is a good mash efficiency percentage?',
-    answer: 'For homebrewing, a mash efficiency between 70% and 80% is considered typical and good. Commercial brewhouses with fine-tuned sparging often achieve 82% to 90%.',
+    question: 'Welche Maischausbeute ist ein guter Zielwert?',
+    answer: 'Für Heimbrauer liegt eine gute Maischausbeute typischerweise zwischen 70% und 80%.',
   },
   {
-    question: 'How is mash efficiency calculated?',
-    answer: 'It compares the total gravity points extracted in the wort (volume multiplied by measured gravity points) to the maximum theoretical gravity points available from the grain bill.',
+    question: 'Wie berechnet man die Ausbeute?',
+    answer: 'Man vergleicht die tatsächlich gemessenen Ausbeutepunkte der Würze mit dem theoretischen Ausbeutepotenzial der Malzschüttung.',
   },
   {
-    question: 'How can I improve low mash efficiency?',
-    answer: 'Check grain crush size, maintain proper mash pH (5.2 - 5.6), ensure thorough lautering/sparging, and avoid channeling in the grain bed.',
+    question: 'Wie lässt sich eine niedrige Ausbeute verbessern?',
+    answer: 'Feineres Schrotbild, optimale Maischetemperatur, richtiger pH-Wert zwischen 5.2 und 5.6 sowie gleichmäßiges Läutern erhöhen die Ausbeute.',
   },
   {
-    question: 'What is the difference between mash efficiency and brewhouse efficiency?',
-    answer: 'Mash efficiency measures sugar extraction into the kettle before boiling. Brewhouse efficiency factors in kettle deadspace, trub losses, and volume left in the fermenter.',
+    question: 'Was ist der Unterschied zwischen Maischausbeute und Sudhausausbeute?',
+    answer: 'Die Maischausbeute misst die Extraktion im Maischebehälter vor dem Kochen. Die Sudhausausbeute berücksichtigt zusätzlich Trub- und Gärverluste.',
   },
   {
-    question: 'How does water-to-grain ratio affect mash yield?',
-    answer: 'Thinner mashes (3.5 to 4.0 L per kg) improve enzyme mobility and sugar rinsing, while thicker mashes can protect enzymes at higher temperatures but slow down extraction.',
-  },
+    question: 'Wie beeinflusst das Hauptguss-Verhältnis das Ergebnis?',
+    answer: 'Dünnere Maischen (3.5 bis 4.0 L pro kg) verbessern die Enzymmobilität und erleichtern das Auswaschen der Zucker.',
+  }
 ];
 
 const howTo = [
   {
-    name: 'Select unit system',
-    text: 'Choose metric (kg/L) or imperial (lb/gal) for your brewing setup.',
+    name: 'Einheitensystem wählen',
+    text: 'Wähle metrische Einheiten oder das imperiale System.',
   },
   {
-    name: 'Set grain bill weight and grain potential',
-    text: 'Select the grain type preset or enter a custom specific gravity potential along with total malt weight.',
+    name: 'Malzmenge und Potenzial eingeben',
+    text: 'Wähle ein Malz-Preset oder gib den spezifischen Ausbeutewert ein.',
   },
   {
-    name: 'Enter wort volume and measured SG',
-    text: 'Input the pre-boil wort volume collected and the hydrometer or refractometer specific gravity reading.',
+    name: 'Würzevolumen und Dichte angeben',
+    text: 'Gib das gemessene Pfannevollvolumen und die Spindelablesung ein.',
   },
   {
-    name: 'Review efficiency and expected gravity targets',
-    text: 'Examine the calculated efficiency percentage and compare measured gravity against 75%, 80%, and 85% benchmarks.',
+    name: 'Ausbeute und Zielwerte prüfen',
+    text: 'Vergleiche deine Ausbeute mit den Richtwerten für 75%, 80% und 85%.',
   },
   {
-    name: 'Adjust recipe or process for next brew day',
-    text: 'Use the calculated efficiency baseline to scale future grain bills accurately or adjust sparging speed.',
-  },
+    name: 'Rezept für den nächsten Sud anpassen',
+    text: 'Nutze den berechneten Ausbeutewert zur genauen Skalierung künftiger Schüttungen.',
+  }
 ];
 
 const faqSchema: WithContext<FAQPage> = {
@@ -160,8 +160,8 @@ export const content: ToolLocaleContent<Record<string, any>> = {
   title,
   description,
   ui,
-  faqTitle: 'Frequently Asked Questions about Mash Efficiency',
-  bibliographyTitle: 'References and Formulas',
+  faqTitle: 'Häufige Fragen zur Maischausbeute',
+  bibliographyTitle: 'Referenzen und Formeln',
   faq,
   howTo,
   schemas: [faqSchema, howToSchema, appSchema],
@@ -169,57 +169,57 @@ export const content: ToolLocaleContent<Record<string, any>> = {
   seo: [
     {
       type: 'title',
-      text: 'Understanding Beer Mash Efficiency',
+      text: 'Maischausbeute beim Bierbrauen verstehen',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Mash efficiency evaluates how effectively grain starches are converted to fermentable sugars during mashing and collected during lautering. Knowing your efficiency allows precise recipe formulation and consistent gravity results across brew days.',
+      html: 'Die Maischausbeute misst, wie effizient Malzstärken in vergärbare Zucker umgewandelt und in die Würze überführt werden. Sie ist grundlegend für die Rezeptplanung.',
     },
     {
       type: 'table',
-      headers: ['Parameter', 'Formula', 'Description'],
+      headers: ['Parameter', 'Formel', 'Beschreibung'],
       rows: [
-        ['Potential Points', 'Weight x Grain PPG', 'Theoretical maximum gravity points'],
-        ['Extracted Points', 'Volume x Measured SG Points', 'Actual gravity points in wort'],
-        ['Mash Efficiency', '(Extracted Points / Potential Points) x 100', 'Percentage yield of extraction'],
-        ['Wort Gravity Brix', '-668.82 + 11.536 x SG x 100...', 'Refractometer Brix equivalent'],
+        ['Potenzielle Punkte', 'Gewicht x PPG', 'Theoretisches Maximum'],
+        ['Extrahierte Punkte', 'Volumen x SG-Punkte', 'Tatsächliche Ausbeutepunkte'],
+        ['Maischausbeute', '(Extrahiert / Potenzial) x 100', 'Prozentualer Ausbeutewert'],
+        ['Wort Brix', '-668.82 + 11.536 x SG x 100...', 'Refraktometerwert']
       ],
     },
     {
       type: 'title',
-      text: 'Key Factors Influencing Efficiency',
+      text: 'Einflussfaktoren auf die Extraktausbeute',
       level: 2,
     },
     {
       type: 'list',
       items: [
-        'Malt Crush: A finer crush increases surface area but can cause stuck sparges.',
-        'Mash Temperature & pH: Optimum enzymatic activity occurs between 64°C - 68°C and pH 5.2 - 5.6.',
-        'Sparge Technique: Fly sparging or batch sparging flow rate affects sugar rinsing completeness.',
-        'Water-to-Grain Ratio: Thinner mashes promote enzyme mobility.',
-        'Grain Bed Depth: Bed depth between 30 cm and 45 cm optimizes sparge fluid dynamics.',
+        'Mahlgrad: Feineres Schrot erhöht die Oberfläche, kann aber das Läutern erschweren.',
+        'Temperatur und pH: Optimale Enzymaktivität zwischen 64°C und 68°C bei pH 5.2 - 5.6.',
+        'Läutertechnik: Kontinuierliches oder stufenweises Nachgießen beeinflusst das Auswaschen der Zucker.',
+        'Wasser-Malz-Verhältnis: Dünnere Maischen fördern die Enzymmobilität.',
+        'Schüttungshöhe: Zwischen 30 cm und 45 cm wird die Fluiddynamik optimiert.'
       ],
     },
     {
       type: 'tip',
-      title: 'Target 75% for Recipe Scaling',
-      html: 'When designing a new recipe, standardizing on a baseline 75% mash efficiency gives a reliable foundation before adjusting for specific brewhouse setups.',
+      title: '75% als Ausgangswert für neue Rezepte',
+      html: 'Beim Entwurf neuer Rezepte bietet eine angenommene Maischausbeute von 75% eine zuverlässige Basis.',
     },
     {
       type: 'title',
-      text: 'Converting Gravity Points to Recipe Adjustments',
+      text: 'Rezeptanpassung nach der Messung',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'If your measured pre-boil gravity falls short of target points, you can extend the boil to concentrate sugars or add extra pale malt extract. Tracking mash efficiency over multiple batches establishes your specific system profile.',
+      html: 'Liegt die gemessene Dichte vor dem Kochen unter dem Zielwert, kann man den Kochvorgang verlängern oder Malzextrakt zufügen.',
     },
     {
       type: 'diagnostic',
       variant: 'warning',
-      title: 'Mash Efficiency vs Brewhouse Efficiency',
-      html: 'Do not confuse mash efficiency with overall brewhouse efficiency. Mash efficiency only measures sugar extraction in the kettle before boiling, excluding equipment deadspace and fermenter trub losses.',
+      title: 'Maischausbeute unterscheidet sich von Sudhausausbeute',
+      html: 'Beachte, dass Verluste im Hopfen- und Trubseiher nicht in die reine Maischausbeute eingehen.',
     },
   ],
 };

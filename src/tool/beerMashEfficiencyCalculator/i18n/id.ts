@@ -3,9 +3,9 @@ import type { ToolLocaleContent } from '../../../types';
 import { bibliography } from '../bibliography';
 import type { BeerMashEfficiencyCalculatorUI } from '../ui';
 
-const slug = 'beer-mash-efficiency-calculator';
+const slug = 'kalkulator-efisiensi-mash-bir';
 const title = 'Kalkulator Efisiensi Mash Bir';
-const description = 'Hitung efisiensi mash dan ekstraksi gula.';
+const description = 'Hitung persentase efisiensi mash, ekstraksi gula, dan spesifik gravitasi yang diharapkan untuk pembuatan bir rumah tangga.';
 
 const ui: BeerMashEfficiencyCalculatorUI = {
   unitMetric: 'Metrik',
@@ -15,7 +15,7 @@ const ui: BeerMashEfficiencyCalculatorUI = {
   labels: {
     grainWeight: 'Total Berat Malt',
     grainType: 'Potensi Malt',
-    customPotential: 'Potensi Kustom',
+    customPotential: 'Potensi Kustom (SG)',
     wortVolume: 'Volume Wort',
     measuredSg: 'SG Terukur',
     unitSystem: 'Sistem Satuan',
@@ -36,89 +36,89 @@ const ui: BeerMashEfficiencyCalculatorUI = {
     tempF: '°F',
   },
   grainPresets: {
-    pilsner: 'Pilsner Malt (1.037 / 37 PPG)',
-    pale_ale: 'Pale Ale Malt (1.038 / 38 PPG)',
-    vienna: 'Vienna Malt (1.036 / 36 PPG)',
-    munich: 'Munich Malt (1.035 / 35 PPG)',
-    wheat: 'Wheat Malt (1.038 / 38 PPG)',
-    caramel_30: 'Caramel 30L (1.034 / 34 PPG)',
-    caramel_60: 'Caramel 60L (1.034 / 34 PPG)',
-    chocolate: 'Chocolate Malt (1.034 / 34 PPG)',
-    custom: 'Custom Potential...',
+    pilsner: 'Malt Pilsner (1.037 / 37 PPG)',
+    pale_ale: 'Malt Pale Ale (1.038 / 38 PPG)',
+    vienna: 'Malt Vienna (1.036 / 36 PPG)',
+    munich: 'Malt Munich (1.035 / 35 PPG)',
+    wheat: 'Malt Gandum (1.038 / 38 PPG)',
+    caramel_30: 'Karamel 30L (1.034 / 34 PPG)',
+    caramel_60: 'Karamel 60L (1.034 / 34 PPG)',
+    chocolate: 'Malt Coklat (1.034 / 34 PPG)',
+    custom: 'Potensi Kustom...',
   },
   results: {
     efficiencyTitle: 'Efisiensi Mash',
-    efficiencyBadge: 'Status Terhitung',
+    efficiencyBadge: 'Status Kalkulasi',
     correctedGravity: 'SG Terkoreksi Suhu',
     measuredGravity: 'Gravitasi Terukur',
-    expectedGravity75: 'SG pada 75%',
-    expectedGravity80: 'SG pada 80%',
-    expectedGravity85: 'SG pada 85%',
-    potentialPoints: 'Poin Potensial',
-    extractedPoints: 'Poin Ekstraksi',
+    expectedGravity75: 'SG pada Efisiensi 75%',
+    expectedGravity80: 'SG pada Efisiensi 80%',
+    expectedGravity85: 'SG pada Efisiensi 85%',
+    potentialPoints: 'Total Poin Potensial',
+    extractedPoints: 'Poin Ekstraksi Terukur',
     wortBrix: 'Estimasi Brix',
   },
   statusMessages: {
-    excellent: 'Sangat Baik (82%+)',
-    good: 'Baik (74% - 81%)',
-    average: 'Rata-rata (65% - 73%)',
-    poor: 'Rendah (< 65%)',
+    excellent: 'Ekstraksi Sangat Baik (82%+)',
+    good: 'Efisiensi Baik (74% - 81%)',
+    average: 'Efisiensi Rata-rata (65% - 73%)',
+    poor: 'Ekstraksi Rendah (< 65%)',
   },
   kettleVisual: {
-    mashTunTitle: 'Mash Kettle Extraction',
-    wortLevel: 'Wort Level',
-    sugarExtraction: 'Sugar Extraction',
+    mashTunTitle: 'Ekstraksi di Ketel Mash',
+    wortLevel: 'Tingkat Wort',
+    sugarExtraction: 'Ekstraksi Gula',
   },
 };
 
 const faq = [
   {
-    question: 'What is mash efficiency in brewing?',
-    answer: 'Mash efficiency is the percentage of potential sugars extracted from malted grains into the pre-boil wort during the mashing and sparging process.',
+    question: 'Apa itu efisiensi mash dalam pembuatan bir?',
+    answer: 'Efisiensi mash adalah persentase potensi gula yang berhasil diekstraksi dari malt ke dalam wort sebelum dididihkan.',
   },
   {
-    question: 'What is a good mash efficiency percentage?',
-    answer: 'For homebrewing, a mash efficiency between 70% and 80% is considered typical and good. Commercial brewhouses with fine-tuned sparging often achieve 82% to 90%.',
+    question: 'Berapa persen efisiensi mash yang baik?',
+    answer: 'Untuk pembuat bir rumah tangga, efisiensi mash antara 70% hingga 80% tergolong sangat baik.',
   },
   {
-    question: 'How is mash efficiency calculated?',
-    answer: 'It compares the total gravity points extracted in the wort (volume multiplied by measured gravity points) to the maximum theoretical gravity points available from the grain bill.',
+    question: 'Bagaimana cara menghitung efisiensi mash?',
+    answer: 'Hitung perbandingan total poin gravitasi wort yang terkumpul dengan potensi teoritis maksimum dari malt.',
   },
   {
-    question: 'How can I improve low mash efficiency?',
-    answer: 'Check grain crush size, maintain proper mash pH (5.2 - 5.6), ensure thorough lautering/sparging, and avoid channeling in the grain bed.',
+    question: 'Bagaimana cara meningkatkan efisiensi yang rendah?',
+    answer: 'Atur kehalusan gilingan malt, jaga pH mash di rentang 5.2 - 5.6, serta lakukan sparging secara merata.',
   },
   {
-    question: 'What is the difference between mash efficiency and brewhouse efficiency?',
-    answer: 'Mash efficiency measures sugar extraction into the kettle before boiling. Brewhouse efficiency factors in kettle deadspace, trub losses, and volume left in the fermenter.',
+    question: 'Apa perbedaan efisiensi mash dan efisiensi sistem?',
+    answer: 'Efisiensi mash hanya mengukur ekstraksi di ketel mash; efisiensi sistem mencakup kehilangan wort di ketel didih dan fermentor.',
   },
   {
-    question: 'How does water-to-grain ratio affect mash yield?',
-    answer: 'Thinner mashes (3.5 to 4.0 L per kg) improve enzyme mobility and sugar rinsing, while thicker mashes can protect enzymes at higher temperatures but slow down extraction.',
-  },
+    question: 'Bagaimana rasio air dan malt mempengaruhi hasil?',
+    answer: 'Mash yang lebih encer (3.5 hingga 4.0 L per kg) meningkatkan mobilitas enzim dan mempermudah pembilasan gula.',
+  }
 ];
 
 const howTo = [
   {
-    name: 'Select unit system',
-    text: 'Choose metric (kg/L) or imperial (lb/gal) for your brewing setup.',
+    name: 'Pilih sistem satuan',
+    text: 'Pilih satuan metrik atau imperial.',
   },
   {
-    name: 'Set grain bill weight and grain potential',
-    text: 'Select the grain type preset or enter a custom specific gravity potential along with total malt weight.',
+    name: 'Masukkan berat dan potensi malt',
+    text: 'Pilih jenis malt atau masukkan nilai potensi kustom.',
   },
   {
-    name: 'Enter wort volume and measured SG',
-    text: 'Input the pre-boil wort volume collected and the hydrometer or refractometer specific gravity reading.',
+    name: 'Masukkan volume wort dan gravitasi terukur',
+    text: 'Isi volume wort sebelum dididihkan dan hasil bacaan hidrometer.',
   },
   {
-    name: 'Review efficiency and expected gravity targets',
-    text: 'Examine the calculated efficiency percentage and compare measured gravity against 75%, 80%, and 85% benchmarks.',
+    name: 'Tinjau efisiensi dan target gravitasi',
+    text: 'Bandingkan nilai gravitasi Anda dengan target 75%, 80%, dan 85%.',
   },
   {
-    name: 'Adjust recipe or process for next brew day',
-    text: 'Use the calculated efficiency baseline to scale future grain bills accurately or adjust sparging speed.',
-  },
+    name: 'Sesuaikan resep untuk pembuatan berikutnya',
+    text: 'Gunakan efisiensi dasar ini untuk menghitung kebutuhan malt secara akurat.',
+  }
 ];
 
 const faqSchema: WithContext<FAQPage> = {
@@ -160,8 +160,8 @@ export const content: ToolLocaleContent<Record<string, any>> = {
   title,
   description,
   ui,
-  faqTitle: 'Frequently Asked Questions about Mash Efficiency',
-  bibliographyTitle: 'References and Formulas',
+  faqTitle: 'Pertanyaan umum tentang efisiensi mash',
+  bibliographyTitle: 'Referensi dan rumus',
   faq,
   howTo,
   schemas: [faqSchema, howToSchema, appSchema],
@@ -169,57 +169,57 @@ export const content: ToolLocaleContent<Record<string, any>> = {
   seo: [
     {
       type: 'title',
-      text: 'Understanding Beer Mash Efficiency',
+      text: 'Memahami efisiensi mash bir',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Mash efficiency evaluates how effectively grain starches are converted to fermentable sugars during mashing and collected during lautering. Knowing your efficiency allows precise recipe formulation and consistent gravity results across brew days.',
+      html: 'Efisiensi mash mengukur seberapa efisien pati malt dikonversi menjadi gula yang dapat difermentasi dan dikumpulkan dalam wort. Ini adalah dasar formulasi resep yang akurat.',
     },
     {
       type: 'table',
-      headers: ['Parameter', 'Formula', 'Description'],
+      headers: ['Parameter', 'Rumus', 'Keterangan'],
       rows: [
-        ['Potential Points', 'Weight x Grain PPG', 'Theoretical maximum gravity points'],
-        ['Extracted Points', 'Volume x Measured SG Points', 'Actual gravity points in wort'],
-        ['Mash Efficiency', '(Extracted Points / Potential Points) x 100', 'Percentage yield of extraction'],
-        ['Wort Gravity Brix', '-668.82 + 11.536 x SG x 100...', 'Refractometer Brix equivalent'],
+        ['Poin Potensial', 'Berat x PPG', 'Teoritis maksimum'],
+        ['Poin Diekstrak', 'Volume x Poin SG', 'Poin nyata dalam wort'],
+        ['Efisiensi Mash', '(Diekstrak / Potensial) x 100', 'Persentase ekstraksi nyata'],
+        ['Brix Wort', '-668.82 + 11.536 x SG x 100...', 'Setara refraktometer']
       ],
     },
     {
       type: 'title',
-      text: 'Key Factors Influencing Efficiency',
+      text: 'Faktor utama yang mempengaruhi ekstraksi',
       level: 2,
     },
     {
       type: 'list',
       items: [
-        'Malt Crush: A finer crush increases surface area but can cause stuck sparges.',
-        'Mash Temperature & pH: Optimum enzymatic activity occurs between 64°C - 68°C and pH 5.2 - 5.6.',
-        'Sparge Technique: Fly sparging or batch sparging flow rate affects sugar rinsing completeness.',
-        'Water-to-Grain Ratio: Thinner mashes promote enzyme mobility.',
-        'Grain Bed Depth: Bed depth between 30 cm and 45 cm optimizes sparge fluid dynamics.',
+        'Kehalusan Gilingan: Gilingan lebih halus meningkatkan luas permukaan namun dapat menyumbat filtrasi.',
+        'Suhu dan pH: Aktivitas enzim optimal antara 64°C - 68°C dengan pH 5.2 - 5.6.',
+        'Teknik Sparging: Aliran kontinu atau bertahap mempengaruhi pencucian gula.',
+        'Rasio Air-Malt: Mash yang lebih encer mendukung mobilitas enzim.',
+        'Kedalaman Lapisan: Antara 30 cm dan 45 cm mengoptimalkan dinamika cairan.'
       ],
     },
     {
       type: 'tip',
-      title: 'Target 75% for Recipe Scaling',
-      html: 'When designing a new recipe, standardizing on a baseline 75% mash efficiency gives a reliable foundation before adjusting for specific brewhouse setups.',
+      title: 'Gunakan 75% sebagai patokan awal resep',
+      html: 'Saat merancang resep baru, menggunakan asumsi efisiensi 75% memberikan dasar kalkulasi yang aman.',
     },
     {
       type: 'title',
-      text: 'Converting Gravity Points to Recipe Adjustments',
+      text: 'Penyesuaian resep berdasarkan pengukuran',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'If your measured pre-boil gravity falls short of target points, you can extend the boil to concentrate sugars or add extra pale malt extract. Tracking mash efficiency over multiple batches establishes your specific system profile.',
+      html: 'Jika gravitasi terukur sebelum pendidihan lebih rendah dari target, Anda dapat memperpanjang waktu mendidih untuk memekatkan wort atau menambahkan ekstrak malt.',
     },
     {
       type: 'diagnostic',
       variant: 'warning',
-      title: 'Mash Efficiency vs Brewhouse Efficiency',
-      html: 'Do not confuse mash efficiency with overall brewhouse efficiency. Mash efficiency only measures sugar extraction in the kettle before boiling, excluding equipment deadspace and fermenter trub losses.',
+      title: 'Efisiensi mash vs Efisiensi total peralatan',
+      html: 'Jangan menyamakan ekstraksi di ketel mash dengan efisiensi total seluruh peralatan brewing Anda.',
     },
   ],
 };

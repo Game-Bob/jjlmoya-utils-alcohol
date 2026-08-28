@@ -3,9 +3,9 @@ import type { ToolLocaleContent } from '../../../types';
 import { bibliography } from '../bibliography';
 import type { BeerMashEfficiencyCalculatorUI } from '../ui';
 
-const slug = 'beer-mash-efficiency-calculator';
-const title = 'Maisrendement Rekenmachine';
-const description = 'Bereken het maisrendement en de suikerextractie.';
+const slug = 'maisrendement-rekenmachine-bier';
+const title = 'Maisrendement Rekenmachine voor Bier';
+const description = 'Bereken het maisrendement percentage, de suikerextractie en de verwachte begindichtheid voor zelfgebrouwen bier.';
 
 const ui: BeerMashEfficiencyCalculatorUI = {
   unitMetric: 'Metrisch',
@@ -14,10 +14,10 @@ const ui: BeerMashEfficiencyCalculatorUI = {
   unitImperial: 'Imperiaal',
   labels: {
     grainWeight: 'Totaal moutgewicht',
-    grainType: 'Mout potentieel',
-    customPotential: 'Aangepast potentieel',
-    wortVolume: 'Wort volume',
-    measuredSg: 'Gemeten SG',
+    grainType: 'Mout potentieel preset',
+    customPotential: 'Aangepast potentieel (SG)',
+    wortVolume: 'Wort volume voor koken',
+    measuredSg: 'Gemeten soortelijk gewicht (SG)',
     unitSystem: 'Eenheidssysteem',
     sampleTemp: 'Monstertemperatuur',
     calibTemp: 'Calibratietemperatuur',
@@ -36,89 +36,89 @@ const ui: BeerMashEfficiencyCalculatorUI = {
     tempF: '°F',
   },
   grainPresets: {
-    pilsner: 'Pilsner Malt (1.037 / 37 PPG)',
-    pale_ale: 'Pale Ale Malt (1.038 / 38 PPG)',
-    vienna: 'Vienna Malt (1.036 / 36 PPG)',
-    munich: 'Munich Malt (1.035 / 35 PPG)',
-    wheat: 'Wheat Malt (1.038 / 38 PPG)',
-    caramel_30: 'Caramel 30L (1.034 / 34 PPG)',
-    caramel_60: 'Caramel 60L (1.034 / 34 PPG)',
-    chocolate: 'Chocolate Malt (1.034 / 34 PPG)',
-    custom: 'Custom Potential...',
+    pilsner: 'Pilsner mout (1.037 / 37 PPG)',
+    pale_ale: 'Pale Ale mout (1.038 / 38 PPG)',
+    vienna: 'Weense mout (1.036 / 36 PPG)',
+    munich: 'Münchner mout (1.035 / 35 PPG)',
+    wheat: 'Tarwemout (1.038 / 38 PPG)',
+    caramel_30: 'Karamel 30L (1.034 / 34 PPG)',
+    caramel_60: 'Karamel 60L (1.034 / 34 PPG)',
+    chocolate: 'Chocolademout (1.034 / 34 PPG)',
+    custom: 'Eigen potentieel...',
   },
   results: {
     efficiencyTitle: 'Maisrendement',
     efficiencyBadge: 'Berekende status',
     correctedGravity: 'Temp-gecorrigeerde SG',
     measuredGravity: 'Gemeten dichtheid',
-    expectedGravity75: 'SG bij 75%',
-    expectedGravity80: 'SG bij 80%',
-    expectedGravity85: 'SG bij 85%',
-    potentialPoints: 'Potentiële punten',
-    extractedPoints: 'Extractpunten',
+    expectedGravity75: 'SG bij 75% rendement',
+    expectedGravity80: 'SG bij 80% rendement',
+    expectedGravity85: 'SG bij 85% rendement',
+    potentialPoints: 'Totale potentiele punten',
+    extractedPoints: 'Gemeten extractpunten',
     wortBrix: 'Geschatte Brix',
   },
   statusMessages: {
-    excellent: 'Uitstekend (82%+)',
-    good: 'Goed (74% - 81%)',
-    average: 'Gemiddeld (65% - 73%)',
-    poor: 'Laag (< 65%)',
+    excellent: 'Uitstekende extractie (82%+)',
+    good: 'Goed rendement (74% - 81%)',
+    average: 'Gemiddeld rendement (65% - 73%)',
+    poor: 'Lage extractie (< 65%)',
   },
   kettleVisual: {
-    mashTunTitle: 'Mash Kettle Extraction',
-    wortLevel: 'Wort Level',
-    sugarExtraction: 'Sugar Extraction',
+    mashTunTitle: 'Extractie in de maispan',
+    wortLevel: 'Wortpeil',
+    sugarExtraction: 'Suikerextractie',
   },
 };
 
 const faq = [
   {
-    question: 'What is mash efficiency in brewing?',
-    answer: 'Mash efficiency is the percentage of potential sugars extracted from malted grains into the pre-boil wort during the mashing and sparging process.',
+    question: 'Wat is het maisrendement bij bierbrouwen?',
+    answer: 'Het maisrendement geeft het percentage suikers aan dat tijdens het maischen en spoelen uit de mout in het wort terechtkomt.',
   },
   {
-    question: 'What is a good mash efficiency percentage?',
-    answer: 'For homebrewing, a mash efficiency between 70% and 80% is considered typical and good. Commercial brewhouses with fine-tuned sparging often achieve 82% to 90%.',
+    question: 'Wat is een goed maisrendement?',
+    answer: 'Voor hobbybrouwers geldt een maisrendement tussen 70% en 80% als zeer goed.',
   },
   {
-    question: 'How is mash efficiency calculated?',
-    answer: 'It compares the total gravity points extracted in the wort (volume multiplied by measured gravity points) to the maximum theoretical gravity points available from the grain bill.',
+    question: 'Hoe wordt het maisrendement berekend?',
+    answer: 'Door de gemeten dichtheidspunten in het opgevangen wort te vergelijken met de maximale theoretische waarde van de moutstorting.',
   },
   {
-    question: 'How can I improve low mash efficiency?',
-    answer: 'Check grain crush size, maintain proper mash pH (5.2 - 5.6), ensure thorough lautering/sparging, and avoid channeling in the grain bed.',
+    question: 'Hoe verbeter je een laag maisrendement?',
+    answer: 'Controleer de schrootfijnheid, bewaar een maisch-pH tussen 5.2 en 5.6 en zorg voor een gelijkmatige spoeling van het maisbed.',
   },
   {
-    question: 'What is the difference between mash efficiency and brewhouse efficiency?',
-    answer: 'Mash efficiency measures sugar extraction into the kettle before boiling. Brewhouse efficiency factors in kettle deadspace, trub losses, and volume left in the fermenter.',
+    question: 'Wat is het verschil tussen maisrendement en brouwzaalrendement?',
+    answer: 'Het maisrendement meet alleen de extractie in de ketel voor het koken. Het brouwzaalrendement neemt ook verliezen in de kookketel en het gistvat mee.',
   },
   {
-    question: 'How does water-to-grain ratio affect mash yield?',
-    answer: 'Thinner mashes (3.5 to 4.0 L per kg) improve enzyme mobility and sugar rinsing, while thicker mashes can protect enzymes at higher temperatures but slow down extraction.',
-  },
+    question: 'Welke invloed heeft de beslagdikte?',
+    answer: 'Een dunnere maisch (3.5 tot 4.0 liter per kg) verhoogt de enzymmobiliteit en maakt het uitspoelen van suikers eenvoudiger.',
+  }
 ];
 
 const howTo = [
   {
-    name: 'Select unit system',
-    text: 'Choose metric (kg/L) or imperial (lb/gal) for your brewing setup.',
+    name: 'Kies het eenheidssysteem',
+    text: 'Kies tussen metrisch of imperiaal.',
   },
   {
-    name: 'Set grain bill weight and grain potential',
-    text: 'Select the grain type preset or enter a custom specific gravity potential along with total malt weight.',
+    name: 'Voer moutgewicht en potentieel in',
+    text: 'Selecteer een moutsoort of voer een eigen waarde in.',
   },
   {
-    name: 'Enter wort volume and measured SG',
-    text: 'Input the pre-boil wort volume collected and the hydrometer or refractometer specific gravity reading.',
+    name: 'Voer wortvolume en gemeten SG in',
+    text: 'Vul het opgevangen volume voor koken en de hydrometerwaarde in.',
   },
   {
-    name: 'Review efficiency and expected gravity targets',
-    text: 'Examine the calculated efficiency percentage and compare measured gravity against 75%, 80%, and 85% benchmarks.',
+    name: 'Bekijk het rendement en de streefwaarden',
+    text: 'Vergelijk de gemeten dichtheid met de doelen van 75%, 80% en 85%.',
   },
   {
-    name: 'Adjust recipe or process for next brew day',
-    text: 'Use the calculated efficiency baseline to scale future grain bills accurately or adjust sparging speed.',
-  },
+    name: 'Pas het recept aan voor het volgende brouwsel',
+    text: 'Gebruik het berekende rendement om toekomstige stortingen nauwkeurig te plannen.',
+  }
 ];
 
 const faqSchema: WithContext<FAQPage> = {
@@ -160,8 +160,8 @@ export const content: ToolLocaleContent<Record<string, any>> = {
   title,
   description,
   ui,
-  faqTitle: 'Frequently Asked Questions about Mash Efficiency',
-  bibliographyTitle: 'References and Formulas',
+  faqTitle: 'Veelgestelde vragen over maisrendement',
+  bibliographyTitle: 'Referenties en formules',
   faq,
   howTo,
   schemas: [faqSchema, howToSchema, appSchema],
@@ -169,57 +169,57 @@ export const content: ToolLocaleContent<Record<string, any>> = {
   seo: [
     {
       type: 'title',
-      text: 'Understanding Beer Mash Efficiency',
+      text: 'Het maisrendement begrijpen',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Mash efficiency evaluates how effectively grain starches are converted to fermentable sugars during mashing and collected during lautering. Knowing your efficiency allows precise recipe formulation and consistent gravity results across brew days.',
+      html: 'Het maisrendement meet hoe efficiënt zetmelen in vergistbare suikers worden omgezet en in het wort worden verzameld. Het is de basis voor betrouwbare receptformulering.',
     },
     {
       type: 'table',
-      headers: ['Parameter', 'Formula', 'Description'],
+      headers: ['Parameter', 'Formule', 'Beschrijving'],
       rows: [
-        ['Potential Points', 'Weight x Grain PPG', 'Theoretical maximum gravity points'],
-        ['Extracted Points', 'Volume x Measured SG Points', 'Actual gravity points in wort'],
-        ['Mash Efficiency', '(Extracted Points / Potential Points) x 100', 'Percentage yield of extraction'],
-        ['Wort Gravity Brix', '-668.82 + 11.536 x SG x 100...', 'Refractometer Brix equivalent'],
+        ['Potentiele punten', 'Gewicht x PPG', 'Theoretisch maximum'],
+        ['Geëxtraheerde punten', 'Volume x SG-punten', 'Werkelijke extractiepunten'],
+        ['Maisrendement', '(Geëxtraheerd / Potentieel) x 100', 'Werkelijk rendementpercentage'],
+        ['Wort Brix', '-668.82 + 11.536 x SG x 100...', 'Refractometerwaarde']
       ],
     },
     {
       type: 'title',
-      text: 'Key Factors Influencing Efficiency',
+      text: 'Belangrijke factoren voor suikerextractie',
       level: 2,
     },
     {
       type: 'list',
       items: [
-        'Malt Crush: A finer crush increases surface area but can cause stuck sparges.',
-        'Mash Temperature & pH: Optimum enzymatic activity occurs between 64°C - 68°C and pH 5.2 - 5.6.',
-        'Sparge Technique: Fly sparging or batch sparging flow rate affects sugar rinsing completeness.',
-        'Water-to-Grain Ratio: Thinner mashes promote enzyme mobility.',
-        'Grain Bed Depth: Bed depth between 30 cm and 45 cm optimizes sparge fluid dynamics.',
+        'Maalgraad: Fijnere maling vergroot het oppervlak maar kan het spoelen bemoeilijken.',
+        'Temperatuur en pH: Optimale enzymactiviteit tussen 64°C en 68°C bij pH 5.2 - 5.6.',
+        'Spoeltechniek: Continu of stapsgewijs spoelen beïnvloedt de suikeruitwassing.',
+        'Water-mout-verhouding: Dunnere maisch bevordert enzymmobiliteit.',
+        'Diepte van het maisbed: Tussen 30 cm en 45 cm optimaliseert de vloeistofdynamiek.'
       ],
     },
     {
       type: 'tip',
-      title: 'Target 75% for Recipe Scaling',
-      html: 'When designing a new recipe, standardizing on a baseline 75% mash efficiency gives a reliable foundation before adjusting for specific brewhouse setups.',
+      title: 'Gebruik 75% als basis voor nieuwe recepten',
+      html: 'Bij het ontwerpen van een nieuw recept is 75% rendement een betrouwbaar uitgangspunt.',
     },
     {
       type: 'title',
-      text: 'Converting Gravity Points to Recipe Adjustments',
+      text: 'Receptaanpassingen op basis van metingen',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'If your measured pre-boil gravity falls short of target points, you can extend the boil to concentrate sugars or add extra pale malt extract. Tracking mash efficiency over multiple batches establishes your specific system profile.',
+      html: 'Als de gemeten dichtheid voor het koken lager is dan verwacht, kunt u de kooktijd verlengen om het wort te concentreren of moutextract toevoegen.',
     },
     {
       type: 'diagnostic',
       variant: 'warning',
-      title: 'Mash Efficiency vs Brewhouse Efficiency',
-      html: 'Do not confuse mash efficiency with overall brewhouse efficiency. Mash efficiency only measures sugar extraction in the kettle before boiling, excluding equipment deadspace and fermenter trub losses.',
+      title: 'Maisrendement versus brouwzaalrendement',
+      html: 'Haal het rendement van de maischketel niet door elkaar met het totale rendement van je brouwinstallatie.',
     },
   ],
 };

@@ -3,9 +3,9 @@ import type { ToolLocaleContent } from '../../../types';
 import { bibliography } from '../bibliography';
 import type { BeerMashEfficiencyCalculatorUI } from '../ui';
 
-const slug = 'beer-mash-efficiency-calculator';
-const title = 'Kalkulator Wydajności Zatarcia';
-const description = 'Oblicz wydajność zatarcia i ekstrakcję cukrów.';
+const slug = 'kalkulator-wydajnosci-zatarcia-piwa';
+const title = 'Kalkulator Wydajności Zatarcia Piwa';
+const description = 'Oblicz procentową wydajność zatarcia, ekstrakcję cukrów oraz przewidywaną gęstość brzeczki w piwowarstwie domowym.';
 
 const ui: BeerMashEfficiencyCalculatorUI = {
   unitMetric: 'Metryczny',
@@ -13,16 +13,16 @@ const ui: BeerMashEfficiencyCalculatorUI = {
   stagePostboil: 'Brzeczka po gotowaniu',
   unitImperial: 'Imperialny',
   labels: {
-    grainWeight: 'Masa zasypu',
-    grainType: 'Potencjał słodu',
-    customPotential: 'Własny potencjał',
-    wortVolume: 'Objętość brzeczki',
-    measuredSg: 'Zmierzony SG',
+    grainWeight: 'Całkowita masa zasypu',
+    grainType: 'Wartość potencjału słodu',
+    customPotential: 'Własny potencjał słodu (SG)',
+    wortVolume: 'Objętość brzeczki przed gotowaniem',
+    measuredSg: 'Zmierzony ciężar właściwy (SG)',
     unitSystem: 'System jednostek',
     sampleTemp: 'Temperatura próbki',
     calibTemp: 'Temperatura kalibracji',
     stageLabel: 'Etap warzenia',
-    presets: 'Potencjały słodów',
+    presets: 'Częste potencjały słodów',
   },
   units: {
     weightKg: 'kg',
@@ -36,89 +36,89 @@ const ui: BeerMashEfficiencyCalculatorUI = {
     tempF: '°F',
   },
   grainPresets: {
-    pilsner: 'Pilsner Malt (1.037 / 37 PPG)',
-    pale_ale: 'Pale Ale Malt (1.038 / 38 PPG)',
-    vienna: 'Vienna Malt (1.036 / 36 PPG)',
-    munich: 'Munich Malt (1.035 / 35 PPG)',
-    wheat: 'Wheat Malt (1.038 / 38 PPG)',
-    caramel_30: 'Caramel 30L (1.034 / 34 PPG)',
-    caramel_60: 'Caramel 60L (1.034 / 34 PPG)',
-    chocolate: 'Chocolate Malt (1.034 / 34 PPG)',
-    custom: 'Custom Potential...',
+    pilsner: 'Słód pilzneński (1.037 / 37 PPG)',
+    pale_ale: 'Słód Pale Ale (1.038 / 38 PPG)',
+    vienna: 'Słód wiedeński (1.036 / 36 PPG)',
+    munich: 'Słód monachijski (1.035 / 35 PPG)',
+    wheat: 'Słód pszenny (1.038 / 38 PPG)',
+    caramel_30: 'Karmel 30L (1.034 / 34 PPG)',
+    caramel_60: 'Karmel 60L (1.034 / 34 PPG)',
+    chocolate: 'Słód czekoladowy (1.034 / 34 PPG)',
+    custom: 'Własny potencjał...',
   },
   results: {
     efficiencyTitle: 'Wydajność zatarcia',
     efficiencyBadge: 'Obliczony status',
     correctedGravity: 'Skorygowana gęstość SG',
-    measuredGravity: 'Zmierzona gęstość',
-    expectedGravity75: 'SG przy 75%',
-    expectedGravity80: 'SG przy 80%',
-    expectedGravity85: 'SG przy 85%',
-    potentialPoints: 'Punkty potencjalne',
-    extractedPoints: 'Punkty ekstrakcji',
+    measuredGravity: 'Zmierzony ciężar',
+    expectedGravity75: 'SG przy 75% wydajności',
+    expectedGravity80: 'SG przy 80% wydajności',
+    expectedGravity85: 'SG przy 85% wydajności',
+    potentialPoints: 'Punkty potencjalne ogółem',
+    extractedPoints: 'Zmierzone punkty ekstrakcji',
     wortBrix: 'Szacowane °Brix',
   },
   statusMessages: {
-    excellent: 'Doskonała (82%+)',
-    good: 'Dobra (74% - 81%)',
-    average: 'Średnia (65% - 73%)',
-    poor: 'Niska (< 65%)',
+    excellent: 'Doskonała ekstrakcja (82%+)',
+    good: 'Dobra wydajność (74% - 81%)',
+    average: 'Średnia wydajność (65% - 73%)',
+    poor: 'Niska ekstrakcja (< 65%)',
   },
   kettleVisual: {
-    mashTunTitle: 'Mash Kettle Extraction',
-    wortLevel: 'Wort Level',
-    sugarExtraction: 'Sugar Extraction',
+    mashTunTitle: 'Ekstrakcja w kadzi zacierno-filtracyjnej',
+    wortLevel: 'Poziom brzeczki',
+    sugarExtraction: 'Ekstrakcja cukrów',
   },
 };
 
 const faq = [
   {
-    question: 'What is mash efficiency in brewing?',
-    answer: 'Mash efficiency is the percentage of potential sugars extracted from malted grains into the pre-boil wort during the mashing and sparging process.',
+    question: 'Czym jest wydajność zatarcia w piwowarstwie?',
+    answer: 'Wydajność zatarcia określa procent potencjalnych cukrów wyekstrahowanych ze słodu do brzeczki przed gotowaniem.',
   },
   {
-    question: 'What is a good mash efficiency percentage?',
-    answer: 'For homebrewing, a mash efficiency between 70% and 80% is considered typical and good. Commercial brewhouses with fine-tuned sparging often achieve 82% to 90%.',
+    question: 'Jaka wydajność zatarcia jest uważana za dobrą?',
+    answer: 'W piwowarstwie domowym wydajność w przedziale 70% - 80% uznaje się za bardzo dobry wynik.',
   },
   {
-    question: 'How is mash efficiency calculated?',
-    answer: 'It compares the total gravity points extracted in the wort (volume multiplied by measured gravity points) to the maximum theoretical gravity points available from the grain bill.',
+    question: 'Jak oblicza się wydajność zatarcia?',
+    answer: 'Wydajność oblicza się poprzez porównanie uzyskanych punktów gęstości w brzeczce z maksymalnym potencjałem zasypu.',
   },
   {
-    question: 'How can I improve low mash efficiency?',
-    answer: 'Check grain crush size, maintain proper mash pH (5.2 - 5.6), ensure thorough lautering/sparging, and avoid channeling in the grain bed.',
+    question: 'Jak poprawić niską wydajność?',
+    answer: 'Zadbaj o właściwy stopień śrutowania, optymalne pH zacieru (5.2 - 5.6) oraz równomierne wysładzanie.',
   },
   {
-    question: 'What is the difference between mash efficiency and brewhouse efficiency?',
-    answer: 'Mash efficiency measures sugar extraction into the kettle before boiling. Brewhouse efficiency factors in kettle deadspace, trub losses, and volume left in the fermenter.',
+    question: 'Jaka jest różnica między wydajnością zatarcia a wydajnością warzelni?',
+    answer: 'Wydajność zatarcia mierzy tylko ekstrakcję w kadzi, podczas gdy wydajność warzelni uwzględnia straty w kotle i fermentorze.',
   },
   {
-    question: 'How does water-to-grain ratio affect mash yield?',
-    answer: 'Thinner mashes (3.5 to 4.0 L per kg) improve enzyme mobility and sugar rinsing, while thicker mashes can protect enzymes at higher temperatures but slow down extraction.',
-  },
+    question: 'Jak stosunek wody do ziarna wpływa na proces?',
+    answer: 'Rzadszy zacier (3.5 do 4.0 L na kg słodu) ułatwia pracę enzymów i wypłukiwanie cukrów.',
+  }
 ];
 
 const howTo = [
   {
-    name: 'Select unit system',
-    text: 'Choose metric (kg/L) or imperial (lb/gal) for your brewing setup.',
+    name: 'Wybierz system jednostek',
+    text: 'Wybierz system metryczny lub imperialny.',
   },
   {
-    name: 'Set grain bill weight and grain potential',
-    text: 'Select the grain type preset or enter a custom specific gravity potential along with total malt weight.',
+    name: 'Wprowadź wagę i potencjał słodu',
+    text: 'Wybierz słód z listy lub wpisz własny potencjał.',
   },
   {
-    name: 'Enter wort volume and measured SG',
-    text: 'Input the pre-boil wort volume collected and the hydrometer or refractometer specific gravity reading.',
+    name: 'Podaj objętość brzeczki i pomiar SG',
+    text: 'Wpisz objętość brzeczki przed gotowaniem i odczyt ze spławika.',
   },
   {
-    name: 'Review efficiency and expected gravity targets',
-    text: 'Examine the calculated efficiency percentage and compare measured gravity against 75%, 80%, and 85% benchmarks.',
+    name: 'Przeanalizuj wydajność i cele',
+    text: 'Porównaj swoją gęstość z wartościami docelowymi dla 75%, 80% i 85%.',
   },
   {
-    name: 'Adjust recipe or process for next brew day',
-    text: 'Use the calculated efficiency baseline to scale future grain bills accurately or adjust sparging speed.',
-  },
+    name: 'Dostosuj recepturę na przyszłość',
+    text: 'Użyj wyliczonej wydajności do precyzyjnego skalowania kolejnych zasypów.',
+  }
 ];
 
 const faqSchema: WithContext<FAQPage> = {
@@ -160,8 +160,8 @@ export const content: ToolLocaleContent<Record<string, any>> = {
   title,
   description,
   ui,
-  faqTitle: 'Frequently Asked Questions about Mash Efficiency',
-  bibliographyTitle: 'References and Formulas',
+  faqTitle: 'Najczęstsze pytania dotyczące wydajności zatarcia',
+  bibliographyTitle: 'Odniesienia i formuły',
   faq,
   howTo,
   schemas: [faqSchema, howToSchema, appSchema],
@@ -169,57 +169,57 @@ export const content: ToolLocaleContent<Record<string, any>> = {
   seo: [
     {
       type: 'title',
-      text: 'Understanding Beer Mash Efficiency',
+      text: 'Zrozumienie wydajności zatarcia piwa',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Mash efficiency evaluates how effectively grain starches are converted to fermentable sugars during mashing and collected during lautering. Knowing your efficiency allows precise recipe formulation and consistent gravity results across brew days.',
+      html: 'Wydajność zatarcia mierzy skuteczność przekształcania skrobi słodu w cukry fermentowalne i ich zbierania w brzeczce. Jest kluczowa dla precyzyjnego projektowania receptur.',
     },
     {
       type: 'table',
-      headers: ['Parameter', 'Formula', 'Description'],
+      headers: ['Parametr', 'Formuła', 'Opis'],
       rows: [
-        ['Potential Points', 'Weight x Grain PPG', 'Theoretical maximum gravity points'],
-        ['Extracted Points', 'Volume x Measured SG Points', 'Actual gravity points in wort'],
-        ['Mash Efficiency', '(Extracted Points / Potential Points) x 100', 'Percentage yield of extraction'],
-        ['Wort Gravity Brix', '-668.82 + 11.536 x SG x 100...', 'Refractometer Brix equivalent'],
+        ['Punkty potencjalne', 'Waga x PPG słodu', 'Teoretyczne maksimum'],
+        ['Punkty wyekstrahowane', 'Objętość x punkty SG', 'Rzeczywiste punkty w brzeczce'],
+        ['Wydajność zatarcia', '(Wyekstrahowane / Potencjał) x 100', 'Rzeczywisty procent ekstrakcji'],
+        ['Stopnie Brix brzeczki', '-668.82 + 11.536 x SG x 100...', 'Odpowiednik refraktometryczny']
       ],
     },
     {
       type: 'title',
-      text: 'Key Factors Influencing Efficiency',
+      text: 'Kluczowe czynniki wpływające na ekstrakcję',
       level: 2,
     },
     {
       type: 'list',
       items: [
-        'Malt Crush: A finer crush increases surface area but can cause stuck sparges.',
-        'Mash Temperature & pH: Optimum enzymatic activity occurs between 64°C - 68°C and pH 5.2 - 5.6.',
-        'Sparge Technique: Fly sparging or batch sparging flow rate affects sugar rinsing completeness.',
-        'Water-to-Grain Ratio: Thinner mashes promote enzyme mobility.',
-        'Grain Bed Depth: Bed depth between 30 cm and 45 cm optimizes sparge fluid dynamics.',
+        'Śrutowanie: Drobniejsze śrutowanie zwiększa powierzchnię, lecz może utrudnić filtrację.',
+        'Temperatura i pH: Optymalna aktywność enzymów w zakresie 64°C - 68°C przy pH 5.2 - 5.6.',
+        'Technika wysładzania: Przepływ ciągły lub stopniowy wpływa na wymywanie cukrów.',
+        'Stosunek wody do zasypu: Rzadsze zaciery sprzyjają mobilności enzymów.',
+        'Głębokość złoża: Między 30 cm a 45 cm optymalizuje się dynamikę cieczy.'
       ],
     },
     {
       type: 'tip',
-      title: 'Target 75% for Recipe Scaling',
-      html: 'When designing a new recipe, standardizing on a baseline 75% mash efficiency gives a reliable foundation before adjusting for specific brewhouse setups.',
+      title: 'Używaj 75% jako punktu odniesienia',
+      html: 'Projektując nową recepturę, założenie 75% wydajności zatarcia stanowi bezpieczny punkt wyjścia.',
     },
     {
       type: 'title',
-      text: 'Converting Gravity Points to Recipe Adjustments',
+      text: 'Korekta procesu na podstawie wyników',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'If your measured pre-boil gravity falls short of target points, you can extend the boil to concentrate sugars or add extra pale malt extract. Tracking mash efficiency over multiple batches establishes your specific system profile.',
+      html: 'Jeśli zmierzona gęstość przed gotowaniem jest niższa od docelowej, można wydłużyć gotowanie dla zagęszczenia brzeczki lub dodać ekstrakt słodowy.',
     },
     {
       type: 'diagnostic',
       variant: 'warning',
-      title: 'Mash Efficiency vs Brewhouse Efficiency',
-      html: 'Do not confuse mash efficiency with overall brewhouse efficiency. Mash efficiency only measures sugar extraction in the kettle before boiling, excluding equipment deadspace and fermenter trub losses.',
+      title: 'Wydajność zatarcia a wydajność warzelni',
+      html: 'Nie należy mylić wydajności samego zacierania ze sprawnością całego sprzętu piwowarskiego.',
     },
   ],
 };

@@ -3,9 +3,9 @@ import type { ToolLocaleContent } from '../../../types';
 import { bibliography } from '../bibliography';
 import type { BeerMashEfficiencyCalculatorUI } from '../ui';
 
-const slug = 'beer-mash-efficiency-calculator';
-const title = 'Calcolatore Efficienza Ammostamento';
-const description = 'Calcola l’efficienza dell’ammostamento e l’estrazione zuccheri.';
+const slug = 'calcolatore-efficienza-ammostamento-birra';
+const title = 'Calcolatore Efficienza Ammostamento Birra';
+const description = 'Calcola la percentuale di efficienza dell\'ammostamento, l\'estrazione degli zuccheri e la gravità specifica prevista per l\'homebrewing.';
 
 const ui: BeerMashEfficiencyCalculatorUI = {
   unitMetric: 'Metrico',
@@ -13,16 +13,16 @@ const ui: BeerMashEfficiencyCalculatorUI = {
   stagePostboil: 'Mosto post-bollitura',
   unitImperial: 'Imperiale',
   labels: {
-    grainWeight: 'Peso totale malti',
-    grainType: 'Potenziale malto',
-    customPotential: 'Potenziale personalizzato',
-    wortVolume: 'Volume mosto',
-    measuredSg: 'Gravità misurata',
-    unitSystem: 'Sistema unità',
+    grainWeight: 'Peso totale dei malti',
+    grainType: 'Preset di potenziale del malto',
+    customPotential: 'Potenziale personalizzato (SG)',
+    wortVolume: 'Volume di mosto pre-bollitura',
+    measuredSg: 'Gravità specifica misurata (SG)',
+    unitSystem: 'Sistema di unità',
     sampleTemp: 'Temperatura campione',
     calibTemp: 'Temperatura taratura',
     stageLabel: 'Fase di ammostamento',
-    presets: 'Potenziali comuni',
+    presets: 'Potenziali comuni del malto',
   },
   units: {
     weightKg: 'kg',
@@ -36,89 +36,89 @@ const ui: BeerMashEfficiencyCalculatorUI = {
     tempF: '°F',
   },
   grainPresets: {
-    pilsner: 'Pilsner Malt (1.037 / 37 PPG)',
-    pale_ale: 'Pale Ale Malt (1.038 / 38 PPG)',
-    vienna: 'Vienna Malt (1.036 / 36 PPG)',
-    munich: 'Munich Malt (1.035 / 35 PPG)',
-    wheat: 'Wheat Malt (1.038 / 38 PPG)',
-    caramel_30: 'Caramel 30L (1.034 / 34 PPG)',
-    caramel_60: 'Caramel 60L (1.034 / 34 PPG)',
-    chocolate: 'Chocolate Malt (1.034 / 34 PPG)',
-    custom: 'Custom Potential...',
+    pilsner: 'Malto Pilsner (1.037 / 37 PPG)',
+    pale_ale: 'Malto Pale Ale (1.038 / 38 PPG)',
+    vienna: 'Malto Viennese (1.036 / 36 PPG)',
+    munich: 'Malto Monaco (1.035 / 35 PPG)',
+    wheat: 'Malto di frumento (1.038 / 38 PPG)',
+    caramel_30: 'Caramello 30L (1.034 / 34 PPG)',
+    caramel_60: 'Caramello 60L (1.034 / 34 PPG)',
+    chocolate: 'Malto cioccolato (1.034 / 34 PPG)',
+    custom: 'Potenziale personalizzato...',
   },
   results: {
-    efficiencyTitle: 'Efficienza ammostamento',
+    efficiencyTitle: 'Efficienza di ammostamento',
     efficiencyBadge: 'Stato calcolato',
     correctedGravity: 'SG corretta per temperatura',
     measuredGravity: 'Gravità misurata',
-    expectedGravity75: 'SG a 75%',
-    expectedGravity80: 'SG a 80%',
-    expectedGravity85: 'SG a 85%',
-    potentialPoints: 'Punti potenziali',
-    extractedPoints: 'Punti estratti',
+    expectedGravity75: 'SG a 75% efficienza',
+    expectedGravity80: 'SG a 80% efficienza',
+    expectedGravity85: 'SG a 85% efficienza',
+    potentialPoints: 'Punti potenziali totali',
+    extractedPoints: 'Punti estratti misurati',
     wortBrix: 'Brix stimati',
   },
   statusMessages: {
-    excellent: 'Eccellente (82%+)',
-    good: 'Buona (74% - 81%)',
-    average: 'Media (65% - 73%)',
-    poor: 'Bassa (< 65%)',
+    excellent: 'Eccellente estrazione (82%+)',
+    good: 'Buona efficienza (74% - 81%)',
+    average: 'Efficienza media (65% - 73%)',
+    poor: 'Bassa estrazione (< 65%)',
   },
   kettleVisual: {
-    mashTunTitle: 'Mash Kettle Extraction',
-    wortLevel: 'Wort Level',
-    sugarExtraction: 'Sugar Extraction',
+    mashTunTitle: 'Estrazione nella tina di ammostamento',
+    wortLevel: 'Livello del mosto',
+    sugarExtraction: 'Estrazione zuccheri',
   },
 };
 
 const faq = [
   {
-    question: 'What is mash efficiency in brewing?',
-    answer: 'Mash efficiency is the percentage of potential sugars extracted from malted grains into the pre-boil wort during the mashing and sparging process.',
+    question: 'Che cos\'è l\'efficienza di ammostamento?',
+    answer: 'L\'efficienza di ammostamento misura la percentuale di zuccheri potenziali estratti dai malti nel mosto prima della bollitura.',
   },
   {
-    question: 'What is a good mash efficiency percentage?',
-    answer: 'For homebrewing, a mash efficiency between 70% and 80% is considered typical and good. Commercial brewhouses with fine-tuned sparging often achieve 82% to 90%.',
+    question: 'Qual è un buon valore di efficienza?',
+    answer: 'Per l\'homebrewing, un\'efficienza compresa tra il 70% e l\'80% è considerata ottimale.',
   },
   {
-    question: 'How is mash efficiency calculated?',
-    answer: 'It compares the total gravity points extracted in the wort (volume multiplied by measured gravity points) to the maximum theoretical gravity points available from the grain bill.',
+    question: 'Come si calcola l\'efficienza di ammostamento?',
+    answer: 'Si confrontano i punti di gravità reali ottenuti nel mosto con il potenziale teorico massimo dei grani.',
   },
   {
-    question: 'How can I improve low mash efficiency?',
-    answer: 'Check grain crush size, maintain proper mash pH (5.2 - 5.6), ensure thorough lautering/sparging, and avoid channeling in the grain bed.',
+    question: 'Come migliorare un\'efficienza troppo bassa?',
+    answer: 'Regola la macinatura dei grani, mantieni il pH del mosto tra 5.2 e 5.6 ed effettua uno sparging omogeneo.',
   },
   {
-    question: 'What is the difference between mash efficiency and brewhouse efficiency?',
-    answer: 'Mash efficiency measures sugar extraction into the kettle before boiling. Brewhouse efficiency factors in kettle deadspace, trub losses, and volume left in the fermenter.',
+    question: 'Qual è la differenza tra efficienza di ammostamento ed efficienza dell\'impianto?',
+    answer: 'L\'efficienza di ammostamento misura solo l\'estrazione prima della bollitura; l\'efficienza globale include le perdite nel bollitore e nel fermentatore.',
   },
   {
-    question: 'How does water-to-grain ratio affect mash yield?',
-    answer: 'Thinner mashes (3.5 to 4.0 L per kg) improve enzyme mobility and sugar rinsing, while thicker mashes can protect enzymes at higher temperatures but slow down extraction.',
-  },
+    question: 'Come influisce il rapporto acqua/grani?',
+    answer: 'Un ammostamento più fluido (da 3.5 a 4.0 L per kg) favorisce la mobilità enzimatica e il lavaggio degli zuccheri.',
+  }
 ];
 
 const howTo = [
   {
-    name: 'Select unit system',
-    text: 'Choose metric (kg/L) or imperial (lb/gal) for your brewing setup.',
+    name: 'Selezionare il sistema di unità',
+    text: 'Scegli tra sistema metrico o imperiale.',
   },
   {
-    name: 'Set grain bill weight and grain potential',
-    text: 'Select the grain type preset or enter a custom specific gravity potential along with total malt weight.',
+    name: 'Inserire peso e potenziale dei grani',
+    text: 'Seleziona un tipo di malto o imposta un potenziale personalizzato.',
   },
   {
-    name: 'Enter wort volume and measured SG',
-    text: 'Input the pre-boil wort volume collected and the hydrometer or refractometer specific gravity reading.',
+    name: 'Indicare volume di mosto e densità misurata',
+    text: 'Inserisci il volume raccolto e la lettura del densimetro.',
   },
   {
-    name: 'Review efficiency and expected gravity targets',
-    text: 'Examine the calculated efficiency percentage and compare measured gravity against 75%, 80%, and 85% benchmarks.',
+    name: 'Esaminare efficienza e target di densità',
+    text: 'Confronta il valore ottenuto con gli obiettivi al 75%, 80% e 85%.',
   },
   {
-    name: 'Adjust recipe or process for next brew day',
-    text: 'Use the calculated efficiency baseline to scale future grain bills accurately or adjust sparging speed.',
-  },
+    name: 'Adattare la ricetta per la cotta successiva',
+    text: 'Usa l\'efficienza calcolata per calibrare le ricette future.',
+  }
 ];
 
 const faqSchema: WithContext<FAQPage> = {
@@ -160,8 +160,8 @@ export const content: ToolLocaleContent<Record<string, any>> = {
   title,
   description,
   ui,
-  faqTitle: 'Frequently Asked Questions about Mash Efficiency',
-  bibliographyTitle: 'References and Formulas',
+  faqTitle: 'Domande frequenti sull\'efficienza di ammostamento',
+  bibliographyTitle: 'Riferimenti e formule',
   faq,
   howTo,
   schemas: [faqSchema, howToSchema, appSchema],
@@ -169,57 +169,57 @@ export const content: ToolLocaleContent<Record<string, any>> = {
   seo: [
     {
       type: 'title',
-      text: 'Understanding Beer Mash Efficiency',
+      text: 'Comprendere l\'efficienza di ammostamento',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Mash efficiency evaluates how effectively grain starches are converted to fermentable sugars during mashing and collected during lautering. Knowing your efficiency allows precise recipe formulation and consistent gravity results across brew days.',
+      html: 'L\'efficienza di ammostamento misura quanto efficacemente gli amidi dei cereali vengono convertiti in zuccheri fermentabili e raccolti nel mosto. Conoscerla consente di formulare ricette precise.',
     },
     {
       type: 'table',
-      headers: ['Parameter', 'Formula', 'Description'],
+      headers: ['Parametro', 'Formula', 'Descrizione'],
       rows: [
-        ['Potential Points', 'Weight x Grain PPG', 'Theoretical maximum gravity points'],
-        ['Extracted Points', 'Volume x Measured SG Points', 'Actual gravity points in wort'],
-        ['Mash Efficiency', '(Extracted Points / Potential Points) x 100', 'Percentage yield of extraction'],
-        ['Wort Gravity Brix', '-668.82 + 11.536 x SG x 100...', 'Refractometer Brix equivalent'],
+        ['Punti potenziali', 'Peso x PPG del grano', 'Massimo teorico di punti'],
+        ['Punti estratti', 'Volume x punti SG misurati', 'Punti reali di densità nel mosto'],
+        ['Efficienza di ammostamento', '(Estratti / Potenziali) x 100', 'Percentuale reale di estrazione'],
+        ['Gradi Brix mosto', '-668.82 + 11.536 x SG x 100...', 'Equivalente al rifrattometro']
       ],
     },
     {
       type: 'title',
-      text: 'Key Factors Influencing Efficiency',
+      text: 'Fattori chiave che influenzano l\'estrazione',
       level: 2,
     },
     {
       type: 'list',
       items: [
-        'Malt Crush: A finer crush increases surface area but can cause stuck sparges.',
-        'Mash Temperature & pH: Optimum enzymatic activity occurs between 64°C - 68°C and pH 5.2 - 5.6.',
-        'Sparge Technique: Fly sparging or batch sparging flow rate affects sugar rinsing completeness.',
-        'Water-to-Grain Ratio: Thinner mashes promote enzyme mobility.',
-        'Grain Bed Depth: Bed depth between 30 cm and 45 cm optimizes sparge fluid dynamics.',
+        'Macinatura: Una macinatura più fine aumenta la superficie ma può ostruire il filtraggio.',
+        'Temperatura e pH: Attività enzimatica ottimale tra 64°C e 68°C a pH 5.2 - 5.6.',
+        'Tecnica di sparging: Il flusso continuo o per fasi incide sul risciacquo degli zuccheri.',
+        'Rapporto acqua-grani: Ammostamenti più fluidi favoriscono la mobilità enzimatica.',
+        'Spessore del letto: Tra 30 cm e 45 cm si ottimizza la dinamica del fluido.'
       ],
     },
     {
       type: 'tip',
-      title: 'Target 75% for Recipe Scaling',
-      html: 'When designing a new recipe, standardizing on a baseline 75% mash efficiency gives a reliable foundation before adjusting for specific brewhouse setups.',
+      title: 'Usare il 75% come valore base',
+      html: 'Quando si progetta una nuova ricetta, impostare un\'efficienza del 75% garantisce un punto di partenza affidabile.',
     },
     {
       type: 'title',
-      text: 'Converting Gravity Points to Recipe Adjustments',
+      text: 'Regolazioni della cotta in base ai risultati',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'If your measured pre-boil gravity falls short of target points, you can extend the boil to concentrate sugars or add extra pale malt extract. Tracking mash efficiency over multiple batches establishes your specific system profile.',
+      html: 'Se la densità misurata prima della bollitura è inferiore al previsto, è possibile prolungare la bollitura per concentrare il mosto o aggiungere estratto di malto.',
     },
     {
       type: 'diagnostic',
       variant: 'warning',
-      title: 'Mash Efficiency vs Brewhouse Efficiency',
-      html: 'Do not confuse mash efficiency with overall brewhouse efficiency. Mash efficiency only measures sugar extraction in the kettle before boiling, excluding equipment deadspace and fermenter trub losses.',
+      title: 'Efficienza di ammostamento vs Efficienza dell\'impianto',
+      html: 'Non confondere l\'efficienza di estrazione in ammostamento con l\'efficienza totale del tuo sistema di produzione.',
     },
   ],
 };

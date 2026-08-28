@@ -3,9 +3,9 @@ import type { ToolLocaleContent } from '../../../types';
 import { bibliography } from '../bibliography';
 import type { BeerMashEfficiencyCalculatorUI } from '../ui';
 
-const slug = 'beer-mash-efficiency-calculator';
+const slug = 'bira-mase-verimliligi-hesaplayici';
 const title = 'Bira Mayşe Verimliliği Hesaplayıcı';
-const description = 'Mayşe verimliliği ve şeker ekstraksiyonunu hesaplayın.';
+const description = 'Ev biracılığı için mayşe verimlilik yüzdesini, şeker ekstraksiyonunu ve beklenen özgül ağırlığı hesaplayın.';
 
 const ui: BeerMashEfficiencyCalculatorUI = {
   unitMetric: 'Metrik',
@@ -15,7 +15,7 @@ const ui: BeerMashEfficiencyCalculatorUI = {
   labels: {
     grainWeight: 'Toplam Malt Ağırlığı',
     grainType: 'Malt Potansiyeli',
-    customPotential: 'Özel Potansiyel',
+    customPotential: 'Özel Potansiyel (SG)',
     wortVolume: 'Şıra Hacmi',
     measuredSg: 'Ölçülen SG',
     unitSystem: 'Birim Sistemi',
@@ -38,87 +38,87 @@ const ui: BeerMashEfficiencyCalculatorUI = {
   grainPresets: {
     pilsner: 'Pilsner Malt (1.037 / 37 PPG)',
     pale_ale: 'Pale Ale Malt (1.038 / 38 PPG)',
-    vienna: 'Vienna Malt (1.036 / 36 PPG)',
-    munich: 'Munich Malt (1.035 / 35 PPG)',
-    wheat: 'Wheat Malt (1.038 / 38 PPG)',
-    caramel_30: 'Caramel 30L (1.034 / 34 PPG)',
-    caramel_60: 'Caramel 60L (1.034 / 34 PPG)',
-    chocolate: 'Chocolate Malt (1.034 / 34 PPG)',
-    custom: 'Custom Potential...',
+    vienna: 'Viyana Malt (1.036 / 36 PPG)',
+    munich: 'Münih Malt (1.035 / 35 PPG)',
+    wheat: 'Buğday Malt (1.038 / 38 PPG)',
+    caramel_30: 'Karamel 30L (1.034 / 34 PPG)',
+    caramel_60: 'Karamel 60L (1.034 / 34 PPG)',
+    chocolate: 'Çikolata Malt (1.034 / 34 PPG)',
+    custom: 'Özel Potansiyel...',
   },
   results: {
     efficiencyTitle: 'Mayşe Verimliliği',
     efficiencyBadge: 'Hesaplanan Durum',
     correctedGravity: 'Sıcaklık Düzeltmeli SG',
     measuredGravity: 'Ölçülen Yoğunluk',
-    expectedGravity75: '%75 SG',
-    expectedGravity80: '%80 SG',
-    expectedGravity85: '%85 SG',
-    potentialPoints: 'Potansiyel Puan',
+    expectedGravity75: '%75 Verimlilikte SG',
+    expectedGravity80: '%80 Verimlilikte SG',
+    expectedGravity85: '%85 Verimlilikte SG',
+    potentialPoints: 'Toplam Potansiyel Puan',
     extractedPoints: 'Ekstraksiyon Puanı',
     wortBrix: 'Tahmini Brix',
   },
   statusMessages: {
-    excellent: 'Mükemmel (%82+)',
-    good: 'İyi (%74 - %81)',
-    average: 'Ortalama (%65 - %73)',
-    poor: 'Düşük (< %65)',
+    excellent: 'Mükemmel Ekstraksiyon (%82+)',
+    good: 'İyi Verimlilik (%74 - %81)',
+    average: 'Ortalama Verimlilik (%65 - %73)',
+    poor: 'Düşük Ekstraksiyon (< %65)',
   },
   kettleVisual: {
-    mashTunTitle: 'Mash Kettle Extraction',
-    wortLevel: 'Wort Level',
-    sugarExtraction: 'Sugar Extraction',
+    mashTunTitle: 'Mayşe Kazanında Ekstraksiyon',
+    wortLevel: 'Şıra Seviyesi',
+    sugarExtraction: 'Şeker Ekstraksiyonu',
   },
 };
 
 const faq = [
   {
-    question: 'What is mash efficiency in brewing?',
-    answer: 'Mash efficiency is the percentage of potential sugars extracted from malted grains into the pre-boil wort during the mashing and sparging process.',
+    question: 'Bira yapımında mayşe verimliliği nedir?',
+    answer: 'Mayşe verimliliği, malttaki potansiyel şekerlerin kaynatma öncesi şıraya ne oranda aktarıldığını gösterir.',
   },
   {
-    question: 'What is a good mash efficiency percentage?',
-    answer: 'For homebrewing, a mash efficiency between 70% and 80% is considered typical and good. Commercial brewhouses with fine-tuned sparging often achieve 82% to 90%.',
+    question: 'İyi bir mayşe verimliliği oranı nedir?',
+    answer: 'Ev biracılığında %70 ile %80 arasındaki mayşe verimliliği oldukça başarılı kabul edilir.',
   },
   {
-    question: 'How is mash efficiency calculated?',
-    answer: 'It compares the total gravity points extracted in the wort (volume multiplied by measured gravity points) to the maximum theoretical gravity points available from the grain bill.',
+    question: 'Mayşe verimliliği nasıl hesaplanır?',
+    answer: 'Şıradaki toplam özgül ağırlık puanları, kullanılan malt kırmasının teorik maksimum potansiyeli ile kıyaslanır.',
   },
   {
-    question: 'How can I improve low mash efficiency?',
-    answer: 'Check grain crush size, maintain proper mash pH (5.2 - 5.6), ensure thorough lautering/sparging, and avoid channeling in the grain bed.',
+    question: 'Düşük mayşe verimliliği nasıl artırılır?',
+    answer: 'Malt kırma boyutunu ayarlayın, mayşe pH değerini 5.2 - 5.6 arasında tutun ve yağmurlamayı dengeli yapın.',
   },
   {
-    question: 'What is the difference between mash efficiency and brewhouse efficiency?',
-    answer: 'Mash efficiency measures sugar extraction into the kettle before boiling. Brewhouse efficiency factors in kettle deadspace, trub losses, and volume left in the fermenter.',
+    question: 'Mayşe verimliliği ile ekipman verimliliği arasındaki fark nedir?',
+    answer: 'Mayşe verimliliği yalnızca kazandaki şeker kazanımını ölçer; genel verimlilik kaynatma ve fermantasyon kayıplarını da kapsar.',
   },
   {
-    question: 'How does water-to-grain ratio affect mash yield?',
-    answer: 'Thinner mashes (3.5 to 4.0 L per kg) improve enzyme mobility and sugar rinsing, while thicker mashes can protect enzymes at higher temperatures but slow down extraction.',
-  },
+    question: 'Su-malt oranı şeker ekstraksiyonunu nasıl etkiler?',
+    answer: 'Daha sulu mayşeler (kg başına 3.5 - 4.0 L su) enzim hareketliliğini ve şeker yıkanmasını kolaylaştırır.',
+  }
 ];
 
 const howTo = [
   {
-    name: 'Select unit system',
-    text: 'Choose metric (kg/L) or imperial (lb/gal) for your brewing setup.',
+    name: 'Birim sistemini seçin',
+    text: 'Metrik veya imparatorluk birim sistemini seçin.',
   },
   {
-    name: 'Set grain bill weight and grain potential',
-    text: 'Select the grain type preset or enter a custom specific gravity potential along with total malt weight.',
+    name: 'Malt miktarını ve potansiyelini girin',
+    text: 'Malt türünü listeden seçin veya özel potansiyel değerini yazın.',
   },
   {
-    name: 'Enter wort volume and measured SG',
-    text: 'Input the pre-boil wort volume collected and the hydrometer or refractometer specific gravity reading.',
+    name: 'Şıra hacmini ve ölçülen SG değerini girin',
+    text: 'Toplanan kaynatma öncesi hacmi ve hidrometre okumasını girin.',
   },
   {
-    name: 'Review efficiency and expected gravity targets',
-    text: 'Examine the calculated efficiency percentage and compare measured gravity against 75%, 80%, and 85% benchmarks.',
+    name: 'Verimliliği ve hedef değerleri inceleyin',
+    text: 'Elde ettiğiniz yoğunluğu %75, %80 ve %85 hedefleri ile karşılaştırın.',
   },
   {
-    name: 'Adjust recipe or process for next brew day',
-    text: 'Use the calculated efficiency baseline to scale future grain bills accurately or adjust sparging speed.',
-  },
+    name: 'Sonraki reçeteler için ayarlama yapın',
+    text: 'Hesaplanan verimliliği gelecekteki reçetelerinizi ölçeklendirmek için kullanın.',
+  }
 ];
 
 const faqSchema: WithContext<FAQPage> = {
@@ -160,8 +160,8 @@ export const content: ToolLocaleContent<Record<string, any>> = {
   title,
   description,
   ui,
-  faqTitle: 'Frequently Asked Questions about Mash Efficiency',
-  bibliographyTitle: 'References and Formulas',
+  faqTitle: 'Mayşe verimliliği hakkında sık sorulan sorular',
+  bibliographyTitle: 'Kaynaklar ve formüller',
   faq,
   howTo,
   schemas: [faqSchema, howToSchema, appSchema],
@@ -169,57 +169,57 @@ export const content: ToolLocaleContent<Record<string, any>> = {
   seo: [
     {
       type: 'title',
-      text: 'Understanding Beer Mash Efficiency',
+      text: 'Bira mayşe verimliliğini anlamak',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Mash efficiency evaluates how effectively grain starches are converted to fermentable sugars during mashing and collected during lautering. Knowing your efficiency allows precise recipe formulation and consistent gravity results across brew days.',
+      html: 'Mayşe verimliliği, malt nişastasının fermante edilebilir şekerlere ne kadar verimli dönüştürüldüğünü ve şıraya aktarıldığını ölçer. Doğru reçete formülasyonu için temel bir göstergedir.',
     },
     {
       type: 'table',
-      headers: ['Parameter', 'Formula', 'Description'],
+      headers: ['Parametre', 'Formül', 'Açıklama'],
       rows: [
-        ['Potential Points', 'Weight x Grain PPG', 'Theoretical maximum gravity points'],
-        ['Extracted Points', 'Volume x Measured SG Points', 'Actual gravity points in wort'],
-        ['Mash Efficiency', '(Extracted Points / Potential Points) x 100', 'Percentage yield of extraction'],
-        ['Wort Gravity Brix', '-668.82 + 11.536 x SG x 100...', 'Refractometer Brix equivalent'],
+        ['Potansiyel Puan', 'Ağırlık x PPG', 'Teorik maksimum'],
+        ['Ekstraksiyon Puanı', 'Hacim x SG Puanı', 'Şıradaki gerçek puan'],
+        ['Mayşe Verimliliği', '(Elde Edilen / Potansiyel) x 100', 'Gerçek ekstraksiyon yüzdesi'],
+        ['Şıra Brix', '-668.82 + 11.536 x SG x 100...', 'Refraktometre karşılığı']
       ],
     },
     {
       type: 'title',
-      text: 'Key Factors Influencing Efficiency',
+      text: 'Ekstraksiyonu etkileyen temel faktörler',
       level: 2,
     },
     {
       type: 'list',
       items: [
-        'Malt Crush: A finer crush increases surface area but can cause stuck sparges.',
-        'Mash Temperature & pH: Optimum enzymatic activity occurs between 64°C - 68°C and pH 5.2 - 5.6.',
-        'Sparge Technique: Fly sparging or batch sparging flow rate affects sugar rinsing completeness.',
-        'Water-to-Grain Ratio: Thinner mashes promote enzyme mobility.',
-        'Grain Bed Depth: Bed depth between 30 cm and 45 cm optimizes sparge fluid dynamics.',
+        'Öğütme Boyutu: İnce öğütme yüzey alanını artırır ancak filtreyi tıkayabilir.',
+        'Sıcaklık ve pH: Optimal enzim aktivitesi 64°C - 68°C ve pH 5.2 - 5.6 arasında gerçekleşir.',
+        'Yağmurlama Tekniği: Sürekli veya kademeli su akışı şeker yıkamasını etkiler.',
+        'Su-Malt Oranı: Daha sulu mayşeler enzim hareketliliğini artırır.',
+        'Yatak Derinliği: 30 cm ile 45 cm arasında sıvı dinamiği optimize edilir.'
       ],
     },
     {
       type: 'tip',
-      title: 'Target 75% for Recipe Scaling',
-      html: 'When designing a new recipe, standardizing on a baseline 75% mash efficiency gives a reliable foundation before adjusting for specific brewhouse setups.',
+      title: 'Yeni reçetelerde %75 değerini baz alın',
+      html: 'Yeni bir reçete oluştururken %75 verimlilik varsayımı güvenilir bir başlangıç noktası sunar.',
     },
     {
       type: 'title',
-      text: 'Converting Gravity Points to Recipe Adjustments',
+      text: 'Ölçüm sonuçlarına göre reçete düzeltme',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'If your measured pre-boil gravity falls short of target points, you can extend the boil to concentrate sugars or add extra pale malt extract. Tracking mash efficiency over multiple batches establishes your specific system profile.',
+      html: 'Kaynatma öncesi ölçülen yoğunluk hedefin altındaysa, şırayı yoğunlaştırmak için kaynatma süresini uzatabilir ya da malt özü ekleyebilirsiniz.',
     },
     {
       type: 'diagnostic',
       variant: 'warning',
-      title: 'Mash Efficiency vs Brewhouse Efficiency',
-      html: 'Do not confuse mash efficiency with overall brewhouse efficiency. Mash efficiency only measures sugar extraction in the kettle before boiling, excluding equipment deadspace and fermenter trub losses.',
+      title: 'Mayşe verimliliği ve toplam sistem verimliliği',
+      html: 'Mayşe kazanındaki şeker ekstraksiyonunu tüm sisteminizin toplam verimliliği ile karıştırmayın.',
     },
   ],
 };

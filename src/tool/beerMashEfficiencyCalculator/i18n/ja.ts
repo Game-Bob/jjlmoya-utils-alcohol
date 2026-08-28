@@ -36,15 +36,15 @@ const ui: BeerMashEfficiencyCalculatorUI = {
     tempF: '°F',
   },
   grainPresets: {
-    pilsner: 'Pilsner Malt (1.037 / 37 PPG)',
-    pale_ale: 'Pale Ale Malt (1.038 / 38 PPG)',
-    vienna: 'Vienna Malt (1.036 / 36 PPG)',
-    munich: 'Munich Malt (1.035 / 35 PPG)',
-    wheat: 'Wheat Malt (1.038 / 38 PPG)',
-    caramel_30: 'Caramel 30L (1.034 / 34 PPG)',
-    caramel_60: 'Caramel 60L (1.034 / 34 PPG)',
-    chocolate: 'Chocolate Malt (1.034 / 34 PPG)',
-    custom: 'Custom Potential...',
+    pilsner: 'ピルスナーモルト (1.037 / 37 PPG)',
+    pale_ale: 'ペールエールモルト (1.038 / 38 PPG)',
+    vienna: 'ウィーンモルト (1.036 / 36 PPG)',
+    munich: 'ミュンヘンモルト (1.035 / 35 PPG)',
+    wheat: '小麦モルト (1.038 / 38 PPG)',
+    caramel_30: 'カラメルモルト 30L (1.034 / 34 PPG)',
+    caramel_60: 'カラメルモルト 60L (1.034 / 34 PPG)',
+    chocolate: 'チョコレートモルト (1.034 / 34 PPG)',
+    custom: 'カスタム潜在比重...',
   },
   results: {
     efficiencyTitle: '糖化効率',
@@ -65,60 +65,60 @@ const ui: BeerMashEfficiencyCalculatorUI = {
     poor: '低い抽出率 (< 65%)',
   },
   kettleVisual: {
-    mashTunTitle: 'Mash Kettle Extraction',
-    wortLevel: 'Wort Level',
-    sugarExtraction: 'Sugar Extraction',
+    mashTunTitle: 'マッシュタンクでの抽出',
+    wortLevel: '麦汁レベル',
+    sugarExtraction: '糖分抽出',
   },
 };
 
 const faq = [
   {
-    question: 'What is mash efficiency in brewing?',
-    answer: 'Mash efficiency is the percentage of potential sugars extracted from malted grains into the pre-boil wort during the mashing and sparging process.',
+    question: 'ビール醸造における糖化効率とは何ですか？',
+    answer: '糖化効率とは、モルトから煮沸前麦汁へ抽出された糖分が理論最大値の何パーセントに相当するかを示す指標です。',
   },
   {
-    question: 'What is a good mash efficiency percentage?',
-    answer: 'For homebrewing, a mash efficiency between 70% and 80% is considered typical and good. Commercial brewhouses with fine-tuned sparging often achieve 82% to 90%.',
+    question: '適切な糖化効率の目安は？',
+    answer: 'ホームブローイングでは70%〜80%の範囲が一般的な目標値となります。',
   },
   {
-    question: 'How is mash efficiency calculated?',
-    answer: 'It compares the total gravity points extracted in the wort (volume multiplied by measured gravity points) to the maximum theoretical gravity points available from the grain bill.',
+    question: '糖化効率はどのように計算されますか？',
+    answer: '麦汁に実際に回収されたエキスポイントと、モルト配合の理論潜在ポイントを比較して算出します。',
   },
   {
-    question: 'How can I improve low mash efficiency?',
-    answer: 'Check grain crush size, maintain proper mash pH (5.2 - 5.6), ensure thorough lautering/sparging, and avoid channeling in the grain bed.',
+    question: '糖化効率が低い場合の改善方法は？',
+    answer: 'モルトの砕き具合の調整、マッシュpH（5.2〜5.6）の維持、スパージングの均一化が効果的です。',
   },
   {
-    question: 'What is the difference between mash efficiency and brewhouse efficiency?',
-    answer: 'Mash efficiency measures sugar extraction into the kettle before boiling. Brewhouse efficiency factors in kettle deadspace, trub losses, and volume left in the fermenter.',
+    question: '糖化効率と醸造設備全体の効率の違いは？',
+    answer: '糖化効率は煮沸前の釜での回収率を指し、設備全体効率は煮沸・冷却・発酵容器でのロスを含みます。',
   },
   {
-    question: 'How does water-to-grain ratio affect mash yield?',
-    answer: 'Thinner mashes (3.5 to 4.0 L per kg) improve enzyme mobility and sugar rinsing, while thicker mashes can protect enzymes at higher temperatures but slow down extraction.',
-  },
+    question: '料水比は抽出にどう影響しますか？',
+    answer: '水比率が高めのマッシュ（1kgあたり3.5L〜4.0L）は酵素の移動を助け、糖分の洗浄効率を高めます。',
+  }
 ];
 
 const howTo = [
   {
-    name: 'Select unit system',
-    text: 'Choose metric (kg/L) or imperial (lb/gal) for your brewing setup.',
+    name: '単位系を選択',
+    text: 'メートル法またはヤード・ポンド法を選択します。',
   },
   {
-    name: 'Set grain bill weight and grain potential',
-    text: 'Select the grain type preset or enter a custom specific gravity potential along with total malt weight.',
+    name: 'モルト重量と潜在比重を入力',
+    text: 'モルトの種類を選択するかカスタム比重を入力します。',
   },
   {
-    name: 'Enter wort volume and measured SG',
-    text: 'Input the pre-boil wort volume collected and the hydrometer or refractometer specific gravity reading.',
+    name: '麦汁量と実測比重を入力',
+    text: '煮沸前に回収した麦汁量と比重計の読みを入力します。',
   },
   {
-    name: 'Review efficiency and expected gravity targets',
-    text: 'Examine the calculated efficiency percentage and compare measured gravity against 75%, 80%, and 85% benchmarks.',
+    name: '効率と目標値を確認',
+    text: '計算された効率と75%、80%、85%の目標値を比較します。',
   },
   {
-    name: 'Adjust recipe or process for next brew day',
-    text: 'Use the calculated efficiency baseline to scale future grain bills accurately or adjust sparging speed.',
-  },
+    name: '次回仕込みのレシピを調整',
+    text: '算出された基準効率をもとに仕込み配合を最適化します。',
+  }
 ];
 
 const faqSchema: WithContext<FAQPage> = {
@@ -160,8 +160,8 @@ export const content: ToolLocaleContent<Record<string, any>> = {
   title,
   description,
   ui,
-  faqTitle: 'Frequently Asked Questions about Mash Efficiency',
-  bibliographyTitle: 'References and Formulas',
+  faqTitle: '糖化効率に関するよくある質問',
+  bibliographyTitle: '参考文献と計算式',
   faq,
   howTo,
   schemas: [faqSchema, howToSchema, appSchema],
@@ -169,57 +169,57 @@ export const content: ToolLocaleContent<Record<string, any>> = {
   seo: [
     {
       type: 'title',
-      text: 'Understanding Beer Mash Efficiency',
+      text: 'ビール糖化効率の理解と活用',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Mash efficiency evaluates how effectively grain starches are converted to fermentable sugars during mashing and collected during lautering. Knowing your efficiency allows precise recipe formulation and consistent gravity results across brew days.',
+      html: '糖化効率は、モルトのデンプンが発酵性糖に変換され麦汁に回収される効率を測定します。正確なレシピ設計の基礎となる指標です。',
     },
     {
       type: 'table',
-      headers: ['Parameter', 'Formula', 'Description'],
+      headers: ['値', '計算式', '意味'],
       rows: [
-        ['Potential Points', 'Weight x Grain PPG', 'Theoretical maximum gravity points'],
-        ['Extracted Points', 'Volume x Measured SG Points', 'Actual gravity points in wort'],
-        ['Mash Efficiency', '(Extracted Points / Potential Points) x 100', 'Percentage yield of extraction'],
-        ['Wort Gravity Brix', '-668.82 + 11.536 x SG x 100...', 'Refractometer Brix equivalent'],
+        ['純アルコール', '開始容量 x 開始度数', '混合液に残るアルコール'],
+        ['最終容量', '純アルコール / 目標度数', '希釈後の理論上の合計'],
+        ['加える水', '最終容量 minus 開始容量', '準備する水の量'],
+        ['麦汁 Brix', '-668.82 + 11.536 x SG x 100...', '屈折計の対応値']
       ],
     },
     {
       type: 'title',
-      text: 'Key Factors Influencing Efficiency',
+      text: 'エキス抽出率に影響を与える要因',
       level: 2,
     },
     {
       type: 'list',
       items: [
-        'Malt Crush: A finer crush increases surface area but can cause stuck sparges.',
-        'Mash Temperature & pH: Optimum enzymatic activity occurs between 64°C - 68°C and pH 5.2 - 5.6.',
-        'Sparge Technique: Fly sparging or batch sparging flow rate affects sugar rinsing completeness.',
-        'Water-to-Grain Ratio: Thinner mashes promote enzyme mobility.',
-        'Grain Bed Depth: Bed depth between 30 cm and 45 cm optimizes sparge fluid dynamics.',
+        'モルト粉砕：細かく砕くほど表面積が増えるが、ラウタリングが詰まりやすくなる。',
+        '温度とpH：酵素活性の最適範囲は64°C〜68°C、pH 5.2〜5.6。',
+        'スパージング技術：連続または段階的な注水が糖分洗浄に影響する。',
+        '仕込み水量：水比率の高いマッシュは酵素の移動を促進する。',
+        '穀物層の深さ：30〜45 cmで液体の流動が最適化される。'
       ],
     },
     {
       type: 'tip',
-      title: 'Target 75% for Recipe Scaling',
-      html: 'When designing a new recipe, standardizing on a baseline 75% mash efficiency gives a reliable foundation before adjusting for specific brewhouse setups.',
+      title: '新レシピは75%を標準として設計',
+      html: '新しいレシピを設計する際は、75%の糖化効率を基準にすると安定した計画が立てられます。',
     },
     {
       type: 'title',
-      text: 'Converting Gravity Points to Recipe Adjustments',
+      text: '計測結果に基づく調整',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'If your measured pre-boil gravity falls short of target points, you can extend the boil to concentrate sugars or add extra pale malt extract. Tracking mash efficiency over multiple batches establishes your specific system profile.',
+      html: '煮沸前の実測比重が目標を下回る場合は、煮沸時間を延ばして麦汁を濃縮するか、乾燥モルトエキスを追加することができます。',
     },
     {
       type: 'diagnostic',
       variant: 'warning',
-      title: 'Mash Efficiency vs Brewhouse Efficiency',
-      html: 'Do not confuse mash efficiency with overall brewhouse efficiency. Mash efficiency only measures sugar extraction in the kettle before boiling, excluding equipment deadspace and fermenter trub losses.',
+      title: '糖化釜効率と設備全体効率の分離',
+      html: '糖化釜での抽出効率と、トラブ損などを含む最終回収効率を混同しないよう注意しましょう。',
     },
   ],
 };
