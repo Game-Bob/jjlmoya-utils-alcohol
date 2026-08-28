@@ -14,6 +14,8 @@ export { fortifiedWine } from './tool/fortifiedWine/entry';
 export type { FortifiedWineBuilderUI, FortifiedWineBuilderLocaleContent } from './tool/fortifiedWine/entry';
 export { abvDilutionCalculator } from './tool/abvDilutionCalculator/entry';
 export type { AbvDilutionCalculatorUI, AbvDilutionCalculatorLocaleContent } from './tool/abvDilutionCalculator/entry';
+export { beerMashEfficiencyCalculator } from './tool/beerMashEfficiencyCalculator/entry';
+export type { BeerMashEfficiencyCalculatorUI, BeerMashEfficiencyCalculatorLocaleContent } from './tool/beerMashEfficiencyCalculator/entry';
 export { alcoholCategory, toolsCategory } from './category';
 import { alcoholClearance } from './tool/alcoholClearance/entry';
 import { beerCooler } from './tool/beerCooler/entry';
@@ -23,4 +25,6 @@ import { partyKeg } from './tool/partyKeg/entry';
 import { jelloShotLab } from './tool/jelloShotLab/entry';
 import { fortifiedWine } from './tool/fortifiedWine/entry';
 import { abvDilutionCalculator } from './tool/abvDilutionCalculator/entry';
-export const ALL_ENTRIES = [alcoholClearance, beerCooler, carbonationCalculator, cocktailBalancer, partyKeg, jelloShotLab, fortifiedWine, abvDilutionCalculator];
+import { beerMashEfficiencyCalculator } from './tool/beerMashEfficiencyCalculator/entry';
+export const ALL_ENTRIES = [alcoholClearance, beerCooler, carbonationCalculator, cocktailBalancer, partyKeg, jelloShotLab, fortifiedWine, abvDilutionCalculator, beerMashEfficiencyCalculator];
+

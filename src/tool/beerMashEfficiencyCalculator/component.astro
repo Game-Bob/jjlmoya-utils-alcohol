@@ -1,0 +1,156 @@
+---
+import { beerMashEfficiencyCalculator } from './entry';
+import './beer-mash-efficiency-calculator.css';
+
+export interface Props {
+  locale?: string;
+}
+
+const { locale = 'en' } = Astro.props;
+const loader = beerMashEfficiencyCalculator.i18n[locale as keyof typeof beerMashEfficiencyCalculator.i18n] || beerMashEfficiencyCalculator.i18n.en;
+const content = loader ? await loader() : await beerMashEfficiencyCalculator.i18n.en!();
+const ui = content.ui;
+---
+
+<div class="beer-mash-calculator-card" id="beer-mash-calculator-root">
+  <div class="inputs-column">
+    <div class="unit-switcher" role="radiogroup" aria-label={ui.labels.unitSystem}>
+      <button type="button" id="unit-metric-btn" class="unit-btn active" role="radio" aria-checked="true">
+        {ui.unitMetric}
+      </button>
+      <button type="button" id="unit-imperial-btn" class="unit-btn" role="radio" aria-checked="false">
+        {ui.unitImperial}
+      </button>
+    </div>
+
+    <div class="stage-switcher" role="radiogroup" aria-label={ui.labels.stageLabel}>
+      <button type="button" id="stage-preboil-btn" class="stage-btn active" role="radio" aria-checked="true">
+        {ui.stagePreboil}
+      </button>
+      <button type="button" id="stage-postboil-btn" class="stage-btn" role="radio" aria-checked="false">
+        {ui.stagePostboil}
+      </button>
+    </div>
+
+    <div class="form-group">
+      <div class="form-label-row">
+        <label for="grain-weight" class="form-label">{ui.labels.grainWeight}</label>
+        <span class="form-val"><span id="grain-weight-val">5.5</span> <span id="grain-weight-unit">{ui.units.weightKg}</span></span>
+      </div>
+      <input type="range" id="grain-weight" min="0.5" max="30" step="0.1" value="5.5" class="range-input" />
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">{ui.labels.grainType}</label>
+      <div class="custom-select-wrapper">
+        <button type="button" id="grain-preset-trigger" class="select-trigger" aria-haspopup="listbox">
+          <span id="grain-preset-selected">{ui.grainPresets.pilsner}</span>
+          <span class="arrow">▼</span>
+        </button>
+        <div id="grain-preset-dropdown" class="select-dropdown" role="listbox">
+          <button type="button" class="preset-option" data-preset-id="pilsner">{ui.grainPresets.pilsner}</button>
+          <button type="button" class="preset-option" data-preset-id="pale_ale">{ui.grainPresets.pale_ale}</button>
+          <button type="button" class="preset-option" data-preset-id="vienna">{ui.grainPresets.vienna}</button>
+          <button type="button" class="preset-option" data-preset-id="munich">{ui.grainPresets.munich}</button>
+          <button type="button" class="preset-option" data-preset-id="wheat">{ui.grainPresets.wheat}</button>
+          <button type="button" class="preset-option" data-preset-id="caramel_30">{ui.grainPresets.caramel_30}</button>
+          <button type="button" class="preset-option" data-preset-id="caramel_60">{ui.grainPresets.caramel_60}</button>
+          <button type="button" class="preset-option" data-preset-id="chocolate">{ui.grainPresets.chocolate}</button>
+          <button type="button" class="preset-option" data-preset-id="custom">{ui.grainPresets.custom}</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group" id="custom-potential-group" style="display: none;">
+      <div class="form-label-row">
+        <label for="custom-potential" class="form-label">{ui.labels.customPotential}</label>
+        <span class="form-val" id="custom-potential-val">1.037</span>
+      </div>
+      <input type="range" id="custom-potential" min="1.020" max="1.046" step="0.001" value="1.037" class="range-input" />
+    </div>
+
+    <div class="form-group">
+      <div class="form-label-row">
+        <label for="wort-volume" class="form-label">{ui.labels.wortVolume}</label>
+        <span class="form-val"><span id="wort-volume-val">23.0</span> <span id="wort-volume-unit">{ui.units.volumeL}</span></span>
+      </div>
+      <input type="range" id="wort-volume" min="5" max="100" step="0.5" value="23.0" class="range-input" />
+    </div>
+
+    <div class="form-group">
+      <div class="form-label-row">
+        <label for="measured-sg" class="form-label">{ui.labels.measuredSg}</label>
+        <span class="form-val" id="measured-sg-val">1.052</span>
+      </div>
+      <input type="range" id="measured-sg" min="1.010" max="1.110" step="0.001" value="1.052" class="range-input" />
+    </div>
+
+    <div class="form-group">
+      <div class="form-label-row">
+        <label for="sample-temp" class="form-label">{ui.labels.sampleTemp}</label>
+        <span class="form-val"><span id="sample-temp-val">20</span> <span id="sample-temp-unit">{ui.units.tempC}</span></span>
+      </div>
+      <input type="range" id="sample-temp" min="10" max="80" step="1" value="20" class="range-input" />
+    </div>
+  </div>
+
+  <div class="results-column">
+    <div class="kettle-box" id="kettle-svg-container"></div>
+
+    <div class="badge-wrapper">
+      <span class="status-badge badge-good" id="res-badge">{ui.statusMessages.good}</span>
+    </div>
+
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <div class="metric-title">{ui.results.correctedGravity}</div>
+        <div class="metric-val" id="res-corrected-sg">1.052</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-title">{ui.results.potentialPoints}</div>
+        <div class="metric-val" id="res-potential-pts">-- pts</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-title">{ui.results.extractedPoints}</div>
+        <div class="metric-val" id="res-extracted-pts">-- pts</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-title">{ui.results.wortBrix}</div>
+        <div class="metric-val" id="res-brix">--° Brix</div>
+      </div>
+    </div>
+
+    <table class="expected-table">
+      <thead>
+        <tr>
+          <th>{ui.results.expectedGravity75}</th>
+          <th>{ui.results.expectedGravity80}</th>
+          <th>{ui.results.expectedGravity85}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="res-expected-75">--</td>
+          <td><strong id="res-table-expected-80">--</strong></td>
+          <td id="res-expected-85">--</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script is:inline type="application/json" id="beer-mash-ui-data" set:html={JSON.stringify(ui)} />
+
+<script>
+  import { initBeerMashEfficiencyCalculator } from './controller';
+  
+  const root = document.getElementById('beer-mash-calculator-root');
+  const dataEl = document.getElementById('beer-mash-ui-data');
+  
+  if (root && dataEl) {
+    try {
+      const ui = JSON.parse(dataEl.textContent || '{}');
+      initBeerMashEfficiencyCalculator(root, ui);
+    } catch {}
+  }
+</script>
