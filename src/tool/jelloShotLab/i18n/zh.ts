@@ -127,6 +127,10 @@ const seo: JelloShotLabLocaleContent['seo'] = [
       '家庭厨师：避免最常见的失败-液状果冻酒、橡皮质感或零酒精味道。',
     ],
   },
+  {
+    type: 'paragraph',
+    html: '制作时请先确认酒精度数和总液体体积，再按照计算结果称量明胶和烈酒。成品应始终冷藏，并在食用前确认凝固状态。',
+  },
 ];
 
 const schemas: JelloShotLabLocaleContent['schemas'] = [
