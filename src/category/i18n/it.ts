@@ -15,5 +15,14 @@ export const content: CategoryLocaleContent = {
         'Stima il tuo metabolismo e il tempo de recupero',
       ],
     },
+    {
+      type: 'title',
+      text: 'Pianifica meglio e festeggia con responsabilità',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Questa categoria raccoglie calcolatori pratici per gradazione alcolica, raffreddamento delle bevande e organizzazione degli eventi. Confronta le ricette, prepara le scorte e usa i risultati come indicazioni. Un calcolatore non stabilisce se una persona può guidare e non sostituisce il parere medico.',
+    },
   ],
 };

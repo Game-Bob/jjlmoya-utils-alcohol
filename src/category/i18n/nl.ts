@@ -15,5 +15,14 @@ export const content: CategoryLocaleContent = {
         'Schat uw metabolisme en hersteltijd in',
       ],
     },
+    {
+      type: 'title',
+      text: 'Beter plannen en verantwoord feesten',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Deze categorie bundelt praktische rekenhulpmiddelen voor alcoholpercentage, het koelen van dranken en evenementenplanning. Vergelijk recepten, bereid uw voorraad voor en gebruik de uitkomsten als richtlijn. Een rekenhulp bepaalt niet of iemand mag rijden en vervangt geen medisch advies.',
+    },
   ],
 };

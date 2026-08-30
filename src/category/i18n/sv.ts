@@ -14,6 +14,15 @@ export const content: CategoryLocaleContent = {
         'Planera fat och islager för dina evenemang',
         'Uppskatta din ämnesomsättning och återhämtningstid'
       ],
-    }
+    },
+    {
+      type: 'title',
+      text: 'Planera bättre och fira ansvarsfullt',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Den här kategorin samlar praktiska verktyg för alkoholhalt, kylning av drycker och evenemangsplanering. Jämför recept, planera förråd och använd resultaten som vägledning. En kalkylator avgör inte om någon kan köra bil och ersätter inte medicinsk rådgivning.',
+    },
   ],
 };

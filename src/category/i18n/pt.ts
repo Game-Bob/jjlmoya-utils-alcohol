@@ -15,5 +15,14 @@ export const content: CategoryLocaleContent = {
         'Estime seu metabolismo e tempo de recuperação',
       ],
     },
+    {
+      type: 'title',
+      text: 'Planeie melhor e celebre com responsabilidade',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Esta categoria reúne calculadoras práticas para teor alcoólico, arrefecimento de bebidas e planeamento de eventos. Compare receitas, prepare as quantidades necessárias e use os resultados como orientação. Uma calculadora não determina se alguém está apto a conduzir nem substitui aconselhamento médico.',
+    },
   ],
 };

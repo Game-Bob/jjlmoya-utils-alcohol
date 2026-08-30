@@ -14,6 +14,15 @@ export const content: CategoryLocaleContent = {
         'Plan keg and ice stock for your events',
         'Estimate your metabolism and recovery time'
       ],
-    }
+    },
+    {
+      type: 'title',
+      text: 'Plan better and celebrate responsibly',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'This category brings together practical calculators for alcohol strength, drink cooling and event planning. Use estimates to compare recipes, prepare supplies and plan responsibly. A calculator cannot determine whether someone is fit to drive or replace medical advice.',
+    },
   ],
 };

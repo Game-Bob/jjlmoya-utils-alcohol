@@ -15,5 +15,14 @@ export const content: CategoryLocaleContent = {
         'Oszacuj swój metabolizm i czas regeneracji',
       ],
     },
+    {
+      type: 'title',
+      text: 'Lepsze planowanie i odpowiedzialna zabawa',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Ta kategoria łączy praktyczne kalkulatory stężenia alkoholu, chłodzenia napojów i planowania wydarzeń. Porównuj przepisy, przygotuj zapasy i traktuj wyniki jako wskazówkę. Kalkulator nie ocenia zdolności do prowadzenia pojazdu i nie zastępuje porady medycznej.',
+    },
   ],
 };
