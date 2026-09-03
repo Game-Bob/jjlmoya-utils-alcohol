@@ -16,7 +16,7 @@ if (!locale) {
   const url = Astro.url.pathname;
   const parts = url.split('/').filter(Boolean);
   const possibleLang = parts[0] as KnownLocale;
-  const supportedLangs: KnownLocale[] = [
+  const supportedLangs: string[] = [
     'ar', 'da', 'de', 'en', 'es', 'fi', 'fr', 'id', 'it', 'ja', 'ko', 'nb', 'nl', 'pl', 'pt', 'ru', 'sv', 'tr', 'zh'
   ];
   locale = supportedLangs.includes(possibleLang) ? possibleLang : 'en';

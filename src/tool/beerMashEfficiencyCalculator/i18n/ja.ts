@@ -155,7 +155,7 @@ const appSchema: WithContext<SoftwareApplication> = {
   inLanguage: 'ja',
 };
 
-export const content: ToolLocaleContent<Record<string, any>> = {
+export const content: ToolLocaleContent<BeerMashEfficiencyCalculatorUI> = {
   slug,
   title,
   description,
