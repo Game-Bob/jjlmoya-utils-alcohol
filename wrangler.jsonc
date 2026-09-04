@@ -199,66 +199,6 @@
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.jjlmoya.es/_utilities/es/alcohol/sitemap.xml",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.gamebob.dev/_utilities/en/alcohol/sitemap.xml",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/_utilities/fr/alcohol/sitemap.xml",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/_utilities/de/alcohol/sitemap.xml",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/_utilities/it/alcohol/sitemap.xml",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/_utilities/pt/alcohol/sitemap.xml",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/_utilities/nl/alcohol/sitemap.xml",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/_utilities/sv/alcohol/sitemap.xml",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/_utilities/pl/alcohol/sitemap.xml",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/_utilities/id/alcohol/sitemap.xml",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/_utilities/tr/alcohol/sitemap.xml",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/_utilities/ru/alcohol/sitemap.xml",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/_utilities/ja/alcohol/sitemap.xml",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/_utilities/ko/alcohol/sitemap.xml",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/_utilities/zh/alcohol/sitemap.xml",
-            "zone_name": "gamebob.dev"
-        },
-        {
             "pattern": "www.gamebob.dev/_utilities/alcohol/*",
             "zone_name": "gamebob.dev"
         },
