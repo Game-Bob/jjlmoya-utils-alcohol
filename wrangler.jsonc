@@ -7,195 +7,99 @@
     "preview_urls": true,
     "routes": [
         {
-            "pattern": "www.jjlmoya.es/utilidades/categorias/alcohol-fiesta",
+            "pattern": "www.jjlmoya.es/utilidades/categorias/alcohol-fiesta*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/categorias/alcohol-fiesta/*",
+            "pattern": "www.jjlmoya.es/utilidades/calculadora-dilucion-alcohol-y-graduacion*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/calculadora-dilucion-alcohol-y-graduacion",
+            "pattern": "www.jjlmoya.es/utilidades/calculadora-alcohol-resaca*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/calculadora-dilucion-alcohol-y-graduacion/*",
+            "pattern": "www.jjlmoya.es/utilidades/calculadora-enfriamiento-cerveza*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/calculadora-alcohol-resaca",
+            "pattern": "www.jjlmoya.es/utilidades/calculadora-eficiencia-macerado-cerveza*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/calculadora-alcohol-resaca/*",
+            "pattern": "www.jjlmoya.es/utilidades/calculadora-carbonatacion*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/calculadora-enfriamiento-cerveza",
+            "pattern": "www.jjlmoya.es/utilidades/equilibrador-cocteles*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/calculadora-enfriamiento-cerveza/*",
+            "pattern": "www.jjlmoya.es/utilidades/constructor-vino-fortificado*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/calculadora-eficiencia-macerado-cerveza",
+            "pattern": "www.jjlmoya.es/utilidades/laboratorio-de-jello-shots*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/calculadora-eficiencia-macerado-cerveza/*",
+            "pattern": "www.jjlmoya.es/utilidades/calculadora-barriles-fiesta*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/calculadora-carbonatacion",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/calculadora-carbonatacion/*",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/equilibrador-cocteles",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/equilibrador-cocteles/*",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/constructor-vino-fortificado",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/constructor-vino-fortificado/*",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/laboratorio-de-jello-shots",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/laboratorio-de-jello-shots/*",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/calculadora-barriles-fiesta",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/calculadora-barriles-fiesta/*",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.gamebob.dev/en/utilities/categories/alcohol-party",
+            "pattern": "www.gamebob.dev/en/utilities/categories/alcohol-party*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/en/utilities/categories/alcohol-party/*",
+            "pattern": "www.gamebob.dev/fr/utilitaires/categories/alcool-fete*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/fr/utilitaires/categories/alcool-fete",
+            "pattern": "www.gamebob.dev/de/werkzeuge/kategorien/alkohol-party*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/fr/utilitaires/categories/alcool-fete/*",
+            "pattern": "www.gamebob.dev/it/utilita/categorie/alcol-festa*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/de/werkzeuge/kategorien/alkohol-party",
+            "pattern": "www.gamebob.dev/pt/utilidades/categorias/alcool-festas*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/de/werkzeuge/kategorien/alkohol-party/*",
+            "pattern": "www.gamebob.dev/nl/hulpmiddelen/categorieen/alcohol-feest*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/it/utilita/categorie/alcol-festa",
+            "pattern": "www.gamebob.dev/sv/verktyg/kategorier/alkohol-och-fest*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/it/utilita/categorie/alcol-festa/*",
+            "pattern": "www.gamebob.dev/pl/narzedzia/kategorie/alkohol-impreza*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/pt/utilidades/categorias/alcool-festas",
+            "pattern": "www.gamebob.dev/id/utilitas/kategori/alkohol-pesta*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/pt/utilidades/categorias/alcool-festas/*",
+            "pattern": "www.gamebob.dev/tr/araclar/kategoriler/alkol-partisi*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/nl/hulpmiddelen/categorieen/alcohol-feest",
+            "pattern": "www.gamebob.dev/ru/instrumenty/kategorii/alkogol-vecherinka*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/nl/hulpmiddelen/categorieen/alcohol-feest/*",
+            "pattern": "www.gamebob.dev/ja/utilities/categories/alcohol-party*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/sv/verktyg/kategorier/alkohol-och-fest",
+            "pattern": "www.gamebob.dev/ko/utilities/categories/alcohol-party*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/sv/verktyg/kategorier/alkohol-och-fest/*",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/pl/narzedzia/kategorie/alkohol-impreza",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/pl/narzedzia/kategorie/alkohol-impreza/*",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/id/utilitas/kategori/alkohol-pesta",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/id/utilitas/kategori/alkohol-pesta/*",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/tr/araclar/kategoriler/alkol-partisi",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/tr/araclar/kategoriler/alkol-partisi/*",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/ru/instrumenty/kategorii/alkogol-vecherinka",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/ru/instrumenty/kategorii/alkogol-vecherinka/*",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/ja/utilities/categories/alcohol-party",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/ja/utilities/categories/alcohol-party/*",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/ko/utilities/categories/alcohol-party",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/ko/utilities/categories/alcohol-party/*",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/zh/utilities/categories/alcohol-party",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/zh/utilities/categories/alcohol-party/*",
+            "pattern": "www.gamebob.dev/zh/utilities/categories/alcohol-party*",
             "zone_name": "gamebob.dev"
         },
         {
