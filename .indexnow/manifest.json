@@ -1,605 +1,605 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-04T10:02:06.422Z",
+  "generatedAt": "2026-09-04T18:52:04.796Z",
   "pages": {
     "https://www.gamebob.dev/de/werkzeuge/kategorien/alkohol-party/alkohol-verduennung-und-proof-rechner/": {
-      "hash": "6baeb1e2adb7314bc8bf8b960451b0a676694fe6d8229964f7734122a8f80767",
+      "hash": "85cee9a2509832239879802fb0865b3efb17fd793d902c44fefe03266cba5554",
       "route": "/de/werkzeuge/kategorien/alkohol-party/alkohol-verduennung-und-proof-rechner/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/alkohol-party/alkoholabbau-rechner/": {
-      "hash": "c8e4245e196b7972abab60714be85d253ef2876a4c62d5af48b0eaf27e15f8d1",
+      "hash": "0ada7be36923475eb9876ad46444317bc73e18cc61269c0f8e1cb49962a17c44",
       "route": "/de/werkzeuge/kategorien/alkohol-party/alkoholabbau-rechner/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/alkohol-party/bier-eisrechner-party/": {
-      "hash": "0e8e9b68aa3ec685b8819be581b0ff2afe72b367fb7e0372dffea404a9ecfa3e",
+      "hash": "974c37cc89d19d7f8d3a4d15cb06349d29cc58e2839220dc00142dc25249552b",
       "route": "/de/werkzeuge/kategorien/alkohol-party/bier-eisrechner-party/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/alkohol-party/bier-karbonatisierungs-rechner/": {
-      "hash": "a329ee0fa8e29fd53437c9135abfc049e30d1bef63b2915c2d97607d198b4089",
+      "hash": "4abef4b6308758e0e10ff54013428b065bb9fe37bd78a80599ca7a00c3d83834",
       "route": "/de/werkzeuge/kategorien/alkohol-party/bier-karbonatisierungs-rechner/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/alkohol-party/bier-kuhler/": {
-      "hash": "c5535263ceac0ad688503022752375502aad0165431e5eebcd50e92623d2bae8",
+      "hash": "46e7be2ef49efa331fa7a88ec926c31af4e359dd6eb398e4810da57ac93f2f7d",
       "route": "/de/werkzeuge/kategorien/alkohol-party/bier-kuhler/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/alkohol-party/cocktail-ausgleicher/": {
-      "hash": "9e7aa0f91e1eb63392828cd38e5a33ac0addd4f9c5fb160f6a69dc9205e9982e",
+      "hash": "ebc4dd4ecf7d655d596d3f699051a37b111dc1622cce189a4bdc5619560e7af5",
       "route": "/de/werkzeuge/kategorien/alkohol-party/cocktail-ausgleicher/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/alkohol-party/": {
-      "hash": "5541cab4f08255cef129f31aaea2b899e5e5ec9b2d20ca92fd2624ff9e6c2cf0",
+      "hash": "c2047c844f74fe4db2e54ead2b4f0d9387b2538d7a28da4ef35ffccd5f45d9b6",
       "route": "/de/werkzeuge/kategorien/alkohol-party/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/alkohol-party/jello-shot-rechner/": {
-      "hash": "8ee202ea4ad8be32b1b7df5dd1448742982ebce6c9794fd8938a0134f5a92526",
+      "hash": "a7920a9c8176343648175ae06302a0f9a18fa75d3e158451db0339563a3c5994",
       "route": "/de/werkzeuge/kategorien/alkohol-party/jello-shot-rechner/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/alkohol-party/maischausbeute-rechner-bier/": {
-      "hash": "ca4466dd31229b1bd2a8b8ca596cebb82d2c64e6c95e923a63452387051e6cdd",
+      "hash": "d8424b12dce6d51e029dd8364e2aa9a33a099d3854bdd99381b762b72411ef57",
       "route": "/de/werkzeuge/kategorien/alkohol-party/maischausbeute-rechner-bier/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/alkohol-party/wein-aufspritung-rechner/": {
-      "hash": "b737f3980f78383df1c860af97e02ed27337d681166c63660ed19effde712f95",
+      "hash": "5460c7d6aeb3fe1f3acb02beaa0b739993b3f185ee68aad9555a5c74e3c6cc70",
       "route": "/de/werkzeuge/kategorien/alkohol-party/wein-aufspritung-rechner/"
     },
     "https://www.gamebob.dev/en/utilities/categories/alcohol-party/abv-dilution-calculator/": {
-      "hash": "14fe4d8b8be35dce6594ad2bdc5b863aada6d615eb3b381ac5460806dd960073",
+      "hash": "58be5f01ddf1db1014c2c42ce00170c0b9a36098b9cb84f87042e1392ef46b9e",
       "route": "/en/utilities/categories/alcohol-party/abv-dilution-calculator/"
     },
     "https://www.gamebob.dev/en/utilities/categories/alcohol-party/alcohol-clearance-calculator/": {
-      "hash": "2467bfa7c0286bbb1353dd7c1195d1648bb3d3ec815bd2a515dd8e33192acc58",
+      "hash": "5bd1ed8f96ba2f4d94de4dbdefeea7d3eba899192ef7dab8e60b671f2f9ef946",
       "route": "/en/utilities/categories/alcohol-party/alcohol-clearance-calculator/"
     },
     "https://www.gamebob.dev/en/utilities/categories/alcohol-party/beer-carbonation-calculator/": {
-      "hash": "efee55753a44ebdd05bad249d339c6b899e8260ad7b47ae06df9ca3c11b97fb4",
+      "hash": "f6105c7fbf3709444c2a9e599a47b3a1512f97ef3e6f27fbb20b9abe95648b4e",
       "route": "/en/utilities/categories/alcohol-party/beer-carbonation-calculator/"
     },
     "https://www.gamebob.dev/en/utilities/categories/alcohol-party/beer-cooler/": {
-      "hash": "0fa0bf56afb474b36a99b35c6e4dc0528fdc802cd2c56128253a3eb10255be09",
+      "hash": "04817c4ca200e97024cc09151c45644ae623ffbcb4cbda5faf8a57a464cf5019",
       "route": "/en/utilities/categories/alcohol-party/beer-cooler/"
     },
     "https://www.gamebob.dev/en/utilities/categories/alcohol-party/beer-mash-efficiency-calculator/": {
-      "hash": "11add4fa712eeeedbefde8dc0510f766251a6ab3c2b77edb8a40e18685bd0648",
+      "hash": "edd590c1607befbb02b231d68eb75939bfdde55003dee3340325625040d2605e",
       "route": "/en/utilities/categories/alcohol-party/beer-mash-efficiency-calculator/"
     },
     "https://www.gamebob.dev/en/utilities/categories/alcohol-party/cocktail-balancer/": {
-      "hash": "ce238fd17f4d81c1a3b64ab2d671db8640a482e7e5bf40acfba7db98b8900ddf",
+      "hash": "c3b0a0cb9c82962d066e5669756b7e56a8af05eb3e1ea7c983660dcd6b7b86f9",
       "route": "/en/utilities/categories/alcohol-party/cocktail-balancer/"
     },
     "https://www.gamebob.dev/en/utilities/categories/alcohol-party/fortified-wine-builder/": {
-      "hash": "96513d5a52572741cef9a4f5d4d7e5a2aaae822b97321de024da937d7d8d7023",
+      "hash": "027311bde94e38d7fa66ded688bfd0b601accdff1436a4f19d1b0ac5d2dd0770",
       "route": "/en/utilities/categories/alcohol-party/fortified-wine-builder/"
     },
     "https://www.gamebob.dev/en/utilities/categories/alcohol-party/": {
-      "hash": "c86454b4aed106b5d0781baa4d59cf64f69d76a6f13fdd79bfd0373b90505fae",
+      "hash": "179288a90895cefceaf2f6e99fe831e063ed4b7c90d61bbdc2d2f19704f113d0",
       "route": "/en/utilities/categories/alcohol-party/"
     },
     "https://www.gamebob.dev/en/utilities/categories/alcohol-party/jello-shot-lab/": {
-      "hash": "4827dc5507c3a126b99dd78326a19a3e030c09e9ca2c67b0ec0a01e6f12c42b8",
+      "hash": "866fabffe7fb6711cb3392c86ce52a22bcbd66458e6e22fa2f7e2ac34d854f03",
       "route": "/en/utilities/categories/alcohol-party/jello-shot-lab/"
     },
     "https://www.gamebob.dev/en/utilities/categories/alcohol-party/party-stock-calculator/": {
-      "hash": "f7fbc40c1f5a00b1e1b813ca6b91ec615192e64a87190cf60bc549f22cf8148b",
+      "hash": "ac1d56786cd3a6d914143d3092c8aa11a8e30fc77a53e79f2fc3d65b12fb1e37",
       "route": "/en/utilities/categories/alcohol-party/party-stock-calculator/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/alcool-fete/calculateur-carbonatation-biere/": {
-      "hash": "2565333f720caaff9ea68ef1ec3118f94f414afc51c6e9abfb213c4f73bd2cfb",
+      "hash": "2202cfdd04aa1bcaf636679a4ad0e84e159228dae4d8a620d2b6f656c94119aa",
       "route": "/fr/utilitaires/categories/alcool-fete/calculateur-carbonatation-biere/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/alcool-fete/calculateur-dilution-alcool-et-proof/": {
-      "hash": "c3df11c46035f2369a57729fe839a4fb73fcbafd4c9ce32784832f2488e15a6f",
+      "hash": "158ca6629add07eb4aa07997b9b8ea65ce3e096124313ea794eb35f6526c7dd9",
       "route": "/fr/utilitaires/categories/alcool-fete/calculateur-dilution-alcool-et-proof/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/alcool-fete/calculateur-elimination-alcohol/": {
-      "hash": "280486ee4fac968b4dd4383f535356c4001bd6eaff1516d99497e2e990451b65",
+      "hash": "6c779ffded7160c12901a641c1de41c1674b58e3e4ccd303d84147179195478a",
       "route": "/fr/utilitaires/categories/alcool-fete/calculateur-elimination-alcohol/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/alcool-fete/calculateur-fete-fut/": {
-      "hash": "7744121fdaebbda9b68afb1bfeb6e14862049e61cd7f1b0d96ec1f1b3adeaa7c",
+      "hash": "7c03dc913b524195e8239f12e6d3290fd040b48aaea5ec061bdfb68baaaf363b",
       "route": "/fr/utilitaires/categories/alcool-fete/calculateur-fete-fut/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/alcool-fete/calculateur-rendement-brassage-biere/": {
-      "hash": "2f448ea35012d5c115b8c21e7768ae6f4d6f24e1c47f187b1ed4e403d152d35b",
+      "hash": "8646b32812108b495f5dc86ec4943e11b3ef9d000df8ec0d722bea87338ba982",
       "route": "/fr/utilitaires/categories/alcool-fete/calculateur-rendement-brassage-biere/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/alcool-fete/constructeur-vin-fortifie/": {
-      "hash": "d66568a89e27f59918b11506d4bc12ba976ce74f27c356e9f2f0d56e9d5a276f",
+      "hash": "0a3a816e0ea373895c808bb99998478ab6fdf03009d539cadca6a80da5b95add",
       "route": "/fr/utilitaires/categories/alcool-fete/constructeur-vin-fortifie/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/alcool-fete/equilibre-cocktail/": {
-      "hash": "215ef109fec7534f0fb4e3024d0c0d9081965399c8b7ff3ba563322415e85554",
+      "hash": "8188ac3ef79dff8fc058f122c97979b312a49dd79eda7281d522e3262abe1f36",
       "route": "/fr/utilitaires/categories/alcool-fete/equilibre-cocktail/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/alcool-fete/": {
-      "hash": "e8a35eea0fe2e2f631992bbc28499f29c7584a4595d064b71e7f648290a86f7d",
+      "hash": "d7ef978589ee69b1bd158863bb12f888c799a1e1116381933bc06fe613d1de7c",
       "route": "/fr/utilitaires/categories/alcool-fete/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/alcool-fete/laboratoire-jello-shots/": {
-      "hash": "538f712a7db5fdbef5b983b321db542c4766d40d6c6dc67a4ada7fa586595df5",
+      "hash": "642083d072674fab9d6e0f76fbad198a944dd83f3759b65ca79e9c0d959240a6",
       "route": "/fr/utilitaires/categories/alcool-fete/laboratoire-jello-shots/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/alcool-fete/refroidisseur-biere/": {
-      "hash": "90bae05836e0ec3644ff8179e8804469661b1a8cd2a74a349e26d9f118a34df3",
+      "hash": "33cc858a2308527a8278bb4a0e12de52608c23e424302226e01cfe29d8ab5b5b",
       "route": "/fr/utilitaires/categories/alcool-fete/refroidisseur-biere/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/alkohol-pesta/": {
-      "hash": "024b408b4841aa46101d165799c7928acce366cde55658b3c6c0a25316a6ea80",
+      "hash": "4cd9a4de8d80d648d68ebd0724ca27960c2729d5161b7a86385f2780676089b7",
       "route": "/id/utilitas/kategori/alkohol-pesta/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/alkohol-pesta/kalkulator-bier-es-pesta/": {
-      "hash": "4047c0df2352f9a15998b67ebe9645768117615a87fe6cf17b98ec4c8c8a06dc",
+      "hash": "bc701eede6cd738e6195b405fb4424652fc05ebae27a5a9397136d4008cdee13",
       "route": "/id/utilitas/kategori/alkohol-pesta/kalkulator-bier-es-pesta/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/alkohol-pesta/kalkulator-efisiensi-mash-bir/": {
-      "hash": "161798adb50c409f3ef981ce75972a92db4377eb2f0f58a555d2f79368c84f68",
+      "hash": "59db09dbb1162748cdd23ab1f79557f7e5326f1c908c6e21a61a99170d5f6fe5",
       "route": "/id/utilitas/kategori/alkohol-pesta/kalkulator-efisiensi-mash-bir/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/alkohol-pesta/kalkulator-jello-shot/": {
-      "hash": "4042a1f3d29d28d4c3072f96b1fb0dd01ed7c48628040ab0cd216568d56c92b9",
+      "hash": "7d9d9536a88a2da66a8c21ad97ea293f5c47e906b62a3eef55d10ddf90597001",
       "route": "/id/utilitas/kategori/alkohol-pesta/kalkulator-jello-shot/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/alkohol-pesta/kalkulator-karbonak-bir/": {
-      "hash": "a25875414ec03ef09a7c817787c89c2ab4f2fd493aec530118f0955a31d54dd9",
+      "hash": "6b2c85b71bc441c6ebe4ada45a3070d170234420da1ca94211721cd711b59c7c",
       "route": "/id/utilitas/kategori/alkohol-pesta/kalkulator-karbonak-bir/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/alkohol-pesta/kalkulator-pembersihan-alkohol/": {
-      "hash": "0de3b15a82e06e4c293353382a09dc8fd92c11e3cc9d598dad3f69c893e74d9e",
+      "hash": "07828bb9667d816432fc78728c08f6eae6ffe4ea8fdabdabc0ac0a290e194653",
       "route": "/id/utilitas/kategori/alkohol-pesta/kalkulator-pembersihan-alkohol/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/alkohol-pesta/kalkulator-pengenceran-alkohol-dan-proof/": {
-      "hash": "1bcda56e0534aa1ac100382f076d6ccaf533094dcc8a2eb3363f998ed2c85871",
+      "hash": "5ea2ee075c209afe5fc149a0025ea5b496d912a155f4926dd48a25882911bc2d",
       "route": "/id/utilitas/kategori/alkohol-pesta/kalkulator-pengenceran-alkohol-dan-proof/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/alkohol-pesta/koktail-seimbang/": {
-      "hash": "6a0b265c489f64a3313f134eca7ca484ed1e0363e0a021591c7580dcc9f52186",
+      "hash": "ed1fd1521fe828068a9c4f41395c978a39f05a612b79ccb89cfadcdd7326ea8c",
       "route": "/id/utilitas/kategori/alkohol-pesta/koktail-seimbang/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/alkohol-pesta/pembuat-wine-fortifikasi/": {
-      "hash": "09ec633842785ddae9e4c32c7507ca815a8e7c94036c8833f3e3f2853fc1be27",
+      "hash": "42a58836ff42cc82207e46eafb151148c36158a5ccc63e86bd630f5579073223",
       "route": "/id/utilitas/kategori/alkohol-pesta/pembuat-wine-fortifikasi/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/alkohol-pesta/pendingin-bir/": {
-      "hash": "945f346077036b3f0edfe76545ae1469e28523b67d2e01a1502150c69fa120d8",
+      "hash": "e5f719ce1ce873761887b0b4b724ef951b94c5985d18a34af953bbcd074c1f48",
       "route": "/id/utilitas/kategori/alkohol-pesta/pendingin-bir/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/alcol-festa/calcolatore-birra-ghiaccio-feste/": {
-      "hash": "64a4892afe4c126d0075fb34c48796f5b773b034bcc89f45607cc5d0d9ad234e",
+      "hash": "b02735f172aa9522fe9a4662816190112a9b515c00263653bcaf33140c3808a6",
       "route": "/it/utilita/categorie/alcol-festa/calcolatore-birra-ghiaccio-feste/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/alcol-festa/calcolatore-carbonatazione-birra/": {
-      "hash": "185de26dc70a077c214a3c4bfed8306c92254c057a3918d6dec27ff1467b2f42",
+      "hash": "0e5172107565a6530dbc23176043ba9c515690da80fe04b7a6ec45e34abdf968",
       "route": "/it/utilita/categorie/alcol-festa/calcolatore-carbonatazione-birra/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/alcol-festa/calcolatore-diluizione-alcol-e-proof/": {
-      "hash": "614b43698a2baaf2966203f8e27b6381623a3386eb43ed0581a8754b49f94192",
+      "hash": "c5d99f7a81b03bf6bc0ee12082eb972a9ac9187d91a926563beea7556848a9fa",
       "route": "/it/utilita/categorie/alcol-festa/calcolatore-diluizione-alcol-e-proof/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/alcol-festa/calcolatore-efficienza-ammostamento-birra/": {
-      "hash": "ccc8eb4a46d42dd55fdc649db5583f3ebf88f149fa46e319a6293d49519018ac",
+      "hash": "7d09c4026a485881b4772865edf07da0044e29894612e141167d59f77260095a",
       "route": "/it/utilita/categorie/alcol-festa/calcolatore-efficienza-ammostamento-birra/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/alcol-festa/calcolatore-smaltimento-alcol/": {
-      "hash": "fc7c8c0440498da90c2e93526a960b1c22df074676bf43b27fac71710b27a534",
+      "hash": "400e14dfa63b1cc4b51b3c6b1f2910741b0ffe37983b8ff534f1e15358407933",
       "route": "/it/utilita/categorie/alcol-festa/calcolatore-smaltimento-alcol/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/alcol-festa/cocktail-equilibrato/": {
-      "hash": "a52d18a21cf7c4fc91ddba923941addb6ec3c48baa30ce61909ca6ac45742384",
+      "hash": "08ad2760a54b2b7de6a18ced02579e88c393c39dabadc9a974639feee6a89f37",
       "route": "/it/utilita/categorie/alcol-festa/cocktail-equilibrato/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/alcol-festa/costruttore-vino-fortificato/": {
-      "hash": "65315a26829df85783f67458682ce9d88b77b9d0a644522cd43ee2addc45a4b8",
+      "hash": "afe94ca6fc7a28df81d4547bdd33c7b49a7b761afc4d3635df261aff1bc1c34f",
       "route": "/it/utilita/categorie/alcol-festa/costruttore-vino-fortificato/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/alcol-festa/": {
-      "hash": "f2ee524e72034bebe8fe9c129ec22e73e0148d08128320a6f402e3c374fb6306",
+      "hash": "4b528db91651e12491dbd71cf5bb7b3e11f0d292ff2ca869a4b38a361cc0f57a",
       "route": "/it/utilita/categorie/alcol-festa/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/alcol-festa/laboratorio-jello-shot/": {
-      "hash": "1573029136cc852642e43ba6db48895ec97c1afe6c980f928e41e028ed270ca5",
+      "hash": "0e83369af19f202730b9521bc1bc65d7a7eb25482684137a5efe174cd5c02e30",
       "route": "/it/utilita/categorie/alcol-festa/laboratorio-jello-shot/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/alcol-festa/raffreddatore-birra/": {
-      "hash": "7f9c089f81fc71a55932eac0085b7f226916521d4c16895be54260778ba3d548",
+      "hash": "dfc9424e03a87fad7c1f4c9549f435e5083a5ea67e434cdfbaaa56980796702d",
       "route": "/it/utilita/categorie/alcol-festa/raffreddatore-birra/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/alcohol-party/abv-dilution-calculator/": {
-      "hash": "d01d3eea8b482cc30afebd02759a348e04e80a3b332f20d320d21353f6b583c6",
+      "hash": "7d9636387e48177bd2eb593eca7d5d5aa871ec6804f3a9a6194a48badd82223d",
       "route": "/ja/utilities/categories/alcohol-party/abv-dilution-calculator/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/alcohol-party/alcohol-clearance-calculator/": {
-      "hash": "f7884a7a6a05460597fe1e798afd96da0482c4a348ba9ce587dd2da86acb8a1c",
+      "hash": "e8ab11c343b49a0061dd44fce9577dde7c85f4a9ee91c099ea4a8f724f5deebb",
       "route": "/ja/utilities/categories/alcohol-party/alcohol-clearance-calculator/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/alcohol-party/beer-carbonation-calculator/": {
-      "hash": "8d77b9e28eefa7e9b469f96e873977f834f922f46d83ce05d4fe15afd7126724",
+      "hash": "b432341d12bb0801bc3227d58ab526e42eb2be8e9d22da12761a73af1fade24f",
       "route": "/ja/utilities/categories/alcohol-party/beer-carbonation-calculator/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/alcohol-party/beer-cooler/": {
-      "hash": "72f250706bd9332039e8cecae472d1469e2d39f0223c3a483b4c17dca8305a92",
+      "hash": "78d8c5eb051e2c2f2dee11cd22aceab36724990fd37d406bc1b101840f50bac0",
       "route": "/ja/utilities/categories/alcohol-party/beer-cooler/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/alcohol-party/beer-mash-efficiency-calculator/": {
-      "hash": "5de3c9e95ebfcf085798d11cc48cc83c257c743756ecb01c8f253e4bc13c5212",
+      "hash": "f46a1f4595a326e21d8103468cd927a114a7497e0de53b549a79539ea04c61fc",
       "route": "/ja/utilities/categories/alcohol-party/beer-mash-efficiency-calculator/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/alcohol-party/cocktail-balancer/": {
-      "hash": "c03e97d047ed86e8fa88b6856eb4d58d6811bf2249cae4479e0a427623336db7",
+      "hash": "531e1fb5d0b02446ec9ce968eef07771f7be42f7a9c0bcd569d6b8a2450032f8",
       "route": "/ja/utilities/categories/alcohol-party/cocktail-balancer/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/alcohol-party/fortified-wine-builder/": {
-      "hash": "691b1010037711d1c4de88df8e228b92b897fbbdcf7cfe6b2ed20c97fdc37892",
+      "hash": "ef2ef80cdab1171647182519fe511ddc7d56b7f090277a88f2d0615078d9046a",
       "route": "/ja/utilities/categories/alcohol-party/fortified-wine-builder/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/alcohol-party/": {
-      "hash": "a3f81a63eb62dadd602fa3e8479d4d7a77c8b266c0d81eddbc2eaade48e61683",
+      "hash": "86a009e7a1f1552e8219fa0f02274276a42ca9f49ac7f12564c6eee805801f6b",
       "route": "/ja/utilities/categories/alcohol-party/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/alcohol-party/jello-shot-lab/": {
-      "hash": "4d77d5f09ef0fc380b561b61169ec0fe99b47818ac33d1675d2b5b67db454331",
+      "hash": "250e056aaa96ad332848ffe97548e4a55e6f50d558ac3bdc96b24aca7a91dffa",
       "route": "/ja/utilities/categories/alcohol-party/jello-shot-lab/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/alcohol-party/party-stock-calculator/": {
-      "hash": "337950ab65773fe4861e4b2a075b16958da7361715e92db5a52986b30908b54e",
+      "hash": "fe60b4f268bd44ae46c0cfc8ef28f8d5f9facb236750e25a3ea7e3589baaa788",
       "route": "/ja/utilities/categories/alcohol-party/party-stock-calculator/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/alcohol-party/abv-dilution-calculator/": {
-      "hash": "b37ccf918468e383f37141bbc7e98187ca61c69d173199a881d77b4c5c496e07",
+      "hash": "af7516d6d14847b1c075d002909a9dd819be5beb781aa427b0f87d4d1a290849",
       "route": "/ko/utilities/categories/alcohol-party/abv-dilution-calculator/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/alcohol-party/alcohol-clearance-calculator/": {
-      "hash": "d1ef61548c571cae8de89661a8df738f6b517f27f73f7ff0e97fd31689c4805c",
+      "hash": "3d5a7fed0814e55eeee5459631c8894b29091df529d7c411e5fa4cd8cee646c8",
       "route": "/ko/utilities/categories/alcohol-party/alcohol-clearance-calculator/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/alcohol-party/beer-carbonation-calculator/": {
-      "hash": "f213eb90f8d54105f2b237353c6336d7db1a34567e8b73e7cafd3d736e91fc55",
+      "hash": "c6452c6a12a818d4391ad57106a942342389939b4f2163d89cce47f761f7af67",
       "route": "/ko/utilities/categories/alcohol-party/beer-carbonation-calculator/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/alcohol-party/beer-cooler/": {
-      "hash": "b2e27e2718a6cc6b7ee34cf33443847f1de6e5aa28b7181b3589975e38cb21e5",
+      "hash": "27fe9dd9b76f4255cb459bebe061fbe46e72f1ad0463b52171614981bbd20c54",
       "route": "/ko/utilities/categories/alcohol-party/beer-cooler/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/alcohol-party/beer-mash-efficiency-calculator/": {
-      "hash": "30724204ceaa4faf97c6900ecbdc4bf580bcfaf0e99500a602c7c62f1cc9113c",
+      "hash": "f9f3a5972e556a1944bccf4488a14c906de299012e0c3deb135bc3d3112d9561",
       "route": "/ko/utilities/categories/alcohol-party/beer-mash-efficiency-calculator/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/alcohol-party/cocktail-balancer/": {
-      "hash": "7c9082c4228bb664d1fde37ae240d7e1514a1a4ca894528b50e399fcb3c28b75",
+      "hash": "3e0bb3780396b1ffc028c89980f99d507a062e8cb8eef91277a36979a474063a",
       "route": "/ko/utilities/categories/alcohol-party/cocktail-balancer/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/alcohol-party/fortified-wine-builder/": {
-      "hash": "155243e50d7f342380d584b8205961082e69e17bc622c8dd445fafdf75df9a53",
+      "hash": "d474872d1f51de735a0936adb7378f0050f0e620edac6a954589cf01c291be65",
       "route": "/ko/utilities/categories/alcohol-party/fortified-wine-builder/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/alcohol-party/": {
-      "hash": "a6e3a1af08e0b09404181696932b7f05fe5c69b37e954fee33281e7b34b0b79a",
+      "hash": "a8ecb84833bc51246c99eb5eb3a5a2ba164cd7bef0d10a907fe15f99ce623382",
       "route": "/ko/utilities/categories/alcohol-party/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/alcohol-party/jello-shot-lab/": {
-      "hash": "88bb285f377cb93e4dff621287a1cb3176de4fa6f2c9422c83fc6ea834f3c794",
+      "hash": "4034d528bb843aaad69c325431bd9bd0cc5b58c7aeecb985de3b1252ca75e68e",
       "route": "/ko/utilities/categories/alcohol-party/jello-shot-lab/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/alcohol-party/party-stock-calculator/": {
-      "hash": "757404c45ebd620917fe42b96f599f51f890663246020e8e527124d31518b974",
+      "hash": "34d1191c450c4af4731686e2b3a151a603878122c80ff535c3f19cb1b6ed475a",
       "route": "/ko/utilities/categories/alcohol-party/party-stock-calculator/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/alcohol-feest/alcoholverdunning-en-proof-calculator/": {
-      "hash": "df2b72a309b7be4218e4963ab0fcb8a1c95abb1f893e2809b7d50d8407717a78",
+      "hash": "b33df9c9db228b34f7230ca46504b5521082e083cf7ae98491759c3ff37b1a9d",
       "route": "/nl/hulpmiddelen/categorieen/alcohol-feest/alcoholverdunning-en-proof-calculator/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/alcohol-feest/bier-carbonatatie-calculator/": {
-      "hash": "90de194ecd87a9e22c700df125e4895917aa4d9eb9d9a4fbe9e7d3c43feed0bc",
+      "hash": "f2b0211fff01998048eea75f9d3f0de6cc32f0b4bd7cfbad5fb1ecaf7af70df1",
       "route": "/nl/hulpmiddelen/categorieen/alcohol-feest/bier-carbonatatie-calculator/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/alcohol-feest/bier-ijsrekenmachine-feest/": {
-      "hash": "aca12f3d366908b9dee90b93e8a6e95ed102fa0854c47f809cb7b30ba4e7480b",
+      "hash": "2bfa115b314514f97cdec984ec0ebea662a602e3d942c8c1f2ca778314abe507",
       "route": "/nl/hulpmiddelen/categorieen/alcohol-feest/bier-ijsrekenmachine-feest/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/alcohol-feest/bier-koeler/": {
-      "hash": "936365d2dd87528da05102ed37a89641fe3aa543b44101b90ac001f01585148f",
+      "hash": "6c8b0ff9cdd205f29ec5059fecd513aea08a6a330ac3c1146580c5d823e2c3de",
       "route": "/nl/hulpmiddelen/categorieen/alcohol-feest/bier-koeler/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/alcohol-feest/cocktail-evenwicht/": {
-      "hash": "639aa345ca1a2ea0ed59636397dc592e2e4dfa329ab4c9b6c1d598bb06eeb4f3",
+      "hash": "5a235ad92ceacf1c4740c5d45b4a411178e28ceec119ca027bbe3d51e8313a90",
       "route": "/nl/hulpmiddelen/categorieen/alcohol-feest/cocktail-evenwicht/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/alcohol-feest/": {
-      "hash": "9dbc01b646f73a66660fb25d898c49ae951c050b13c36793d50a2b49ea730019",
+      "hash": "443f995999a968d4855f9499517decd922b420cba323c1656b603d8485c6b25a",
       "route": "/nl/hulpmiddelen/categorieen/alcohol-feest/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/alcohol-feest/jello-shot-calculator/": {
-      "hash": "a78aae7b4023315606d3d5cbab70eeaa0b15e49b96d6f1bef4fbe06a17869e8a",
+      "hash": "79eeee84f56a15af7dd416a7529141b5bedae22971b7068b7c633aaf1d74586e",
       "route": "/nl/hulpmiddelen/categorieen/alcohol-feest/jello-shot-calculator/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/alcohol-feest/maisrendement-rekenmachine-bier/": {
-      "hash": "5d76f434aa5005564ea0383ee4d7f1663e35439f0f0710c2c5963bd15e3ed85c",
+      "hash": "c9e24a5e0f3e3ccb51fed1d2a5da1ca46d3db85babc8a40a4626cbd33f9e5105",
       "route": "/nl/hulpmiddelen/categorieen/alcohol-feest/maisrendement-rekenmachine-bier/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/alcohol-feest/rekenmachine-alcoholafbraak/": {
-      "hash": "642e1edab13d259dde3d8f5d2fa061e32c056a909f3302b7b441bc63d238f061",
+      "hash": "c33fd6a75de0dec1510d44a7544d3de797e64def3a6d0cced345c5797a52f970",
       "route": "/nl/hulpmiddelen/categorieen/alcohol-feest/rekenmachine-alcoholafbraak/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/alcohol-feest/versterkte-wijn-bouwer/": {
-      "hash": "6475ceef6d193b9c7691030414edbe47668813a56a02ab65d70c922bf323bc9b",
+      "hash": "d264da28247c0eb8f96793c8e29ccc28f5e5c4798bdd09f400c7d056f4aa08d9",
       "route": "/nl/hulpmiddelen/categorieen/alcohol-feest/versterkte-wijn-bouwer/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/alkohol-impreza/chlodnica-piwa/": {
-      "hash": "f72e4e87e083293ccc2c1193a42eec149f1f518e7a9de5afefcb69877f26da0a",
+      "hash": "662938bd10f9745f9bb394ff8dc5303fb526b486283e4edf854d79917e6c12f7",
       "route": "/pl/narzedzia/kategorie/alkohol-impreza/chlodnica-piwa/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/alkohol-impreza/": {
-      "hash": "8f8f8352fcd1bd1ab16762ee6393aca7396e7d6f8de76869298f089b85a7950e",
+      "hash": "0834ee65f1aaaf9c5e3cc66888c6f8df1f20fba184fc3c6dc80d5dd4da428d16",
       "route": "/pl/narzedzia/kategorie/alkohol-impreza/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/alkohol-impreza/kalkulator-czyszczenia-alkoholu/": {
-      "hash": "89d391d6de6c915349ec0a530a22b6dae10b983475b70e7faf7cd58705a86eb3",
+      "hash": "894f6afbda5120d7bcfdc4d6da631927c48f13ec8951b9b067ee2543e5dbee05",
       "route": "/pl/narzedzia/kategorie/alkohol-impreza/kalkulator-czyszczenia-alkoholu/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/alkohol-impreza/kalkulator-jello-shots/": {
-      "hash": "127edf5767542bfff24e570cdab1368acef98ebe3e887574b3e82d76621024b7",
+      "hash": "dc01650b47ba18b99011c65802ba7c1421f61c1028b7212afd3826bcc16d432a",
       "route": "/pl/narzedzia/kategorie/alkohol-impreza/kalkulator-jello-shots/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/alkohol-impreza/kalkulator-karbonatacji-piwa/": {
-      "hash": "d1ebdafe17cb1139d48941773c58f98a882e09b549ef45387483ad5d95ed59da",
+      "hash": "8a76541f9c36321a3bd4fc46f881886e79fbed507caeb773c8aff6d6d3352668",
       "route": "/pl/narzedzia/kategorie/alkohol-impreza/kalkulator-karbonatacji-piwa/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/alkohol-impreza/kalkulator-piwa-lodu-imprezy/": {
-      "hash": "3df7280bfd4331586f277ccc30b778d4763b8f1803b69602049c3f8f4a0bf809",
+      "hash": "c9c4f717c50dd2dd252e52fe7743f1d6a9d1b76df658bdbd62e057d834672fc6",
       "route": "/pl/narzedzia/kategorie/alkohol-impreza/kalkulator-piwa-lodu-imprezy/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/alkohol-impreza/kalkulator-rozcieczania-alkoholu-i-proof/": {
-      "hash": "1e102f4d07bfa460c0e8192d115a2053af693a64fd137979e572d8a06af59a7a",
+      "hash": "29b45c573a3eba7e1a928b53cc8deb5c45736a12260e3ccca6bfce2c2bf425e4",
       "route": "/pl/narzedzia/kategorie/alkohol-impreza/kalkulator-rozcieczania-alkoholu-i-proof/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/alkohol-impreza/kalkulator-wina-fortyfikowanego/": {
-      "hash": "9bef615e6a115d3671bac39b100d2be5c6ad793c90970035075466897edec799",
+      "hash": "ca293dd824ef1244eff0a7992cd1e9312ea5faaef80371d6608972b703d7c0d8",
       "route": "/pl/narzedzia/kategorie/alkohol-impreza/kalkulator-wina-fortyfikowanego/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/alkohol-impreza/kalkulator-wydajnosci-zatarcia-piwa/": {
-      "hash": "ac4d007e2ffb71fed0d138ab82ae86c81b60c42daa1994de381485112268b045",
+      "hash": "674fee1384822cab442630dc0c765df9859f123fe433f238e9b559559a0173ff",
       "route": "/pl/narzedzia/kategorie/alkohol-impreza/kalkulator-wydajnosci-zatarcia-piwa/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/alkohol-impreza/koktajl-zbilansowany/": {
-      "hash": "35fcb20f01b09b7995616a726c0108d4d8424c33cbfd62006ec576077c40a0b1",
+      "hash": "782ac44e3c2b0de62e790c1f622eedacabfba0b2b81575663dd4bba3291409a2",
       "route": "/pl/narzedzia/kategorie/alkohol-impreza/koktajl-zbilansowany/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/alcool-festas/calculadora-alcoolemia-recuperacao/": {
-      "hash": "027487372e2375bb00b87bb1e65b17a36ea4ddd5c29cb72a3cb0f7305e611e40",
+      "hash": "2d79034bb2f4ab8cbaa080c187fa470154e2f267b273220323e315f6911e4b61",
       "route": "/pt/utilidades/categorias/alcool-festas/calculadora-alcoolemia-recuperacao/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/alcool-festas/calculadora-carbonatacao-cerveja/": {
-      "hash": "5a6ecc5c1a6b0cf53dde4614fdb208d5c1033b009c78e8596777ff54ba25c4de",
+      "hash": "715c9982abcdfd70641bbdfac43377b6b548f99210148c765ca8e58300cf1f9e",
       "route": "/pt/utilidades/categorias/alcool-festas/calculadora-carbonatacao-cerveja/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/alcool-festas/calculadora-cerveja-gelo-festa/": {
-      "hash": "17274bcb1ff7d0997fcebaea367b8ffe40270dc1047fe2e9a831d0af73fc904b",
+      "hash": "93eadecb819f7681ee2c86316a030a8064798a2d3ff9353f3a1c0af154df7676",
       "route": "/pt/utilidades/categorias/alcool-festas/calculadora-cerveja-gelo-festa/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/alcool-festas/calculadora-diluicao-alcool-e-proof/": {
-      "hash": "c237628aff73ebe59540c00ab82be44ddb576b1ec8274bb8c5d884a01b7d8387",
+      "hash": "a5fd1cea218fcd3f2a5ea53571d90f26192946d6b7b0846eb1009adda5684dca",
       "route": "/pt/utilidades/categorias/alcool-festas/calculadora-diluicao-alcool-e-proof/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/alcool-festas/calculadora-eficiencia-mostura-cerveja/": {
-      "hash": "eec024b3251af7dee1145fd0a88572acfeaa6837af41e5be14f31803190a8d65",
+      "hash": "fe1b5d4ae9d56394bec1d98217b89d58ee9939bb6ea86510241af6122586efbd",
       "route": "/pt/utilidades/categorias/alcool-festas/calculadora-eficiencia-mostura-cerveja/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/alcool-festas/construtor-vinho-fortificado/": {
-      "hash": "5a3c8152b045c944f24c68cd19585659e0975a749e48018eb7019e52e28e2102",
+      "hash": "43b2c3612e130310b03d77f7067a5cbd8c7eef8e94fa7f90be7c4c57b3baacf5",
       "route": "/pt/utilidades/categorias/alcool-festas/construtor-vinho-fortificado/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/alcool-festas/coquetel-equilibrado/": {
-      "hash": "dd7b78a9fa167be2c80d8f90036300762f159cfbc6f080892de7ffc50ada95fe",
+      "hash": "7ab63f8b2f8d0b5903f4dee37fd8bc7cc5e27f168f380e033c5dd23888765aee",
       "route": "/pt/utilidades/categorias/alcool-festas/coquetel-equilibrado/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/alcool-festas/": {
-      "hash": "b5ba6596dcad304f4264c59dd11d5c89fbfc25a72a6ffb19443b994d12078a29",
+      "hash": "79aad47cf9829247b2e04c99d7fb5a6dcc51cb71d3b1c50d1824f13737eaf67c",
       "route": "/pt/utilidades/categorias/alcool-festas/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/alcool-festas/laboratorio-jello-shots/": {
-      "hash": "f2a7cf8cdf55a7daf9ba68869aa8f78e3532267c21a79ab90ea75f8681ab30da",
+      "hash": "8c5160acd2966beb643413aabf1c11027f5afe241cdc7169e5de98a5033660aa",
       "route": "/pt/utilidades/categorias/alcool-festas/laboratorio-jello-shots/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/alcool-festas/resfriador-cerveja/": {
-      "hash": "227355ef63cd02a598d551b7a48902ccc7f392a9433cd9fbeab534cf6f14835d",
+      "hash": "ba424105fb552cdd2dd4a15c77639d58eaaf761ad91bbb717cb8e6f7459e605f",
       "route": "/pt/utilidades/categorias/alcool-festas/resfriador-cerveja/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/alkogol-vecherinka/": {
-      "hash": "d341dee047f0d4ab36d2fb584c4f0a5855d9e0cec5afbf3fa7e4423c89991453",
+      "hash": "5b139e537c0376682ce5b476884f75bf1edfec18fb7968c66dfe99d6d6ae8076",
       "route": "/ru/instrumenty/kategorii/alkogol-vecherinka/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/alkogol-vecherinka/kalkulator-ochistki-alkogolya/": {
-      "hash": "6d13891872992187f94bcf265d414bbb5bb34f3b478e1accb609e2be684ba8a3",
+      "hash": "1b2ab228d02eac44443f9187fca724561d921c012411d758e4d464c89fe5cff8",
       "route": "/ru/instrumenty/kategorii/alkogol-vecherinka/kalkulator-ochistki-alkogolya/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/alkogol-vecherinka/kalkulyator-effektivnosti-zatiraniya-piva/": {
-      "hash": "81196ef00db45fec2e275f9a7cba4e54ec9024b95126ff4dadc56633d77e788e",
+      "hash": "2db47d06b498191766a29c85f5ac039570187c0685b641721479d3b173d9347d",
       "route": "/ru/instrumenty/kategorii/alkogol-vecherinka/kalkulyator-effektivnosti-zatiraniya-piva/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/alkogol-vecherinka/kalkulyator-karbonizacii-piva/": {
-      "hash": "2b6f45e49a26b1c0be1a4ff5f1940192e30e04b556658e2f937f5b0dc125606b",
+      "hash": "da0ee98e0460b0e04df2a741be884169350d5bed73f75878c73e320c37be9751",
       "route": "/ru/instrumenty/kategorii/alkogol-vecherinka/kalkulyator-karbonizacii-piva/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/alkogol-vecherinka/kalkulyator-kreplenogo-vina/": {
-      "hash": "a8e85cca7a4adb8a39996e161cd189489b80a9e04f83023a224bf3e1de78adc8",
+      "hash": "08137f5866cf0f917ec5882cb7f9df4c6229024f8b163c62ed6f2dc052c5373b",
       "route": "/ru/instrumenty/kategorii/alkogol-vecherinka/kalkulyator-kreplenogo-vina/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/alkogol-vecherinka/kalkulyator-razbavleniya-alkogolya-i-proof/": {
-      "hash": "7e6a5ed6f3a994c1f6323bd5a1e6f8c3de25d0f87e4f1ef2a34be6966a5d31bb",
+      "hash": "8c99869509ab4d25e20a182fc2e5b666196aa62414c22e850f76d2a7a72f932d",
       "route": "/ru/instrumenty/kategorii/alkogol-vecherinka/kalkulyator-razbavleniya-alkogolya-i-proof/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/alkogol-vecherinka/kalkulyator-zapasa-pivy/": {
-      "hash": "cd1ec6a6780140270540807447409f92f640259ce5f082d1ee8b0df56d7165ba",
+      "hash": "77757d69faabe77bf4e300889aaef080c26ae642e4a7dba2f2c20c912312c10c",
       "route": "/ru/instrumenty/kategorii/alkogol-vecherinka/kalkulyator-zapasa-pivy/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/alkogol-vecherinka/koktejl-balansirovka/": {
-      "hash": "6a9d6676e3c9e0d4723cd35662cae5d94120642f7bcdfbb0be2f72631da7ce96",
+      "hash": "baa79e5f1c9609b26d720d0378fa2877a2e35b9180a19776407de2f84e855896",
       "route": "/ru/instrumenty/kategorii/alkogol-vecherinka/koktejl-balansirovka/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/alkogol-vecherinka/ohlazhdenie-piva/": {
-      "hash": "baa9d1c8cd0ae3b1bdfa04ba552b3565c2749d2e70cf3bbab696baee3eb56531",
+      "hash": "1f0910989f63d68dbdf3d35273d337a5c9feaaea10d9e32d176ead95b1bd9895",
       "route": "/ru/instrumenty/kategorii/alkogol-vecherinka/ohlazhdenie-piva/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/alkogol-vecherinka/raschet-jello-shots/": {
-      "hash": "75ab189d51bac4d72bd79909ec35e8d0899148e1203516555398fbf92b3b525b",
+      "hash": "f24cc637ac606d009c956dd078deb8db0a4d90a376c93129d50f15c5561e0cea",
       "route": "/ru/instrumenty/kategorii/alkogol-vecherinka/raschet-jello-shots/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/alkohol-och-fest/alkoholabbrytnins-kalkylator/": {
-      "hash": "e2bbb8f5a00a579aaad0a1d5a1374997fabc9542b5c64030267feee4c3f067f5",
+      "hash": "847b806092334e3357aedfd1d299047b42f3d6f782c100519ba542b163c20fcc",
       "route": "/sv/verktyg/kategorier/alkohol-och-fest/alkoholabbrytnins-kalkylator/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/alkohol-och-fest/berikad-vin-kalkylator/": {
-      "hash": "f07878a2e1b753e59c76cd38662e6a247a1e7a5f4df01055105474877ed9cd5f",
+      "hash": "6865cffeb24412030ef5f8062ec8555cbb6f6742f7214f93495e3021ee778af1",
       "route": "/sv/verktyg/kategorier/alkohol-och-fest/berikad-vin-kalkylator/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/alkohol-och-fest/cocktail-balanserare/": {
-      "hash": "e9b9fa3caae35e6c9787696a97772dd36e6bcbf7357ffad35d3467dd972ece62",
+      "hash": "59f3bdd4f84778517d8596a2888c90cb8a933de7f033c85c6165f5b6818ff8d1",
       "route": "/sv/verktyg/kategorier/alkohol-och-fest/cocktail-balanserare/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/alkohol-och-fest/": {
-      "hash": "2441946000cb2192abb5426fdd3a5f4c2f5ebc1e8f205cdce09390140a03e608",
+      "hash": "1d46681390d7672e03c19babe34cc30da908441ed8b7ad269c69ebab35c30a52",
       "route": "/sv/verktyg/kategorier/alkohol-och-fest/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/alkohol-och-fest/jello-shot-kalkylator/": {
-      "hash": "7040d6c4a459a9db9179ec51182917c1f8d1ec07e40939b6c4668ee5fa09f072",
+      "hash": "f32ea462cfe37d425eeb109a16454cfde2f135af2afedf85f3d9ede33c4bbad9",
       "route": "/sv/verktyg/kategorier/alkohol-och-fest/jello-shot-kalkylator/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/alkohol-och-fest/kalkylator-utspadning-alkohol-och-proof/": {
-      "hash": "6a4f42f2b5468719e7d1e6a58b970a4331e417e78106c98d13a8848aa1fd8737",
+      "hash": "19d55cdcc1d913a0784a6e10c9340e73e8c1261d91d7e5f13f0c5dbca4252f3e",
       "route": "/sv/verktyg/kategorier/alkohol-och-fest/kalkylator-utspadning-alkohol-och-proof/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/alkohol-och-fest/maseffektivitetsraknare-bier/": {
-      "hash": "9fb88ab95bc0502a8e8e6cd613b6a141c39ba9118181d2673c31cf875b8268c7",
+      "hash": "a83fa9cff3ba74e3507db33bfecd5de42ce58911e173fdda8a153f1b055e8fde",
       "route": "/sv/verktyg/kategorier/alkohol-och-fest/maseffektivitetsraknare-bier/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/alkohol-och-fest/ol-iskalkylator-fest/": {
-      "hash": "637722ebc8a300ab95e909c534f7bd712c0ca189ad0a875011415bc5fd030ca9",
+      "hash": "f92910503cded57fb314dfff5a069bf23801def1c78dc07cd7c8bda8104dd73d",
       "route": "/sv/verktyg/kategorier/alkohol-och-fest/ol-iskalkylator-fest/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/alkohol-och-fest/ol-karboniserings-och-prynings-kalkylator/": {
-      "hash": "b13a7539ce18e96f6be0b816c4c20e2ef813561511a33d2f76f6355896201d24",
+      "hash": "a642f22cfd52e39b5c868bb8609e4320a0127e09e72844570e2335e2601b964c",
       "route": "/sv/verktyg/kategorier/alkohol-och-fest/ol-karboniserings-och-prynings-kalkylator/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/alkohol-och-fest/ol-kylare/": {
-      "hash": "afc74d1c19d4d10b6fc10b993c13c7ea6a5c07afe9f4cb1c5346bc380e476f47",
+      "hash": "f4e74acfd65d51a7b5a45440ad1270cf8f825f08bcf7360175f4ce84c3e3d137",
       "route": "/sv/verktyg/kategorier/alkohol-och-fest/ol-kylare/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/alkol-partisi/alkol-seyreltme-ve-proof-hesaplayici/": {
-      "hash": "14fc3c908733c82c5aadfd4d27308452c3d8171d1f54f62a63bfd41b249188ab",
+      "hash": "baa57aa9dd218b2c4c066618642b79abc4d3b2108805ab3bbd4b6a18280c1d1b",
       "route": "/tr/araclar/kategoriler/alkol-partisi/alkol-seyreltme-ve-proof-hesaplayici/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/alkol-partisi/alkol-temizleme-hesaplayicisi/": {
-      "hash": "1f45ae03b7830e293758ed2ed9b845f5d315c01515dd336db38c5ca434a0b05c",
+      "hash": "623671192c7b05e677820a9127b8a63f2caa24fc5a9363757efa42ac0f30178d",
       "route": "/tr/araclar/kategoriler/alkol-partisi/alkol-temizleme-hesaplayicisi/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/alkol-partisi/bira-karbonasyon-hesaplayicisi/": {
-      "hash": "f1413b7e1fa1a52294b96b8ea691930a653ecb82b8deef9f5a1f457329ff5c3b",
+      "hash": "af2a55410ca49ca405a83fdc7542e463de024168190347257a4f30b345b50ca7",
       "route": "/tr/araclar/kategoriler/alkol-partisi/bira-karbonasyon-hesaplayicisi/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/alkol-partisi/bira-mase-verimliligi-hesaplayici/": {
-      "hash": "0e1b63dd7c155b040357f956f78ccf73189dac87fa2f5d5693db07af39cb003d",
+      "hash": "ee32f0e7db4f52dc2f969a8a064dce81a84bf9a01ab8b4f9d6f5e9af3331d0e6",
       "route": "/tr/araclar/kategoriler/alkol-partisi/bira-mase-verimliligi-hesaplayici/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/alkol-partisi/bira-sogutucusu/": {
-      "hash": "6aac5c2d9286fb41cf8f38f3dad30ca7df61b0dae3cd0014e7fee381c288bb37",
+      "hash": "4b286f04b6cfc86c1588ba064f5fbf09d34ebcd2a048adbe3184b8698e63f0a0",
       "route": "/tr/araclar/kategoriler/alkol-partisi/bira-sogutucusu/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/alkol-partisi/fortifiye-sarap-hesaplayici/": {
-      "hash": "ddef6d2c0814b41204c318b19b1a159b837c37c489ff2aaeedbbf60a5f4b0509",
+      "hash": "fdb7f8283872aed26ee820eaf7b9c19a64a90f20e8d5d74a3279412643963cca",
       "route": "/tr/araclar/kategoriler/alkol-partisi/fortifiye-sarap-hesaplayici/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/alkol-partisi/": {
-      "hash": "7eca740ed56e169948ba5f7630d36155652d55433e215203a2df72b4cfd7ef88",
+      "hash": "732d025d074251784947a8b3494830b520720ca8bae049d0bbb7b32d399c8dbe",
       "route": "/tr/araclar/kategoriler/alkol-partisi/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/alkol-partisi/jello-shot-hesaplayici/": {
-      "hash": "506c8bc6c9cebed474af0f4cedf0e81cd96ec38456e4cc92dbe166446fb06cd2",
+      "hash": "e63a7896a9671346e8dbac55227763615b45156d71786ad9ac10ae2b1bc17c35",
       "route": "/tr/araclar/kategoriler/alkol-partisi/jello-shot-hesaplayici/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/alkol-partisi/kokteyl-dengeleyici/": {
-      "hash": "996151cb97b60f1344035b2dbf7ac65e9a2ede6d937517b09d291fff02fdd60e",
+      "hash": "ed406367f500a9a41ae4e12343567a7269f9964e3f78f94015fd6ab041e4a641",
       "route": "/tr/araclar/kategoriler/alkol-partisi/kokteyl-dengeleyici/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/alkol-partisi/parti-birrasi-hesaplayicisi/": {
-      "hash": "4ab08b81970d68102947d3d4c3f47be02f5e8caea445047a3e17e9bd0e7d8a9f",
+      "hash": "d34730ea4d723735d858d4eaa65b24109257daa81a18ce03c806f6be81edd2c8",
       "route": "/tr/araclar/kategoriler/alkol-partisi/parti-birrasi-hesaplayicisi/"
     },
     "https://www.jjlmoya.es/utilidades/calculadora-alcohol-resaca/": {
-      "hash": "d5da0e24591122e9e2b57f1a5201c9a668cccbc231538a3df13fd09c2ce2e48c",
+      "hash": "b9310e6f0971e9d42f484add8b6e5ffe16b737cbeff36308f93ea39ab724376f",
       "route": "/utilidades/calculadora-alcohol-resaca/"
     },
     "https://www.jjlmoya.es/utilidades/calculadora-barriles-fiesta/": {
-      "hash": "76bbc483cb1e1f42564c50a549d8443856990f583301be5f296c534cf38f506c",
+      "hash": "c1fbb8da486a9a1146ccc4f5d9d9e7e80e036337a96ffba0bea07d3438640517",
       "route": "/utilidades/calculadora-barriles-fiesta/"
     },
     "https://www.jjlmoya.es/utilidades/calculadora-carbonatacion/": {
-      "hash": "e1e3762975413e7343182d2d02b185bc4f2a49a5527847d0aa5802158f74f8b2",
+      "hash": "35df89a225ae9cd3e38bf4f815dfb6378ecb696c86f2cabe4d2ca8af11898906",
       "route": "/utilidades/calculadora-carbonatacion/"
     },
     "https://www.jjlmoya.es/utilidades/calculadora-dilucion-alcohol-y-graduacion/": {
-      "hash": "12429e46351faaf946e59ddc522770765321563413452934099ef28508973c15",
+      "hash": "945307261c162884f1918c2425a6cc34c6d19c3c3a6a9ad8bdddd492153ef7e0",
       "route": "/utilidades/calculadora-dilucion-alcohol-y-graduacion/"
     },
     "https://www.jjlmoya.es/utilidades/calculadora-eficiencia-macerado-cerveza/": {
-      "hash": "cf803c38cbb447f429e53c1c2fd919e24acc766c02ed857cd1f78b2dcd45e15b",
+      "hash": "f0617c5827b07c7f19ca61681c1067fa53708cf9db250472dbcf6a1d1f23f27f",
       "route": "/utilidades/calculadora-eficiencia-macerado-cerveza/"
     },
     "https://www.jjlmoya.es/utilidades/calculadora-enfriamiento-cerveza/": {
-      "hash": "ae872b9a91637cf2152b7c34f9929d66fb0ffcd7829e446780c296aeb6058168",
+      "hash": "0ed1bb9f509d743cc84b9bfe15c1524e3bb21019ed3bcb538ef8481950eb27c4",
       "route": "/utilidades/calculadora-enfriamiento-cerveza/"
     },
     "https://www.jjlmoya.es/utilidades/categorias/alcohol-fiesta/": {
-      "hash": "ea2d088291dbb74088fb3aabe4c8bacb7fc2fcd1967c97e6678d285d908033c3",
+      "hash": "c75c95b739475492893d83b8c15b6b5ed188b89032387aa69fece23567d7a6bb",
       "route": "/utilidades/categorias/alcohol-fiesta/"
     },
     "https://www.jjlmoya.es/utilidades/constructor-vino-fortificado/": {
-      "hash": "64229df434542e4f50225c09bd7e61f4ee3c3de54aa0c028c60430071cf23ca9",
+      "hash": "459868a901b5583aadc7bd282944242a8e3cb7312168521b429fbafa5f23fa15",
       "route": "/utilidades/constructor-vino-fortificado/"
     },
     "https://www.jjlmoya.es/utilidades/equilibrador-cocteles/": {
-      "hash": "c390a2c149e844248944deaf967734ed7c1df40830e284d3e4fc9e45db3428bf",
+      "hash": "a002bfae06fd3d29797a68d6f3de613c5f049237effbae836e6cafb2c87c06d5",
       "route": "/utilidades/equilibrador-cocteles/"
     },
     "https://www.jjlmoya.es/utilidades/laboratorio-de-jello-shots/": {
-      "hash": "b2c94dc4559a253db30c315e4f58b46e94f1d1b153c800e0dc3d1af626dcbe78",
+      "hash": "1f94c1fa79429d9563ebca018e28f6965aa5e305fcb9641ee356ece6ead683d6",
       "route": "/utilidades/laboratorio-de-jello-shots/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/alcohol-party/abv-dilution-calculator/": {
-      "hash": "0a826133ca4bef11bb9d46c99b5ba80a36a4c83003968d304bb9d93cd396dc62",
+      "hash": "da1c552df77415c467748978d5084d2ea1e68e4577513c922948378b63e6000d",
       "route": "/zh/utilities/categories/alcohol-party/abv-dilution-calculator/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/alcohol-party/alcohol-clearance-calculator/": {
-      "hash": "04feb3b2fcea8c7535731e2dc15dd1eb3a40d665160c12acdadfa4765f97a314",
+      "hash": "38c1ef37d1e9c016f6304763257382073f80437a78c630ed02b5fe804da895e4",
       "route": "/zh/utilities/categories/alcohol-party/alcohol-clearance-calculator/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/alcohol-party/beer-carbonation-calculator/": {
-      "hash": "a7054d69e73ff5e2351f630b6027fc92fba2bdd325d02387de779e7517aec4cc",
+      "hash": "2270e6f4cf1805f8d11ad4a7fd48c3cd83a2b5ae098fe147298e9f5504a99491",
       "route": "/zh/utilities/categories/alcohol-party/beer-carbonation-calculator/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/alcohol-party/beer-cooler/": {
-      "hash": "f3b0800608f94bef667bfb1d540a4a9d9912df8852d16ee6f2af186600971e4b",
+      "hash": "9bfa1034657adc94dba213c4d5901e22a5c3bb1f1952d0b036f1cabdfe61c67f",
       "route": "/zh/utilities/categories/alcohol-party/beer-cooler/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/alcohol-party/beer-mash-efficiency-calculator/": {
-      "hash": "e4b54e30f26de17579735dc66850af5ed06586bdc56f568fa7986eb2d3fc4498",
+      "hash": "d2524e811b95abeecf98b7b6aea58e632006413b8b17e5e1220b0ac99187181c",
       "route": "/zh/utilities/categories/alcohol-party/beer-mash-efficiency-calculator/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/alcohol-party/cocktail-balancer/": {
-      "hash": "1f023567b351561f8745d2e390c06b0fe5f2b44fd408daa9ae474101131e0865",
+      "hash": "f435764031c408f40398a59a5b6a234d747e1a113638321b09829c68d5bd8132",
       "route": "/zh/utilities/categories/alcohol-party/cocktail-balancer/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/alcohol-party/fortified-wine-builder/": {
-      "hash": "327416e975e4e4aa7b8a165fff88184c423befa01228788f12d69125c86cc43c",
+      "hash": "89467a10af3b793456215e647dc03d7f04626d05930c6497e8e9218389f2a7f9",
       "route": "/zh/utilities/categories/alcohol-party/fortified-wine-builder/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/alcohol-party/": {
-      "hash": "263c86948fbc804f02a21ae4d5009c55f43e709d856585601ff270d0d419b54a",
+      "hash": "79ba64b93a62981ad92a9b511a6b503ee92ce1db2f80e3e01ca2980e3884d12c",
       "route": "/zh/utilities/categories/alcohol-party/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/alcohol-party/jello-shot-lab/": {
-      "hash": "46cdb163121d9808bcbe0318396a7bdbcf8d5bb1160705b66822135261bcfc8d",
+      "hash": "8ccce22995332184568fcddc580b03d9bca91db57ac615052d15247410f70098",
       "route": "/zh/utilities/categories/alcohol-party/jello-shot-lab/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/alcohol-party/party-stock-calculator/": {
-      "hash": "ef20f769f7728f1d37b64faf20716606f48b128718ec6729b9de660fa19fc773",
+      "hash": "886addc3a8e2aee8c77813ca41cfc1e9a0f86e4508476fec45489554f188299a",
       "route": "/zh/utilities/categories/alcohol-party/party-stock-calculator/"
     }
   }
